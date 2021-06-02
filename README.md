@@ -36,9 +36,7 @@ import { ThemeType } from '@platformbuilders/react-native-elements';
 const theme: ThemeType = { ... };
 
 <ThemeProvider theme={theme}>
- <StylesProvider injectFirst>
-      <App />
-  </StylesProvider>
+    <App />
 </ThemeProvider>
 ```
 
