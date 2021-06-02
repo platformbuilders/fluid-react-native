@@ -1,11 +1,11 @@
-import React, { useState, useRef, useImperativeHandle } from 'react';
+import React, { useImperativeHandle, useRef, useState } from 'react';
 import { isEmpty } from 'lodash';
 import { RNCamera } from 'react-native-camera';
 import FastImage, { Source } from 'react-native-fast-image';
 import ImagePicker from 'react-native-image-picker';
-import If from '../If';
 import { ImageAvatarPlaceholder as defaultAvatar } from '../../assets/images';
-import { Wrapper, CameraView, UploadIconWrapper, UploadIcon } from './styles';
+import If from '../If';
+import { CameraView, UploadIcon, UploadIconWrapper, Wrapper } from './styles';
 
 type Props = {
   ref?: any;

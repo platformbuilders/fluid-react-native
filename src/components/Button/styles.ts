@@ -1,10 +1,10 @@
-import styled from 'styled-components/native';
 import { moderateScale } from 'react-native-size-matters';
-import TouchableComponent from '../Touchable';
-import TypographyComponent from '../Typography';
-import LoadingIndicator from '../LoadingIndicator';
+import styled from 'styled-components/native';
 import { ButtonVariants, TypographyVariants } from '../../types';
 import { getTheme } from '../../utils/helpers';
+import LoadingIndicator from '../LoadingIndicator';
+import TouchableComponent from '../Touchable';
+import TypographyComponent from '../Typography';
 
 const disabledMain = getTheme('disabled.main');
 const disabledContrast = getTheme('disabled.contrast');

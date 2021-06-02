@@ -1,7 +1,7 @@
 import React, { FC, ReactElement } from 'react';
-import { StyleProp, ViewStyle, TextStyle } from 'react-native';
+import { StyleProp, TextStyle, ViewStyle } from 'react-native';
 import FormError from '../FormError';
-import { Wrapper, defaultLabelStyle, containerStyle, CheckBox } from './styles';
+import { CheckBox, Wrapper, containerStyle, defaultLabelStyle } from './styles';
 
 type Props = {
   id?: string;

@@ -1,7 +1,7 @@
 import 'jest';
 import React from 'react';
+import { fireEvent, render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
-import { render, fireEvent } from 'react-native-testing-library';
 import { ThemeProvider } from 'styled-components/native';
 import Avatar from '..';
 import { theme } from '../../../test/helpers';

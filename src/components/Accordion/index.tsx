@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
+import { head } from 'lodash';
 import { Text, View } from 'react-native';
 import Accordion from 'react-native-collapsible/Accordion';
 import Markdown from 'react-native-markdown-display';
-import { head } from 'lodash';
-import If from '../If';
 import { AccordionType } from '../../types';
+import If from '../If';
 import { Icon } from './styles';
 
 type Props = {

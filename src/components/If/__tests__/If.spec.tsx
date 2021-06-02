@@ -1,7 +1,7 @@
 import 'jest';
 import React from 'react';
-import renderer from 'react-test-renderer';
 import { Text } from 'react-native';
+import renderer from 'react-test-renderer';
 import If from '..';
 
 describe('<If />', () => {

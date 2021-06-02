@@ -1,5 +1,5 @@
-import styled from 'styled-components/native';
 import { moderateScale } from 'react-native-size-matters';
+import styled from 'styled-components/native';
 import { getTheme, ifStyle } from '../../utils/helpers';
 import Touchable from '../Touchable';
 

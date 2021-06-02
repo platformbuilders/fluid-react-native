@@ -1,15 +1,15 @@
-import React, { FC, useState, useCallback, useEffect } from 'react';
+import React, { FC, useCallback, useEffect, useState } from 'react';
 import { Animated } from 'react-native';
 import { DatePickerProps } from 'react-native-datepicker';
 import FormError from '../FormError';
 import {
-  Label,
   BottomLine,
   DatePicker,
   DatePickerStyles,
   DatePickerStylesDark,
-  LABEL_UPPER_STYLE,
   LABEL_LOWER_STYLE,
+  LABEL_UPPER_STYLE,
+  Label,
 } from './styles';
 
 interface Props {
@@ -91,10 +91,7 @@ const DatePickerInput: FC<Props> = ({
   }, [value]);
 
   const customStyles = error
-    ? {
-        ...DatePickerStyles,
-        dateInput: { borderColor: '#cc0000' },
-      }
+    ? { ...DatePickerStyles, dateInput: { borderColor: '#cc0000' } }
     : dark
     ? DatePickerStylesDark
     : DatePickerStyles;

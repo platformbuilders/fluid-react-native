@@ -1,5 +1,5 @@
-import styled from 'styled-components/native';
 import DefaultCheckbox from 'react-native-check-box';
+import styled from 'styled-components/native';
 
 import { colors } from '../../theme';
 

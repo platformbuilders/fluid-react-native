@@ -1,5 +1,5 @@
-import { TouchableType } from './TouchableType';
 import { HitSlopType } from './Common';
+import { TouchableType } from './TouchableType';
 
 export type FontType =
   | 'material'

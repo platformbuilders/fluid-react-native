@@ -4,10 +4,10 @@ import { ThemeContext } from 'styled-components';
 import { PinInputType } from '../../types';
 import FormError from '../FormError';
 import {
-  Wrapper,
-  PinCodeInput,
-  Icon,
   CaptionText,
+  Icon,
+  PinCodeInput,
+  Wrapper,
   defaultStyling,
 } from './styles';
 

@@ -1,7 +1,7 @@
-import { StyleProp, ViewStyle, TextStyle } from 'react-native';
 import { ReactNode } from 'react';
-import { ButtonVariants, TypographyVariants } from './Variants';
+import { StyleProp, TextStyle, ViewStyle } from 'react-native';
 import { TouchableType } from './TouchableType';
+import { ButtonVariants, TypographyVariants } from './Variants';
 
 export type ButtonProps = {
   style?: StyleProp<ViewStyle>;

@@ -1,24 +1,24 @@
-import React, { FC, useState, useEffect, useCallback, useRef } from 'react';
-import { Animated } from 'react-native';
+import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
 import { isEmpty } from 'lodash';
+import { Animated } from 'react-native';
+import { InputStatus, TextInputType, TypographyVariants } from '../../types';
 import { usePrevious } from '../../utils/hooks';
-import { TextInputType, InputStatus, TypographyVariants } from '../../types';
 
+import FormError from '../FormError';
 import MaskedTextInput from './MaskedTextInput';
 import {
-  Label,
-  FixedLabel,
-  Wrapper,
-  BottomLine,
   BorderedWrapper,
-  InputBorderedAreaWrapper,
-  InputAreaWrapper,
+  BottomLine,
+  FixedLabel,
   Icon,
-  LABEL_UPPER_STYLE,
-  LABEL_LOWER_STYLE,
+  InputAreaWrapper,
+  InputBorderedAreaWrapper,
   InputBorderedColumnWrapper,
+  LABEL_LOWER_STYLE,
+  LABEL_UPPER_STYLE,
+  Label,
+  Wrapper,
 } from './styles';
-import FormError from '../FormError';
 
 const TextInput: FC<TextInputType> = ({
   id,

@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { MaskedTextInputType, InputStatus } from '../../../types';
+import { InputStatus, MaskedTextInputType } from '../../../types';
 import { TextInput } from './styles';
 
 const MaskedTextInput: FC<MaskedTextInputType> = ({

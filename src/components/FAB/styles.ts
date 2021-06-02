@@ -1,9 +1,9 @@
-import styled from 'styled-components/native';
 import { moderateScale } from 'react-native-size-matters';
+import styled from 'styled-components/native';
 
 import { getShadow, getTheme, ifStyle } from '../../utils/helpers';
-import Touchable from '../Touchable';
 import DefaultIcon from '../Icon';
+import Touchable from '../Touchable';
 import Typography from '../Typography';
 
 const primaryContrast = getTheme('primary.contrast');

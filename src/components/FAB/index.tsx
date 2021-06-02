@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { isEmpty } from 'lodash';
 import { moderateScale } from 'react-native-size-matters';
 import If from '../If';
-import { Wrapper, Icon, Title } from './styles';
+import { Icon, Title, Wrapper } from './styles';
 
 type Props = {
   id?: string;

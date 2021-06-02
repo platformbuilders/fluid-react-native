@@ -1,7 +1,7 @@
-import styled from 'styled-components/native';
 import { moderateScale } from 'react-native-size-matters';
+import styled from 'styled-components/native';
+import { getShadow, getTheme } from '../../utils/helpers';
 import TextInput from '../TextInput';
-import { getTheme, getShadow } from '../../utils/helpers';
 
 const disabled = getTheme('disabled.main');
 const primaryContrast = getTheme('primary.contrast');

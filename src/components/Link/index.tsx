@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import { StyleProp, ViewStyle } from 'react-native';
-import { TypographyVariants, TouchableType } from '../../types';
-import { Text } from './styles';
+import { TouchableType, TypographyVariants } from '../../types';
 import Touchable from '../Touchable';
+import { Text } from './styles';
 
 interface Props extends TouchableType {
   variant?: TypographyVariants;

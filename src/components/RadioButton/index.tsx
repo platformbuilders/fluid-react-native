@@ -1,6 +1,6 @@
 import React from 'react';
 import If from '../If';
-import { Radio, CheckedRadio } from './styles';
+import { CheckedRadio, Radio } from './styles';
 
 type Props = {
   id?: string;
