@@ -1,8 +1,8 @@
-import styled from 'styled-components/native';
 import { RNCamera } from 'react-native-camera';
-import Touchable from '../Touchable';
-import Icon from '../Icon';
+import styled from 'styled-components/native';
 import { getTheme, ifStyle } from '../../utils/helpers';
+import Icon from '../Icon';
+import Touchable from '../Touchable';
 
 const accentMain = getTheme('accent.main');
 const accentContrast = getTheme('accent.contrast');

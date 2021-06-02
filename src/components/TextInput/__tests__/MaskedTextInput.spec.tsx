@@ -2,8 +2,8 @@ import 'jest';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
-import MaskedTextInput from '../MaskedTextInput';
 import { theme } from '../../../test/helpers';
+import MaskedTextInput from '../MaskedTextInput';
 
 describe('<MaskedTextInput />', () => {
   it('should render textinput', () => {

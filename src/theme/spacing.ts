@@ -1,5 +1,5 @@
+import { getStatusBarHeight, isIphoneX } from 'react-native-iphone-x-helper';
 import { moderateScale } from 'react-native-size-matters';
-import { isIphoneX, getStatusBarHeight } from 'react-native-iphone-x-helper';
 import { Spacings } from '../types';
 
 export default {

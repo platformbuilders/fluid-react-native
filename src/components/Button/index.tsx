@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { ButtonProps } from '../../types';
-import { Touchable, ButtonWrapper, TextButton, Loading } from './styles';
+import { ButtonWrapper, Loading, TextButton, Touchable } from './styles';
 
 const Button: FC<ButtonProps> = ({
   id,

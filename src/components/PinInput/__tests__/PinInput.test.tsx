@@ -3,8 +3,8 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import PinInput from '..';
-import { defaultStyling } from '../styles';
 import { theme } from '../../../test/helpers';
+import { defaultStyling } from '../styles';
 
 describe('<PinInput />', () => {
   it('should render textinput', () => {

@@ -1,18 +1,18 @@
-import styled from 'styled-components/native';
-import { moderateScale } from 'react-native-size-matters';
-import { StyleSheet, Animated } from 'react-native';
 import { ComponentType } from 'react';
-import Typography from '../Typography';
+import { Animated, StyleSheet } from 'react-native';
+import { moderateScale } from 'react-native-size-matters';
+import styled from 'styled-components/native';
+import { InputStatus, TextInputType } from '../../types';
 import {
-  scaledFontSize,
-  ifStyle,
-  switchStyle,
-  getTheme,
   getFontSize,
   getLineHeight,
+  getTheme,
+  ifStyle,
+  scaledFontSize,
+  switchStyle,
 } from '../../utils/helpers';
 import DefaultIcon from '../Icon';
-import { TextInputType, InputStatus } from '../../types';
+import Typography from '../Typography';
 
 type InputAreaWrapperProps = {
   rightAndLeftIcon?: boolean;
@@ -132,9 +132,7 @@ export const InputBorderedAreaWrapper = styled.View`
   width: 100%;
 `;
 
-export const InputBorderedColumnWrapper = styled.View<
-  InputBorderedColumnWrapperProps
->`
+export const InputBorderedColumnWrapper = styled.View<InputBorderedColumnWrapperProps>`
   flex-direction: column;
   padding: 0 ${minimumSpacing};
   width: ${({ hasLeftIcon }: InputBorderedColumnWrapperProps) =>

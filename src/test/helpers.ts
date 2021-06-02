@@ -1,4 +1,4 @@
-import { animations, colors, spacing, radius, typography } from '../theme';
+import { animations, colors, radius, spacing, typography } from '../theme';
 
 export const theme = {
   ...colors,

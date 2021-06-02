@@ -1,7 +1,7 @@
-import styled from 'styled-components/native';
 import { moderateScale } from 'react-native-size-matters';
-import Typography from '../Typography';
+import styled from 'styled-components/native';
 import { getTheme, ifStyle } from '../../utils/helpers';
+import Typography from '../Typography';
 
 const isCentered = ifStyle('centered');
 const isLarge = ifStyle('large');

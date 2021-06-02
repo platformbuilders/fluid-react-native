@@ -1,9 +1,9 @@
-import styled from 'styled-components/native';
 import Animation from 'lottie-react-native';
 import { moderateScale } from 'react-native-size-matters';
-import { getTheme } from '../../utils/helpers';
-import { AnimationObject, LoadingVariants } from '../../types';
+import styled from 'styled-components/native';
 import LoadingAnimation from '../../assets/animations/loading.json';
+import { AnimationObject, LoadingVariants } from '../../types';
+import { getTheme } from '../../utils/helpers';
 
 export const circularLoading = getTheme('circularLoading');
 export const contrastCircularLoading = getTheme('contrastCircularLoading');

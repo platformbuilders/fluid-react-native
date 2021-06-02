@@ -1,16 +1,16 @@
 import { RefObject } from 'react';
 import {
-  TextInputProps,
-  StyleProp,
-  ViewStyle,
-  TextStyle,
   KeyboardTypeOptions,
+  StyleProp,
+  TextInputProps,
+  TextStyle,
+  ViewStyle,
 } from 'react-native';
 import { TextInputMaskTypeProp } from '@platformbuilders/react-native-masked-text';
 
 import { HitSlopType } from './Common';
-import { TypographyVariants } from './Variants';
 import { FontType } from './IconType';
+import { TypographyVariants } from './Variants';
 
 export type TextInputType = {
   id: string;

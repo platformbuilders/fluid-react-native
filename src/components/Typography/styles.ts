@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
-import { getTheme, getFontSize, getLineHeight } from '../../utils/helpers';
 import { TypographyType } from '../../types';
+import { getFontSize, getLineHeight, getTheme } from '../../utils/helpers';
 
 export const Text = styled.Text<TypographyType>`
   color: ${getTheme('text')};

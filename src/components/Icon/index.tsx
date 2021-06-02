@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
 import { Animated, View } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import * as SvgIcons from '../../assets/svg';
 import { IconType } from '../../types';
 import Touchable from '../Touchable';
-import { FaBrands, FaRegular, FaLight, FaSolid } from './FontAwesomeProIcons';
-import * as SvgIcons from '../../assets/svg';
+import { FaBrands, FaLight, FaRegular, FaSolid } from './FontAwesomeProIcons';
 
 export const Icon: FC<IconType> = ({
   id,

@@ -1,4 +1,4 @@
-import React, { useState, FC, useCallback } from 'react';
+import React, { FC, useCallback, useState } from 'react';
 import { TextInputType } from '../../../types';
 import TextInput from '../index';
 
