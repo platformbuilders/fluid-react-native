@@ -15,7 +15,8 @@ import DefaultIcon from '../Icon';
 import Typography from '../Typography';
 
 type InputAreaWrapperProps = {
-  rightAndLeftIcon?: boolean;
+  rightIcon?: boolean;
+  leftIcon?: boolean;
   multiline: boolean;
   padding?: number;
 };
@@ -51,9 +52,8 @@ type BottomLineProps = {
 // const placeholderVariant = (props: any) => getFontSize('subhead')(props);
 // const placeholderBigVariant = 'title4';
 
-const isLeftIcon = ifStyle('leftIcon');
-const isRightIcon = ifStyle('rightIcon');
-const hasRightAndLeftIcon = ifStyle('rightAndLeftIcon');
+const hasRightIcon = ifStyle('rightIcon');
+const hasLeftIcon = ifStyle('leftIcon');
 const isMultiline = ifStyle('multiline');
 const isCentered = ifStyle('centered');
 const hasLabel = ifStyle('label');
@@ -84,7 +84,7 @@ export const LABEL_UPPER_STYLE = {
 };
 
 export const LABEL_LOWER_STYLE = {
-  top: 15,
+  top: 8,
   fontSize: scaledFontSize(18),
 };
 
@@ -132,7 +132,9 @@ export const InputBorderedAreaWrapper = styled.View`
   width: 100%;
 `;
 
-export const InputBorderedColumnWrapper = styled.View<InputBorderedColumnWrapperProps>`
+export const InputBorderedColumnWrapper = styled.View<
+  InputBorderedColumnWrapperProps
+>`
   flex-direction: column;
   padding: 0 ${minimumSpacing};
   width: ${({ hasLeftIcon }: InputBorderedColumnWrapperProps) =>
@@ -153,10 +155,8 @@ export const InputAreaWrapper = styled.View<InputAreaWrapperProps>`
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  padding-horizontal: ${hasRightAndLeftIcon(
-    moderateScale(40),
-    moderateScale(20),
-  )}px;
+  padding-left: ${hasLeftIcon(mediumSpacing, '0px')};
+  padding-right: ${hasRightIcon(largeSpacing, '0px')};
   overflow: hidden;
 `;
 
@@ -185,7 +185,7 @@ export const TextInput = styled.TextInput.attrs((props: TextInputType) => ({
   border-width: 0;
   min-height: ${moderateScale(24)}px;
   color: ${inputColor};
-  margin-top: ${isMultiline(mediumSpacing, 0)};
+  margin-top: ${isMultiline(smallSpacing, 0)};
   font-size: ${getFontSize}px;
   line-height: ${getLineHeight}px;
   width: 100%;
@@ -199,8 +199,6 @@ export const BottomLine = styled.View<BottomLineProps>`
 type IconProps = {
   contrast: boolean;
   error: boolean;
-  leftIcon: boolean;
-  rightIcon: boolean;
   iconColor?: string;
 };
 
@@ -210,7 +208,4 @@ export const Icon = styled(DefaultIcon).attrs((props: IconProps) => ({
     props.iconColor ||
       isContrast(primaryContrast(props), primaryMain(props))(props),
   )(props),
-}))<IconProps>`
-  padding-right: ${isLeftIcon(moderateScale(10), 0)}px;
-  padding-left: ${isRightIcon(moderateScale(10), 0)}px;
-`;
+}))<IconProps>``;
