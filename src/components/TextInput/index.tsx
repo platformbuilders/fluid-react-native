@@ -64,14 +64,24 @@ const TextInput: FC<TextInputType> = ({
   borderedRadius,
   iconType = 'material',
   fixedLabelVariant = 'caption2',
+  suppressAnimation = false,
   ...rest
   // eslint-disable-next-line sonarjs/cognitive-complexity
 }) => {
+  const animationInitialValues = {
+    top: suppressAnimation ? LABEL_UPPER_STYLE.top : LABEL_LOWER_STYLE.top,
+    fontSize: suppressAnimation
+      ? LABEL_UPPER_STYLE.fontSize
+      : LABEL_LOWER_STYLE.fontSize,
+  };
+
   const [labelAnimatedStyle] = useState({
-    top: new Animated.Value(LABEL_LOWER_STYLE.top),
-    fontSize: new Animated.Value(LABEL_LOWER_STYLE.fontSize),
+    top: new Animated.Value(animationInitialValues.top),
+    fontSize: new Animated.Value(animationInitialValues.fontSize),
   });
-  const [isPlaceholder, setIsPlaceHolder] = useState(true);
+  const [isPlaceholder, setIsPlaceHolder] = useState(
+    suppressAnimation ? false : true,
+  );
   const previousValue = usePrevious<string>(value || '');
   const labelVariant: TypographyVariants = large ? 'subhead' : 'footnote';
   const textVariant: TypographyVariants = large ? 'title2' : 'headline';
@@ -100,7 +110,7 @@ const TextInput: FC<TextInputType> = ({
   };
 
   const handleOnFocus = (event: any): void => {
-    if (isPlaceholder) {
+    if (isPlaceholder && !suppressAnimation) {
       setIsPlaceHolder(false);
       animationUp();
     }
@@ -109,7 +119,7 @@ const TextInput: FC<TextInputType> = ({
 
   const handleOnBlur = (event: any): void => {
     const isEmptyLabel = label === '';
-    if (!value && !isEmptyLabel) {
+    if (!value && !isEmptyLabel && !suppressAnimation) {
       setIsPlaceHolder(true);
       animationDown();
     }
@@ -161,7 +171,7 @@ const TextInput: FC<TextInputType> = ({
 
   const setAnimation = () => {
     const wasEmpty = previousValue?.length === 0;
-    if (value && value.length && wasEmpty) {
+    if (value && value.length && wasEmpty && !suppressAnimation) {
       animationUp();
     }
     if (label === '') {

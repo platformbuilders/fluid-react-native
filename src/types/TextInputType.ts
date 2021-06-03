@@ -52,6 +52,7 @@ export type TextInputType = {
   rightIcon?: boolean;
   rightIconName?: string;
   iconType?: FontType;
+  suppressAnimation?: boolean;
 } & TextInputProps;
 
 export interface MaskedTextInputType extends TextInputType {
