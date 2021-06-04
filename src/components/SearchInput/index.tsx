@@ -12,7 +12,6 @@ type Props = {
   onRightIconPress?(): void;
   id?: string;
   accessibility: string;
-  leftIcon?: boolean;
   iconColor?: string;
   placeholder?: string;
   wrapperHeight?: number;
@@ -24,8 +23,8 @@ type Props = {
   containerStyle?: StyleProp<ViewStyle>;
   placeholderTextColor?: string;
   autoFocus?: boolean;
-  rightIcon?: boolean;
   rightIconName?: string;
+  leftIconName?: string;
 };
 
 const SearchInput: React.FC<Props> = ({
@@ -37,7 +36,6 @@ const SearchInput: React.FC<Props> = ({
   onIconPress,
   id,
   accessibility,
-  leftIcon = false,
   iconColor,
   placeholder,
   wrapperHeight,
@@ -49,8 +47,8 @@ const SearchInput: React.FC<Props> = ({
   placeholderTextColor,
   textStyle,
   autoFocus = false,
-  rightIcon,
   rightIconName,
+  leftIconName,
   ...rest
 }) => {
   const [searchText, setSearchText] = useState('');
@@ -104,11 +102,10 @@ const SearchInput: React.FC<Props> = ({
             setSearching(false);
           }
         }}
-        leftIcon={leftIcon}
+        leftIconName={leftIconName}
         iconColor={iconColor}
         iconSize={iconSize}
         inputPadding={inputPadding}
-        rightIcon={rightIcon}
         rightIconName={rightIconName}
         onSubmitEditing={onSubmit}
         {...rest}

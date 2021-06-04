@@ -34,13 +34,11 @@ export type TextInputType = {
   iconHitSlop?: HitSlopType;
   labelStyle?: any;
   isPlaceholder?: boolean;
-  onPressIcon?(x?: any): void;
-  onRightIconPress?(x?: any): void;
+  onPressIcon?(arg?: any): void;
   onBlur?(x?: any): void;
   onFocus?(x?: any): void;
   onSubmitEditing?(x?: any): void;
   placeholderTextColor?: string;
-  leftIcon?: boolean;
   iconColor?: string;
   inputPadding?: number;
   borderedBackgroundColor?: string;
@@ -49,8 +47,8 @@ export type TextInputType = {
   borderedRadius?: number;
   iconNameBordered?: string;
   fixedLabelVariant?: TypographyVariants;
-  rightIcon?: boolean;
   rightIconName?: string;
+  leftIconName?: string;
   iconType?: FontType;
   suppressAnimation?: boolean;
 } & TextInputProps;
