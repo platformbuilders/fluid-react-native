@@ -132,9 +132,7 @@ export const InputBorderedAreaWrapper = styled.View`
   width: 100%;
 `;
 
-export const InputBorderedColumnWrapper = styled.View<
-  InputBorderedColumnWrapperProps
->`
+export const InputBorderedColumnWrapper = styled.View<InputBorderedColumnWrapperProps>`
   flex-direction: column;
   padding: 0 ${minimumSpacing};
   width: ${({ hasLeftIcon }: InputBorderedColumnWrapperProps) =>
