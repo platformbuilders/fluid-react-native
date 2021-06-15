@@ -25,9 +25,8 @@ type ButtonWrapperProps = {
   disabled?: boolean;
   style: any;
   width: number;
+  height: number;
 };
-
-const buttonSize = moderateScale(45);
 
 const getBackgroundColor = (props: ButtonWrapperProps): string => {
   if (props.disabled) {
@@ -78,21 +77,22 @@ const getTextColor = (props: TextButtonProps): string => {
 
 type TouchableProps = {
   rounded: boolean;
+  height: number;
 };
 export const Touchable = styled(TouchableComponent)<TouchableProps>`
   border-radius: ${(props: TouchableProps): string =>
-    props.rounded ? `${buttonSize / 2}px` : '0'};
+    props.rounded ? `${props.height / 2}px` : '0'};
 `;
 
 export const ButtonWrapper = styled.View<ButtonWrapperProps>`
-  height: ${buttonSize}px;
+  height: ${(props: ButtonWrapperProps) => moderateScale(props.height)}px;
   flex-direction: row;
   align-items: center;
   min-width: ${(props: ButtonWrapperProps) => moderateScale(props.width)}px;
   padding: ${(props: ButtonWrapperProps): string =>
     props.rounded ? '0' : minimumSpacing(props)};
   border-radius: ${(props: ButtonWrapperProps): string =>
-    props.rounded ? `${buttonSize / 2}px` : buttonRadius(props)};
+    props.rounded ? `${props.height / 2}px` : buttonRadius(props)};
   justify-content: center;
   background-color: ${getBackgroundColor};
   border-color: ${getTextColor};

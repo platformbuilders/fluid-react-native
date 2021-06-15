@@ -18,6 +18,7 @@ const Button: FC<ButtonProps> = ({
   variant = 'primary',
   typographyVariant = 'body',
   width = 180,
+  height = 45,
 }) => {
   return (
     <Touchable
@@ -28,6 +29,7 @@ const Button: FC<ButtonProps> = ({
       disabled={loading || disabled}
       onPress={onPress}
       rounded={rounded}
+      height={height}
     >
       <ButtonWrapper
         buttonVariant={variant}
@@ -35,6 +37,7 @@ const Button: FC<ButtonProps> = ({
         disabled={disabled}
         rounded={rounded}
         width={width}
+        height={height}
       >
         {loading && <Loading contrast={contrast} />}
         {!loading && (
