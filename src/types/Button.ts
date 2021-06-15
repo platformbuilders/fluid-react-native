@@ -12,4 +12,5 @@ export type ButtonProps = {
   variant?: ButtonVariants;
   typographyVariant?: TypographyVariants;
   children?: string | ReactNode;
+  width?: number;
 } & TouchableType;

@@ -24,6 +24,7 @@ type ButtonWrapperProps = {
   buttonVariant: ButtonVariants;
   disabled?: boolean;
   style: any;
+  width: number;
 };
 
 const buttonSize = moderateScale(45);
@@ -87,7 +88,7 @@ export const ButtonWrapper = styled.View<ButtonWrapperProps>`
   height: ${buttonSize}px;
   flex-direction: row;
   align-items: center;
-  min-width: ${moderateScale(180)}px;
+  min-width: ${(props: ButtonWrapperProps) => moderateScale(props.width)}px;
   padding: ${(props: ButtonWrapperProps): string =>
     props.rounded ? '0' : minimumSpacing(props)};
   border-radius: ${(props: ButtonWrapperProps): string =>
