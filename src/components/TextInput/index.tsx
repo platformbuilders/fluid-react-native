@@ -54,6 +54,7 @@ const TextInput: FC<TextInputType> = ({
   onPressIcon = (): any => {},
   rightIconName,
   leftIconName,
+  leftIconColor,
   iconColor,
   inputPadding,
   borderedBackgroundColor,
@@ -187,7 +188,7 @@ const TextInput: FC<TextInputType> = ({
   const iconBordered = iconNameBordered;
   const renderStatus = hasError ? InputStatus.Failure : status;
 
-  const renderIcon = (iconProp: string) => (
+  const renderIcon = (iconProp: string, isLeft?: boolean) => (
     <Icon
       type={iconType}
       id={`id_${iconProp}`}
@@ -199,7 +200,7 @@ const TextInput: FC<TextInputType> = ({
       touchable={iconTouchableEnabled}
       onPress={onPressIcon}
       hitSlop={iconHitSlop}
-      iconColor={iconColor}
+      iconColor={isLeft ? leftIconColor : iconColor}
     />
   );
 
@@ -233,7 +234,7 @@ const TextInput: FC<TextInputType> = ({
           )}
           {borderedHeight ? (
             <InputBorderedAreaWrapper>
-              {!isEmpty(iconBordered) && renderIcon(iconBordered)}
+              {!isEmpty(iconBordered) && renderIcon(iconBordered, true)}
               <InputBorderedColumnWrapper
                 hasLeftIcon={!isEmpty(iconBordered)}
                 multiline={multiline}
