@@ -78,6 +78,7 @@ const getTextColor = (props: TextButtonProps): string => {
 type TouchableProps = {
   rounded: boolean;
 };
+
 export const Touchable = styled(TouchableComponent)<TouchableProps>`
   border-radius: ${(props: TouchableProps): string =>
     props.rounded ? `${buttonSize / 2}px` : '0'};

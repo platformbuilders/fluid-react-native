@@ -39,6 +39,7 @@ export type TextInputType = {
   onFocus?(x?: any): void;
   onSubmitEditing?(x?: any): void;
   placeholderTextColor?: string;
+  leftIconColor?: string;
   iconColor?: string;
   inputPadding?: number;
   borderedBackgroundColor?: string;
