@@ -81,7 +81,7 @@ type TouchableProps = {
 };
 export const Touchable = styled(TouchableComponent)<TouchableProps>`
   border-radius: ${(props: TouchableProps): string =>
-    props.rounded ? `${props.height / 2}px` : '0'};
+    props.rounded ? `${moderateScale(props.height) / 2}px` : '0'};
 `;
 
 export const ButtonWrapper = styled.View<ButtonWrapperProps>`
@@ -92,7 +92,9 @@ export const ButtonWrapper = styled.View<ButtonWrapperProps>`
   padding: ${(props: ButtonWrapperProps): string =>
     props.rounded ? '0' : minimumSpacing(props)};
   border-radius: ${(props: ButtonWrapperProps): string =>
-    props.rounded ? `${props.height / 2}px` : buttonRadius(props)};
+    props.rounded
+      ? `${moderateScale(props.height) / 2}px`
+      : buttonRadius(props)};
   justify-content: center;
   background-color: ${getBackgroundColor};
   border-color: ${getTextColor};
