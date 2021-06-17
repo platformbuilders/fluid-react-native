@@ -12,7 +12,6 @@ title: LoadingIndicator
 Esse componente tem como função auxiliar na manipulação, manutenção e padronização de indicadores de carregamento dentro de uma aplicação.
 
 ### Visualização
-> Não é possível renderizar componentes React Native diretamente na web, portanto, serão mostradas prints para exemplificar.
 
 ![button](../static/img/screenshots/loadingIndicator.jpg)
 

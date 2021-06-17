@@ -12,7 +12,6 @@ title: Accordion
 Esse componente tem como função auxiliar na manipulação, manutenção e padronização de acordeões dentro de uma aplicação.
 
 ### Visualização
-> Não é possível renderizar componentes React Native diretamente na web, portanto, serão mostradas prints para exemplificar.
 
 ![avatar](../static/img/screenshots/accordion.jpg)
 
