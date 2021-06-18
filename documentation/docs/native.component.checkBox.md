@@ -13,8 +13,6 @@ Esse componente tem como função auxiliar na manipulação, manutenção e padr
 
 ### Visualização
 
-> Não é possível renderizar componentes React Native diretamente na web, portanto, serão mostradas prints para exemplificar.
-
 ![button](../static/img/screenshots/checkBox.jpg)
 
 ## Exemplo
