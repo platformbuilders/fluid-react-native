@@ -11,11 +11,11 @@ title: RadioButton
 
 Esse componente tem como função auxiliar na manipulação, manutenção e padronização botões de radio dentro de uma aplicação.
 
+## Exemplo
+
 ### Visualização
 
 ![button](../static/img/screenshots/radioButton.jpg)
-
-## Exemplo
 
 ### Fonte
 

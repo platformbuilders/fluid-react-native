@@ -11,11 +11,11 @@ title: Link
 
 Esse componente tem como função auxiliar na manipulação, manutenção e padronização de links dentro de uma aplicação.
 
+## Exemplo
+
 ### Visualização
 
 ![button](../static/img/screenshots/link.jpg)
-
-## Exemplo
 
 ### Fonte
 

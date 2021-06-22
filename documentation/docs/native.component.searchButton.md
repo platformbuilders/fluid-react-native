@@ -11,11 +11,11 @@ title: SearchButton
 
 Esse componente tem como função auxiliar na manipulação, manutenção e padronização de botões de busca dentro de uma aplicação.
 
+## Exemplo
+
 ### Visualização
 
 ![button](../static/img/screenshots/searchButton.jpg)
-
-## Exemplo
 
 ### Fonte
 

@@ -11,6 +11,8 @@ title: If
 
 Esse componente tem como função auxiliar na manipulação, manutenção e padronização de renderização condicionada dentro de uma aplicação.
 
+## Exemplo
+
 ### Visualização
 
 ![button](../static/img/screenshots/if.jpg)

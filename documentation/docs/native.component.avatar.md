@@ -11,11 +11,11 @@ title: Avatar
 
 Esse componente tem como função auxiliar na manipulação, manutenção e padronização de avatares dentro de uma aplicação.
 
+## Exemplo
+
 ### Visualização
 
 ![avatar](../static/img/screenshots/avatar.png)
-
-## Exemplo
 
 ### Fonte
 

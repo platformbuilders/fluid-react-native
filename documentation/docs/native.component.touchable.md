@@ -11,11 +11,11 @@ title: Touchable
 
 Esse componente tem como função auxiliar na manipulação, manutenção e padronização de elementos "tocáveis" dentro de uma aplicação.
 
+## Exemplo
+
 ### Visualização
 
 ![button](../static/img/screenshots/touchable.jpg)
-
-## Exemplo
 
 ### Fonte
 

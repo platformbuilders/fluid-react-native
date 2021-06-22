@@ -11,11 +11,11 @@ title: Icon
 
 Esse componente tem como função auxiliar na manipulação, manutenção e padronização de ícones dentro de uma aplicação.
 
+## Exemplo
+
 ### Visualização
 
 ![icon](../static/img/screenshots/icon.jpg)
-
-## Exemplo
 
 ### Fonte
 

@@ -11,11 +11,11 @@ title: Button
 
 Esse componente tem como função auxiliar na manipulação, manutenção e padronização de botões dentro de uma aplicação.
 
+## Exemplo
+
 ### Visualização
 
 ![button](../static/img/screenshots/button.png)
-
-## Exemplo
 
 ### Fonte
 
