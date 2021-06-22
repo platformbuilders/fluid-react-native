@@ -11,11 +11,11 @@ title: LoadingIndicator
 
 Esse componente tem como função auxiliar na manipulação, manutenção e padronização de indicadores de carregamento dentro de uma aplicação.
 
+## Exemplo
+
 ### Visualização
 
 ![button](../static/img/screenshots/loadingIndicator.jpg)
-
-## Exemplo
 
 ### Fonte
 

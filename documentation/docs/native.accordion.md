@@ -11,11 +11,11 @@ title: Accordion
 
 Esse componente tem como função auxiliar na manipulação, manutenção e padronização de acordeões dentro de uma aplicação.
 
+## Exemplo
+
 ### Visualização
 
 ![avatar](../static/img/screenshots/accordion.jpg)
-
-## Exemplo
 
 ### Fonte
 

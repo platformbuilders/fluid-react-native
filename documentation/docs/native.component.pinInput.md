@@ -11,11 +11,11 @@ title: PinInput
 
 Esse componente tem como função auxiliar na manipulação, manutenção e padronização de caixas de inserção de códigos PIN dentro de uma aplicação.
 
+## Exemplo
+
 ### Visualização
 
 ![button](../static/img/screenshots/pinInput.jpg)
-
-## Exemplo
 
 ### Fonte
 

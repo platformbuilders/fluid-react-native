@@ -11,11 +11,11 @@ title: FAB
 
 FAB (Floating Action Button), esse componente tem como função auxiliar na manipulação, manutenção e padronização de botões de ação flutuantes dentro de uma aplicação.
 
+## Exemplo
+
 ### Visualização
 
 ![button](../static/img/screenshots/fab.jpg)
-
-## Exemplo
 
 ### Fonte
 

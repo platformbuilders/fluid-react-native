@@ -11,13 +11,13 @@ title: FormError
 
 Esse componente tem como função auxiliar na manipulação, manutenção e padronização de erros em formulários dentro de uma aplicação.
 
+## Exemplo
+
 ### Visualização
 
 ![button](../static/img/screenshots/formError.jpg)
 
 O componente é bem simples mesmo, um exemplo de aplicação mais real pode ser visto no elemento [**CheckBox**](./native.component.checkBox), onde há um erro hipotético em formulário.
-
-## Exemplo
 
 ### Fonte
 

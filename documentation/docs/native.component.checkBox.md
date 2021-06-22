@@ -11,11 +11,11 @@ title: Checkbox
 
 Esse componente tem como função auxiliar na manipulação, manutenção e padronização de caixas de seleção dentro de uma aplicação.
 
+## Exemplo
+
 ### Visualização
 
 ![button](../static/img/screenshots/checkBox.jpg)
-
-## Exemplo
 
 ### Fonte
 
