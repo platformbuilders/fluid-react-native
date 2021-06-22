@@ -3,6 +3,7 @@
 [![Build Status][check-badge]][workflows]
 [![npm][npm-badge]][npm]
 [![MIT][license-badge]][license]
+[![Docusaurus Firebase Deploy](https://github.com/platformbuilders/react-native-elements/actions/workflows/docusaurus_release.yml/badge.svg)](https://github.com/platformbuilders/react-native-elements/actions/workflows/docusaurus_release.yml)
 
 [npm-badge]: https://img.shields.io/npm/v/@platformbuilders/react-native-elements.svg
 [npm]: https://www.npmjs.com/package/@platformbuilders/react-native-elements
