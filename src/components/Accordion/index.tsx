@@ -90,7 +90,7 @@ const AccordionContainer: React.FC<Props> = ({
   return (
     <Accordion
       sections={data}
-      touchableComponent={(props) => <TouchableOpacity {...props} />}
+      touchableComponent={TouchableOpacity}
       activeSections={activeSections}
       renderHeader={renderHeader}
       renderContent={renderContent}
