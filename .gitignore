@@ -59,6 +59,7 @@ buck-out/
 
 # testing
 /coverage
+/.jest
 
 # dist
 /native
