@@ -20,6 +20,7 @@ exports[`<Link /> should render link 1`] = `
   testID="testing"
 >
   <Text
+    accessibility="Texto "
     accessibilityLabel="Texto "
     style={
       Array [

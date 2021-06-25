@@ -14,99 +14,121 @@ exports[`<TextInput /> should render textinput 1`] = `
     ]
   }
 >
-  <Text
-    accessibilityLabel="Erro "
-    contrast={false}
-    status="DEFAULT"
-    style={
-      Array [
-        Object {
-          "color": "#212121",
-          "fontSize": 31,
-          "lineHeight": 43,
-          "position": "absolute",
-          "top": 20,
-        },
-        Object {
-          "fontSize": 35,
-          "top": 20,
-        },
-      ]
-    }
-    testID="error_test"
-    variant="body"
-  >
-    
-  </Text>
   <View
-    multiline={false}
+    error={false}
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "justifyContent": "center",
-          "paddingTop": 18.857142857142858,
-          "width": "100%",
+          "borderColor": "black",
+          "borderStyle": "solid",
+          "borderWidth": 0,
         },
       ]
     }
   >
-    <TextInput
-      accessibility=""
-      accessibilityLabel=""
-      allowFontScaling={false}
-      withoutBottomline={true}
-      centered={false}
+    <Text
+      accessibilityLabel="Erro "
       contrast={false}
-      id="test"
-      isPlaceholder={true}
-      keyboardType="default"
-      large={false}
-      multiline={false}
-      onBlur={[Function]}
-      onChangeText={[Function]}
-      onFocus={[Function]}
-      placeholder=""
-      placeholderTextColor="#72727260"
-      rejectResponderTermination={true}
       status="DEFAULT"
       style={
         Array [
           Object {
-            "borderWidth": 0,
             "color": "#212121",
-            "flexGrow": 1,
-            "fontSize": 33,
+            "fontSize": 31,
             "lineHeight": 43,
-            "marginTop": 0,
-            "minHeight": 37.714285714285715,
-            "paddingBottom": 0,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 0,
+            "position": "absolute",
+            "top": 8,
           },
-          Object {},
+          Object {
+            "fontSize": 35,
+            "top": 8,
+          },
         ]
       }
-      testID="test"
-      textAlign="left"
-      underlineColorAndroid="transparent"
-      value=""
-      variant="headline"
+      testID="error_test"
+      variant="body"
+    >
+      
+    </Text>
+    <View
+      multiline={false}
+      rightIcon={false}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 6.285714285714286,
+          },
+        ]
+      }
+    >
+      <TextInput
+        accessibility=""
+        accessibilityLabel=""
+        allowFontScaling={false}
+        autoFocus={false}
+        centered={false}
+        contrast={false}
+        id="test"
+        isPlaceholder={true}
+        keyboardType="default"
+        large={false}
+        multiline={false}
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        placeholder=""
+        placeholderTextColor="#72727260"
+        rejectResponderTermination={true}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "borderWidth": 0,
+              "color": "#212121",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "fontSize": 33,
+              "lineHeight": 43,
+              "marginTop": 0,
+              "minHeight": 37.714285714285715,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
+              "width": "100%",
+            },
+            Object {},
+          ]
+        }
+        testID="test"
+        textAlign="left"
+        type="no-mask"
+        underlineColorAndroid="transparent"
+        value=""
+        variant="headline"
+        withBottomline={true}
+      />
+    </View>
+    <View
+      contrast={false}
+      status="DEFAULT"
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#212121",
+            "height": 0.5,
+          },
+        ]
+      }
     />
   </View>
-  <View
-    contrast={false}
-    status="DEFAULT"
-    style={
-      Array [
-        Object {
-          "backgroundColor": "#212121",
-          "height": 0.5,
-        },
-      ]
-    }
-  />
 </View>
 `;

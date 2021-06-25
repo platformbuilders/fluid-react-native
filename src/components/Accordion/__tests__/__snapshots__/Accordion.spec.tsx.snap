@@ -15,6 +15,11 @@ exports[`<Accordion /> should render Accordion 1`] = `
       onResponderTerminate={[Function]}
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
     >
       <View
         isActive={false}

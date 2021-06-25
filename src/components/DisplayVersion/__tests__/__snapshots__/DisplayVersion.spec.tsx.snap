@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DisplayVersion /> should render and match snapshot for default props 1`] = `
+<Text
+  accessibility="display-version"
+  accessibilityLabel="display-version"
+  style={
+    Array [
+      Object {
+        "color": "#212121",
+        "fontSize": 29,
+        "lineHeight": 39,
+      },
+      Object {
+        "color": "#C6B09E",
+        "marginVertical": 18.857142857142858,
+        "textAlign": "center",
+      },
+    ]
+  }
+  testID="display-version"
+  variant="subhead"
+>
+  Versão 
+  1.0
+  /
+  1
+</Text>
+`;

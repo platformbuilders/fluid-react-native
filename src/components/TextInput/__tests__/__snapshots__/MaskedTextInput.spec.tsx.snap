@@ -18,7 +18,9 @@ exports[`<MaskedTextInput /> should render textinput 1`] = `
       Object {
         "borderWidth": 0,
         "color": "#212121",
+        "flexBasis": 0,
         "flexGrow": 1,
+        "flexShrink": 1,
         "fontSize": 33,
         "lineHeight": 43,
         "marginTop": 0,
@@ -27,6 +29,7 @@ exports[`<MaskedTextInput /> should render textinput 1`] = `
         "paddingLeft": 0,
         "paddingRight": 0,
         "paddingTop": 0,
+        "width": "100%",
       },
     ]
   }
