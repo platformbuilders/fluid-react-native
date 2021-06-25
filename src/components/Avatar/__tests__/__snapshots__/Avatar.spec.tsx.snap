@@ -144,7 +144,7 @@ exports[`<Avatar /> should render Avatar with camera 1`] = `
             "opacity": 1,
           }
         }
-        testID=""
+        testID="Camera"
       >
         <View>
           <Text

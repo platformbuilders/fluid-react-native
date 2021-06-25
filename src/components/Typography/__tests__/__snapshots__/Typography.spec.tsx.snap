@@ -2,6 +2,8 @@
 
 exports[`<Typography /> should render and match snapshot for default props 1`] = `
 <Text
+  accessibility="undefined"
+  accessibilityLabel="undefined"
   style={
     Array [
       Object {
@@ -9,15 +11,17 @@ exports[`<Typography /> should render and match snapshot for default props 1`] =
         "fontSize": 31,
         "lineHeight": 43,
       },
-      Object {},
     ]
   }
+  testID="undefined"
   variant="body"
 />
 `;
 
 exports[`<Typography /> should render and match snapshot for variant caption1 1`] = `
 <Text
+  accessibility="undefined"
+  accessibilityLabel="undefined"
   style={
     Array [
       Object {
@@ -25,15 +29,17 @@ exports[`<Typography /> should render and match snapshot for variant caption1 1`
         "fontSize": 24,
         "lineHeight": 31,
       },
-      Object {},
     ]
   }
+  testID="undefined"
   variant="caption1"
 />
 `;
 
 exports[`<Typography /> should render and match snapshot for variant caption2 1`] = `
 <Text
+  accessibility="undefined"
+  accessibilityLabel="undefined"
   style={
     Array [
       Object {
@@ -41,15 +47,17 @@ exports[`<Typography /> should render and match snapshot for variant caption2 1`
         "fontSize": 22,
         "lineHeight": 26,
       },
-      Object {},
     ]
   }
+  testID="undefined"
   variant="caption2"
 />
 `;
 
 exports[`<Typography /> should render and match snapshot for variant footnote 1`] = `
 <Text
+  accessibility="undefined"
+  accessibilityLabel="undefined"
   style={
     Array [
       Object {
@@ -57,15 +65,17 @@ exports[`<Typography /> should render and match snapshot for variant footnote 1`
         "fontSize": 26,
         "lineHeight": 35,
       },
-      Object {},
     ]
   }
+  testID="undefined"
   variant="footnote"
 />
 `;
 
 exports[`<Typography /> should render and match snapshot for variant headline 1`] = `
 <Text
+  accessibility="undefined"
+  accessibilityLabel="undefined"
   style={
     Array [
       Object {
@@ -73,15 +83,17 @@ exports[`<Typography /> should render and match snapshot for variant headline 1`
         "fontSize": 33,
         "lineHeight": 43,
       },
-      Object {},
     ]
   }
+  testID="undefined"
   variant="headline"
 />
 `;
 
 exports[`<Typography /> should render and match snapshot for variant largeTitle 1`] = `
 <Text
+  accessibility="undefined"
+  accessibilityLabel="undefined"
   style={
     Array [
       Object {
@@ -89,15 +101,17 @@ exports[`<Typography /> should render and match snapshot for variant largeTitle 
         "fontSize": 67,
         "lineHeight": 80,
       },
-      Object {},
     ]
   }
+  testID="undefined"
   variant="largeTitle"
 />
 `;
 
 exports[`<Typography /> should render and match snapshot for variant subhead 1`] = `
 <Text
+  accessibility="undefined"
+  accessibilityLabel="undefined"
   style={
     Array [
       Object {
@@ -105,15 +119,17 @@ exports[`<Typography /> should render and match snapshot for variant subhead 1`]
         "fontSize": 29,
         "lineHeight": 39,
       },
-      Object {},
     ]
   }
+  testID="undefined"
   variant="subhead"
 />
 `;
 
 exports[`<Typography /> should render and match snapshot for variant title1 1`] = `
 <Text
+  accessibility="undefined"
+  accessibilityLabel="undefined"
   style={
     Array [
       Object {
@@ -121,15 +137,17 @@ exports[`<Typography /> should render and match snapshot for variant title1 1`] 
         "fontSize": 55,
         "lineHeight": 67,
       },
-      Object {},
     ]
   }
+  testID="undefined"
   variant="title1"
 />
 `;
 
 exports[`<Typography /> should render and match snapshot for variant title2 1`] = `
 <Text
+  accessibility="undefined"
+  accessibilityLabel="undefined"
   style={
     Array [
       Object {
@@ -137,15 +155,17 @@ exports[`<Typography /> should render and match snapshot for variant title2 1`] 
         "fontSize": 43,
         "lineHeight": 55,
       },
-      Object {},
     ]
   }
+  testID="undefined"
   variant="title2"
 />
 `;
 
 exports[`<Typography /> should render and match snapshot for variant title3 1`] = `
 <Text
+  accessibility="undefined"
+  accessibilityLabel="undefined"
   style={
     Array [
       Object {
@@ -153,15 +173,17 @@ exports[`<Typography /> should render and match snapshot for variant title3 1`] 
         "fontSize": 39,
         "lineHeight": 49,
       },
-      Object {},
     ]
   }
+  testID="undefined"
   variant="title3"
 />
 `;
 
 exports[`<Typography /> should render and match snapshot for variant title4 1`] = `
 <Text
+  accessibility="undefined"
+  accessibilityLabel="undefined"
   style={
     Array [
       Object {
@@ -169,9 +191,9 @@ exports[`<Typography /> should render and match snapshot for variant title4 1`] 
         "fontSize": 35,
         "lineHeight": 43,
       },
-      Object {},
     ]
   }
+  testID="undefined"
   variant="title4"
 />
 `;

@@ -2,6 +2,7 @@
 
 exports[`<FormError /> should render the form error component 1`] = `
 <Text
+  accessibility="Erro testing error"
   accessibilityLabel="Erro testing error"
   centered={false}
   large={true}

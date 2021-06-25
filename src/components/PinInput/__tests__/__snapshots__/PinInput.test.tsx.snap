@@ -7,7 +7,6 @@ exports[`<PinInput /> should render textinput 1`] = `
       Object {
         "alignItems": "center",
         "flexDirection": "row",
-        "marginBottom": 18.857142857142858,
       },
     ]
   }

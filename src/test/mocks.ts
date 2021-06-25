@@ -22,6 +22,6 @@ NativeModules.ReactNativeHaptic = {
 };
 
 // Reset the mocks before each test
-// global.beforeEach(() => {
-//   jest.resetAllMocks();
-// });
+global.beforeEach(() => {
+  jest.resetAllMocks();
+});

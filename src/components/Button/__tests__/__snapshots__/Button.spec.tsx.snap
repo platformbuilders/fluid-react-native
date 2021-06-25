@@ -21,6 +21,7 @@ exports[`<Button /> should render button 1`] = `
   testID="testing"
 >
   <View
+    buttonVariant="primary"
     disabled={false}
     rounded={false}
     style={
@@ -33,21 +34,22 @@ exports[`<Button /> should render button 1`] = `
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 75.42857142857143,
+          "height": 70.71428571428572,
           "justifyContent": "center",
-          "marginVertical": 9.428571428571429,
           "minWidth": 282.8571428571429,
-          "paddingBottom": 10,
-          "paddingLeft": 11,
-          "paddingRight": 11,
-          "paddingTop": 10,
+          "paddingBottom": 6.285714285714286,
+          "paddingLeft": 6.285714285714286,
+          "paddingRight": 6.285714285714286,
+          "paddingTop": 6.285714285714286,
         },
         Object {},
       ]
     }
-    variant="primary"
   >
     <Text
+      accessibility="undefined"
+      accessibilityLabel="undefined"
+      buttonVariant="primary"
       disabled={false}
       style={
         Array [
@@ -64,6 +66,7 @@ exports[`<Button /> should render button 1`] = `
           Object {},
         ]
       }
+      testID="undefined"
       variant="body"
     />
   </View>
@@ -84,13 +87,14 @@ exports[`<Button /> should render button when rounded 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 50,
+      "borderRadius": 35.35714285714286,
       "opacity": 1,
     }
   }
   testID="testing"
 >
   <View
+    buttonVariant="primary"
     disabled={false}
     rounded={true}
     style={
@@ -99,13 +103,12 @@ exports[`<Button /> should render button when rounded 1`] = `
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
           "borderColor": "black",
-          "borderRadius": 37.714285714285715,
+          "borderRadius": 35.35714285714286,
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 75.42857142857143,
+          "height": 70.71428571428572,
           "justifyContent": "center",
-          "marginVertical": 9.428571428571429,
           "minWidth": 282.8571428571429,
           "paddingBottom": 0,
           "paddingLeft": 0,
@@ -115,9 +118,11 @@ exports[`<Button /> should render button when rounded 1`] = `
         Object {},
       ]
     }
-    variant="primary"
   >
     <Text
+      accessibility="undefined"
+      accessibilityLabel="undefined"
+      buttonVariant="primary"
       disabled={false}
       style={
         Array [
@@ -134,6 +139,7 @@ exports[`<Button /> should render button when rounded 1`] = `
           Object {},
         ]
       }
+      testID="undefined"
       variant="body"
     />
   </View>
@@ -161,6 +167,7 @@ exports[`<Button /> should render button with loading 1`] = `
   testID="testing"
 >
   <View
+    buttonVariant="primary"
     disabled={false}
     rounded={false}
     style={
@@ -173,19 +180,17 @@ exports[`<Button /> should render button with loading 1`] = `
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 75.42857142857143,
+          "height": 70.71428571428572,
           "justifyContent": "center",
-          "marginVertical": 9.428571428571429,
           "minWidth": 282.8571428571429,
-          "paddingBottom": 10,
-          "paddingLeft": 11,
-          "paddingRight": 11,
-          "paddingTop": 10,
+          "paddingBottom": 6.285714285714286,
+          "paddingLeft": 6.285714285714286,
+          "paddingRight": 6.285714285714286,
+          "paddingTop": 6.285714285714286,
         },
         Object {},
       ]
     }
-    variant="primary"
   >
     <View
       style={
