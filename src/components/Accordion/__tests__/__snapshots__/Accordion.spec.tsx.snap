@@ -55,3 +55,883 @@ exports[`<Accordion /> should render Accordion 1`] = `
   </View>
 </View>
 `;
+
+exports[`<Accordion /> should render Accordion with body custom 1`] = `
+<View>
+  <View
+    style={Object {}}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        isActive={false}
+      >
+        <Text
+          isActive={false}
+        >
+          Mock
+        </Text>
+      </View>
+    </View>
+    <View
+      pointerEvents="none"
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        forwardedRef={[Function]}
+        onLayout={[Function]}
+        style={Object {}}
+      >
+        <View>
+          <Text
+            style={
+              Object {
+                "color": "#2980b9",
+              }
+            }
+          >
+            Unity Test
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Accordion /> should render Accordion with content custom 1`] = `
+<View>
+  <View
+    style={Object {}}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        isActive={false}
+      >
+        <Text
+          isActive={false}
+        >
+          Mock
+        </Text>
+      </View>
+    </View>
+    <View
+      pointerEvents="none"
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        forwardedRef={[Function]}
+        onLayout={[Function]}
+        style={Object {}}
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#f1c40f",
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Accordion /> should render Accordion with header custom 1`] = `
+<View>
+  <View
+    style={Object {}}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#27ae60",
+          }
+        }
+      />
+    </View>
+    <View
+      pointerEvents="none"
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        forwardedRef={[Function]}
+        onLayout={[Function]}
+        style={Object {}}
+      >
+        <View>
+          <Text>
+            Mock Content
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Accordion /> should render Accordion with icon 1`] = `
+<View>
+  <View
+    style={Object {}}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        isActive={false}
+      >
+        <Text
+          isActive={false}
+        >
+          Mock
+        </Text>
+        <View
+          style={Object {}}
+        >
+          <View
+            accessibilityLabel="Abrir"
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID="chevron-up"
+          >
+            <View>
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": undefined,
+                      "fontSize": 37.714285714285715,
+                    },
+                    undefined,
+                    Object {
+                      "fontFamily": "Material Design Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                󰅀
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      pointerEvents="none"
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        forwardedRef={[Function]}
+        onLayout={[Function]}
+        style={Object {}}
+      >
+        <View>
+          <Text>
+            Mock Content
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Accordion /> should render Accordion with icon color grey inactive 1`] = `
+<View>
+  <View
+    style={Object {}}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        isActive={false}
+      >
+        <Text
+          isActive={false}
+        >
+          Mock
+        </Text>
+        <View
+          style={Object {}}
+        >
+          <View
+            accessibilityLabel="Abrir"
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID="chevron-up"
+          >
+            <View>
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#95a5a6",
+                      "fontSize": 37.714285714285715,
+                    },
+                    undefined,
+                    Object {
+                      "fontFamily": "Material Design Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                󰅀
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      pointerEvents="none"
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        forwardedRef={[Function]}
+        onLayout={[Function]}
+        style={Object {}}
+      >
+        <View>
+          <Text>
+            Mock Content
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Accordion /> should render Accordion with icon color red 1`] = `
+<View>
+  <View
+    style={Object {}}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        isActive={false}
+      >
+        <Text
+          isActive={false}
+        >
+          Mock
+        </Text>
+        <View
+          style={Object {}}
+        >
+          <View
+            accessibilityLabel="Abrir"
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID="chevron-up"
+          >
+            <View>
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": undefined,
+                      "fontSize": 37.714285714285715,
+                    },
+                    undefined,
+                    Object {
+                      "fontFamily": "Material Design Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                󰅀
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      pointerEvents="none"
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        forwardedRef={[Function]}
+        onLayout={[Function]}
+        style={Object {}}
+      >
+        <View>
+          <Text>
+            Mock Content
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Accordion /> should render Accordion with icon down text custom 1`] = `
+<View>
+  <View
+    style={Object {}}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        isActive={false}
+      >
+        <Text
+          isActive={false}
+        >
+          Mock
+        </Text>
+        <View
+          style={Object {}}
+        >
+          <View
+            accessibilityLabel="Abrir"
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID="chevron-up"
+          >
+            <View>
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": undefined,
+                      "fontSize": 37.714285714285715,
+                    },
+                    undefined,
+                    Object {
+                      "fontFamily": "Material Design Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                󰅀
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      pointerEvents="none"
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        forwardedRef={[Function]}
+        onLayout={[Function]}
+        style={Object {}}
+      >
+        <View>
+          <Text>
+            Mock Content
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Accordion /> should render Accordion with icon up text custom 1`] = `
+<View>
+  <View
+    style={Object {}}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        isActive={false}
+      >
+        <Text
+          isActive={false}
+        >
+          Mock
+        </Text>
+        <View
+          style={Object {}}
+        >
+          <View
+            accessibilityLabel="Abrir"
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID="chevron-up"
+          >
+            <View>
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": undefined,
+                      "fontSize": 37.714285714285715,
+                    },
+                    undefined,
+                    Object {
+                      "fontFamily": "Material Design Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                󰅀
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      pointerEvents="none"
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        forwardedRef={[Function]}
+        onLayout={[Function]}
+        style={Object {}}
+      >
+        <View>
+          <Text>
+            Mock Content
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Accordion /> should render Accordion with markdown 1`] = `
+<View>
+  <View
+    style={Object {}}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        isActive={false}
+      >
+        <Text
+          isActive={false}
+        >
+          Mock
+        </Text>
+      </View>
+    </View>
+    <View
+      pointerEvents="none"
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        forwardedRef={[Function]}
+        onLayout={[Function]}
+        style={Object {}}
+      >
+        <View>
+          <View
+            style={Object {}}
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-start",
+                  "marginBottom": 10,
+                  "marginTop": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <Text
+                style={Object {}}
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {},
+                      Object {},
+                    ]
+                  }
+                >
+                  Mock Content
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Accordion /> should render Accordion with onChange function 1`] = `
+<View>
+  <View
+    style={Object {}}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        isActive={false}
+      >
+        <Text
+          isActive={false}
+        >
+          Mock
+        </Text>
+      </View>
+    </View>
+    <View
+      pointerEvents="none"
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        forwardedRef={[Function]}
+        onLayout={[Function]}
+        style={Object {}}
+      >
+        <View>
+          <Text>
+            Mock Content
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Accordion /> should render Accordion with title custom 1`] = `
+<View>
+  <View
+    style={Object {}}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        isActive={false}
+      >
+        <Text
+          style={
+            Object {
+              "color": "#e74c3c",
+            }
+          }
+        >
+          Unity Test
+        </Text>
+      </View>
+    </View>
+    <View
+      pointerEvents="none"
+      style={
+        Object {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        forwardedRef={[Function]}
+        onLayout={[Function]}
+        style={Object {}}
+      >
+        <View>
+          <Text>
+            Mock Content
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
