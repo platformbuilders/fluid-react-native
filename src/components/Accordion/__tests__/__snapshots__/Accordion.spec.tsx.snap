@@ -173,9 +173,12 @@ exports[`<Accordion /> should render Accordion with content custom 1`] = `
       >
         <View
           style={
-            Object {
-              "backgroundColor": "#f1c40f",
-            }
+            Array [
+              Object {},
+              Object {
+                "backgroundColor": "#f1c40f",
+              },
+            ]
           }
         />
       </View>
@@ -207,9 +210,12 @@ exports[`<Accordion /> should render Accordion with header custom 1`] = `
     >
       <View
         style={
-          Object {
-            "backgroundColor": "#27ae60",
-          }
+          Array [
+            Object {},
+            Object {
+              "backgroundColor": "#27ae60",
+            },
+          ]
         }
       />
     </View>
