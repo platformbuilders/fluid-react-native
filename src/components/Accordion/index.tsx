@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import { head } from 'lodash';
-import { Text, TouchableOpacity, View } from 'react-native';
+import {
+  Text,
+  TouchableOpacity,
+  TouchableOpacityProps,
+  View,
+} from 'react-native';
 import Accordion from 'react-native-collapsible/Accordion';
 import Markdown from 'react-native-markdown-display';
 import { AccordionType } from '../../types';
@@ -90,7 +95,9 @@ const AccordionContainer: React.FC<Props> = ({
   return (
     <Accordion
       sections={data}
-      touchableComponent={(props: any) => <TouchableOpacity {...props} />}
+      touchableComponent={(props: TouchableOpacityProps) => (
+        <TouchableOpacity {...props} />
+      )}
       activeSections={activeSections}
       renderHeader={renderHeader}
       renderContent={renderContent}

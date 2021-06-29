@@ -6,3 +6,5 @@ export const Icon = styled(DefaultIcon).attrs({
   touchable: false,
   size: moderateScale(24),
 })``;
+
+export const Container = styled.View``;

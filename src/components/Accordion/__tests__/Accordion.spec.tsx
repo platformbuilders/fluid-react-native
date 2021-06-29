@@ -1,10 +1,11 @@
 import 'jest';
 import React from 'react';
-import { Text, View, ViewStyle } from 'react-native';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import Accordion from '..';
 import { theme } from '../../../test/helpers';
+import Typography from '../../Typography';
+import { Container } from '../styles';
 
 const mockData = [
   {
@@ -28,9 +29,7 @@ describe('<Accordion />', () => {
       <ThemeProvider theme={theme}>
         <Accordion
           data={mockData}
-          StyledTitle={() => (
-            <Text style={{ color: '#e74c3c' } as ViewStyle}>Unity Test</Text>
-          )}
+          StyledTitle={() => <Typography>Unity Test</Typography>}
         />
       </ThemeProvider>,
     );
@@ -42,9 +41,7 @@ describe('<Accordion />', () => {
       <ThemeProvider theme={theme}>
         <Accordion
           data={mockData}
-          StyledBody={() => (
-            <Text style={{ color: '#2980b9' } as ViewStyle}>Unity Test</Text>
-          )}
+          StyledBody={() => <Typography>Unity Test</Typography>}
         />
       </ThemeProvider>,
     );
@@ -56,7 +53,7 @@ describe('<Accordion />', () => {
         <Accordion
           data={mockData}
           StyledHeader={() => (
-            <View style={{ backgroundColor: '#27ae60' } as ViewStyle} />
+            <Container style={{ backgroundColor: '#27ae60' }} />
           )}
         />
       </ThemeProvider>,
@@ -70,7 +67,7 @@ describe('<Accordion />', () => {
         <Accordion
           data={mockData}
           StyledContent={() => (
-            <View style={{ backgroundColor: '#f1c40f' } as ViewStyle} />
+            <Container style={{ backgroundColor: '#f1c40f' }} />
           )}
         />
       </ThemeProvider>,

@@ -103,11 +103,19 @@ exports[`<Accordion /> should render Accordion with body custom 1`] = `
       >
         <View>
           <Text
+            accessibility="Unity Test"
+            accessibilityLabel="Unity Test"
             style={
-              Object {
-                "color": "#2980b9",
-              }
+              Array [
+                Object {
+                  "color": "#212121",
+                  "fontSize": 31,
+                  "lineHeight": 43,
+                },
+              ]
             }
+            testID="Unity Test"
+            variant="body"
           >
             Unity Test
           </Text>
@@ -901,11 +909,19 @@ exports[`<Accordion /> should render Accordion with title custom 1`] = `
         isActive={false}
       >
         <Text
+          accessibility="Unity Test"
+          accessibilityLabel="Unity Test"
           style={
-            Object {
-              "color": "#e74c3c",
-            }
+            Array [
+              Object {
+                "color": "#212121",
+                "fontSize": 31,
+                "lineHeight": 43,
+              },
+            ]
           }
+          testID="Unity Test"
+          variant="body"
         >
           Unity Test
         </Text>
