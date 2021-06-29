@@ -20,6 +20,7 @@ module.exports = {
     'src/**/*.{ts,tsx}',
     '!**/node_modules/**',
     '!**/assets/**',
+    '!**/types/**',
     '!**/__tests__/**',
     '!**/documentation/**',
     '!**/storybook/**',
