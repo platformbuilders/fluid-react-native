@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
     /* Basic Options */
-    "target": "ESNext",
-    "module": "commonjs",
+    "target": "es6",
+    "module": "es6",
+    "lib": ["es6"],
     "types": ["react-native", "jest"],
     "declaration": true,
     "declarationMap": true,
