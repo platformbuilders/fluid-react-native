@@ -146,6 +146,466 @@ exports[`<Button /> should render button when rounded 1`] = `
 </View>
 `;
 
+exports[`<Button /> should render button with children 1`] = `
+<View
+  accessibilityLabel=""
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 0,
+      "opacity": 1,
+    }
+  }
+  testID="testing"
+>
+  <View
+    buttonVariant="primary"
+    disabled={false}
+    rounded={false}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#C6B09E",
+          "borderColor": "black",
+          "borderRadius": 11,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "height": 70.71428571428572,
+          "justifyContent": "center",
+          "minWidth": 282.8571428571429,
+          "paddingBottom": 6.285714285714286,
+          "paddingLeft": 6.285714285714286,
+          "paddingRight": 6.285714285714286,
+          "paddingTop": 6.285714285714286,
+        },
+        Object {},
+      ]
+    }
+  >
+    <Text
+      accessibility="[object Object]"
+      accessibilityLabel="[object Object]"
+      buttonVariant="primary"
+      disabled={false}
+      style={
+        Array [
+          Object {
+            "color": "#212121",
+            "fontSize": 31,
+            "lineHeight": 43,
+          },
+          Object {
+            "color": "#ffffff",
+            "fontWeight": "500",
+            "letterSpacing": 0.4,
+          },
+          Object {},
+        ]
+      }
+      testID="[object Object]"
+      variant="body"
+    >
+      <Text
+        accessibility="Test"
+        accessibilityLabel="Test"
+        style={
+          Array [
+            Object {
+              "color": "#212121",
+              "fontSize": 31,
+              "lineHeight": 43,
+            },
+          ]
+        }
+        testID="Test"
+        variant="body"
+      >
+        Test
+      </Text>
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`<Button /> should render button with contrast 1`] = `
+<View
+  accessibilityLabel=""
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 0,
+      "opacity": 1,
+    }
+  }
+  testID="testing"
+>
+  <View
+    buttonVariant="primary"
+    disabled={false}
+    rounded={false}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#C6B09E",
+          "borderColor": "black",
+          "borderRadius": 11,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "height": 70.71428571428572,
+          "justifyContent": "center",
+          "minWidth": 282.8571428571429,
+          "paddingBottom": 6.285714285714286,
+          "paddingLeft": 6.285714285714286,
+          "paddingRight": 6.285714285714286,
+          "paddingTop": 6.285714285714286,
+        },
+        Object {},
+      ]
+    }
+  >
+    <Text
+      accessibility="undefined"
+      accessibilityLabel="undefined"
+      buttonVariant="primary"
+      disabled={false}
+      style={
+        Array [
+          Object {
+            "color": "#212121",
+            "fontSize": 31,
+            "lineHeight": 43,
+          },
+          Object {
+            "color": "#ffffff",
+            "fontWeight": "500",
+            "letterSpacing": 0.4,
+          },
+          Object {},
+        ]
+      }
+      testID="undefined"
+      variant="body"
+    />
+  </View>
+</View>
+`;
+
+exports[`<Button /> should render button with custom accessibility label 1`] = `
+<View
+  accessibilityLabel="testing"
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 0,
+      "opacity": 1,
+    }
+  }
+  testID="testing"
+>
+  <View
+    buttonVariant="primary"
+    disabled={false}
+    rounded={false}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#C6B09E",
+          "borderColor": "black",
+          "borderRadius": 11,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "height": 70.71428571428572,
+          "justifyContent": "center",
+          "minWidth": 282.8571428571429,
+          "paddingBottom": 6.285714285714286,
+          "paddingLeft": 6.285714285714286,
+          "paddingRight": 6.285714285714286,
+          "paddingTop": 6.285714285714286,
+        },
+        Object {},
+      ]
+    }
+  >
+    <Text
+      accessibility="undefined"
+      accessibilityLabel="undefined"
+      buttonVariant="primary"
+      disabled={false}
+      style={
+        Array [
+          Object {
+            "color": "#212121",
+            "fontSize": 31,
+            "lineHeight": 43,
+          },
+          Object {
+            "color": "#ffffff",
+            "fontWeight": "500",
+            "letterSpacing": 0.4,
+          },
+          Object {},
+        ]
+      }
+      testID="undefined"
+      variant="body"
+    />
+  </View>
+</View>
+`;
+
+exports[`<Button /> should render button with custom style 1`] = `
+<View
+  accessibilityLabel=""
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 0,
+      "opacity": 1,
+    }
+  }
+  testID="testing"
+>
+  <View
+    buttonVariant="primary"
+    disabled={false}
+    rounded={false}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#C6B09E",
+          "borderColor": "black",
+          "borderRadius": 11,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "height": 70.71428571428572,
+          "justifyContent": "center",
+          "minWidth": 282.8571428571429,
+          "paddingBottom": 6.285714285714286,
+          "paddingLeft": 6.285714285714286,
+          "paddingRight": 6.285714285714286,
+          "paddingTop": 6.285714285714286,
+        },
+        Object {
+          "backgroundColor": "#2980b9",
+        },
+      ]
+    }
+  >
+    <Text
+      accessibility="undefined"
+      accessibilityLabel="undefined"
+      buttonVariant="primary"
+      disabled={false}
+      style={
+        Array [
+          Object {
+            "color": "#212121",
+            "fontSize": 31,
+            "lineHeight": 43,
+          },
+          Object {
+            "color": "#ffffff",
+            "fontWeight": "500",
+            "letterSpacing": 0.4,
+          },
+          Object {},
+        ]
+      }
+      testID="undefined"
+      variant="body"
+    />
+  </View>
+</View>
+`;
+
+exports[`<Button /> should render button with custom text style 1`] = `
+<View
+  accessibilityLabel=""
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 0,
+      "opacity": 1,
+    }
+  }
+  testID="testing"
+>
+  <View
+    buttonVariant="primary"
+    disabled={false}
+    rounded={false}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#C6B09E",
+          "borderColor": "black",
+          "borderRadius": 11,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "height": 70.71428571428572,
+          "justifyContent": "center",
+          "minWidth": 282.8571428571429,
+          "paddingBottom": 6.285714285714286,
+          "paddingLeft": 6.285714285714286,
+          "paddingRight": 6.285714285714286,
+          "paddingTop": 6.285714285714286,
+        },
+        Object {},
+      ]
+    }
+  >
+    <Text
+      accessibility="undefined"
+      accessibilityLabel="undefined"
+      buttonVariant="primary"
+      disabled={false}
+      style={
+        Array [
+          Object {
+            "color": "#212121",
+            "fontSize": 31,
+            "lineHeight": 43,
+          },
+          Object {
+            "color": "#ffffff",
+            "fontWeight": "500",
+            "letterSpacing": 0.4,
+          },
+          Object {
+            "color": "#2980b9",
+          },
+        ]
+      }
+      testID="undefined"
+      variant="body"
+    />
+  </View>
+</View>
+`;
+
+exports[`<Button /> should render button with disabled 1`] = `
+<View
+  accessibilityLabel=""
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 0,
+      "opacity": 1,
+    }
+  }
+  testID="testing"
+>
+  <View
+    buttonVariant="primary"
+    disabled={true}
+    rounded={false}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#eeeeee",
+          "borderColor": "black",
+          "borderRadius": 11,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "height": 70.71428571428572,
+          "justifyContent": "center",
+          "minWidth": 282.8571428571429,
+          "paddingBottom": 6.285714285714286,
+          "paddingLeft": 6.285714285714286,
+          "paddingRight": 6.285714285714286,
+          "paddingTop": 6.285714285714286,
+        },
+        Object {},
+      ]
+    }
+  >
+    <Text
+      accessibility="undefined"
+      accessibilityLabel="undefined"
+      buttonVariant="primary"
+      disabled={true}
+      style={
+        Array [
+          Object {
+            "color": "#212121",
+            "fontSize": 31,
+            "lineHeight": 43,
+          },
+          Object {
+            "color": "#cccccc",
+            "fontWeight": "500",
+            "letterSpacing": 0.4,
+          },
+          Object {},
+        ]
+      }
+      testID="undefined"
+      variant="body"
+    />
+  </View>
+</View>
+`;
+
 exports[`<Button /> should render button with loading 1`] = `
 <View
   accessibilityLabel=""
@@ -234,6 +694,225 @@ exports[`<Button /> should render button with loading 1`] = `
         variant="button"
       />
     </View>
+  </View>
+</View>
+`;
+
+exports[`<Button /> should render button with test id 1`] = `
+<View
+  accessibilityLabel=""
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 0,
+      "opacity": 1,
+    }
+  }
+  testID="test"
+>
+  <View
+    buttonVariant="primary"
+    disabled={false}
+    rounded={false}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#C6B09E",
+          "borderColor": "black",
+          "borderRadius": 11,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "height": 70.71428571428572,
+          "justifyContent": "center",
+          "minWidth": 282.8571428571429,
+          "paddingBottom": 6.285714285714286,
+          "paddingLeft": 6.285714285714286,
+          "paddingRight": 6.285714285714286,
+          "paddingTop": 6.285714285714286,
+        },
+        Object {},
+      ]
+    }
+  >
+    <Text
+      accessibility="undefined"
+      accessibilityLabel="undefined"
+      buttonVariant="primary"
+      disabled={false}
+      style={
+        Array [
+          Object {
+            "color": "#212121",
+            "fontSize": 31,
+            "lineHeight": 43,
+          },
+          Object {
+            "color": "#ffffff",
+            "fontWeight": "500",
+            "letterSpacing": 0.4,
+          },
+          Object {},
+        ]
+      }
+      testID="undefined"
+      variant="body"
+    />
+  </View>
+</View>
+`;
+
+exports[`<Button /> should render button with typography variant 1`] = `
+<View
+  accessibilityLabel=""
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 0,
+      "opacity": 1,
+    }
+  }
+  testID="testing"
+>
+  <View
+    buttonVariant="primary"
+    disabled={false}
+    rounded={false}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#C6B09E",
+          "borderColor": "black",
+          "borderRadius": 11,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "height": 70.71428571428572,
+          "justifyContent": "center",
+          "minWidth": 282.8571428571429,
+          "paddingBottom": 6.285714285714286,
+          "paddingLeft": 6.285714285714286,
+          "paddingRight": 6.285714285714286,
+          "paddingTop": 6.285714285714286,
+        },
+        Object {},
+      ]
+    }
+  >
+    <Text
+      accessibility="undefined"
+      accessibilityLabel="undefined"
+      buttonVariant="primary"
+      disabled={false}
+      style={
+        Array [
+          Object {
+            "color": "#212121",
+            "fontSize": 33,
+            "lineHeight": 43,
+          },
+          Object {
+            "color": "#ffffff",
+            "fontWeight": "500",
+            "letterSpacing": 0.4,
+          },
+          Object {},
+        ]
+      }
+      testID="undefined"
+      variant="headline"
+    />
+  </View>
+</View>
+`;
+
+exports[`<Button /> should render button with variant 1`] = `
+<View
+  accessibilityLabel=""
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 0,
+      "opacity": 1,
+    }
+  }
+  testID="testing"
+>
+  <View
+    buttonVariant="secondary"
+    disabled={false}
+    rounded={false}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#805281",
+          "borderColor": "black",
+          "borderRadius": 11,
+          "borderStyle": "solid",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "height": 70.71428571428572,
+          "justifyContent": "center",
+          "minWidth": 282.8571428571429,
+          "paddingBottom": 6.285714285714286,
+          "paddingLeft": 6.285714285714286,
+          "paddingRight": 6.285714285714286,
+          "paddingTop": 6.285714285714286,
+        },
+        Object {},
+      ]
+    }
+  >
+    <Text
+      accessibility="undefined"
+      accessibilityLabel="undefined"
+      buttonVariant="secondary"
+      disabled={false}
+      style={
+        Array [
+          Object {
+            "color": "#212121",
+            "fontSize": 31,
+            "lineHeight": 43,
+          },
+          Object {
+            "color": "#ffffff",
+            "fontWeight": "500",
+            "letterSpacing": 0.4,
+          },
+          Object {},
+        ]
+      }
+      testID="undefined"
+      variant="body"
+    />
   </View>
 </View>
 `;

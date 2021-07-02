@@ -57,7 +57,8 @@ export const DatePicker = styled(DefaultDatePicker)<DatePickerProps>`
 
 export const BottomLine = styled.View`
   height: 1px;
-  background-color: ${inputMainColor};
+  // inputMainColor precisa ser ajustado, está retornando alguma propriedade inválida
+  /* background-color: ${inputMainColor}; */
 `;
 
 const commonDatePickerStyles = {
