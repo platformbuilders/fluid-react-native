@@ -3,18 +3,18 @@ import { ButtonProps } from '../../types';
 import { ButtonWrapper, Loading, TextButton, Touchable } from './styles';
 
 const Button: FC<ButtonProps> = ({
-  id, //
-  children, //
-  onPress, //
-  accessibility, //
-  accessibilityLabel, //
-  testID, //
-  style = [{}], //
-  textStyle = {}, //
-  disabled = false, //
-  rounded = false, //
-  loading = false, //
-  contrast = false, //
+  id,
+  children,
+  onPress,
+  accessibility,
+  accessibilityLabel,
+  testID,
+  style = [{}],
+  textStyle = {},
+  disabled = false,
+  rounded = false,
+  loading = false,
+  contrast = false,
   variant = 'primary',
   typographyVariant = 'body',
 }) => {
