@@ -1,6 +1,6 @@
 import 'jest';
 import React from 'react';
-import { fireEvent, render } from 'react-native-testing-library';
+import { render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import PinInput from '..';

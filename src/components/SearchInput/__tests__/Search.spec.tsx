@@ -1,6 +1,5 @@
 import 'jest';
-import React, { FC, useState } from 'react';
-import { fireEvent, render } from 'react-native-testing-library';
+import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import Search from '..';
@@ -19,24 +18,6 @@ describe('<Search />', () => {
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
-
-  // it('should fire onClear from Search', () => {
-  //   const onClear = jest.fn();
-  //   const onChange = jest.fn();
-
-  //   const wrapper = renderer.create(
-  //     <ThemeProvider theme={theme}>
-  //       <Search
-  //         id="test"
-  //         accessibility=""
-  //         onChange={onChange}
-  //         onClear={onClear}
-  //       />
-  //     </ThemeProvider>,
-  //   );
-
-  //   expect(wrapper.toJSON()).toMatchSnapshot();
-  // });
 
   it('should render search with custom icon color', () => {
     const onChange = jest.fn();
