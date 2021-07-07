@@ -28,3 +28,162 @@ exports[`<RadioButton /> should render radio button component 1`] = `
   testID="testing_radio_btn"
 />
 `;
+
+exports[`<RadioButton /> should render radio button component with custom checked 1`] = `
+<View
+  accessibilityLabel="Select information"
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#212121",
+      "borderRadius": 14.142857142857142,
+      "borderStyle": "solid",
+      "borderWidth": 1.5714285714285714,
+      "height": 28.285714285714285,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": 28.285714285714285,
+    }
+  }
+  testID="testing_radio_btn"
+>
+  <View
+    internalSize={13}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#212121",
+          "borderRadius": 10.214285714285715,
+          "height": 20.42857142857143,
+          "width": 20.42857142857143,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`<RadioButton /> should render radio button component with custom checked radio button color 1`] = `
+<View
+  accessibilityLabel="Select information"
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#212121",
+      "borderRadius": 14.142857142857142,
+      "borderStyle": "solid",
+      "borderWidth": 1.5714285714285714,
+      "height": 28.285714285714285,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": 28.285714285714285,
+    }
+  }
+  testID="testing_radio_btn"
+/>
+`;
+
+exports[`<RadioButton /> should render radio button component with custom internal size 1`] = `
+<View
+  accessibilityLabel="Select information"
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#212121",
+      "borderRadius": 14.142857142857142,
+      "borderStyle": "solid",
+      "borderWidth": 1.5714285714285714,
+      "height": 28.285714285714285,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": 28.285714285714285,
+    }
+  }
+  testID="testing_radio_btn"
+/>
+`;
+
+exports[`<RadioButton /> should render radio button component with custom radio button color 1`] = `
+<View
+  accessibilityLabel="Select information"
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#3498db",
+      "borderRadius": 14.142857142857142,
+      "borderStyle": "solid",
+      "borderWidth": 1.5714285714285714,
+      "height": 28.285714285714285,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": 28.285714285714285,
+    }
+  }
+  testID="testing_radio_btn"
+/>
+`;
+
+exports[`<RadioButton /> should render radio button component with custom size 1`] = `
+<View
+  accessibilityLabel="Select information"
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#212121",
+      "borderRadius": 18.857142857142858,
+      "borderStyle": "solid",
+      "borderWidth": 1.5714285714285714,
+      "height": 37.714285714285715,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": 37.714285714285715,
+    }
+  }
+  testID="testing_radio_btn"
+/>
+`;

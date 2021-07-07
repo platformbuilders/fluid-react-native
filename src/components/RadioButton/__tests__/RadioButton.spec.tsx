@@ -39,4 +39,74 @@ describe('<RadioButton />', () => {
 
     expect(onPressEvent).toHaveBeenCalled();
   });
+
+  it('should render radio button component with custom radio button color', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <RadioButton
+          id="testing_radio_btn"
+          accessibility="Select information"
+          radioButtonColor="#3498db"
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render radio button component with custom checked radio button color', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <RadioButton
+          id="testing_radio_btn"
+          accessibility="Select information"
+          checkedRadioButtonColor="#2ecc71"
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render radio button component with custom size', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <RadioButton
+          id="testing_radio_btn"
+          accessibility="Select information"
+          size={24}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render radio button component with custom internal size', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <RadioButton
+          id="testing_radio_btn"
+          accessibility="Select information"
+          internalSize={24}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render radio button component with custom checked', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <RadioButton
+          id="testing_radio_btn"
+          accessibility="Select information"
+          checked
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
 });

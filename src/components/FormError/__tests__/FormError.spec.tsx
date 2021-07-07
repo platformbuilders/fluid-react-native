@@ -15,4 +15,30 @@ describe('<FormError />', () => {
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
+
+  it('should render the form error component with centered', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <FormError
+          id=""
+          accessibility=""
+          error="testing error"
+          large
+          centered
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render the form error component with error', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <FormError id="" accessibility="" error />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
 });

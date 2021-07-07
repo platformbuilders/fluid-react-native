@@ -1,0 +1,526 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FAB /> should render fab 1`] = `
+<View
+  accessibilityLabel=""
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#547E6A",
+      "borderRadius": 55,
+      "height": 110,
+      "justifyContent": "center",
+      "opacity": 1,
+      "position": "absolute",
+      "width": 110,
+    }
+  }
+  testID="testing"
+>
+  <View
+    style={Object {}}
+  >
+    <View
+      accessibilityLabel="Plus"
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="icon_testing"
+    >
+      <View>
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontSize": 37.714285714285715,
+              },
+              undefined,
+              Object {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          󰐕
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<FAB /> should render fab with custom icon 1`] = `
+<View
+  accessibilityLabel=""
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#547E6A",
+      "borderRadius": 55,
+      "height": 110,
+      "justifyContent": "center",
+      "opacity": 1,
+      "position": "absolute",
+      "width": 110,
+    }
+  }
+  testID="testing"
+>
+  <View
+    style={Object {}}
+  >
+    <View
+      accessibilityLabel="Access-point"
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="icon_testing"
+    >
+      <View>
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontSize": 37.714285714285715,
+              },
+              undefined,
+              Object {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          󰀃
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<FAB /> should render fab with custom icon color 1`] = `
+<View
+  accessibilityLabel=""
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#547E6A",
+      "borderRadius": 55,
+      "height": 110,
+      "justifyContent": "center",
+      "opacity": 1,
+      "position": "absolute",
+      "width": 110,
+    }
+  }
+  testID="testing"
+>
+  <View
+    style={Object {}}
+  >
+    <View
+      accessibilityLabel="Plus"
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="icon_testing"
+    >
+      <View>
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "#2980b9",
+                "fontSize": 37.714285714285715,
+              },
+              undefined,
+              Object {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          󰐕
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<FAB /> should render fab with custom icon size 1`] = `
+<View
+  accessibilityLabel=""
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#547E6A",
+      "borderRadius": 55,
+      "height": 110,
+      "justifyContent": "center",
+      "opacity": 1,
+      "position": "absolute",
+      "width": 110,
+    }
+  }
+  testID="testing"
+>
+  <View
+    style={Object {}}
+  >
+    <View
+      accessibilityLabel="Plus"
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="icon_testing"
+    >
+      <View>
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontSize": 37.714285714285715,
+              },
+              undefined,
+              Object {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          󰐕
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<FAB /> should render fab with custom text color 1`] = `
+<View
+  accessibilityLabel=""
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#2980b9",
+      "borderRadius": 55,
+      "height": 110,
+      "justifyContent": "center",
+      "opacity": 1,
+      "position": "absolute",
+      "width": 110,
+    }
+  }
+  testID="testing"
+>
+  <View
+    style={Object {}}
+  >
+    <View
+      accessibilityLabel="Plus"
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="icon_testing"
+    >
+      <View>
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontSize": 37.714285714285715,
+              },
+              undefined,
+              Object {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          󰐕
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<FAB /> should render fab with relative pos 1`] = `
+<View
+  accessibilityLabel=""
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#547E6A",
+      "borderRadius": 55,
+      "height": 110,
+      "justifyContent": "center",
+      "opacity": 1,
+      "position": "relative",
+      "width": 110,
+    }
+  }
+  testID="testing"
+>
+  <View
+    style={Object {}}
+  >
+    <View
+      accessibilityLabel="Plus"
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="icon_testing"
+    >
+      <View>
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontSize": 37.714285714285715,
+              },
+              undefined,
+              Object {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          󰐕
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<FAB /> should render fab with shadow 1`] = `
+<View
+  accessibilityLabel=""
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#547E6A",
+      "borderRadius": 55,
+      "elevation": 3,
+      "height": 110,
+      "justifyContent": "center",
+      "opacity": 1,
+      "position": "absolute",
+      "shadowOffset": Object {
+        "height": 4,
+        "width": 0,
+      },
+      "shadowOpacity": 0.2,
+      "shadowRadius": 6.285714285714286,
+      "width": 110,
+    }
+  }
+  testID="testing"
+>
+  <View
+    style={Object {}}
+  >
+    <View
+      accessibilityLabel="Plus"
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="icon_testing"
+    >
+      <View>
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontSize": 37.714285714285715,
+              },
+              undefined,
+              Object {
+                "fontFamily": "Material Design Icons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          󰐕
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

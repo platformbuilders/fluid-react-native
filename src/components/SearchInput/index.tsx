@@ -55,6 +55,7 @@ const SearchInput: React.FC<Props> = ({
   const [isSearching, setSearching] = useState(false);
   const [isFocused, setFocused] = useState(false);
   const ref = useRef<HTMLInputElement>(null);
+
   const onPressIcon = (): void => {
     if (onIconPress) {
       onIconPress();
@@ -64,6 +65,7 @@ const SearchInput: React.FC<Props> = ({
     setSearching(false);
     Keyboard.dismiss();
   };
+
   return (
     <Wrapper
       height={wrapperHeight}

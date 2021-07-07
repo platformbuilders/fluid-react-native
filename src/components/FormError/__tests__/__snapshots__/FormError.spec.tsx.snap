@@ -26,3 +26,32 @@ exports[`<FormError /> should render the form error component 1`] = `
   testing error
 </Text>
 `;
+
+exports[`<FormError /> should render the form error component with centered 1`] = `
+<Text
+  accessibility="Erro testing error"
+  accessibilityLabel="Erro testing error"
+  centered={true}
+  large={true}
+  style={
+    Array [
+      Object {
+        "color": "#212121",
+        "fontSize": 26,
+        "lineHeight": 35,
+      },
+      Object {
+        "color": "#cc0000",
+        "marginTop": 0,
+        "textAlign": "center",
+      },
+    ]
+  }
+  testID="error_"
+  variant="footnote"
+>
+  testing error
+</Text>
+`;
+
+exports[`<FormError /> should render the form error component with error 1`] = `null`;
