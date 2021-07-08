@@ -83,21 +83,6 @@ describe('<Avatar />', () => {
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
-  // it('should trigger onUpload function', () => {
-  //   const onUploadEvent = jest.fn();
-  //   const { getByTestId } = render(
-  //     <ThemeProvider theme={theme}>
-  //       <Avatar id="uploadTest" accessibility="" onUpload={onUploadEvent} />
-  //     </ThemeProvider>,
-  //   );
-
-  //   const component = getByTestId('uploadTest');
-
-  //   fireEvent.press(component);
-
-  //   expect(onUploadEvent).toHaveBeenCalled();
-  // });
-
   it('should render Avatar with custom accessibility label', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
@@ -125,7 +110,6 @@ describe('<Avatar />', () => {
           accessibility=""
           accessibilityLabel="testing"
           displayCamera
-          // image={defaultAvatar}
           size={24}
           showBorder
           borderWidth={1}
