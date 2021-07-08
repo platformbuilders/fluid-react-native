@@ -28,16 +28,14 @@ const loadingVariant = (
       return contrast
         ? contrastButtonLoading(props)
         : buttonLoading(props) || LoadingAnimation;
-    case 'circular':
-      return contrast
-        ? contrastCircularLoading(props)
-        : circularLoading(props) || LoadingAnimation;
     case 'linear':
       return contrast
         ? contrastLinearLoading(props)
         : linearLoading(props) || LoadingAnimation;
     default:
-      return contrast ? contrastCircularLoading(props) : circularLoading(props);
+      return contrast
+        ? contrastCircularLoading(props)
+        : circularLoading(props) || LoadingAnimation;
   }
 };
 

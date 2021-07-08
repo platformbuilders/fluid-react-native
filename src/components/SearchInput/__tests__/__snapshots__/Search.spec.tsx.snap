@@ -1,0 +1,2407 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Search /> should render search 1`] = `
+<View
+  hasShadow={false}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderRadius": 23.57142857142857,
+        "flexBasis": 0,
+        "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "height": 88,
+        "justifyContent": "center",
+        "paddingHorizontal": 37.714285714285715,
+      },
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      Array [
+        Object {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        Object {
+          "height": "90%",
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      error={false}
+      style={
+        Array [
+          Object {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "color": "#212121",
+              "fontSize": 31,
+              "lineHeight": 43,
+              "position": "absolute",
+              "top": 8,
+            },
+            Object {
+              "fontSize": 35,
+              "top": 8,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="body"
+      >
+        
+      </Text>
+      <View
+        multiline={false}
+        rightIcon={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 6.285714285714286,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityLabel=""
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoCompleteType="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={true}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          placeholder=""
+          placeholderTextColor="#72727260"
+          rejectResponderTermination={true}
+          status="DEFAULT"
+          style={
+            Array [
+              Object {
+                "borderWidth": 0,
+                "color": "#212121",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 33,
+                "lineHeight": 43,
+                "marginTop": 0,
+                "minHeight": 37.714285714285715,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+              Object {},
+            ]
+          }
+          testID="test"
+          textAlign="left"
+          type="no-mask"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="headline"
+          withBottomline={true}
+        />
+      </View>
+      <View
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#212121",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Search /> should render search with auto focus 1`] = `
+<View
+  hasShadow={false}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderRadius": 23.57142857142857,
+        "flexBasis": 0,
+        "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "height": 88,
+        "justifyContent": "center",
+        "paddingHorizontal": 37.714285714285715,
+      },
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      Array [
+        Object {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        Object {
+          "height": "90%",
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      error={false}
+      style={
+        Array [
+          Object {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "color": "#212121",
+              "fontSize": 26,
+              "lineHeight": 35,
+              "position": "absolute",
+              "top": 8,
+            },
+            Object {
+              "fontSize": 35,
+              "top": 8,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="footnote"
+      >
+        
+      </Text>
+      <View
+        multiline={false}
+        rightIcon={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 6.285714285714286,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityLabel=""
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoCompleteType="off"
+          autoCorrect={false}
+          autoFocus={true}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          placeholder="Pesquise aqui"
+          placeholderTextColor="#72727260"
+          rejectResponderTermination={true}
+          status="DEFAULT"
+          style={
+            Array [
+              Object {
+                "borderWidth": 0,
+                "color": "#212121",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 33,
+                "lineHeight": 43,
+                "marginTop": 0,
+                "minHeight": 37.714285714285715,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+              Object {},
+            ]
+          }
+          testID="test"
+          textAlign="left"
+          type="no-mask"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="headline"
+          withBottomline={true}
+        />
+      </View>
+      <View
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#212121",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Search /> should render search with custom container style 1`] = `
+<View
+  hasShadow={false}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderRadius": 23.57142857142857,
+        "flexBasis": 0,
+        "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "height": 88,
+        "justifyContent": "center",
+        "paddingHorizontal": 37.714285714285715,
+      },
+      Object {
+        "backgroundColor": "#123983",
+      },
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      Array [
+        Object {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        Object {
+          "height": "90%",
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      error={false}
+      style={
+        Array [
+          Object {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "color": "#212121",
+              "fontSize": 26,
+              "lineHeight": 35,
+              "position": "absolute",
+              "top": 8,
+            },
+            Object {
+              "fontSize": 35,
+              "top": 8,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="footnote"
+      >
+        
+      </Text>
+      <View
+        multiline={false}
+        rightIcon={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 6.285714285714286,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityLabel=""
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoCompleteType="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          placeholder="Pesquise aqui"
+          placeholderTextColor="#72727260"
+          rejectResponderTermination={true}
+          status="DEFAULT"
+          style={
+            Array [
+              Object {
+                "borderWidth": 0,
+                "color": "#212121",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 33,
+                "lineHeight": 43,
+                "marginTop": 0,
+                "minHeight": 37.714285714285715,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+              Object {},
+            ]
+          }
+          testID="test"
+          textAlign="left"
+          type="no-mask"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="headline"
+          withBottomline={true}
+        />
+      </View>
+      <View
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#212121",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Search /> should render search with custom icon color 1`] = `
+<View
+  hasShadow={false}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderRadius": 23.57142857142857,
+        "flexBasis": 0,
+        "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "height": 88,
+        "justifyContent": "center",
+        "paddingHorizontal": 37.714285714285715,
+      },
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      Array [
+        Object {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        Object {
+          "height": "90%",
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      error={false}
+      style={
+        Array [
+          Object {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "color": "#212121",
+              "fontSize": 26,
+              "lineHeight": 35,
+              "position": "absolute",
+              "top": 8,
+            },
+            Object {
+              "fontSize": 35,
+              "top": 8,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="footnote"
+      >
+        
+      </Text>
+      <View
+        multiline={false}
+        rightIcon={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 6.285714285714286,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityLabel=""
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoCompleteType="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          placeholder="Pesquise aqui"
+          placeholderTextColor="#72727260"
+          rejectResponderTermination={true}
+          status="DEFAULT"
+          style={
+            Array [
+              Object {
+                "borderWidth": 0,
+                "color": "#212121",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 33,
+                "lineHeight": 43,
+                "marginTop": 0,
+                "minHeight": 37.714285714285715,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+              Object {},
+            ]
+          }
+          testID="test"
+          textAlign="left"
+          type="no-mask"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="headline"
+          withBottomline={true}
+        />
+      </View>
+      <View
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#212121",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Search /> should render search with custom input style 1`] = `
+<View
+  hasShadow={false}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderRadius": 23.57142857142857,
+        "flexBasis": 0,
+        "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "height": 88,
+        "justifyContent": "center",
+        "paddingHorizontal": 37.714285714285715,
+      },
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      Array [
+        Object {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        Object {
+          "height": "90%",
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "width": "100%",
+        },
+        Object {
+          "backgroundColor": "#654654",
+        },
+      ]
+    }
+  >
+    <View
+      error={false}
+      style={
+        Array [
+          Object {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "color": "#212121",
+              "fontSize": 31,
+              "lineHeight": 43,
+              "position": "absolute",
+              "top": 8,
+            },
+            Object {
+              "fontSize": 35,
+              "top": 8,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="body"
+      >
+        
+      </Text>
+      <View
+        multiline={false}
+        rightIcon={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 6.285714285714286,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityLabel=""
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoCompleteType="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={true}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          placeholder=""
+          placeholderTextColor="#72727260"
+          rejectResponderTermination={true}
+          status="DEFAULT"
+          style={
+            Array [
+              Object {
+                "borderWidth": 0,
+                "color": "#212121",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 33,
+                "lineHeight": 43,
+                "marginTop": 0,
+                "minHeight": 37.714285714285715,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+              Object {},
+            ]
+          }
+          testID="test"
+          textAlign="left"
+          type="no-mask"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="headline"
+          withBottomline={true}
+        />
+      </View>
+      <View
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#212121",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Search /> should render search with custom placeholder 1`] = `
+<View
+  hasShadow={false}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderRadius": 23.57142857142857,
+        "flexBasis": 0,
+        "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "height": 88,
+        "justifyContent": "center",
+        "paddingHorizontal": 37.714285714285715,
+      },
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      Array [
+        Object {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        Object {
+          "height": "90%",
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      error={false}
+      style={
+        Array [
+          Object {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "color": "#212121",
+              "fontSize": 31,
+              "lineHeight": 43,
+              "position": "absolute",
+              "top": 8,
+            },
+            Object {
+              "fontSize": 35,
+              "top": 8,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="body"
+      >
+        
+      </Text>
+      <View
+        multiline={false}
+        rightIcon={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 6.285714285714286,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityLabel=""
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoCompleteType="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={true}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          placeholder=""
+          placeholderTextColor="#72727260"
+          rejectResponderTermination={true}
+          status="DEFAULT"
+          style={
+            Array [
+              Object {
+                "borderWidth": 0,
+                "color": "#212121",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 33,
+                "lineHeight": 43,
+                "marginTop": 0,
+                "minHeight": 37.714285714285715,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+              Object {},
+            ]
+          }
+          testID="test"
+          textAlign="left"
+          type="no-mask"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="headline"
+          withBottomline={true}
+        />
+      </View>
+      <View
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#212121",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Search /> should render search with custom placeholder color 1`] = `
+<View
+  hasShadow={false}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderRadius": 23.57142857142857,
+        "flexBasis": 0,
+        "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "height": 88,
+        "justifyContent": "center",
+        "paddingHorizontal": 37.714285714285715,
+      },
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      Array [
+        Object {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        Object {
+          "height": "90%",
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      error={false}
+      style={
+        Array [
+          Object {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "color": "#212121",
+              "fontSize": 31,
+              "lineHeight": 43,
+              "position": "absolute",
+              "top": 8,
+            },
+            Object {
+              "fontSize": 35,
+              "top": 8,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="body"
+      >
+        
+      </Text>
+      <View
+        multiline={false}
+        rightIcon={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 6.285714285714286,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityLabel=""
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoCompleteType="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={true}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          placeholder=""
+          placeholderTextColor="#123983"
+          rejectResponderTermination={true}
+          status="DEFAULT"
+          style={
+            Array [
+              Object {
+                "borderWidth": 0,
+                "color": "#212121",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 33,
+                "lineHeight": 43,
+                "marginTop": 0,
+                "minHeight": 37.714285714285715,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+              Object {},
+            ]
+          }
+          testID="test"
+          textAlign="left"
+          type="no-mask"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="headline"
+          withBottomline={true}
+        />
+      </View>
+      <View
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#212121",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Search /> should render search with custom text style 1`] = `
+<View
+  hasShadow={false}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderRadius": 23.57142857142857,
+        "flexBasis": 0,
+        "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "height": 88,
+        "justifyContent": "center",
+        "paddingHorizontal": 37.714285714285715,
+      },
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      Array [
+        Object {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        Object {
+          "height": "90%",
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      error={false}
+      style={
+        Array [
+          Object {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "color": "#212121",
+              "fontSize": 26,
+              "lineHeight": 35,
+              "position": "absolute",
+              "top": 8,
+            },
+            Object {
+              "fontSize": 35,
+              "top": 8,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="footnote"
+      >
+        
+      </Text>
+      <View
+        multiline={false}
+        rightIcon={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 6.285714285714286,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityLabel=""
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoCompleteType="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          placeholder="Pesquise aqui"
+          placeholderTextColor="#72727260"
+          rejectResponderTermination={true}
+          status="DEFAULT"
+          style={
+            Array [
+              Object {
+                "borderWidth": 0,
+                "color": "#212121",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 33,
+                "lineHeight": 43,
+                "marginTop": 0,
+                "minHeight": 37.714285714285715,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+              Object {
+                "color": "#fff",
+              },
+            ]
+          }
+          testID="test"
+          textAlign="left"
+          type="no-mask"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="headline"
+          withBottomline={true}
+        />
+      </View>
+      <View
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#212121",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Search /> should render search with icon size 1`] = `
+<View
+  hasShadow={false}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderRadius": 23.57142857142857,
+        "flexBasis": 0,
+        "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "height": 88,
+        "justifyContent": "center",
+        "paddingHorizontal": 37.714285714285715,
+      },
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      Array [
+        Object {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        Object {
+          "height": "90%",
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      error={false}
+      style={
+        Array [
+          Object {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "color": "#212121",
+              "fontSize": 26,
+              "lineHeight": 35,
+              "position": "absolute",
+              "top": 8,
+            },
+            Object {
+              "fontSize": 35,
+              "top": 8,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="footnote"
+      >
+        
+      </Text>
+      <View
+        multiline={false}
+        rightIcon={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 6.285714285714286,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityLabel=""
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoCompleteType="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          placeholder="Pesquise aqui"
+          placeholderTextColor="#72727260"
+          rejectResponderTermination={true}
+          status="DEFAULT"
+          style={
+            Array [
+              Object {
+                "borderWidth": 0,
+                "color": "#212121",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 33,
+                "lineHeight": 43,
+                "marginTop": 0,
+                "minHeight": 37.714285714285715,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+              Object {},
+            ]
+          }
+          testID="test"
+          textAlign="left"
+          type="no-mask"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="headline"
+          withBottomline={true}
+        />
+      </View>
+      <View
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#212121",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Search /> should render search with left icon 1`] = `
+<View
+  hasShadow={false}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderRadius": 23.57142857142857,
+        "flexBasis": 0,
+        "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "height": 88,
+        "justifyContent": "center",
+        "paddingHorizontal": 37.714285714285715,
+      },
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      Array [
+        Object {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        Object {
+          "height": "90%",
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      error={false}
+      style={
+        Array [
+          Object {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "color": "#212121",
+              "fontSize": 26,
+              "lineHeight": 35,
+              "position": "absolute",
+              "top": 8,
+            },
+            Object {
+              "fontSize": 35,
+              "top": 8,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="footnote"
+      >
+        
+      </Text>
+      <View
+        multiline={false}
+        rightIcon={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 6.285714285714286,
+            },
+          ]
+        }
+      >
+        <View
+          style={Object {}}
+        >
+          <View
+            accessibilityLabel="icon_"
+            accessible={true}
+            focusable={true}
+            hitSlop={Object {}}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID="id_paperclip"
+          >
+            <View>
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#eeeeee",
+                      "fontSize": 40.85714285714286,
+                    },
+                    undefined,
+                    Object {
+                      "fontFamily": "Material Design Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                󰏢
+              </Text>
+            </View>
+          </View>
+        </View>
+        <TextInput
+          accessibility=""
+          accessibilityLabel=""
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoCompleteType="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          placeholder="Pesquise aqui"
+          placeholderTextColor="#72727260"
+          rejectResponderTermination={true}
+          status="DEFAULT"
+          style={
+            Array [
+              Object {
+                "borderWidth": 0,
+                "color": "#212121",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 33,
+                "lineHeight": 43,
+                "marginTop": 0,
+                "minHeight": 37.714285714285715,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+              Object {},
+            ]
+          }
+          testID="test"
+          textAlign="left"
+          type="no-mask"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="headline"
+          withBottomline={true}
+        />
+      </View>
+      <View
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#212121",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Search /> should render search with padding 1`] = `
+<View
+  hasShadow={false}
+  inputPadding={24}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderRadius": 23.57142857142857,
+        "flexBasis": 0,
+        "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "height": 88,
+        "justifyContent": "center",
+        "paddingHorizontal": 24,
+      },
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      Array [
+        Object {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        Object {
+          "height": "90%",
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      error={false}
+      style={
+        Array [
+          Object {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "color": "#212121",
+              "fontSize": 31,
+              "lineHeight": 43,
+              "position": "absolute",
+              "top": 8,
+            },
+            Object {
+              "fontSize": 35,
+              "top": 8,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="body"
+      >
+        
+      </Text>
+      <View
+        multiline={false}
+        padding={24}
+        rightIcon={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 24,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityLabel=""
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoCompleteType="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={true}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          placeholder=""
+          placeholderTextColor="#72727260"
+          rejectResponderTermination={true}
+          status="DEFAULT"
+          style={
+            Array [
+              Object {
+                "borderWidth": 0,
+                "color": "#212121",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 33,
+                "lineHeight": 43,
+                "marginTop": 0,
+                "minHeight": 37.714285714285715,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+              Object {},
+            ]
+          }
+          testID="test"
+          textAlign="left"
+          type="no-mask"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="headline"
+          withBottomline={true}
+        />
+      </View>
+      <View
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#212121",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Search /> should render search with right icon 1`] = `
+<View
+  hasShadow={false}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderRadius": 23.57142857142857,
+        "flexBasis": 0,
+        "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "height": 88,
+        "justifyContent": "center",
+        "paddingHorizontal": 37.714285714285715,
+      },
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      Array [
+        Object {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        Object {
+          "height": "90%",
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      error={false}
+      style={
+        Array [
+          Object {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "color": "#212121",
+              "fontSize": 31,
+              "lineHeight": 43,
+              "position": "absolute",
+              "top": 8,
+            },
+            Object {
+              "fontSize": 35,
+              "top": 8,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="body"
+      >
+        
+      </Text>
+      <View
+        multiline={false}
+        rightIcon={true}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 0,
+              "paddingRight": 37.714285714285715,
+              "paddingTop": 6.285714285714286,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityLabel=""
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoCompleteType="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={true}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          placeholder=""
+          placeholderTextColor="#72727260"
+          rejectResponderTermination={true}
+          status="DEFAULT"
+          style={
+            Array [
+              Object {
+                "borderWidth": 0,
+                "color": "#212121",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 33,
+                "lineHeight": 43,
+                "marginTop": 0,
+                "minHeight": 37.714285714285715,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+              Object {},
+            ]
+          }
+          testID="test"
+          textAlign="left"
+          type="no-mask"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="headline"
+          withBottomline={true}
+        />
+        <View
+          style={Object {}}
+        >
+          <View
+            accessibilityLabel="icon_"
+            accessible={true}
+            focusable={true}
+            hitSlop={Object {}}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID="id_parachute"
+          >
+            <View>
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#eeeeee",
+                      "fontSize": 40.85714285714286,
+                    },
+                    undefined,
+                    Object {
+                      "fontFamily": "Material Design Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                󰲴
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#212121",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Search /> should render search with shadow 1`] = `
+<View
+  hasShadow={true}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderRadius": 23.57142857142857,
+        "elevation": 3,
+        "flexBasis": 0,
+        "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "height": 88,
+        "justifyContent": "center",
+        "paddingHorizontal": 37.714285714285715,
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.2,
+        "shadowRadius": 6.285714285714286,
+      },
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      Array [
+        Object {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        Object {
+          "height": "90%",
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      error={false}
+      style={
+        Array [
+          Object {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "color": "#212121",
+              "fontSize": 31,
+              "lineHeight": 43,
+              "position": "absolute",
+              "top": 8,
+            },
+            Object {
+              "fontSize": 35,
+              "top": 8,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="body"
+      >
+        
+      </Text>
+      <View
+        multiline={false}
+        rightIcon={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 6.285714285714286,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityLabel=""
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoCompleteType="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={true}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          placeholder=""
+          placeholderTextColor="#72727260"
+          rejectResponderTermination={true}
+          status="DEFAULT"
+          style={
+            Array [
+              Object {
+                "borderWidth": 0,
+                "color": "#212121",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 33,
+                "lineHeight": 43,
+                "marginTop": 0,
+                "minHeight": 37.714285714285715,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+              Object {},
+            ]
+          }
+          testID="test"
+          textAlign="left"
+          type="no-mask"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="headline"
+          withBottomline={true}
+        />
+      </View>
+      <View
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#212121",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Search /> should render search with wrapper height 1`] = `
+<View
+  hasShadow={false}
+  height={24}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "borderRadius": 23.57142857142857,
+        "flexBasis": 0,
+        "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "height": 24,
+        "justifyContent": "center",
+        "paddingHorizontal": 37.714285714285715,
+      },
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      Array [
+        Object {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        Object {
+          "height": "90%",
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      error={false}
+      style={
+        Array [
+          Object {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "color": "#212121",
+              "fontSize": 26,
+              "lineHeight": 35,
+              "position": "absolute",
+              "top": 8,
+            },
+            Object {
+              "fontSize": 35,
+              "top": 8,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="footnote"
+      >
+        
+      </Text>
+      <View
+        multiline={false}
+        rightIcon={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 6.285714285714286,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityLabel=""
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoCompleteType="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          placeholder="Pesquise aqui"
+          placeholderTextColor="#72727260"
+          rejectResponderTermination={true}
+          status="DEFAULT"
+          style={
+            Array [
+              Object {
+                "borderWidth": 0,
+                "color": "#212121",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 33,
+                "lineHeight": 43,
+                "marginTop": 0,
+                "minHeight": 37.714285714285715,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+              Object {},
+            ]
+          }
+          testID="test"
+          textAlign="left"
+          type="no-mask"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="headline"
+          withBottomline={true}
+        />
+      </View>
+      <View
+        contrast={false}
+        status="DEFAULT"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#212121",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
