@@ -1,0 +1,4922 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DatePicker /> should render datepicker 1`] = `
+Array [
+  <Text
+    dark={false}
+    error=""
+    isPlaceholder={true}
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "lineHeight": 19,
+          "paddingBottom": 15,
+        },
+        Object {
+          "fontSize": 18,
+          "top": 40,
+        },
+      ]
+    }
+  >
+    
+  </Text>,
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "width": 142,
+        },
+        Array [
+          Object {
+            "width": "100%",
+          },
+        ],
+      ]
+    }
+    testID=""
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 40,
+            "justifyContent": "center",
+          },
+          Object {
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#aaa",
+              "borderWidth": 1,
+              "flex": 1,
+              "height": 40,
+              "justifyContent": "center",
+            },
+            Object {
+              "borderWidth": 0,
+            },
+            false,
+            false,
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            Array [
+              Object {
+                "color": "#c9c9c9",
+              },
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+                "left": 0,
+                "position": "absolute",
+              },
+            ]
+          }
+        >
+           
+        </Text>
+      </View>
+      <Modal
+        animationType="none"
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        supportedOrientations={
+          Array [
+            "portrait",
+            "portrait-upside-down",
+            "landscape",
+            "landscape-left",
+            "landscape-right",
+          ]
+        }
+        transparent={true}
+        visible={false}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "backgroundColor": "#00000077",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={false}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="auto"
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "borderTopColor": "#ccc",
+                          "borderTopWidth": 1,
+                          "marginTop": 42,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <RCTDatePicker
+                      date={1625250482669}
+                      locale="pt-BR"
+                      mode="date"
+                      onChange={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "height": 216,
+                        }
+                      }
+                      timeZoneOffsetInMinutes={null}
+                    />
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "left": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "color": "#666",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Cancelar
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "right": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Confirmar
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+    </View>
+  </View>,
+  <View
+    dark={false}
+    style={
+      Array [
+        Object {
+          "height": 1,
+        },
+      ]
+    }
+  />,
+]
+`;
+
+exports[`<DatePicker /> should render datepicker with accessibility label 1`] = `
+Array [
+  <Text
+    dark={false}
+    error=""
+    isPlaceholder={true}
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "lineHeight": 19,
+          "paddingBottom": 15,
+        },
+        Object {
+          "fontSize": 18,
+          "top": 40,
+        },
+      ]
+    }
+  >
+    
+  </Text>,
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "width": 142,
+        },
+        Array [
+          Object {
+            "width": "100%",
+          },
+        ],
+      ]
+    }
+    testID=""
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 40,
+            "justifyContent": "center",
+          },
+          Object {
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#aaa",
+              "borderWidth": 1,
+              "flex": 1,
+              "height": 40,
+              "justifyContent": "center",
+            },
+            Object {
+              "borderWidth": 0,
+            },
+            false,
+            false,
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            Array [
+              Object {
+                "color": "#c9c9c9",
+              },
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+                "left": 0,
+                "position": "absolute",
+              },
+            ]
+          }
+        >
+           
+        </Text>
+      </View>
+      <Modal
+        animationType="none"
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        supportedOrientations={
+          Array [
+            "portrait",
+            "portrait-upside-down",
+            "landscape",
+            "landscape-left",
+            "landscape-right",
+          ]
+        }
+        transparent={true}
+        visible={false}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "backgroundColor": "#00000077",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={false}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="auto"
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "borderTopColor": "#ccc",
+                          "borderTopWidth": 1,
+                          "marginTop": 42,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <RCTDatePicker
+                      date={1625250483345}
+                      locale="pt-BR"
+                      mode="date"
+                      onChange={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "height": 216,
+                        }
+                      }
+                      timeZoneOffsetInMinutes={null}
+                    />
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "left": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "color": "#666",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Cancelar
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "right": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Confirmar
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+    </View>
+  </View>,
+  <View
+    dark={false}
+    style={
+      Array [
+        Object {
+          "height": 1,
+        },
+      ]
+    }
+  />,
+]
+`;
+
+exports[`<DatePicker /> should render datepicker with button cancel text 1`] = `
+Array [
+  <Text
+    dark={false}
+    error=""
+    isPlaceholder={true}
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "lineHeight": 19,
+          "paddingBottom": 15,
+        },
+        Object {
+          "fontSize": 18,
+          "top": 40,
+        },
+      ]
+    }
+  >
+    
+  </Text>,
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "width": 142,
+        },
+        Array [
+          Object {
+            "width": "100%",
+          },
+        ],
+      ]
+    }
+    testID=""
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 40,
+            "justifyContent": "center",
+          },
+          Object {
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#aaa",
+              "borderWidth": 1,
+              "flex": 1,
+              "height": 40,
+              "justifyContent": "center",
+            },
+            Object {
+              "borderWidth": 0,
+            },
+            false,
+            false,
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            Array [
+              Object {
+                "color": "#c9c9c9",
+              },
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+                "left": 0,
+                "position": "absolute",
+              },
+            ]
+          }
+        >
+           
+        </Text>
+      </View>
+      <Modal
+        animationType="none"
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        supportedOrientations={
+          Array [
+            "portrait",
+            "portrait-upside-down",
+            "landscape",
+            "landscape-left",
+            "landscape-right",
+          ]
+        }
+        transparent={true}
+        visible={false}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "backgroundColor": "#00000077",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={false}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="auto"
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "borderTopColor": "#ccc",
+                          "borderTopWidth": 1,
+                          "marginTop": 42,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <RCTDatePicker
+                      date={1625250483307}
+                      locale="pt-BR"
+                      mode="date"
+                      onChange={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "height": 216,
+                        }
+                      }
+                      timeZoneOffsetInMinutes={null}
+                    />
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "left": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "color": "#666",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    test
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "right": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Confirmar
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+    </View>
+  </View>,
+  <View
+    dark={false}
+    style={
+      Array [
+        Object {
+          "height": 1,
+        },
+      ]
+    }
+  />,
+]
+`;
+
+exports[`<DatePicker /> should render datepicker with confirm button text 1`] = `
+Array [
+  <Text
+    dark={false}
+    error=""
+    isPlaceholder={true}
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "lineHeight": 19,
+          "paddingBottom": 15,
+        },
+        Object {
+          "fontSize": 18,
+          "top": 40,
+        },
+      ]
+    }
+  >
+    
+  </Text>,
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "width": 142,
+        },
+        Array [
+          Object {
+            "width": "100%",
+          },
+        ],
+      ]
+    }
+    testID=""
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 40,
+            "justifyContent": "center",
+          },
+          Object {
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#aaa",
+              "borderWidth": 1,
+              "flex": 1,
+              "height": 40,
+              "justifyContent": "center",
+            },
+            Object {
+              "borderWidth": 0,
+            },
+            false,
+            false,
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            Array [
+              Object {
+                "color": "#c9c9c9",
+              },
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+                "left": 0,
+                "position": "absolute",
+              },
+            ]
+          }
+        >
+           
+        </Text>
+      </View>
+      <Modal
+        animationType="none"
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        supportedOrientations={
+          Array [
+            "portrait",
+            "portrait-upside-down",
+            "landscape",
+            "landscape-left",
+            "landscape-right",
+          ]
+        }
+        transparent={true}
+        visible={false}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "backgroundColor": "#00000077",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={false}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="auto"
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "borderTopColor": "#ccc",
+                          "borderTopWidth": 1,
+                          "marginTop": 42,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <RCTDatePicker
+                      date={1625250483353}
+                      locale="pt-BR"
+                      mode="date"
+                      onChange={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "height": 216,
+                        }
+                      }
+                      timeZoneOffsetInMinutes={null}
+                    />
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "left": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "color": "#666",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Cancelar
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "right": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    test
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+    </View>
+  </View>,
+  <View
+    dark={false}
+    style={
+      Array [
+        Object {
+          "height": 1,
+        },
+      ]
+    }
+  />,
+]
+`;
+
+exports[`<DatePicker /> should render datepicker with custom locale 1`] = `
+Array [
+  <Text
+    dark={false}
+    error=""
+    isPlaceholder={true}
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "lineHeight": 19,
+          "paddingBottom": 15,
+        },
+        Object {
+          "fontSize": 18,
+          "top": 40,
+        },
+      ]
+    }
+  >
+    
+  </Text>,
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "width": 142,
+        },
+        Array [
+          Object {
+            "width": "100%",
+          },
+        ],
+      ]
+    }
+    testID=""
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 40,
+            "justifyContent": "center",
+          },
+          Object {
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#aaa",
+              "borderWidth": 1,
+              "flex": 1,
+              "height": 40,
+              "justifyContent": "center",
+            },
+            Object {
+              "borderWidth": 0,
+            },
+            false,
+            false,
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            Array [
+              Object {
+                "color": "#c9c9c9",
+              },
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+                "left": 0,
+                "position": "absolute",
+              },
+            ]
+          }
+        >
+           
+        </Text>
+      </View>
+      <Modal
+        animationType="none"
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        supportedOrientations={
+          Array [
+            "portrait",
+            "portrait-upside-down",
+            "landscape",
+            "landscape-left",
+            "landscape-right",
+          ]
+        }
+        transparent={true}
+        visible={false}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "backgroundColor": "#00000077",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={false}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="auto"
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "borderTopColor": "#ccc",
+                          "borderTopWidth": 1,
+                          "marginTop": 42,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <RCTDatePicker
+                      date={1625250483444}
+                      locale="en"
+                      mode="date"
+                      onChange={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "height": 216,
+                        }
+                      }
+                      timeZoneOffsetInMinutes={null}
+                    />
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "left": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "color": "#666",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Cancelar
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "right": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Confirmar
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+    </View>
+  </View>,
+  <View
+    dark={false}
+    style={
+      Array [
+        Object {
+          "height": 1,
+        },
+      ]
+    }
+  />,
+]
+`;
+
+exports[`<DatePicker /> should render datepicker with custom max date 1`] = `
+Array [
+  <Text
+    dark={false}
+    error=""
+    isPlaceholder={true}
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "lineHeight": 19,
+          "paddingBottom": 15,
+        },
+        Object {
+          "fontSize": 18,
+          "top": 40,
+        },
+      ]
+    }
+  >
+    
+  </Text>,
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "width": 142,
+        },
+        Array [
+          Object {
+            "width": "100%",
+          },
+        ],
+      ]
+    }
+    testID=""
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 40,
+            "justifyContent": "center",
+          },
+          Object {
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#aaa",
+              "borderWidth": 1,
+              "flex": 1,
+              "height": 40,
+              "justifyContent": "center",
+            },
+            Object {
+              "borderWidth": 0,
+            },
+            false,
+            false,
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            Array [
+              Object {
+                "color": "#c9c9c9",
+              },
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+                "left": 0,
+                "position": "absolute",
+              },
+            ]
+          }
+        >
+           
+        </Text>
+      </View>
+      <Modal
+        animationType="none"
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        supportedOrientations={
+          Array [
+            "portrait",
+            "portrait-upside-down",
+            "landscape",
+            "landscape-left",
+            "landscape-right",
+          ]
+        }
+        transparent={true}
+        visible={false}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "backgroundColor": "#00000077",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={false}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="auto"
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "borderTopColor": "#ccc",
+                          "borderTopWidth": 1,
+                          "marginTop": 42,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <RCTDatePicker
+                      date={1625250483402}
+                      locale="pt-BR"
+                      maximumDate={1627614000000}
+                      mode="date"
+                      onChange={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "height": 216,
+                        }
+                      }
+                      timeZoneOffsetInMinutes={null}
+                    />
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "left": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "color": "#666",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Cancelar
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "right": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Confirmar
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+    </View>
+  </View>,
+  <View
+    dark={false}
+    style={
+      Array [
+        Object {
+          "height": 1,
+        },
+      ]
+    }
+  />,
+]
+`;
+
+exports[`<DatePicker /> should render datepicker with custom mode 1`] = `
+Array [
+  <Text
+    dark={false}
+    error=""
+    isPlaceholder={true}
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "lineHeight": 19,
+          "paddingBottom": 15,
+        },
+        Object {
+          "fontSize": 18,
+          "top": 40,
+        },
+      ]
+    }
+  >
+    
+  </Text>,
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "width": 142,
+        },
+        Array [
+          Object {
+            "width": "100%",
+          },
+        ],
+      ]
+    }
+    testID=""
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 40,
+            "justifyContent": "center",
+          },
+          Object {
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#aaa",
+              "borderWidth": 1,
+              "flex": 1,
+              "height": 40,
+              "justifyContent": "center",
+            },
+            Object {
+              "borderWidth": 0,
+            },
+            false,
+            false,
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            Array [
+              Object {
+                "color": "#c9c9c9",
+              },
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+                "left": 0,
+                "position": "absolute",
+              },
+            ]
+          }
+        >
+           
+        </Text>
+      </View>
+      <Modal
+        animationType="none"
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        supportedOrientations={
+          Array [
+            "portrait",
+            "portrait-upside-down",
+            "landscape",
+            "landscape-left",
+            "landscape-right",
+          ]
+        }
+        transparent={true}
+        visible={false}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "backgroundColor": "#00000077",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={false}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="auto"
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "borderTopColor": "#ccc",
+                          "borderTopWidth": 1,
+                          "marginTop": 42,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <RCTDatePicker
+                      date={1625250483372}
+                      locale="pt-BR"
+                      mode="date"
+                      onChange={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "height": 216,
+                        }
+                      }
+                      timeZoneOffsetInMinutes={null}
+                    />
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "left": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "color": "#666",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Cancelar
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "right": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Confirmar
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+    </View>
+  </View>,
+  <View
+    dark={false}
+    style={
+      Array [
+        Object {
+          "height": 1,
+        },
+      ]
+    }
+  />,
+]
+`;
+
+exports[`<DatePicker /> should render datepicker with custom mode android 1`] = `
+Array [
+  <Text
+    dark={false}
+    error=""
+    isPlaceholder={true}
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "lineHeight": 19,
+          "paddingBottom": 15,
+        },
+        Object {
+          "fontSize": 18,
+          "top": 40,
+        },
+      ]
+    }
+  >
+    
+  </Text>,
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "width": 142,
+        },
+        Array [
+          Object {
+            "width": "100%",
+          },
+        ],
+      ]
+    }
+    testID=""
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 40,
+            "justifyContent": "center",
+          },
+          Object {
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#aaa",
+              "borderWidth": 1,
+              "flex": 1,
+              "height": 40,
+              "justifyContent": "center",
+            },
+            Object {
+              "borderWidth": 0,
+            },
+            false,
+            false,
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            Array [
+              Object {
+                "color": "#c9c9c9",
+              },
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+                "left": 0,
+                "position": "absolute",
+              },
+            ]
+          }
+        >
+           
+        </Text>
+      </View>
+      <Modal
+        animationType="none"
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        supportedOrientations={
+          Array [
+            "portrait",
+            "portrait-upside-down",
+            "landscape",
+            "landscape-left",
+            "landscape-right",
+          ]
+        }
+        transparent={true}
+        visible={false}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "backgroundColor": "#00000077",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={false}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="auto"
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "borderTopColor": "#ccc",
+                          "borderTopWidth": 1,
+                          "marginTop": 42,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <RCTDatePicker
+                      date={1625250483385}
+                      locale="pt-BR"
+                      mode="date"
+                      onChange={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "height": 216,
+                        }
+                      }
+                      timeZoneOffsetInMinutes={null}
+                    />
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "left": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "color": "#666",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Cancelar
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "right": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Confirmar
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+    </View>
+  </View>,
+  <View
+    dark={false}
+    style={
+      Array [
+        Object {
+          "height": 1,
+        },
+      ]
+    }
+  />,
+]
+`;
+
+exports[`<DatePicker /> should render datepicker with editable 1`] = `
+Array [
+  <Text
+    dark={false}
+    error=""
+    isPlaceholder={true}
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "lineHeight": 19,
+          "paddingBottom": 15,
+        },
+        Object {
+          "fontSize": 18,
+          "top": 40,
+        },
+      ]
+    }
+  >
+    
+  </Text>,
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "width": 142,
+        },
+        Array [
+          Object {
+            "width": "100%",
+          },
+        ],
+      ]
+    }
+    testID=""
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 40,
+            "justifyContent": "center",
+          },
+          Object {
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#aaa",
+              "borderWidth": 1,
+              "flex": 1,
+              "height": 40,
+              "justifyContent": "center",
+            },
+            Object {
+              "borderWidth": 0,
+            },
+            false,
+            false,
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            Array [
+              Object {
+                "color": "#c9c9c9",
+              },
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+                "left": 0,
+                "position": "absolute",
+              },
+            ]
+          }
+        >
+           
+        </Text>
+      </View>
+      <Modal
+        animationType="none"
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        supportedOrientations={
+          Array [
+            "portrait",
+            "portrait-upside-down",
+            "landscape",
+            "landscape-left",
+            "landscape-right",
+          ]
+        }
+        transparent={true}
+        visible={false}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "backgroundColor": "#00000077",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={false}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="auto"
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "borderTopColor": "#ccc",
+                          "borderTopWidth": 1,
+                          "marginTop": 42,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <RCTDatePicker
+                      date={1625250483429}
+                      locale="pt-BR"
+                      mode="date"
+                      onChange={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "height": 216,
+                        }
+                      }
+                      timeZoneOffsetInMinutes={null}
+                    />
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "left": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "color": "#666",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Cancelar
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "right": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Confirmar
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+    </View>
+  </View>,
+  <View
+    dark={false}
+    style={
+      Array [
+        Object {
+          "height": 1,
+        },
+      ]
+    }
+  />,
+]
+`;
+
+exports[`<DatePicker /> should render datepicker with error 1`] = `
+Array [
+  <Text
+    dark={false}
+    error="test"
+    isPlaceholder={true}
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "lineHeight": 19,
+          "paddingBottom": 15,
+        },
+        Object {
+          "fontSize": 18,
+          "top": 40,
+        },
+      ]
+    }
+  >
+    
+  </Text>,
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "width": 142,
+        },
+        Array [
+          Object {
+            "width": "100%",
+          },
+        ],
+      ]
+    }
+    testID=""
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 40,
+            "justifyContent": "center",
+          },
+          Object {
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#aaa",
+              "borderWidth": 1,
+              "flex": 1,
+              "height": 40,
+              "justifyContent": "center",
+            },
+            Object {
+              "borderColor": "#cc0000",
+            },
+            false,
+            false,
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            Array [
+              Object {
+                "color": "#c9c9c9",
+              },
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+                "left": 0,
+                "position": "absolute",
+              },
+            ]
+          }
+        >
+           
+        </Text>
+      </View>
+      <Modal
+        animationType="none"
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        supportedOrientations={
+          Array [
+            "portrait",
+            "portrait-upside-down",
+            "landscape",
+            "landscape-left",
+            "landscape-right",
+          ]
+        }
+        transparent={true}
+        visible={false}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "backgroundColor": "#00000077",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={false}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="auto"
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "borderTopColor": "#ccc",
+                          "borderTopWidth": 1,
+                          "marginTop": 42,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <RCTDatePicker
+                      date={1625250483293}
+                      locale="pt-BR"
+                      mode="date"
+                      onChange={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "height": 216,
+                        }
+                      }
+                      timeZoneOffsetInMinutes={null}
+                    />
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "left": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "color": "#666",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Cancelar
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "right": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Confirmar
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+    </View>
+  </View>,
+  <View
+    dark={false}
+    style={
+      Array [
+        Object {
+          "height": 1,
+        },
+      ]
+    }
+  />,
+  <Text
+    accessibility="Erro test"
+    accessibilityLabel="Erro test"
+    centered={false}
+    large={false}
+    style={
+      Array [
+        Object {
+          "color": "#212121",
+          "fontSize": 26,
+          "lineHeight": 35,
+        },
+        Object {
+          "color": "#cc0000",
+          "marginTop": 3.142857142857143,
+          "textAlign": "left",
+        },
+      ]
+    }
+    testID="error_testing"
+    variant="footnote"
+  >
+    test
+  </Text>,
+]
+`;
+
+exports[`<DatePicker /> should render datepicker with format 1`] = `
+Array [
+  <Text
+    dark={false}
+    error=""
+    isPlaceholder={true}
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "lineHeight": 19,
+          "paddingBottom": 15,
+        },
+        Object {
+          "fontSize": 18,
+          "top": 40,
+        },
+      ]
+    }
+  >
+    
+  </Text>,
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "width": 142,
+        },
+        Array [
+          Object {
+            "width": "100%",
+          },
+        ],
+      ]
+    }
+    testID=""
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 40,
+            "justifyContent": "center",
+          },
+          Object {
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#aaa",
+              "borderWidth": 1,
+              "flex": 1,
+              "height": 40,
+              "justifyContent": "center",
+            },
+            Object {
+              "borderWidth": 0,
+            },
+            false,
+            false,
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            Array [
+              Object {
+                "color": "#c9c9c9",
+              },
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+                "left": 0,
+                "position": "absolute",
+              },
+            ]
+          }
+        >
+           
+        </Text>
+      </View>
+      <Modal
+        animationType="none"
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        supportedOrientations={
+          Array [
+            "portrait",
+            "portrait-upside-down",
+            "landscape",
+            "landscape-left",
+            "landscape-right",
+          ]
+        }
+        transparent={true}
+        visible={false}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "backgroundColor": "#00000077",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={false}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="auto"
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "borderTopColor": "#ccc",
+                          "borderTopWidth": 1,
+                          "marginTop": 42,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <RCTDatePicker
+                      date={1625250483451}
+                      locale="pt-BR"
+                      mode="date"
+                      onChange={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "height": 216,
+                        }
+                      }
+                      timeZoneOffsetInMinutes={null}
+                    />
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "left": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "color": "#666",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Cancelar
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "right": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Confirmar
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+    </View>
+  </View>,
+  <View
+    dark={false}
+    style={
+      Array [
+        Object {
+          "height": 1,
+        },
+      ]
+    }
+  />,
+]
+`;
+
+exports[`<DatePicker /> should render datepicker with label 1`] = `
+Array [
+  <Text
+    dark={false}
+    error=""
+    isPlaceholder={true}
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "lineHeight": 19,
+          "paddingBottom": 15,
+        },
+        Object {
+          "fontSize": 18,
+          "top": 40,
+        },
+      ]
+    }
+  >
+    test
+  </Text>,
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "width": 142,
+        },
+        Array [
+          Object {
+            "width": "100%",
+          },
+        ],
+      ]
+    }
+    testID=""
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 40,
+            "justifyContent": "center",
+          },
+          Object {
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#aaa",
+              "borderWidth": 1,
+              "flex": 1,
+              "height": 40,
+              "justifyContent": "center",
+            },
+            Object {
+              "borderWidth": 0,
+            },
+            false,
+            false,
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            Array [
+              Object {
+                "color": "#c9c9c9",
+              },
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+                "left": 0,
+                "position": "absolute",
+              },
+            ]
+          }
+        >
+           
+        </Text>
+      </View>
+      <Modal
+        animationType="none"
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        supportedOrientations={
+          Array [
+            "portrait",
+            "portrait-upside-down",
+            "landscape",
+            "landscape-left",
+            "landscape-right",
+          ]
+        }
+        transparent={true}
+        visible={false}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "backgroundColor": "#00000077",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={false}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="auto"
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "borderTopColor": "#ccc",
+                          "borderTopWidth": 1,
+                          "marginTop": 42,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <RCTDatePicker
+                      date={1625250483103}
+                      locale="pt-BR"
+                      mode="date"
+                      onChange={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "height": 216,
+                        }
+                      }
+                      timeZoneOffsetInMinutes={null}
+                    />
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "left": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "color": "#666",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Cancelar
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "right": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Confirmar
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+    </View>
+  </View>,
+  <View
+    dark={false}
+    style={
+      Array [
+        Object {
+          "height": 1,
+        },
+      ]
+    }
+  />,
+]
+`;
+
+exports[`<DatePicker /> should render datepicker with no dark 1`] = `
+Array [
+  <Text
+    dark={false}
+    error=""
+    isPlaceholder={true}
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "lineHeight": 19,
+          "paddingBottom": 15,
+        },
+        Object {
+          "fontSize": 18,
+          "top": 40,
+        },
+      ]
+    }
+  >
+    
+  </Text>,
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "width": 142,
+        },
+        Array [
+          Object {
+            "width": "100%",
+          },
+        ],
+      ]
+    }
+    testID=""
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 40,
+            "justifyContent": "center",
+          },
+          Object {
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#aaa",
+              "borderWidth": 1,
+              "flex": 1,
+              "height": 40,
+              "justifyContent": "center",
+            },
+            Object {
+              "borderWidth": 0,
+            },
+            false,
+            false,
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            Array [
+              Object {
+                "color": "#c9c9c9",
+              },
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+                "left": 0,
+                "position": "absolute",
+              },
+            ]
+          }
+        >
+           
+        </Text>
+      </View>
+      <Modal
+        animationType="none"
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        supportedOrientations={
+          Array [
+            "portrait",
+            "portrait-upside-down",
+            "landscape",
+            "landscape-left",
+            "landscape-right",
+          ]
+        }
+        transparent={true}
+        visible={false}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "backgroundColor": "#00000077",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={false}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="auto"
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "borderTopColor": "#ccc",
+                          "borderTopWidth": 1,
+                          "marginTop": 42,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <RCTDatePicker
+                      date={1625250483459}
+                      locale="pt-BR"
+                      mode="date"
+                      onChange={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "height": 216,
+                        }
+                      }
+                      timeZoneOffsetInMinutes={null}
+                    />
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "left": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "color": "#666",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Cancelar
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "right": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Confirmar
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+    </View>
+  </View>,
+  <View
+    dark={false}
+    style={
+      Array [
+        Object {
+          "height": 1,
+        },
+      ]
+    }
+  />,
+]
+`;
+
+exports[`<DatePicker /> should render datepicker with status 1`] = `
+Array [
+  <Text
+    dark={false}
+    error=""
+    isPlaceholder={true}
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "lineHeight": 19,
+          "paddingBottom": 15,
+        },
+        Object {
+          "fontSize": 18,
+          "top": 40,
+        },
+      ]
+    }
+  >
+    
+  </Text>,
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "width": 142,
+        },
+        Array [
+          Object {
+            "width": "100%",
+          },
+        ],
+      ]
+    }
+    testID=""
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 40,
+            "justifyContent": "center",
+          },
+          Object {
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#aaa",
+              "borderWidth": 1,
+              "flex": 1,
+              "height": 40,
+              "justifyContent": "center",
+            },
+            Object {
+              "borderWidth": 0,
+            },
+            false,
+            false,
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            Array [
+              Object {
+                "color": "#c9c9c9",
+              },
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+                "left": 0,
+                "position": "absolute",
+              },
+            ]
+          }
+        >
+           
+        </Text>
+      </View>
+      <Modal
+        animationType="none"
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        supportedOrientations={
+          Array [
+            "portrait",
+            "portrait-upside-down",
+            "landscape",
+            "landscape-left",
+            "landscape-right",
+          ]
+        }
+        transparent={true}
+        visible={false}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "backgroundColor": "#00000077",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={false}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="auto"
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "borderTopColor": "#ccc",
+                          "borderTopWidth": 1,
+                          "marginTop": 42,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <RCTDatePicker
+                      date={1625250483477}
+                      locale="pt-BR"
+                      mode="date"
+                      onChange={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "height": 216,
+                        }
+                      }
+                      timeZoneOffsetInMinutes={null}
+                    />
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "left": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "color": "#666",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Cancelar
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "right": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Confirmar
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+    </View>
+  </View>,
+  <View
+    dark={false}
+    style={
+      Array [
+        Object {
+          "height": 1,
+        },
+      ]
+    }
+  />,
+]
+`;
+
+exports[`<DatePicker /> should render datepicker with test id 1`] = `
+Array [
+  <Text
+    dark={false}
+    error=""
+    isPlaceholder={true}
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "lineHeight": 19,
+          "paddingBottom": 15,
+        },
+        Object {
+          "fontSize": 18,
+          "top": 40,
+        },
+      ]
+    }
+  >
+    
+  </Text>,
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "width": 142,
+        },
+        Array [
+          Object {
+            "width": "100%",
+          },
+        ],
+      ]
+    }
+    testID="test"
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 40,
+            "justifyContent": "center",
+          },
+          Object {
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#aaa",
+              "borderWidth": 1,
+              "flex": 1,
+              "height": 40,
+              "justifyContent": "center",
+            },
+            Object {
+              "borderWidth": 0,
+            },
+            false,
+            false,
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            Array [
+              Object {
+                "color": "#c9c9c9",
+              },
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+                "left": 0,
+                "position": "absolute",
+              },
+            ]
+          }
+        >
+           
+        </Text>
+      </View>
+      <Modal
+        animationType="none"
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        supportedOrientations={
+          Array [
+            "portrait",
+            "portrait-upside-down",
+            "landscape",
+            "landscape-left",
+            "landscape-right",
+          ]
+        }
+        transparent={true}
+        visible={false}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "backgroundColor": "#00000077",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={false}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="auto"
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "borderTopColor": "#ccc",
+                          "borderTopWidth": 1,
+                          "marginTop": 42,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <RCTDatePicker
+                      date={1625250483336}
+                      locale="pt-BR"
+                      mode="date"
+                      onChange={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "height": 216,
+                        }
+                      }
+                      timeZoneOffsetInMinutes={null}
+                    />
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "left": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "color": "#666",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Cancelar
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "right": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Confirmar
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+    </View>
+  </View>,
+  <View
+    dark={false}
+    style={
+      Array [
+        Object {
+          "height": 1,
+        },
+      ]
+    }
+  />,
+]
+`;
+
+exports[`<DatePicker /> should render datepicker with value 1`] = `
+Array [
+  <Text
+    dark={false}
+    error=""
+    isPlaceholder={true}
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "lineHeight": 19,
+          "paddingBottom": 15,
+        },
+        Object {
+          "fontSize": 18,
+          "top": 40,
+        },
+      ]
+    }
+  >
+    
+  </Text>,
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "width": 142,
+        },
+        Array [
+          Object {
+            "width": "100%",
+          },
+        ],
+      ]
+    }
+    testID=""
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 40,
+            "justifyContent": "center",
+          },
+          Object {
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#aaa",
+              "borderWidth": 1,
+              "flex": 1,
+              "height": 40,
+              "justifyContent": "center",
+            },
+            Object {
+              "borderWidth": 0,
+            },
+            false,
+            false,
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={true}
+          style={
+            Array [
+              Object {
+                "color": "#c9c9c9",
+              },
+              Object {
+                "color": "#fff",
+                "fontSize": 18,
+                "left": 0,
+                "position": "absolute",
+              },
+            ]
+          }
+        >
+           
+        </Text>
+      </View>
+      <Modal
+        animationType="none"
+        hardwareAccelerated={false}
+        onRequestClose={[Function]}
+        supportedOrientations={
+          Array [
+            "portrait",
+            "portrait-upside-down",
+            "landscape",
+            "landscape-left",
+            "landscape-right",
+          ]
+        }
+        transparent={true}
+        visible={false}
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "backgroundColor": "#00000077",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={false}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+              >
+                <View
+                  pointerEvents="auto"
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "borderTopColor": "#ccc",
+                          "borderTopWidth": 1,
+                          "marginTop": 42,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <RCTDatePicker
+                      date={1625250483083}
+                      locale="pt-BR"
+                      mode="date"
+                      onChange={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "height": 216,
+                        }
+                      }
+                      timeZoneOffsetInMinutes={null}
+                    />
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "left": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        Object {
+                          "color": "#666",
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Cancelar
+                  </Text>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "height": 42,
+                        "justifyContent": "center",
+                        "paddingHorizontal": 20,
+                        "position": "absolute",
+                        "top": 0,
+                      },
+                      Object {
+                        "right": 0,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <Text
+                    allowFontScaling={true}
+                    style={
+                      Array [
+                        Object {
+                          "color": "#46cf98",
+                          "fontSize": 16,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    Confirmar
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+    </View>
+  </View>,
+  <View
+    dark={false}
+    style={
+      Array [
+        Object {
+          "height": 1,
+        },
+      ]
+    }
+  />,
+]
+`;

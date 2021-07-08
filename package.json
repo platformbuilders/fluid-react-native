@@ -82,7 +82,9 @@
     "ts-jest": "26.5.4"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "verbose": true,
+    "testEnvironment": "jsdom"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",

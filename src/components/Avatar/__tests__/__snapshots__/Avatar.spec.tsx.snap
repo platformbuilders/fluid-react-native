@@ -62,6 +62,180 @@ exports[`<Avatar /> should render Avatar 1`] = `
 </View>
 `;
 
+exports[`<Avatar /> should render Avatar with all custom props 1`] = `
+<View
+  accessibilityLabel="testing"
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderColor": "#2ecc71",
+      "borderRadius": 12,
+      "borderWidth": 1,
+      "height": 24,
+      "opacity": 1,
+      "overflow": "hidden",
+      "position": "relative",
+      "width": 24,
+    }
+  }
+  testID="testId"
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <ActivityIndicator
+      animating={true}
+      color="#999999"
+      hidesWhenStopped={true}
+      size="small"
+    />
+  </View>
+  <View
+    size={24}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#547E6A",
+          "borderRadius": 3,
+          "height": 6,
+          "justifyContent": "center",
+          "position": "absolute",
+          "width": 6,
+          "zIndex": 2,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "color": "#ffffff",
+        }
+      }
+    >
+      <View
+        accessibilityLabel="Camera"
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID="Camera"
+      >
+        <View>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 20,
+                },
+                undefined,
+                Object {
+                  "fontFamily": "Material Design Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          >
+            󰄀
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Avatar /> should render Avatar with border 1`] = `
+<View
+  accessibilityLabel=""
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderColor": "#547E6A",
+      "borderRadius": 25,
+      "borderWidth": 2,
+      "height": 50,
+      "opacity": 1,
+      "overflow": "hidden",
+      "position": "relative",
+      "width": 50,
+    }
+  }
+  testID="testing"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+        },
+        Object {
+          "height": "101%",
+          "width": "101%",
+        },
+      ]
+    }
+  >
+    <FastImageView
+      resizeMode="cover"
+      source={
+        Object {
+          "uri": Object {
+            "testUri": "../../../src/assets/images/avatar-placeholder.png",
+          },
+        }
+      }
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
 exports[`<Avatar /> should render Avatar with camera 1`] = `
 <View
   accessibilityLabel=""
@@ -170,6 +344,316 @@ exports[`<Avatar /> should render Avatar with camera 1`] = `
         </View>
       </View>
     </View>
+  </View>
+</View>
+`;
+
+exports[`<Avatar /> should render Avatar with custom accessibility label 1`] = `
+<View
+  accessibilityLabel="testing"
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderColor": "#547E6A",
+      "borderRadius": 25,
+      "borderWidth": 2,
+      "height": 50,
+      "opacity": 1,
+      "overflow": "hidden",
+      "position": "relative",
+      "width": 50,
+    }
+  }
+  testID="testing"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+        },
+        Object {
+          "height": "101%",
+          "width": "101%",
+        },
+      ]
+    }
+  >
+    <FastImageView
+      resizeMode="cover"
+      source={
+        Object {
+          "uri": Object {
+            "testUri": "../../../src/assets/images/avatar-placeholder.png",
+          },
+        }
+      }
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`<Avatar /> should render Avatar with custom border 1`] = `
+<View
+  accessibilityLabel=""
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderColor": "#2ecc71",
+      "borderRadius": 25,
+      "borderWidth": 1,
+      "height": 50,
+      "opacity": 1,
+      "overflow": "hidden",
+      "position": "relative",
+      "width": 50,
+    }
+  }
+  testID="testing"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+        },
+        Object {
+          "height": "101%",
+          "width": "101%",
+        },
+      ]
+    }
+  >
+    <FastImageView
+      resizeMode="cover"
+      source={
+        Object {
+          "uri": Object {
+            "testUri": "../../../src/assets/images/avatar-placeholder.png",
+          },
+        }
+      }
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`<Avatar /> should render Avatar with custom image 1`] = `
+<View
+  accessibilityLabel=""
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderColor": "#547E6A",
+      "borderRadius": 25,
+      "borderWidth": 2,
+      "height": 50,
+      "opacity": 1,
+      "overflow": "hidden",
+      "position": "relative",
+      "width": 50,
+    }
+  }
+  testID="testing"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+        },
+        Object {
+          "height": "101%",
+          "width": "101%",
+        },
+      ]
+    }
+  >
+    <FastImageView
+      resizeMode="cover"
+      source={
+        Object {
+          "uri": Object {
+            "testUri": "../../../src/assets/images/avatar-placeholder.png",
+          },
+        }
+      }
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`<Avatar /> should render Avatar with custom size 1`] = `
+<View
+  accessibilityLabel=""
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderColor": "#547E6A",
+      "borderRadius": 12,
+      "borderWidth": 2,
+      "height": 24,
+      "opacity": 1,
+      "overflow": "hidden",
+      "position": "relative",
+      "width": 24,
+    }
+  }
+  testID="testing"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+        },
+        Object {
+          "height": "101%",
+          "width": "101%",
+        },
+      ]
+    }
+  >
+    <FastImageView
+      resizeMode="cover"
+      source={
+        Object {
+          "uri": Object {
+            "testUri": "../../../src/assets/images/avatar-placeholder.png",
+          },
+        }
+      }
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`<Avatar /> should render Avatar with custom test id 1`] = `
+<View
+  accessibilityLabel=""
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderColor": "#547E6A",
+      "borderRadius": 25,
+      "borderWidth": 2,
+      "height": 50,
+      "opacity": 1,
+      "overflow": "hidden",
+      "position": "relative",
+      "width": 50,
+    }
+  }
+  testID="testId"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+        },
+        Object {
+          "height": "101%",
+          "width": "101%",
+        },
+      ]
+    }
+  >
+    <FastImageView
+      resizeMode="cover"
+      source={
+        Object {
+          "uri": Object {
+            "testUri": "../../../src/assets/images/avatar-placeholder.png",
+          },
+        }
+      }
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
   </View>
 </View>
 `;
