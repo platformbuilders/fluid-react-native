@@ -52,6 +52,9 @@ const TextInput: FC<TextInputType> = ({
   onFocus = (): any => {},
   onChangeText = (): any => {},
   onPressIcon = (): any => {},
+  onRightIconPress = (): any => {},
+  inputLeftPadding,
+  inputRightPadding,
   rightIconName,
   leftIconName,
   leftIconColor,
@@ -198,7 +201,7 @@ const TextInput: FC<TextInputType> = ({
       contrast={contrast}
       error={hasError}
       touchable={iconTouchableEnabled}
-      onPress={onPressIcon}
+      onPress={!!rightIconName ? onRightIconPress : onPressIcon}
       hitSlop={iconHitSlop}
       iconColor={isLeft ? leftIconColor : iconColor}
     />
@@ -255,11 +258,17 @@ const TextInput: FC<TextInputType> = ({
               multiline={multiline}
               padding={inputPadding}
               rightIcon={!!rightIconName}
+              inputLeftPadding={inputLeftPadding}
+              inputRightPadding={inputRightPadding}
             >
               {borderedHeight && <FixedLabel>{label}</FixedLabel>}
               {!!leftIconName && renderIcon(leftIconName)}
               {renderTextInput(renderStatus)}
               {!!rightIconName && renderIcon(rightIconName)}
+              {!leftIconName &&
+                !rightIconName &&
+                !isEmpty(icon) &&
+                renderIcon(icon as string)}
             </InputAreaWrapper>
           )}
           {withBottomline && <BottomLine status={status} contrast={contrast} />}

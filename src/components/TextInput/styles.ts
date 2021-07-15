@@ -19,6 +19,8 @@ type InputAreaWrapperProps = {
   leftIcon?: boolean;
   multiline: boolean;
   padding?: number;
+  inputRightPadding?: number;
+  inputLeftPadding?: number;
 };
 
 type BorderedWrapperProps = {
@@ -52,8 +54,6 @@ type BottomLineProps = {
 // const placeholderVariant = (props: any) => getFontSize('subhead')(props);
 // const placeholderBigVariant = 'title4';
 
-const hasRightIcon = ifStyle('rightIcon');
-const hasLeftIcon = ifStyle('leftIcon');
 const isMultiline = ifStyle('multiline');
 const isCentered = ifStyle('centered');
 const hasLabel = ifStyle('label');
@@ -65,7 +65,6 @@ const primaryMain = getTheme('primary.main');
 const minimumSpacing = getTheme('minimumSpacing');
 const smallSpacing = getTheme('smallSpacing');
 const largeSpacing = getTheme('largeSpacing');
-const mediumSpacing = getTheme('mediumSpacing');
 const success = getTheme('success');
 const textColor = getTheme('text');
 const failure = getTheme('failure');
@@ -153,8 +152,10 @@ export const InputAreaWrapper = styled.View<InputAreaWrapperProps>`
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  padding-left: ${hasLeftIcon(mediumSpacing, '0px')};
-  padding-right: ${hasRightIcon(largeSpacing, '0px')};
+  ${({ inputRightPadding }: InputAreaWrapperProps) =>
+    inputRightPadding && `padding-right: ${inputRightPadding}px`};
+  ${({ inputLeftPadding }: InputAreaWrapperProps) =>
+    inputLeftPadding && `padding-left: ${inputLeftPadding}px`};
   overflow: hidden;
 `;
 
