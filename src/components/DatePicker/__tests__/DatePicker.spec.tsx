@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components/native';
 import DatePicker from '..';
 import { theme } from '../../../test/helpers';
 
-jest.useFakeTimers();
+jest.useFakeTimers('modern').setSystemTime(new Date('2020-01-01').getTime());
 
 describe('<DatePicker />', () => {
   it('should render datepicker', () => {

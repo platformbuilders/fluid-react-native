@@ -38,6 +38,7 @@ export type TextInputType = {
   onBlur?(x?: any): void;
   onFocus?(x?: any): void;
   onSubmitEditing?(x?: any): void;
+  onRightIconPress?(x?: any): void;
   placeholderTextColor?: string;
   leftIconColor?: string;
   iconColor?: string;
@@ -52,6 +53,10 @@ export type TextInputType = {
   leftIconName?: string;
   iconType?: FontType;
   suppressAnimation?: boolean;
+  iconLeftPadding?: number;
+  iconRightPadding?: number;
+  inputLeftPadding?: number;
+  inputRightPadding?: number;
 } & TextInputProps;
 
 export interface MaskedTextInputType extends TextInputType {

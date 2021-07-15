@@ -182,7 +182,7 @@ Array [
                     }
                   >
                     <RCTDatePicker
-                      date={1625250482669}
+                      date={1577836800000}
                       locale="pt-BR"
                       mode="date"
                       onChange={[Function]}
@@ -488,7 +488,7 @@ Array [
                     }
                   >
                     <RCTDatePicker
-                      date={1625250483345}
+                      date={1577836800000}
                       locale="pt-BR"
                       mode="date"
                       onChange={[Function]}
@@ -794,7 +794,7 @@ Array [
                     }
                   >
                     <RCTDatePicker
-                      date={1625250483307}
+                      date={1577836800000}
                       locale="pt-BR"
                       mode="date"
                       onChange={[Function]}
@@ -1100,7 +1100,7 @@ Array [
                     }
                   >
                     <RCTDatePicker
-                      date={1625250483353}
+                      date={1577836800000}
                       locale="pt-BR"
                       mode="date"
                       onChange={[Function]}
@@ -1406,7 +1406,7 @@ Array [
                     }
                   >
                     <RCTDatePicker
-                      date={1625250483444}
+                      date={1577836800000}
                       locale="en"
                       mode="date"
                       onChange={[Function]}
@@ -1712,9 +1712,9 @@ Array [
                     }
                   >
                     <RCTDatePicker
-                      date={1625250483402}
+                      date={1577674800000}
                       locale="pt-BR"
-                      maximumDate={1627614000000}
+                      maximumDate={1577674800000}
                       mode="date"
                       onChange={[Function]}
                       onResponderTerminationRequest={[Function]}
@@ -2019,7 +2019,7 @@ Array [
                     }
                   >
                     <RCTDatePicker
-                      date={1625250483372}
+                      date={1577836800000}
                       locale="pt-BR"
                       mode="date"
                       onChange={[Function]}
@@ -2325,7 +2325,7 @@ Array [
                     }
                   >
                     <RCTDatePicker
-                      date={1625250483385}
+                      date={1577836800000}
                       locale="pt-BR"
                       mode="date"
                       onChange={[Function]}
@@ -2631,7 +2631,7 @@ Array [
                     }
                   >
                     <RCTDatePicker
-                      date={1625250483429}
+                      date={1577836800000}
                       locale="pt-BR"
                       mode="date"
                       onChange={[Function]}
@@ -2937,7 +2937,7 @@ Array [
                     }
                   >
                     <RCTDatePicker
-                      date={1625250483293}
+                      date={1577836800000}
                       locale="pt-BR"
                       mode="date"
                       onChange={[Function]}
@@ -3267,7 +3267,7 @@ Array [
                     }
                   >
                     <RCTDatePicker
-                      date={1625250483451}
+                      date={1577836800000}
                       locale="pt-BR"
                       mode="date"
                       onChange={[Function]}
@@ -3573,7 +3573,7 @@ Array [
                     }
                   >
                     <RCTDatePicker
-                      date={1625250483103}
+                      date={1577836800000}
                       locale="pt-BR"
                       mode="date"
                       onChange={[Function]}
@@ -3879,7 +3879,7 @@ Array [
                     }
                   >
                     <RCTDatePicker
-                      date={1625250483459}
+                      date={1577836800000}
                       locale="pt-BR"
                       mode="date"
                       onChange={[Function]}
@@ -4185,7 +4185,7 @@ Array [
                     }
                   >
                     <RCTDatePicker
-                      date={1625250483477}
+                      date={1577836800000}
                       locale="pt-BR"
                       mode="date"
                       onChange={[Function]}
@@ -4491,7 +4491,7 @@ Array [
                     }
                   >
                     <RCTDatePicker
-                      date={1625250483336}
+                      date={1577836800000}
                       locale="pt-BR"
                       mode="date"
                       onChange={[Function]}
@@ -4797,7 +4797,7 @@ Array [
                     }
                   >
                     <RCTDatePicker
-                      date={1625250483083}
+                      date={1577836800000}
                       locale="pt-BR"
                       mode="date"
                       onChange={[Function]}
