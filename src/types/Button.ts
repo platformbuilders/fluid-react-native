@@ -12,4 +12,9 @@ export type ButtonProps = {
   variant?: ButtonVariants;
   typographyVariant?: TypographyVariants;
   children?: string | ReactNode;
+  minWidth?: string | number;
+  maxWidth?: string | number;
+  leftIconName?: string;
+  rightIconName?: string;
+  hasBorder?: boolean;
 } & TouchableType;
