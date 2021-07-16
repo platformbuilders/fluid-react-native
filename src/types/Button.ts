@@ -14,8 +14,7 @@ export type ButtonProps = {
   children?: string | ReactNode;
   minWidth?: string | number;
   maxWidth?: string | number;
-  leftIconColor?: string;
   leftIconName?: string;
   rightIconName?: string;
-  rightIconColor?: string;
+  hasBorder?: boolean;
 } & TouchableType;

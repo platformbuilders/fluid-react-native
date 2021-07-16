@@ -25,6 +25,7 @@ const isRightIcon = ifStyle('rightIcon');
 
 type ButtonWrapperProps = {
   rounded: boolean;
+  hasBorder: boolean;
   buttonVariant: ButtonVariants;
   disabled?: boolean;
   style: any;
@@ -106,7 +107,9 @@ export const ButtonWrapper = styled.View<ButtonWrapperProps>`
   background-color: ${getBackgroundColor};
   border-color: ${getTextColor};
   border: ${(props: ButtonWrapperProps) =>
-    props.buttonVariant === 'flat' ? `1px solid ${getTextColor(props)}` : '0'};
+    props.buttonVariant === 'flat' || props.hasBorder
+      ? `1px solid ${getTextColor(props)}`
+      : '0'};
 `;
 
 export const TextButton = styled(TypographyComponent)<TextButtonProps>`
@@ -122,12 +125,16 @@ export const Loading = styled(LoadingIndicator).attrs({
   width: ${moderateScale(55)}px;
 `;
 
-type Props = {
+type IconProps = {
   rightIcon?: boolean;
   leftIcon?: boolean;
+  buttonVariant: ButtonVariants;
+  style: any;
 };
 
-export const Icon = styled(DefaultIcon)<Props>`
+export const Icon = styled(DefaultIcon).attrs((props: IconProps) => ({
+  color: getTextColor(props),
+}))<IconProps>`
   margin-right: ${isLeftIcon(smallSpacing, 0)};
   margin-left: ${isRightIcon(smallSpacing, 0)};
 `;

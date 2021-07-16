@@ -19,10 +19,9 @@ const Button: FC<ButtonProps> = ({
   typographyVariant = 'body',
   minWidth,
   maxWidth,
-  rightIconColor,
   rightIconName,
   leftIconName,
-  leftIconColor,
+  hasBorder = false,
 }) => {
   return (
     <Touchable
@@ -35,6 +34,7 @@ const Button: FC<ButtonProps> = ({
       rounded={rounded}
     >
       <ButtonWrapper
+        hasBorder={hasBorder}
         buttonVariant={variant}
         style={style}
         disabled={disabled}
@@ -49,7 +49,8 @@ const Button: FC<ButtonProps> = ({
               <Icon
                 accessibility=""
                 name={leftIconName as string}
-                color={leftIconColor}
+                buttonVariant={variant}
+                style={style}
                 leftIcon
               />
             )}
@@ -65,7 +66,8 @@ const Button: FC<ButtonProps> = ({
               <Icon
                 accessibility=""
                 name={rightIconName as string}
-                color={rightIconColor}
+                buttonVariant={variant}
+                style={style}
                 rightIcon
               />
             )}
