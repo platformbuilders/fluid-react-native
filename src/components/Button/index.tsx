@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { ButtonProps } from '../../types';
-import { ButtonWrapper, Loading, TextButton, Touchable } from './styles';
+import { ButtonWrapper, Icon, Loading, TextButton, Touchable } from './styles';
 
 const Button: FC<ButtonProps> = ({
   id,
@@ -17,6 +17,12 @@ const Button: FC<ButtonProps> = ({
   contrast = false,
   variant = 'primary',
   typographyVariant = 'body',
+  minWidth,
+  maxWidth,
+  rightIconColor,
+  rightIconName,
+  leftIconName,
+  leftIconColor,
 }) => {
   return (
     <Touchable
@@ -33,10 +39,20 @@ const Button: FC<ButtonProps> = ({
         style={style}
         disabled={disabled}
         rounded={rounded}
+        minWidth={minWidth}
+        maxWidth={maxWidth}
       >
         {loading && <Loading contrast={contrast} />}
         {!loading && (
           <>
+            {!!leftIconName && (
+              <Icon
+                accessibility=""
+                name={leftIconName as string}
+                color={leftIconColor}
+                leftIcon
+              />
+            )}
             <TextButton
               style={textStyle}
               disabled={disabled}
@@ -45,6 +61,14 @@ const Button: FC<ButtonProps> = ({
             >
               {children}
             </TextButton>
+            {!!rightIconName && (
+              <Icon
+                accessibility=""
+                name={rightIconName as string}
+                color={rightIconColor}
+                rightIcon
+              />
+            )}
           </>
         )}
       </ButtonWrapper>

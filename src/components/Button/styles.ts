@@ -1,7 +1,8 @@
 import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
 import { ButtonVariants, TypographyVariants } from '../../types';
-import { getTheme } from '../../utils/helpers';
+import { getTheme, ifStyle } from '../../utils/helpers';
+import DefaultIcon from '../Icon';
 import LoadingIndicator from '../LoadingIndicator';
 import TouchableComponent from '../Touchable';
 import TypographyComponent from '../Typography';
@@ -18,12 +19,17 @@ const accentMain = getTheme('accent.main');
 const accentContrast = getTheme('accent.contrast');
 const buttonRadius = getTheme('buttonRadius');
 const minimumSpacing = getTheme('minimumSpacing');
+const smallSpacing = getTheme('smallSpacing');
+const isLeftIcon = ifStyle('leftIcon');
+const isRightIcon = ifStyle('rightIcon');
 
 type ButtonWrapperProps = {
   rounded: boolean;
   buttonVariant: ButtonVariants;
   disabled?: boolean;
   style: any;
+  minWidth?: string | number;
+  maxWidth?: string | number;
 };
 
 const buttonSize = moderateScale(45);
@@ -88,7 +94,10 @@ export const ButtonWrapper = styled.View<ButtonWrapperProps>`
   height: ${buttonSize}px;
   flex-direction: row;
   align-items: center;
-  min-width: ${moderateScale(180)}px;
+  min-width: ${({ minWidth }: ButtonWrapperProps) =>
+    minWidth || moderateScale(180) + 'px'};
+  max-width: ${({ maxWidth }: ButtonWrapperProps) => maxWidth || '100%'};
+  overflow: hidden;
   padding: ${(props: ButtonWrapperProps): string =>
     props.rounded ? '0' : minimumSpacing(props)};
   border-radius: ${(props: ButtonWrapperProps): string =>
@@ -111,4 +120,14 @@ export const Loading = styled(LoadingIndicator).attrs({
 })`
   align-self: center;
   width: ${moderateScale(55)}px;
+`;
+
+type Props = {
+  rightIcon?: boolean;
+  leftIcon?: boolean;
+};
+
+export const Icon = styled(DefaultIcon)<Props>`
+  margin-right: ${isLeftIcon(smallSpacing, 0)};
+  margin-left: ${isRightIcon(smallSpacing, 0)};
 `;
