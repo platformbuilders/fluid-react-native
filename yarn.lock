@@ -2516,14 +2516,6 @@
     react "^16.13.1"
     react-dom "^16.13.1"
 
-"@platformbuilders/react-native-masked-text@1.0.3":
-  version "1.0.3"
-  resolved "https://npm.pkg.github.com/download/@platformbuilders/react-native-masked-text/1.0.3/4bc1a5c300014353fb8ba98c9a3c2d9467f32ac43473250baf63eb532c490fbd#ac64b15c13fbe2d93781dca00a84d70eb57f00b9"
-  integrity sha512-V2dgI8yr3kBAuVtPszQ06TmtIpT+lerNNFVegb68xNBLAph5kQ+P8Gi1HSOBFkL480lRUAmbyQdbRKmUiCxlxg==
-  dependencies:
-    date-and-time "0.14.2"
-    tinymask "1.0.2"
-
 "@popperjs/core@^2.5.4", "@popperjs/core@^2.6.0":
   version "2.9.2"
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.9.2.tgz#adea7b6953cbb34651766b0548468e743c6a2353"
@@ -7345,11 +7337,6 @@ data-urls@^2.0.0:
     abab "^2.0.3"
     whatwg-mimetype "^2.3.0"
     whatwg-url "^8.0.0"
-
-date-and-time@0.14.2:
-  version "0.14.2"
-  resolved "https://registry.yarnpkg.com/date-and-time/-/date-and-time-0.14.2.tgz#a4266c3dead460f6c231fe9674e585908dac354e"
-  integrity sha512-EFTCh9zRSEpGPmJaexg7HTuzZHh6cnJj1ui7IGCFNXzd2QdpsNh05Db5TF3xzJm30YN+A8/6xHSuRcQqoc3kFA==
 
 date-fns@^1.27.2:
   version "1.30.1"
@@ -16858,11 +16845,6 @@ tinycolor2@^1.4.1:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/tinycolor2/-/tinycolor2-1.4.2.tgz#3f6a4d1071ad07676d7fa472e1fac40a719d8803"
   integrity sha512-vJhccZPs965sV/L2sU4oRQVAos0pQXwsvTLkWYdqJ+a8Q5kPFzJTuOFwy7UniPli44NKQGAglksjvOcpo95aZA==
-
-tinymask@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/tinymask/-/tinymask-1.0.2.tgz#df3775a94087b0d3d056c256e8923c01b7ec0941"
-  integrity sha1-3zd1qUCHsNPQVsJW6JI8AbfsCUE=
 
 tmp@^0.0.33:
   version "0.0.33"
