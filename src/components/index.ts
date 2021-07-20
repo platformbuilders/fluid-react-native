@@ -22,3 +22,4 @@ export { default as RadioButton } from './RadioButton';
 export { default as SearchInput } from './SearchInput';
 export { default as DisplayVersion } from './DisplayVersion';
 export { default as LabelDivider } from './LabelDivider';
+export { TextInputMask, MaskService, TextMask } from './MaskedText';
