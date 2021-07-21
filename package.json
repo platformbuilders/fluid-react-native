@@ -73,6 +73,7 @@
   },
   "dependencies": {
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "date-and-time": "^1.0.1",
     "react-native-responsive-fontsize": "0.4.3",
     "react-native-smooth-pincode-input": "^1.0.9",
     "react-native-web": "0.13.3",
