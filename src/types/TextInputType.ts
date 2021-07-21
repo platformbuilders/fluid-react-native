@@ -6,7 +6,8 @@ import {
   TextStyle,
   ViewStyle,
 } from 'react-native';
-import { TextInputMaskTypeProp } from '@platformbuilders/react-native-masked-text';
+
+import { TextInputMaskTypeProp } from '../components/MaskedText';
 
 import { HitSlopType } from './Common';
 import { FontType } from './IconType';

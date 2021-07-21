@@ -23,6 +23,7 @@ exports[`<Button /> should render button 1`] = `
   <View
     buttonVariant="primary"
     disabled={false}
+    hasBorder={false}
     rounded={false}
     style={
       Array [
@@ -36,7 +37,9 @@ exports[`<Button /> should render button 1`] = `
           "flexDirection": "row",
           "height": 70.71428571428572,
           "justifyContent": "center",
+          "maxWidth": "100%",
           "minWidth": 282.8571428571429,
+          "overflow": "hidden",
           "paddingBottom": 6.285714285714286,
           "paddingLeft": 6.285714285714286,
           "paddingRight": 6.285714285714286,
@@ -96,6 +99,7 @@ exports[`<Button /> should render button when rounded 1`] = `
   <View
     buttonVariant="primary"
     disabled={false}
+    hasBorder={false}
     rounded={true}
     style={
       Array [
@@ -109,7 +113,9 @@ exports[`<Button /> should render button when rounded 1`] = `
           "flexDirection": "row",
           "height": 70.71428571428572,
           "justifyContent": "center",
+          "maxWidth": "100%",
           "minWidth": 282.8571428571429,
+          "overflow": "hidden",
           "paddingBottom": 0,
           "paddingLeft": 0,
           "paddingRight": 0,
@@ -169,6 +175,7 @@ exports[`<Button /> should render button with children 1`] = `
   <View
     buttonVariant="primary"
     disabled={false}
+    hasBorder={false}
     rounded={false}
     style={
       Array [
@@ -182,7 +189,9 @@ exports[`<Button /> should render button with children 1`] = `
           "flexDirection": "row",
           "height": 70.71428571428572,
           "justifyContent": "center",
+          "maxWidth": "100%",
           "minWidth": 282.8571428571429,
+          "overflow": "hidden",
           "paddingBottom": 6.285714285714286,
           "paddingLeft": 6.285714285714286,
           "paddingRight": 6.285714285714286,
@@ -260,6 +269,7 @@ exports[`<Button /> should render button with contrast 1`] = `
   <View
     buttonVariant="primary"
     disabled={false}
+    hasBorder={false}
     rounded={false}
     style={
       Array [
@@ -273,7 +283,9 @@ exports[`<Button /> should render button with contrast 1`] = `
           "flexDirection": "row",
           "height": 70.71428571428572,
           "justifyContent": "center",
+          "maxWidth": "100%",
           "minWidth": 282.8571428571429,
+          "overflow": "hidden",
           "paddingBottom": 6.285714285714286,
           "paddingLeft": 6.285714285714286,
           "paddingRight": 6.285714285714286,
@@ -333,6 +345,7 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
   <View
     buttonVariant="primary"
     disabled={false}
+    hasBorder={false}
     rounded={false}
     style={
       Array [
@@ -346,7 +359,9 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
           "flexDirection": "row",
           "height": 70.71428571428572,
           "justifyContent": "center",
+          "maxWidth": "100%",
           "minWidth": 282.8571428571429,
+          "overflow": "hidden",
           "paddingBottom": 6.285714285714286,
           "paddingLeft": 6.285714285714286,
           "paddingRight": 6.285714285714286,
@@ -406,6 +421,7 @@ exports[`<Button /> should render button with custom style 1`] = `
   <View
     buttonVariant="primary"
     disabled={false}
+    hasBorder={false}
     rounded={false}
     style={
       Array [
@@ -419,7 +435,9 @@ exports[`<Button /> should render button with custom style 1`] = `
           "flexDirection": "row",
           "height": 70.71428571428572,
           "justifyContent": "center",
+          "maxWidth": "100%",
           "minWidth": 282.8571428571429,
+          "overflow": "hidden",
           "paddingBottom": 6.285714285714286,
           "paddingLeft": 6.285714285714286,
           "paddingRight": 6.285714285714286,
@@ -481,6 +499,7 @@ exports[`<Button /> should render button with custom text style 1`] = `
   <View
     buttonVariant="primary"
     disabled={false}
+    hasBorder={false}
     rounded={false}
     style={
       Array [
@@ -494,7 +513,9 @@ exports[`<Button /> should render button with custom text style 1`] = `
           "flexDirection": "row",
           "height": 70.71428571428572,
           "justifyContent": "center",
+          "maxWidth": "100%",
           "minWidth": 282.8571428571429,
+          "overflow": "hidden",
           "paddingBottom": 6.285714285714286,
           "paddingLeft": 6.285714285714286,
           "paddingRight": 6.285714285714286,
@@ -556,6 +577,7 @@ exports[`<Button /> should render button with disabled 1`] = `
   <View
     buttonVariant="primary"
     disabled={true}
+    hasBorder={false}
     rounded={false}
     style={
       Array [
@@ -569,7 +591,9 @@ exports[`<Button /> should render button with disabled 1`] = `
           "flexDirection": "row",
           "height": 70.71428571428572,
           "justifyContent": "center",
+          "maxWidth": "100%",
           "minWidth": 282.8571428571429,
+          "overflow": "hidden",
           "paddingBottom": 6.285714285714286,
           "paddingLeft": 6.285714285714286,
           "paddingRight": 6.285714285714286,
@@ -629,6 +653,7 @@ exports[`<Button /> should render button with loading 1`] = `
   <View
     buttonVariant="primary"
     disabled={false}
+    hasBorder={false}
     rounded={false}
     style={
       Array [
@@ -642,7 +667,9 @@ exports[`<Button /> should render button with loading 1`] = `
           "flexDirection": "row",
           "height": 70.71428571428572,
           "justifyContent": "center",
+          "maxWidth": "100%",
           "minWidth": 282.8571428571429,
+          "overflow": "hidden",
           "paddingBottom": 6.285714285714286,
           "paddingLeft": 6.285714285714286,
           "paddingRight": 6.285714285714286,
@@ -721,6 +748,7 @@ exports[`<Button /> should render button with test id 1`] = `
   <View
     buttonVariant="primary"
     disabled={false}
+    hasBorder={false}
     rounded={false}
     style={
       Array [
@@ -734,7 +762,9 @@ exports[`<Button /> should render button with test id 1`] = `
           "flexDirection": "row",
           "height": 70.71428571428572,
           "justifyContent": "center",
+          "maxWidth": "100%",
           "minWidth": 282.8571428571429,
+          "overflow": "hidden",
           "paddingBottom": 6.285714285714286,
           "paddingLeft": 6.285714285714286,
           "paddingRight": 6.285714285714286,
@@ -794,6 +824,7 @@ exports[`<Button /> should render button with typography variant 1`] = `
   <View
     buttonVariant="primary"
     disabled={false}
+    hasBorder={false}
     rounded={false}
     style={
       Array [
@@ -807,7 +838,9 @@ exports[`<Button /> should render button with typography variant 1`] = `
           "flexDirection": "row",
           "height": 70.71428571428572,
           "justifyContent": "center",
+          "maxWidth": "100%",
           "minWidth": 282.8571428571429,
+          "overflow": "hidden",
           "paddingBottom": 6.285714285714286,
           "paddingLeft": 6.285714285714286,
           "paddingRight": 6.285714285714286,
@@ -867,6 +900,7 @@ exports[`<Button /> should render button with variant 1`] = `
   <View
     buttonVariant="secondary"
     disabled={false}
+    hasBorder={false}
     rounded={false}
     style={
       Array [
@@ -880,7 +914,9 @@ exports[`<Button /> should render button with variant 1`] = `
           "flexDirection": "row",
           "height": 70.71428571428572,
           "justifyContent": "center",
+          "maxWidth": "100%",
           "minWidth": 282.8571428571429,
+          "overflow": "hidden",
           "paddingBottom": 6.285714285714286,
           "paddingLeft": 6.285714285714286,
           "paddingRight": 6.285714285714286,

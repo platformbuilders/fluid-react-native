@@ -1,6 +1,6 @@
 {
   "name": "@platformbuilders/react-native-elements",
-  "version": "0.2.7",
+  "version": "0.3.0",
   "description": "Platform Builders Shared Components Library For React Native",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -46,7 +46,6 @@
   },
   "peerDependencies": {
     "@platformbuilders/helpers": ">=0.3.5",
-    "@platformbuilders/react-native-masked-text": ">=1.0.3",
     "formik": ">=2.1.6",
     "lodash": ">=4.17.20",
     "lottie-react-native": ">=3.5.0",
@@ -74,12 +73,14 @@
   },
   "dependencies": {
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "date-and-time": "^1.0.1",
     "react-native-responsive-fontsize": "0.4.3",
     "react-native-smooth-pincode-input": "^1.0.9",
     "react-native-web": "0.13.3",
     "react-text-mask": "5.4.3",
     "text-mask-addons": "3.8.0",
-    "ts-jest": "26.5.4"
+    "ts-jest": "26.5.4",
+    "vanilla-masker": "1.2.0"
   },
   "jest": {
     "preset": "react-native",
@@ -93,7 +94,6 @@
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-conventional": "11.0.0",
     "@platformbuilders/helpers": "0.3.5",
-    "@platformbuilders/react-native-masked-text": "1.0.3",
     "@storybook/addon-actions": "6.0.22",
     "@storybook/addon-backgrounds": "6.0.22",
     "@storybook/addon-knobs": "6.0.22",

@@ -1,0 +1,27 @@
+import BankSlip from './bank-slip.mask';
+import CelPhoneMask from './cel-phone.mask';
+import CnpjMask from './cnpj.mask';
+import CpfMask from './cpf.mask';
+import CreditCardMask from './credit-card.mask';
+import CustomMask from './custom.mask';
+import DatetimeMask from './datetime.mask';
+import DocumentMask from './document-mask';
+import MoneyMask from './money.mask';
+import NoMask from './no-mask.mask';
+import OnlyNumbersMask from './only-numbers.mask';
+import Uppercase from './uppercase.mask';
+import ZipCodeMask from './zip-code.mask';
+
+module.exports.CelPhoneMask = CelPhoneMask;
+module.exports.CnpjMask = CnpjMask;
+module.exports.CpfMask = CpfMask;
+module.exports.CustomMask = CustomMask;
+module.exports.DatetimeMask = DatetimeMask;
+module.exports.OnlyNumbersMask = OnlyNumbersMask;
+module.exports.ZipCodeMask = ZipCodeMask;
+module.exports.CreditCardMask = CreditCardMask;
+module.exports.NoMask = NoMask;
+module.exports.DocumentMask = DocumentMask;
+module.exports.BankSlip = BankSlip;
+module.exports.Uppercase = Uppercase;
+module.exports.MoneyMask = MoneyMask;

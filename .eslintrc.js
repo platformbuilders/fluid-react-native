@@ -98,6 +98,7 @@ module.exports = {
     'react/no-unescaped-entities': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-non-null-assertion': 0,
+    'sonarjs/no-collapsible-if': 'off',
   },
   settings: {
     react: {
