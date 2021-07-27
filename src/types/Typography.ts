@@ -1,22 +1,22 @@
 import { TypographyVariants } from './Variants';
 
-type TypographyStyle = {
+export type TypographyVariantStyle = {
   fontSize: number;
   lineHeight: number;
 };
 
 export type TypographyTheme = {
-  largeTitle: TypographyStyle;
-  title1: TypographyStyle;
-  title2: TypographyStyle;
-  title3: TypographyStyle;
-  headline: TypographyStyle;
-  body: TypographyStyle;
-  callout: TypographyStyle;
-  subhead: TypographyStyle;
-  footnote: TypographyStyle;
-  caption1: TypographyStyle;
-  caption2: TypographyStyle;
+  largeTitle: TypographyVariantStyle;
+  title1: TypographyVariantStyle;
+  title2: TypographyVariantStyle;
+  title3: TypographyVariantStyle;
+  headline: TypographyVariantStyle;
+  body: TypographyVariantStyle;
+  callout: TypographyVariantStyle;
+  subhead: TypographyVariantStyle;
+  footnote: TypographyVariantStyle;
+  caption1: TypographyVariantStyle;
+  caption2: TypographyVariantStyle;
 };
 
 export interface TypographyType {

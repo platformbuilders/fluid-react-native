@@ -10,8 +10,8 @@ exports[`<FormError /> should render the form error component 1`] = `
     Array [
       Object {
         "color": "#212121",
-        "fontSize": 26,
-        "lineHeight": 35,
+        "fontSize": 13,
+        "lineHeight": 18,
       },
       Object {
         "color": "#cc0000",
@@ -37,8 +37,8 @@ exports[`<FormError /> should render the form error component with centered 1`] 
     Array [
       Object {
         "color": "#212121",
-        "fontSize": 26,
-        "lineHeight": 35,
+        "fontSize": 13,
+        "lineHeight": 18,
       },
       Object {
         "color": "#cc0000",

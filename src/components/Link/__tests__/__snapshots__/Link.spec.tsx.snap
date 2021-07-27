@@ -26,8 +26,8 @@ exports[`<Link /> should render link 1`] = `
       Array [
         Object {
           "color": "#212121",
-          "fontSize": 31,
-          "lineHeight": 43,
+          "fontSize": 16,
+          "lineHeight": 22,
         },
         Object {
           "color": "#ffffff",
