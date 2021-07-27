@@ -109,8 +109,8 @@ exports[`<Accordion /> should render Accordion with body custom 1`] = `
               Array [
                 Object {
                   "color": "#212121",
-                  "fontSize": 31,
-                  "lineHeight": 43,
+                  "fontSize": 16,
+                  "lineHeight": 22,
                 },
               ]
             }
@@ -921,8 +921,8 @@ exports[`<Accordion /> should render Accordion with title custom 1`] = `
             Array [
               Object {
                 "color": "#212121",
-                "fontSize": 31,
-                "lineHeight": 43,
+                "fontSize": 16,
+                "lineHeight": 22,
               },
             ]
           }
