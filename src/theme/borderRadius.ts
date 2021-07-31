@@ -1,5 +1,5 @@
 import { moderateScale } from 'react-native-size-matters';
-import { Radius } from '../types';
+import { BorderRadius } from '../types';
 
 export default {
   smallRadius: `${moderateScale(3)}px`,
@@ -7,4 +7,4 @@ export default {
   largeRadius: `${moderateScale(15)}px`,
   modalRadius: `${moderateScale(20)}px`,
   buttonRadius: `${moderateScale(7)}px`,
-} as Radius;
+} as BorderRadius;

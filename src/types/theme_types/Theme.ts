@@ -1,11 +1,11 @@
 import { Animations } from './Animations';
-import { Colors } from './Colors';
-import { Radius } from './Radius';
+import { BorderRadius } from './BorderRadius';
+import { ThemeColors } from './Colors';
 import { Spacings } from './Spacings';
 import { TypographyTheme } from './Typography';
 
-export type ThemeType = Colors &
+export type ThemeType = ThemeColors &
   Spacings &
-  Radius &
+  BorderRadius &
   Animations &
   TypographyTheme;
