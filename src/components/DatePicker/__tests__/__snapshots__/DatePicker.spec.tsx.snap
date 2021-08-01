@@ -9,7 +9,7 @@ Array [
     style={
       Array [
         Object {
-          "color": "#ffffff",
+          "color": "#cccccc",
           "lineHeight": 19,
           "paddingBottom": 15,
         },
@@ -315,7 +315,7 @@ Array [
     style={
       Array [
         Object {
-          "color": "#ffffff",
+          "color": "#cccccc",
           "lineHeight": 19,
           "paddingBottom": 15,
         },
@@ -621,7 +621,7 @@ Array [
     style={
       Array [
         Object {
-          "color": "#ffffff",
+          "color": "#cccccc",
           "lineHeight": 19,
           "paddingBottom": 15,
         },
@@ -927,7 +927,7 @@ Array [
     style={
       Array [
         Object {
-          "color": "#ffffff",
+          "color": "#cccccc",
           "lineHeight": 19,
           "paddingBottom": 15,
         },
@@ -1233,7 +1233,7 @@ Array [
     style={
       Array [
         Object {
-          "color": "#ffffff",
+          "color": "#cccccc",
           "lineHeight": 19,
           "paddingBottom": 15,
         },
@@ -1846,7 +1846,7 @@ Array [
     style={
       Array [
         Object {
-          "color": "#ffffff",
+          "color": "#cccccc",
           "lineHeight": 19,
           "paddingBottom": 15,
         },
@@ -2152,7 +2152,7 @@ Array [
     style={
       Array [
         Object {
-          "color": "#ffffff",
+          "color": "#cccccc",
           "lineHeight": 19,
           "paddingBottom": 15,
         },
@@ -2458,7 +2458,7 @@ Array [
     style={
       Array [
         Object {
-          "color": "#ffffff",
+          "color": "#cccccc",
           "lineHeight": 19,
           "paddingBottom": 15,
         },
@@ -2764,7 +2764,7 @@ Array [
     style={
       Array [
         Object {
-          "color": "#ffffff",
+          "color": "#cccccc",
           "lineHeight": 19,
           "paddingBottom": 15,
         },
@@ -3067,12 +3067,12 @@ Array [
       Array [
         Object {
           "color": "#212121",
-          "fontSize": 13,
-          "lineHeight": 18,
+          "fontSize": 16,
+          "lineHeight": 22.5,
         },
         Object {
           "color": "#cc0000",
-          "marginTop": 3.142857142857143,
+          "marginTop": 12,
           "textAlign": "left",
         },
       ]
@@ -3094,7 +3094,7 @@ Array [
     style={
       Array [
         Object {
-          "color": "#ffffff",
+          "color": "#cccccc",
           "lineHeight": 19,
           "paddingBottom": 15,
         },
@@ -3400,7 +3400,7 @@ Array [
     style={
       Array [
         Object {
-          "color": "#ffffff",
+          "color": "#cccccc",
           "lineHeight": 19,
           "paddingBottom": 15,
         },
@@ -3706,7 +3706,7 @@ Array [
     style={
       Array [
         Object {
-          "color": "#ffffff",
+          "color": "#cccccc",
           "lineHeight": 19,
           "paddingBottom": 15,
         },
@@ -4012,7 +4012,7 @@ Array [
     style={
       Array [
         Object {
-          "color": "#ffffff",
+          "color": "#cccccc",
           "lineHeight": 19,
           "paddingBottom": 15,
         },
@@ -4318,7 +4318,7 @@ Array [
     style={
       Array [
         Object {
-          "color": "#ffffff",
+          "color": "#cccccc",
           "lineHeight": 19,
           "paddingBottom": 15,
         },
@@ -4624,7 +4624,7 @@ Array [
     style={
       Array [
         Object {
-          "color": "#ffffff",
+          "color": "#cccccc",
           "lineHeight": 19,
           "paddingBottom": 15,
         },

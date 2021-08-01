@@ -1,6 +1,6 @@
-import ContrastLoadingAnimation from '../assets/animations/contrast_loading.json';
-import LoadingAnimation from '../assets/animations/loading.json';
-import { Animations } from '../types';
+import { Animations } from '../../../types';
+import ContrastLoadingAnimation from '../animations/contrast_loading.json';
+import LoadingAnimation from '../animations/loading.json';
 
 export default {
   circularLoading: LoadingAnimation,

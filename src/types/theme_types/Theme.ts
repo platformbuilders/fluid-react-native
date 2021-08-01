@@ -1,11 +1,21 @@
 import { Animations } from './Animations';
-import { BorderRadius } from './BorderRadius';
-import { ThemeColors } from './Colors';
+import { BorderWidth } from './BorderWidth';
+import { Colors } from './Colors';
+import { Radius } from './Radius';
 import { Spacings } from './Spacings';
 import { TypographyTheme } from './Typography';
 
-export type ThemeType = ThemeColors &
-  Spacings &
-  BorderRadius &
-  Animations &
-  TypographyTheme;
+export interface ThemeType extends Colors {
+  spacing: Spacings;
+  radius: Radius;
+  borderWidth: BorderWidth;
+  animations: Animations;
+  typography: TypographyTheme;
+}
+
+// export type ThemeType = Colors &
+//   BorderWidth &
+//   Animations &
+//   TypographyTheme & { spacing: Spacings } & {
+//     radius: Radius;
+//   };

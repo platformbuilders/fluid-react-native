@@ -982,8 +982,8 @@ Array [
       Array [
         Object {
           "color": "#212121",
-          "fontSize": 13,
-          "lineHeight": 18,
+          "fontSize": 16,
+          "lineHeight": 22.5,
         },
         Object {
           "fontWeight": "300",
@@ -1460,12 +1460,12 @@ Array [
       Array [
         Object {
           "color": "#212121",
-          "fontSize": 13,
-          "lineHeight": 18,
+          "fontSize": 16,
+          "lineHeight": 22.5,
         },
         Object {
           "color": "#cc0000",
-          "marginTop": 3.142857142857143,
+          "marginTop": 12,
           "textAlign": "left",
         },
       ]
@@ -2258,7 +2258,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
   <View
     style={
       Object {
-        "marginLeft": 31.428571428571427,
+        "marginLeft": "",
       }
     }
   >
@@ -2286,7 +2286,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
           style={
             Array [
               Object {
-                "color": "#C6B09E",
+                "color": null,
                 "fontSize": 37.714285714285715,
               },
               undefined,

@@ -7,19 +7,14 @@ import LoadingIndicator from '../LoadingIndicator';
 import TouchableComponent from '../Touchable';
 import TypographyComponent from '../Typography';
 
-const disabledMain = getTheme('disabled.main');
-const disabledContrast = getTheme('disabled.contrast');
-const primaryMain = getTheme('primary.main');
-const primaryContrast = getTheme('primary.contrast');
-const secondaryMain = getTheme('secondary.main');
-const secondaryContrast = getTheme('secondary.contrast');
-const tertiaryMain = getTheme('tertiary.main');
-const tertiaryContrast = getTheme('tertiary.contrast');
-const accentMain = getTheme('accent.main');
-const accentContrast = getTheme('accent.contrast');
-const buttonRadius = getTheme('buttonRadius');
-const minimumSpacing = getTheme('minimumSpacing');
-const smallSpacing = getTheme('smallSpacing');
+const brandPrimary = getTheme('brand.primary');
+const brandContrast = getTheme('brand.contrast');
+const brandSecondary = getTheme('brand.secondary');
+const brandTertiary = getTheme('brand.tertiary');
+const brandAccent = getTheme('brand.accent');
+const buttonRadius = getTheme('radius.md');
+const minimumSpacing = getTheme('spacing.xs');
+const smallSpacing = getTheme('spacing.sm');
 const isLeftIcon = ifStyle('leftIcon');
 const isRightIcon = ifStyle('rightIcon');
 
@@ -37,21 +32,21 @@ const buttonSize = moderateScale(45);
 
 const getBackgroundColor = (props: ButtonWrapperProps): string => {
   if (props.disabled) {
-    return disabledMain(props);
+    return `${brandPrimary(props)}70`;
   }
   switch (props.buttonVariant) {
     case 'primary':
-      return primaryMain(props);
+      return brandPrimary(props);
     case 'secondary':
-      return secondaryMain(props);
+      return brandSecondary(props);
     case 'tertiary':
-      return tertiaryMain(props);
+      return brandTertiary(props);
     case 'accent':
-      return accentMain(props);
+      return brandAccent(props);
     case 'flat':
       return 'transparent';
     default:
-      return primaryMain(props);
+      return brandPrimary(props);
   }
 };
 
@@ -64,21 +59,21 @@ type TextButtonProps = {
 
 const getTextColor = (props: TextButtonProps): string => {
   if (props.disabled) {
-    return disabledContrast(props);
+    return brandContrast(props);
   }
   switch (props.buttonVariant) {
     case 'primary':
-      return primaryContrast(props);
+      return brandContrast(props);
     case 'secondary':
-      return secondaryContrast(props);
+      return brandContrast(props);
     case 'tertiary':
-      return tertiaryContrast(props);
+      return brandContrast(props);
     case 'accent':
-      return accentContrast(props);
+      return brandContrast(props);
     case 'flat':
-      return primaryMain(props);
+      return brandPrimary(props);
     default:
-      return primaryContrast(props);
+      return brandContrast(props);
   }
 };
 
@@ -100,7 +95,7 @@ export const ButtonWrapper = styled.View<ButtonWrapperProps>`
   max-width: ${({ maxWidth }: ButtonWrapperProps) => maxWidth || '100%'};
   overflow: hidden;
   padding: ${(props: ButtonWrapperProps): string =>
-    props.rounded ? '0' : minimumSpacing(props)};
+    props.rounded ? '0' : minimumSpacing(props)}px;
   border-radius: ${(props: ButtonWrapperProps): string =>
     props.rounded ? `${buttonSize / 2}px` : buttonRadius(props)};
   justify-content: center;

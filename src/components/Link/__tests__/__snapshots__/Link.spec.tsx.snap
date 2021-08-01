@@ -27,12 +27,12 @@ exports[`<Link /> should render link 1`] = `
         Object {
           "color": "#212121",
           "fontSize": 16,
-          "lineHeight": 22,
+          "lineHeight": 22.5,
         },
         Object {
-          "color": "#ffffff",
+          "color": "#C6B09E",
           "fontWeight": "500",
-          "textDecorationColor": "#ffffff",
+          "textDecorationColor": "#C6B09E",
           "textDecorationLine": "underline",
         },
       ]

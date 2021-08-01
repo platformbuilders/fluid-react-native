@@ -1,7 +1,7 @@
 export interface Sizing {
-  xs: 'xs';
-  sm: 'sm';
-  md: 'md';
-  lg: 'lg';
-  xl: 'xl';
+  xs: number;
+  sm: number;
+  md: number;
+  lg: number;
+  xl: number;
 }

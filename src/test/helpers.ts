@@ -1,9 +1,18 @@
-import { animations, colors, radius, spacing, typography } from '../theme';
+import { ThemeType } from '../types';
+import {
+  animations,
+  borderWidth,
+  colors,
+  radius,
+  spacing,
+  typography,
+} from './mocks/theme';
 
-export const theme = {
+export const theme: ThemeType = {
   ...colors,
-  ...animations,
-  ...spacing,
-  ...radius,
-  ...typography,
+  animations,
+  typography,
+  borderWidth,
+  spacing,
+  radius,
 };

@@ -8,15 +8,15 @@ import { InputStatus } from '../../types';
 import { getTheme, switchStyle } from '../../utils/helpers';
 
 const getStatusStyle = switchStyle('status');
-const primaryContrast = getTheme('primary.contrast');
-const primaryDark = getTheme('primary.dark');
-const disabled = getTheme('disabled.main');
+const brandContrast = getTheme('brand.contrast');
+const brandPrimary = getTheme('brand.primary');
+const disabled = getTheme('brand.primary');
 const inputMainColor = (props: { dark: any }): any =>
   getStatusStyle({
     [InputStatus.Success]: getTheme('success'),
     [InputStatus.Failure]: getTheme('failure'),
-    [InputStatus.Default]: props.dark ? primaryDark : primaryContrast,
-    [InputStatus.Disabled]: disabled,
+    [InputStatus.Default]: props.dark ? brandPrimary : brandContrast,
+    [InputStatus.Disabled]: `${disabled}60`,
   });
 
 export const LABEL_UPPER_STYLE = {
@@ -39,7 +39,7 @@ export const TextLabel = styled.Text<TextProps>`
   line-height: 19px;
   padding-bottom: 15px;
   color: ${(props: TextProps): string =>
-    props.dark ? primaryDark(props) : primaryContrast(props)};
+    props.dark ? brandPrimary(props) : brandContrast(props)};
 `;
 
 export const Label = Animated.createAnimatedComponent<ComponentType<any>>(

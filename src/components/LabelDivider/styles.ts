@@ -2,8 +2,8 @@ import styled from 'styled-components/native';
 import { getTheme } from '../../utils/helpers';
 import Typography from '../Typography';
 
-const smallerSpacing = getTheme('smallerSpacing');
-const disabled = getTheme('texts.dark');
+const smallerSpacing = getTheme('spacing.xs');
+const disabled = getTheme('text');
 
 type Props = {
   marginTop?: number;
