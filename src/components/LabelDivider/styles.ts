@@ -25,7 +25,7 @@ export const Line = styled.View`
 `;
 
 export const DividerText = styled(Typography)`
-  padding: ${smallerSpacing};
+  padding: ${smallerSpacing}px;
   color: ${disabled}90;
   font-weight: bold;
 `;

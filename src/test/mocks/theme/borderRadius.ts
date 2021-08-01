@@ -1,4 +1,4 @@
-import { Radius } from '../../../types';
+import { BorderRadius } from '../../../types';
 
 export default {
   base: 2,
@@ -8,4 +8,4 @@ export default {
   lg: 15,
   xl: 20,
   pill: 7,
-} as Radius;
+} as BorderRadius;

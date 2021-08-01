@@ -12,5 +12,5 @@ export const Text = styled(Typography).attrs({
 })`
   color: ${brandPrimary};
   text-align: center;
-  margin-vertical: ${smallSpacing};
+  margin-vertical: ${smallSpacing}px;
 `;

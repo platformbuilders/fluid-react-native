@@ -12,7 +12,7 @@ const brandContrast = getTheme('brand.contrast');
 const brandSecondary = getTheme('brand.secondary');
 const brandTertiary = getTheme('brand.tertiary');
 const brandAccent = getTheme('brand.accent');
-const buttonRadius = getTheme('radius.md');
+const buttonRadius = getTheme('borderRadius.md');
 const minimumSpacing = getTheme('spacing.xs');
 const smallSpacing = getTheme('spacing.sm');
 const isLeftIcon = ifStyle('leftIcon');
@@ -82,8 +82,8 @@ type TouchableProps = {
 };
 
 export const Touchable = styled(TouchableComponent)<TouchableProps>`
-  border-radius: ${(props: TouchableProps): string =>
-    props.rounded ? `${buttonSize / 2}px` : '0'};
+  border-radius: ${(props: TouchableProps): any =>
+    props.rounded ? buttonSize / 2 : 0}px;
 `;
 
 export const ButtonWrapper = styled.View<ButtonWrapperProps>`
@@ -96,8 +96,8 @@ export const ButtonWrapper = styled.View<ButtonWrapperProps>`
   overflow: hidden;
   padding: ${(props: ButtonWrapperProps): string =>
     props.rounded ? '0' : minimumSpacing(props)}px;
-  border-radius: ${(props: ButtonWrapperProps): string =>
-    props.rounded ? `${buttonSize / 2}px` : buttonRadius(props)};
+  border-radius: ${(props: ButtonWrapperProps): any =>
+    props.rounded ? buttonSize / 2 : buttonRadius(props)}px;
   justify-content: center;
   background-color: ${getBackgroundColor};
   border-color: ${getTextColor};
@@ -130,6 +130,6 @@ type IconProps = {
 export const Icon = styled(DefaultIcon).attrs((props: IconProps) => ({
   color: getTextColor(props),
 }))<IconProps>`
-  margin-right: ${isLeftIcon(smallSpacing, 0)};
-  margin-left: ${isRightIcon(smallSpacing, 0)};
+  margin-right: ${isLeftIcon(smallSpacing, 0)}px;
+  margin-left: ${isRightIcon(smallSpacing, 0)}px;
 `;

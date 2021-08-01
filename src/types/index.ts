@@ -10,8 +10,8 @@ export * from './Loading';
 // Theme Types
 export * from './theme_types/Colors';
 export * from './theme_types/Theme';
-export * from './theme_types/Spacings';
-export * from './theme_types/Radius';
+export * from './theme_types/Spacing';
+export * from './theme_types/BorderRadius';
 export * from './theme_types/BorderWidth';
 export * from './theme_types/Variants';
 export * from './theme_types/Animations';

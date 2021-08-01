@@ -10,10 +10,10 @@ const hasError = ifStyle('error');
 const isContrast = ifStyle('contrast');
 const isCentered = ifStyle('centered');
 const failure = getTheme('failure');
-const primaryMain = getTheme('primary.main');
-const disabledDark = getTheme('primary.Dark');
-const primaryContrast = getTheme('primary.contrast');
-const mediumSpacing = getTheme('mediumSpacing');
+const brandPrimary = getTheme('brand.primary');
+const disabledDark = getTheme('brand.secondary');
+const brandContrast = getTheme('brand.contrast');
+const mediumSpacing = getTheme('spacing.md');
 
 type WrapperProps = {
   style: any;
@@ -21,12 +21,12 @@ type WrapperProps = {
 
 export const defaultStyling = (theme?: ThemeType): any => ({
   cellStyle: {
-    borderRadius: moderateScale(8),
+    borderRadius: 8,
     borderColor: theme ? disabledDark(theme) : '#eeeeee',
     borderWidth: 2,
   },
   cellStyleFocused: {
-    borderColor: theme ? primaryMain(theme) : '#eeeeee',
+    borderColor: theme ? brandPrimary(theme) : '#eeeeee',
   },
   textStyle: {
     fontSize: moderateScale(26),
@@ -48,7 +48,7 @@ type IconProps = {
 export const Icon = styled(DefaultIcon).attrs((props: IconProps) => ({
   color: hasError(
     failure(props),
-    isContrast(primaryContrast(props), primaryMain(props))(props),
+    isContrast(brandContrast(props), brandPrimary(props))(props),
   )(props),
 }))<IconProps>`
   margin-left: ${mediumSpacing};

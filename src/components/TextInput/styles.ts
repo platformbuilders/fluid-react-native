@@ -60,20 +60,20 @@ const hasLabel = ifStyle('label');
 const hasError = ifStyle('error');
 const isContrast = ifStyle('contrast');
 const switchStatus = switchStyle('status');
-const primaryContrast = getTheme('primary.contrast');
-const primaryMain = getTheme('primary.main');
-const minimumSpacing = getTheme('minimumSpacing');
-const smallSpacing = getTheme('smallSpacing');
-const largeSpacing = getTheme('largeSpacing');
-const success = getTheme('success');
+const brandContrast = getTheme('brand.contrast');
+const brandPrimary = getTheme('brand.primary');
+const minimumSpacing = getTheme('spacing.xs');
+const smallSpacing = getTheme('spacing.sm');
+const largeSpacing = getTheme('spacing.lg');
+const success = getTheme('success.primary');
 const textColor = getTheme('text');
-const failure = getTheme('failure');
-const disabled = getTheme('disabled');
+const failure = getTheme('failure.primary');
+const disabled = getTheme('brand.primary');
 const inputColor = (props: TextInputType | BottomLineProps): any =>
   switchStatus({
     [InputStatus.Success]: success,
     [InputStatus.Failure]: failure,
-    [InputStatus.Default]: isContrast(primaryContrast, textColor)(props),
+    [InputStatus.Default]: isContrast(brandContrast, textColor)(props),
     [InputStatus.Disabled]: disabled,
   });
 
@@ -110,7 +110,7 @@ export const BorderedWrapper = styled.View<BorderedWrapperProps>`
     const borderedStyle = `
       justify-content: center;
       border: 1px solid ${
-        error ? failure(rest) : borderedColor || primaryMain(rest)
+        error ? failure(rest) : borderedColor || brandPrimary(rest)
       };
       background-color: ${borderedBackgroundColor || 'transparent'};
       height: ${borderedHeight}px;
@@ -141,7 +141,7 @@ export const InputBorderedColumnWrapper = styled.View<InputBorderedColumnWrapper
 `;
 
 export const FixedLabel = styled(Typography)<FixedLabelProps>`
-  color: ${primaryMain};
+  color: ${brandPrimary};
   margin-bottom: ${minimumSpacing};
 `;
 
@@ -205,6 +205,6 @@ export const Icon = styled(DefaultIcon).attrs((props: IconProps) => ({
   color: hasError(
     failure(props),
     props.iconColor ||
-      isContrast(primaryContrast(props), primaryMain(props))(props),
+      isContrast(brandContrast(props), brandPrimary(props))(props),
   )(props),
 }))<IconProps>``;

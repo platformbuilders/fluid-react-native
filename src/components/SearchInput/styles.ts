@@ -5,7 +5,7 @@ import TextInput from '../TextInput';
 
 const brandSecondary = getTheme('brand.secondary');
 const largeSpacing = getTheme('spacing.xl');
-const largeRadius = getTheme('radius.xl');
+const largeRadius = getTheme('borderRadius.xl');
 
 const wrapperHeight = moderateScale(56);
 
@@ -24,8 +24,8 @@ export const Wrapper = styled.View<WrapperProps>`
   align-items: center;
   justify-content: center;
   padding-horizontal: ${({ inputPadding }: WrapperProps) =>
-    (!!inputPadding && `${inputPadding}px`) || largeSpacing};
-  border-radius: ${largeRadius};
+    (!!inputPadding && inputPadding) || largeSpacing}px;
+  border-radius: ${largeRadius}px;
   ${({ hasShadow }: WrapperProps) => (hasShadow ? getShadow() : {})}
 `;
 
