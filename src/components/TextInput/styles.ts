@@ -65,16 +65,19 @@ const brandPrimary = getTheme('brand.primary');
 const minimumSpacing = getTheme('spacing.xs');
 const smallSpacing = getTheme('spacing.sm');
 const largeSpacing = getTheme('spacing.lg');
-const success = getTheme('success.primary');
+const success = getTheme('success.main');
 const textColor = getTheme('text');
-const failure = getTheme('failure.primary');
+const failure = getTheme('failure.main');
 const disabled = getTheme('brand.primary');
 const inputColor = (props: TextInputType | BottomLineProps): any =>
   switchStatus({
-    [InputStatus.Success]: success,
-    [InputStatus.Failure]: failure,
-    [InputStatus.Default]: isContrast(brandContrast, textColor)(props),
-    [InputStatus.Disabled]: disabled,
+    [InputStatus.Success]: success(props),
+    [InputStatus.Failure]: failure(props),
+    [InputStatus.Default]: isContrast(
+      brandContrast(props),
+      textColor(props),
+    )(props),
+    [InputStatus.Disabled]: disabled(props),
   });
 
 export const LABEL_UPPER_STYLE = {
