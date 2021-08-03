@@ -32,5 +32,4 @@ export interface Colors {
   warning: DefaultColors;
   success: DefaultColors;
   info: DefaultColors;
-  barStyle: StatusBarStyle;
 }

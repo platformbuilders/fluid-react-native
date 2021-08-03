@@ -5,10 +5,16 @@ import { Colors } from './Colors';
 import { Spacing } from './Spacing';
 import { TypographyTheme } from './Typography';
 
-export interface ThemeType extends Colors {
+export interface ThemeType extends Colors, Animations {
   spacing: Spacing;
   borderRadius: BorderRadius;
   borderWidth: BorderWidth;
-  animations: Animations;
   typography: TypographyTheme;
 }
+
+// export type ThemeType = Colors &
+//   BorderWidth &
+//   Animations &
+//   TypographyTheme & { spacing: Spacings } & {
+//     radius: Radius;
+//   };

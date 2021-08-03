@@ -1,5 +1,3 @@
 import { Sizing } from './Sizing';
 
-export interface BorderRadius extends Sizing {
-  base: number;
-}
+export type BorderRadius = Sizing;

@@ -10,7 +10,7 @@ import {
 
 export const theme: ThemeType = {
   ...colors,
-  animations,
+  ...animations,
   typography,
   borderWidth,
   spacing,

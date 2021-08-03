@@ -85,7 +85,7 @@ const TextInput: FC<TextInputType> = ({
     suppressAnimation ? false : true,
   );
   const previousValue = usePrevious<string>(value || '');
-  const labelVariant: TypographyVariants = large ? 'md' : 'sm';
+  const labelVariant: TypographyVariants = large ? 'md' : 'xs';
   const textVariant: TypographyVariants = large ? 'lg' : 'md';
   const placeholderVariant: TypographyVariants = large ? 'lg' : 'md';
 

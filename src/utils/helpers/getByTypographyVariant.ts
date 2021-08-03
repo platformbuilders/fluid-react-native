@@ -5,7 +5,7 @@ import { getTheme } from '@platformbuilders/helpers';
 const baseFontSize = 16;
 
 export const getFontSize = (props: any): number => {
-  const fontSizeFromTheme = getTheme(`${props.variant}`)(props);
+  const fontSizeFromTheme = getTheme(`fontSizes.${props.variant}`)(props);
   return (
     PixelRatio.roundToNearestPixel(toNumber(fontSizeFromTheme)) || baseFontSize
   );
@@ -13,7 +13,7 @@ export const getFontSize = (props: any): number => {
 
 export const getLineHeight = (props: any): number => {
   const lineHeight =
-    (((getTheme(`${props.variant}`)(props) as unknown) as number) ||
+    (((getTheme(`fontSizes.${props.variant}`)(props) as unknown) as number) ||
       baseFontSize) * 1.4;
   return PixelRatio.roundToNearestPixel(toNumber(lineHeight));
 };

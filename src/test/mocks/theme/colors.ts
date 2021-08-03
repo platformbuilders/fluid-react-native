@@ -68,8 +68,4 @@ export default {
     dark: darken(0.05, info),
     contrast: '#ffffff',
   },
-  barStyle: {
-    style: 'dark-content',
-    backgroundColor: primary,
-  },
 } as Colors;
