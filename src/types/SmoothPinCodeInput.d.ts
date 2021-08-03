@@ -1,7 +1,7 @@
 //SmoothPinCodeInput.d.ts
 declare module 'react-native-smooth-pincode-input'{
   import { ReactElement, Component } from 'react';
-  import { StyleProp, ViewStyle,TextStyle,TextInputProps } from 'react-native';
+  import { StyleProp, ViewStyle,TextStyle,TextInputProps, ViewProps } from 'react-native';
   type SmoothPinCodeInputProps = {
     value?: string;
     codeLength?: number;
@@ -31,7 +31,10 @@ declare module 'react-native-smooth-pincode-input'{
     keyboardType?: string;
     editable?: boolean;
     inputProps?: TextInputProps;
-    }
+    useAccessibilityLabelWithIndex: (index: number) => string;
+    useIndexedTestID: (index: number) => string;
+    animatableProps: ViewProps;
+  }
 
   type SmoothInputSate = {
       maskDelay: boolean,

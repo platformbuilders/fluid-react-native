@@ -1,10 +1,10 @@
 import { moderateScale } from 'react-native-size-matters';
-import DefaultCodeInput from 'react-native-smooth-pincode-input';
 import styled from 'styled-components/native';
 import { ThemeType } from '../../types';
 import { getTheme, ifStyle } from '../../utils/helpers';
 import DefaultIcon from '../Icon';
 import Typography from '../Typography';
+import DefaultCodeInput from './lib';
 
 const hasError = ifStyle('error');
 const isContrast = ifStyle('contrast');

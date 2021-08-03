@@ -4,6 +4,7 @@ import {
   StyleProp,
   TextInputProps,
   TextStyle,
+  ViewProps,
   ViewStyle,
 } from 'react-native';
 
@@ -94,4 +95,7 @@ export interface PinInputType {
   textStyleFocused?: any;
   wrapperStyle?: StyleProp<ViewStyle>;
   keyboardType?: KeyboardTypeOptions;
+  inputProps?: TextInputProps;
+  useAccessibilityLabelWithIndex: (index: number) => string;
+  animatableProps: ViewProps;
 }
