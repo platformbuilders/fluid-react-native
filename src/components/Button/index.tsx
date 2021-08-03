@@ -15,13 +15,14 @@ const Button: FC<ButtonProps> = ({
   rounded = false,
   loading = false,
   contrast = false,
+  flat = false,
+  hasBorder = false,
   variant = 'primary',
   typographyVariant = 'md',
   minWidth,
   maxWidth,
   rightIconName,
   leftIconName,
-  hasBorder = false,
 }) => {
   return (
     <Touchable
@@ -41,6 +42,7 @@ const Button: FC<ButtonProps> = ({
         rounded={rounded}
         minWidth={minWidth}
         maxWidth={maxWidth}
+        flat={flat}
       >
         {loading && <Loading contrast={contrast} />}
         {!loading && (

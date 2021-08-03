@@ -9,7 +9,7 @@ import Typography from '../Typography';
 const hasError = ifStyle('error');
 const isContrast = ifStyle('contrast');
 const isCentered = ifStyle('centered');
-const failure = getTheme('failure');
+const danger = getTheme('danger');
 const brandPrimary = getTheme('brand.primary.main');
 const disabledDark = getTheme('brand.secondary.main');
 const brandContrast = getTheme('brand.primary.contrast');
@@ -47,7 +47,7 @@ type IconProps = {
 };
 export const Icon = styled(DefaultIcon).attrs((props: IconProps) => ({
   color: hasError(
-    failure(props),
+    danger(props),
     isContrast(brandContrast(props), brandPrimary(props))(props),
   )(props),
 }))<IconProps>`

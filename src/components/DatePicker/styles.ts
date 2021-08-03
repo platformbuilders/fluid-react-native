@@ -11,10 +11,13 @@ const getStatusStyle = switchStyle('status');
 const brandContrast = getTheme('brand.primary.contrast');
 const brandPrimary = getTheme('brand.primary.main');
 const disabled = getTheme('brand.primary.light');
+const successMain = getTheme('success.main');
+const dangerMain = getTheme('danger.main');
+
 const inputMainColor = (props: { dark: any }): any =>
   getStatusStyle({
-    [InputStatus.Success]: getTheme('success'),
-    [InputStatus.Failure]: getTheme('failure'),
+    [InputStatus.Success]: successMain,
+    [InputStatus.Danger]: dangerMain,
     [InputStatus.Default]: props.dark ? brandPrimary : brandContrast,
     [InputStatus.Disabled]: `${disabled}60`,
   });

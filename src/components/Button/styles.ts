@@ -8,19 +8,31 @@ import TouchableComponent from '../Touchable';
 import TypographyComponent from '../Typography';
 
 const brandPrimary = getTheme('brand.primary.main');
-const brandContrast = getTheme('brand.primary.contrast');
+const brandPrimaryContrast = getTheme('brand.primary.contrast');
 const brandSecondary = getTheme('brand.secondary.main');
+const brandSecondaryContrast = getTheme('brand.secondary.main');
 const brandTertiary = getTheme('brand.tertiary.main');
+const brandTertiaryContrast = getTheme('brand.tertiary.main');
 const brandAccent = getTheme('brand.accent.main');
+const brandAccentContrast = getTheme('brand.accent.main');
+const infoMain = getTheme('info.main');
+const infoContrast = getTheme('info.main');
+const dangerMain = getTheme('danger.main');
+const dangerContrast = getTheme('danger.main');
+const warningMain = getTheme('warning.main');
+const warningContrast = getTheme('warning.main');
 const buttonRadius = getTheme('borderRadius.md');
 const minimumSpacing = getTheme('spacing.xs');
 const smallSpacing = getTheme('spacing.sm');
 const isLeftIcon = ifStyle('leftIcon');
 const isRightIcon = ifStyle('rightIcon');
+const hasBorder = ifStyle('hasBorder');
+const isFlat = ifStyle('flat');
 
 type ButtonWrapperProps = {
   rounded: boolean;
   hasBorder: boolean;
+  flat: boolean;
   buttonVariant: ButtonVariants;
   disabled?: boolean;
   style: any;
@@ -43,8 +55,12 @@ const getBackgroundColor = (props: ButtonWrapperProps): string => {
       return brandTertiary(props);
     case 'accent':
       return brandAccent(props);
-    case 'flat':
-      return 'transparent';
+    case 'info':
+      return infoMain(props);
+    case 'warning':
+      return warningMain(props);
+    case 'danger':
+      return dangerMain(props);
     default:
       return brandPrimary(props);
   }
@@ -59,21 +75,25 @@ type TextButtonProps = {
 
 const getTextColor = (props: TextButtonProps): string => {
   if (props.disabled) {
-    return brandContrast(props);
+    return brandPrimaryContrast(props);
   }
   switch (props.buttonVariant) {
     case 'primary':
-      return brandContrast(props);
+      return brandPrimaryContrast(props);
     case 'secondary':
-      return brandContrast(props);
+      return brandSecondaryContrast(props);
     case 'tertiary':
-      return brandContrast(props);
+      return brandTertiaryContrast(props);
     case 'accent':
-      return brandContrast(props);
-    case 'flat':
-      return brandPrimary(props);
+      return brandAccentContrast(props);
+    case 'danger':
+      return dangerContrast(props);
+    case 'info':
+      return infoContrast(props);
+    case 'warning':
+      return warningContrast(props);
     default:
-      return brandContrast(props);
+      return brandPrimaryContrast(props);
   }
 };
 
@@ -99,12 +119,9 @@ export const ButtonWrapper = styled.View<ButtonWrapperProps>`
   border-radius: ${(props: ButtonWrapperProps): any =>
     props.rounded ? buttonSize / 2 : buttonRadius(props)}px;
   justify-content: center;
-  background-color: ${getBackgroundColor};
+  background-color: ${isFlat('transparent', getBackgroundColor)};
   border-color: ${getTextColor};
-  border: ${(props: ButtonWrapperProps) =>
-    props.buttonVariant === 'flat' || props.hasBorder
-      ? `1px solid ${getTextColor(props)}`
-      : '0'};
+  border: ${(props) => hasBorder(`1px solid ${getTextColor(props)}`, '0')};
 `;
 
 export const TextButton = styled(TypographyComponent)<TextButtonProps>`

@@ -67,12 +67,12 @@ const smallSpacing = getTheme('spacing.sm');
 const largeSpacing = getTheme('spacing.lg');
 const success = getTheme('success.main');
 const textColor = getTheme('text.main');
-const failure = getTheme('failure.main');
+const dangerMain = getTheme('danger.main');
 const disabled = getTheme('brand.primary.main');
 const inputColor = (props: TextInputType | BottomLineProps): any =>
   switchStatus({
     [InputStatus.Success]: success(props),
-    [InputStatus.Failure]: failure(props),
+    [InputStatus.Danger]: dangerMain(props),
     [InputStatus.Default]: isContrast(
       brandContrast(props),
       textColor(props),
@@ -113,7 +113,7 @@ export const BorderedWrapper = styled.View<BorderedWrapperProps>`
     const borderedStyle = `
       justify-content: center;
       border: 1px solid ${
-        error ? failure(rest) : borderedColor || brandPrimary(rest)
+        error ? dangerMain(rest) : borderedColor || brandPrimary(rest)
       };
       background-color: ${borderedBackgroundColor || 'transparent'};
       height: ${borderedHeight}px;
@@ -206,7 +206,7 @@ type IconProps = {
 
 export const Icon = styled(DefaultIcon).attrs((props: IconProps) => ({
   color: hasError(
-    failure(props),
+    dangerMain(props),
     props.iconColor ||
       isContrast(brandContrast(props), brandPrimary(props))(props),
   )(props),

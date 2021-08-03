@@ -189,7 +189,7 @@ const TextInput: FC<TextInputType> = ({
 
   const icon = iconName;
   const iconBordered = iconNameBordered;
-  const renderStatus = hasError ? InputStatus.Failure : status;
+  const renderStatus = hasError ? InputStatus.Danger : status;
 
   const renderIcon = (iconProp: string, isLeft?: boolean) => (
     <Icon

@@ -3,7 +3,9 @@ export type ButtonVariants =
   | 'secondary'
   | 'tertiary'
   | 'accent'
-  | 'flat';
+  | 'danger'
+  | 'warning'
+  | 'info';
 
 export type TypographyVariants =
   | 'min'

@@ -28,7 +28,7 @@ export interface Colors {
   background: Depth;
   text: DefaultColors;
   brand: BrandColors;
-  failure: DefaultColors;
+  danger: DefaultColors;
   warning: DefaultColors;
   success: DefaultColors;
   info: DefaultColors;

@@ -9,7 +9,7 @@ const accent = '#547E6A';
 const info = '#4096D1';
 const success = '#357a38';
 const warning = '#F5B800';
-const failure = '#cc0000';
+const danger = '#cc0000';
 
 export default {
   text: {
@@ -44,10 +44,10 @@ export default {
       contrast: '#ffffff',
     },
   },
-  failure: {
-    light: lighten(0.05, failure),
-    main: failure,
-    dark: darken(0.12, failure),
+  danger: {
+    light: lighten(0.05, danger),
+    main: danger,
+    dark: darken(0.12, danger),
     contrast: '#ffffff',
   },
   warning: {

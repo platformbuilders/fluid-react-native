@@ -4,7 +4,7 @@ import Typography from '../Typography';
 
 const isCentered = ifStyle('centered');
 const isLarge = ifStyle('large');
-const failure = getTheme('failure.main');
+const danger = getTheme('danger.main');
 const smallSpacing = getTheme('spacing.sm');
 
 type ErrorTextProps = {
@@ -17,7 +17,7 @@ type ErrorTextProps = {
 export const ErrorText = styled(Typography).attrs((props: ErrorTextProps) => ({
   variant: isLarge('sm', 'xs')(props),
 }))<ErrorTextProps>`
-  color: ${failure};
+  color: ${danger};
   text-align: ${isCentered('center', 'left')};
   margin-top: ${isLarge(0, smallSpacing)}px;
 `;
