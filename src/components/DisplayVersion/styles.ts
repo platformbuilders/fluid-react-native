@@ -4,11 +4,11 @@ import { getTheme } from '../../utils/helpers';
 
 import Typography from '../Typography';
 
-const brandPrimary = getTheme('brand.primary');
+const brandPrimary = getTheme('brand.primary.main');
 const smallSpacing = getTheme('spacing.sm');
 
 export const Text = styled(Typography).attrs({
-  variant: 'subhead',
+  variant: 'xs',
 })`
   color: ${brandPrimary};
   text-align: center;

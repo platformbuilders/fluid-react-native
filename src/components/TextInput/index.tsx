@@ -65,7 +65,7 @@ const TextInput: FC<TextInputType> = ({
   borderedColor,
   borderedRadius,
   iconType = 'material',
-  fixedLabelVariant = 'caption2',
+  fixedLabelVariant = 'xs',
   suppressAnimation = false,
   ...rest
   // eslint-disable-next-line sonarjs/cognitive-complexity
@@ -85,9 +85,9 @@ const TextInput: FC<TextInputType> = ({
     suppressAnimation ? false : true,
   );
   const previousValue = usePrevious<string>(value || '');
-  const labelVariant: TypographyVariants = large ? 'subhead' : 'footnote';
-  const textVariant: TypographyVariants = large ? 'title2' : 'headline';
-  const placeholderVariant: TypographyVariants = large ? 'title3' : 'body';
+  const labelVariant: TypographyVariants = large ? 'md' : 'sm';
+  const textVariant: TypographyVariants = large ? 'lg' : 'md';
+  const placeholderVariant: TypographyVariants = large ? 'lg' : 'md';
 
   const animateComponent = useCallback(
     (updatedLabelStyle: any): void => {

@@ -10,9 +10,9 @@ const hasError = ifStyle('error');
 const isContrast = ifStyle('contrast');
 const isCentered = ifStyle('centered');
 const failure = getTheme('failure');
-const brandPrimary = getTheme('brand.primary');
-const disabledDark = getTheme('brand.secondary');
-const brandContrast = getTheme('brand.contrast');
+const brandPrimary = getTheme('brand.primary.main');
+const disabledDark = getTheme('brand.secondary.main');
+const brandContrast = getTheme('brand.primary.contrast');
 const mediumSpacing = getTheme('spacing.md');
 
 type WrapperProps = {
@@ -59,7 +59,7 @@ type CaptionProps = {
 };
 
 export const CaptionText = styled(Typography).attrs({
-  variant: 'footnote',
+  variant: 'xs',
 })<CaptionProps>`
   text-align: ${isCentered('center', 'left')};
   opacity: 0.67;

@@ -58,7 +58,7 @@ exports[`<Search /> should render search 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
               "lineHeight": 22.5,
               "position": "absolute",
@@ -71,7 +71,7 @@ exports[`<Search /> should render search 1`] = `
           ]
         }
         testID="error_test"
-        variant="body"
+        variant="md"
       >
         
       </Text>
@@ -118,7 +118,7 @@ exports[`<Search /> should render search 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
@@ -140,7 +140,7 @@ exports[`<Search /> should render search 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -196,7 +196,7 @@ exports[`<Search /> should render search 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -265,7 +265,7 @@ exports[`<Search /> should render search with auto focus 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
               "lineHeight": 22.5,
               "position": "absolute",
@@ -278,7 +278,7 @@ exports[`<Search /> should render search with auto focus 1`] = `
           ]
         }
         testID="error_test"
-        variant="footnote"
+        variant="sm"
       >
         
       </Text>
@@ -325,7 +325,7 @@ exports[`<Search /> should render search with auto focus 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
@@ -347,7 +347,7 @@ exports[`<Search /> should render search with auto focus 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -403,7 +403,7 @@ exports[`<Search /> should render search with auto focus 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -475,7 +475,7 @@ exports[`<Search /> should render search with custom container style 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
               "lineHeight": 22.5,
               "position": "absolute",
@@ -488,7 +488,7 @@ exports[`<Search /> should render search with custom container style 1`] = `
           ]
         }
         testID="error_test"
-        variant="footnote"
+        variant="sm"
       >
         
       </Text>
@@ -535,7 +535,7 @@ exports[`<Search /> should render search with custom container style 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
@@ -557,7 +557,7 @@ exports[`<Search /> should render search with custom container style 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -613,7 +613,7 @@ exports[`<Search /> should render search with custom container style 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -682,7 +682,7 @@ exports[`<Search /> should render search with custom icon color 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
               "lineHeight": 22.5,
               "position": "absolute",
@@ -695,7 +695,7 @@ exports[`<Search /> should render search with custom icon color 1`] = `
           ]
         }
         testID="error_test"
-        variant="footnote"
+        variant="sm"
       >
         
       </Text>
@@ -742,7 +742,7 @@ exports[`<Search /> should render search with custom icon color 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
@@ -764,7 +764,7 @@ exports[`<Search /> should render search with custom icon color 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -820,7 +820,7 @@ exports[`<Search /> should render search with custom icon color 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -892,7 +892,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
               "lineHeight": 22.5,
               "position": "absolute",
@@ -905,7 +905,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
           ]
         }
         testID="error_test"
-        variant="body"
+        variant="md"
       >
         
       </Text>
@@ -952,7 +952,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
@@ -974,7 +974,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -1030,7 +1030,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -1099,7 +1099,7 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
               "lineHeight": 22.5,
               "position": "absolute",
@@ -1112,7 +1112,7 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
           ]
         }
         testID="error_test"
-        variant="body"
+        variant="md"
       >
         
       </Text>
@@ -1159,7 +1159,7 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
@@ -1181,7 +1181,7 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -1237,7 +1237,7 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -1306,7 +1306,7 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
               "lineHeight": 22.5,
               "position": "absolute",
@@ -1319,7 +1319,7 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
           ]
         }
         testID="error_test"
-        variant="body"
+        variant="md"
       >
         
       </Text>
@@ -1366,7 +1366,7 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
@@ -1388,7 +1388,7 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -1444,7 +1444,7 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -1513,7 +1513,7 @@ exports[`<Search /> should render search with custom text style 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
               "lineHeight": 22.5,
               "position": "absolute",
@@ -1526,7 +1526,7 @@ exports[`<Search /> should render search with custom text style 1`] = `
           ]
         }
         testID="error_test"
-        variant="footnote"
+        variant="sm"
       >
         
       </Text>
@@ -1573,7 +1573,7 @@ exports[`<Search /> should render search with custom text style 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
@@ -1597,7 +1597,7 @@ exports[`<Search /> should render search with custom text style 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -1653,7 +1653,7 @@ exports[`<Search /> should render search with custom text style 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -1722,7 +1722,7 @@ exports[`<Search /> should render search with icon size 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
               "lineHeight": 22.5,
               "position": "absolute",
@@ -1735,7 +1735,7 @@ exports[`<Search /> should render search with icon size 1`] = `
           ]
         }
         testID="error_test"
-        variant="footnote"
+        variant="sm"
       >
         
       </Text>
@@ -1782,7 +1782,7 @@ exports[`<Search /> should render search with icon size 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
@@ -1804,7 +1804,7 @@ exports[`<Search /> should render search with icon size 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -1860,7 +1860,7 @@ exports[`<Search /> should render search with icon size 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -1929,7 +1929,7 @@ exports[`<Search /> should render search with left icon 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
               "lineHeight": 22.5,
               "position": "absolute",
@@ -1942,7 +1942,7 @@ exports[`<Search /> should render search with left icon 1`] = `
           ]
         }
         testID="error_test"
-        variant="footnote"
+        variant="sm"
       >
         
       </Text>
@@ -2035,7 +2035,7 @@ exports[`<Search /> should render search with left icon 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
@@ -2057,7 +2057,7 @@ exports[`<Search /> should render search with left icon 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
       </View>
@@ -2067,7 +2067,7 @@ exports[`<Search /> should render search with left icon 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -2137,7 +2137,7 @@ exports[`<Search /> should render search with padding 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
               "lineHeight": 22.5,
               "position": "absolute",
@@ -2150,7 +2150,7 @@ exports[`<Search /> should render search with padding 1`] = `
           ]
         }
         testID="error_test"
-        variant="body"
+        variant="md"
       >
         
       </Text>
@@ -2198,7 +2198,7 @@ exports[`<Search /> should render search with padding 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
@@ -2220,7 +2220,7 @@ exports[`<Search /> should render search with padding 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -2276,7 +2276,7 @@ exports[`<Search /> should render search with padding 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -2345,7 +2345,7 @@ exports[`<Search /> should render search with right icon 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
               "lineHeight": 22.5,
               "position": "absolute",
@@ -2358,7 +2358,7 @@ exports[`<Search /> should render search with right icon 1`] = `
           ]
         }
         testID="error_test"
-        variant="body"
+        variant="md"
       >
         
       </Text>
@@ -2405,7 +2405,7 @@ exports[`<Search /> should render search with right icon 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
@@ -2427,7 +2427,7 @@ exports[`<Search /> should render search with right icon 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -2483,7 +2483,7 @@ exports[`<Search /> should render search with right icon 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -2559,7 +2559,7 @@ exports[`<Search /> should render search with shadow 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
               "lineHeight": 22.5,
               "position": "absolute",
@@ -2572,7 +2572,7 @@ exports[`<Search /> should render search with shadow 1`] = `
           ]
         }
         testID="error_test"
-        variant="body"
+        variant="md"
       >
         
       </Text>
@@ -2619,7 +2619,7 @@ exports[`<Search /> should render search with shadow 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
@@ -2641,7 +2641,7 @@ exports[`<Search /> should render search with shadow 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -2697,7 +2697,7 @@ exports[`<Search /> should render search with shadow 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -2767,7 +2767,7 @@ exports[`<Search /> should render search with wrapper height 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
               "lineHeight": 22.5,
               "position": "absolute",
@@ -2780,7 +2780,7 @@ exports[`<Search /> should render search with wrapper height 1`] = `
           ]
         }
         testID="error_test"
-        variant="footnote"
+        variant="sm"
       >
         
       </Text>
@@ -2827,7 +2827,7 @@ exports[`<Search /> should render search with wrapper height 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
@@ -2849,7 +2849,7 @@ exports[`<Search /> should render search with wrapper height 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -2905,7 +2905,7 @@ exports[`<Search /> should render search with wrapper height 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]

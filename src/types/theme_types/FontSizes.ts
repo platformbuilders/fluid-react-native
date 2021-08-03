@@ -1,3 +1,3 @@
 import { Sizing } from './Sizing';
 
-export type BorderWidth = Sizing;
+export type FontSizes = Sizing;

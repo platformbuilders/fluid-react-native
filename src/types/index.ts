@@ -15,5 +15,6 @@ export * from './theme_types/BorderRadius';
 export * from './theme_types/BorderWidth';
 export * from './theme_types/Variants';
 export * from './theme_types/Animations';
+export * from './theme_types/Depth';
 export * from './theme_types/Opacity';
 export * from './theme_types/Typography';

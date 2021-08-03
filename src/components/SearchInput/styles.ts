@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 import { getShadow, getTheme } from '../../utils/helpers';
 import TextInput from '../TextInput';
 
-const brandSecondary = getTheme('brand.secondary');
+const brandSecondary = getTheme('brand.secondary.main');
 const largeSpacing = getTheme('spacing.xl');
 const largeRadius = getTheme('borderRadius.xl');
 

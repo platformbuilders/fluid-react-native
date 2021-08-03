@@ -7,11 +7,11 @@ import LoadingIndicator from '../LoadingIndicator';
 import TouchableComponent from '../Touchable';
 import TypographyComponent from '../Typography';
 
-const brandPrimary = getTheme('brand.primary');
-const brandContrast = getTheme('brand.contrast');
-const brandSecondary = getTheme('brand.secondary');
-const brandTertiary = getTheme('brand.tertiary');
-const brandAccent = getTheme('brand.accent');
+const brandPrimary = getTheme('brand.primary.main');
+const brandContrast = getTheme('brand.primary.contrast');
+const brandSecondary = getTheme('brand.secondary.main');
+const brandTertiary = getTheme('brand.tertiary.main');
+const brandAccent = getTheme('brand.accent.main');
 const buttonRadius = getTheme('borderRadius.md');
 const minimumSpacing = getTheme('spacing.xs');
 const smallSpacing = getTheme('spacing.sm');

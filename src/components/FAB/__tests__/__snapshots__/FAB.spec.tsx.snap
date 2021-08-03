@@ -53,7 +53,7 @@ exports[`<FAB /> should render fab 1`] = `
           style={
             Array [
               Object {
-                "color": "#cccccc",
+                "color": "#ffffff",
                 "fontSize": 37.714285714285715,
               },
               undefined,
@@ -127,7 +127,7 @@ exports[`<FAB /> should render fab with custom icon 1`] = `
           style={
             Array [
               Object {
-                "color": "#cccccc",
+                "color": "#ffffff",
                 "fontSize": 37.714285714285715,
               },
               undefined,
@@ -275,7 +275,7 @@ exports[`<FAB /> should render fab with custom icon size 1`] = `
           style={
             Array [
               Object {
-                "color": "#cccccc",
+                "color": "#ffffff",
                 "fontSize": 37.714285714285715,
               },
               undefined,
@@ -349,7 +349,7 @@ exports[`<FAB /> should render fab with custom text color 1`] = `
           style={
             Array [
               Object {
-                "color": "#cccccc",
+                "color": "#ffffff",
                 "fontSize": 37.714285714285715,
               },
               undefined,
@@ -423,7 +423,7 @@ exports[`<FAB /> should render fab with relative pos 1`] = `
           style={
             Array [
               Object {
-                "color": "#cccccc",
+                "color": "#ffffff",
                 "fontSize": 37.714285714285715,
               },
               undefined,
@@ -504,7 +504,7 @@ exports[`<FAB /> should render fab with shadow 1`] = `
           style={
             Array [
               Object {
-                "color": "#cccccc",
+                "color": "#ffffff",
                 "fontSize": 37.714285714285715,
               },
               undefined,

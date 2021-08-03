@@ -9,7 +9,7 @@ exports[`<FormError /> should render the form error component 1`] = `
   style={
     Array [
       Object {
-        "color": "#212121",
+        "color": "#000000",
         "fontSize": 16,
         "lineHeight": 22.5,
       },
@@ -21,7 +21,7 @@ exports[`<FormError /> should render the form error component 1`] = `
     ]
   }
   testID="error_"
-  variant="footnote"
+  variant="sm"
 >
   testing error
 </Text>
@@ -36,7 +36,7 @@ exports[`<FormError /> should render the form error component with centered 1`] 
   style={
     Array [
       Object {
-        "color": "#212121",
+        "color": "#000000",
         "fontSize": 16,
         "lineHeight": 22.5,
       },
@@ -48,7 +48,7 @@ exports[`<FormError /> should render the form error component with centered 1`] 
     ]
   }
   testID="error_"
-  variant="footnote"
+  variant="sm"
 >
   testing error
 </Text>

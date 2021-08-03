@@ -8,9 +8,9 @@ import { InputStatus } from '../../types';
 import { getTheme, switchStyle } from '../../utils/helpers';
 
 const getStatusStyle = switchStyle('status');
-const brandContrast = getTheme('brand.contrast');
-const brandPrimary = getTheme('brand.primary');
-const disabled = getTheme('brand.primary');
+const brandContrast = getTheme('brand.primary.contrast');
+const brandPrimary = getTheme('brand.primary.main');
+const disabled = getTheme('brand.primary.light');
 const inputMainColor = (props: { dark: any }): any =>
   getStatusStyle({
     [InputStatus.Success]: getTheme('success'),

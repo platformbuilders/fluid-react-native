@@ -108,14 +108,14 @@ exports[`<Accordion /> should render Accordion with body custom 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#212121",
+                  "color": "#000000",
                   "fontSize": 16,
                   "lineHeight": 22.5,
                 },
               ]
             }
             testID="Unity Test"
-            variant="body"
+            variant="md"
           >
             Unity Test
           </Text>
@@ -920,14 +920,14 @@ exports[`<Accordion /> should render Accordion with title custom 1`] = `
           style={
             Array [
               Object {
-                "color": "#212121",
+                "color": "#000000",
                 "fontSize": 16,
                 "lineHeight": 22.5,
               },
             ]
           }
           testID="Unity Test"
-          variant="body"
+          variant="md"
         >
           Unity Test
         </Text>

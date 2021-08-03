@@ -1,6 +1,7 @@
 import { darken, lighten } from 'polished';
 import { Colors } from '../../../types';
 
+const text = '#000000';
 const primary = '#C6B09E';
 const secondary = '#805281';
 const tertiary = '#2A2E39';
@@ -11,13 +12,37 @@ const warning = '#F5B800';
 const failure = '#cc0000';
 
 export default {
-  text: '#212121',
+  text: {
+    light: lighten(0.05, text),
+    main: text,
+    dark: darken(0.12, text),
+    contrast: '#ffffff',
+  },
   brand: {
-    primary,
-    secondary,
-    tertiary,
-    accent,
-    contrast: '#cccccc',
+    primary: {
+      light: lighten(0.05, primary),
+      main: primary,
+      dark: darken(0.12, primary),
+      contrast: '#ffffff',
+    },
+    secondary: {
+      light: lighten(0.05, secondary),
+      main: secondary,
+      dark: darken(0.12, secondary),
+      contrast: '#ffffff',
+    },
+    tertiary: {
+      light: lighten(0.05, tertiary),
+      main: tertiary,
+      dark: darken(0.12, tertiary),
+      contrast: '#ffffff',
+    },
+    accent: {
+      light: lighten(0.05, accent),
+      main: accent,
+      dark: darken(0.12, accent),
+      contrast: '#ffffff',
+    },
   },
   failure: {
     light: lighten(0.05, failure),

@@ -4,8 +4,8 @@ import { getTheme, ifStyle } from '../../utils/helpers';
 import Icon from '../Icon';
 import Touchable from '../Touchable';
 
-const brandPrimary = getTheme('brand.primary');
-const brandAccent = getTheme('brand.accent');
+const brandPrimary = getTheme('brand.primary.main');
+const brandAccent = getTheme('brand.accent.main');
 
 const showBorder = ifStyle('showBorder');
 const hasBorderWidth = ifStyle('borderWidth');

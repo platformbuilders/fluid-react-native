@@ -15,7 +15,7 @@ type ErrorTextProps = {
 };
 
 export const ErrorText = styled(Typography).attrs((props: ErrorTextProps) => ({
-  variant: isLarge('footnote', 'footnote')(props),
+  variant: isLarge('sm', 'xs')(props),
 }))<ErrorTextProps>`
   color: ${failure};
   text-align: ${isCentered('center', 'left')};

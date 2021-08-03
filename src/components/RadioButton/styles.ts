@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 import { getTheme, ifStyle } from '../../utils/helpers';
 import Touchable from '../Touchable';
 
-const textColor = getTheme('text');
+const textColor = getTheme('text.main');
 const hasColor = ifStyle('radioButtonColor');
 const hasCheckedColor = ifStyle('checkedRadioButtonColor');
 

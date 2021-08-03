@@ -148,7 +148,7 @@ describe('<Button />', () => {
   it('should render button with typography variant', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <Button id="testing" accessibility="" typographyVariant="headline" />
+        <Button id="testing" accessibility="" typographyVariant="lg" />
       </ThemeProvider>,
     );
 

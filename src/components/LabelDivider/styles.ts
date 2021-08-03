@@ -3,7 +3,7 @@ import { getTheme } from '../../utils/helpers';
 import Typography from '../Typography';
 
 const smallerSpacing = getTheme('spacing.xs');
-const disabled = getTheme('text');
+const disabled = getTheme('text.light');
 
 type Props = {
   marginTop?: number;

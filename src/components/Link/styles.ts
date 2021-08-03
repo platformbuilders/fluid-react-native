@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 import { getTheme } from '../../utils/helpers';
 import Typography from '../Typography';
 
-const brandprimary = getTheme('brand.primary');
+const brandPrimary = getTheme('brand.primary.main');
 
 type Props = {
   testID: string;
@@ -12,7 +12,7 @@ type Props = {
 
 export const Text = styled(Typography)<Props>`
   font-weight: 500;
-  color: ${brandprimary};
-  text-decoration-color: ${brandprimary};
+  color: ${brandPrimary};
+  text-decoration-color: ${brandPrimary};
   text-decoration-line: underline;
 `;

@@ -7,10 +7,10 @@ import buttonMarkdown from './button.md';
 import Button from './index';
 
 const optionsVariant = {
-  primary: colors.brand.primary,
-  secondary: colors.brand.secondary,
-  tertiary: colors.brand.tertiary,
-  accent: colors.brand.accent,
+  primary: colors.brand.primary.main,
+  secondary: colors.brand.secondary.main,
+  tertiary: colors.brand.tertiary.main,
+  accent: colors.brand.accent.main,
   flat: 'transparent',
 };
 

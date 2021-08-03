@@ -7,7 +7,7 @@ exports[`<DisplayVersion /> should render and match snapshot for default props 1
   style={
     Array [
       Object {
-        "color": "#212121",
+        "color": "#000000",
         "fontSize": 16,
         "lineHeight": 22.5,
       },
@@ -19,7 +19,7 @@ exports[`<DisplayVersion /> should render and match snapshot for default props 1
     ]
   }
   testID="display-version"
-  variant="subhead"
+  variant="xs"
 >
   Versão 
   1.0

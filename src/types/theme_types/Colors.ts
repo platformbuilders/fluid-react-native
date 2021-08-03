@@ -1,4 +1,5 @@
 import { StatusBarStyle as RNBarStyle } from 'react-native';
+import { Depth } from './Depth';
 
 interface BaseColor {
   contrast: string;
@@ -10,19 +11,22 @@ interface DefaultColors extends BaseColor {
   dark: string;
 }
 
-interface BrandColors extends BaseColor {
-  primary: string;
-  secondary: string;
-  tertiary: string;
-  accent: string;
+interface BrandColors {
+  primary: DefaultColors;
+  secondary: DefaultColors;
+  tertiary: DefaultColors;
+  accent: DefaultColors;
 }
+
 export interface StatusBarStyle {
   style: RNBarStyle;
   backgroundColor: string; // Android only
 }
 
+// Theme dark/light
 export interface Colors {
-  text: string;
+  background: Depth;
+  text: DefaultColors;
   brand: BrandColors;
   failure: DefaultColors;
   warning: DefaultColors;

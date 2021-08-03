@@ -57,12 +57,12 @@ exports[`<Button /> should render button 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
             "lineHeight": 22.5,
           },
           Object {
-            "color": "#cccccc",
+            "color": "#ffffff",
             "fontWeight": "500",
             "letterSpacing": 0.4,
           },
@@ -70,7 +70,7 @@ exports[`<Button /> should render button 1`] = `
         ]
       }
       testID="undefined"
-      variant="body"
+      variant="md"
     />
   </View>
 </View>
@@ -133,12 +133,12 @@ exports[`<Button /> should render button when rounded 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
             "lineHeight": 22.5,
           },
           Object {
-            "color": "#cccccc",
+            "color": "#ffffff",
             "fontWeight": "500",
             "letterSpacing": 0.4,
           },
@@ -146,7 +146,7 @@ exports[`<Button /> should render button when rounded 1`] = `
         ]
       }
       testID="undefined"
-      variant="body"
+      variant="md"
     />
   </View>
 </View>
@@ -209,12 +209,12 @@ exports[`<Button /> should render button with children 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
             "lineHeight": 22.5,
           },
           Object {
-            "color": "#cccccc",
+            "color": "#ffffff",
             "fontWeight": "500",
             "letterSpacing": 0.4,
           },
@@ -222,7 +222,7 @@ exports[`<Button /> should render button with children 1`] = `
         ]
       }
       testID="[object Object]"
-      variant="body"
+      variant="md"
     >
       <Text
         accessibility="Test"
@@ -230,14 +230,14 @@ exports[`<Button /> should render button with children 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
               "lineHeight": 22.5,
             },
           ]
         }
         testID="Test"
-        variant="body"
+        variant="md"
       >
         Test
       </Text>
@@ -303,12 +303,12 @@ exports[`<Button /> should render button with contrast 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
             "lineHeight": 22.5,
           },
           Object {
-            "color": "#cccccc",
+            "color": "#ffffff",
             "fontWeight": "500",
             "letterSpacing": 0.4,
           },
@@ -316,7 +316,7 @@ exports[`<Button /> should render button with contrast 1`] = `
         ]
       }
       testID="undefined"
-      variant="body"
+      variant="md"
     />
   </View>
 </View>
@@ -379,12 +379,12 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
             "lineHeight": 22.5,
           },
           Object {
-            "color": "#cccccc",
+            "color": "#ffffff",
             "fontWeight": "500",
             "letterSpacing": 0.4,
           },
@@ -392,7 +392,7 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
         ]
       }
       testID="undefined"
-      variant="body"
+      variant="md"
     />
   </View>
 </View>
@@ -457,12 +457,12 @@ exports[`<Button /> should render button with custom style 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
             "lineHeight": 22.5,
           },
           Object {
-            "color": "#cccccc",
+            "color": "#ffffff",
             "fontWeight": "500",
             "letterSpacing": 0.4,
           },
@@ -470,7 +470,7 @@ exports[`<Button /> should render button with custom style 1`] = `
         ]
       }
       testID="undefined"
-      variant="body"
+      variant="md"
     />
   </View>
 </View>
@@ -533,12 +533,12 @@ exports[`<Button /> should render button with custom text style 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
             "lineHeight": 22.5,
           },
           Object {
-            "color": "#cccccc",
+            "color": "#ffffff",
             "fontWeight": "500",
             "letterSpacing": 0.4,
           },
@@ -548,7 +548,7 @@ exports[`<Button /> should render button with custom text style 1`] = `
         ]
       }
       testID="undefined"
-      variant="body"
+      variant="md"
     />
   </View>
 </View>
@@ -611,12 +611,12 @@ exports[`<Button /> should render button with disabled 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
             "lineHeight": 22.5,
           },
           Object {
-            "color": "#cccccc",
+            "color": "#ffffff",
             "fontWeight": "500",
             "letterSpacing": 0.4,
           },
@@ -624,7 +624,7 @@ exports[`<Button /> should render button with disabled 1`] = `
         ]
       }
       testID="undefined"
-      variant="body"
+      variant="md"
     />
   </View>
 </View>
@@ -778,12 +778,12 @@ exports[`<Button /> should render button with test id 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
             "lineHeight": 22.5,
           },
           Object {
-            "color": "#cccccc",
+            "color": "#ffffff",
             "fontWeight": "500",
             "letterSpacing": 0.4,
           },
@@ -791,7 +791,7 @@ exports[`<Button /> should render button with test id 1`] = `
         ]
       }
       testID="undefined"
-      variant="body"
+      variant="md"
     />
   </View>
 </View>
@@ -854,12 +854,12 @@ exports[`<Button /> should render button with typography variant 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
             "lineHeight": 22.5,
           },
           Object {
-            "color": "#cccccc",
+            "color": "#ffffff",
             "fontWeight": "500",
             "letterSpacing": 0.4,
           },
@@ -867,7 +867,7 @@ exports[`<Button /> should render button with typography variant 1`] = `
         ]
       }
       testID="undefined"
-      variant="headline"
+      variant="lg"
     />
   </View>
 </View>
@@ -930,12 +930,12 @@ exports[`<Button /> should render button with variant 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
             "lineHeight": 22.5,
           },
           Object {
-            "color": "#cccccc",
+            "color": "#ffffff",
             "fontWeight": "500",
             "letterSpacing": 0.4,
           },
@@ -943,7 +943,7 @@ exports[`<Button /> should render button with variant 1`] = `
         ]
       }
       testID="undefined"
-      variant="body"
+      variant="md"
     />
   </View>
 </View>

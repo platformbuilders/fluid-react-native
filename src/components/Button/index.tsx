@@ -16,7 +16,7 @@ const Button: FC<ButtonProps> = ({
   loading = false,
   contrast = false,
   variant = 'primary',
-  typographyVariant = 'body',
+  typographyVariant = 'md',
   minWidth,
   maxWidth,
   rightIconName,

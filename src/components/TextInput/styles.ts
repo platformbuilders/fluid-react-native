@@ -60,15 +60,15 @@ const hasLabel = ifStyle('label');
 const hasError = ifStyle('error');
 const isContrast = ifStyle('contrast');
 const switchStatus = switchStyle('status');
-const brandContrast = getTheme('brand.contrast');
-const brandPrimary = getTheme('brand.primary');
+const brandContrast = getTheme('brand.primary.contrast');
+const brandPrimary = getTheme('brand.primary.main');
 const minimumSpacing = getTheme('spacing.xs');
 const smallSpacing = getTheme('spacing.sm');
 const largeSpacing = getTheme('spacing.lg');
 const success = getTheme('success.main');
-const textColor = getTheme('text');
+const textColor = getTheme('text.main');
 const failure = getTheme('failure.main');
-const disabled = getTheme('brand.primary');
+const disabled = getTheme('brand.primary.main');
 const inputColor = (props: TextInputType | BottomLineProps): any =>
   switchStatus({
     [InputStatus.Success]: success(props),

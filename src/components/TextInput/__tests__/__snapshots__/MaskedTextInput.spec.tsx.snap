@@ -17,7 +17,7 @@ exports[`<MaskedTextInput /> should render textinput 1`] = `
     Array [
       Object {
         "borderWidth": 0,
-        "color": "#212121",
+        "color": "#000000",
         "flexBasis": 0,
         "flexGrow": 1,
         "flexShrink": 1,
@@ -38,6 +38,6 @@ exports[`<MaskedTextInput /> should render textinput 1`] = `
   type="cpf"
   underlineColorAndroid="transparent"
   value=""
-  variant="headline"
+  variant="lg"
 />
 `;
