@@ -95,13 +95,13 @@ class SmoothPinCodeInput extends Component {
     }
   };
   useIndexedAccessibilityLabel = (idx) => {
-    if (typeof this.props.useAccessibilityLabelWithIndex === 'function')
-      return this.props.useAccessibilityLabelWithIndex(idx);
+    if (typeof this.props.useAccessibilityLabelWithIndex === 'string')
+      return `${this.props.useAccessibilityLabelWithIndex} ${idx}`;
     return undefined;
   };
   useIndexedTestID = (idx) => {
-    if (typeof this.props.useIndexedTestID === 'function')
-      return this.props.useIndexedTestID(idx);
+    if (typeof this.props.useIndexedTestID === 'string')
+      return `${this.props.useIndexedTestID} ${idx}`;
     return undefined;
   };
   componentWillUnmount() {
@@ -311,8 +311,8 @@ SmoothPinCodeInput.propTypes = {
   keyboardType: PropTypes.string,
   editable: PropTypes.bool,
   inputProps: PropTypes.exact(TextInput.propTypes),
-  useAccessibilityLabelWithIndex: PropTypes.func,
-  useIndexedTestID: PropTypes.func,
+  useAccessibilityLabelWithIndex: PropTypes.string,
+  useIndexedTestID: PropTypes.string,
   animatableProps: PropTypes.exact(View.propTypes),
   textProps: PropTypes.exact(Text.propTypes),
 };
