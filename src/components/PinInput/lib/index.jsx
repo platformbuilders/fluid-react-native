@@ -97,12 +97,12 @@ class SmoothPinCodeInput extends Component {
   useIndexedAccessibilityLabel = (idx) => {
     if (typeof this.props.useAccessibilityLabelWithIndex === 'string')
       return `${this.props.useAccessibilityLabelWithIndex} ${idx}`;
-    return undefined;
+    return `Insira o PIN ${idx}`;
   };
   useIndexedTestID = (idx) => {
     if (typeof this.props.useIndexedTestID === 'string')
       return `${this.props.useIndexedTestID} ${idx}`;
-    return undefined;
+    return `Insira o PIN ${idx}`;
   };
   componentWillUnmount() {
     clearTimeout(this.maskTimeout);
@@ -131,8 +131,6 @@ class SmoothPinCodeInput extends Component {
       editable,
       inputProps,
       disableFullscreenUI,
-      animatableProps,
-      textProps,
     } = this.props;
     const { maskDelay, focused } = this.state;
     return (
@@ -208,12 +206,10 @@ class SmoothPinCodeInput extends Component {
                 duration={500}
                 accessibilityLabel={this.useIndexedAccessibilityLabel(idx)}
                 testID={this.useIndexedTestID(idx)}
-                {...animatableProps}
               >
                 {isCellText && !maskComponent && (
                   <Text
                     style={[textStyle, cellFocused ? textStyleFocused : {}]}
-                    {...textProps}
                   >
                     {cellText}
                   </Text>
@@ -276,10 +272,8 @@ class SmoothPinCodeInput extends Component {
     editable: true,
     inputProps: {},
     disableFullscreenUI: true,
-    animatableProps: {},
     useAccessibilityLabelWithIndex: undefined,
     useIndexedTestID: undefined,
-    textProps: {},
   };
 }
 SmoothPinCodeInput.propTypes = {
@@ -313,7 +307,5 @@ SmoothPinCodeInput.propTypes = {
   inputProps: PropTypes.exact(TextInput.propTypes),
   useAccessibilityLabelWithIndex: PropTypes.string,
   useIndexedTestID: PropTypes.string,
-  animatableProps: PropTypes.exact(View.propTypes),
-  textProps: PropTypes.exact(Text.propTypes),
 };
 export default SmoothPinCodeInput;
