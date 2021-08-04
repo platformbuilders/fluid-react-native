@@ -4,7 +4,6 @@ import {
   StyleProp,
   TextInputProps,
   TextStyle,
-  ViewProps,
   ViewStyle,
 } from 'react-native';
 
@@ -96,6 +95,38 @@ export interface PinInputType {
   wrapperStyle?: StyleProp<ViewStyle>;
   keyboardType?: KeyboardTypeOptions;
   inputProps?: TextInputProps;
-  useAccessibilityLabelWithIndex: (index: number) => string;
-  animatableProps: ViewProps;
+  /**
+   * This accessibilityLabel is declared on each cell rendered of pin input,
+   * really useful for QAs.
+   *
+   * #### Example
+   * if the given `useAccessibilityLabelWithIndex` is:
+   *
+   * `useAccessibilityLabelWithIndex = "Insira a sua senha de transação"`
+   *
+   * The Appium result should look like this
+   *
+   * `Insira a sua senha de transação index` (there will be the index number in the end)
+   *
+   * #### Default
+   * Default is `Insira o PIN index`
+   */
+  useAccessibilityLabelWithIndex?: string;
+  /**
+   * This testID is declared on each cell rendered of pin input,
+   * really useful for QAs using iOS.
+   *
+   * #### Example
+   * if the given `useAccessibilityLabelWithIndex` is:
+   *
+   * `useAccessibilityLabelWithIndex = "Insira a sua senha de transação"`
+   *
+   * The Appium result should look like this
+   *
+   * `Insira a sua senha de transação index` (there will be the index number in the end)
+   *
+   * #### Default
+   * Default is `Insira o PIN index`
+   */
+  useIndexedTestID?: string;
 }
