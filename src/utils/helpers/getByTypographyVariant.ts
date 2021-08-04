@@ -11,9 +11,7 @@ export const getFontSize = (props: any): number => {
   );
 };
 
-export const getLineHeight = (props: any): number => {
-  const lineHeight =
-    (((getTheme(`fontSizes.${props.variant}`)(props) as unknown) as number) ||
-      baseFontSize) * 1.4;
+export const getLineHeight = (): number => {
+  const lineHeight = baseFontSize * 1.4;
   return PixelRatio.roundToNearestPixel(toNumber(lineHeight));
 };
