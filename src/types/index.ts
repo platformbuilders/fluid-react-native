@@ -13,3 +13,4 @@ export * from './TextInputType';
 export * from './Animations';
 export * from './Loading';
 export * from './Typography';
+export * from './SmoothPinCodeInput';
