@@ -4,7 +4,7 @@ import { ThemeType } from '../../types';
 import { getTheme, ifStyle } from '../../utils/helpers';
 import DefaultIcon from '../Icon';
 import Typography from '../Typography';
-import PinCodeInputLib from './lib';
+import DefaultCodeInput from './lib';
 
 const hasError = ifStyle('error');
 const isContrast = ifStyle('contrast');
@@ -39,7 +39,7 @@ export const Wrapper = styled.View<WrapperProps>`
   flex-direction: row;
 `;
 
-export const PinCodeInput = styled(PinCodeInputLib)``;
+export const PinCodeInput = styled(DefaultCodeInput)``;
 
 type IconProps = {
   contrast: boolean;
