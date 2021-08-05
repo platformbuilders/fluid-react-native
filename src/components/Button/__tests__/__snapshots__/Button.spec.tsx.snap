@@ -951,7 +951,7 @@ exports[`<Button /> should render button with variant 1`] = `
             "lineHeight": 22.5,
           },
           Object {
-            "color": "#805281",
+            "color": "#ffffff",
             "fontWeight": "500",
             "letterSpacing": 0.4,
           },
