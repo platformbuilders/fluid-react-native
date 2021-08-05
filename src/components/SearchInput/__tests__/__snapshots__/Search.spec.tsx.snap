@@ -7,15 +7,14 @@ exports[`<Search /> should render search 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "backgroundColor": "#ffffff",
-        "borderRadius": 23.57142857142857,
+        "borderRadius": 20,
         "flexBasis": 0,
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
         "height": 88,
         "justifyContent": "center",
-        "paddingHorizontal": 37.714285714285715,
+        "paddingHorizontal": 72,
       },
     ]
   }
@@ -59,9 +58,9 @@ exports[`<Search /> should render search 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
-              "lineHeight": 22,
+              "lineHeight": 22.5,
               "position": "absolute",
               "top": 8,
             },
@@ -72,7 +71,7 @@ exports[`<Search /> should render search 1`] = `
           ]
         }
         testID="error_test"
-        variant="body"
+        variant="md"
       >
         
       </Text>
@@ -87,7 +86,7 @@ exports[`<Search /> should render search 1`] = `
               "justifyContent": "center",
               "maxWidth": "100%",
               "overflow": "hidden",
-              "paddingTop": 6.285714285714286,
+              "paddingTop": 4,
             },
           ]
         }
@@ -119,12 +118,12 @@ exports[`<Search /> should render search 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "fontSize": 17,
-                "lineHeight": 22,
+                "fontSize": 16,
+                "lineHeight": 22.5,
                 "marginTop": 0,
                 "minHeight": 37.714285714285715,
                 "paddingBottom": 0,
@@ -141,7 +140,7 @@ exports[`<Search /> should render search 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -172,7 +171,7 @@ exports[`<Search /> should render search 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "#eeeeee",
+                      "color": "({ theme }) => lodash.get(theme, themeProp)",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -197,7 +196,7 @@ exports[`<Search /> should render search 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -215,15 +214,14 @@ exports[`<Search /> should render search with auto focus 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "backgroundColor": "#ffffff",
-        "borderRadius": 23.57142857142857,
+        "borderRadius": 20,
         "flexBasis": 0,
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
         "height": 88,
         "justifyContent": "center",
-        "paddingHorizontal": 37.714285714285715,
+        "paddingHorizontal": 72,
       },
     ]
   }
@@ -267,9 +265,9 @@ exports[`<Search /> should render search with auto focus 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
-              "fontSize": 13,
-              "lineHeight": 18,
+              "color": "#000000",
+              "fontSize": 16,
+              "lineHeight": 22.5,
               "position": "absolute",
               "top": 8,
             },
@@ -280,7 +278,7 @@ exports[`<Search /> should render search with auto focus 1`] = `
           ]
         }
         testID="error_test"
-        variant="footnote"
+        variant="xs"
       >
         
       </Text>
@@ -295,7 +293,7 @@ exports[`<Search /> should render search with auto focus 1`] = `
               "justifyContent": "center",
               "maxWidth": "100%",
               "overflow": "hidden",
-              "paddingTop": 6.285714285714286,
+              "paddingTop": 4,
             },
           ]
         }
@@ -327,12 +325,12 @@ exports[`<Search /> should render search with auto focus 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "fontSize": 17,
-                "lineHeight": 22,
+                "fontSize": 16,
+                "lineHeight": 22.5,
                 "marginTop": 0,
                 "minHeight": 37.714285714285715,
                 "paddingBottom": 0,
@@ -349,7 +347,7 @@ exports[`<Search /> should render search with auto focus 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -380,7 +378,7 @@ exports[`<Search /> should render search with auto focus 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "#eeeeee",
+                      "color": "({ theme }) => lodash.get(theme, themeProp)",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -405,7 +403,7 @@ exports[`<Search /> should render search with auto focus 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -423,15 +421,14 @@ exports[`<Search /> should render search with custom container style 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "backgroundColor": "#ffffff",
-        "borderRadius": 23.57142857142857,
+        "borderRadius": 20,
         "flexBasis": 0,
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
         "height": 88,
         "justifyContent": "center",
-        "paddingHorizontal": 37.714285714285715,
+        "paddingHorizontal": 72,
       },
       Object {
         "backgroundColor": "#123983",
@@ -478,9 +475,9 @@ exports[`<Search /> should render search with custom container style 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
-              "fontSize": 13,
-              "lineHeight": 18,
+              "color": "#000000",
+              "fontSize": 16,
+              "lineHeight": 22.5,
               "position": "absolute",
               "top": 8,
             },
@@ -491,7 +488,7 @@ exports[`<Search /> should render search with custom container style 1`] = `
           ]
         }
         testID="error_test"
-        variant="footnote"
+        variant="xs"
       >
         
       </Text>
@@ -506,7 +503,7 @@ exports[`<Search /> should render search with custom container style 1`] = `
               "justifyContent": "center",
               "maxWidth": "100%",
               "overflow": "hidden",
-              "paddingTop": 6.285714285714286,
+              "paddingTop": 4,
             },
           ]
         }
@@ -538,12 +535,12 @@ exports[`<Search /> should render search with custom container style 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "fontSize": 17,
-                "lineHeight": 22,
+                "fontSize": 16,
+                "lineHeight": 22.5,
                 "marginTop": 0,
                 "minHeight": 37.714285714285715,
                 "paddingBottom": 0,
@@ -560,7 +557,7 @@ exports[`<Search /> should render search with custom container style 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -591,7 +588,7 @@ exports[`<Search /> should render search with custom container style 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "#eeeeee",
+                      "color": "({ theme }) => lodash.get(theme, themeProp)",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -616,7 +613,7 @@ exports[`<Search /> should render search with custom container style 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -634,15 +631,14 @@ exports[`<Search /> should render search with custom icon color 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "backgroundColor": "#ffffff",
-        "borderRadius": 23.57142857142857,
+        "borderRadius": 20,
         "flexBasis": 0,
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
         "height": 88,
         "justifyContent": "center",
-        "paddingHorizontal": 37.714285714285715,
+        "paddingHorizontal": 72,
       },
     ]
   }
@@ -686,9 +682,9 @@ exports[`<Search /> should render search with custom icon color 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
-              "fontSize": 13,
-              "lineHeight": 18,
+              "color": "#000000",
+              "fontSize": 16,
+              "lineHeight": 22.5,
               "position": "absolute",
               "top": 8,
             },
@@ -699,7 +695,7 @@ exports[`<Search /> should render search with custom icon color 1`] = `
           ]
         }
         testID="error_test"
-        variant="footnote"
+        variant="xs"
       >
         
       </Text>
@@ -714,7 +710,7 @@ exports[`<Search /> should render search with custom icon color 1`] = `
               "justifyContent": "center",
               "maxWidth": "100%",
               "overflow": "hidden",
-              "paddingTop": 6.285714285714286,
+              "paddingTop": 4,
             },
           ]
         }
@@ -746,12 +742,12 @@ exports[`<Search /> should render search with custom icon color 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "fontSize": 17,
-                "lineHeight": 22,
+                "fontSize": 16,
+                "lineHeight": 22.5,
                 "marginTop": 0,
                 "minHeight": 37.714285714285715,
                 "paddingBottom": 0,
@@ -768,7 +764,7 @@ exports[`<Search /> should render search with custom icon color 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -824,7 +820,7 @@ exports[`<Search /> should render search with custom icon color 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -842,15 +838,14 @@ exports[`<Search /> should render search with custom input style 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "backgroundColor": "#ffffff",
-        "borderRadius": 23.57142857142857,
+        "borderRadius": 20,
         "flexBasis": 0,
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
         "height": 88,
         "justifyContent": "center",
-        "paddingHorizontal": 37.714285714285715,
+        "paddingHorizontal": 72,
       },
     ]
   }
@@ -897,9 +892,9 @@ exports[`<Search /> should render search with custom input style 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
-              "lineHeight": 22,
+              "lineHeight": 22.5,
               "position": "absolute",
               "top": 8,
             },
@@ -910,7 +905,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
           ]
         }
         testID="error_test"
-        variant="body"
+        variant="md"
       >
         
       </Text>
@@ -925,7 +920,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
               "justifyContent": "center",
               "maxWidth": "100%",
               "overflow": "hidden",
-              "paddingTop": 6.285714285714286,
+              "paddingTop": 4,
             },
           ]
         }
@@ -957,12 +952,12 @@ exports[`<Search /> should render search with custom input style 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "fontSize": 17,
-                "lineHeight": 22,
+                "fontSize": 16,
+                "lineHeight": 22.5,
                 "marginTop": 0,
                 "minHeight": 37.714285714285715,
                 "paddingBottom": 0,
@@ -979,7 +974,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -1010,7 +1005,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "#eeeeee",
+                      "color": "({ theme }) => lodash.get(theme, themeProp)",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -1035,7 +1030,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -1053,15 +1048,14 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "backgroundColor": "#ffffff",
-        "borderRadius": 23.57142857142857,
+        "borderRadius": 20,
         "flexBasis": 0,
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
         "height": 88,
         "justifyContent": "center",
-        "paddingHorizontal": 37.714285714285715,
+        "paddingHorizontal": 72,
       },
     ]
   }
@@ -1105,9 +1099,9 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
-              "lineHeight": 22,
+              "lineHeight": 22.5,
               "position": "absolute",
               "top": 8,
             },
@@ -1118,7 +1112,7 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
           ]
         }
         testID="error_test"
-        variant="body"
+        variant="md"
       >
         
       </Text>
@@ -1133,7 +1127,7 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
               "justifyContent": "center",
               "maxWidth": "100%",
               "overflow": "hidden",
-              "paddingTop": 6.285714285714286,
+              "paddingTop": 4,
             },
           ]
         }
@@ -1165,12 +1159,12 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "fontSize": 17,
-                "lineHeight": 22,
+                "fontSize": 16,
+                "lineHeight": 22.5,
                 "marginTop": 0,
                 "minHeight": 37.714285714285715,
                 "paddingBottom": 0,
@@ -1187,7 +1181,7 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -1218,7 +1212,7 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "#eeeeee",
+                      "color": "({ theme }) => lodash.get(theme, themeProp)",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -1243,7 +1237,7 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -1261,15 +1255,14 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "backgroundColor": "#ffffff",
-        "borderRadius": 23.57142857142857,
+        "borderRadius": 20,
         "flexBasis": 0,
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
         "height": 88,
         "justifyContent": "center",
-        "paddingHorizontal": 37.714285714285715,
+        "paddingHorizontal": 72,
       },
     ]
   }
@@ -1313,9 +1306,9 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
-              "lineHeight": 22,
+              "lineHeight": 22.5,
               "position": "absolute",
               "top": 8,
             },
@@ -1326,7 +1319,7 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
           ]
         }
         testID="error_test"
-        variant="body"
+        variant="md"
       >
         
       </Text>
@@ -1341,7 +1334,7 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
               "justifyContent": "center",
               "maxWidth": "100%",
               "overflow": "hidden",
-              "paddingTop": 6.285714285714286,
+              "paddingTop": 4,
             },
           ]
         }
@@ -1373,12 +1366,12 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "fontSize": 17,
-                "lineHeight": 22,
+                "fontSize": 16,
+                "lineHeight": 22.5,
                 "marginTop": 0,
                 "minHeight": 37.714285714285715,
                 "paddingBottom": 0,
@@ -1395,7 +1388,7 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -1426,7 +1419,7 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "#eeeeee",
+                      "color": "({ theme }) => lodash.get(theme, themeProp)",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -1451,7 +1444,7 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -1469,15 +1462,14 @@ exports[`<Search /> should render search with custom text style 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "backgroundColor": "#ffffff",
-        "borderRadius": 23.57142857142857,
+        "borderRadius": 20,
         "flexBasis": 0,
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
         "height": 88,
         "justifyContent": "center",
-        "paddingHorizontal": 37.714285714285715,
+        "paddingHorizontal": 72,
       },
     ]
   }
@@ -1521,9 +1513,9 @@ exports[`<Search /> should render search with custom text style 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
-              "fontSize": 13,
-              "lineHeight": 18,
+              "color": "#000000",
+              "fontSize": 16,
+              "lineHeight": 22.5,
               "position": "absolute",
               "top": 8,
             },
@@ -1534,7 +1526,7 @@ exports[`<Search /> should render search with custom text style 1`] = `
           ]
         }
         testID="error_test"
-        variant="footnote"
+        variant="xs"
       >
         
       </Text>
@@ -1549,7 +1541,7 @@ exports[`<Search /> should render search with custom text style 1`] = `
               "justifyContent": "center",
               "maxWidth": "100%",
               "overflow": "hidden",
-              "paddingTop": 6.285714285714286,
+              "paddingTop": 4,
             },
           ]
         }
@@ -1581,12 +1573,12 @@ exports[`<Search /> should render search with custom text style 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "fontSize": 17,
-                "lineHeight": 22,
+                "fontSize": 16,
+                "lineHeight": 22.5,
                 "marginTop": 0,
                 "minHeight": 37.714285714285715,
                 "paddingBottom": 0,
@@ -1605,7 +1597,7 @@ exports[`<Search /> should render search with custom text style 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -1636,7 +1628,7 @@ exports[`<Search /> should render search with custom text style 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "#eeeeee",
+                      "color": "({ theme }) => lodash.get(theme, themeProp)",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -1661,7 +1653,7 @@ exports[`<Search /> should render search with custom text style 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -1679,15 +1671,14 @@ exports[`<Search /> should render search with icon size 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "backgroundColor": "#ffffff",
-        "borderRadius": 23.57142857142857,
+        "borderRadius": 20,
         "flexBasis": 0,
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
         "height": 88,
         "justifyContent": "center",
-        "paddingHorizontal": 37.714285714285715,
+        "paddingHorizontal": 72,
       },
     ]
   }
@@ -1731,9 +1722,9 @@ exports[`<Search /> should render search with icon size 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
-              "fontSize": 13,
-              "lineHeight": 18,
+              "color": "#000000",
+              "fontSize": 16,
+              "lineHeight": 22.5,
               "position": "absolute",
               "top": 8,
             },
@@ -1744,7 +1735,7 @@ exports[`<Search /> should render search with icon size 1`] = `
           ]
         }
         testID="error_test"
-        variant="footnote"
+        variant="xs"
       >
         
       </Text>
@@ -1759,7 +1750,7 @@ exports[`<Search /> should render search with icon size 1`] = `
               "justifyContent": "center",
               "maxWidth": "100%",
               "overflow": "hidden",
-              "paddingTop": 6.285714285714286,
+              "paddingTop": 4,
             },
           ]
         }
@@ -1791,12 +1782,12 @@ exports[`<Search /> should render search with icon size 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "fontSize": 17,
-                "lineHeight": 22,
+                "fontSize": 16,
+                "lineHeight": 22.5,
                 "marginTop": 0,
                 "minHeight": 37.714285714285715,
                 "paddingBottom": 0,
@@ -1813,7 +1804,7 @@ exports[`<Search /> should render search with icon size 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -1844,7 +1835,7 @@ exports[`<Search /> should render search with icon size 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "#eeeeee",
+                      "color": "({ theme }) => lodash.get(theme, themeProp)",
                       "fontSize": 24,
                     },
                     undefined,
@@ -1869,7 +1860,7 @@ exports[`<Search /> should render search with icon size 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -1887,15 +1878,14 @@ exports[`<Search /> should render search with left icon 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "backgroundColor": "#ffffff",
-        "borderRadius": 23.57142857142857,
+        "borderRadius": 20,
         "flexBasis": 0,
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
         "height": 88,
         "justifyContent": "center",
-        "paddingHorizontal": 37.714285714285715,
+        "paddingHorizontal": 72,
       },
     ]
   }
@@ -1939,9 +1929,9 @@ exports[`<Search /> should render search with left icon 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
-              "fontSize": 13,
-              "lineHeight": 18,
+              "color": "#000000",
+              "fontSize": 16,
+              "lineHeight": 22.5,
               "position": "absolute",
               "top": 8,
             },
@@ -1952,7 +1942,7 @@ exports[`<Search /> should render search with left icon 1`] = `
           ]
         }
         testID="error_test"
-        variant="footnote"
+        variant="xs"
       >
         
       </Text>
@@ -1967,7 +1957,7 @@ exports[`<Search /> should render search with left icon 1`] = `
               "justifyContent": "center",
               "maxWidth": "100%",
               "overflow": "hidden",
-              "paddingTop": 6.285714285714286,
+              "paddingTop": 4,
             },
           ]
         }
@@ -2000,7 +1990,7 @@ exports[`<Search /> should render search with left icon 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "#eeeeee",
+                      "color": "({ theme }) => lodash.get(theme, themeProp)",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -2045,12 +2035,12 @@ exports[`<Search /> should render search with left icon 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "fontSize": 17,
-                "lineHeight": 22,
+                "fontSize": 16,
+                "lineHeight": 22.5,
                 "marginTop": 0,
                 "minHeight": 37.714285714285715,
                 "paddingBottom": 0,
@@ -2067,7 +2057,7 @@ exports[`<Search /> should render search with left icon 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
       </View>
@@ -2077,7 +2067,7 @@ exports[`<Search /> should render search with left icon 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -2096,8 +2086,7 @@ exports[`<Search /> should render search with padding 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "backgroundColor": "#ffffff",
-        "borderRadius": 23.57142857142857,
+        "borderRadius": 20,
         "flexBasis": 0,
         "flexDirection": "row",
         "flexGrow": 1,
@@ -2148,9 +2137,9 @@ exports[`<Search /> should render search with padding 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
-              "lineHeight": 22,
+              "lineHeight": 22.5,
               "position": "absolute",
               "top": 8,
             },
@@ -2161,7 +2150,7 @@ exports[`<Search /> should render search with padding 1`] = `
           ]
         }
         testID="error_test"
-        variant="body"
+        variant="md"
       >
         
       </Text>
@@ -2209,12 +2198,12 @@ exports[`<Search /> should render search with padding 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "fontSize": 17,
-                "lineHeight": 22,
+                "fontSize": 16,
+                "lineHeight": 22.5,
                 "marginTop": 0,
                 "minHeight": 37.714285714285715,
                 "paddingBottom": 0,
@@ -2231,7 +2220,7 @@ exports[`<Search /> should render search with padding 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -2262,7 +2251,7 @@ exports[`<Search /> should render search with padding 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "#eeeeee",
+                      "color": "({ theme }) => lodash.get(theme, themeProp)",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -2287,7 +2276,7 @@ exports[`<Search /> should render search with padding 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -2305,15 +2294,14 @@ exports[`<Search /> should render search with right icon 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "backgroundColor": "#ffffff",
-        "borderRadius": 23.57142857142857,
+        "borderRadius": 20,
         "flexBasis": 0,
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
         "height": 88,
         "justifyContent": "center",
-        "paddingHorizontal": 37.714285714285715,
+        "paddingHorizontal": 72,
       },
     ]
   }
@@ -2357,9 +2345,9 @@ exports[`<Search /> should render search with right icon 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
-              "lineHeight": 22,
+              "lineHeight": 22.5,
               "position": "absolute",
               "top": 8,
             },
@@ -2370,7 +2358,7 @@ exports[`<Search /> should render search with right icon 1`] = `
           ]
         }
         testID="error_test"
-        variant="body"
+        variant="md"
       >
         
       </Text>
@@ -2385,7 +2373,7 @@ exports[`<Search /> should render search with right icon 1`] = `
               "justifyContent": "center",
               "maxWidth": "100%",
               "overflow": "hidden",
-              "paddingTop": 6.285714285714286,
+              "paddingTop": 4,
             },
           ]
         }
@@ -2417,12 +2405,12 @@ exports[`<Search /> should render search with right icon 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "fontSize": 17,
-                "lineHeight": 22,
+                "fontSize": 16,
+                "lineHeight": 22.5,
                 "marginTop": 0,
                 "minHeight": 37.714285714285715,
                 "paddingBottom": 0,
@@ -2439,7 +2427,7 @@ exports[`<Search /> should render search with right icon 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -2470,7 +2458,7 @@ exports[`<Search /> should render search with right icon 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "#eeeeee",
+                      "color": "({ theme }) => lodash.get(theme, themeProp)",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -2495,7 +2483,7 @@ exports[`<Search /> should render search with right icon 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -2513,8 +2501,7 @@ exports[`<Search /> should render search with shadow 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "backgroundColor": "#ffffff",
-        "borderRadius": 23.57142857142857,
+        "borderRadius": 20,
         "elevation": 3,
         "flexBasis": 0,
         "flexDirection": "row",
@@ -2522,7 +2509,7 @@ exports[`<Search /> should render search with shadow 1`] = `
         "flexShrink": 1,
         "height": 88,
         "justifyContent": "center",
-        "paddingHorizontal": 37.714285714285715,
+        "paddingHorizontal": 72,
         "shadowOffset": Object {
           "height": 4,
           "width": 0,
@@ -2572,9 +2559,9 @@ exports[`<Search /> should render search with shadow 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
-              "lineHeight": 22,
+              "lineHeight": 22.5,
               "position": "absolute",
               "top": 8,
             },
@@ -2585,7 +2572,7 @@ exports[`<Search /> should render search with shadow 1`] = `
           ]
         }
         testID="error_test"
-        variant="body"
+        variant="md"
       >
         
       </Text>
@@ -2600,7 +2587,7 @@ exports[`<Search /> should render search with shadow 1`] = `
               "justifyContent": "center",
               "maxWidth": "100%",
               "overflow": "hidden",
-              "paddingTop": 6.285714285714286,
+              "paddingTop": 4,
             },
           ]
         }
@@ -2632,12 +2619,12 @@ exports[`<Search /> should render search with shadow 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "fontSize": 17,
-                "lineHeight": 22,
+                "fontSize": 16,
+                "lineHeight": 22.5,
                 "marginTop": 0,
                 "minHeight": 37.714285714285715,
                 "paddingBottom": 0,
@@ -2654,7 +2641,7 @@ exports[`<Search /> should render search with shadow 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -2685,7 +2672,7 @@ exports[`<Search /> should render search with shadow 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "#eeeeee",
+                      "color": "({ theme }) => lodash.get(theme, themeProp)",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -2710,7 +2697,7 @@ exports[`<Search /> should render search with shadow 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]
@@ -2729,15 +2716,14 @@ exports[`<Search /> should render search with wrapper height 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "backgroundColor": "#ffffff",
-        "borderRadius": 23.57142857142857,
+        "borderRadius": 20,
         "flexBasis": 0,
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
         "height": 24,
         "justifyContent": "center",
-        "paddingHorizontal": 37.714285714285715,
+        "paddingHorizontal": 72,
       },
     ]
   }
@@ -2781,9 +2767,9 @@ exports[`<Search /> should render search with wrapper height 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
-              "fontSize": 13,
-              "lineHeight": 18,
+              "color": "#000000",
+              "fontSize": 16,
+              "lineHeight": 22.5,
               "position": "absolute",
               "top": 8,
             },
@@ -2794,7 +2780,7 @@ exports[`<Search /> should render search with wrapper height 1`] = `
           ]
         }
         testID="error_test"
-        variant="footnote"
+        variant="xs"
       >
         
       </Text>
@@ -2809,7 +2795,7 @@ exports[`<Search /> should render search with wrapper height 1`] = `
               "justifyContent": "center",
               "maxWidth": "100%",
               "overflow": "hidden",
-              "paddingTop": 6.285714285714286,
+              "paddingTop": 4,
             },
           ]
         }
@@ -2841,12 +2827,12 @@ exports[`<Search /> should render search with wrapper height 1`] = `
             Array [
               Object {
                 "borderWidth": 0,
-                "color": "#212121",
+                "color": "#000000",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "fontSize": 17,
-                "lineHeight": 22,
+                "fontSize": 16,
+                "lineHeight": 22.5,
                 "marginTop": 0,
                 "minHeight": 37.714285714285715,
                 "paddingBottom": 0,
@@ -2863,7 +2849,7 @@ exports[`<Search /> should render search with wrapper height 1`] = `
           type="no-mask"
           underlineColorAndroid="transparent"
           value=""
-          variant="headline"
+          variant="md"
           withBottomline={true}
         />
         <View
@@ -2894,7 +2880,7 @@ exports[`<Search /> should render search with wrapper height 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "#eeeeee",
+                      "color": "({ theme }) => lodash.get(theme, themeProp)",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -2919,7 +2905,7 @@ exports[`<Search /> should render search with wrapper height 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#212121",
+              "backgroundColor": "#000000",
               "height": 0.5,
             },
           ]

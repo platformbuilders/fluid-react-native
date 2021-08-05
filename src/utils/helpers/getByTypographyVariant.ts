@@ -1,14 +1,17 @@
 import { toNumber } from 'lodash';
 import { PixelRatio } from 'react-native';
 import { getTheme } from '@platformbuilders/helpers';
-// import { TypographyVariantStyle } from '../../types';
+
+const baseFontSize = 16;
 
 export const getFontSize = (props: any): number => {
-  const fontSizeFromTheme = getTheme(`${props.variant}.fontSize`)(props);
-  return PixelRatio.roundToNearestPixel(toNumber(fontSizeFromTheme)) || 16;
+  const fontSizeFromTheme = getTheme(`fontSizes.${props.variant}`)(props);
+  return (
+    PixelRatio.roundToNearestPixel(toNumber(fontSizeFromTheme)) || baseFontSize
+  );
 };
 
-export const getLineHeight = (props: any): number => {
-  const lineHeight = getTheme(`${props.variant}.lineHeight`)(props) || 22;
+export const getLineHeight = (): number => {
+  const lineHeight = baseFontSize * 1.4;
   return PixelRatio.roundToNearestPixel(toNumber(lineHeight));
 };

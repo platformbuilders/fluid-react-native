@@ -25,20 +25,20 @@ exports[`<Link /> should render link 1`] = `
     style={
       Array [
         Object {
-          "color": "#212121",
+          "color": "#000000",
           "fontSize": 16,
-          "lineHeight": 22,
+          "lineHeight": 22.5,
         },
         Object {
-          "color": "#ffffff",
+          "color": "#C6B09E",
           "fontWeight": "500",
-          "textDecorationColor": "#ffffff",
+          "textDecorationColor": "#C6B09E",
           "textDecorationLine": "underline",
         },
       ]
     }
     testID="text_testing"
-    variant="body"
+    variant="md"
   />
 </View>
 `;

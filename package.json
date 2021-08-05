@@ -1,6 +1,6 @@
 {
   "name": "@platformbuilders/react-native-elements",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Platform Builders Shared Components Library For React Native",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,7 +17,6 @@
     "elements"
   ],
   "author": "Platform Builders <digitals@platformbuilders.io>",
-  "license": "MIT",
   "private": false,
   "scripts": {
     "clean": "rm -rf ./node_modules native yarn.lock dist coverage && yarn install",

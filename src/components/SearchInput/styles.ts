@@ -3,10 +3,9 @@ import styled from 'styled-components/native';
 import { getShadow, getTheme } from '../../utils/helpers';
 import TextInput from '../TextInput';
 
-const disabled = getTheme('disabled.main');
-const primaryContrast = getTheme('primary.contrast');
-const largeSpacing = getTheme('largeSpacing');
-const largeRadius = getTheme('largeRadius');
+const brandSecondary = getTheme('brand.secondary.main');
+const largeSpacing = getTheme('spacing.xl');
+const largeRadius = getTheme('borderRadius.xl');
 
 const wrapperHeight = moderateScale(56);
 
@@ -22,12 +21,11 @@ export const Wrapper = styled.View<WrapperProps>`
   flex: 1;
   height: ${({ height }: WrapperProps) =>
     (!!height && `${height}px`) || `${wrapperHeight}px`};
-  background-color: ${primaryContrast};
   align-items: center;
   justify-content: center;
   padding-horizontal: ${({ inputPadding }: WrapperProps) =>
-    (!!inputPadding && `${inputPadding}px`) || largeSpacing};
-  border-radius: ${largeRadius};
+    (!!inputPadding && inputPadding) || largeSpacing}px;
+  border-radius: ${largeRadius}px;
   ${({ hasShadow }: WrapperProps) => (hasShadow ? getShadow() : {})}
 `;
 
@@ -39,7 +37,7 @@ type InputProps = {
 };
 
 export const Input = styled(TextInput).attrs((props: InputProps) => ({
-  iconColor: `${props.iconColor || disabled(props)}`,
+  iconColor: `${props.iconColor || brandSecondary}`,
   iconTouchableEnabled: true,
   iconSize: props.iconSize || moderateScale(26),
 }))<InputProps>`

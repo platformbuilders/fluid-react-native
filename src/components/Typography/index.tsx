@@ -4,7 +4,7 @@ import { Text } from './styles';
 
 const Typography: FC<TypographyType> = ({
   textRef = React.createRef(),
-  variant = 'body',
+  variant = 'md',
   children,
   id,
   accessibility,

@@ -23,6 +23,7 @@ exports[`<Button /> should render button 1`] = `
   <View
     buttonVariant="primary"
     disabled={false}
+    flat={false}
     hasBorder={false}
     rounded={false}
     style={
@@ -31,7 +32,7 @@ exports[`<Button /> should render button 1`] = `
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
           "borderColor": "black",
-          "borderRadius": 11,
+          "borderRadius": 8,
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
@@ -40,10 +41,10 @@ exports[`<Button /> should render button 1`] = `
           "maxWidth": "100%",
           "minWidth": 282.8571428571429,
           "overflow": "hidden",
-          "paddingBottom": 6.285714285714286,
-          "paddingLeft": 6.285714285714286,
-          "paddingRight": 6.285714285714286,
-          "paddingTop": 6.285714285714286,
+          "paddingBottom": 4,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "paddingTop": 4,
         },
         Object {},
       ]
@@ -57,9 +58,9 @@ exports[`<Button /> should render button 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22,
+            "lineHeight": 22.5,
           },
           Object {
             "color": "#ffffff",
@@ -70,7 +71,7 @@ exports[`<Button /> should render button 1`] = `
         ]
       }
       testID="undefined"
-      variant="body"
+      variant="md"
     />
   </View>
 </View>
@@ -99,6 +100,7 @@ exports[`<Button /> should render button when rounded 1`] = `
   <View
     buttonVariant="primary"
     disabled={false}
+    flat={false}
     hasBorder={false}
     rounded={true}
     style={
@@ -133,9 +135,9 @@ exports[`<Button /> should render button when rounded 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22,
+            "lineHeight": 22.5,
           },
           Object {
             "color": "#ffffff",
@@ -146,7 +148,7 @@ exports[`<Button /> should render button when rounded 1`] = `
         ]
       }
       testID="undefined"
-      variant="body"
+      variant="md"
     />
   </View>
 </View>
@@ -175,6 +177,7 @@ exports[`<Button /> should render button with children 1`] = `
   <View
     buttonVariant="primary"
     disabled={false}
+    flat={false}
     hasBorder={false}
     rounded={false}
     style={
@@ -183,7 +186,7 @@ exports[`<Button /> should render button with children 1`] = `
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
           "borderColor": "black",
-          "borderRadius": 11,
+          "borderRadius": 8,
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
@@ -192,10 +195,10 @@ exports[`<Button /> should render button with children 1`] = `
           "maxWidth": "100%",
           "minWidth": 282.8571428571429,
           "overflow": "hidden",
-          "paddingBottom": 6.285714285714286,
-          "paddingLeft": 6.285714285714286,
-          "paddingRight": 6.285714285714286,
-          "paddingTop": 6.285714285714286,
+          "paddingBottom": 4,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "paddingTop": 4,
         },
         Object {},
       ]
@@ -209,9 +212,9 @@ exports[`<Button /> should render button with children 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22,
+            "lineHeight": 22.5,
           },
           Object {
             "color": "#ffffff",
@@ -222,7 +225,7 @@ exports[`<Button /> should render button with children 1`] = `
         ]
       }
       testID="[object Object]"
-      variant="body"
+      variant="md"
     >
       <Text
         accessibility="Test"
@@ -230,14 +233,14 @@ exports[`<Button /> should render button with children 1`] = `
         style={
           Array [
             Object {
-              "color": "#212121",
+              "color": "#000000",
               "fontSize": 16,
-              "lineHeight": 22,
+              "lineHeight": 22.5,
             },
           ]
         }
         testID="Test"
-        variant="body"
+        variant="md"
       >
         Test
       </Text>
@@ -269,6 +272,7 @@ exports[`<Button /> should render button with contrast 1`] = `
   <View
     buttonVariant="primary"
     disabled={false}
+    flat={false}
     hasBorder={false}
     rounded={false}
     style={
@@ -277,7 +281,7 @@ exports[`<Button /> should render button with contrast 1`] = `
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
           "borderColor": "black",
-          "borderRadius": 11,
+          "borderRadius": 8,
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
@@ -286,10 +290,10 @@ exports[`<Button /> should render button with contrast 1`] = `
           "maxWidth": "100%",
           "minWidth": 282.8571428571429,
           "overflow": "hidden",
-          "paddingBottom": 6.285714285714286,
-          "paddingLeft": 6.285714285714286,
-          "paddingRight": 6.285714285714286,
-          "paddingTop": 6.285714285714286,
+          "paddingBottom": 4,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "paddingTop": 4,
         },
         Object {},
       ]
@@ -303,9 +307,9 @@ exports[`<Button /> should render button with contrast 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22,
+            "lineHeight": 22.5,
           },
           Object {
             "color": "#ffffff",
@@ -316,7 +320,7 @@ exports[`<Button /> should render button with contrast 1`] = `
         ]
       }
       testID="undefined"
-      variant="body"
+      variant="md"
     />
   </View>
 </View>
@@ -345,6 +349,7 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
   <View
     buttonVariant="primary"
     disabled={false}
+    flat={false}
     hasBorder={false}
     rounded={false}
     style={
@@ -353,7 +358,7 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
           "borderColor": "black",
-          "borderRadius": 11,
+          "borderRadius": 8,
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
@@ -362,10 +367,10 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
           "maxWidth": "100%",
           "minWidth": 282.8571428571429,
           "overflow": "hidden",
-          "paddingBottom": 6.285714285714286,
-          "paddingLeft": 6.285714285714286,
-          "paddingRight": 6.285714285714286,
-          "paddingTop": 6.285714285714286,
+          "paddingBottom": 4,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "paddingTop": 4,
         },
         Object {},
       ]
@@ -379,9 +384,9 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22,
+            "lineHeight": 22.5,
           },
           Object {
             "color": "#ffffff",
@@ -392,7 +397,7 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
         ]
       }
       testID="undefined"
-      variant="body"
+      variant="md"
     />
   </View>
 </View>
@@ -421,6 +426,7 @@ exports[`<Button /> should render button with custom style 1`] = `
   <View
     buttonVariant="primary"
     disabled={false}
+    flat={false}
     hasBorder={false}
     rounded={false}
     style={
@@ -429,7 +435,7 @@ exports[`<Button /> should render button with custom style 1`] = `
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
           "borderColor": "black",
-          "borderRadius": 11,
+          "borderRadius": 8,
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
@@ -438,10 +444,10 @@ exports[`<Button /> should render button with custom style 1`] = `
           "maxWidth": "100%",
           "minWidth": 282.8571428571429,
           "overflow": "hidden",
-          "paddingBottom": 6.285714285714286,
-          "paddingLeft": 6.285714285714286,
-          "paddingRight": 6.285714285714286,
-          "paddingTop": 6.285714285714286,
+          "paddingBottom": 4,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "paddingTop": 4,
         },
         Object {
           "backgroundColor": "#2980b9",
@@ -457,9 +463,9 @@ exports[`<Button /> should render button with custom style 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22,
+            "lineHeight": 22.5,
           },
           Object {
             "color": "#ffffff",
@@ -470,7 +476,7 @@ exports[`<Button /> should render button with custom style 1`] = `
         ]
       }
       testID="undefined"
-      variant="body"
+      variant="md"
     />
   </View>
 </View>
@@ -499,6 +505,7 @@ exports[`<Button /> should render button with custom text style 1`] = `
   <View
     buttonVariant="primary"
     disabled={false}
+    flat={false}
     hasBorder={false}
     rounded={false}
     style={
@@ -507,7 +514,7 @@ exports[`<Button /> should render button with custom text style 1`] = `
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
           "borderColor": "black",
-          "borderRadius": 11,
+          "borderRadius": 8,
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
@@ -516,10 +523,10 @@ exports[`<Button /> should render button with custom text style 1`] = `
           "maxWidth": "100%",
           "minWidth": 282.8571428571429,
           "overflow": "hidden",
-          "paddingBottom": 6.285714285714286,
-          "paddingLeft": 6.285714285714286,
-          "paddingRight": 6.285714285714286,
-          "paddingTop": 6.285714285714286,
+          "paddingBottom": 4,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "paddingTop": 4,
         },
         Object {},
       ]
@@ -533,9 +540,9 @@ exports[`<Button /> should render button with custom text style 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22,
+            "lineHeight": 22.5,
           },
           Object {
             "color": "#ffffff",
@@ -548,7 +555,7 @@ exports[`<Button /> should render button with custom text style 1`] = `
         ]
       }
       testID="undefined"
-      variant="body"
+      variant="md"
     />
   </View>
 </View>
@@ -577,15 +584,16 @@ exports[`<Button /> should render button with disabled 1`] = `
   <View
     buttonVariant="primary"
     disabled={true}
+    flat={false}
     hasBorder={false}
     rounded={false}
     style={
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "#eeeeee",
+          "backgroundColor": "#C6B09E70",
           "borderColor": "black",
-          "borderRadius": 11,
+          "borderRadius": 8,
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
@@ -594,10 +602,10 @@ exports[`<Button /> should render button with disabled 1`] = `
           "maxWidth": "100%",
           "minWidth": 282.8571428571429,
           "overflow": "hidden",
-          "paddingBottom": 6.285714285714286,
-          "paddingLeft": 6.285714285714286,
-          "paddingRight": 6.285714285714286,
-          "paddingTop": 6.285714285714286,
+          "paddingBottom": 4,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "paddingTop": 4,
         },
         Object {},
       ]
@@ -611,12 +619,12 @@ exports[`<Button /> should render button with disabled 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22,
+            "lineHeight": 22.5,
           },
           Object {
-            "color": "#cccccc",
+            "color": "#ffffff",
             "fontWeight": "500",
             "letterSpacing": 0.4,
           },
@@ -624,7 +632,7 @@ exports[`<Button /> should render button with disabled 1`] = `
         ]
       }
       testID="undefined"
-      variant="body"
+      variant="md"
     />
   </View>
 </View>
@@ -653,6 +661,7 @@ exports[`<Button /> should render button with loading 1`] = `
   <View
     buttonVariant="primary"
     disabled={false}
+    flat={false}
     hasBorder={false}
     rounded={false}
     style={
@@ -661,7 +670,7 @@ exports[`<Button /> should render button with loading 1`] = `
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
           "borderColor": "black",
-          "borderRadius": 11,
+          "borderRadius": 8,
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
@@ -670,10 +679,10 @@ exports[`<Button /> should render button with loading 1`] = `
           "maxWidth": "100%",
           "minWidth": 282.8571428571429,
           "overflow": "hidden",
-          "paddingBottom": 6.285714285714286,
-          "paddingLeft": 6.285714285714286,
-          "paddingRight": 6.285714285714286,
-          "paddingTop": 6.285714285714286,
+          "paddingBottom": 4,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "paddingTop": 4,
         },
         Object {},
       ]
@@ -748,6 +757,7 @@ exports[`<Button /> should render button with test id 1`] = `
   <View
     buttonVariant="primary"
     disabled={false}
+    flat={false}
     hasBorder={false}
     rounded={false}
     style={
@@ -756,7 +766,7 @@ exports[`<Button /> should render button with test id 1`] = `
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
           "borderColor": "black",
-          "borderRadius": 11,
+          "borderRadius": 8,
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
@@ -765,10 +775,10 @@ exports[`<Button /> should render button with test id 1`] = `
           "maxWidth": "100%",
           "minWidth": 282.8571428571429,
           "overflow": "hidden",
-          "paddingBottom": 6.285714285714286,
-          "paddingLeft": 6.285714285714286,
-          "paddingRight": 6.285714285714286,
-          "paddingTop": 6.285714285714286,
+          "paddingBottom": 4,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "paddingTop": 4,
         },
         Object {},
       ]
@@ -782,9 +792,9 @@ exports[`<Button /> should render button with test id 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22,
+            "lineHeight": 22.5,
           },
           Object {
             "color": "#ffffff",
@@ -795,7 +805,7 @@ exports[`<Button /> should render button with test id 1`] = `
         ]
       }
       testID="undefined"
-      variant="body"
+      variant="md"
     />
   </View>
 </View>
@@ -824,6 +834,7 @@ exports[`<Button /> should render button with typography variant 1`] = `
   <View
     buttonVariant="primary"
     disabled={false}
+    flat={false}
     hasBorder={false}
     rounded={false}
     style={
@@ -832,7 +843,7 @@ exports[`<Button /> should render button with typography variant 1`] = `
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
           "borderColor": "black",
-          "borderRadius": 11,
+          "borderRadius": 8,
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
@@ -841,10 +852,10 @@ exports[`<Button /> should render button with typography variant 1`] = `
           "maxWidth": "100%",
           "minWidth": 282.8571428571429,
           "overflow": "hidden",
-          "paddingBottom": 6.285714285714286,
-          "paddingLeft": 6.285714285714286,
-          "paddingRight": 6.285714285714286,
-          "paddingTop": 6.285714285714286,
+          "paddingBottom": 4,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "paddingTop": 4,
         },
         Object {},
       ]
@@ -858,9 +869,9 @@ exports[`<Button /> should render button with typography variant 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
-            "fontSize": 17,
-            "lineHeight": 22,
+            "color": "#000000",
+            "fontSize": 16,
+            "lineHeight": 22.5,
           },
           Object {
             "color": "#ffffff",
@@ -871,7 +882,7 @@ exports[`<Button /> should render button with typography variant 1`] = `
         ]
       }
       testID="undefined"
-      variant="headline"
+      variant="lg"
     />
   </View>
 </View>
@@ -900,6 +911,7 @@ exports[`<Button /> should render button with variant 1`] = `
   <View
     buttonVariant="secondary"
     disabled={false}
+    flat={false}
     hasBorder={false}
     rounded={false}
     style={
@@ -908,7 +920,7 @@ exports[`<Button /> should render button with variant 1`] = `
           "alignItems": "center",
           "backgroundColor": "#805281",
           "borderColor": "black",
-          "borderRadius": 11,
+          "borderRadius": 8,
           "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
@@ -917,10 +929,10 @@ exports[`<Button /> should render button with variant 1`] = `
           "maxWidth": "100%",
           "minWidth": 282.8571428571429,
           "overflow": "hidden",
-          "paddingBottom": 6.285714285714286,
-          "paddingLeft": 6.285714285714286,
-          "paddingRight": 6.285714285714286,
-          "paddingTop": 6.285714285714286,
+          "paddingBottom": 4,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "paddingTop": 4,
         },
         Object {},
       ]
@@ -934,9 +946,9 @@ exports[`<Button /> should render button with variant 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22,
+            "lineHeight": 22.5,
           },
           Object {
             "color": "#ffffff",
@@ -947,7 +959,7 @@ exports[`<Button /> should render button with variant 1`] = `
         ]
       }
       testID="undefined"
-      variant="body"
+      variant="md"
     />
   </View>
 </View>

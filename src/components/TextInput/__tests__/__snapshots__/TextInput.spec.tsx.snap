@@ -33,9 +33,9 @@ exports[`<TextInput /> should render textinput 1`] = `
       style={
         Array [
           Object {
-            "color": "#212121",
+            "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22,
+            "lineHeight": 22.5,
             "position": "absolute",
             "top": 8,
           },
@@ -46,7 +46,7 @@ exports[`<TextInput /> should render textinput 1`] = `
         ]
       }
       testID="error_test"
-      variant="body"
+      variant="md"
     >
       
     </Text>
@@ -61,7 +61,7 @@ exports[`<TextInput /> should render textinput 1`] = `
             "justifyContent": "center",
             "maxWidth": "100%",
             "overflow": "hidden",
-            "paddingTop": 6.285714285714286,
+            "paddingTop": 4,
           },
         ]
       }
@@ -89,12 +89,12 @@ exports[`<TextInput /> should render textinput 1`] = `
           Array [
             Object {
               "borderWidth": 0,
-              "color": "#212121",
+              "color": "#000000",
               "flexBasis": 0,
               "flexGrow": 1,
               "flexShrink": 1,
-              "fontSize": 17,
-              "lineHeight": 22,
+              "fontSize": 16,
+              "lineHeight": 22.5,
               "marginTop": 0,
               "minHeight": 37.714285714285715,
               "paddingBottom": 0,
@@ -111,7 +111,7 @@ exports[`<TextInput /> should render textinput 1`] = `
         type="no-mask"
         underlineColorAndroid="transparent"
         value=""
-        variant="headline"
+        variant="md"
         withBottomline={true}
       />
     </View>
@@ -121,7 +121,7 @@ exports[`<TextInput /> should render textinput 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "#212121",
+            "backgroundColor": "#000000",
             "height": 0.5,
           },
         ]

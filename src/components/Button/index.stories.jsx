@@ -1,16 +1,16 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react-native';
-import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
-import Button from './index';
-import buttonMarkdown from './button.md';
+import { boolean, select, text, withKnobs } from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/react-native';
 import { colors } from '../../theme';
+import buttonMarkdown from './button.md';
+import Button from './index';
 
 const optionsVariant = {
-  primary: colors.primary.main,
-  secondary: colors.secondary.main,
-  tertiary: colors.tertiary.main,
-  accent: colors.accent.main,
+  primary: colors.brand.primary.main,
+  secondary: colors.brand.secondary.main,
+  tertiary: colors.brand.tertiary.main,
+  accent: colors.brand.accent.main,
   flat: 'transparent',
 };
 

@@ -60,21 +60,24 @@ const hasLabel = ifStyle('label');
 const hasError = ifStyle('error');
 const isContrast = ifStyle('contrast');
 const switchStatus = switchStyle('status');
-const primaryContrast = getTheme('primary.contrast');
-const primaryMain = getTheme('primary.main');
-const minimumSpacing = getTheme('minimumSpacing');
-const smallSpacing = getTheme('smallSpacing');
-const largeSpacing = getTheme('largeSpacing');
-const success = getTheme('success');
-const textColor = getTheme('text');
-const failure = getTheme('failure');
-const disabled = getTheme('disabled');
+const brandContrast = getTheme('brand.primary.contrast');
+const brandPrimary = getTheme('brand.primary.main');
+const minimumSpacing = getTheme('spacing.xs');
+const smallSpacing = getTheme('spacing.sm');
+const largeSpacing = getTheme('spacing.lg');
+const success = getTheme('success.main');
+const textColor = getTheme('text.main');
+const dangerMain = getTheme('danger.main');
+const disabled = getTheme('brand.primary.main');
 const inputColor = (props: TextInputType | BottomLineProps): any =>
   switchStatus({
-    [InputStatus.Success]: success,
-    [InputStatus.Failure]: failure,
-    [InputStatus.Default]: isContrast(primaryContrast, textColor)(props),
-    [InputStatus.Disabled]: disabled,
+    [InputStatus.Success]: success(props),
+    [InputStatus.Danger]: dangerMain(props),
+    [InputStatus.Default]: isContrast(
+      brandContrast(props),
+      textColor(props),
+    )(props),
+    [InputStatus.Disabled]: disabled(props),
   });
 
 export const LABEL_UPPER_STYLE = {
@@ -110,7 +113,7 @@ export const BorderedWrapper = styled.View<BorderedWrapperProps>`
     const borderedStyle = `
       justify-content: center;
       border: 1px solid ${
-        error ? failure(rest) : borderedColor || primaryMain(rest)
+        error ? dangerMain(rest) : borderedColor || brandPrimary(rest)
       };
       background-color: ${borderedBackgroundColor || 'transparent'};
       height: ${borderedHeight}px;
@@ -141,7 +144,7 @@ export const InputBorderedColumnWrapper = styled.View<InputBorderedColumnWrapper
 `;
 
 export const FixedLabel = styled(Typography)<FixedLabelProps>`
-  color: ${primaryMain};
+  color: ${brandPrimary};
   margin-bottom: ${minimumSpacing};
 `;
 
@@ -203,8 +206,8 @@ type IconProps = {
 
 export const Icon = styled(DefaultIcon).attrs((props: IconProps) => ({
   color: hasError(
-    failure(props),
+    dangerMain(props),
     props.iconColor ||
-      isContrast(primaryContrast(props), primaryMain(props))(props),
+      isContrast(brandContrast(props), brandPrimary(props))(props),
   )(props),
 }))<IconProps>``;

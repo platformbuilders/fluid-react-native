@@ -3,20 +3,19 @@ export type ButtonVariants =
   | 'secondary'
   | 'tertiary'
   | 'accent'
-  | 'flat';
+  | 'danger'
+  | 'warning'
+  | 'info';
 
 export type TypographyVariants =
-  | 'largeTitle'
-  | 'title1'
-  | 'title2'
-  | 'title3'
-  | 'title4'
-  | 'headline'
-  | 'callout'
-  | 'body'
-  | 'subhead'
-  | 'footnote'
-  | 'caption1'
-  | 'caption2';
+  | 'min'
+  | 'xxs'
+  | 'xs'
+  | 'sm'
+  | 'md'
+  | 'lg'
+  | 'xl'
+  | 'xxl'
+  | 'max';
 
 export type LoadingVariants = 'linear' | 'circular' | 'button';

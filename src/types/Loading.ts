@@ -1,4 +1,4 @@
-import { LoadingVariants } from './Variants';
+import { LoadingVariants } from './theme_types/Variants';
 
 export interface LoadingType {
   large?: boolean;

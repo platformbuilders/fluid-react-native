@@ -11,7 +11,7 @@ describe('<MaskedTextInput />', () => {
       <ThemeProvider theme={theme}>
         <MaskedTextInput
           id="test"
-          variant="headline"
+          variant="lg"
           accessibility=""
           maskType="cpf"
         />
