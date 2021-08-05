@@ -1,7 +1,7 @@
 //SmoothPinCodeInput.d.ts
 declare module 'react-native-smooth-pincode-input'{
   import { ReactElement, Component } from 'react';
-  import { StyleProp, ViewStyle,TextStyle,TextInputProps, ViewProps } from 'react-native';
+  import { StyleProp, ViewStyle,TextStyle,TextInputProps } from 'react-native';
   type SmoothPinCodeInputProps = {
     value?: string;
     codeLength?: number;
