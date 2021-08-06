@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
+import SmoothPinCodeInput from 'react-native-smooth-pincode-input';
 import { SmoothPinCodeInputProps } from 'src/types';
-import SmoothPinCodeInput from './SmoothPinCodeInput';
 
 const DefaultCodeInput: FC<SmoothPinCodeInputProps> = (props) => {
   return <SmoothPinCodeInput {...props} />;
