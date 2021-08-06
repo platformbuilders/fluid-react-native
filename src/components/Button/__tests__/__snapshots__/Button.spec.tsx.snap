@@ -31,9 +31,8 @@ exports[`<Button /> should render button 1`] = `
         Object {
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
-          "borderColor": "black",
+          "borderColor": "#C6B09E",
           "borderRadius": 8,
-          "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
           "height": 70.71428571428572,
@@ -55,6 +54,7 @@ exports[`<Button /> should render button 1`] = `
       accessibilityLabel="undefined"
       buttonVariant="primary"
       disabled={false}
+      flat={false}
       style={
         Array [
           Object {
@@ -108,9 +108,8 @@ exports[`<Button /> should render button when rounded 1`] = `
         Object {
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
-          "borderColor": "black",
+          "borderColor": "#C6B09E",
           "borderRadius": 35.35714285714286,
-          "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
           "height": 70.71428571428572,
@@ -132,6 +131,7 @@ exports[`<Button /> should render button when rounded 1`] = `
       accessibilityLabel="undefined"
       buttonVariant="primary"
       disabled={false}
+      flat={false}
       style={
         Array [
           Object {
@@ -185,9 +185,8 @@ exports[`<Button /> should render button with children 1`] = `
         Object {
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
-          "borderColor": "black",
+          "borderColor": "#C6B09E",
           "borderRadius": 8,
-          "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
           "height": 70.71428571428572,
@@ -209,6 +208,7 @@ exports[`<Button /> should render button with children 1`] = `
       accessibilityLabel="[object Object]"
       buttonVariant="primary"
       disabled={false}
+      flat={false}
       style={
         Array [
           Object {
@@ -280,9 +280,8 @@ exports[`<Button /> should render button with contrast 1`] = `
         Object {
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
-          "borderColor": "black",
+          "borderColor": "#C6B09E",
           "borderRadius": 8,
-          "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
           "height": 70.71428571428572,
@@ -304,6 +303,7 @@ exports[`<Button /> should render button with contrast 1`] = `
       accessibilityLabel="undefined"
       buttonVariant="primary"
       disabled={false}
+      flat={false}
       style={
         Array [
           Object {
@@ -357,9 +357,8 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
         Object {
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
-          "borderColor": "black",
+          "borderColor": "#C6B09E",
           "borderRadius": 8,
-          "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
           "height": 70.71428571428572,
@@ -381,6 +380,7 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
       accessibilityLabel="undefined"
       buttonVariant="primary"
       disabled={false}
+      flat={false}
       style={
         Array [
           Object {
@@ -434,9 +434,8 @@ exports[`<Button /> should render button with custom style 1`] = `
         Object {
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
-          "borderColor": "black",
+          "borderColor": "#C6B09E",
           "borderRadius": 8,
-          "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
           "height": 70.71428571428572,
@@ -460,6 +459,7 @@ exports[`<Button /> should render button with custom style 1`] = `
       accessibilityLabel="undefined"
       buttonVariant="primary"
       disabled={false}
+      flat={false}
       style={
         Array [
           Object {
@@ -513,9 +513,8 @@ exports[`<Button /> should render button with custom text style 1`] = `
         Object {
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
-          "borderColor": "black",
+          "borderColor": "#C6B09E",
           "borderRadius": 8,
-          "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
           "height": 70.71428571428572,
@@ -537,6 +536,7 @@ exports[`<Button /> should render button with custom text style 1`] = `
       accessibilityLabel="undefined"
       buttonVariant="primary"
       disabled={false}
+      flat={false}
       style={
         Array [
           Object {
@@ -592,9 +592,8 @@ exports[`<Button /> should render button with disabled 1`] = `
         Object {
           "alignItems": "center",
           "backgroundColor": "#C6B09E70",
-          "borderColor": "black",
+          "borderColor": "#C6B09E70",
           "borderRadius": 8,
-          "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
           "height": 70.71428571428572,
@@ -616,6 +615,7 @@ exports[`<Button /> should render button with disabled 1`] = `
       accessibilityLabel="undefined"
       buttonVariant="primary"
       disabled={true}
+      flat={false}
       style={
         Array [
           Object {
@@ -669,9 +669,8 @@ exports[`<Button /> should render button with loading 1`] = `
         Object {
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
-          "borderColor": "black",
+          "borderColor": "#C6B09E",
           "borderRadius": 8,
-          "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
           "height": 70.71428571428572,
@@ -765,9 +764,8 @@ exports[`<Button /> should render button with test id 1`] = `
         Object {
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
-          "borderColor": "black",
+          "borderColor": "#C6B09E",
           "borderRadius": 8,
-          "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
           "height": 70.71428571428572,
@@ -789,6 +787,7 @@ exports[`<Button /> should render button with test id 1`] = `
       accessibilityLabel="undefined"
       buttonVariant="primary"
       disabled={false}
+      flat={false}
       style={
         Array [
           Object {
@@ -842,9 +841,8 @@ exports[`<Button /> should render button with typography variant 1`] = `
         Object {
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
-          "borderColor": "black",
+          "borderColor": "#C6B09E",
           "borderRadius": 8,
-          "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
           "height": 70.71428571428572,
@@ -866,6 +864,7 @@ exports[`<Button /> should render button with typography variant 1`] = `
       accessibilityLabel="undefined"
       buttonVariant="primary"
       disabled={false}
+      flat={false}
       style={
         Array [
           Object {
@@ -919,9 +918,8 @@ exports[`<Button /> should render button with variant 1`] = `
         Object {
           "alignItems": "center",
           "backgroundColor": "#805281",
-          "borderColor": "black",
+          "borderColor": "#805281",
           "borderRadius": 8,
-          "borderStyle": "solid",
           "borderWidth": 0,
           "flexDirection": "row",
           "height": 70.71428571428572,
@@ -943,6 +941,7 @@ exports[`<Button /> should render button with variant 1`] = `
       accessibilityLabel="undefined"
       buttonVariant="secondary"
       disabled={false}
+      flat={false}
       style={
         Array [
           Object {
