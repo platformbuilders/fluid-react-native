@@ -7,6 +7,7 @@ import LoadingIndicator from '../LoadingIndicator';
 import TouchableComponent from '../Touchable';
 import TypographyComponent from '../Typography';
 
+const borderWidthSmall = getTheme('borderWidth.xxs');
 const brandPrimary = getTheme('brand.primary.main');
 const brandPrimaryContrast = getTheme('brand.primary.contrast');
 const brandSecondary = getTheme('brand.secondary.main');
@@ -122,7 +123,7 @@ export const ButtonWrapper = styled.View<ButtonWrapperProps>`
   justify-content: center;
   background-color: ${isFlat('transparent', getBackgroundColor)};
   border-color: ${getBackgroundColor};
-  border-width: ${hasBorder('1', '0')};
+  border-width: ${hasBorder(borderWidthSmall, '0')};
 `;
 
 export const TextButton = styled(TypographyComponent)<TextButtonProps>`
