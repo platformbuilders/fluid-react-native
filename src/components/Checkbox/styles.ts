@@ -1,8 +1,6 @@
 import DefaultCheckbox from 'react-native-check-box';
 import styled from 'styled-components/native';
 
-import { colors } from '../../theme';
-
 type WrapperProps = {
   style: any;
 };
@@ -11,7 +9,6 @@ export const Wrapper = styled.View<WrapperProps>``;
 
 export const defaultLabelStyle = {
   fontSize: 16,
-  color: colors.primary.contrast,
   opacity: 0.7,
 };
 

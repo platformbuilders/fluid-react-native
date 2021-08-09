@@ -15,91 +15,73 @@ describe('<Typography />', () => {
     expect(render.toJSON()).toMatchSnapshot();
   });
 
-  it('should render and match snapshot for variant largeTitle', () => {
+  it('should render and match snapshot for variant max', () => {
     const render = renderer.create(
       <ThemeProvider theme={theme}>
-        <Typography accessibility="" variant="largeTitle" />
+        <Typography accessibility="" variant="max" />
       </ThemeProvider>,
     );
     expect(render.toJSON()).toMatchSnapshot();
   });
 
-  it('should render and match snapshot for variant title1', () => {
+  it('should render and match snapshot for variant xxl', () => {
     const render = renderer.create(
       <ThemeProvider theme={theme}>
-        <Typography accessibility="" variant="title1" />
+        <Typography accessibility="" variant="xxl" />
       </ThemeProvider>,
     );
     expect(render.toJSON()).toMatchSnapshot();
   });
 
-  it('should render and match snapshot for variant title2', () => {
+  it('should render and match snapshot for variant xl', () => {
     const render = renderer.create(
       <ThemeProvider theme={theme}>
-        <Typography accessibility="" variant="title2" />
+        <Typography accessibility="" variant="xl" />
       </ThemeProvider>,
     );
     expect(render.toJSON()).toMatchSnapshot();
   });
 
-  it('should render and match snapshot for variant title3', () => {
+  it('should render and match snapshot for variant lg', () => {
     const render = renderer.create(
       <ThemeProvider theme={theme}>
-        <Typography accessibility="" variant="title3" />
+        <Typography accessibility="" variant="lg" />
       </ThemeProvider>,
     );
     expect(render.toJSON()).toMatchSnapshot();
   });
 
-  it('should render and match snapshot for variant title4', () => {
+  it('should render and match snapshot for variant md', () => {
     const render = renderer.create(
       <ThemeProvider theme={theme}>
-        <Typography accessibility="" variant="title4" />
+        <Typography accessibility="" variant="md" />
       </ThemeProvider>,
     );
     expect(render.toJSON()).toMatchSnapshot();
   });
 
-  it('should render and match snapshot for variant headline', () => {
+  it('should render and match snapshot for variant min', () => {
     const render = renderer.create(
       <ThemeProvider theme={theme}>
-        <Typography accessibility="" variant="headline" />
+        <Typography accessibility="" variant="min" />
       </ThemeProvider>,
     );
     expect(render.toJSON()).toMatchSnapshot();
   });
 
-  it('should render and match snapshot for variant subhead', () => {
+  it('should render and match snapshot for variant xs', () => {
     const render = renderer.create(
       <ThemeProvider theme={theme}>
-        <Typography accessibility="" variant="subhead" />
+        <Typography accessibility="" variant="xs" />
       </ThemeProvider>,
     );
     expect(render.toJSON()).toMatchSnapshot();
   });
 
-  it('should render and match snapshot for variant footnote', () => {
+  it('should render and match snapshot for variant xxs', () => {
     const render = renderer.create(
       <ThemeProvider theme={theme}>
-        <Typography accessibility="" variant="footnote" />
-      </ThemeProvider>,
-    );
-    expect(render.toJSON()).toMatchSnapshot();
-  });
-
-  it('should render and match snapshot for variant caption1', () => {
-    const render = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Typography accessibility="" variant="caption1" />
-      </ThemeProvider>,
-    );
-    expect(render.toJSON()).toMatchSnapshot();
-  });
-
-  it('should render and match snapshot for variant caption2', () => {
-    const render = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Typography accessibility="" variant="caption2" />
+        <Typography accessibility="" variant="xxs" />
       </ThemeProvider>,
     );
     expect(render.toJSON()).toMatchSnapshot();

@@ -15,7 +15,7 @@ exports[`<RadioButton /> should render radio button component 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "borderColor": "#212121",
+      "borderColor": "#000000",
       "borderRadius": 14.142857142857142,
       "borderStyle": "solid",
       "borderWidth": 1.5714285714285714,
@@ -44,7 +44,7 @@ exports[`<RadioButton /> should render radio button component with custom checke
   style={
     Object {
       "alignItems": "center",
-      "borderColor": "#212121",
+      "borderColor": "#000000",
       "borderRadius": 14.142857142857142,
       "borderStyle": "solid",
       "borderWidth": 1.5714285714285714,
@@ -61,7 +61,7 @@ exports[`<RadioButton /> should render radio button component with custom checke
     style={
       Array [
         Object {
-          "backgroundColor": "#212121",
+          "backgroundColor": "#000000",
           "borderRadius": 10.214285714285715,
           "height": 20.42857142857143,
           "width": 20.42857142857143,
@@ -87,7 +87,7 @@ exports[`<RadioButton /> should render radio button component with custom checke
   style={
     Object {
       "alignItems": "center",
-      "borderColor": "#212121",
+      "borderColor": "#000000",
       "borderRadius": 14.142857142857142,
       "borderStyle": "solid",
       "borderWidth": 1.5714285714285714,
@@ -116,7 +116,7 @@ exports[`<RadioButton /> should render radio button component with custom intern
   style={
     Object {
       "alignItems": "center",
-      "borderColor": "#212121",
+      "borderColor": "#000000",
       "borderRadius": 14.142857142857142,
       "borderStyle": "solid",
       "borderWidth": 1.5714285714285714,
@@ -174,7 +174,7 @@ exports[`<RadioButton /> should render radio button component with custom size 1
   style={
     Object {
       "alignItems": "center",
-      "borderColor": "#212121",
+      "borderColor": "#000000",
       "borderRadius": 18.857142857142858,
       "borderStyle": "solid",
       "borderWidth": 1.5714285714285714,

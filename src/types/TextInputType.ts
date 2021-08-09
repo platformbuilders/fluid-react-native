@@ -11,7 +11,7 @@ import { TextInputMaskTypeProp } from '../components/MaskedText';
 
 import { HitSlopType } from './Common';
 import { FontType } from './IconType';
-import { TypographyVariants } from './Variants';
+import { TypographyVariants } from './theme_types/Variants';
 
 export type TextInputType = {
   id: string;

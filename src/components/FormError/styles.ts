@@ -1,11 +1,11 @@
-import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
 import { getTheme, ifStyle } from '../../utils/helpers';
 import Typography from '../Typography';
 
 const isCentered = ifStyle('centered');
 const isLarge = ifStyle('large');
-const failure = getTheme('failure');
+const danger = getTheme('danger.main');
+const smallSpacing = getTheme('spacing.sm');
 
 type ErrorTextProps = {
   centered: boolean;
@@ -15,9 +15,9 @@ type ErrorTextProps = {
 };
 
 export const ErrorText = styled(Typography).attrs((props: ErrorTextProps) => ({
-  variant: isLarge('footnote', 'footnote')(props),
+  variant: isLarge('sm', 'xs')(props),
 }))<ErrorTextProps>`
-  color: ${failure};
+  color: ${danger};
   text-align: ${isCentered('center', 'left')};
-  margin-top: ${isLarge(0, moderateScale(2))}px;
+  margin-top: ${isLarge(0, smallSpacing)}px;
 `;

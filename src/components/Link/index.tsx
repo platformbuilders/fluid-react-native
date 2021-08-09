@@ -16,7 +16,7 @@ const Link: FC<Props> = ({
   accessibility,
   accessibilityLabel,
   testID,
-  variant = 'body',
+  variant = 'md',
   style,
   ...rest
 }) => (

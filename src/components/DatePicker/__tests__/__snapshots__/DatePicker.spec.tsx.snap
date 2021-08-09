@@ -3066,19 +3066,19 @@ Array [
     style={
       Array [
         Object {
-          "color": "#212121",
-          "fontSize": 13,
-          "lineHeight": 18,
+          "color": "#000000",
+          "fontSize": 16,
+          "lineHeight": 22.5,
         },
         Object {
           "color": "#cc0000",
-          "marginTop": 3.142857142857143,
+          "marginTop": 12,
           "textAlign": "left",
         },
       ]
     }
     testID="error_testing"
-    variant="footnote"
+    variant="xs"
   >
     test
   </Text>,

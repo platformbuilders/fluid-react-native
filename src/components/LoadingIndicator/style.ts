@@ -1,7 +1,6 @@
 import Animation from 'lottie-react-native';
 import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
-import LoadingAnimation from '../../assets/animations/loading.json';
 import { AnimationObject, LoadingVariants } from '../../types';
 import { getTheme } from '../../utils/helpers';
 
@@ -25,17 +24,11 @@ const loadingVariant = (
   const { variant, contrast } = props;
   switch (variant) {
     case 'button':
-      return contrast
-        ? contrastButtonLoading(props)
-        : buttonLoading(props) || LoadingAnimation;
+      return contrast ? contrastButtonLoading(props) : buttonLoading(props);
     case 'linear':
-      return contrast
-        ? contrastLinearLoading(props)
-        : linearLoading(props) || LoadingAnimation;
+      return contrast ? contrastLinearLoading(props) : linearLoading(props);
     default:
-      return contrast
-        ? contrastCircularLoading(props)
-        : circularLoading(props) || LoadingAnimation;
+      return contrast ? contrastCircularLoading(props) : circularLoading(props);
   }
 };
 

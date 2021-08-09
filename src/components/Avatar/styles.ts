@@ -4,8 +4,8 @@ import { getTheme, ifStyle } from '../../utils/helpers';
 import Icon from '../Icon';
 import Touchable from '../Touchable';
 
-const accentMain = getTheme('accent.main');
-const accentContrast = getTheme('accent.contrast');
+const brandPrimary = getTheme('brand.primary.main');
+const brandAccent = getTheme('brand.accent.main');
 
 const showBorder = ifStyle('showBorder');
 const hasBorderWidth = ifStyle('borderWidth');
@@ -27,7 +27,7 @@ export const Wrapper = styled(Touchable)<WrapperProps>`
   border-width: ${(props: WrapperProps): any =>
     showBorder(hasBorderWidth(props.borderWidth, '2'), '0')}px;
   border-color: ${(props: WrapperProps): any =>
-    hasBorderColor(props.borderColor, accentMain)};
+    hasBorderColor(props.borderColor, brandPrimary)};
   position: relative;
 `;
 
@@ -43,11 +43,11 @@ export const UploadIconWrapper = styled.View<IconWrapperProps>`
   border-radius: ${(props: IconWrapperProps): number => props.size / 8}px;
   position: absolute;
   z-index: 2;
-  background-color: ${accentMain};
+  background-color: ${brandPrimary};
 `;
 
 export const UploadIcon = styled(Icon).attrs({ name: 'camera' })`
-  color: ${accentContrast};
+  color: ${brandAccent};
 `;
 
 export const CameraView = styled(RNCamera)<{ size: number }>`

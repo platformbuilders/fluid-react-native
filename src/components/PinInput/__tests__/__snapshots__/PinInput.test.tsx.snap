@@ -42,7 +42,7 @@ exports[`<PinInput /> should render textinput 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -75,7 +75,7 @@ exports[`<PinInput /> should render textinput 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -108,7 +108,7 @@ exports[`<PinInput /> should render textinput 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -141,7 +141,7 @@ exports[`<PinInput /> should render textinput 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -245,7 +245,7 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -278,7 +278,7 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -311,7 +311,7 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -344,7 +344,7 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -448,7 +448,7 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -481,7 +481,7 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -514,7 +514,7 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -547,7 +547,7 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -651,7 +651,7 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -684,7 +684,7 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -717,7 +717,7 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -750,7 +750,7 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -855,7 +855,7 @@ Array [
             Object {
               "alignItems": "center",
               "borderColor": undefined,
-              "borderRadius": 12.571428571428571,
+              "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
               "height": 88,
@@ -888,7 +888,7 @@ Array [
             Object {
               "alignItems": "center",
               "borderColor": undefined,
-              "borderRadius": 12.571428571428571,
+              "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
               "height": 88,
@@ -921,7 +921,7 @@ Array [
             Object {
               "alignItems": "center",
               "borderColor": undefined,
-              "borderRadius": 12.571428571428571,
+              "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
               "height": 88,
@@ -954,7 +954,7 @@ Array [
             Object {
               "alignItems": "center",
               "borderColor": undefined,
-              "borderRadius": 12.571428571428571,
+              "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
               "height": 88,
@@ -1021,9 +1021,9 @@ Array [
     style={
       Array [
         Object {
-          "color": "#212121",
-          "fontSize": 13,
-          "lineHeight": 18,
+          "color": "#000000",
+          "fontSize": 16,
+          "lineHeight": 22.5,
         },
         Object {
           "fontWeight": "300",
@@ -1033,7 +1033,7 @@ Array [
       ]
     }
     testID="test"
-    variant="footnote"
+    variant="xs"
   >
     test
   </Text>,
@@ -1082,7 +1082,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -1115,7 +1115,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -1148,7 +1148,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -1181,7 +1181,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -1214,7 +1214,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -1247,7 +1247,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -1352,7 +1352,7 @@ Array [
             Object {
               "alignItems": "center",
               "borderColor": undefined,
-              "borderRadius": 12.571428571428571,
+              "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
               "height": 88,
@@ -1385,7 +1385,7 @@ Array [
             Object {
               "alignItems": "center",
               "borderColor": undefined,
-              "borderRadius": 12.571428571428571,
+              "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
               "height": 88,
@@ -1418,7 +1418,7 @@ Array [
             Object {
               "alignItems": "center",
               "borderColor": undefined,
-              "borderRadius": 12.571428571428571,
+              "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
               "height": 88,
@@ -1451,7 +1451,7 @@ Array [
             Object {
               "alignItems": "center",
               "borderColor": undefined,
-              "borderRadius": 12.571428571428571,
+              "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
               "height": 88,
@@ -1519,19 +1519,19 @@ Array [
     style={
       Array [
         Object {
-          "color": "#212121",
-          "fontSize": 13,
-          "lineHeight": 18,
+          "color": "#000000",
+          "fontSize": 16,
+          "lineHeight": 22.5,
         },
         Object {
           "color": "#cc0000",
-          "marginTop": 3.142857142857143,
+          "marginTop": 12,
           "textAlign": "left",
         },
       ]
     }
     testID="error_form_error"
-    variant="footnote"
+    variant="xs"
   >
     testError
   </Text>,
@@ -1580,7 +1580,7 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -1613,7 +1613,7 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -1646,7 +1646,7 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -1679,7 +1679,7 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -1783,7 +1783,7 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -1816,7 +1816,7 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -1849,7 +1849,7 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -1882,7 +1882,7 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -1986,7 +1986,7 @@ exports[`<PinInput /> should render textinput with error 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -2019,7 +2019,7 @@ exports[`<PinInput /> should render textinput with error 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -2052,7 +2052,7 @@ exports[`<PinInput /> should render textinput with error 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -2085,7 +2085,7 @@ exports[`<PinInput /> should render textinput with error 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -2189,7 +2189,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -2222,7 +2222,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -2255,7 +2255,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -2288,7 +2288,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -2350,7 +2350,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
   <View
     style={
       Object {
-        "marginLeft": 31.428571428571427,
+        "marginLeft": 20,
       }
     }
   >
@@ -2441,7 +2441,7 @@ exports[`<PinInput /> should render textinput with value 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -2474,7 +2474,7 @@ exports[`<PinInput /> should render textinput with value 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -2507,7 +2507,7 @@ exports[`<PinInput /> should render textinput with value 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
@@ -2540,7 +2540,7 @@ exports[`<PinInput /> should render textinput with value 1`] = `
           Object {
             "alignItems": "center",
             "borderColor": undefined,
-            "borderRadius": 12.571428571428571,
+            "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
             "height": 88,
