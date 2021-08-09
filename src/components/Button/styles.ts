@@ -7,6 +7,7 @@ import LoadingIndicator from '../LoadingIndicator';
 import TouchableComponent from '../Touchable';
 import TypographyComponent from '../Typography';
 
+const borderWidthSmall = getTheme('borderWidth.xxs');
 const brandPrimary = getTheme('brand.primary.main');
 const brandPrimaryContrast = getTheme('brand.primary.contrast');
 const brandSecondary = getTheme('brand.secondary.main');
@@ -70,6 +71,7 @@ type TextButtonProps = {
   buttonVariant: ButtonVariants;
   variant?: TypographyVariants;
   disabled?: boolean;
+  flat?: boolean;
   style: any;
 };
 
@@ -120,13 +122,13 @@ export const ButtonWrapper = styled.View<ButtonWrapperProps>`
     props.rounded ? buttonSize / 2 : buttonRadius(props)}px;
   justify-content: center;
   background-color: ${isFlat('transparent', getBackgroundColor)};
-  border-color: ${getTextColor};
-  border: ${(props) => hasBorder(`1px solid ${getTextColor(props)}`, '0')};
+  border-color: ${getBackgroundColor};
+  border-width: ${hasBorder(borderWidthSmall, '0')};
 `;
 
 export const TextButton = styled(TypographyComponent)<TextButtonProps>`
   letter-spacing: 0.4px;
-  color: ${getTextColor};
+  color: ${isFlat(getBackgroundColor, getTextColor)};
   font-weight: 500;
 `;
 

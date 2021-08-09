@@ -59,6 +59,7 @@ const Button: FC<ButtonProps> = ({
             <TextButton
               style={textStyle}
               disabled={disabled}
+              flat={flat}
               variant={typographyVariant}
               buttonVariant={variant}
             >
