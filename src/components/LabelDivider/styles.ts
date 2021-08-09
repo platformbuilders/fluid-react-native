@@ -2,8 +2,8 @@ import styled from 'styled-components/native';
 import { getTheme } from '../../utils/helpers';
 import Typography from '../Typography';
 
-const smallerSpacing = getTheme('smallerSpacing');
-const disabled = getTheme('texts.dark');
+const smallerSpacing = getTheme('spacing.xs');
+const disabled = getTheme('text.light');
 
 type Props = {
   marginTop?: number;
@@ -25,7 +25,7 @@ export const Line = styled.View`
 `;
 
 export const DividerText = styled(Typography)`
-  padding: ${smallerSpacing};
+  padding: ${smallerSpacing}px;
   color: ${disabled}90;
   font-weight: bold;
 `;

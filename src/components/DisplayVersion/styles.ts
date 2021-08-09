@@ -4,13 +4,13 @@ import { getTheme } from '../../utils/helpers';
 
 import Typography from '../Typography';
 
-const primaryMain = getTheme('primary.main');
-const smallSpacing = getTheme('smallSpacing');
+const brandPrimary = getTheme('brand.primary.main');
+const smallSpacing = getTheme('spacing.sm');
 
 export const Text = styled(Typography).attrs({
-  variant: 'subhead',
+  variant: 'xs',
 })`
-  color: ${primaryMain};
+  color: ${brandPrimary};
   text-align: center;
-  margin-vertical: ${smallSpacing};
+  margin-vertical: ${smallSpacing}px;
 `;

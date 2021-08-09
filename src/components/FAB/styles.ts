@@ -6,8 +6,8 @@ import DefaultIcon from '../Icon';
 import Touchable from '../Touchable';
 import Typography from '../Typography';
 
-const primaryContrast = getTheme('primary.contrast');
-const accentMain = getTheme('accent.main');
+const brandContrast = getTheme('brand.primary.contrast');
+const brandAccent = getTheme('brand.accent.main');
 const isRelative = ifStyle('relativePos');
 
 type WrapperProps = {
@@ -23,7 +23,7 @@ export const Wrapper = styled(Touchable)<WrapperProps>`
   height: ${({ size }: WrapperProps) => size}px;
   align-items: center;
   justify-content: center;
-  background-color: ${({ color }: WrapperProps) => color || accentMain};
+  background-color: ${({ color }: WrapperProps) => color || brandAccent};
   border-radius: ${({ size }: WrapperProps) => size / 2}px;
   ${({ hasShadow }: WrapperProps) => (hasShadow ? getShadow() : {})}
 `;
@@ -34,14 +34,14 @@ interface IconProps {
 }
 
 export const Icon = styled(DefaultIcon).attrs((props: IconProps) => ({
-  color: props.iconColor || primaryContrast(props),
+  color: props.iconColor || brandContrast(props),
   touchable: false,
   size: props.iconSize ? moderateScale(props.iconSize) : moderateScale(24),
 }))<IconProps>``;
 
 export const Title = styled(Typography).attrs({
-  variant: 'subhead',
+  variant: 'xs',
 })`
-  color: ${primaryContrast};
+  color: ${brandContrast};
   font-weight: 700;
 `;
