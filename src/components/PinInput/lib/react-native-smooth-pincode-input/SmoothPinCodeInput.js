@@ -95,8 +95,8 @@ class SmoothPinCodeInput extends Component {
     }
   };
   useIndexedAccessibilityLabel = (idx) => {
-    if (typeof this.props.useAccessibilityLabelWithIndex === 'string')
-      return `${this.props.useAccessibilityLabelWithIndex} ${idx}`;
+    if (typeof this.props.useIndexedAccessibilityLabel === 'string')
+      return `${this.props.useIndexedAccessibilityLabel} ${idx}`;
     return `Insira o PIN ${idx}`;
   };
   useIndexedTestID = (idx) => {
@@ -272,7 +272,7 @@ class SmoothPinCodeInput extends Component {
     editable: true,
     inputProps: {},
     disableFullscreenUI: true,
-    useAccessibilityLabelWithIndex: undefined,
+    useIndexedAccessibilityLabel: undefined,
     useIndexedTestID: undefined,
   };
 }
@@ -305,7 +305,7 @@ SmoothPinCodeInput.propTypes = {
   keyboardType: PropTypes.string,
   editable: PropTypes.bool,
   inputProps: PropTypes.exact(TextInput.propTypes),
-  useAccessibilityLabelWithIndex: PropTypes.string,
+  useIndexedAccessibilityLabel: PropTypes.string,
   useIndexedTestID: PropTypes.string,
 };
 export default SmoothPinCodeInput;

@@ -36,9 +36,9 @@ declare module 'react-native-smooth-pincode-input'{
      * really useful for QAs.
      *
      * #### Example
-     * if the given `useAccessibilityLabelWithIndex` is:
+     * if the given `useIndexedAccessibilityLabel` is:
      *
-     * `useAccessibilityLabelWithIndex = "Insira a sua senha de transação"`
+     * `useIndexedAccessibilityLabel = "Insira a sua senha de transação"`
      *
      * The Appium result should look like this
      *
@@ -47,15 +47,15 @@ declare module 'react-native-smooth-pincode-input'{
      * #### Default
      * Default is `Insira o PIN index`
      */
-    useAccessibilityLabelWithIndex?: string;
+    useIndexedAccessibilityLabel?: string;
     /**
      * This testID is declared on each cell rendered of pin input,
      * really useful for QAs using iOS.
      *
      * #### Example
-     * if the given `useAccessibilityLabelWithIndex` is:
+     * if the given `useIndexedTestID` is:
      *
-     * `useAccessibilityLabelWithIndex = "Insira a sua senha de transação"`
+     * `useIndexedTestID = "Insira a sua senha de transação"`
      *
      * The Appium result should look like this
      *
