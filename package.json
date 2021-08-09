@@ -32,7 +32,7 @@
     "test:coverage": "yarn test -- --coverage",
     "build": "rm -rf dist && yarn lint && tsc && yarn copyassets",
     "copyassets": "npx copyfiles -f ./src/assets/images/*.png ./dist/assets/images",
-    "prepublish": "yarn build",
+    "prepublish": "yarn test && yarn build",
     "precommit": "yarn test && yarn lint",
     "preversion": "yarn test && yarn lint",
     "postversion": "git push && git push --tags",
