@@ -123,7 +123,7 @@ export const ButtonWrapper = styled.View<ButtonWrapperProps>`
   justify-content: center;
   background-color: ${isFlat('transparent', getBackgroundColor)};
   border-color: ${getBackgroundColor};
-  border-width: ${hasBorder(borderWidthSmall, '0')};
+  border-width: ${hasBorder(borderWidthSmall, '0')}px;
 `;
 
 export const TextButton = styled(TypographyComponent)<TextButtonProps>`

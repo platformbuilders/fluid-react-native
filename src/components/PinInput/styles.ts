@@ -51,7 +51,7 @@ export const Icon = styled(DefaultIcon).attrs((props: IconProps) => ({
     isContrast(brandContrast(props), brandPrimary(props))(props),
   )(props),
 }))<IconProps>`
-  margin-left: ${mediumSpacing};
+  margin-left: ${mediumSpacing}px;
 `;
 
 type CaptionProps = {
