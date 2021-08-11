@@ -61,7 +61,7 @@ exports[`<TextInput /> should render textinput 1`] = `
             "justifyContent": "center",
             "maxWidth": "100%",
             "overflow": "hidden",
-            "paddingTop": 4,
+            "paddingTop": "({ theme }) => lodash.get(theme, themeProp)px",
           },
         ]
       }
