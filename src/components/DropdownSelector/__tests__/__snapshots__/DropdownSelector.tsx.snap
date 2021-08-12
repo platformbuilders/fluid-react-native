@@ -68,6 +68,7 @@ exports[`<DropdownSelector /> should render DropdownSelector 1`] = `
               Object {
                 "color": "#C6B09E",
                 "marginBottom": 6.285714285714286,
+                "marginLeft": 31.428571428571427,
                 "marginTop": 6.285714285714286,
                 "position": "absolute",
               },

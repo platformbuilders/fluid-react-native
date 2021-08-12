@@ -29,6 +29,7 @@ const primaryContrast = getTheme('primary.contrast');
 const primaryMain = getTheme('primary.main');
 const minimumSpacing = getTheme('minimumSpacing');
 const smallSpacing = getTheme('smallSpacing');
+const mediumSpacing = getTheme('mediumSpacing');
 const failure = getTheme('failure');
 
 type WrapperProps = {
@@ -84,6 +85,7 @@ export const FixedLabel = styled(Typography)<FixedLabelProps>`
   color: ${primaryMain};
   margin-bottom: ${minimumSpacing};
   margin-top: ${minimumSpacing};
+  margin-left: ${mediumSpacing};
   position: absolute;
 `;
 
