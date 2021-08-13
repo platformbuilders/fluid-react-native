@@ -1,6 +1,6 @@
 {
   "name": "@platformbuilders/react-native-elements",
-  "version": "0.3.0",
+  "version": "0.3.3",
   "description": "Platform Builders Shared Components Library For React Native",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -59,6 +59,7 @@
     "react-native-check-box": ">=2.1.7",
     "react-native-checkbox": ">=2.0.0",
     "react-native-collapsible": ">=1.5.2",
+    "@react-native-picker/picker": "^1.16.5",
     "react-native-datepicker": ">=1.7.2",
     "react-native-fast-image": ">=8.1.5",
     "react-native-haptic": ">=1.0.1",
@@ -174,6 +175,7 @@
     "react-native-camera": "3.31.1",
     "react-native-check-box": "2.1.7",
     "react-native-collapsible": "1.5.2",
+    "@react-native-picker/picker": "1.16.5",
     "react-native-datepicker": "1.7.2",
     "react-native-fast-image": "8.3.2",
     "react-native-haptic": "1.0.1",

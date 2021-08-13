@@ -3,6 +3,7 @@ export { default as FormError } from './FormError';
 export { default as TextInput } from './TextInput';
 export { default as PinInput } from './PinInput';
 export { default as PasswordInput } from './TextInput/PasswordInput';
+export { default as DropdownSelector } from './DropdownSelector';
 // Buttons
 export { default as Touchable } from './Touchable';
 export { default as Icon } from './Icon';
