@@ -2,6 +2,9 @@ module.exports = {
   preset: 'react-native',
   moduleDirectories: ['node_modules', 'src'],
   modulePathIgnorePatterns: ['<rootDir>/dist/'],
+  transformIgnorePatterns: [
+    'node_modules/(?!(jest-)?react-native|@react-native-community|@react-native-picker)',
+  ],
   setupFilesAfterEnv: [
     '@testing-library/jest-native/extend-expect',
     '<rootDir>/src/test/mocks.ts',

@@ -1,5 +1,3 @@
-import { ComponentType } from 'react';
-import { Animated, StyleSheet } from 'react-native';
 import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
 import { InputStatus, TextInputType } from '../../types';
@@ -13,15 +11,6 @@ import {
 } from '../../utils/helpers';
 import DefaultIcon from '../Icon';
 import Typography from '../Typography';
-
-type InputAreaWrapperProps = {
-  rightIcon?: boolean;
-  leftIcon?: boolean;
-  multiline: boolean;
-  padding?: number;
-  inputRightPadding?: number;
-  inputLeftPadding?: number;
-};
 
 type BorderedWrapperProps = {
   borderedBackgroundColor?: string;
@@ -47,14 +36,6 @@ type BottomLineProps = {
   status: string;
 };
 
-// const factor = 1.2;
-// const normalTextSize = moderateScale(16, factor);
-// const normalPlaceholderSize = moderateScale(14, factor);
-// const bigTextSize = moderateScale(24, factor);
-// const bigPlaceholderSize = moderateScale(20, factor);
-// const placeholderVariant = (props: any) => getFontSize('subhead')(props);
-// const placeholderBigVariant = 'title4';
-
 const isMultiline = ifStyle('multiline');
 const isCentered = ifStyle('centered');
 const hasLabel = ifStyle('label');
@@ -65,8 +46,6 @@ const primaryContrast = getTheme('primary.contrast');
 const primaryMain = getTheme('primary.main');
 const minimumSpacing = getTheme('minimumSpacing');
 const smallSpacing = getTheme('smallSpacing');
-const mediumSpacing = getTheme('mediumSpacing');
-const largeSpacing = getTheme('largeSpacing');
 const success = getTheme('success');
 const textColor = getTheme('text');
 const failure = getTheme('failure');
@@ -112,7 +91,7 @@ export const BorderedWrapper = styled.View<BorderedWrapperProps>`
   }: BorderedWrapperProps) => {
     const borderedStyle = `
       justify-content: center;
-      border: ${borderWidth ? borderWidth || 1 : 0}px solid ${
+      border: ${borderedColor ? borderWidth || 1 : 0}px solid ${
       error ? failure(rest) : borderedColor || primaryMain(rest)
     };
       background-color: ${borderedBackgroundColor || 'transparent'};
@@ -131,55 +110,19 @@ export const InputBorderedAreaWrapper = styled.View`
   flex-direction: row;
   align-items: center;
   width: 100%;
-  /* border-width: 1; */
-  /* border-color: red; */
 `;
 
 export const InputBorderedColumnWrapper = styled.View<InputBorderedColumnWrapperProps>`
   flex-direction: column;
   flex: 1;
-  /* padding: 0 ${minimumSpacing};
-  width: ${({ hasLeftIcon }: InputBorderedColumnWrapperProps) =>
-    hasLeftIcon ? '86%' : '92%'};
-  margin-left: ${({ hasLeftIcon }: InputBorderedColumnWrapperProps) =>
-    hasLeftIcon ? minimumSpacing : `-${largeSpacing}`}; */
-  /* border-width: 1; */
-  /* border-color: blue; */
 `;
 
 export const FixedLabel = styled(Typography)<FixedLabelProps>`
   color: ${primaryMain};
   margin-bottom: ${minimumSpacing};
   margin-top: ${minimumSpacing};
-  /* margin-left: ${mediumSpacing}; */
   position: absolute;
 `;
-
-export const InputAreaWrapper = styled.View<InputAreaWrapperProps>`
-  padding-top: ${({ padding }: InputAreaWrapperProps) =>
-    (!!padding && `${padding}px`) || minimumSpacing};
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
-  ${({ inputRightPadding }: InputAreaWrapperProps) =>
-    inputRightPadding && `padding-right: ${inputRightPadding}px`};
-  ${({ inputLeftPadding }: InputAreaWrapperProps) =>
-    inputLeftPadding && `padding-left: ${inputLeftPadding}px`};
-  overflow: hidden;
-`;
-
-export const TextLabel = styled.Text<any>`
-  font-size: ${getFontSize}px;
-  line-height: ${getLineHeight}px;
-  position: absolute;
-  color: ${inputColor};
-  top: ${LABEL_LOWER_STYLE.top}px;
-`;
-
-export const Label = Animated.createAnimatedComponent<ComponentType<any>>(
-  TextLabel,
-);
 
 export const TextInput = styled.TextInput.attrs((props: TextInputType) => ({
   accessibilityLabel: props.accessibilityLabel || props.accessibility,
@@ -198,11 +141,6 @@ export const TextInput = styled.TextInput.attrs((props: TextInputType) => ({
   font-size: ${getFontSize}px;
   line-height: ${getLineHeight}px;
   width: 100%;
-`;
-
-export const BottomLine = styled.View<BottomLineProps>`
-  height: ${StyleSheet.hairlineWidth}px;
-  background-color: ${inputColor};
 `;
 
 type IconProps = {

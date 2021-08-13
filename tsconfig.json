@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    /* Basic Options */
     "allowJs": true,
     "target": "es6",
     "module": "es6",
@@ -14,9 +15,24 @@
     "jsx": "react-native",
     "baseUrl": ".",
     "skipLibCheck": true,
-    "esModuleInterop": true,
+    /* Strict Type-Checking Options */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "suppressImplicitAnyIndexErrors": true,
+    /* Additional Checks */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    /* Module Resolution Options */
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "paths": {
       "tslib" : ["path/to/node_modules/tslib/tslib.d.ts"]
     }
