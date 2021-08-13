@@ -14,7 +14,7 @@
 ## Source Code With Forkik
 ```js
 import React from 'react';
-import { TextInput } from '@platformbuilders/react-native-ui';
+import { DropdownSelector } from '@platformbuilders/react-native-ui';
 
 const Home: React.FC = () => {
   return (
@@ -40,7 +40,7 @@ export default Home;
 ## Source Code With States
 ```js
 import React from 'react';
-import { TextInput } from '@platformbuilders/react-native-ui';
+import { DropdownSelector } from '@platformbuilders/react-native-ui';
 
 const Home: React.FC = () => {
   return (
