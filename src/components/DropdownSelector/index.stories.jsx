@@ -1,10 +1,10 @@
 import { storiesOf } from '@storybook/react-native';
-import textInputMarkdown from './textInput.md';
+import dropdownSelectorMarkdown from './dropdownSelector.md';
 
 storiesOf('Text Input', module)
   .addParameters({
     readme: {
-      content: textInputMarkdown,
+      content: dropdownSelectorMarkdown,
     },
     viewport: {
       defaultViewport: '',

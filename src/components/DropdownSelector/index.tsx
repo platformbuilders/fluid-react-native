@@ -55,7 +55,6 @@ const DropdownSelector: FC<DropdownSelectorType> = ({
         onValueChange={(itemValue: any, itemIndex: number) => {
           setSelectedValue(itemValue, itemIndex);
         }}
-        mode="dropdown"
         {...rest}
       >
         {options.map((option) => (
