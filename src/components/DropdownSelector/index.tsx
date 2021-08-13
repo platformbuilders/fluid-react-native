@@ -6,11 +6,11 @@ import { DropdownSelectorType } from '../../types';
 
 import FormError from '../FormError';
 import {
+  BorderedAreaWrapper,
+  BorderedColumnWrapper,
   BorderedWrapper,
   FixedLabel,
   Icon,
-  InputBorderedAreaWrapper,
-  InputBorderedColumnWrapper,
   Wrapper,
 } from './styles';
 
@@ -101,9 +101,9 @@ const DropdownSelector: FC<DropdownSelectorType> = ({
           borderedRadius={borderedRadius}
           error={hasError}
         >
-          <InputBorderedAreaWrapper>
+          <BorderedAreaWrapper>
             {!isEmpty(leftIconName) && _renderIcon(leftIconName, true)}
-            <InputBorderedColumnWrapper hasLeftIcon={!isEmpty(leftIconName)}>
+            <BorderedColumnWrapper hasLeftIcon={!isEmpty(leftIconName)}>
               <FixedLabel
                 hasLeftIcon={!isEmpty(leftIconName)}
                 variant={fixedLabelVariant}
@@ -111,9 +111,9 @@ const DropdownSelector: FC<DropdownSelectorType> = ({
                 {label}
               </FixedLabel>
               {_renderPickerInput()}
-            </InputBorderedColumnWrapper>
+            </BorderedColumnWrapper>
             {!isEmpty(iconName) && _renderIcon(iconName || '')}
-          </InputBorderedAreaWrapper>
+          </BorderedAreaWrapper>
         </BorderedWrapper>
       </FormError>
     </Wrapper>
