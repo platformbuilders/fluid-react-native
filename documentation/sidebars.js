@@ -1,6 +1,9 @@
 module.exports = {
   native: [{
-    Começando: ['introduction.native'],
+    Começando: [
+      'native.introduction',
+      'native.repoVisualizer'
+    ],
     Componentes: [
       'native.component.accordion',
       'native.component.avatar',
