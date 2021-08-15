@@ -13,6 +13,4 @@ title: Repo Visualizer
 
 ![RepoVisualizer](../static/img/repo-diagram.svg)
 
-imagem
-
 Mais detalhes de como foi gerado esse gráfico, só dar uma olhada [aqui](https://octo.github.com/projects/repo-visualization)!
