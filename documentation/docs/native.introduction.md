@@ -1,5 +1,5 @@
 ---
-id: introduction.native
+id: native.introduction
 title: Introdução
 sidebar_label: Introdução
 slug: /
