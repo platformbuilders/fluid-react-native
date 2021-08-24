@@ -120,12 +120,11 @@ const TextInput: FC<TextInputType> = ({
   };
 
   const handleOnBlur = (event: any): void => {
-    const isEmptyLabel = label === '';
-    if (isEmpty(value) && !isEmptyLabel && !suppressAnimation) {
+    if (isEmpty(value) && !isEmpty(label) && !suppressAnimation) {
       setIsPlaceHolder(true);
       animationDown();
     }
-    if (isEmptyLabel) {
+    if (isEmpty(label)) {
       setIsPlaceHolder(false);
     }
     onBlur(event);
@@ -174,10 +173,10 @@ const TextInput: FC<TextInputType> = ({
 
   const setAnimation = () => {
     const wasEmpty = previousValue?.length === 0;
-    if (value && value.length && wasEmpty && !suppressAnimation) {
+    if (value?.length && wasEmpty && !suppressAnimation) {
       animationUp();
     }
-    if (label === '') {
+    if (isEmpty(label)) {
       setIsPlaceHolder(false);
     }
   };
