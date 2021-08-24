@@ -121,7 +121,7 @@ const TextInput: FC<TextInputType> = ({
 
   const handleOnBlur = (event: any): void => {
     const isEmptyLabel = label === '';
-    if (!value && !isEmptyLabel && !suppressAnimation) {
+    if (isEmpty(value) && !isEmptyLabel && !suppressAnimation) {
       setIsPlaceHolder(true);
       animationDown();
     }
@@ -132,7 +132,8 @@ const TextInput: FC<TextInputType> = ({
   };
 
   const renderTextInput = (inputStatus: string): JSX.Element => {
-    const renderPlaceholder = !value && !isPlaceholder ? placeholder : '';
+    const renderPlaceholder =
+      isEmpty(value) && !isPlaceholder ? placeholder : '';
 
     const textInputProps = {
       id,
