@@ -46,18 +46,13 @@ type BottomLineProps = {
   status: string;
 };
 
-// const factor = 1.2;
-// const normalTextSize = moderateScale(16, factor);
-// const normalPlaceholderSize = moderateScale(14, factor);
-// const bigTextSize = moderateScale(24, factor);
-// const bigPlaceholderSize = moderateScale(20, factor);
-// const placeholderVariant = (props: any) => getFontSize('subhead')(props);
-// const placeholderBigVariant = 'title4';
-
 const isMultiline = ifStyle('multiline');
 const isCentered = ifStyle('centered');
 const hasLabel = ifStyle('label');
 const hasError = ifStyle('error');
+const hasPadding = ifStyle('padding');
+const hasInputRightPadding = ifStyle('inputRightPadding');
+const hasInputLeftPadding = ifStyle('inputLeftPadding');
 const isContrast = ifStyle('contrast');
 const switchStatus = switchStyle('status');
 const brandContrast = getTheme('brand.primary.contrast');
@@ -149,16 +144,22 @@ export const FixedLabel = styled(Typography)<FixedLabelProps>`
 `;
 
 export const InputAreaWrapper = styled.View<InputAreaWrapperProps>`
-  padding-top: ${({ padding }: InputAreaWrapperProps) =>
-    (!!padding && `${padding}px`) || `${minimumSpacing}px`};
+  padding-top: ${hasPadding(
+    ({ padding }: InputAreaWrapperProps) => padding,
+    minimumSpacing,
+  )}px;
+  padding-right: ${hasInputRightPadding(
+    ({ inputRightPadding }: InputAreaWrapperProps) => inputRightPadding,
+    hasPadding(({ padding }: InputAreaWrapperProps) => padding, minimumSpacing),
+  )}px;
+  padding-left: ${hasInputLeftPadding(
+    ({ inputLeftPadding }: InputAreaWrapperProps) => inputLeftPadding,
+    hasPadding(({ padding }: InputAreaWrapperProps) => padding, minimumSpacing),
+  )}px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  ${({ inputRightPadding }: InputAreaWrapperProps) =>
-    inputRightPadding && `padding-right: ${inputRightPadding}px`};
-  ${({ inputLeftPadding }: InputAreaWrapperProps) =>
-    inputLeftPadding && `padding-left: ${inputLeftPadding}px`};
   overflow: hidden;
 `;
 
