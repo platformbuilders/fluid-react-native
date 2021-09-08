@@ -36,11 +36,12 @@ exports[`<PinInput /> should render textinput 1`] = `
       }
     >
       <View
+        accessibilityLabel="Insira o PIN 0"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -51,6 +52,7 @@ exports[`<PinInput /> should render textinput 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 0"
       >
         <Text
           style={
@@ -67,11 +69,12 @@ exports[`<PinInput /> should render textinput 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 1"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -82,6 +85,7 @@ exports[`<PinInput /> should render textinput 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 1"
       >
         <Text
           style={
@@ -98,11 +102,12 @@ exports[`<PinInput /> should render textinput 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 2"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -113,6 +118,7 @@ exports[`<PinInput /> should render textinput 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 2"
       >
         <Text
           style={
@@ -129,11 +135,12 @@ exports[`<PinInput /> should render textinput 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 3"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -144,6 +151,7 @@ exports[`<PinInput /> should render textinput 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 3"
       >
         <Text
           style={
@@ -231,11 +239,12 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
       }
     >
       <View
+        accessibilityLabel="Insira o PIN 0"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -246,6 +255,7 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 0"
       >
         <Text
           style={
@@ -262,11 +272,12 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 1"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -277,6 +288,7 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 1"
       >
         <Text
           style={
@@ -293,11 +305,12 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 2"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -308,6 +321,7 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 2"
       >
         <Text
           style={
@@ -324,11 +338,12 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 3"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -339,6 +354,7 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 3"
       >
         <Text
           style={
@@ -426,11 +442,12 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
       }
     >
       <View
+        accessibilityLabel="Insira o PIN 0"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -441,6 +458,7 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 0"
       >
         <Text
           style={
@@ -457,11 +475,12 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 1"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -472,6 +491,7 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 1"
       >
         <Text
           style={
@@ -488,11 +508,12 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 2"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -503,6 +524,7 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 2"
       >
         <Text
           style={
@@ -519,11 +541,12 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 3"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -534,6 +557,7 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 3"
       >
         <Text
           style={
@@ -621,11 +645,12 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
       }
     >
       <View
+        accessibilityLabel="Insira o PIN 0"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -636,6 +661,7 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 0"
       >
         <Text
           style={
@@ -652,11 +678,12 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 1"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -667,6 +694,7 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 1"
       >
         <Text
           style={
@@ -683,11 +711,12 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 2"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -698,6 +727,7 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 2"
       >
         <Text
           style={
@@ -714,11 +744,12 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 3"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -729,6 +760,7 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 3"
       >
         <Text
           style={
@@ -817,11 +849,12 @@ Array [
         }
       >
         <View
+          accessibilityLabel="Insira o PIN 0"
           forwardedRef={[Function]}
           style={
             Object {
               "alignItems": "center",
-              "borderColor": undefined,
+              "borderColor": "#805281",
               "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
@@ -832,6 +865,7 @@ Array [
               "width": 88,
             }
           }
+          testID="Insira o PIN 0"
         >
           <Text
             style={
@@ -848,11 +882,12 @@ Array [
           </Text>
         </View>
         <View
+          accessibilityLabel="Insira o PIN 1"
           forwardedRef={[Function]}
           style={
             Object {
               "alignItems": "center",
-              "borderColor": undefined,
+              "borderColor": "#805281",
               "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
@@ -863,6 +898,7 @@ Array [
               "width": 88,
             }
           }
+          testID="Insira o PIN 1"
         >
           <Text
             style={
@@ -879,11 +915,12 @@ Array [
           </Text>
         </View>
         <View
+          accessibilityLabel="Insira o PIN 2"
           forwardedRef={[Function]}
           style={
             Object {
               "alignItems": "center",
-              "borderColor": undefined,
+              "borderColor": "#805281",
               "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
@@ -894,6 +931,7 @@ Array [
               "width": 88,
             }
           }
+          testID="Insira o PIN 2"
         >
           <Text
             style={
@@ -910,11 +948,12 @@ Array [
           </Text>
         </View>
         <View
+          accessibilityLabel="Insira o PIN 3"
           forwardedRef={[Function]}
           style={
             Object {
               "alignItems": "center",
-              "borderColor": undefined,
+              "borderColor": "#805281",
               "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
@@ -925,6 +964,7 @@ Array [
               "width": 88,
             }
           }
+          testID="Insira o PIN 3"
         >
           <Text
             style={
@@ -1036,11 +1076,12 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       }
     >
       <View
+        accessibilityLabel="Insira o PIN 0"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -1051,6 +1092,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 0"
       >
         <Text
           style={
@@ -1067,11 +1109,12 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 1"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -1082,6 +1125,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 1"
       >
         <Text
           style={
@@ -1098,11 +1142,12 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 2"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -1113,6 +1158,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 2"
       >
         <Text
           style={
@@ -1129,11 +1175,12 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 3"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -1144,6 +1191,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 3"
       >
         <Text
           style={
@@ -1160,11 +1208,12 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 4"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -1175,6 +1224,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 4"
       >
         <Text
           style={
@@ -1191,11 +1241,12 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 5"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -1206,6 +1257,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 5"
       >
         <Text
           style={
@@ -1294,11 +1346,12 @@ Array [
         }
       >
         <View
+          accessibilityLabel="Insira o PIN 0"
           forwardedRef={[Function]}
           style={
             Object {
               "alignItems": "center",
-              "borderColor": undefined,
+              "borderColor": "#805281",
               "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
@@ -1309,6 +1362,7 @@ Array [
               "width": 88,
             }
           }
+          testID="Insira o PIN 0"
         >
           <Text
             style={
@@ -1325,11 +1379,12 @@ Array [
           </Text>
         </View>
         <View
+          accessibilityLabel="Insira o PIN 1"
           forwardedRef={[Function]}
           style={
             Object {
               "alignItems": "center",
-              "borderColor": undefined,
+              "borderColor": "#805281",
               "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
@@ -1340,6 +1395,7 @@ Array [
               "width": 88,
             }
           }
+          testID="Insira o PIN 1"
         >
           <Text
             style={
@@ -1356,11 +1412,12 @@ Array [
           </Text>
         </View>
         <View
+          accessibilityLabel="Insira o PIN 2"
           forwardedRef={[Function]}
           style={
             Object {
               "alignItems": "center",
-              "borderColor": undefined,
+              "borderColor": "#805281",
               "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
@@ -1371,6 +1428,7 @@ Array [
               "width": 88,
             }
           }
+          testID="Insira o PIN 2"
         >
           <Text
             style={
@@ -1387,11 +1445,12 @@ Array [
           </Text>
         </View>
         <View
+          accessibilityLabel="Insira o PIN 3"
           forwardedRef={[Function]}
           style={
             Object {
               "alignItems": "center",
-              "borderColor": undefined,
+              "borderColor": "#805281",
               "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
@@ -1402,6 +1461,7 @@ Array [
               "width": 88,
             }
           }
+          testID="Insira o PIN 3"
         >
           <Text
             style={
@@ -1514,11 +1574,12 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
       }
     >
       <View
+        accessibilityLabel="Insira o PIN 0"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -1529,6 +1590,7 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 0"
       >
         <Text
           style={
@@ -1545,11 +1607,12 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 1"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -1560,6 +1623,7 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 1"
       >
         <Text
           style={
@@ -1576,11 +1640,12 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 2"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -1591,6 +1656,7 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 2"
       >
         <Text
           style={
@@ -1607,11 +1673,12 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 3"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -1622,6 +1689,7 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 3"
       >
         <Text
           style={
@@ -1709,11 +1777,12 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
       }
     >
       <View
+        accessibilityLabel="Insira o PIN 0"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -1724,6 +1793,7 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 0"
       >
         <Text
           style={
@@ -1740,11 +1810,12 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 1"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -1755,6 +1826,7 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 1"
       >
         <Text
           style={
@@ -1771,11 +1843,12 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 2"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -1786,6 +1859,7 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 2"
       >
         <Text
           style={
@@ -1802,11 +1876,12 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 3"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -1817,6 +1892,7 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 3"
       >
         <Text
           style={
@@ -1904,11 +1980,12 @@ exports[`<PinInput /> should render textinput with error 1`] = `
       }
     >
       <View
+        accessibilityLabel="Insira o PIN 0"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -1919,6 +1996,7 @@ exports[`<PinInput /> should render textinput with error 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 0"
       >
         <Text
           style={
@@ -1935,11 +2013,12 @@ exports[`<PinInput /> should render textinput with error 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 1"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -1950,6 +2029,7 @@ exports[`<PinInput /> should render textinput with error 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 1"
       >
         <Text
           style={
@@ -1966,11 +2046,12 @@ exports[`<PinInput /> should render textinput with error 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 2"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -1981,6 +2062,7 @@ exports[`<PinInput /> should render textinput with error 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 2"
       >
         <Text
           style={
@@ -1997,11 +2079,12 @@ exports[`<PinInput /> should render textinput with error 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 3"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -2012,6 +2095,7 @@ exports[`<PinInput /> should render textinput with error 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 3"
       >
         <Text
           style={
@@ -2099,11 +2183,12 @@ exports[`<PinInput /> should render textinput with password 1`] = `
       }
     >
       <View
+        accessibilityLabel="Insira o PIN 0"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -2114,6 +2199,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 0"
       >
         <Text
           style={
@@ -2130,11 +2216,12 @@ exports[`<PinInput /> should render textinput with password 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 1"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -2145,6 +2232,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 1"
       >
         <Text
           style={
@@ -2161,11 +2249,12 @@ exports[`<PinInput /> should render textinput with password 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 2"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -2176,6 +2265,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 2"
       >
         <Text
           style={
@@ -2192,11 +2282,12 @@ exports[`<PinInput /> should render textinput with password 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 3"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -2207,6 +2298,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 3"
       >
         <Text
           style={
@@ -2343,11 +2435,12 @@ exports[`<PinInput /> should render textinput with value 1`] = `
       }
     >
       <View
+        accessibilityLabel="Insira o PIN 0"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -2358,6 +2451,7 @@ exports[`<PinInput /> should render textinput with value 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 0"
       >
         <Text
           style={
@@ -2374,11 +2468,12 @@ exports[`<PinInput /> should render textinput with value 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 1"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -2389,6 +2484,7 @@ exports[`<PinInput /> should render textinput with value 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 1"
       >
         <Text
           style={
@@ -2405,11 +2501,12 @@ exports[`<PinInput /> should render textinput with value 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 2"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -2420,6 +2517,7 @@ exports[`<PinInput /> should render textinput with value 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 2"
       >
         <Text
           style={
@@ -2436,11 +2534,12 @@ exports[`<PinInput /> should render textinput with value 1`] = `
         </Text>
       </View>
       <View
+        accessibilityLabel="Insira o PIN 3"
         forwardedRef={[Function]}
         style={
           Object {
             "alignItems": "center",
-            "borderColor": undefined,
+            "borderColor": "#805281",
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
@@ -2451,6 +2550,7 @@ exports[`<PinInput /> should render textinput with value 1`] = `
             "width": 88,
           }
         }
+        testID="Insira o PIN 3"
       >
         <Text
           style={

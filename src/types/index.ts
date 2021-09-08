@@ -6,6 +6,7 @@ export * from './TouchableType';
 export * from './IconType';
 export * from './TextInputType';
 export * from './Loading';
+export * from './SmoothPinCodeInput';
 
 // Theme Types
 export * from './theme_types/Colors';

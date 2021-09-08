@@ -31,7 +31,41 @@ declare module 'react-native-smooth-pincode-input'{
     keyboardType?: string;
     editable?: boolean;
     inputProps?: TextInputProps;
-    }
+    /**
+     * This accessibilityLabel is declared on each cell rendered of pin input,
+     * really useful for QAs.
+     *
+     * #### Example
+     * if the given `useIndexedAccessibilityLabel` is:
+     *
+     * `useIndexedAccessibilityLabel = "Insira a sua senha de transação"`
+     *
+     * The Appium result should look like this
+     *
+     * `Insira a sua senha de transação index` (there will be the index number in the end)
+     *
+     * #### Default
+     * Default is `Insira o PIN index`
+     */
+    useIndexedAccessibilityLabel?: string;
+    /**
+     * This testID is declared on each cell rendered of pin input,
+     * really useful for QAs using iOS.
+     *
+     * #### Example
+     * if the given `useIndexedTestID` is:
+     *
+     * `useIndexedTestID = "Insira a sua senha de transação"`
+     *
+     * The Appium result should look like this
+     *
+     * `Insira a sua senha de transação index` (there will be the index number in the end)
+     *
+     * #### Default
+     * Default is `Insira o PIN index`
+     */
+    useIndexedTestID?: string;
+  }
 
   type SmoothInputSate = {
       maskDelay: boolean,
