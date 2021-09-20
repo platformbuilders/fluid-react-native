@@ -10,7 +10,7 @@ describe('<TextInput />', () => {
   it('should render textinput', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <TextInput id="test" accessibility="" />
+        <TextInput inputRef="$text" id="test" accessibility="" />
       </ThemeProvider>,
     );
 

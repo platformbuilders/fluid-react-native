@@ -10,7 +10,7 @@ describe('<PasswordInput />', () => {
   it('should render PasswordInput', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <PasswordInput id="test" accessibility="test" />
+        <PasswordInput inputRef="$text" id="test" accessibility="test" />
       </ThemeProvider>,
     );
 

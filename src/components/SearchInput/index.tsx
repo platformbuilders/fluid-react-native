@@ -25,6 +25,7 @@ type Props = {
   autoFocus?: boolean;
   rightIconName?: string;
   leftIconName?: string;
+  inputRef?: any;
 };
 
 const SearchInput: React.FC<Props> = ({
@@ -49,12 +50,13 @@ const SearchInput: React.FC<Props> = ({
   autoFocus = false,
   rightIconName,
   leftIconName,
+  inputRef,
   ...rest
 }) => {
   const [searchText, setSearchText] = useState('');
   const [isSearching, setSearching] = useState(false);
   const [isFocused, setFocused] = useState(false);
-  const ref = useRef<HTMLInputElement>(null);
+  const ref = inputRef || useRef<HTMLInputElement>(null);
 
   const onPressIcon = (): void => {
     if (onIconPress) {

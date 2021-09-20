@@ -76,6 +76,7 @@ exports[`<TextInput /> should render textinput 1`] = `
         centered={false}
         contrast={false}
         id="test"
+        inputRef="$text"
         isPlaceholder={true}
         keyboardType="default"
         large={false}
