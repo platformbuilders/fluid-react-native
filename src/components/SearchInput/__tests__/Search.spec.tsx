@@ -12,7 +12,12 @@ describe('<Search />', () => {
     const onChange = jest.fn();
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <Search id="test" accessibility="" onChange={onChange} />
+        <Search
+          inputRef="$text"
+          id="test"
+          accessibility=""
+          onChange={onChange}
+        />
       </ThemeProvider>,
     );
 
@@ -24,6 +29,7 @@ describe('<Search />', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
         <Search
+          inputRef="$text"
           id="test"
           accessibility=""
           onChange={onChange}
@@ -40,6 +46,7 @@ describe('<Search />', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
         <Search
+          inputRef="$text"
           id="test"
           accessibility=""
           onChange={onChange}
@@ -56,6 +63,7 @@ describe('<Search />', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
         <Search
+          inputRef="$text"
           id="test"
           accessibility=""
           onChange={onChange}
@@ -72,6 +80,7 @@ describe('<Search />', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
         <Search
+          inputRef="$text"
           id="test"
           accessibility=""
           onChange={onChange}
@@ -87,7 +96,13 @@ describe('<Search />', () => {
     const onChange = jest.fn();
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <Search id="test" accessibility="" onChange={onChange} iconSize={24} />
+        <Search
+          inputRef="$text"
+          id="test"
+          accessibility=""
+          onChange={onChange}
+          iconSize={24}
+        />
       </ThemeProvider>,
     );
 
@@ -98,7 +113,13 @@ describe('<Search />', () => {
     const onChange = jest.fn();
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <Search id="test" accessibility="" onChange={onChange} hasShadow />
+        <Search
+          inputRef="$text"
+          id="test"
+          accessibility=""
+          onChange={onChange}
+          hasShadow
+        />
       </ThemeProvider>,
     );
 
@@ -110,6 +131,7 @@ describe('<Search />', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
         <Search
+          inputRef="$text"
           id="test"
           accessibility=""
           onChange={onChange}
@@ -126,6 +148,7 @@ describe('<Search />', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
         <Search
+          inputRef="$text"
           id="test"
           accessibility=""
           onChange={onChange}
@@ -142,6 +165,7 @@ describe('<Search />', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
         <Search
+          inputRef="$text"
           id="test"
           accessibility=""
           onChange={onChange}
@@ -158,6 +182,7 @@ describe('<Search />', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
         <Search
+          inputRef="$text"
           id="test"
           accessibility=""
           onChange={onChange}
@@ -173,7 +198,13 @@ describe('<Search />', () => {
     const onChange = jest.fn();
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <Search id="test" accessibility="" onChange={onChange} autoFocus />
+        <Search
+          inputRef="$text"
+          id="test"
+          accessibility=""
+          onChange={onChange}
+          autoFocus
+        />
       </ThemeProvider>,
     );
 
@@ -185,6 +216,7 @@ describe('<Search />', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
         <Search
+          inputRef="$text"
           id="test"
           accessibility=""
           onChange={onChange}
@@ -201,6 +233,7 @@ describe('<Search />', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
         <Search
+          inputRef="$text"
           id="test"
           accessibility=""
           onChange={onChange}
