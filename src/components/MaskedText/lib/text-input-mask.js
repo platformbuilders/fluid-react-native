@@ -1,10 +1,11 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import { TextInput } from 'react-native';
 import BaseTextComponent from './base-text-component';
 
 export default class TextInputMask extends BaseTextComponent {
   getElement() {
-    return this._inputElement;
+    return this.props.inputRef || this._inputElement;
   }
 
   _onChangeText(text) {
@@ -52,15 +53,7 @@ export default class TextInputMask extends BaseTextComponent {
 
     return (
       <Input
-        ref={(ref) => {
-          if (ref) {
-            this._inputElement = ref;
-
-            if (typeof this.props.refInput === 'function') {
-              this.props.refInput(ref);
-            }
-          }
-        }}
+        ref={this.getElement()}
         keyboardType={this._getKeyboardType()}
         {...this.props}
         {...customTextInputProps}
