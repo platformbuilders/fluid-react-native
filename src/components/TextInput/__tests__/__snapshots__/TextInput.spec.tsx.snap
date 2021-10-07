@@ -29,7 +29,7 @@ exports[`<TextInput /> should render textinput 1`] = `
     <Text
       accessibilityLabel="Erro "
       contrast={false}
-      status="DEFAULT"
+      status="default"
       style={
         Array [
           Object {
@@ -87,7 +87,7 @@ exports[`<TextInput /> should render textinput 1`] = `
         placeholder=""
         placeholderTextColor="#72727260"
         rejectResponderTermination={true}
-        status="DEFAULT"
+        status="default"
         style={
           Array [
             Object {
@@ -120,7 +120,7 @@ exports[`<TextInput /> should render textinput 1`] = `
     </View>
     <View
       contrast={false}
-      status="DEFAULT"
+      status="default"
       style={
         Array [
           Object {

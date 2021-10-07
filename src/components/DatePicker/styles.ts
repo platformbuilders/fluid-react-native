@@ -4,7 +4,7 @@ import DefaultDatePicker, {
   DatePickerCustomStylesProps,
 } from 'react-native-datepicker';
 import styled from 'styled-components/native';
-import { InputStatus } from '../../types';
+import { InputStatus } from '../../enums';
 import { getTheme, switchStyle } from '../../utils/helpers';
 
 const getStatusStyle = switchStyle('status');
@@ -60,8 +60,7 @@ export const DatePicker = styled(DefaultDatePicker)<DatePickerProps>`
 
 export const BottomLine = styled.View`
   height: 1px;
-  // inputMainColor precisa ser ajustado, está retornando alguma propriedade inválida
-  /* background-color: ${inputMainColor}; */
+  background-color: ${inputMainColor};
 `;
 
 const commonDatePickerStyles = {
