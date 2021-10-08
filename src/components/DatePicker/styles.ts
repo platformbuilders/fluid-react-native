@@ -83,13 +83,13 @@ export const DatePickerStyles: DatePickerCustomStylesProps = {
     position: 'absolute',
     left: 0,
     color: '#fff',
-    fontSize: LABEL_LOWER_STYLE.fontSize,
+    fontSize: moderateScale(14),
   },
   dateText: {
     position: 'absolute',
     left: 0,
     color: '#fff',
-    fontSize: LABEL_UPPER_STYLE.fontSize,
+    fontSize: moderateScale(18),
     fontWeight: '700',
   },
 };
@@ -100,13 +100,13 @@ export const DatePickerStylesDark: DatePickerCustomStylesProps = {
     position: 'absolute',
     left: 0,
     color: '#000',
-    fontSize: LABEL_LOWER_STYLE.fontSize,
+    fontSize: moderateScale(14),
   },
   dateText: {
     position: 'absolute',
     left: 0,
     color: '#000',
-    fontSize: LABEL_UPPER_STYLE.fontSize,
+    fontSize: moderateScale(18),
     fontWeight: '700',
   },
 };
