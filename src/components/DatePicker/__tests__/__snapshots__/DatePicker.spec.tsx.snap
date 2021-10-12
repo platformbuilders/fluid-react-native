@@ -14,7 +14,7 @@ Array [
           "paddingBottom": 20,
         },
         Object {
-          "fontSize": 28.285714285714285,
+          "fontSize": 18,
           "top": 40,
         },
       ]
@@ -89,7 +89,7 @@ Array [
               },
               Object {
                 "color": "#fff",
-                "fontSize": 28.285714285714285,
+                "fontSize": 18,
                 "left": 0,
                 "position": "absolute",
               },
@@ -321,7 +321,7 @@ Array [
           "paddingBottom": 20,
         },
         Object {
-          "fontSize": 28.285714285714285,
+          "fontSize": 18,
           "top": 40,
         },
       ]
@@ -396,7 +396,7 @@ Array [
               },
               Object {
                 "color": "#fff",
-                "fontSize": 28.285714285714285,
+                "fontSize": 18,
                 "left": 0,
                 "position": "absolute",
               },
@@ -628,7 +628,7 @@ Array [
           "paddingBottom": 20,
         },
         Object {
-          "fontSize": 28.285714285714285,
+          "fontSize": 18,
           "top": 40,
         },
       ]
@@ -703,7 +703,7 @@ Array [
               },
               Object {
                 "color": "#fff",
-                "fontSize": 28.285714285714285,
+                "fontSize": 18,
                 "left": 0,
                 "position": "absolute",
               },
@@ -935,7 +935,7 @@ Array [
           "paddingBottom": 20,
         },
         Object {
-          "fontSize": 28.285714285714285,
+          "fontSize": 18,
           "top": 40,
         },
       ]
@@ -1010,7 +1010,7 @@ Array [
               },
               Object {
                 "color": "#fff",
-                "fontSize": 28.285714285714285,
+                "fontSize": 18,
                 "left": 0,
                 "position": "absolute",
               },
@@ -1242,7 +1242,7 @@ Array [
           "paddingBottom": 20,
         },
         Object {
-          "fontSize": 28.285714285714285,
+          "fontSize": 18,
           "top": 40,
         },
       ]
@@ -1317,7 +1317,7 @@ Array [
               },
               Object {
                 "color": "#fff",
-                "fontSize": 28.285714285714285,
+                "fontSize": 18,
                 "left": 0,
                 "position": "absolute",
               },
@@ -1856,7 +1856,7 @@ Array [
           "paddingBottom": 20,
         },
         Object {
-          "fontSize": 28.285714285714285,
+          "fontSize": 18,
           "top": 40,
         },
       ]
@@ -1931,7 +1931,7 @@ Array [
               },
               Object {
                 "color": "#fff",
-                "fontSize": 28.285714285714285,
+                "fontSize": 18,
                 "left": 0,
                 "position": "absolute",
               },
@@ -2163,7 +2163,7 @@ Array [
           "paddingBottom": 20,
         },
         Object {
-          "fontSize": 28.285714285714285,
+          "fontSize": 18,
           "top": 40,
         },
       ]
@@ -2238,7 +2238,7 @@ Array [
               },
               Object {
                 "color": "#fff",
-                "fontSize": 28.285714285714285,
+                "fontSize": 18,
                 "left": 0,
                 "position": "absolute",
               },
@@ -2470,7 +2470,7 @@ Array [
           "paddingBottom": 20,
         },
         Object {
-          "fontSize": 28.285714285714285,
+          "fontSize": 18,
           "top": 40,
         },
       ]
@@ -2545,7 +2545,7 @@ Array [
               },
               Object {
                 "color": "#fff",
-                "fontSize": 28.285714285714285,
+                "fontSize": 18,
                 "left": 0,
                 "position": "absolute",
               },
@@ -2777,7 +2777,7 @@ Array [
           "paddingBottom": 20,
         },
         Object {
-          "fontSize": 28.285714285714285,
+          "fontSize": 18,
           "top": 40,
         },
       ]
@@ -2852,7 +2852,7 @@ Array [
               },
               Object {
                 "color": "#fff",
-                "fontSize": 28.285714285714285,
+                "fontSize": 18,
                 "left": 0,
                 "position": "absolute",
               },
@@ -3108,7 +3108,7 @@ Array [
           "paddingBottom": 20,
         },
         Object {
-          "fontSize": 28.285714285714285,
+          "fontSize": 18,
           "top": 40,
         },
       ]
@@ -3183,7 +3183,7 @@ Array [
               },
               Object {
                 "color": "#fff",
-                "fontSize": 28.285714285714285,
+                "fontSize": 18,
                 "left": 0,
                 "position": "absolute",
               },
@@ -3415,7 +3415,7 @@ Array [
           "paddingBottom": 20,
         },
         Object {
-          "fontSize": 28.285714285714285,
+          "fontSize": 18,
           "top": 40,
         },
       ]
@@ -3490,7 +3490,7 @@ Array [
               },
               Object {
                 "color": "#fff",
-                "fontSize": 28.285714285714285,
+                "fontSize": 18,
                 "left": 0,
                 "position": "absolute",
               },
@@ -3722,7 +3722,7 @@ Array [
           "paddingBottom": 20,
         },
         Object {
-          "fontSize": 28.285714285714285,
+          "fontSize": 18,
           "top": 40,
         },
       ]
@@ -3797,7 +3797,7 @@ Array [
               },
               Object {
                 "color": "#fff",
-                "fontSize": 28.285714285714285,
+                "fontSize": 18,
                 "left": 0,
                 "position": "absolute",
               },
@@ -4029,7 +4029,7 @@ Array [
           "paddingBottom": 20,
         },
         Object {
-          "fontSize": 28.285714285714285,
+          "fontSize": 18,
           "top": 40,
         },
       ]
@@ -4104,7 +4104,7 @@ Array [
               },
               Object {
                 "color": "#fff",
-                "fontSize": 28.285714285714285,
+                "fontSize": 18,
                 "left": 0,
                 "position": "absolute",
               },
@@ -4336,7 +4336,7 @@ Array [
           "paddingBottom": 20,
         },
         Object {
-          "fontSize": 28.285714285714285,
+          "fontSize": 18,
           "top": 40,
         },
       ]
@@ -4411,7 +4411,7 @@ Array [
               },
               Object {
                 "color": "#fff",
-                "fontSize": 28.285714285714285,
+                "fontSize": 18,
                 "left": 0,
                 "position": "absolute",
               },
@@ -4643,7 +4643,7 @@ Array [
           "paddingBottom": 20,
         },
         Object {
-          "fontSize": 28.285714285714285,
+          "fontSize": 18,
           "top": 40,
         },
       ]
@@ -4718,7 +4718,7 @@ Array [
               },
               Object {
                 "color": "#fff",
-                "fontSize": 28.285714285714285,
+                "fontSize": 18,
                 "left": 0,
                 "position": "absolute",
               },

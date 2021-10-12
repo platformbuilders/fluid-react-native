@@ -3,7 +3,6 @@ import { Animated, StyleSheet } from 'react-native';
 import DefaultDatePicker, {
   DatePickerCustomStylesProps,
 } from 'react-native-datepicker';
-import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
 import { InputStatus } from '../../enums';
 import { getTheme, switchStyle } from '../../utils/helpers';
@@ -26,12 +25,12 @@ const inputMainColor = (props: { dark: any }): any =>
 
 export const LABEL_UPPER_STYLE = {
   top: 8,
-  fontSize: moderateScale(14),
+  fontSize: 14,
 };
 
 export const LABEL_LOWER_STYLE = {
   top: 40,
-  fontSize: moderateScale(18),
+  fontSize: 18,
 };
 
 type TextProps = {
