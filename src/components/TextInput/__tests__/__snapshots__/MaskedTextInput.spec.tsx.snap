@@ -12,7 +12,7 @@ exports[`<MaskedTextInput /> should render textinput 1`] = `
   onChangeText={[Function]}
   placeholderTextColor="#72727260"
   rejectResponderTermination={true}
-  status="DEFAULT"
+  status="default"
   style={
     Array [
       Object {

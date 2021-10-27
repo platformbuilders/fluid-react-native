@@ -2,7 +2,8 @@ import { ComponentType } from 'react';
 import { Animated, StyleSheet } from 'react-native';
 import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
-import { InputStatus, TextInputType } from '../../types';
+import { InputStatus } from '../../enums';
+import { TextInputType } from '../../types';
 import {
   getFontSize,
   getLineHeight,

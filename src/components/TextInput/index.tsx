@@ -1,7 +1,8 @@
 import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
 import { isEmpty } from 'lodash';
 import { Animated } from 'react-native';
-import { InputStatus, TextInputType, TypographyVariants } from '../../types';
+import { InputStatus } from '../../enums';
+import { TextInputType, TypographyVariants } from '../../types';
 import { usePrevious } from '../../utils/hooks';
 
 import FormError from '../FormError';
