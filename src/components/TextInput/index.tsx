@@ -11,6 +11,7 @@ import {
   BorderedWrapper,
   BottomLine,
   FixedLabel,
+  FixedLabelAboveBorder,
   Icon,
   InputAreaWrapper,
   InputBorderedAreaWrapper,
@@ -64,10 +65,13 @@ const TextInput: FC<TextInputType> = ({
   borderedBackgroundColor,
   borderedHeight,
   borderedColor,
-  borderedRadius,
+  borderedRadius = 0,
   iconType = 'material',
   fixedLabelVariant = 'xs',
   suppressAnimation = false,
+  borderedLabel = '',
+  showBorderErrored = true,
+  showIconErrored = true,
   ...rest
   // eslint-disable-next-line sonarjs/cognitive-complexity
 }) => {
@@ -205,6 +209,7 @@ const TextInput: FC<TextInputType> = ({
       onPress={!!rightIconName ? onRightIconPress : onPressIcon}
       hitSlop={iconHitSlop}
       iconColor={isLeft ? leftIconColor : iconColor}
+      showIconErrored={showIconErrored}
     />
   );
 
@@ -223,6 +228,7 @@ const TextInput: FC<TextInputType> = ({
           borderedColor={borderedColor}
           borderedRadius={borderedRadius}
           error={hasError}
+          showBorderErrored={showBorderErrored}
         >
           {!centered && !borderedHeight && (
             <Label
@@ -236,20 +242,30 @@ const TextInput: FC<TextInputType> = ({
               {label}
             </Label>
           )}
+          {!isEmpty(borderedLabel) && isEmpty(label) && !!borderedHeight && (
+            <FixedLabelAboveBorder
+              style={labelStyle}
+              variant={fixedLabelVariant}
+            >
+              {borderedLabel}
+            </FixedLabelAboveBorder>
+          )}
           {borderedHeight ? (
-            <InputBorderedAreaWrapper>
+            <InputBorderedAreaWrapper hasBottomLine={withBottomline}>
               {!isEmpty(iconBordered) && renderIcon(iconBordered, true)}
               <InputBorderedColumnWrapper
                 hasLeftIcon={!isEmpty(iconBordered)}
                 multiline={multiline}
                 padding={inputPadding}
               >
-                <FixedLabel
-                  hasLeftIcon={!isEmpty(iconBordered)}
-                  variant={fixedLabelVariant}
-                >
-                  {label}
-                </FixedLabel>
+                {!isEmpty(label) && isEmpty(borderedLabel) && (
+                  <FixedLabel
+                    hasLeftIcon={!isEmpty(iconBordered)}
+                    variant={fixedLabelVariant}
+                  >
+                    {label}
+                  </FixedLabel>
+                )}
                 {renderTextInput(renderStatus)}
               </InputBorderedColumnWrapper>
               {!isEmpty(icon) && renderIcon(icon || '')}

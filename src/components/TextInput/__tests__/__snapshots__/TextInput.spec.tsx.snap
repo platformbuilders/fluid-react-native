@@ -15,7 +15,9 @@ exports[`<TextInput /> should render textinput 1`] = `
   }
 >
   <View
+    borderedRadius={0}
     error={false}
+    showBorderErrored={true}
     style={
       Array [
         Object {
@@ -97,7 +99,6 @@ exports[`<TextInput /> should render textinput 1`] = `
               "flexGrow": 1,
               "flexShrink": 1,
               "fontSize": 16,
-              "lineHeight": 22.5,
               "marginTop": 0,
               "minHeight": 37.714285714285715,
               "paddingBottom": 0,
