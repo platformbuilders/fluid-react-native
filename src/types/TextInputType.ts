@@ -58,6 +58,9 @@ export type TextInputType = {
   iconRightPadding?: number;
   inputLeftPadding?: number;
   inputRightPadding?: number;
+  borderedLabel?: string;
+  showBorderErrored?: boolean;
+  showIconErrored?: boolean;
 } & TextInputProps;
 
 export interface MaskedTextInputType extends TextInputType {

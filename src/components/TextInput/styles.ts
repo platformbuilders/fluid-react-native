@@ -30,12 +30,21 @@ type BorderedWrapperProps = {
   borderedColor?: string;
   borderedRadius?: number;
   error?: boolean;
+  showBorderErrored?: boolean;
+};
+
+type InputBorderedAreaWrapperProps = {
+  hasBottomLine?: boolean;
 };
 
 type InputBorderedColumnWrapperProps = {
   hasLeftIcon?: boolean;
   multiline?: boolean;
   padding?: number;
+};
+
+type FixedLabelAboveBorder = {
+  style: Record<string, string>;
 };
 
 type FixedLabelProps = {
@@ -54,13 +63,16 @@ const hasError = ifStyle('error');
 const hasPadding = ifStyle('padding');
 const hasInputRightPadding = ifStyle('inputRightPadding');
 const hasInputLeftPadding = ifStyle('inputLeftPadding');
+const hasBottomLine = ifStyle('hasBottomLine');
 const isContrast = ifStyle('contrast');
+const showIconErrored = ifStyle('showIconErrored');
 const switchStatus = switchStyle('status');
 const brandContrast = getTheme('brand.primary.contrast');
 const brandPrimary = getTheme('brand.primary.main');
 const minimumSpacing = getTheme('spacing.xs');
 const smallSpacing = getTheme('spacing.sm');
 const largeSpacing = getTheme('spacing.lg');
+const extraLargeSpacing = getTheme('spacing.xl');
 const success = getTheme('success.main');
 const textColor = getTheme('text.main');
 const dangerMain = getTheme('danger.main');
@@ -104,12 +116,15 @@ export const BorderedWrapper = styled.View<BorderedWrapperProps>`
     borderedHeight,
     borderedRadius,
     error,
+    showBorderErrored,
     ...rest
   }: BorderedWrapperProps) => {
     const borderedStyle = `
       justify-content: center;
       border: 1px solid ${
-        error ? dangerMain(rest) : borderedColor || brandPrimary(rest)
+        error && showBorderErrored
+          ? dangerMain(rest)
+          : borderedColor || brandPrimary(rest)
       };
       background-color: ${borderedBackgroundColor || 'transparent'};
       height: ${borderedHeight}px;
@@ -124,10 +139,11 @@ export const BorderedWrapper = styled.View<BorderedWrapperProps>`
   }}
 `;
 
-export const InputBorderedAreaWrapper = styled.View`
+export const InputBorderedAreaWrapper = styled.View<InputBorderedAreaWrapperProps>`
   flex-direction: row;
   align-items: center;
   width: 100%;
+  height: ${hasBottomLine('100%', 'auto')};
 `;
 
 export const InputBorderedColumnWrapper = styled.View<InputBorderedColumnWrapperProps>`
@@ -137,6 +153,13 @@ export const InputBorderedColumnWrapper = styled.View<InputBorderedColumnWrapper
     hasLeftIcon ? '86%' : '92%'};
   margin-left: ${({ hasLeftIcon }: InputBorderedColumnWrapperProps) =>
     hasLeftIcon ? minimumSpacing : `-${largeSpacing}`}px;
+`;
+
+export const FixedLabelAboveBorder = styled(Typography)<FixedLabelAboveBorder>`
+  color: ${textColor};
+  position: absolute;
+  top: -${extraLargeSpacing}px;
+  left: 0;
 `;
 
 export const FixedLabel = styled(Typography)<FixedLabelProps>`
@@ -191,7 +214,6 @@ export const TextInput = styled.TextInput.attrs((props: TextInputType) => ({
   color: ${inputColor};
   margin-top: ${isMultiline(smallSpacing, 0)}px;
   font-size: ${getFontSize}px;
-  line-height: ${getLineHeight}px;
   width: 100%;
 `;
 
@@ -204,12 +226,18 @@ type IconProps = {
   contrast: boolean;
   error: boolean;
   iconColor?: string;
+  showIconErrored?: boolean;
 };
 
+const defaultIconColor = (props: IconProps) =>
+  props.iconColor ||
+  isContrast(brandContrast(props), brandPrimary(props))(props);
+
+const erroredIconColor = (props: IconProps) => dangerMain(props);
+
 export const Icon = styled(DefaultIcon).attrs((props: IconProps) => ({
-  color: hasError(
-    dangerMain(props),
-    props.iconColor ||
-      isContrast(brandContrast(props), brandPrimary(props))(props),
+  color: showIconErrored(
+    hasError(erroredIconColor(props), defaultIconColor(props))(props),
+    defaultIconColor(props),
   )(props),
 }))<IconProps>``;
