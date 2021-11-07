@@ -1023,7 +1023,6 @@ Array [
         Object {
           "color": "#000000",
           "fontSize": 16,
-          "lineHeight": 22.5,
         },
         Object {
           "fontWeight": "300",
@@ -1521,7 +1520,6 @@ Array [
         Object {
           "color": "#000000",
           "fontSize": 16,
-          "lineHeight": 22.5,
         },
         Object {
           "color": "#cc0000",

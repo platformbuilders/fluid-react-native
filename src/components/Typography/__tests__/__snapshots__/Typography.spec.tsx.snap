@@ -9,7 +9,6 @@ exports[`<Typography /> should render and match snapshot for default props 1`] =
       Object {
         "color": "#000000",
         "fontSize": 16,
-        "lineHeight": 22.5,
       },
     ]
   }
@@ -27,7 +26,6 @@ exports[`<Typography /> should render and match snapshot for variant lg 1`] = `
       Object {
         "color": "#000000",
         "fontSize": 16,
-        "lineHeight": 22.5,
       },
     ]
   }
@@ -45,7 +43,6 @@ exports[`<Typography /> should render and match snapshot for variant max 1`] = `
       Object {
         "color": "#000000",
         "fontSize": 16,
-        "lineHeight": 22.5,
       },
     ]
   }
@@ -63,7 +60,6 @@ exports[`<Typography /> should render and match snapshot for variant md 1`] = `
       Object {
         "color": "#000000",
         "fontSize": 16,
-        "lineHeight": 22.5,
       },
     ]
   }
@@ -81,7 +77,6 @@ exports[`<Typography /> should render and match snapshot for variant min 1`] = `
       Object {
         "color": "#000000",
         "fontSize": 16,
-        "lineHeight": 22.5,
       },
     ]
   }
@@ -99,7 +94,6 @@ exports[`<Typography /> should render and match snapshot for variant xl 1`] = `
       Object {
         "color": "#000000",
         "fontSize": 16,
-        "lineHeight": 22.5,
       },
     ]
   }
@@ -117,7 +111,6 @@ exports[`<Typography /> should render and match snapshot for variant xs 1`] = `
       Object {
         "color": "#000000",
         "fontSize": 16,
-        "lineHeight": 22.5,
       },
     ]
   }
@@ -135,7 +128,6 @@ exports[`<Typography /> should render and match snapshot for variant xxl 1`] = `
       Object {
         "color": "#000000",
         "fontSize": 16,
-        "lineHeight": 22.5,
       },
     ]
   }
@@ -153,7 +145,6 @@ exports[`<Typography /> should render and match snapshot for variant xxs 1`] = `
       Object {
         "color": "#000000",
         "fontSize": 16,
-        "lineHeight": 22.5,
       },
     ]
   }

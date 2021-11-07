@@ -110,7 +110,6 @@ exports[`<Accordion /> should render Accordion with body custom 1`] = `
                 Object {
                   "color": "#000000",
                   "fontSize": 16,
-                  "lineHeight": 22.5,
                 },
               ]
             }
@@ -922,7 +921,6 @@ exports[`<Accordion /> should render Accordion with title custom 1`] = `
               Object {
                 "color": "#000000",
                 "fontSize": 16,
-                "lineHeight": 22.5,
               },
             ]
           }
