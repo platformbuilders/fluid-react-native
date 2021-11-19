@@ -1,9 +1,9 @@
-import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
+import React, { FC, useCallback, useEffect, useState } from 'react';
 import { isEmpty } from 'lodash';
 import { Animated } from 'react-native';
 import { InputStatus } from '../../enums';
 import { TextInputType, TypographyVariants } from '../../types';
-import { usePrevious } from '../../utils/hooks';
+import { useAutoFocus, usePrevious } from '../../utils/hooks';
 
 import FormError from '../FormError';
 import MaskedTextInput from './MaskedTextInput';
@@ -49,7 +49,7 @@ const TextInput: FC<TextInputType> = ({
   textStyle = {},
   labelStyle = {},
   iconHitSlop = {},
-  inputRef = useRef(null),
+  inputRef = useAutoFocus(autoFocus),
   onBlur = (): any => {},
   onFocus = (): any => {},
   onChangeText = (): any => {},
@@ -140,6 +140,7 @@ const TextInput: FC<TextInputType> = ({
       isEmpty(value) && !isPlaceholder ? placeholder : '';
 
     const textInputProps = {
+      inputRef,
       id,
       accessibility,
       accessibilityLabel,
@@ -160,18 +161,16 @@ const TextInput: FC<TextInputType> = ({
       style: textStyle,
       onBlur: handleOnBlur,
       onFocus: handleOnFocus,
-      autoFocus,
       underlineColorAndroid: 'transparent',
       ...rest,
     };
 
     return (
       <MaskedTextInput
-        inputRef={inputRef}
+        {...textInputProps}
         maskType={maskType || 'no-mask'}
         accessibilityLabel={accessibilityLabel || accessibility}
         testID={testID || id || accessibility}
-        {...textInputProps}
       />
     );
   };
