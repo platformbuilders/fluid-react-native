@@ -49,7 +49,7 @@ const TextInput: FC<TextInputType> = ({
   textStyle = {},
   labelStyle = {},
   iconHitSlop = {},
-  inputRef = useAutoFocus(autoFocus),
+  inputRef,
   onBlur = (): any => {},
   onFocus = (): any => {},
   onChangeText = (): any => {},
@@ -75,6 +75,7 @@ const TextInput: FC<TextInputType> = ({
   ...rest
   // eslint-disable-next-line sonarjs/cognitive-complexity
 }) => {
+  const customRef = useAutoFocus(autoFocus, inputRef);
   const animationInitialValues = {
     top: suppressAnimation ? LABEL_UPPER_STYLE.top : LABEL_LOWER_STYLE.top,
     fontSize: suppressAnimation
@@ -140,7 +141,7 @@ const TextInput: FC<TextInputType> = ({
       isEmpty(value) && !isPlaceholder ? placeholder : '';
 
     const textInputProps = {
-      inputRef,
+      inputRef: customRef,
       id,
       accessibility,
       accessibilityLabel,
