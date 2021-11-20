@@ -98,6 +98,9 @@ export interface PinInputType {
   wrapperStyle?: StyleProp<ViewStyle>;
   keyboardType?: KeyboardTypeOptions;
   inputProps?: TextInputProps;
+  labelStyle?: any;
+  borderedLabel?: string;
+  fixedLabelVariant?: TypographyVariants;
   /**
    * This accessibilityLabel is declared on each cell rendered of pin input,
    * really useful for QAs.
