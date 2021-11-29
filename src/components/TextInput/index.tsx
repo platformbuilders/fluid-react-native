@@ -72,6 +72,7 @@ const TextInput: FC<TextInputType> = ({
   borderedLabel = '',
   showBorderErrored = true,
   showIconErrored = true,
+  iconSets,
   ...rest
   // eslint-disable-next-line sonarjs/cognitive-complexity
 }) => {
@@ -210,6 +211,7 @@ const TextInput: FC<TextInputType> = ({
       hitSlop={iconHitSlop}
       iconColor={isLeft ? leftIconColor : iconColor}
       showIconErrored={showIconErrored}
+      iconSets={iconSets}
     />
   );
 
