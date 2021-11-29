@@ -24,6 +24,7 @@ export type TextInputType = {
   withBottomline?: boolean;
   contrast?: boolean;
   centered?: boolean;
+  iconSets?: any;
   iconSize?: number;
   iconTouchableEnabled?: boolean;
   textStyle?: StyleProp<TextStyle>;

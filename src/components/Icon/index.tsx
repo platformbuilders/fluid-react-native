@@ -32,10 +32,10 @@ export const Icon: FC<IconType> = ({
 
   const iconSet = {
     material: MaterialIcons,
-    'fa-brands': FaBrands,
-    'fa-light': FaLight,
-    'fa-regular': FaRegular,
-    'fa-solid': FaSolid,
+    brands: FaBrands,
+    light: FaLight,
+    regular: FaRegular,
+    solid: FaSolid,
   };
 
   const IconComponent = iconSet[type];
