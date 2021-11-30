@@ -15,6 +15,8 @@ import {
 import DefaultIcon from '../Icon';
 import Typography from '../Typography';
 
+const hasLeftIcon = ifStyle('hasLeftIcon');
+
 type InputAreaWrapperProps = {
   rightIcon?: boolean;
   leftIcon?: boolean;
@@ -71,7 +73,6 @@ const brandContrast = getTheme('brand.primary.contrast');
 const brandPrimary = getTheme('brand.primary.main');
 const minimumSpacing = getTheme('spacing.xs');
 const smallSpacing = getTheme('spacing.sm');
-const largeSpacing = getTheme('spacing.lg');
 const extraLargeSpacing = getTheme('spacing.xl');
 const success = getTheme('success.main');
 const textColor = getTheme('text.main');
@@ -149,10 +150,8 @@ export const InputBorderedAreaWrapper = styled.View<InputBorderedAreaWrapperProp
 export const InputBorderedColumnWrapper = styled.View<InputBorderedColumnWrapperProps>`
   flex-direction: column;
   padding: 0 ${minimumSpacing}px;
-  width: ${({ hasLeftIcon }: InputBorderedColumnWrapperProps) =>
-    hasLeftIcon ? '86%' : '92%'};
-  margin-left: ${({ hasLeftIcon }: InputBorderedColumnWrapperProps) =>
-    hasLeftIcon ? minimumSpacing : `-${largeSpacing}`}px;
+  width: ${hasLeftIcon('86%', '92%')};
+  margin-left: ${hasLeftIcon(minimumSpacing, 0)}px;
 `;
 
 export const FixedLabelAboveBorder = styled(Typography)<FixedLabelAboveBorder>`
