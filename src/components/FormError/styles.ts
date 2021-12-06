@@ -5,7 +5,7 @@ import Typography from '../Typography';
 const isCentered = ifStyle('centered');
 const isLarge = ifStyle('large');
 const danger = getTheme('danger.main');
-const smallSpacing = getTheme('spacing.sm');
+const smallSpacing = getTheme('spacing.xs');
 
 type ErrorTextProps = {
   centered: boolean;

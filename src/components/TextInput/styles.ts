@@ -89,7 +89,7 @@ const inputColor = (props: TextInputType | BottomLineProps): any =>
   });
 
 export const LABEL_UPPER_STYLE = {
-  top: -10,
+  top: -12,
   fontSize: 14,
 };
 

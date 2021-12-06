@@ -6,6 +6,7 @@ export type ButtonVariants =
   | 'danger'
   | 'warning'
   | 'info'
+  | 'flat'
   | 'invert';
 
 export type TypographyVariants =
