@@ -9,7 +9,6 @@ import {
   getLineHeight,
   getTheme,
   ifStyle,
-  scaledFontSize,
   switchStyle,
 } from '../../utils/helpers';
 import DefaultIcon from '../Icon';
@@ -91,12 +90,12 @@ const inputColor = (props: TextInputType | BottomLineProps): any =>
 
 export const LABEL_UPPER_STYLE = {
   top: -10,
-  fontSize: scaledFontSize(14),
+  fontSize: 14,
 };
 
 export const LABEL_LOWER_STYLE = {
   top: 8,
-  fontSize: scaledFontSize(18),
+  fontSize: 18,
 };
 
 type WrapperProps = {

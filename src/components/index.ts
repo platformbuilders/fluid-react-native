@@ -20,6 +20,7 @@ export { default as Link } from './Link';
 export { default as Accordion } from './Accordion';
 export { default as RadioButton } from './RadioButton';
 export { default as SearchInput } from './SearchInput';
+export { default as Markdown } from './Markdown';
 export { default as DisplayVersion } from './DisplayVersion';
 export { default as LabelDivider } from './LabelDivider';
 export { TextInputMask, MaskService, TextMask } from './MaskedText';
