@@ -1,6 +1,6 @@
 import React from 'react';
 import { TextStyle } from 'react-native';
-import { Markdown } from 'react-native-markdown-display';
+import Markdown from 'react-native-markdown-display';
 
 type Props = {
   textStyle?: TextStyle;
