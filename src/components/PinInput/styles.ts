@@ -10,7 +10,7 @@ const isContrast = ifStyle('contrast');
 const isCentered = ifStyle('centered');
 const danger = getTheme('danger');
 const brandPrimary = getTheme('brand.primary.main');
-const disabledDark = getTheme('brand.secondary.main');
+const textColor = getTheme('text.dark');
 const brandContrast = getTheme('brand.primary.contrast');
 const mediumSpacing = getTheme('spacing.md');
 
@@ -21,7 +21,7 @@ type WrapperProps = {
 export const defaultStyling = (theme?: any): any => ({
   cellStyle: {
     borderRadius: 8,
-    borderColor: theme ? disabledDark(theme) : '#eeeeee',
+    borderColor: theme ? textColor(theme) : 'black',
     borderWidth: 2,
   },
   cellStyleFocused: {
@@ -29,7 +29,7 @@ export const defaultStyling = (theme?: any): any => ({
   },
   textStyle: {
     fontSize: moderateScale(26),
-    color: 'black',
+    color: theme ? textColor(theme) : 'black',
   },
 });
 
