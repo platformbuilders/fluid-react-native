@@ -10,7 +10,7 @@ import {
 import { TextInputMaskTypeProp } from '../components/MaskedText';
 
 import { HitSlopType } from './Common';
-import { FontType } from './IconType';
+import { IconFonts } from './IconType';
 import { TypographyVariants } from './theme_types/Variants';
 
 export type TextInputType = {
@@ -53,7 +53,7 @@ export type TextInputType = {
   fixedLabelVariant?: TypographyVariants;
   rightIconName?: string;
   leftIconName?: string;
-  iconType?: FontType;
+  iconType?: IconFonts;
   suppressAnimation?: boolean;
   iconLeftPadding?: number;
   iconRightPadding?: number;

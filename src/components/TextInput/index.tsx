@@ -1,7 +1,7 @@
 import React, { FC, useCallback, useEffect, useState } from 'react';
 import { isEmpty } from 'lodash';
 import { Animated } from 'react-native';
-import { InputStatus } from '../../enums';
+import { IconFonts, InputStatus } from '../../enums';
 import { TextInputType, TypographyVariants } from '../../types';
 import { useAutoFocus, usePrevious } from '../../utils/hooks';
 
@@ -66,7 +66,7 @@ const TextInput: FC<TextInputType> = ({
   borderedHeight,
   borderedColor,
   borderedRadius = 0,
-  iconType = 'material',
+  iconType = IconFonts.Material,
   fixedLabelVariant = 'xs',
   suppressAnimation = false,
   borderedLabel = '',
