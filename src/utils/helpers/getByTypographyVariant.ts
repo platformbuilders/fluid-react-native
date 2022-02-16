@@ -1,6 +1,6 @@
 import { toNumber } from 'lodash';
 import { PixelRatio } from 'react-native';
-import { getTheme } from '@platformbuilders/helpers';
+import { getTheme, toOnlyNumbers } from '@platformbuilders/helpers';
 
 const baseFontSize = 16;
 
@@ -11,8 +11,13 @@ export const getFontSize = (props: any): number => {
   );
 };
 
-export const getLineHeight = (): number => {
-  /* careful here, guys... it doesn't get from theme */
-  const lineHeight = baseFontSize * 1.4;
-  return PixelRatio.roundToNearestPixel(toNumber(lineHeight));
+export const getLineHeight = (props: any): number => {
+  const fontSizeFromTheme = getTheme(`fontSizes.${props.variant}`)(props);
+  const lineHeightVariant = getTheme(`lineHeight.${props.lineHeight}`)(props);
+  const lineHeightPercentage = lineHeightVariant ? lineHeightVariant : '100';
+
+  return (
+    (Number(fontSizeFromTheme) * Number(toOnlyNumbers(lineHeightPercentage))) /
+    100
+  );
 };
