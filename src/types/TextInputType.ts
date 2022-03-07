@@ -10,7 +10,7 @@ import {
 import { TextInputMaskTypeProp } from '../components/MaskedText';
 
 import { HitSlopType } from './Common';
-import { FontType } from './IconType';
+import { IconFonts } from './IconType';
 import { TypographyVariants } from './theme_types/Variants';
 
 export type TextInputType = {
@@ -24,6 +24,7 @@ export type TextInputType = {
   withBottomline?: boolean;
   contrast?: boolean;
   centered?: boolean;
+  iconSets?: any;
   iconSize?: number;
   iconTouchableEnabled?: boolean;
   textStyle?: StyleProp<TextStyle>;
@@ -52,12 +53,15 @@ export type TextInputType = {
   fixedLabelVariant?: TypographyVariants;
   rightIconName?: string;
   leftIconName?: string;
-  iconType?: FontType;
+  iconType?: IconFonts;
   suppressAnimation?: boolean;
   iconLeftPadding?: number;
   iconRightPadding?: number;
   inputLeftPadding?: number;
   inputRightPadding?: number;
+  borderedLabel?: string;
+  showBorderErrored?: boolean;
+  showIconErrored?: boolean;
 } & TextInputProps;
 
 export interface MaskedTextInputType extends TextInputType {
@@ -95,6 +99,9 @@ export interface PinInputType {
   wrapperStyle?: StyleProp<ViewStyle>;
   keyboardType?: KeyboardTypeOptions;
   inputProps?: TextInputProps;
+  labelStyle?: any;
+  borderedLabel?: string;
+  fixedLabelVariant?: TypographyVariants;
   /**
    * This accessibilityLabel is declared on each cell rendered of pin input,
    * really useful for QAs.

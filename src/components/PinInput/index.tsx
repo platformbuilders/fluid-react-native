@@ -1,8 +1,10 @@
 import React, { useContext, useState } from 'react';
+import { isEmpty } from 'lodash';
 import { moderateScale } from 'react-native-size-matters';
 import { ThemeContext } from 'styled-components';
 import { PinInputType } from '../../types';
 import FormError from '../FormError';
+import { FixedLabelAboveBorder } from '../TextInput/styles';
 import {
   CaptionText,
   Icon,
@@ -29,6 +31,9 @@ const PinInput: React.FC<PinInputType> = ({
   value,
   onChangeText,
   onFulfill = () => {},
+  labelStyle = {},
+  borderedLabel,
+  fixedLabelVariant = 'sm',
   wrapperStyle,
   ...rest
 }) => {
@@ -45,6 +50,11 @@ const PinInput: React.FC<PinInputType> = ({
   return (
     <FormError centered={centered} error={error}>
       <Wrapper style={wrapperStyle}>
+        {!isEmpty(borderedLabel) && (
+          <FixedLabelAboveBorder style={labelStyle} variant={fixedLabelVariant}>
+            {borderedLabel}
+          </FixedLabelAboveBorder>
+        )}
         <PinCodeInput
           value={value}
           onTextChange={changeText}

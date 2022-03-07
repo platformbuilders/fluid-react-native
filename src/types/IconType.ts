@@ -1,12 +1,8 @@
+import { IconFonts } from '../enums';
 import { HitSlopType } from './Common';
 import { TouchableType } from './TouchableType';
 
-export type FontType =
-  | 'material'
-  | 'fa-brands'
-  | 'fa-light'
-  | 'fa-regular'
-  | 'fa-solid';
+export { IconFonts };
 
 export interface IconType extends TouchableType {
   name: string;
@@ -20,5 +16,5 @@ export interface IconType extends TouchableType {
   iconSets?: any;
   width?: number;
   height?: number;
-  type?: FontType;
+  type?: IconFonts;
 }

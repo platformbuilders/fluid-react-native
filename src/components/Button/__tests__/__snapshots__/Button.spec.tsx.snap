@@ -60,7 +60,6 @@ exports[`<Button /> should render button 1`] = `
           Object {
             "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22.5,
           },
           Object {
             "color": "#ffffff",
@@ -137,7 +136,6 @@ exports[`<Button /> should render button when rounded 1`] = `
           Object {
             "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22.5,
           },
           Object {
             "color": "#ffffff",
@@ -214,7 +212,6 @@ exports[`<Button /> should render button with children 1`] = `
           Object {
             "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22.5,
           },
           Object {
             "color": "#ffffff",
@@ -235,7 +232,6 @@ exports[`<Button /> should render button with children 1`] = `
             Object {
               "color": "#000000",
               "fontSize": 16,
-              "lineHeight": 22.5,
             },
           ]
         }
@@ -309,7 +305,6 @@ exports[`<Button /> should render button with contrast 1`] = `
           Object {
             "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22.5,
           },
           Object {
             "color": "#ffffff",
@@ -386,7 +381,6 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
           Object {
             "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22.5,
           },
           Object {
             "color": "#ffffff",
@@ -465,7 +459,6 @@ exports[`<Button /> should render button with custom style 1`] = `
           Object {
             "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22.5,
           },
           Object {
             "color": "#ffffff",
@@ -542,7 +535,6 @@ exports[`<Button /> should render button with custom text style 1`] = `
           Object {
             "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22.5,
           },
           Object {
             "color": "#ffffff",
@@ -621,7 +613,6 @@ exports[`<Button /> should render button with disabled 1`] = `
           Object {
             "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22.5,
           },
           Object {
             "color": "#ffffff",
@@ -793,7 +784,6 @@ exports[`<Button /> should render button with test id 1`] = `
           Object {
             "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22.5,
           },
           Object {
             "color": "#ffffff",
@@ -870,7 +860,6 @@ exports[`<Button /> should render button with typography variant 1`] = `
           Object {
             "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22.5,
           },
           Object {
             "color": "#ffffff",
@@ -947,7 +936,6 @@ exports[`<Button /> should render button with variant 1`] = `
           Object {
             "color": "#000000",
             "fontSize": 16,
-            "lineHeight": 22.5,
           },
           Object {
             "color": "#ffffff",

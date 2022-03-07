@@ -1,10 +1,10 @@
 import { ComponentType } from 'react';
-import { Animated } from 'react-native';
+import { Animated, StyleSheet } from 'react-native';
 import DefaultDatePicker, {
   DatePickerCustomStylesProps,
 } from 'react-native-datepicker';
 import styled from 'styled-components/native';
-import { InputStatus } from '../../types';
+import { InputStatus } from '../../enums';
 import { getTheme, switchStyle } from '../../utils/helpers';
 
 const getStatusStyle = switchStyle('status');
@@ -13,6 +13,7 @@ const brandPrimary = getTheme('brand.primary.main');
 const disabled = getTheme('brand.primary.light');
 const successMain = getTheme('success.main');
 const dangerMain = getTheme('danger.main');
+const mediumSpacing = getTheme('spacing.md');
 
 const inputMainColor = (props: { dark: any }): any =>
   getStatusStyle({
@@ -32,15 +33,15 @@ export const LABEL_LOWER_STYLE = {
   fontSize: 18,
 };
 
-interface TextProps {
+type TextProps = {
   dark?: boolean;
   error?: string;
   isPlaceholder?: boolean;
-}
+};
 
 export const TextLabel = styled.Text<TextProps>`
   line-height: 19px;
-  padding-bottom: 15px;
+  padding-bottom: ${mediumSpacing}px;
   color: ${(props: TextProps): string =>
     props.dark ? brandPrimary(props) : brandContrast(props)};
 `;
@@ -49,19 +50,18 @@ export const Label = Animated.createAnimatedComponent<ComponentType<any>>(
   TextLabel,
 );
 
-interface DatePickerProps {
+type DatePickerProps = {
   customStyles?: DatePickerCustomStylesProps;
   dark?: boolean;
   editable: boolean;
-}
+};
 export const DatePicker = styled(DefaultDatePicker)<DatePickerProps>`
   width: 100%;
 `;
 
 export const BottomLine = styled.View`
-  height: 1px;
-  // inputMainColor precisa ser ajustado, está retornando alguma propriedade inválida
-  /* background-color: ${inputMainColor}; */
+  height: ${StyleSheet.hairlineWidth}px;
+  background-color: ${inputMainColor};
 `;
 
 const commonDatePickerStyles = {

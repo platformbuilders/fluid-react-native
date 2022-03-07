@@ -62,6 +62,10 @@ const getBackgroundColor = (props: ButtonWrapperProps): string => {
       return warningMain(props);
     case 'danger':
       return dangerMain(props);
+    case 'invert':
+      return brandPrimaryContrast(props);
+    case 'flat':
+      return 'transparent';
     default:
       return brandPrimary(props);
   }
@@ -94,6 +98,10 @@ const getTextColor = (props: TextButtonProps): string => {
       return infoContrast(props);
     case 'warning':
       return warningContrast(props);
+    case 'invert':
+      return brandPrimary(props);
+    case 'flat':
+      return brandPrimary(props);
     default:
       return brandPrimaryContrast(props);
   }

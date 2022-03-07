@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import { Animated, View } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import * as SvgIcons from '../../assets/svg';
+import { IconFonts } from '../../enums';
 import { IconType } from '../../types';
 import Touchable from '../Touchable';
 import { FaBrands, FaLight, FaRegular, FaSolid } from './FontAwesomeProIcons';
@@ -19,7 +20,7 @@ export const Icon: FC<IconType> = ({
   onPress = (): void => {},
   borderColor = '',
   backgroundColor = '',
-  type = 'material',
+  type = IconFonts.Material,
   iconSets,
   width,
   height,
@@ -31,11 +32,11 @@ export const Icon: FC<IconType> = ({
     : SvgIcons[`Icon${iconName}`];
 
   const iconSet = {
-    material: MaterialIcons,
-    'fa-brands': FaBrands,
-    'fa-light': FaLight,
-    'fa-regular': FaRegular,
-    'fa-solid': FaSolid,
+    [IconFonts.Material]: MaterialIcons,
+    [IconFonts.FABrands]: FaBrands,
+    [IconFonts.FALight]: FaLight,
+    [IconFonts.FARegular]: FaRegular,
+    [IconFonts.FASolid]: FaSolid,
   };
 
   const IconComponent = iconSet[type];

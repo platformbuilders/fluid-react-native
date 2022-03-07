@@ -1,7 +1,6 @@
 export * from './Accordion';
 export * from './Button';
 export * from './Common';
-export * from './InputStatus';
 export * from './TouchableType';
 export * from './IconType';
 export * from './TextInputType';

@@ -5,7 +5,9 @@ export type ButtonVariants =
   | 'accent'
   | 'danger'
   | 'warning'
-  | 'info';
+  | 'info'
+  | 'flat'
+  | 'invert';
 
 export type TypographyVariants =
   | 'min'

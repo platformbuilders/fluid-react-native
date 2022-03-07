@@ -1,8 +1,9 @@
-import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
+import React, { FC, useCallback, useEffect, useState } from 'react';
 import { isEmpty } from 'lodash';
 import { Animated } from 'react-native';
-import { InputStatus, TextInputType, TypographyVariants } from '../../types';
-import { usePrevious } from '../../utils/hooks';
+import { IconFonts, InputStatus } from '../../enums';
+import { TextInputType, TypographyVariants } from '../../types';
+import { useAutoFocus, usePrevious } from '../../utils/hooks';
 
 import FormError from '../FormError';
 import MaskedTextInput from './MaskedTextInput';
@@ -10,6 +11,7 @@ import {
   BorderedWrapper,
   BottomLine,
   FixedLabel,
+  FixedLabelAboveBorder,
   Icon,
   InputAreaWrapper,
   InputBorderedAreaWrapper,
@@ -47,7 +49,7 @@ const TextInput: FC<TextInputType> = ({
   textStyle = {},
   labelStyle = {},
   iconHitSlop = {},
-  inputRef = useRef(null),
+  inputRef,
   onBlur = (): any => {},
   onFocus = (): any => {},
   onChangeText = (): any => {},
@@ -63,13 +65,18 @@ const TextInput: FC<TextInputType> = ({
   borderedBackgroundColor,
   borderedHeight,
   borderedColor,
-  borderedRadius,
-  iconType = 'material',
+  borderedRadius = 0,
+  iconType = IconFonts.Material,
   fixedLabelVariant = 'xs',
   suppressAnimation = false,
+  borderedLabel = '',
+  showBorderErrored = true,
+  showIconErrored = true,
+  iconSets,
   ...rest
   // eslint-disable-next-line sonarjs/cognitive-complexity
 }) => {
+  const customRef = useAutoFocus(autoFocus, inputRef);
   const animationInitialValues = {
     top: suppressAnimation ? LABEL_UPPER_STYLE.top : LABEL_LOWER_STYLE.top,
     fontSize: suppressAnimation
@@ -135,6 +142,7 @@ const TextInput: FC<TextInputType> = ({
       isEmpty(value) && !isPlaceholder ? placeholder : '';
 
     const textInputProps = {
+      inputRef: customRef,
       id,
       accessibility,
       accessibilityLabel,
@@ -155,18 +163,16 @@ const TextInput: FC<TextInputType> = ({
       style: textStyle,
       onBlur: handleOnBlur,
       onFocus: handleOnFocus,
-      autoFocus,
       underlineColorAndroid: 'transparent',
       ...rest,
     };
 
     return (
       <MaskedTextInput
-        inputRef={inputRef}
+        {...textInputProps}
         maskType={maskType || 'no-mask'}
         accessibilityLabel={accessibilityLabel || accessibility}
         testID={testID || id || accessibility}
-        {...textInputProps}
       />
     );
   };
@@ -204,6 +210,8 @@ const TextInput: FC<TextInputType> = ({
       onPress={!!rightIconName ? onRightIconPress : onPressIcon}
       hitSlop={iconHitSlop}
       iconColor={isLeft ? leftIconColor : iconColor}
+      showIconErrored={showIconErrored}
+      iconSets={iconSets}
     />
   );
 
@@ -222,6 +230,7 @@ const TextInput: FC<TextInputType> = ({
           borderedColor={borderedColor}
           borderedRadius={borderedRadius}
           error={hasError}
+          showBorderErrored={showBorderErrored}
         >
           {!centered && !borderedHeight && (
             <Label
@@ -235,20 +244,30 @@ const TextInput: FC<TextInputType> = ({
               {label}
             </Label>
           )}
+          {!isEmpty(borderedLabel) && isEmpty(label) && !!borderedHeight && (
+            <FixedLabelAboveBorder
+              style={labelStyle}
+              variant={fixedLabelVariant}
+            >
+              {borderedLabel}
+            </FixedLabelAboveBorder>
+          )}
           {borderedHeight ? (
-            <InputBorderedAreaWrapper>
+            <InputBorderedAreaWrapper hasBottomLine={withBottomline}>
               {!isEmpty(iconBordered) && renderIcon(iconBordered, true)}
               <InputBorderedColumnWrapper
                 hasLeftIcon={!isEmpty(iconBordered)}
                 multiline={multiline}
                 padding={inputPadding}
               >
-                <FixedLabel
-                  hasLeftIcon={!isEmpty(iconBordered)}
-                  variant={fixedLabelVariant}
-                >
-                  {label}
-                </FixedLabel>
+                {!isEmpty(label) && isEmpty(borderedLabel) && (
+                  <FixedLabel
+                    hasLeftIcon={!isEmpty(iconBordered)}
+                    variant={fixedLabelVariant}
+                  >
+                    {label}
+                  </FixedLabel>
+                )}
                 {renderTextInput(renderStatus)}
               </InputBorderedColumnWrapper>
               {!isEmpty(icon) && renderIcon(icon || '')}
@@ -262,7 +281,7 @@ const TextInput: FC<TextInputType> = ({
               inputRightPadding={inputRightPadding}
             >
               {borderedHeight && <FixedLabel>{label}</FixedLabel>}
-              {!!leftIconName && renderIcon(leftIconName)}
+              {!!leftIconName && renderIcon(leftIconName, true)}
               {renderTextInput(renderStatus)}
               {!!rightIconName && renderIcon(rightIconName)}
               {!leftIconName &&

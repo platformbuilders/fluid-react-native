@@ -9,7 +9,6 @@ exports[`<DisplayVersion /> should render and match snapshot for default props 1
       Object {
         "color": "#000000",
         "fontSize": 16,
-        "lineHeight": 22.5,
       },
       Object {
         "color": "#C6B09E",
