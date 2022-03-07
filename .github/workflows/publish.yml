@@ -17,7 +17,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org/'
       - name: Node Version
         run: node -v
-            - name: Set NPM Variables
+      - name: Set NPM Variables
         run: echo "$PACKAGES_NPMRC" > .npmrc
         env:
           PACKAGES_NPMRC: ${{ secrets.PACKAGES_NPMRC }}
