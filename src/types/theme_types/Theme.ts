@@ -1,3 +1,5 @@
+import { DefaultTheme } from 'styled-components';
+
 import { Animations } from './Animations';
 import { BorderRadius } from './BorderRadius';
 import { BorderWidth } from './BorderWidth';
@@ -11,6 +13,10 @@ export interface ThemeType extends Colors, Animations {
   borderWidth: BorderWidth;
   typography: TypographyTheme;
 }
+
+export type ThemeProps = {
+  theme: DefaultTheme;
+};
 
 // export type ThemeType = Colors &
 //   BorderWidth &
