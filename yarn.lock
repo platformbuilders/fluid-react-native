@@ -2217,10 +2217,10 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@platformbuilders/helpers@0.4.4":
+"@platformbuilders/helpers@^0.4.4":
   version "0.4.4"
-  resolved "https://npm.pkg.github.com/download/@platformbuilders/helpers/0.4.4/c7125b6dd7cb183282de295581c740ea111d1643530472230339c4c8a846d933#178c6fbaa0eb4a25ddbb2a6a081bd38475d40e07"
-  integrity sha512-sHHdOoUjmGyNZVSmf0H96c0/p7+tO/xT3odZarZ0ALDdQ8h8liQszETylyvQ4KI4TpAk8n6gjEsmxADEimD2vw==
+  resolved "https://registry.yarnpkg.com/@platformbuilders/helpers/-/helpers-0.4.4.tgz#cd5182958617d135ab09247c64abc07cc040449d"
+  integrity sha512-WYIt8V5dyPQMaUfLL3KZwFZwgI2TnHcETwGT7tAwuDUVJec0UAuw2Hkxr+PmrV37wWr1ZEB+I6shMMygo+4Ccw==
   dependencies:
     numeral "^2.0.6"
     react "^17.0.2"
