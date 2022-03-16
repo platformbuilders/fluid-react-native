@@ -174,7 +174,7 @@ exports[`<Search /> should render search 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>lodash.get(theme,themeProp)",
+                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -384,7 +384,7 @@ exports[`<Search /> should render search with auto focus 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>lodash.get(theme,themeProp)",
+                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -597,7 +597,7 @@ exports[`<Search /> should render search with custom container style 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>lodash.get(theme,themeProp)",
+                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -1020,7 +1020,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>lodash.get(theme,themeProp)",
+                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -1230,7 +1230,7 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>lodash.get(theme,themeProp)",
+                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -1440,7 +1440,7 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>lodash.get(theme,themeProp)",
+                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -1652,7 +1652,7 @@ exports[`<Search /> should render search with custom text style 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>lodash.get(theme,themeProp)",
+                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -1862,7 +1862,7 @@ exports[`<Search /> should render search with icon size 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>lodash.get(theme,themeProp)",
+                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
                       "fontSize": 24,
                     },
                     undefined,
@@ -2284,7 +2284,7 @@ exports[`<Search /> should render search with padding 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>lodash.get(theme,themeProp)",
+                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -2494,7 +2494,7 @@ exports[`<Search /> should render search with right icon 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>lodash.get(theme,themeProp)",
+                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -2711,7 +2711,7 @@ exports[`<Search /> should render search with shadow 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>lodash.get(theme,themeProp)",
+                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -2922,7 +2922,7 @@ exports[`<Search /> should render search with wrapper height 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>lodash.get(theme,themeProp)",
+                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
