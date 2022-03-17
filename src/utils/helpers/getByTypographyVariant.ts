@@ -13,8 +13,10 @@ export const getFontSize = (props: any): number => {
 
 export const getLineHeight = (props: any): number => {
   const fontSizeFromTheme = getTheme(`fontSizes.${props.variant}`)(props);
-  const lineHeightVariant = getTheme(`lineHeight.${props.lineHeight}`)(props);
-  const lineHeightPercentage = lineHeightVariant ? lineHeightVariant : '100';
+  const lineHeightVariant = getTheme(`lineHeight.${props.lineHeightVariant}`)(
+    props,
+  );
+  const lineHeightPercentage = lineHeightVariant ? lineHeightVariant : '120';
 
   return (
     (Number(fontSizeFromTheme) * Number(toOnlyNumbers(lineHeightPercentage))) /

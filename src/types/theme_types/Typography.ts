@@ -16,7 +16,7 @@ export type TypographyTheme = {
 
 export interface TypographyType {
   variant?: TypographyVariants;
-  lineHeight?: TypographyVariants;
+  lineHeightVariant?: TypographyVariants;
   children?: string | string[] | any;
   textRef?: any;
   id?: string;

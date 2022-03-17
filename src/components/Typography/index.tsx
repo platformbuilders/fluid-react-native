@@ -5,7 +5,7 @@ import { Text } from './styles';
 const Typography: FC<TypographyType> = ({
   textRef = React.createRef(),
   variant = 'md',
-  lineHeight = 'min',
+  lineHeightVariant = 'min',
   children,
   id,
   accessibility,
@@ -17,7 +17,7 @@ const Typography: FC<TypographyType> = ({
     accessibilityLabel={accessibility || `${children}`}
     ref={textRef}
     variant={variant}
-    lineHeight={lineHeight}
+    lineHeightVariant={lineHeightVariant}
     {...rest}
   >
     {children}
