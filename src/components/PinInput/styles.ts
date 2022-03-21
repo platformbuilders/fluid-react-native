@@ -1,5 +1,6 @@
 import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
+import { ThemeProps } from '../../types';
 import { getTheme, ifStyle } from '../../utils/helpers';
 import DefaultIcon from '../Icon';
 import Typography from '../Typography';
@@ -45,7 +46,7 @@ export const PinCodeInput = styled(DefaultCodeInput).attrs((props) =>
 type IconProps = {
   contrast: boolean;
   error: boolean;
-};
+} & ThemeProps;
 export const Icon = styled(DefaultIcon).attrs((props: IconProps) => ({
   color: hasError(
     danger(props),

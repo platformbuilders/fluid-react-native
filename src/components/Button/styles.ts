@@ -1,6 +1,6 @@
 import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
-import { ButtonVariants, TypographyVariants } from '../../types';
+import { ButtonVariants, ThemeProps, TypographyVariants } from '../../types';
 import { getTheme, ifStyle } from '../../utils/helpers';
 import DefaultIcon from '../Icon';
 import LoadingIndicator from '../LoadingIndicator';
@@ -39,7 +39,7 @@ type ButtonWrapperProps = {
   style: any;
   minWidth?: string | number;
   maxWidth?: string | number;
-};
+} & ThemeProps;
 
 const buttonSize = moderateScale(45);
 
@@ -49,25 +49,25 @@ const getBackgroundColor = (props: ButtonWrapperProps): string => {
   }
   switch (props.buttonVariant) {
     case 'primary':
-      return brandPrimary(props);
+      return `${brandPrimary(props)}`;
     case 'secondary':
-      return brandSecondary(props);
+      return `${brandSecondary(props)}`;
     case 'tertiary':
-      return brandTertiary(props);
+      return `${brandTertiary(props)}`;
     case 'accent':
-      return brandAccent(props);
+      return `${brandAccent(props)}`;
     case 'info':
-      return infoMain(props);
+      return `${infoMain(props)}`;
     case 'warning':
-      return warningMain(props);
+      return `${warningMain(props)}`;
     case 'danger':
-      return dangerMain(props);
+      return `${dangerMain(props)}`;
     case 'invert':
-      return brandPrimaryContrast(props);
+      return `${brandPrimaryContrast(props)}`;
     case 'flat':
-      return 'transparent';
+      return `${'transparent'}`;
     default:
-      return brandPrimary(props);
+      return `${brandPrimary(props)}`;
   }
 };
 
@@ -77,33 +77,33 @@ type TextButtonProps = {
   disabled?: boolean;
   flat?: boolean;
   style: any;
-};
+} & ThemeProps;
 
 const getTextColor = (props: TextButtonProps): string => {
   if (props.disabled) {
-    return brandPrimaryContrast(props);
+    return `${brandPrimaryContrast(props)}`;
   }
   switch (props.buttonVariant) {
     case 'primary':
-      return brandPrimaryContrast(props);
+      return `${brandPrimaryContrast(props)}`;
     case 'secondary':
-      return brandSecondaryContrast(props);
+      return `${brandSecondaryContrast(props)}`;
     case 'tertiary':
-      return brandTertiaryContrast(props);
+      return `${brandTertiaryContrast(props)}`;
     case 'accent':
-      return brandAccentContrast(props);
+      return `${brandAccentContrast(props)}`;
     case 'danger':
-      return dangerContrast(props);
+      return `${dangerContrast(props)}`;
     case 'info':
-      return infoContrast(props);
+      return `${infoContrast(props)}`;
     case 'warning':
-      return warningContrast(props);
+      return `${warningContrast(props)}`;
     case 'invert':
-      return brandPrimary(props);
+      return `${brandPrimary(props)}`;
     case 'flat':
-      return brandPrimary(props);
+      return `${brandPrimary(props)}`;
     default:
-      return brandPrimaryContrast(props);
+      return `${brandPrimaryContrast(props)}`;
   }
 };
 
@@ -120,12 +120,12 @@ export const ButtonWrapper = styled.View<ButtonWrapperProps>`
   height: ${buttonSize}px;
   flex-direction: row;
   align-items: center;
-  min-width: ${({ minWidth }: ButtonWrapperProps) =>
-    minWidth || moderateScale(180) + 'px'};
+  min-width: ${({ minWidth }: ButtonWrapperProps): string =>
+    `${minWidth || moderateScale(180)}px`};
   max-width: ${({ maxWidth }: ButtonWrapperProps) => maxWidth || '100%'};
   overflow: hidden;
   padding: ${(props: ButtonWrapperProps): string =>
-    props.rounded ? '0' : minimumSpacing(props)}px;
+    props.rounded ? '0' : `${minimumSpacing(props)}px`};
   border-radius: ${(props: ButtonWrapperProps): any =>
     props.rounded ? buttonSize / 2 : buttonRadius(props)}px;
   justify-content: center;
@@ -152,7 +152,7 @@ type IconProps = {
   leftIcon?: boolean;
   buttonVariant: ButtonVariants;
   style: any;
-};
+} & ThemeProps;
 
 export const Icon = styled(DefaultIcon).attrs((props: IconProps) => ({
   color: getTextColor(props),

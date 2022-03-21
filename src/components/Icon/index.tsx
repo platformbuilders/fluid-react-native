@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import { Animated, View } from 'react-native';
+import FontAwesome5Icons from 'react-native-vector-icons/FontAwesome5';
 import MaterialIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import * as SvgIcons from '../../assets/svg';
 import { IconFonts } from '../../enums';
@@ -32,6 +33,7 @@ export const Icon: FC<IconType> = ({
     : SvgIcons[`Icon${iconName}`];
 
   const iconSet = {
+    [IconFonts.FontAwesome]: FontAwesome5Icons,
     [IconFonts.Material]: MaterialIcons,
     [IconFonts.FABrands]: FaBrands,
     [IconFonts.FALight]: FaLight,

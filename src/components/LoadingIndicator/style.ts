@@ -1,7 +1,7 @@
 import Animation from 'lottie-react-native';
 import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
-import { AnimationObject, LoadingVariants } from '../../types';
+import { AnimationObject, LoadingVariants, ThemeProps } from '../../types';
 import { getTheme } from '../../utils/helpers';
 
 export const circularLoading = getTheme('circularLoading');
@@ -16,11 +16,11 @@ type IndicatorProps = {
   variant: LoadingVariants;
   testID: string;
   accessibilityLabel: string;
-};
+} & ThemeProps;
 
 const loadingVariant = (
-  props: any,
-): string | AnimationObject | { uri: string } => {
+  props: IndicatorProps,
+): string | number | AnimationObject | { uri: string } => {
   const { variant, contrast } = props;
   switch (variant) {
     case 'button':

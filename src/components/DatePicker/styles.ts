@@ -5,6 +5,7 @@ import DefaultDatePicker, {
 } from 'react-native-datepicker';
 import styled from 'styled-components/native';
 import { InputStatus } from '../../enums';
+import { ThemeProps } from '../../types';
 import { getTheme, switchStyle } from '../../utils/helpers';
 
 const getStatusStyle = switchStyle('status');
@@ -37,13 +38,13 @@ type TextProps = {
   dark?: boolean;
   error?: string;
   isPlaceholder?: boolean;
-};
+} & ThemeProps;
 
 export const TextLabel = styled.Text<TextProps>`
   line-height: 19px;
   padding-bottom: ${mediumSpacing}px;
   color: ${(props: TextProps): string =>
-    props.dark ? brandPrimary(props) : brandContrast(props)};
+    props.dark ? `${brandPrimary(props)}` : `${brandContrast(props)}`};
 `;
 
 export const Label = Animated.createAnimatedComponent<ComponentType<any>>(

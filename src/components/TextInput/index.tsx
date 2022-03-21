@@ -294,7 +294,7 @@ const TextInput: FC<TextInputType> = ({
               inputRightPadding={inputRightPadding}
             >
               {borderedHeight && <FixedLabel>{label}</FixedLabel>}
-              {!!leftIconName && renderIcon(leftIconName)}
+              {!!leftIconName && renderIcon(leftIconName, true)}
               {renderTextInput(renderStatus)}
               {!!rightIconName && renderIcon(rightIconName)}
               {!leftIconName &&
