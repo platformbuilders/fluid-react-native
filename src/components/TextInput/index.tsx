@@ -193,7 +193,7 @@ const TextInput: FC<TextInputType> = ({
     ) {
       animationUp();
     }
-    if (isEmpty(label)) {
+    if (isEmpty(label) || (value?.length && hidePlaceholderOnFocus)) {
       setIsPlaceHolder(false);
     }
   };
