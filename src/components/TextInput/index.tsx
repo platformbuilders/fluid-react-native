@@ -73,6 +73,7 @@ const TextInput: FC<TextInputType> = ({
   showBorderErrored = true,
   showIconErrored = true,
   iconSets,
+  hidePlaceholderOnFocus = false,
   ...rest
   // eslint-disable-next-line sonarjs/cognitive-complexity
 }) => {
@@ -119,15 +120,20 @@ const TextInput: FC<TextInputType> = ({
   };
 
   const handleOnFocus = (event: any): void => {
-    if (isPlaceholder && !suppressAnimation) {
-      setIsPlaceHolder(false);
+    if (isPlaceholder && !suppressAnimation && !hidePlaceholderOnFocus) {
       animationUp();
     }
+    setIsPlaceHolder(false);
     onFocus(event);
   };
 
   const handleOnBlur = (event: any): void => {
-    if (isEmpty(value) && !isEmpty(label) && !suppressAnimation) {
+    if (
+      isEmpty(value) &&
+      !isEmpty(label) &&
+      !suppressAnimation &&
+      !hidePlaceholderOnFocus
+    ) {
       setIsPlaceHolder(true);
       animationDown();
     }
@@ -179,10 +185,15 @@ const TextInput: FC<TextInputType> = ({
 
   const setAnimation = () => {
     const wasEmpty = previousValue?.length === 0;
-    if (value?.length && wasEmpty && !suppressAnimation) {
+    if (
+      value?.length &&
+      wasEmpty &&
+      !suppressAnimation &&
+      !hidePlaceholderOnFocus
+    ) {
       animationUp();
     }
-    if (isEmpty(label)) {
+    if (isEmpty(label) || (value?.length && hidePlaceholderOnFocus)) {
       setIsPlaceHolder(false);
     }
   };
@@ -232,18 +243,20 @@ const TextInput: FC<TextInputType> = ({
           error={hasError}
           showBorderErrored={showBorderErrored}
         >
-          {!centered && !borderedHeight && (
-            <Label
-              status={status}
-              contrast={contrast}
-              style={[labelAnimatedStyle, labelStyle]}
-              variant={isPlaceholder ? placeholderVariant : labelVariant}
-              testID={`error_${id || accessibility}`}
-              accessibilityLabel={`Erro ${accessibility}`}
-            >
-              {label}
-            </Label>
-          )}
+          {!centered &&
+            !borderedHeight &&
+            !(hidePlaceholderOnFocus && !isPlaceholder) && (
+              <Label
+                status={status}
+                contrast={contrast}
+                style={[labelAnimatedStyle, labelStyle]}
+                variant={isPlaceholder ? placeholderVariant : labelVariant}
+                testID={`error_${id || accessibility}`}
+                accessibilityLabel={`Erro ${accessibility}`}
+              >
+                {label}
+              </Label>
+            )}
           {!isEmpty(borderedLabel) && isEmpty(label) && !!borderedHeight && (
             <FixedLabelAboveBorder
               style={labelStyle}
