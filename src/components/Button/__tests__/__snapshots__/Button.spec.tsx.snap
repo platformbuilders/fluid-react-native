@@ -14,7 +14,7 @@ exports[`<Button /> should render button 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 0,
+      "borderRadius": 3,
       "opacity": 1,
     }
   }
@@ -32,13 +32,13 @@ exports[`<Button /> should render button 1`] = `
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
           "borderColor": "#C6B09E",
-          "borderRadius": 8,
+          "borderRadius": 3,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 70.71428571428572,
+          "height": 45,
           "justifyContent": "center",
           "maxWidth": "100%",
-          "minWidth": 282.8571428571429,
+          "minWidth": 180,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -63,8 +63,9 @@ exports[`<Button /> should render button 1`] = `
           },
           Object {
             "color": "#ffffff",
-            "fontWeight": "500",
+            "fontWeight": "bold",
             "letterSpacing": 0.4,
+            "textTransform": "uppercase",
           },
           Object {},
         ]
@@ -90,7 +91,7 @@ exports[`<Button /> should render button when rounded 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 35.35714285714286,
+      "borderRadius": 22.5,
       "opacity": 1,
     }
   }
@@ -108,13 +109,13 @@ exports[`<Button /> should render button when rounded 1`] = `
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
           "borderColor": "#C6B09E",
-          "borderRadius": 35.35714285714286,
+          "borderRadius": 22.5,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 70.71428571428572,
+          "height": 45,
           "justifyContent": "center",
           "maxWidth": "100%",
-          "minWidth": 282.8571428571429,
+          "minWidth": 180,
           "overflow": "hidden",
           "paddingBottom": 0,
           "paddingLeft": 0,
@@ -139,8 +140,9 @@ exports[`<Button /> should render button when rounded 1`] = `
           },
           Object {
             "color": "#ffffff",
-            "fontWeight": "500",
+            "fontWeight": "bold",
             "letterSpacing": 0.4,
+            "textTransform": "uppercase",
           },
           Object {},
         ]
@@ -166,7 +168,7 @@ exports[`<Button /> should render button with children 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 0,
+      "borderRadius": 3,
       "opacity": 1,
     }
   }
@@ -184,13 +186,13 @@ exports[`<Button /> should render button with children 1`] = `
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
           "borderColor": "#C6B09E",
-          "borderRadius": 8,
+          "borderRadius": 3,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 70.71428571428572,
+          "height": 45,
           "justifyContent": "center",
           "maxWidth": "100%",
-          "minWidth": 282.8571428571429,
+          "minWidth": 180,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -215,8 +217,9 @@ exports[`<Button /> should render button with children 1`] = `
           },
           Object {
             "color": "#ffffff",
-            "fontWeight": "500",
+            "fontWeight": "bold",
             "letterSpacing": 0.4,
+            "textTransform": "uppercase",
           },
           Object {},
         ]
@@ -259,7 +262,7 @@ exports[`<Button /> should render button with contrast 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 0,
+      "borderRadius": 3,
       "opacity": 1,
     }
   }
@@ -277,13 +280,13 @@ exports[`<Button /> should render button with contrast 1`] = `
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
           "borderColor": "#C6B09E",
-          "borderRadius": 8,
+          "borderRadius": 3,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 70.71428571428572,
+          "height": 45,
           "justifyContent": "center",
           "maxWidth": "100%",
-          "minWidth": 282.8571428571429,
+          "minWidth": 180,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -308,8 +311,9 @@ exports[`<Button /> should render button with contrast 1`] = `
           },
           Object {
             "color": "#ffffff",
-            "fontWeight": "500",
+            "fontWeight": "bold",
             "letterSpacing": 0.4,
+            "textTransform": "uppercase",
           },
           Object {},
         ]
@@ -335,7 +339,7 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 0,
+      "borderRadius": 3,
       "opacity": 1,
     }
   }
@@ -353,13 +357,13 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
           "borderColor": "#C6B09E",
-          "borderRadius": 8,
+          "borderRadius": 3,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 70.71428571428572,
+          "height": 45,
           "justifyContent": "center",
           "maxWidth": "100%",
-          "minWidth": 282.8571428571429,
+          "minWidth": 180,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -384,8 +388,9 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
           },
           Object {
             "color": "#ffffff",
-            "fontWeight": "500",
+            "fontWeight": "bold",
             "letterSpacing": 0.4,
+            "textTransform": "uppercase",
           },
           Object {},
         ]
@@ -411,7 +416,7 @@ exports[`<Button /> should render button with custom style 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 0,
+      "borderRadius": 3,
       "opacity": 1,
     }
   }
@@ -429,13 +434,13 @@ exports[`<Button /> should render button with custom style 1`] = `
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
           "borderColor": "#C6B09E",
-          "borderRadius": 8,
+          "borderRadius": 3,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 70.71428571428572,
+          "height": 45,
           "justifyContent": "center",
           "maxWidth": "100%",
-          "minWidth": 282.8571428571429,
+          "minWidth": 180,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -462,8 +467,9 @@ exports[`<Button /> should render button with custom style 1`] = `
           },
           Object {
             "color": "#ffffff",
-            "fontWeight": "500",
+            "fontWeight": "bold",
             "letterSpacing": 0.4,
+            "textTransform": "uppercase",
           },
           Object {},
         ]
@@ -489,7 +495,7 @@ exports[`<Button /> should render button with custom text style 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 0,
+      "borderRadius": 3,
       "opacity": 1,
     }
   }
@@ -507,13 +513,13 @@ exports[`<Button /> should render button with custom text style 1`] = `
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
           "borderColor": "#C6B09E",
-          "borderRadius": 8,
+          "borderRadius": 3,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 70.71428571428572,
+          "height": 45,
           "justifyContent": "center",
           "maxWidth": "100%",
-          "minWidth": 282.8571428571429,
+          "minWidth": 180,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -538,8 +544,9 @@ exports[`<Button /> should render button with custom text style 1`] = `
           },
           Object {
             "color": "#ffffff",
-            "fontWeight": "500",
+            "fontWeight": "bold",
             "letterSpacing": 0.4,
+            "textTransform": "uppercase",
           },
           Object {
             "color": "#2980b9",
@@ -567,7 +574,7 @@ exports[`<Button /> should render button with disabled 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 0,
+      "borderRadius": 3,
       "opacity": 1,
     }
   }
@@ -585,13 +592,13 @@ exports[`<Button /> should render button with disabled 1`] = `
           "alignItems": "center",
           "backgroundColor": "#C6B09E70",
           "borderColor": "#C6B09E70",
-          "borderRadius": 8,
+          "borderRadius": 3,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 70.71428571428572,
+          "height": 45,
           "justifyContent": "center",
           "maxWidth": "100%",
-          "minWidth": 282.8571428571429,
+          "minWidth": 180,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -616,8 +623,9 @@ exports[`<Button /> should render button with disabled 1`] = `
           },
           Object {
             "color": "#ffffff",
-            "fontWeight": "500",
+            "fontWeight": "bold",
             "letterSpacing": 0.4,
+            "textTransform": "uppercase",
           },
           Object {},
         ]
@@ -643,7 +651,7 @@ exports[`<Button /> should render button with loading 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 0,
+      "borderRadius": 3,
       "opacity": 1,
     }
   }
@@ -661,13 +669,13 @@ exports[`<Button /> should render button with loading 1`] = `
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
           "borderColor": "#C6B09E",
-          "borderRadius": 8,
+          "borderRadius": 3,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 70.71428571428572,
+          "height": 45,
           "justifyContent": "center",
           "maxWidth": "100%",
-          "minWidth": 282.8571428571429,
+          "minWidth": 180,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -689,7 +697,7 @@ exports[`<Button /> should render button with loading 1`] = `
             Object {},
             Object {
               "alignSelf": "center",
-              "width": 86.42857142857142,
+              "width": 55,
             },
           ],
         ]
@@ -713,7 +721,7 @@ exports[`<Button /> should render button with loading 1`] = `
             "alignSelf": "center",
             "aspectRatio": 1,
             "height": "100%",
-            "width": 86.42857142857142,
+            "width": 55,
           }
         }
         testID="loading"
@@ -738,7 +746,7 @@ exports[`<Button /> should render button with test id 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 0,
+      "borderRadius": 3,
       "opacity": 1,
     }
   }
@@ -756,13 +764,13 @@ exports[`<Button /> should render button with test id 1`] = `
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
           "borderColor": "#C6B09E",
-          "borderRadius": 8,
+          "borderRadius": 3,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 70.71428571428572,
+          "height": 45,
           "justifyContent": "center",
           "maxWidth": "100%",
-          "minWidth": 282.8571428571429,
+          "minWidth": 180,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -787,8 +795,9 @@ exports[`<Button /> should render button with test id 1`] = `
           },
           Object {
             "color": "#ffffff",
-            "fontWeight": "500",
+            "fontWeight": "bold",
             "letterSpacing": 0.4,
+            "textTransform": "uppercase",
           },
           Object {},
         ]
@@ -814,7 +823,7 @@ exports[`<Button /> should render button with typography variant 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 0,
+      "borderRadius": 3,
       "opacity": 1,
     }
   }
@@ -832,13 +841,13 @@ exports[`<Button /> should render button with typography variant 1`] = `
           "alignItems": "center",
           "backgroundColor": "#C6B09E",
           "borderColor": "#C6B09E",
-          "borderRadius": 8,
+          "borderRadius": 3,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 70.71428571428572,
+          "height": 45,
           "justifyContent": "center",
           "maxWidth": "100%",
-          "minWidth": 282.8571428571429,
+          "minWidth": 180,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -863,8 +872,9 @@ exports[`<Button /> should render button with typography variant 1`] = `
           },
           Object {
             "color": "#ffffff",
-            "fontWeight": "500",
+            "fontWeight": "bold",
             "letterSpacing": 0.4,
+            "textTransform": "uppercase",
           },
           Object {},
         ]
@@ -890,7 +900,7 @@ exports[`<Button /> should render button with variant 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 0,
+      "borderRadius": 3,
       "opacity": 1,
     }
   }
@@ -908,13 +918,13 @@ exports[`<Button /> should render button with variant 1`] = `
           "alignItems": "center",
           "backgroundColor": "#805281",
           "borderColor": "#805281",
-          "borderRadius": 8,
+          "borderRadius": 3,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 70.71428571428572,
+          "height": 45,
           "justifyContent": "center",
           "maxWidth": "100%",
-          "minWidth": 282.8571428571429,
+          "minWidth": 180,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -939,8 +949,9 @@ exports[`<Button /> should render button with variant 1`] = `
           },
           Object {
             "color": "#ffffff",
-            "fontWeight": "500",
+            "fontWeight": "bold",
             "letterSpacing": 0.4,
+            "textTransform": "uppercase",
           },
           Object {},
         ]
