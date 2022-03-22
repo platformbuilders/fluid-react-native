@@ -283,7 +283,7 @@ exports[`<Search /> should render search with auto focus 1`] = `
           ]
         }
         testID="error_test"
-        variant="md"
+        variant="xs"
       >
         
       </Text>
@@ -316,7 +316,7 @@ exports[`<Search /> should render search with auto focus 1`] = `
           contrast={false}
           id="test"
           inputRef="$text"
-          isPlaceholder={true}
+          isPlaceholder={false}
           keyboardType="default"
           large={false}
           multiline={false}
@@ -324,7 +324,7 @@ exports[`<Search /> should render search with auto focus 1`] = `
           onChangeText={[Function]}
           onFocus={[Function]}
           onSubmitEditing={[Function]}
-          placeholder=""
+          placeholder="Pesquise aqui"
           placeholderTextColor="#72727260"
           rejectResponderTermination={true}
           status="default"
@@ -496,7 +496,7 @@ exports[`<Search /> should render search with custom container style 1`] = `
           ]
         }
         testID="error_test"
-        variant="md"
+        variant="xs"
       >
         
       </Text>
@@ -529,7 +529,7 @@ exports[`<Search /> should render search with custom container style 1`] = `
           contrast={false}
           id="test"
           inputRef="$text"
-          isPlaceholder={true}
+          isPlaceholder={false}
           keyboardType="default"
           large={false}
           multiline={false}
@@ -537,7 +537,7 @@ exports[`<Search /> should render search with custom container style 1`] = `
           onChangeText={[Function]}
           onFocus={[Function]}
           onSubmitEditing={[Function]}
-          placeholder=""
+          placeholder="Pesquise aqui"
           placeholderTextColor="#72727260"
           rejectResponderTermination={true}
           status="default"
@@ -919,7 +919,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
           ]
         }
         testID="error_test"
-        variant="xs"
+        variant="md"
       >
         
       </Text>
@@ -952,7 +952,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
           contrast={false}
           id="test"
           inputRef="$text"
-          isPlaceholder={false}
+          isPlaceholder={true}
           keyboardType="default"
           large={false}
           multiline={false}
@@ -960,7 +960,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
           onChangeText={[Function]}
           onFocus={[Function]}
           onSubmitEditing={[Function]}
-          placeholder="Pesquise aqui"
+          placeholder=""
           placeholderTextColor="#72727260"
           rejectResponderTermination={true}
           status="default"
@@ -1339,6 +1339,216 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
           ]
         }
         testID="error_test"
+        variant="md"
+      >
+        
+      </Text>
+      <View
+        multiline={false}
+        rightIcon={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityLabel=""
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoCompleteType="off"
+          autoCorrect={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          inputRef="$text"
+          isPlaceholder={true}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          placeholder=""
+          placeholderTextColor="#123983"
+          rejectResponderTermination={true}
+          status="default"
+          style={
+            Array [
+              Object {
+                "borderWidth": 0,
+                "color": "#000000",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 16,
+                "marginTop": 0,
+                "minHeight": 37.714285714285715,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+              Object {},
+            ]
+          }
+          testID="test"
+          textAlign="left"
+          type="no-mask"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
+        />
+        <View
+          style={Object {}}
+        >
+          <View
+            accessibilityLabel="icon_"
+            accessible={true}
+            focusable={true}
+            hitSlop={Object {}}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID="id_magnify"
+          >
+            <View>
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "({ theme }) => lodash.get(theme, themeProp)",
+                      "fontSize": 40.85714285714286,
+                    },
+                    undefined,
+                    Object {
+                      "fontFamily": "Material Design Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                󰍉
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#000000",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Search /> should render search with custom text style 1`] = `
+<View
+  hasShadow={false}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderRadius": 20,
+        "flexBasis": 0,
+        "flexDirection": "row",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "height": 88,
+        "justifyContent": "center",
+        "paddingHorizontal": 72,
+      },
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      Array [
+        Object {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        Object {
+          "height": "90%",
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      borderedRadius={0}
+      error={false}
+      showBorderErrored={true}
+      style={
+        Array [
+          Object {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        contrast={false}
+        status="default"
+        style={
+          Array [
+            Object {
+              "color": "#000000",
+              "fontSize": 16,
+              "lineHeight": 22.5,
+              "position": "absolute",
+              "top": 8,
+            },
+            Object {
+              "fontSize": 18,
+              "top": 8,
+            },
+          ]
+        }
+        testID="error_test"
         variant="xs"
       >
         
@@ -1381,7 +1591,7 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
           onFocus={[Function]}
           onSubmitEditing={[Function]}
           placeholder="Pesquise aqui"
-          placeholderTextColor="#123983"
+          placeholderTextColor="#72727260"
           rejectResponderTermination={true}
           status="default"
           style={
@@ -1401,7 +1611,9 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
                 "paddingTop": 0,
                 "width": "100%",
               },
-              Object {},
+              Object {
+                "color": "#fff",
+              },
             ]
           }
           testID="test"
@@ -1759,7 +1971,7 @@ exports[`<Search /> should render search with left icon 1`] = `
           ]
         }
         testID="error_test"
-        variant="md"
+        variant="xs"
       >
         
       </Text>
@@ -1838,7 +2050,7 @@ exports[`<Search /> should render search with left icon 1`] = `
           contrast={false}
           id="test"
           inputRef="$text"
-          isPlaceholder={true}
+          isPlaceholder={false}
           keyboardType="default"
           large={false}
           multiline={false}
@@ -1846,7 +2058,7 @@ exports[`<Search /> should render search with left icon 1`] = `
           onChangeText={[Function]}
           onFocus={[Function]}
           onSubmitEditing={[Function]}
-          placeholder=""
+          placeholder="Pesquise aqui"
           placeholderTextColor="#72727260"
           rejectResponderTermination={true}
           status="default"
@@ -2181,7 +2393,7 @@ exports[`<Search /> should render search with right icon 1`] = `
           ]
         }
         testID="error_test"
-        variant="xs"
+        variant="md"
       >
         
       </Text>
@@ -2214,7 +2426,7 @@ exports[`<Search /> should render search with right icon 1`] = `
           contrast={false}
           id="test"
           inputRef="$text"
-          isPlaceholder={false}
+          isPlaceholder={true}
           keyboardType="default"
           large={false}
           multiline={false}
@@ -2222,7 +2434,7 @@ exports[`<Search /> should render search with right icon 1`] = `
           onChangeText={[Function]}
           onFocus={[Function]}
           onSubmitEditing={[Function]}
-          placeholder="Pesquise aqui"
+          placeholder=""
           placeholderTextColor="#72727260"
           rejectResponderTermination={true}
           status="default"
