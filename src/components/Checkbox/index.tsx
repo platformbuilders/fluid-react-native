@@ -1,24 +1,9 @@
-import React, { FC, ReactElement } from 'react';
-import { StyleProp, TextStyle, ViewStyle } from 'react-native';
+import React, { FC } from 'react';
+import { CheckBoxType } from '../../types';
 import FormError from '../FormError';
-import { CheckBox, Wrapper, containerStyle, defaultLabelStyle } from './styles';
+import { CheckBox, Label, Wrapper, containerStyle } from './styles';
 
-type Props = {
-  id?: string;
-  accessibility: string;
-  checked?: boolean;
-  label?: ReactElement | string;
-  labelBefore?: ReactElement | string;
-  error?: string;
-  onPress?(): void;
-  labelStyle?: StyleProp<TextStyle>;
-  style?: StyleProp<ViewStyle>;
-  checkBoxColor?: string;
-  checkedCheckBoxColor?: string;
-  uncheckedCheckBoxColor?: string;
-};
-
-const CheckboxComponent: FC<Props> = ({
+const CheckboxComponent: FC<CheckBoxType> = ({
   id,
   accessibility,
   label = '',
@@ -26,11 +11,9 @@ const CheckboxComponent: FC<Props> = ({
   labelBefore = '',
   checked = false,
   onPress = (): void => {},
-  labelStyle = defaultLabelStyle,
-  checkBoxColor,
-  checkedCheckBoxColor,
-  uncheckedCheckBoxColor,
   style,
+  labelStyle,
+  rightTextStyle,
 }) => (
   <FormError
     id={id || accessibility}
@@ -38,19 +21,15 @@ const CheckboxComponent: FC<Props> = ({
     error={error}
   >
     <Wrapper style={style}>
+      <Label {...labelStyle}>{label}</Label>
       <CheckBox
         testID={`check_${id || accessibility}`}
         accessibilityLabel={`Check ${accessibility}`}
         style={containerStyle}
         isChecked={checked}
-        rightText={label}
-        rightTextStyle={labelStyle}
-        leftText={labelBefore}
         onClick={onPress}
-        checkBoxColor={checkBoxColor}
-        checkedCheckBoxColor={checkedCheckBoxColor}
-        uncheckedCheckBoxColor={uncheckedCheckBoxColor}
       />
+      <Label {...rightTextStyle}>{labelBefore}</Label>
     </Wrapper>
   </FormError>
 );

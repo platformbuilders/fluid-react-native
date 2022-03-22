@@ -4,3 +4,4 @@ export { default as borderRadius } from './borderRadius';
 export { default as animations } from './animations';
 export { default as typography } from './typography';
 export { default as borderWidth } from './borderWidth';
+export { default as opacity } from './opacity';

@@ -4,10 +4,35 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
 <View
   style={
     Array [
-      Object {},
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      },
     ]
   }
 >
+  <Text
+    accessibility=""
+    accessibilityLabel=""
+    style={
+      Array [
+        Object {
+          "color": "#000000",
+          "fontSize": 16,
+        },
+        Object {
+          "color": "#000000",
+          "flexDirection": "row",
+          "marginLeft": 12,
+          "opacity": 80,
+        },
+      ]
+    }
+    testID=""
+    variant="md"
+  >
+    
+  </Text>
   <View
     accessible={true}
     focusable={true}
@@ -43,11 +68,33 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
         }
         style={
           Object {
-            "tintColor": undefined,
+            "tintColor": "#353a48",
           }
         }
       />
     </View>
   </View>
+  <Text
+    accessibility=""
+    accessibilityLabel=""
+    style={
+      Array [
+        Object {
+          "color": "#000000",
+          "fontSize": 16,
+        },
+        Object {
+          "color": "#000000",
+          "flexDirection": "row",
+          "marginLeft": 12,
+          "opacity": 80,
+        },
+      ]
+    }
+    testID=""
+    variant="md"
+  >
+    
+  </Text>
 </View>
 `;

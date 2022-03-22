@@ -1,5 +1,6 @@
 export * from './Accordion';
 export * from './Button';
+export * from './Checkbox';
 export * from './Common';
 export * from './TouchableType';
 export * from './IconType';
