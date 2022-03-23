@@ -18,4 +18,5 @@ dist/**/*.ts.map
 dist/**/*.js.map
 
 __tests__/
+src/
 example/
