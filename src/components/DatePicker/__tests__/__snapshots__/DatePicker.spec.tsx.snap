@@ -1546,7 +1546,7 @@ Array [
         Object {
           "color": "#ffffff",
           "lineHeight": 19,
-          "paddingBottom": 15,
+          "paddingBottom": 20,
         },
         Object {
           "fontSize": 18,
@@ -1834,7 +1834,8 @@ Array [
     style={
       Array [
         Object {
-          "height": 1,
+          "backgroundColor": "#ffffff",
+          "height": 0.5,
         },
       ]
     }
