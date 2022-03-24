@@ -10,6 +10,10 @@ npm-debug.log
 .idea
 .vscode
 
+#test
+.jest
+coverage
+
 #storybook
 storybook/
 
