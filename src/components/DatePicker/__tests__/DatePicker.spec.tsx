@@ -108,7 +108,7 @@ describe('<DatePicker />', () => {
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
-  xit('should render datepicker with custom max date', () => {
+  it('should render datepicker with custom max date', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
         <DatePicker id="testing" accessibility="" maxDate="30" />
