@@ -1,5 +1,8 @@
 export interface Opacity {
-  disabled: string; // 30%
-  empty: string; //'50%'
-  overlay: string; // 70%
+  disabled: string;
+  empty: string;
+  overlay: string;
+  opaque: string;
+  transparent: string;
+  subtle: string;
 }

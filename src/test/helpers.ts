@@ -4,6 +4,7 @@ import {
   borderRadius,
   borderWidth,
   colors,
+  opacity,
   spacing,
   typography,
 } from './mocks/theme';
@@ -11,6 +12,7 @@ import {
 export const theme: ThemeType = {
   ...colors,
   ...animations,
+  opacity,
   typography,
   borderWidth,
   spacing,
