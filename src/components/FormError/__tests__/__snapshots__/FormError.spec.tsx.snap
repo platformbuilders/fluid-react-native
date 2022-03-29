@@ -6,11 +6,13 @@ exports[`<FormError /> should render the form error component 1`] = `
   accessibilityLabel="Erro testing error"
   centered={false}
   large={true}
+  lineHeightVariant="min"
   style={
     Array [
       Object {
         "color": "#000000",
-        "fontSize": 16,
+        "fontSize": 14,
+        "lineHeight": 14,
       },
       Object {
         "color": "#cc0000",
@@ -32,11 +34,13 @@ exports[`<FormError /> should render the form error component with centered 1`] 
   accessibilityLabel="Erro testing error"
   centered={true}
   large={true}
+  lineHeightVariant="min"
   style={
     Array [
       Object {
         "color": "#000000",
-        "fontSize": 16,
+        "fontSize": 14,
+        "lineHeight": 14,
       },
       Object {
         "color": "#cc0000",

@@ -1018,11 +1018,13 @@ Array [
     accessibility="test"
     accessibilityLabel="test"
     centered={false}
+    lineHeightVariant="min"
     style={
       Array [
         Object {
           "color": "#000000",
-          "fontSize": 16,
+          "fontSize": 13,
+          "lineHeight": 13,
         },
         Object {
           "fontWeight": "300",
@@ -1515,11 +1517,13 @@ Array [
     accessibilityLabel="Erro testError"
     centered={false}
     large={false}
+    lineHeightVariant="min"
     style={
       Array [
         Object {
           "color": "#000000",
-          "fontSize": 16,
+          "fontSize": 13,
+          "lineHeight": 13,
         },
         Object {
           "color": "#cc0000",

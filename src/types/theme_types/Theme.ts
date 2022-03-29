@@ -4,25 +4,20 @@ import { Animations } from './Animations';
 import { BorderRadius } from './BorderRadius';
 import { BorderWidth } from './BorderWidth';
 import { Colors } from './Colors';
+import { FontSizes } from './FontSizes';
+import { LineHeight } from './LineHeight';
 import { Opacity } from './Opacity';
 import { Spacing } from './Spacing';
-import { TypographyTheme } from './Typography';
 
 export interface ThemeType extends Colors, Animations {
   spacing: Spacing;
   borderRadius: BorderRadius;
   borderWidth: BorderWidth;
+  lineHeight: LineHeight;
   opacity: Opacity;
-  typography: TypographyTheme;
+  fontSizes: FontSizes;
 }
 
 export type ThemeProps = {
   theme: DefaultTheme;
 };
-
-// export type ThemeType = Colors &
-//   BorderWidth &
-//   Animations &
-//   TypographyTheme & { spacing: Spacings } & {
-//     radius: Radius;
-//   };
