@@ -62,6 +62,7 @@ export type TextInputType = {
   borderedLabel?: string;
   showBorderErrored?: boolean;
   showIconErrored?: boolean;
+  hidePlaceholderOnFocus?: boolean;
 } & TextInputProps;
 
 export interface MaskedTextInputType extends TextInputType {

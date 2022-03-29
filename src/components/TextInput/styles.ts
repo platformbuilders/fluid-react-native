@@ -3,7 +3,7 @@ import { Animated, StyleSheet } from 'react-native';
 import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
 import { InputStatus } from '../../enums';
-import { TextInputType } from '../../types';
+import { TextInputType, ThemeProps } from '../../types';
 import {
   getFontSize,
   getLineHeight,
@@ -32,7 +32,7 @@ type BorderedWrapperProps = {
   borderedRadius?: number;
   error?: boolean;
   showBorderErrored?: boolean;
-};
+} & ThemeProps;
 
 type InputBorderedAreaWrapperProps = {
   hasBottomLine?: boolean;
@@ -57,6 +57,8 @@ type BottomLineProps = {
   status: string;
 };
 
+type TextLabelProps = (TextInputType | BottomLineProps) & ThemeProps;
+
 const isMultiline = ifStyle('multiline');
 const isCentered = ifStyle('centered');
 const hasLabel = ifStyle('label');
@@ -77,7 +79,7 @@ const success = getTheme('success.main');
 const textColor = getTheme('text.main');
 const dangerMain = getTheme('danger.main');
 const disabled = getTheme('brand.primary.main');
-const inputColor = (props: TextInputType | BottomLineProps): any =>
+const inputColor = (props: TextLabelProps) =>
   switchStatus({
     [InputStatus.Success]: success(props),
     [InputStatus.Danger]: dangerMain(props),
@@ -225,7 +227,7 @@ type IconProps = {
   error: boolean;
   iconColor?: string;
   showIconErrored?: boolean;
-};
+} & ThemeProps;
 
 const defaultIconColor = (props: IconProps) =>
   props.iconColor ||

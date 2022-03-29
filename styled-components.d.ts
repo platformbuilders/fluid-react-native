@@ -1,0 +1,10 @@
+import 'styled-components';
+
+type AnyIfEmpty<T extends object> = keyof T extends never ? any : T
+
+declare module 'styled-components' {
+  export const ThemeContext: React.Context<AnyIfEmpty<DefaultTheme>>;
+  export interface DefaultTheme {
+    [key: string]: any;
+  }
+}
