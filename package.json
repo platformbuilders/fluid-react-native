@@ -22,7 +22,7 @@
     "lint": "tsc --noEmit && eslint \"src/**/*.{ts,tsx}\" --fix",
     "precommit": "yarn test && yarn lint",
     "pretty": "prettier --config ./.prettierrc.js --write \"src/**/*.{ts,tsx,js}\"",
-    "prepublish": "yarn build",
+    "prepublish": "yarn test && yarn build",
     "storybook": "start-storybook -p 9009 -c storybook",
     "storybook:build": "rimraf storybook-static; build-storybook -c storybook",
     "test": "jest --passWithNoTests --collect-coverage",
