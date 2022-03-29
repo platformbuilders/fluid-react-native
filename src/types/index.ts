@@ -7,6 +7,7 @@ export * from './IconType';
 export * from './TextInputType';
 export * from './Loading';
 export * from './SmoothPinCodeInput';
+export * from './SvgType';
 
 // Theme Types
 export * from './theme_types/Colors';
