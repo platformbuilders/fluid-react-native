@@ -5,3 +5,4 @@ export { default as animations } from './animations';
 export { default as typography } from './typography';
 export { default as borderWidth } from './borderWidth';
 export { default as opacity } from './opacity';
+export { default as lineHeight } from './lineHeight';

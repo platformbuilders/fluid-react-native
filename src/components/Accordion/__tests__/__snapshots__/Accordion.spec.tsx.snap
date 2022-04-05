@@ -105,11 +105,13 @@ exports[`<Accordion /> should render Accordion with body custom 1`] = `
           <Text
             accessibility="Unity Test"
             accessibilityLabel="Unity Test"
+            lineHeightVariant="min"
             style={
               Array [
                 Object {
                   "color": "#000000",
-                  "fontSize": 16,
+                  "fontSize": 15,
+                  "lineHeight": 15,
                 },
               ]
             }
@@ -916,11 +918,13 @@ exports[`<Accordion /> should render Accordion with title custom 1`] = `
         <Text
           accessibility="Unity Test"
           accessibilityLabel="Unity Test"
+          lineHeightVariant="min"
           style={
             Array [
               Object {
                 "color": "#000000",
-                "fontSize": 16,
+                "fontSize": 15,
+                "lineHeight": 15,
               },
             ]
           }

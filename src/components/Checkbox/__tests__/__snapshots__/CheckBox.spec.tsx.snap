@@ -14,11 +14,13 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
   <Text
     accessibility=""
     accessibilityLabel=""
+    lineHeightVariant="min"
     style={
       Array [
         Object {
           "color": "#000000",
-          "fontSize": 16,
+          "fontSize": 15,
+          "lineHeight": 15,
         },
         Object {
           "color": "#000000",
@@ -77,11 +79,13 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
   <Text
     accessibility=""
     accessibilityLabel=""
+    lineHeightVariant="min"
     style={
       Array [
         Object {
           "color": "#000000",
-          "fontSize": 16,
+          "fontSize": 15,
+          "lineHeight": 15,
         },
         Object {
           "color": "#000000",

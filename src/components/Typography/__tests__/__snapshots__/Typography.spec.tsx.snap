@@ -4,11 +4,13 @@ exports[`<Typography /> should render and match snapshot for default props 1`] =
 <Text
   accessibility="undefined"
   accessibilityLabel="undefined"
+  lineHeightVariant="min"
   style={
     Array [
       Object {
         "color": "#000000",
-        "fontSize": 16,
+        "fontSize": 15,
+        "lineHeight": 15,
       },
     ]
   }
@@ -21,11 +23,13 @@ exports[`<Typography /> should render and match snapshot for variant lg 1`] = `
 <Text
   accessibility="undefined"
   accessibilityLabel="undefined"
+  lineHeightVariant="min"
   style={
     Array [
       Object {
         "color": "#000000",
-        "fontSize": 16,
+        "fontSize": 17,
+        "lineHeight": 17,
       },
     ]
   }
@@ -38,11 +42,13 @@ exports[`<Typography /> should render and match snapshot for variant max 1`] = `
 <Text
   accessibility="undefined"
   accessibilityLabel="undefined"
+  lineHeightVariant="min"
   style={
     Array [
       Object {
         "color": "#000000",
-        "fontSize": 16,
+        "fontSize": 32,
+        "lineHeight": 32,
       },
     ]
   }
@@ -55,11 +61,13 @@ exports[`<Typography /> should render and match snapshot for variant md 1`] = `
 <Text
   accessibility="undefined"
   accessibilityLabel="undefined"
+  lineHeightVariant="min"
   style={
     Array [
       Object {
         "color": "#000000",
-        "fontSize": 16,
+        "fontSize": 15,
+        "lineHeight": 15,
       },
     ]
   }
@@ -72,11 +80,13 @@ exports[`<Typography /> should render and match snapshot for variant min 1`] = `
 <Text
   accessibility="undefined"
   accessibilityLabel="undefined"
+  lineHeightVariant="min"
   style={
     Array [
       Object {
         "color": "#000000",
-        "fontSize": 16,
+        "fontSize": 10,
+        "lineHeight": 10,
       },
     ]
   }
@@ -89,11 +99,13 @@ exports[`<Typography /> should render and match snapshot for variant xl 1`] = `
 <Text
   accessibility="undefined"
   accessibilityLabel="undefined"
+  lineHeightVariant="min"
   style={
     Array [
       Object {
         "color": "#000000",
-        "fontSize": 16,
+        "fontSize": 20,
+        "lineHeight": 20,
       },
     ]
   }
@@ -106,11 +118,13 @@ exports[`<Typography /> should render and match snapshot for variant xs 1`] = `
 <Text
   accessibility="undefined"
   accessibilityLabel="undefined"
+  lineHeightVariant="min"
   style={
     Array [
       Object {
         "color": "#000000",
-        "fontSize": 16,
+        "fontSize": 13,
+        "lineHeight": 13,
       },
     ]
   }
@@ -123,11 +137,13 @@ exports[`<Typography /> should render and match snapshot for variant xxl 1`] = `
 <Text
   accessibility="undefined"
   accessibilityLabel="undefined"
+  lineHeightVariant="min"
   style={
     Array [
       Object {
         "color": "#000000",
-        "fontSize": 16,
+        "fontSize": 24,
+        "lineHeight": 24,
       },
     ]
   }
@@ -140,11 +156,13 @@ exports[`<Typography /> should render and match snapshot for variant xxs 1`] = `
 <Text
   accessibility="undefined"
   accessibilityLabel="undefined"
+  lineHeightVariant="min"
   style={
     Array [
       Object {
         "color": "#000000",
-        "fontSize": 16,
+        "fontSize": 11,
+        "lineHeight": 11,
       },
     ]
   }

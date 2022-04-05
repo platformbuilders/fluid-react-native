@@ -55,11 +55,13 @@ exports[`<Button /> should render button 1`] = `
       buttonVariant="primary"
       disabled={false}
       flat={false}
+      lineHeightVariant="min"
       style={
         Array [
           Object {
             "color": "#000000",
-            "fontSize": 16,
+            "fontSize": 15,
+            "lineHeight": 15,
           },
           Object {
             "color": "#ffffff",
@@ -132,11 +134,13 @@ exports[`<Button /> should render button when rounded 1`] = `
       buttonVariant="primary"
       disabled={false}
       flat={false}
+      lineHeightVariant="min"
       style={
         Array [
           Object {
             "color": "#000000",
-            "fontSize": 16,
+            "fontSize": 15,
+            "lineHeight": 15,
           },
           Object {
             "color": "#ffffff",
@@ -209,11 +213,13 @@ exports[`<Button /> should render button with children 1`] = `
       buttonVariant="primary"
       disabled={false}
       flat={false}
+      lineHeightVariant="min"
       style={
         Array [
           Object {
             "color": "#000000",
-            "fontSize": 16,
+            "fontSize": 15,
+            "lineHeight": 15,
           },
           Object {
             "color": "#ffffff",
@@ -230,11 +236,13 @@ exports[`<Button /> should render button with children 1`] = `
       <Text
         accessibility="Test"
         accessibilityLabel="Test"
+        lineHeightVariant="min"
         style={
           Array [
             Object {
               "color": "#000000",
-              "fontSize": 16,
+              "fontSize": 15,
+              "lineHeight": 15,
             },
           ]
         }
@@ -303,11 +311,13 @@ exports[`<Button /> should render button with contrast 1`] = `
       buttonVariant="primary"
       disabled={false}
       flat={false}
+      lineHeightVariant="min"
       style={
         Array [
           Object {
             "color": "#000000",
-            "fontSize": 16,
+            "fontSize": 15,
+            "lineHeight": 15,
           },
           Object {
             "color": "#ffffff",
@@ -380,11 +390,13 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
       buttonVariant="primary"
       disabled={false}
       flat={false}
+      lineHeightVariant="min"
       style={
         Array [
           Object {
             "color": "#000000",
-            "fontSize": 16,
+            "fontSize": 15,
+            "lineHeight": 15,
           },
           Object {
             "color": "#ffffff",
@@ -459,11 +471,13 @@ exports[`<Button /> should render button with custom style 1`] = `
       buttonVariant="primary"
       disabled={false}
       flat={false}
+      lineHeightVariant="min"
       style={
         Array [
           Object {
             "color": "#000000",
-            "fontSize": 16,
+            "fontSize": 15,
+            "lineHeight": 15,
           },
           Object {
             "color": "#ffffff",
@@ -536,11 +550,13 @@ exports[`<Button /> should render button with custom text style 1`] = `
       buttonVariant="primary"
       disabled={false}
       flat={false}
+      lineHeightVariant="min"
       style={
         Array [
           Object {
             "color": "#000000",
-            "fontSize": 16,
+            "fontSize": 15,
+            "lineHeight": 15,
           },
           Object {
             "color": "#ffffff",
@@ -615,11 +631,13 @@ exports[`<Button /> should render button with disabled 1`] = `
       buttonVariant="primary"
       disabled={true}
       flat={false}
+      lineHeightVariant="min"
       style={
         Array [
           Object {
             "color": "#000000",
-            "fontSize": 16,
+            "fontSize": 15,
+            "lineHeight": 15,
           },
           Object {
             "color": "#ffffff",
@@ -787,11 +805,13 @@ exports[`<Button /> should render button with test id 1`] = `
       buttonVariant="primary"
       disabled={false}
       flat={false}
+      lineHeightVariant="min"
       style={
         Array [
           Object {
             "color": "#000000",
-            "fontSize": 16,
+            "fontSize": 15,
+            "lineHeight": 15,
           },
           Object {
             "color": "#ffffff",
@@ -864,11 +884,13 @@ exports[`<Button /> should render button with typography variant 1`] = `
       buttonVariant="primary"
       disabled={false}
       flat={false}
+      lineHeightVariant="min"
       style={
         Array [
           Object {
             "color": "#000000",
-            "fontSize": 16,
+            "fontSize": 17,
+            "lineHeight": 17,
           },
           Object {
             "color": "#ffffff",
@@ -941,11 +963,13 @@ exports[`<Button /> should render button with variant 1`] = `
       buttonVariant="secondary"
       disabled={false}
       flat={false}
+      lineHeightVariant="min"
       style={
         Array [
           Object {
             "color": "#000000",
-            "fontSize": 16,
+            "fontSize": 15,
+            "lineHeight": 15,
           },
           Object {
             "color": "#ffffff",
