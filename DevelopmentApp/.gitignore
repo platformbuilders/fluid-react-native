@@ -19,8 +19,8 @@ xcuserdata
 DerivedData
 *.hmap
 *.ipa
-*.zip
 *.xcuserstate
+project.xcworkspace
 
 # Android/IntelliJ
 #
@@ -29,14 +29,6 @@ build/
 .gradle
 local.properties
 *.iml
-/DevelopmentApp/android/app/.settings
-/DevelopmentApp/android/app/.project
-/DevelopmentApp/android/app/.classpath
-/DevelopmentApp/android/.settings
-/DevelopmentApp/android/.project
-/android/.settings
-/android/.project
-/android/.classpath
 
 # node.js
 #
@@ -47,9 +39,6 @@ yarn-error.log
 # BUCK
 buck-out/
 \.buckd/
-*.keystore
-!debug.keystore
-!release.keystore
 
 # fastlane
 #
@@ -64,26 +53,3 @@ buck-out/
 
 # Bundle artifact
 *.jsbundle
-
-# testing
-/coverage
-/.jest
-
-# dist
-/native
-/dist
-/.yalc
-package-lock.json
-/yalc.lock
-
-# Android builds
-*.apk
-
-# CocoaPods
-DevelopmentApp/ios/Pods/
-
-# IDE
-.vscode
-*.prefs
-.classpath
-.project

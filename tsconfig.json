@@ -38,6 +38,6 @@
     }
   },
   "compileOnSave": true,
-  "include": ["src"],
+  "include": ["src", "DevelopmentApp", "index.js"],
   "exclude": ["node_modules", "dist", "documentation"]
 }
