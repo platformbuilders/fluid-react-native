@@ -1,4 +1,3 @@
-import 'jest';
 import React, { FC, useState } from 'react';
 import { fireEvent, render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';

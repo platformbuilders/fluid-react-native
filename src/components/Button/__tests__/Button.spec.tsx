@@ -1,4 +1,3 @@
-import 'jest';
 import React from 'react';
 import { fireEvent, render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
@@ -6,6 +5,7 @@ import { ThemeProvider } from 'styled-components/native';
 import Button from '..';
 import { theme } from '../../../test/helpers';
 import Typography from '../../Typography';
+
 describe('<Button />', () => {
   it('should render button', () => {
     const wrapper = renderer.create(

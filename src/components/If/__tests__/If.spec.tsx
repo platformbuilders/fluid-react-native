@@ -1,4 +1,3 @@
-import 'jest';
 import React from 'react';
 import { Text } from 'react-native';
 import renderer from 'react-test-renderer';

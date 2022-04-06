@@ -9,6 +9,7 @@
 /* eslint-env jest */
 
 import { NativeModules } from 'react-native';
+import { beforeAll } from '@jest/globals';
 
 // Mock the ImagePickerManager native module to allow us to unit test the JavaScript code
 NativeModules.ImagePickerManager = {
@@ -22,6 +23,6 @@ NativeModules.ReactNativeHaptic = {
 };
 
 // Reset the mocks before each test
-global.beforeEach(() => {
+beforeAll(() => {
   jest.resetAllMocks();
 });

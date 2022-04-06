@@ -1,4 +1,3 @@
-import 'jest';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';

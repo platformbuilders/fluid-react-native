@@ -55,7 +55,9 @@ exports[`<Search /> should render search 1`] = `
     >
       <Text
         accessibilityLabel="Erro "
+        collapsable={false}
         contrast={false}
+        nativeID="animatedComponent"
         status="default"
         style={
           Array [
@@ -116,7 +118,6 @@ exports[`<Search /> should render search 1`] = `
           onSubmitEditing={[Function]}
           placeholder=""
           placeholderTextColor="#72727260"
-          rejectResponderTermination={true}
           status="default"
           style={
             Array [
@@ -147,13 +148,22 @@ exports[`<Search /> should render search 1`] = `
           withBottomline={true}
         />
         <View
+          collapsable={false}
+          nativeID="animatedComponent"
           style={Object {}}
         >
           <View
             accessibilityLabel="icon_"
+            accessibilityState={
+              Object {
+                "disabled": false,
+              }
+            }
             accessible={true}
+            collapsable={false}
             focusable={true}
             hitSlop={Object {}}
+            nativeID="animatedComponent"
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -174,7 +184,10 @@ exports[`<Search /> should render search 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
+                      "color": "function (_ref) {
+    var theme = _ref.theme;
+    return typeof themeProp === \\"function\\" ? themeProp(theme) : lodash.get(theme, themeProp);
+  }",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -326,7 +339,6 @@ exports[`<Search /> should render search with auto focus 1`] = `
           onSubmitEditing={[Function]}
           placeholder="Pesquise aqui"
           placeholderTextColor="#72727260"
-          rejectResponderTermination={true}
           status="default"
           style={
             Array [
@@ -361,6 +373,11 @@ exports[`<Search /> should render search with auto focus 1`] = `
         >
           <View
             accessibilityLabel="icon_"
+            accessibilityState={
+              Object {
+                "disabled": false,
+              }
+            }
             accessible={true}
             focusable={true}
             hitSlop={Object {}}
@@ -384,7 +401,10 @@ exports[`<Search /> should render search with auto focus 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
+                      "color": "function (_ref) {
+    var theme = _ref.theme;
+    return typeof themeProp === \\"function\\" ? themeProp(theme) : lodash.get(theme, themeProp);
+  }",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -539,7 +559,6 @@ exports[`<Search /> should render search with custom container style 1`] = `
           onSubmitEditing={[Function]}
           placeholder="Pesquise aqui"
           placeholderTextColor="#72727260"
-          rejectResponderTermination={true}
           status="default"
           style={
             Array [
@@ -574,6 +593,11 @@ exports[`<Search /> should render search with custom container style 1`] = `
         >
           <View
             accessibilityLabel="icon_"
+            accessibilityState={
+              Object {
+                "disabled": false,
+              }
+            }
             accessible={true}
             focusable={true}
             hitSlop={Object {}}
@@ -597,7 +621,10 @@ exports[`<Search /> should render search with custom container style 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
+                      "color": "function (_ref) {
+    var theme = _ref.theme;
+    return typeof themeProp === \\"function\\" ? themeProp(theme) : lodash.get(theme, themeProp);
+  }",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -749,7 +776,6 @@ exports[`<Search /> should render search with custom icon color 1`] = `
           onSubmitEditing={[Function]}
           placeholder="Pesquise aqui"
           placeholderTextColor="#72727260"
-          rejectResponderTermination={true}
           status="default"
           style={
             Array [
@@ -784,6 +810,11 @@ exports[`<Search /> should render search with custom icon color 1`] = `
         >
           <View
             accessibilityLabel="icon_"
+            accessibilityState={
+              Object {
+                "disabled": false,
+              }
+            }
             accessible={true}
             focusable={true}
             hitSlop={Object {}}
@@ -901,7 +932,9 @@ exports[`<Search /> should render search with custom input style 1`] = `
     >
       <Text
         accessibilityLabel="Erro "
+        collapsable={false}
         contrast={false}
+        nativeID="animatedComponent"
         status="default"
         style={
           Array [
@@ -962,7 +995,6 @@ exports[`<Search /> should render search with custom input style 1`] = `
           onSubmitEditing={[Function]}
           placeholder=""
           placeholderTextColor="#72727260"
-          rejectResponderTermination={true}
           status="default"
           style={
             Array [
@@ -993,13 +1025,22 @@ exports[`<Search /> should render search with custom input style 1`] = `
           withBottomline={true}
         />
         <View
+          collapsable={false}
+          nativeID="animatedComponent"
           style={Object {}}
         >
           <View
             accessibilityLabel="icon_"
+            accessibilityState={
+              Object {
+                "disabled": false,
+              }
+            }
             accessible={true}
+            collapsable={false}
             focusable={true}
             hitSlop={Object {}}
+            nativeID="animatedComponent"
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -1020,7 +1061,10 @@ exports[`<Search /> should render search with custom input style 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
+                      "color": "function (_ref) {
+    var theme = _ref.theme;
+    return typeof themeProp === \\"function\\" ? themeProp(theme) : lodash.get(theme, themeProp);
+  }",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -1111,7 +1155,9 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
     >
       <Text
         accessibilityLabel="Erro "
+        collapsable={false}
         contrast={false}
+        nativeID="animatedComponent"
         status="default"
         style={
           Array [
@@ -1172,7 +1218,6 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
           onSubmitEditing={[Function]}
           placeholder=""
           placeholderTextColor="#72727260"
-          rejectResponderTermination={true}
           status="default"
           style={
             Array [
@@ -1203,13 +1248,22 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
           withBottomline={true}
         />
         <View
+          collapsable={false}
+          nativeID="animatedComponent"
           style={Object {}}
         >
           <View
             accessibilityLabel="icon_"
+            accessibilityState={
+              Object {
+                "disabled": false,
+              }
+            }
             accessible={true}
+            collapsable={false}
             focusable={true}
             hitSlop={Object {}}
+            nativeID="animatedComponent"
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -1230,7 +1284,10 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
+                      "color": "function (_ref) {
+    var theme = _ref.theme;
+    return typeof themeProp === \\"function\\" ? themeProp(theme) : lodash.get(theme, themeProp);
+  }",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -1321,7 +1378,9 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
     >
       <Text
         accessibilityLabel="Erro "
+        collapsable={false}
         contrast={false}
+        nativeID="animatedComponent"
         status="default"
         style={
           Array [
@@ -1382,7 +1441,6 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
           onSubmitEditing={[Function]}
           placeholder=""
           placeholderTextColor="#123983"
-          rejectResponderTermination={true}
           status="default"
           style={
             Array [
@@ -1413,13 +1471,22 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
           withBottomline={true}
         />
         <View
+          collapsable={false}
+          nativeID="animatedComponent"
           style={Object {}}
         >
           <View
             accessibilityLabel="icon_"
+            accessibilityState={
+              Object {
+                "disabled": false,
+              }
+            }
             accessible={true}
+            collapsable={false}
             focusable={true}
             hitSlop={Object {}}
+            nativeID="animatedComponent"
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -1440,7 +1507,10 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
+                      "color": "function (_ref) {
+    var theme = _ref.theme;
+    return typeof themeProp === \\"function\\" ? themeProp(theme) : lodash.get(theme, themeProp);
+  }",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -1592,7 +1662,6 @@ exports[`<Search /> should render search with custom text style 1`] = `
           onSubmitEditing={[Function]}
           placeholder="Pesquise aqui"
           placeholderTextColor="#72727260"
-          rejectResponderTermination={true}
           status="default"
           style={
             Array [
@@ -1629,6 +1698,11 @@ exports[`<Search /> should render search with custom text style 1`] = `
         >
           <View
             accessibilityLabel="icon_"
+            accessibilityState={
+              Object {
+                "disabled": false,
+              }
+            }
             accessible={true}
             focusable={true}
             hitSlop={Object {}}
@@ -1652,7 +1726,10 @@ exports[`<Search /> should render search with custom text style 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
+                      "color": "function (_ref) {
+    var theme = _ref.theme;
+    return typeof themeProp === \\"function\\" ? themeProp(theme) : lodash.get(theme, themeProp);
+  }",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -1804,7 +1881,6 @@ exports[`<Search /> should render search with icon size 1`] = `
           onSubmitEditing={[Function]}
           placeholder="Pesquise aqui"
           placeholderTextColor="#72727260"
-          rejectResponderTermination={true}
           status="default"
           style={
             Array [
@@ -1839,6 +1915,11 @@ exports[`<Search /> should render search with icon size 1`] = `
         >
           <View
             accessibilityLabel="icon_"
+            accessibilityState={
+              Object {
+                "disabled": false,
+              }
+            }
             accessible={true}
             focusable={true}
             hitSlop={Object {}}
@@ -1862,7 +1943,10 @@ exports[`<Search /> should render search with icon size 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
+                      "color": "function (_ref) {
+    var theme = _ref.theme;
+    return typeof themeProp === \\"function\\" ? themeProp(theme) : lodash.get(theme, themeProp);
+  }",
                       "fontSize": 24,
                     },
                     undefined,
@@ -1998,6 +2082,11 @@ exports[`<Search /> should render search with left icon 1`] = `
         >
           <View
             accessibilityLabel="icon_"
+            accessibilityState={
+              Object {
+                "disabled": false,
+              }
+            }
             accessible={true}
             focusable={true}
             hitSlop={Object {}}
@@ -2060,7 +2149,6 @@ exports[`<Search /> should render search with left icon 1`] = `
           onSubmitEditing={[Function]}
           placeholder="Pesquise aqui"
           placeholderTextColor="#72727260"
-          rejectResponderTermination={true}
           status="default"
           style={
             Array [
@@ -2164,7 +2252,9 @@ exports[`<Search /> should render search with padding 1`] = `
     >
       <Text
         accessibilityLabel="Erro "
+        collapsable={false}
         contrast={false}
+        nativeID="animatedComponent"
         status="default"
         style={
           Array [
@@ -2226,7 +2316,6 @@ exports[`<Search /> should render search with padding 1`] = `
           onSubmitEditing={[Function]}
           placeholder=""
           placeholderTextColor="#72727260"
-          rejectResponderTermination={true}
           status="default"
           style={
             Array [
@@ -2257,13 +2346,22 @@ exports[`<Search /> should render search with padding 1`] = `
           withBottomline={true}
         />
         <View
+          collapsable={false}
+          nativeID="animatedComponent"
           style={Object {}}
         >
           <View
             accessibilityLabel="icon_"
+            accessibilityState={
+              Object {
+                "disabled": false,
+              }
+            }
             accessible={true}
+            collapsable={false}
             focusable={true}
             hitSlop={Object {}}
+            nativeID="animatedComponent"
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -2284,7 +2382,10 @@ exports[`<Search /> should render search with padding 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
+                      "color": "function (_ref) {
+    var theme = _ref.theme;
+    return typeof themeProp === \\"function\\" ? themeProp(theme) : lodash.get(theme, themeProp);
+  }",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -2375,7 +2476,9 @@ exports[`<Search /> should render search with right icon 1`] = `
     >
       <Text
         accessibilityLabel="Erro "
+        collapsable={false}
         contrast={false}
+        nativeID="animatedComponent"
         status="default"
         style={
           Array [
@@ -2436,7 +2539,6 @@ exports[`<Search /> should render search with right icon 1`] = `
           onSubmitEditing={[Function]}
           placeholder=""
           placeholderTextColor="#72727260"
-          rejectResponderTermination={true}
           status="default"
           style={
             Array [
@@ -2467,13 +2569,22 @@ exports[`<Search /> should render search with right icon 1`] = `
           withBottomline={true}
         />
         <View
+          collapsable={false}
+          nativeID="animatedComponent"
           style={Object {}}
         >
           <View
             accessibilityLabel="icon_"
+            accessibilityState={
+              Object {
+                "disabled": false,
+              }
+            }
             accessible={true}
+            collapsable={false}
             focusable={true}
             hitSlop={Object {}}
+            nativeID="animatedComponent"
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -2494,7 +2605,10 @@ exports[`<Search /> should render search with right icon 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
+                      "color": "function (_ref) {
+    var theme = _ref.theme;
+    return typeof themeProp === \\"function\\" ? themeProp(theme) : lodash.get(theme, themeProp);
+  }",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -2592,7 +2706,9 @@ exports[`<Search /> should render search with shadow 1`] = `
     >
       <Text
         accessibilityLabel="Erro "
+        collapsable={false}
         contrast={false}
+        nativeID="animatedComponent"
         status="default"
         style={
           Array [
@@ -2653,7 +2769,6 @@ exports[`<Search /> should render search with shadow 1`] = `
           onSubmitEditing={[Function]}
           placeholder=""
           placeholderTextColor="#72727260"
-          rejectResponderTermination={true}
           status="default"
           style={
             Array [
@@ -2684,13 +2799,22 @@ exports[`<Search /> should render search with shadow 1`] = `
           withBottomline={true}
         />
         <View
+          collapsable={false}
+          nativeID="animatedComponent"
           style={Object {}}
         >
           <View
             accessibilityLabel="icon_"
+            accessibilityState={
+              Object {
+                "disabled": false,
+              }
+            }
             accessible={true}
+            collapsable={false}
             focusable={true}
             hitSlop={Object {}}
+            nativeID="animatedComponent"
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -2711,7 +2835,10 @@ exports[`<Search /> should render search with shadow 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
+                      "color": "function (_ref) {
+    var theme = _ref.theme;
+    return typeof themeProp === \\"function\\" ? themeProp(theme) : lodash.get(theme, themeProp);
+  }",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
@@ -2864,7 +2991,6 @@ exports[`<Search /> should render search with wrapper height 1`] = `
           onSubmitEditing={[Function]}
           placeholder="Pesquise aqui"
           placeholderTextColor="#72727260"
-          rejectResponderTermination={true}
           status="default"
           style={
             Array [
@@ -2899,6 +3025,11 @@ exports[`<Search /> should render search with wrapper height 1`] = `
         >
           <View
             accessibilityLabel="icon_"
+            accessibilityState={
+              Object {
+                "disabled": false,
+              }
+            }
             accessible={true}
             focusable={true}
             hitSlop={Object {}}
@@ -2922,7 +3053,10 @@ exports[`<Search /> should render search with wrapper height 1`] = `
                 style={
                   Array [
                     Object {
-                      "color": "({theme})=>{return typeof themeProp===\\"function\\"?themeProp(theme):lodash.get(theme,themeProp)}",
+                      "color": "function (_ref) {
+    var theme = _ref.theme;
+    return typeof themeProp === \\"function\\" ? themeProp(theme) : lodash.get(theme, themeProp);
+  }",
                       "fontSize": 40.85714285714286,
                     },
                     undefined,
