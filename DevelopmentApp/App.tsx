@@ -2,11 +2,11 @@ import React from 'react';
 import { SafeAreaView } from 'react-native';
 import { ThemeProvider } from 'styled-components';
 
+import { themeFormatter } from '@platformbuilders/theme-toolkit';
+
 import { Button } from '../src';
 
 import theme from './theme';
-
-import { themeFormatter } from './themeFormatter';
 
 const containerStyle = {
   backgroundColor: '#fff',

@@ -1909,6 +1909,11 @@
     react-dom "^17.0.2"
     styled-components "^5.3.3"
 
+"@platformbuilders/theme-toolkit@^0.0.12":
+  version "0.0.12"
+  resolved "https://npm.pkg.github.com/download/@platformbuilders/theme-toolkit/0.0.12/fbd0106adfb2649c48ec209042bb730507b5d5177394ddd3b75569a93418cff6#48abe32f74580912e57c3f53a063276af18d5615"
+  integrity sha512-UuoPM7DXZCjGK+We7uSw2VfKWZOInUQJyTimC3QWof3cdXavINMBGrPBKXNVHd4riqwn7G5vHbjbxB3adldH3g==
+
 "@popperjs/core@^2.5.4", "@popperjs/core@^2.6.0":
   version "2.11.5"
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.5.tgz#db5a11bf66bdab39569719555b0f76e138d7bd64"
@@ -12399,7 +12404,7 @@ micromatch@^4.0.0, micromatch@^4.0.2, micromatch@^4.0.4:
     braces "^3.0.2"
     picomatch "^2.3.1"
 
-"micromatch@github:jonschlinkert/micromatch#2.2.0":
+micromatch@jonschlinkert/micromatch#2.2.0:
   version "2.2.0"
   resolved "https://codeload.github.com/jonschlinkert/micromatch/tar.gz/5017fd78202e04c684cc31d3c2fb1f469ea222ff"
   dependencies:
