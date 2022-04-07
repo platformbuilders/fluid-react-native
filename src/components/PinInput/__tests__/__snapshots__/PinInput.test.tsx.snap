@@ -12,7 +12,9 @@ exports[`<PinInput /> should render textinput 1`] = `
   }
 >
   <View
+    collapsable={false}
     forwardedRef={[Function]}
+    nativeID="animatedComponent"
     style={
       Object {
         "alignItems": "stretch",
@@ -37,7 +39,9 @@ exports[`<PinInput /> should render textinput 1`] = `
     >
       <View
         accessibilityLabel="Insira o PIN 0"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -70,7 +74,9 @@ exports[`<PinInput /> should render textinput 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 1"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -103,7 +109,9 @@ exports[`<PinInput /> should render textinput 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 2"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -136,7 +144,9 @@ exports[`<PinInput /> should render textinput 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 3"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -169,7 +179,6 @@ exports[`<PinInput /> should render textinput 1`] = `
       </View>
     </View>
     <TextInput
-      allowFontScaling={true}
       autoFocus={false}
       caretHidden={true}
       disableFullscreenUI={true}
@@ -181,7 +190,6 @@ exports[`<PinInput /> should render textinput 1`] = `
       onChangeText={[Function]}
       onFocus={[Function]}
       onKeyPress={[Function]}
-      rejectResponderTermination={true}
       selection={
         Object {
           "end": 0,
@@ -196,7 +204,6 @@ exports[`<PinInput /> should render textinput 1`] = `
           "textAlign": "center",
         }
       }
-      underlineColorAndroid="transparent"
       value=""
     />
   </View>
@@ -215,7 +222,9 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
   }
 >
   <View
+    collapsable={false}
     forwardedRef={[Function]}
+    nativeID="animatedComponent"
     style={
       Object {
         "alignItems": "stretch",
@@ -240,7 +249,9 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
     >
       <View
         accessibilityLabel="Insira o PIN 0"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -273,7 +284,9 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 1"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -306,7 +319,9 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 2"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -339,7 +354,9 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 3"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -372,7 +389,6 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
       </View>
     </View>
     <TextInput
-      allowFontScaling={true}
       autoFocus={false}
       caretHidden={true}
       disableFullscreenUI={true}
@@ -384,7 +400,6 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
       onChangeText={[Function]}
       onFocus={[Function]}
       onKeyPress={[Function]}
-      rejectResponderTermination={true}
       selection={
         Object {
           "end": 0,
@@ -399,7 +414,6 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
           "textAlign": "center",
         }
       }
-      underlineColorAndroid="transparent"
       value=""
     />
   </View>
@@ -418,7 +432,9 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
   }
 >
   <View
+    collapsable={false}
     forwardedRef={[Function]}
+    nativeID="animatedComponent"
     style={
       Object {
         "alignItems": "stretch",
@@ -443,7 +459,9 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
     >
       <View
         accessibilityLabel="Insira o PIN 0"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -476,7 +494,9 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 1"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -509,7 +529,9 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 2"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -542,7 +564,9 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 3"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -575,7 +599,6 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
       </View>
     </View>
     <TextInput
-      allowFontScaling={true}
       autoFocus={false}
       caretHidden={true}
       disableFullscreenUI={true}
@@ -587,7 +610,6 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
       onChangeText={[Function]}
       onFocus={[Function]}
       onKeyPress={[Function]}
-      rejectResponderTermination={true}
       selection={
         Object {
           "end": 0,
@@ -602,7 +624,6 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
           "textAlign": "center",
         }
       }
-      underlineColorAndroid="transparent"
       value=""
     />
   </View>
@@ -621,7 +642,9 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
   }
 >
   <View
+    collapsable={false}
     forwardedRef={[Function]}
+    nativeID="animatedComponent"
     style={
       Object {
         "alignItems": "stretch",
@@ -646,7 +669,9 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
     >
       <View
         accessibilityLabel="Insira o PIN 0"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -679,7 +704,9 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 1"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -712,7 +739,9 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 2"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -745,7 +774,9 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 3"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -778,7 +809,6 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
       </View>
     </View>
     <TextInput
-      allowFontScaling={true}
       autoFocus={false}
       caretHidden={true}
       disableFullscreenUI={true}
@@ -790,7 +820,6 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
       onChangeText={[Function]}
       onFocus={[Function]}
       onKeyPress={[Function]}
-      rejectResponderTermination={true}
       selection={
         Object {
           "end": 0,
@@ -805,7 +834,6 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
           "textAlign": "center",
         }
       }
-      underlineColorAndroid="transparent"
       value=""
     />
   </View>
@@ -825,7 +853,9 @@ Array [
     }
   >
     <View
+      collapsable={false}
       forwardedRef={[Function]}
+      nativeID="animatedComponent"
       style={
         Object {
           "alignItems": "stretch",
@@ -850,7 +880,9 @@ Array [
       >
         <View
           accessibilityLabel="Insira o PIN 0"
+          collapsable={false}
           forwardedRef={[Function]}
+          nativeID="animatedComponent"
           style={
             Object {
               "alignItems": "center",
@@ -883,7 +915,9 @@ Array [
         </View>
         <View
           accessibilityLabel="Insira o PIN 1"
+          collapsable={false}
           forwardedRef={[Function]}
+          nativeID="animatedComponent"
           style={
             Object {
               "alignItems": "center",
@@ -916,7 +950,9 @@ Array [
         </View>
         <View
           accessibilityLabel="Insira o PIN 2"
+          collapsable={false}
           forwardedRef={[Function]}
+          nativeID="animatedComponent"
           style={
             Object {
               "alignItems": "center",
@@ -949,7 +985,9 @@ Array [
         </View>
         <View
           accessibilityLabel="Insira o PIN 3"
+          collapsable={false}
           forwardedRef={[Function]}
+          nativeID="animatedComponent"
           style={
             Object {
               "alignItems": "center",
@@ -982,7 +1020,6 @@ Array [
         </View>
       </View>
       <TextInput
-        allowFontScaling={true}
         autoFocus={false}
         caretHidden={true}
         disableFullscreenUI={true}
@@ -994,7 +1031,6 @@ Array [
         onChangeText={[Function]}
         onFocus={[Function]}
         onKeyPress={[Function]}
-        rejectResponderTermination={true}
         selection={
           Object {
             "end": 0,
@@ -1009,7 +1045,6 @@ Array [
             "textAlign": "center",
           }
         }
-        underlineColorAndroid="transparent"
         value=""
       />
     </View>
@@ -1053,7 +1088,9 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
   }
 >
   <View
+    collapsable={false}
     forwardedRef={[Function]}
+    nativeID="animatedComponent"
     style={
       Object {
         "alignItems": "stretch",
@@ -1078,7 +1115,9 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
     >
       <View
         accessibilityLabel="Insira o PIN 0"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -1111,7 +1150,9 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 1"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -1144,7 +1185,9 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 2"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -1177,7 +1220,9 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 3"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -1210,7 +1255,9 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 4"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -1243,7 +1290,9 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 5"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -1276,7 +1325,6 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       </View>
     </View>
     <TextInput
-      allowFontScaling={true}
       autoFocus={false}
       caretHidden={true}
       disableFullscreenUI={true}
@@ -1288,7 +1336,6 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       onChangeText={[Function]}
       onFocus={[Function]}
       onKeyPress={[Function]}
-      rejectResponderTermination={true}
       selection={
         Object {
           "end": 0,
@@ -1303,7 +1350,6 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
           "textAlign": "center",
         }
       }
-      underlineColorAndroid="transparent"
       value=""
     />
   </View>
@@ -1323,7 +1369,9 @@ Array [
     }
   >
     <View
+      collapsable={false}
       forwardedRef={[Function]}
+      nativeID="animatedComponent"
       style={
         Object {
           "alignItems": "stretch",
@@ -1348,7 +1396,9 @@ Array [
       >
         <View
           accessibilityLabel="Insira o PIN 0"
+          collapsable={false}
           forwardedRef={[Function]}
+          nativeID="animatedComponent"
           style={
             Object {
               "alignItems": "center",
@@ -1381,7 +1431,9 @@ Array [
         </View>
         <View
           accessibilityLabel="Insira o PIN 1"
+          collapsable={false}
           forwardedRef={[Function]}
+          nativeID="animatedComponent"
           style={
             Object {
               "alignItems": "center",
@@ -1414,7 +1466,9 @@ Array [
         </View>
         <View
           accessibilityLabel="Insira o PIN 2"
+          collapsable={false}
           forwardedRef={[Function]}
+          nativeID="animatedComponent"
           style={
             Object {
               "alignItems": "center",
@@ -1447,7 +1501,9 @@ Array [
         </View>
         <View
           accessibilityLabel="Insira o PIN 3"
+          collapsable={false}
           forwardedRef={[Function]}
+          nativeID="animatedComponent"
           style={
             Object {
               "alignItems": "center",
@@ -1480,7 +1536,6 @@ Array [
         </View>
       </View>
       <TextInput
-        allowFontScaling={true}
         autoFocus={false}
         caretHidden={true}
         disableFullscreenUI={true}
@@ -1492,7 +1547,6 @@ Array [
         onChangeText={[Function]}
         onFocus={[Function]}
         onKeyPress={[Function]}
-        rejectResponderTermination={true}
         selection={
           Object {
             "end": 0,
@@ -1507,7 +1561,6 @@ Array [
             "textAlign": "center",
           }
         }
-        underlineColorAndroid="transparent"
         value=""
       />
     </View>
@@ -1552,7 +1605,9 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
   }
 >
   <View
+    collapsable={false}
     forwardedRef={[Function]}
+    nativeID="animatedComponent"
     style={
       Object {
         "alignItems": "stretch",
@@ -1577,7 +1632,9 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
     >
       <View
         accessibilityLabel="Insira o PIN 0"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -1610,7 +1667,9 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 1"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -1643,7 +1702,9 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 2"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -1676,7 +1737,9 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 3"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -1709,7 +1772,6 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
       </View>
     </View>
     <TextInput
-      allowFontScaling={true}
       autoFocus={false}
       caretHidden={true}
       disableFullscreenUI={true}
@@ -1721,7 +1783,6 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
       onChangeText={[Function]}
       onFocus={[Function]}
       onKeyPress={[Function]}
-      rejectResponderTermination={true}
       selection={
         Object {
           "end": 0,
@@ -1736,7 +1797,6 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
           "textAlign": "center",
         }
       }
-      underlineColorAndroid="transparent"
       value=""
     />
   </View>
@@ -1755,7 +1815,9 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
   }
 >
   <View
+    collapsable={false}
     forwardedRef={[Function]}
+    nativeID="animatedComponent"
     style={
       Object {
         "alignItems": "stretch",
@@ -1780,7 +1842,9 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
     >
       <View
         accessibilityLabel="Insira o PIN 0"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -1813,7 +1877,9 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 1"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -1846,7 +1912,9 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 2"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -1879,7 +1947,9 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 3"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -1912,7 +1982,6 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
       </View>
     </View>
     <TextInput
-      allowFontScaling={true}
       autoFocus={false}
       caretHidden={true}
       disableFullscreenUI={true}
@@ -1924,7 +1993,6 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
       onChangeText={[Function]}
       onFocus={[Function]}
       onKeyPress={[Function]}
-      rejectResponderTermination={true}
       selection={
         Object {
           "end": 0,
@@ -1939,7 +2007,6 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
           "textAlign": "center",
         }
       }
-      underlineColorAndroid="transparent"
       value=""
     />
   </View>
@@ -1958,7 +2025,9 @@ exports[`<PinInput /> should render textinput with error 1`] = `
   }
 >
   <View
+    collapsable={false}
     forwardedRef={[Function]}
+    nativeID="animatedComponent"
     style={
       Object {
         "alignItems": "stretch",
@@ -1983,7 +2052,9 @@ exports[`<PinInput /> should render textinput with error 1`] = `
     >
       <View
         accessibilityLabel="Insira o PIN 0"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -2016,7 +2087,9 @@ exports[`<PinInput /> should render textinput with error 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 1"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -2049,7 +2122,9 @@ exports[`<PinInput /> should render textinput with error 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 2"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -2082,7 +2157,9 @@ exports[`<PinInput /> should render textinput with error 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 3"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -2115,7 +2192,6 @@ exports[`<PinInput /> should render textinput with error 1`] = `
       </View>
     </View>
     <TextInput
-      allowFontScaling={true}
       autoFocus={false}
       caretHidden={true}
       disableFullscreenUI={true}
@@ -2127,7 +2203,6 @@ exports[`<PinInput /> should render textinput with error 1`] = `
       onChangeText={[Function]}
       onFocus={[Function]}
       onKeyPress={[Function]}
-      rejectResponderTermination={true}
       selection={
         Object {
           "end": 0,
@@ -2142,7 +2217,6 @@ exports[`<PinInput /> should render textinput with error 1`] = `
           "textAlign": "center",
         }
       }
-      underlineColorAndroid="transparent"
       value=""
     />
   </View>
@@ -2161,7 +2235,9 @@ exports[`<PinInput /> should render textinput with password 1`] = `
   }
 >
   <View
+    collapsable={false}
     forwardedRef={[Function]}
+    nativeID="animatedComponent"
     style={
       Object {
         "alignItems": "stretch",
@@ -2186,7 +2262,9 @@ exports[`<PinInput /> should render textinput with password 1`] = `
     >
       <View
         accessibilityLabel="Insira o PIN 0"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -2219,7 +2297,9 @@ exports[`<PinInput /> should render textinput with password 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 1"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -2252,7 +2332,9 @@ exports[`<PinInput /> should render textinput with password 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 2"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -2285,7 +2367,9 @@ exports[`<PinInput /> should render textinput with password 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 3"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -2318,7 +2402,6 @@ exports[`<PinInput /> should render textinput with password 1`] = `
       </View>
     </View>
     <TextInput
-      allowFontScaling={true}
       autoFocus={false}
       caretHidden={true}
       disableFullscreenUI={true}
@@ -2330,7 +2413,6 @@ exports[`<PinInput /> should render textinput with password 1`] = `
       onChangeText={[Function]}
       onFocus={[Function]}
       onKeyPress={[Function]}
-      rejectResponderTermination={true}
       selection={
         Object {
           "end": 0,
@@ -2345,11 +2427,12 @@ exports[`<PinInput /> should render textinput with password 1`] = `
           "textAlign": "center",
         }
       }
-      underlineColorAndroid="transparent"
       value=""
     />
   </View>
   <View
+    collapsable={false}
+    nativeID="animatedComponent"
     style={
       Object {
         "marginLeft": 20,
@@ -2358,8 +2441,15 @@ exports[`<PinInput /> should render textinput with password 1`] = `
   >
     <View
       accessibilityLabel="Exibir ou ocultar inputs - eye"
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
       accessible={true}
+      collapsable={false}
       focusable={true}
+      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -2413,7 +2503,9 @@ exports[`<PinInput /> should render textinput with value 1`] = `
   }
 >
   <View
+    collapsable={false}
     forwardedRef={[Function]}
+    nativeID="animatedComponent"
     style={
       Object {
         "alignItems": "stretch",
@@ -2438,7 +2530,9 @@ exports[`<PinInput /> should render textinput with value 1`] = `
     >
       <View
         accessibilityLabel="Insira o PIN 0"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -2471,7 +2565,9 @@ exports[`<PinInput /> should render textinput with value 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 1"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -2504,7 +2600,9 @@ exports[`<PinInput /> should render textinput with value 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 2"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -2537,7 +2635,9 @@ exports[`<PinInput /> should render textinput with value 1`] = `
       </View>
       <View
         accessibilityLabel="Insira o PIN 3"
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         style={
           Object {
             "alignItems": "center",
@@ -2570,7 +2670,6 @@ exports[`<PinInput /> should render textinput with value 1`] = `
       </View>
     </View>
     <TextInput
-      allowFontScaling={true}
       autoFocus={false}
       caretHidden={true}
       disableFullscreenUI={true}
@@ -2582,7 +2681,6 @@ exports[`<PinInput /> should render textinput with value 1`] = `
       onChangeText={[Function]}
       onFocus={[Function]}
       onKeyPress={[Function]}
-      rejectResponderTermination={true}
       selection={
         Object {
           "end": 7,
@@ -2597,7 +2695,6 @@ exports[`<PinInput /> should render textinput with value 1`] = `
           "textAlign": "center",
         }
       }
-      underlineColorAndroid="transparent"
       value="testing"
     />
   </View>

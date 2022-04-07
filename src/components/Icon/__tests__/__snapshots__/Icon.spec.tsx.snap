@@ -2,12 +2,21 @@
 
 exports[`<Icon /> should render icon component correctly 1`] = `
 <View
+  collapsable={false}
+  nativeID="animatedComponent"
   style={Object {}}
 >
   <View
     accessibilityLabel="testing_icon"
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
     accessible={true}
+    collapsable={false}
     focusable={true}
+    nativeID="animatedComponent"
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}

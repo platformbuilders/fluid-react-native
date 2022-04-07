@@ -14,6 +14,9 @@ npm-debug.log
 .jest
 coverage
 
+#Development App
+DevelopmentApp
+
 #storybook
 storybook/
 
@@ -24,3 +27,6 @@ dist/**/*.js.map
 __tests__/
 src/
 example/
+index.js
+metro.config.js
+react-native.config.js

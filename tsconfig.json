@@ -1,10 +1,9 @@
 {
   "compilerOptions": {
-    /* Basic Options */
     "allowJs": true,
-    "target": "es6",
-    "module": "es6",
-    "lib": ["es6"],
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["esnext"],
     "types": ["react-native", "jest"],
     "declaration": true,
     "declarationMap": true,
@@ -15,7 +14,6 @@
     "jsx": "react-native",
     "baseUrl": ".",
     "skipLibCheck": true,
-    /* Strict Type-Checking Options */
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -24,20 +22,31 @@
     "noImplicitThis": true,
     "alwaysStrict": true,
     "suppressImplicitAnyIndexErrors": true,
-    /* Additional Checks */
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    /* Module Resolution Options */
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "paths": {
-      "tslib" : ["path/to/node_modules/tslib/tslib.d.ts"]
-    }
+    "typeRoots": [
+      "./node_modules/@types",
+      "styled-components.d.ts",
+      "./src/types"
+    ],
   },
   "compileOnSave": true,
-  "include": ["src"],
-  "exclude": ["node_modules", "dist", "documentation"]
+  "include": [
+    "images.d.ts",
+    "src",
+    "DevelopmentApp",
+    "index.js",
+  ],
+  "exclude": [
+    "src/**/*.spec.{ts,tsx}",
+    "DevelopmentApp/**/*.spec.{ts,tsx}",
+    "node_modules",
+    "dist",
+    "documentation",
+  ]
 }

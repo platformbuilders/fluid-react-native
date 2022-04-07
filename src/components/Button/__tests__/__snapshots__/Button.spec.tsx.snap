@@ -3,8 +3,15 @@
 exports[`<Button /> should render button 1`] = `
 <View
   accessibilityLabel=""
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
+  collapsable={false}
   focusable={true}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -82,8 +89,15 @@ exports[`<Button /> should render button 1`] = `
 exports[`<Button /> should render button when rounded 1`] = `
 <View
   accessibilityLabel=""
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
+  collapsable={false}
   focusable={true}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -161,8 +175,15 @@ exports[`<Button /> should render button when rounded 1`] = `
 exports[`<Button /> should render button with children 1`] = `
 <View
   accessibilityLabel=""
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
+  collapsable={false}
   focusable={true}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -259,8 +280,15 @@ exports[`<Button /> should render button with children 1`] = `
 exports[`<Button /> should render button with contrast 1`] = `
 <View
   accessibilityLabel=""
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
+  collapsable={false}
   focusable={true}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -338,8 +366,15 @@ exports[`<Button /> should render button with contrast 1`] = `
 exports[`<Button /> should render button with custom accessibility label 1`] = `
 <View
   accessibilityLabel="testing"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
+  collapsable={false}
   focusable={true}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -417,8 +452,15 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
 exports[`<Button /> should render button with custom style 1`] = `
 <View
   accessibilityLabel=""
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
+  collapsable={false}
   focusable={true}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -498,8 +540,15 @@ exports[`<Button /> should render button with custom style 1`] = `
 exports[`<Button /> should render button with custom text style 1`] = `
 <View
   accessibilityLabel=""
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
+  collapsable={false}
   focusable={true}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -579,8 +628,15 @@ exports[`<Button /> should render button with custom text style 1`] = `
 exports[`<Button /> should render button with disabled 1`] = `
 <View
   accessibilityLabel=""
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
   accessible={true}
+  collapsable={false}
   focusable={true}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -658,8 +714,15 @@ exports[`<Button /> should render button with disabled 1`] = `
 exports[`<Button /> should render button with loading 1`] = `
 <View
   accessibilityLabel=""
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
   accessible={true}
+  collapsable={false}
   focusable={true}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -724,10 +787,13 @@ exports[`<Button /> should render button with loading 1`] = `
       <View
         accessibilityLabel="Aguarde"
         autoPlay={true}
+        cacheComposition={true}
+        collapsable={false}
         contrast={false}
         enableMergePathsAndroidForKitKatAndAbove={false}
         forwardedRef={[Function]}
         loop={true}
+        nativeID="animatedComponent"
         onAnimationFinish={[Function]}
         onLayout={[Function]}
         progress={0}
@@ -753,8 +819,15 @@ exports[`<Button /> should render button with loading 1`] = `
 exports[`<Button /> should render button with test id 1`] = `
 <View
   accessibilityLabel=""
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
+  collapsable={false}
   focusable={true}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -832,8 +905,15 @@ exports[`<Button /> should render button with test id 1`] = `
 exports[`<Button /> should render button with typography variant 1`] = `
 <View
   accessibilityLabel=""
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
+  collapsable={false}
   focusable={true}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -911,8 +991,15 @@ exports[`<Button /> should render button with typography variant 1`] = `
 exports[`<Button /> should render button with variant 1`] = `
 <View
   accessibilityLabel=""
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
+  collapsable={false}
   focusable={true}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}

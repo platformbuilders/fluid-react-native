@@ -3,8 +3,15 @@
 exports[`<RadioButton /> should render radio button component 1`] = `
 <View
   accessibilityLabel="Select information"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
+  collapsable={false}
   focusable={true}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -32,8 +39,15 @@ exports[`<RadioButton /> should render radio button component 1`] = `
 exports[`<RadioButton /> should render radio button component with custom checked 1`] = `
 <View
   accessibilityLabel="Select information"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
+  collapsable={false}
   focusable={true}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -75,8 +89,15 @@ exports[`<RadioButton /> should render radio button component with custom checke
 exports[`<RadioButton /> should render radio button component with custom checked radio button color 1`] = `
 <View
   accessibilityLabel="Select information"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
+  collapsable={false}
   focusable={true}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -104,8 +125,15 @@ exports[`<RadioButton /> should render radio button component with custom checke
 exports[`<RadioButton /> should render radio button component with custom internal size 1`] = `
 <View
   accessibilityLabel="Select information"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
+  collapsable={false}
   focusable={true}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -133,8 +161,15 @@ exports[`<RadioButton /> should render radio button component with custom intern
 exports[`<RadioButton /> should render radio button component with custom radio button color 1`] = `
 <View
   accessibilityLabel="Select information"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
+  collapsable={false}
   focusable={true}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -162,8 +197,15 @@ exports[`<RadioButton /> should render radio button component with custom radio 
 exports[`<RadioButton /> should render radio button component with custom size 1`] = `
 <View
   accessibilityLabel="Select information"
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
+  collapsable={false}
   focusable={true}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}

@@ -3,8 +3,15 @@
 exports[`<Touchable /> should render Touchable 1`] = `
 <View
   accessibilityLabel=""
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
   accessible={true}
+  collapsable={false}
   focusable={true}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}

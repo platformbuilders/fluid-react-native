@@ -30,7 +30,9 @@ exports[`<TextInput /> should render textinput 1`] = `
   >
     <Text
       accessibilityLabel="Erro "
+      collapsable={false}
       contrast={false}
+      nativeID="animatedComponent"
       status="default"
       style={
         Array [
@@ -87,7 +89,6 @@ exports[`<TextInput /> should render textinput 1`] = `
         onFocus={[Function]}
         placeholder=""
         placeholderTextColor="#72727260"
-        rejectResponderTermination={true}
         status="default"
         style={
           Array [

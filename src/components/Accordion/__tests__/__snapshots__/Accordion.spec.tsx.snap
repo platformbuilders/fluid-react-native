@@ -7,7 +7,9 @@ exports[`<Accordion /> should render Accordion 1`] = `
   >
     <View
       accessible={true}
+      collapsable={false}
       focusable={true}
+      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -32,6 +34,8 @@ exports[`<Accordion /> should render Accordion 1`] = `
       </View>
     </View>
     <View
+      collapsable={false}
+      nativeID="animatedComponent"
       pointerEvents="none"
       style={
         Object {
@@ -41,7 +45,9 @@ exports[`<Accordion /> should render Accordion 1`] = `
       }
     >
       <View
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         onLayout={[Function]}
         style={Object {}}
       >
@@ -63,7 +69,9 @@ exports[`<Accordion /> should render Accordion with body custom 1`] = `
   >
     <View
       accessible={true}
+      collapsable={false}
       focusable={true}
+      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -88,6 +96,8 @@ exports[`<Accordion /> should render Accordion with body custom 1`] = `
       </View>
     </View>
     <View
+      collapsable={false}
+      nativeID="animatedComponent"
       pointerEvents="none"
       style={
         Object {
@@ -97,7 +107,9 @@ exports[`<Accordion /> should render Accordion with body custom 1`] = `
       }
     >
       <View
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         onLayout={[Function]}
         style={Object {}}
       >
@@ -134,7 +146,9 @@ exports[`<Accordion /> should render Accordion with content custom 1`] = `
   >
     <View
       accessible={true}
+      collapsable={false}
       focusable={true}
+      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -159,6 +173,8 @@ exports[`<Accordion /> should render Accordion with content custom 1`] = `
       </View>
     </View>
     <View
+      collapsable={false}
+      nativeID="animatedComponent"
       pointerEvents="none"
       style={
         Object {
@@ -168,7 +184,9 @@ exports[`<Accordion /> should render Accordion with content custom 1`] = `
       }
     >
       <View
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         onLayout={[Function]}
         style={Object {}}
       >
@@ -195,7 +213,9 @@ exports[`<Accordion /> should render Accordion with header custom 1`] = `
   >
     <View
       accessible={true}
+      collapsable={false}
       focusable={true}
+      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -221,6 +241,8 @@ exports[`<Accordion /> should render Accordion with header custom 1`] = `
       />
     </View>
     <View
+      collapsable={false}
+      nativeID="animatedComponent"
       pointerEvents="none"
       style={
         Object {
@@ -230,7 +252,9 @@ exports[`<Accordion /> should render Accordion with header custom 1`] = `
       }
     >
       <View
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         onLayout={[Function]}
         style={Object {}}
       >
@@ -252,7 +276,9 @@ exports[`<Accordion /> should render Accordion with icon 1`] = `
   >
     <View
       accessible={true}
+      collapsable={false}
       focusable={true}
+      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -275,12 +301,21 @@ exports[`<Accordion /> should render Accordion with icon 1`] = `
           Mock
         </Text>
         <View
+          collapsable={false}
+          nativeID="animatedComponent"
           style={Object {}}
         >
           <View
             accessibilityLabel="Abrir"
+            accessibilityState={
+              Object {
+                "disabled": true,
+              }
+            }
             accessible={true}
+            collapsable={false}
             focusable={true}
+            nativeID="animatedComponent"
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -322,6 +357,8 @@ exports[`<Accordion /> should render Accordion with icon 1`] = `
       </View>
     </View>
     <View
+      collapsable={false}
+      nativeID="animatedComponent"
       pointerEvents="none"
       style={
         Object {
@@ -331,7 +368,9 @@ exports[`<Accordion /> should render Accordion with icon 1`] = `
       }
     >
       <View
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         onLayout={[Function]}
         style={Object {}}
       >
@@ -353,7 +392,9 @@ exports[`<Accordion /> should render Accordion with icon color grey inactive 1`]
   >
     <View
       accessible={true}
+      collapsable={false}
       focusable={true}
+      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -376,12 +417,21 @@ exports[`<Accordion /> should render Accordion with icon color grey inactive 1`]
           Mock
         </Text>
         <View
+          collapsable={false}
+          nativeID="animatedComponent"
           style={Object {}}
         >
           <View
             accessibilityLabel="Abrir"
+            accessibilityState={
+              Object {
+                "disabled": true,
+              }
+            }
             accessible={true}
+            collapsable={false}
             focusable={true}
+            nativeID="animatedComponent"
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -423,6 +473,8 @@ exports[`<Accordion /> should render Accordion with icon color grey inactive 1`]
       </View>
     </View>
     <View
+      collapsable={false}
+      nativeID="animatedComponent"
       pointerEvents="none"
       style={
         Object {
@@ -432,7 +484,9 @@ exports[`<Accordion /> should render Accordion with icon color grey inactive 1`]
       }
     >
       <View
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         onLayout={[Function]}
         style={Object {}}
       >
@@ -454,7 +508,9 @@ exports[`<Accordion /> should render Accordion with icon color red 1`] = `
   >
     <View
       accessible={true}
+      collapsable={false}
       focusable={true}
+      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -477,12 +533,21 @@ exports[`<Accordion /> should render Accordion with icon color red 1`] = `
           Mock
         </Text>
         <View
+          collapsable={false}
+          nativeID="animatedComponent"
           style={Object {}}
         >
           <View
             accessibilityLabel="Abrir"
+            accessibilityState={
+              Object {
+                "disabled": true,
+              }
+            }
             accessible={true}
+            collapsable={false}
             focusable={true}
+            nativeID="animatedComponent"
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -524,6 +589,8 @@ exports[`<Accordion /> should render Accordion with icon color red 1`] = `
       </View>
     </View>
     <View
+      collapsable={false}
+      nativeID="animatedComponent"
       pointerEvents="none"
       style={
         Object {
@@ -533,7 +600,9 @@ exports[`<Accordion /> should render Accordion with icon color red 1`] = `
       }
     >
       <View
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         onLayout={[Function]}
         style={Object {}}
       >
@@ -555,7 +624,9 @@ exports[`<Accordion /> should render Accordion with icon down text custom 1`] = 
   >
     <View
       accessible={true}
+      collapsable={false}
       focusable={true}
+      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -578,12 +649,21 @@ exports[`<Accordion /> should render Accordion with icon down text custom 1`] = 
           Mock
         </Text>
         <View
+          collapsable={false}
+          nativeID="animatedComponent"
           style={Object {}}
         >
           <View
             accessibilityLabel="Abrir"
+            accessibilityState={
+              Object {
+                "disabled": true,
+              }
+            }
             accessible={true}
+            collapsable={false}
             focusable={true}
+            nativeID="animatedComponent"
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -625,6 +705,8 @@ exports[`<Accordion /> should render Accordion with icon down text custom 1`] = 
       </View>
     </View>
     <View
+      collapsable={false}
+      nativeID="animatedComponent"
       pointerEvents="none"
       style={
         Object {
@@ -634,7 +716,9 @@ exports[`<Accordion /> should render Accordion with icon down text custom 1`] = 
       }
     >
       <View
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         onLayout={[Function]}
         style={Object {}}
       >
@@ -656,7 +740,9 @@ exports[`<Accordion /> should render Accordion with icon up text custom 1`] = `
   >
     <View
       accessible={true}
+      collapsable={false}
       focusable={true}
+      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -679,12 +765,21 @@ exports[`<Accordion /> should render Accordion with icon up text custom 1`] = `
           Mock
         </Text>
         <View
+          collapsable={false}
+          nativeID="animatedComponent"
           style={Object {}}
         >
           <View
             accessibilityLabel="Abrir"
+            accessibilityState={
+              Object {
+                "disabled": true,
+              }
+            }
             accessible={true}
+            collapsable={false}
             focusable={true}
+            nativeID="animatedComponent"
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -726,6 +821,8 @@ exports[`<Accordion /> should render Accordion with icon up text custom 1`] = `
       </View>
     </View>
     <View
+      collapsable={false}
+      nativeID="animatedComponent"
       pointerEvents="none"
       style={
         Object {
@@ -735,7 +832,9 @@ exports[`<Accordion /> should render Accordion with icon up text custom 1`] = `
       }
     >
       <View
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         onLayout={[Function]}
         style={Object {}}
       >
@@ -757,7 +856,9 @@ exports[`<Accordion /> should render Accordion with markdown 1`] = `
   >
     <View
       accessible={true}
+      collapsable={false}
       focusable={true}
+      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -782,6 +883,8 @@ exports[`<Accordion /> should render Accordion with markdown 1`] = `
       </View>
     </View>
     <View
+      collapsable={false}
+      nativeID="animatedComponent"
       pointerEvents="none"
       style={
         Object {
@@ -791,7 +894,9 @@ exports[`<Accordion /> should render Accordion with markdown 1`] = `
       }
     >
       <View
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         onLayout={[Function]}
         style={Object {}}
       >
@@ -842,7 +947,9 @@ exports[`<Accordion /> should render Accordion with onChange function 1`] = `
   >
     <View
       accessible={true}
+      collapsable={false}
       focusable={true}
+      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -867,6 +974,8 @@ exports[`<Accordion /> should render Accordion with onChange function 1`] = `
       </View>
     </View>
     <View
+      collapsable={false}
+      nativeID="animatedComponent"
       pointerEvents="none"
       style={
         Object {
@@ -876,7 +985,9 @@ exports[`<Accordion /> should render Accordion with onChange function 1`] = `
       }
     >
       <View
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         onLayout={[Function]}
         style={Object {}}
       >
@@ -898,7 +1009,9 @@ exports[`<Accordion /> should render Accordion with title custom 1`] = `
   >
     <View
       accessible={true}
+      collapsable={false}
       focusable={true}
+      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -936,6 +1049,8 @@ exports[`<Accordion /> should render Accordion with title custom 1`] = `
       </View>
     </View>
     <View
+      collapsable={false}
+      nativeID="animatedComponent"
       pointerEvents="none"
       style={
         Object {
@@ -945,7 +1060,9 @@ exports[`<Accordion /> should render Accordion with title custom 1`] = `
       }
     >
       <View
+        collapsable={false}
         forwardedRef={[Function]}
+        nativeID="animatedComponent"
         onLayout={[Function]}
         style={Object {}}
       >

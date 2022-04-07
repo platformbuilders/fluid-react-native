@@ -4,14 +4,12 @@ exports[`<MaskedTextInput /> should render textinput 1`] = `
 <TextInput
   accessibility=""
   accessibilityLabel=""
-  allowFontScaling={true}
   contrast={false}
   id="test"
   keyboardType="numeric"
   multiline={false}
   onChangeText={[Function]}
   placeholderTextColor="#72727260"
-  rejectResponderTermination={true}
   status="default"
   style={
     Array [
