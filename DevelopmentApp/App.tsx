@@ -1,10 +1,11 @@
 import React from 'react';
-import { SafeAreaView } from 'react-native';
+import { View } from 'react-native';
 import { ThemeProvider } from 'styled-components';
 
 import { themeFormatter } from '@platformbuilders/theme-toolkit';
 
-import { Button } from '../src';
+import { Header, Icon } from '../src';
+import { IconFonts } from '../src/enums';
 
 import theme from './theme';
 
@@ -15,11 +16,18 @@ const containerStyle = {
 };
 
 const App = () => (
-  <ThemeProvider theme={themeFormatter(theme)}>
-    <SafeAreaView style={containerStyle}>
-      <Button accessibility="botao">Button</Button>
-    </SafeAreaView>
-  </ThemeProvider>
+  <View style={containerStyle}>
+    <ThemeProvider theme={themeFormatter(theme)}>
+      <Header title="Cadastro" />
+      <Icon
+        accessibility="pix icon"
+        type={IconFonts.FontAwesome}
+        name="check"
+        color="#000"
+        size={20}
+      />
+    </ThemeProvider>
+  </View>
 );
 
 export default App;

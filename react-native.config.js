@@ -3,6 +3,11 @@ module.exports = {
     'react-native-elements': {
       root: __dirname,
     },
+    'react-native-vector-icons': {
+      platforms: {
+        ios: null,
+      },
+    },
   },
   project: {
     android: {
@@ -12,4 +17,5 @@ module.exports = {
       project: './DevelopmentApp/ios/DevelopmentApp.xcodeproj',
     },
   },
+  assets: ['./DevelopmentApp/assets/fonts/'],
 };
