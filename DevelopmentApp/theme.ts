@@ -1,9 +1,4 @@
-const z1Color = 'rgba(0, 0, 0, 0.1)';
-const fontFamilyHeading = '$fontFamilies.heading';
-const lineHeightHeading = '$lineHeights.heading';
-const letterSpacingDecreased = '$letterSpacing.decreased';
-const paragraphSpacingH2 = '$paragraphSpacing.h2';
-
+/* eslint-disable sonarjs/no-duplicate-string */
 const theme = {
   spacing: {
     min: {
@@ -156,6 +151,10 @@ const theme = {
       value: 12,
       type: 'borderWidth',
     },
+    none: {
+      value: 0,
+      type: 'borderWidth',
+    },
   },
   boxShadow: {
     z0: {
@@ -173,7 +172,7 @@ const theme = {
         x: 0,
         y: 1,
         spread: 0,
-        color: z1Color,
+        color: 'rgba(0, 0, 0, 0.1)',
         blur: 3,
       },
       type: 'boxShadow',
@@ -183,7 +182,7 @@ const theme = {
         x: 0,
         y: 4,
         spread: -1,
-        color: z1Color,
+        color: 'rgba(0, 0, 0, 0.1)',
         blur: 6,
       },
       type: 'boxShadow',
@@ -193,7 +192,7 @@ const theme = {
         x: 0,
         y: 10,
         spread: -3,
-        color: z1Color,
+        color: 'rgba(0, 0, 0, 0.1)',
         blur: 15,
       },
       type: 'boxShadow',
@@ -203,7 +202,7 @@ const theme = {
         x: 0,
         y: 20,
         spread: -5,
-        color: z1Color,
+        color: 'rgba(0, 0, 0, 0.1)',
         blur: 25,
       },
       type: 'boxShadow',
@@ -222,15 +221,15 @@ const theme = {
   brand: {
     primary: {
       light: {
-        value: '#A2AAF0',
+        value: '#4F89FA',
         type: 'color',
       },
       main: {
-        value: '#5B6AE7',
+        value: '#305BC4',
         type: 'color',
       },
       dark: {
-        value: '#3746B8',
+        value: '#19316F',
         type: 'color',
       },
       contrast: {
@@ -240,33 +239,33 @@ const theme = {
     },
     secondary: {
       light: {
-        value: '#8BD6F8',
+        value: '#FFDD00',
         type: 'color',
       },
       main: {
-        value: '#42ADEF',
+        value: '#FABB00',
         type: 'color',
       },
       dark: {
-        value: '#337BB7',
+        value: '#F08800',
         type: 'color',
       },
       contrast: {
-        value: '#ffffff',
+        value: '#442905',
         type: 'color',
       },
     },
     tertiary: {
       light: {
-        value: '#BA96F5',
+        value: '#888',
         type: 'color',
       },
       main: {
-        value: '#8442EF',
+        value: '#666',
         type: 'color',
       },
       dark: {
-        value: '#4A00DC',
+        value: '#444',
         type: 'color',
       },
       contrast: {
@@ -276,62 +275,54 @@ const theme = {
     },
     accent: {
       light: {
-        value: '#FBD268',
+        value: '#4f89fa',
         type: 'color',
       },
       main: {
-        value: '#F49D19',
+        value: '#305bc4',
         type: 'color',
       },
       dark: {
-        value: '#A1530A',
+        value: '#19316f',
         type: 'color',
       },
       contrast: {
-        value: '#351B02',
+        value: '#fff',
         type: 'color',
       },
     },
   },
-  success: {
-    light: {
-      value: '#F4FCD1',
-      type: 'color',
-    },
-    main: {
-      value: '#96C920',
-      type: 'color',
-    },
-    dark: {
-      value: '#396006',
-      type: 'color',
-    },
-    contrast: {
-      value: '#ffffff',
-      type: 'color',
-    },
-  },
   danger: {
-    light: {
-      value: '#FFE8D8',
+    lightContrastDark: {
+      value: '#FF99A7',
       type: 'color',
-      description: 'the 100 shade of a color',
+    },
+    light: {
+      value: '#FF99A7',
+      type: 'color',
     },
     main: {
-      value: '#FF4F3F',
+      value: '#FB275D',
+      type: 'color',
+    },
+    darkContrastLight: {
+      value: '#94002F',
       type: 'color',
     },
     dark: {
-      value: '#7A0C27',
+      value: '#94002F',
       type: 'color',
-      description: 'the 900s shade of a color',
     },
     contrast: {
-      value: '#ffffff',
+      value: '#000',
       type: 'color',
     },
   },
   warning: {
+    lightContrastDark: {
+      value: '#FFF8CE',
+      type: 'color',
+    },
     light: {
       value: '#FFF8CE',
       type: 'color',
@@ -340,16 +331,24 @@ const theme = {
       value: '#FFCA0C',
       type: 'color',
     },
+    darkContrastLight: {
+      value: '#7A5502',
+      type: 'color',
+    },
     dark: {
       value: '#7A5502',
       type: 'color',
     },
     contrast: {
-      value: '#261B00',
+      value: '#000',
       type: 'color',
     },
   },
   info: {
+    lightContrastDark: {
+      value: '#C2ECEC',
+      type: 'color',
+    },
     light: {
       value: '#C2ECEC',
       type: 'color',
@@ -358,26 +357,12 @@ const theme = {
       value: '#42CCD4',
       type: 'color',
     },
-    dark: {
-      value: '#186F82',
-      type: 'color',
-    },
-    contrast: {
-      value: '#ffffff',
-      type: 'color',
-    },
-  },
-  text: {
-    main: {
-      value: '#eee',
+    darkContrastLight: {
+      value: '#104A56',
       type: 'color',
     },
     dark: {
-      value: '#fff',
-      type: 'color',
-    },
-    light: {
-      value: '#ddd',
+      value: '#104A56',
       type: 'color',
     },
     contrast: {
@@ -385,25 +370,73 @@ const theme = {
       type: 'color',
     },
   },
+  success: {
+    lightContrastDark: {
+      value: '#56CD8D',
+      type: 'color',
+    },
+    light: {
+      value: '#56CD8D',
+      type: 'color',
+    },
+    main: {
+      value: '#149B5F',
+      type: 'color',
+    },
+    darkContrastLight: {
+      value: '#00401B',
+      type: 'color',
+    },
+    dark: {
+      value: '#00401B',
+      type: 'color',
+    },
+    contrast: {
+      value: '#000',
+      type: 'color',
+    },
+  },
+  text: {
+    dark: {
+      value: '#16254A',
+      type: 'color',
+    },
+    light: {
+      value: '#16254A',
+      type: 'color',
+    },
+    main: {
+      value: '#16254A',
+      type: 'color',
+    },
+    contrast: {
+      value: '#fff',
+      type: 'color',
+    },
+  },
   background: {
     z0: {
-      value: '#0748A3',
+      value: '#EDF2F7',
       type: 'color',
     },
     z1: {
-      value: '#04317C',
+      value: '#F4F7FA',
       type: 'color',
     },
     z2: {
-      value: '#041E52',
+      value: '#F8FAFC',
       type: 'color',
     },
     z3: {
-      value: '#031740',
+      value: '#FBFCFD',
       type: 'color',
     },
     z4: {
-      value: '#020F28',
+      value: '#fff',
+      type: 'color',
+    },
+    transparent: {
+      value: '#ffffff00',
       type: 'color',
     },
   },
@@ -420,64 +453,39 @@ const theme = {
       value: '80%',
       type: 'opacity',
     },
-  },
-  fontFamilies: {
-    heading: {
-      value: 'Roboto',
-      type: 'fontFamilies',
+    opaque: {
+      value: '100%',
+      description: 'everything without any transparency',
+      type: 'opacity',
     },
-    body: {
-      value: 'Roboto',
-      type: 'fontFamilies',
+    transparent: {
+      value: '0%',
+      type: 'opacity',
     },
-  },
-  lineHeights: {
-    heading: {
-      value: '110%',
-      type: 'lineHeights',
-    },
-    body: {
-      value: '140%',
-      type: 'lineHeights',
+    subtle: {
+      value: '10%',
+      type: 'opacity',
     },
   },
-  letterSpacing: {
-    default: {
-      value: 0,
-      type: 'letterSpacing',
-    },
-    bigger: {
-      value: '105%',
-      type: 'letterSpacing',
-    },
+  standard: {
+    value: '0%',
+    type: 'letterSpacing',
   },
-  paragraphSpacing: {
-    h1: {
-      value: 32,
-      type: 'paragraphSpacing',
-    },
-    h2: {
-      value: 26,
-      type: 'paragraphSpacing',
-    },
+  bigger: {
+    value: '5%',
+    type: 'letterSpacing',
   },
-  fontWeights: {
-    headingRegular: {
-      value: 'Regular',
-      type: 'fontWeights',
-    },
-    headingBold: {
-      value: 'Bold',
-      type: 'fontWeights',
-    },
-    bodyRegular: {
-      value: 'Regular',
-      type: 'fontWeights',
-    },
-    bodyBold: {
-      value: 'Bold',
-      type: 'fontWeights',
-    },
+  regular: {
+    value: 'Regular',
+    type: 'fontWeights',
+  },
+  medium: {
+    value: 'Medium',
+    type: 'fontWeights',
+  },
+  bold: {
+    value: 'Bold',
+    type: 'fontWeights',
   },
   fontSizes: {
     min: {
@@ -519,7 +527,7 @@ const theme = {
   },
   themeRadius: {
     button: {
-      value: 3,
+      value: 4,
       type: 'borderRadius',
     },
     card: {
@@ -527,68 +535,90 @@ const theme = {
       type: 'borderRadius',
     },
     input: {
-      value: 3,
+      value: 6,
       type: 'borderRadius',
     },
   },
-  typography: {
-    H1: {
-      Bold: {
-        type: 'typography',
-        value: {
-          fontFamily: fontFamilyHeading,
-          fontWeight: '$fontWeights.headingBold',
-          lineHeight: lineHeightHeading,
-          fontSize: '$fontSizes.h1',
-          paragraphSpacing: '$paragraphSpacing.h1',
-          letterSpacing: letterSpacingDecreased,
-        },
-      },
-      Regular: {
-        type: 'typography',
-        value: {
-          fontFamily: fontFamilyHeading,
-          fontWeight: '$fontWeights.headingRegular',
-          lineHeight: lineHeightHeading,
-          fontSize: '$fontSizes.h1',
-          paragraphSpacing: '$paragraphSpacing.h1',
-          letterSpacing: letterSpacingDecreased,
-        },
-      },
+  lineHeight: {
+    min: {
+      value: '100%',
+      type: 'lineHeights',
     },
-    H2: {
-      Bold: {
-        type: 'typography',
-        value: {
-          fontFamily: fontFamilyHeading,
-          fontWeight: '$fontWeights.headingBold',
-          lineHeight: lineHeightHeading,
-          fontSize: '$fontSizes.h2',
-          paragraphSpacing: paragraphSpacingH2,
-          letterSpacing: letterSpacingDecreased,
-        },
-      },
-      Regular: {
-        type: 'typography',
-        value: {
-          fontFamily: fontFamilyHeading,
-          fontWeight: '$fontWeights.headingRegular',
-          lineHeight: lineHeightHeading,
-          fontSize: '$fontSizes.h2',
-          paragraphSpacing: paragraphSpacingH2,
-          letterSpacing: letterSpacingDecreased,
-        },
-      },
+    xxs: {
+      value: '110%',
+      type: 'lineHeights',
     },
-    Body: {
-      type: 'typography',
-      value: {
-        fontFamily: '$fontFamilies.body',
-        fontWeight: '$fontWeights.bodyRegular',
-        lineHeight: lineHeightHeading,
-        fontSize: '$fontSizes.body',
-        paragraphSpacing: paragraphSpacingH2,
-      },
+    xs: {
+      value: '120%',
+      type: 'lineHeights',
+    },
+    sm: {
+      value: '130%',
+      type: 'lineHeights',
+    },
+    md: {
+      value: '140%',
+      type: 'lineHeights',
+    },
+    lg: {
+      value: '150%',
+      type: 'lineHeights',
+    },
+    xl: {
+      value: '160%',
+      type: 'lineHeights',
+    },
+    xxl: {
+      value: '180%',
+      type: 'lineHeights',
+    },
+    max: {
+      value: '200%',
+      type: 'lineHeights',
+    },
+  },
+  icons: {
+    value: 'Font Awesome 5 Pro',
+    type: 'fontFamilies',
+  },
+  headings: {
+    value: 'Roboto',
+    type: 'fontFamilies',
+  },
+  body: {
+    value: 'Roboto',
+    type: 'fontFamilies',
+  },
+  gradient: {
+    z2: {
+      value:
+        'linear-gradient(90deg, rgba($background.z2, 0) 0%, rgba($background.z2, 1) 20%)',
+      type: 'color',
+    },
+    z1: {
+      value:
+        'linear-gradient(90deg, rgba($background.z1, 0) 0%, rgba($background.z1, 1) 20%)',
+      type: 'color',
+    },
+    z0: {
+      value:
+        'linear-gradient(90deg, rgba($background.z0, 0) 0%, rgba($background.z0, 1) 20%)',
+      type: 'color',
+    },
+    brandPrimaryLight: {
+      value:
+        'linear-gradient(90deg, rgba($brand.primary.light, 0) 0%, rgba($brand.primary.light, 1) 20%)',
+      type: 'color',
+    },
+    brandPrimaryMain: {
+      value:
+        'linear-gradient(90deg, rgba($brand.primary.main, 0) 0%, rgba($brand.primary.main, 1) 20%)',
+      type: 'color',
+    },
+    brandPrimaryDark: {
+      value:
+        'linear-gradient(90deg, rgba($brand.primary.dark, 0) 0%, rgba($brand.primary.dark, 1) 20%)',
+      type: 'color',
     },
   },
 };
