@@ -39,8 +39,8 @@ exports[`<Header /> should render Header 1`] = `
             "flexDirection": "row",
             "height": 64,
             "justifyContent": "space-between",
-            "paddingHorizontal": 16,
-            "paddingVertical": 12,
+            "paddingHorizontal": 20,
+            "paddingVertical": 20,
           },
         ]
       }
@@ -118,7 +118,6 @@ exports[`<Header /> should render Header 1`] = `
           accessibilityLabel="Cadastro"
           isThemePrimary={true}
           lineHeightVariant="min"
-          size={20}
           style={
             Array [
               Object {
@@ -142,7 +141,6 @@ exports[`<Header /> should render Header 1`] = `
           accessibilityLabel="O seu saldo é de R$2.500,00"
           isThemePrimary={true}
           lineHeightVariant="min"
-          size={14}
           style={
             Array [
               Object {

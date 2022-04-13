@@ -21,6 +21,7 @@ type ThemePrimaryStyleProps = {
 const isThemePrimary = ifStyle('isThemePrimary');
 const isIOSPlatform = ifStyle('isIOSPlatform');
 const spacingSm = getTheme('spacing.sm');
+const spacingMd = getTheme('spacing.md');
 const getThemePrimaryContrastTextColor = (props: ThemeProps) =>
   isThemePrimary(
     getTheme('brand.primary.contrast')(props),
@@ -42,8 +43,8 @@ export const ContentWrapper = styled.View<
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-horizontal: 16px;
-  padding-vertical: 12px;
+  padding-horizontal: ${spacingMd}px;
+  padding-vertical: ${spacingMd}px;
   height: 64px;
   background-color: ${getThemePrimaryContrastBackgroundColor};
   ${isIOSPlatform('', 'elevation: 3;')};
@@ -56,7 +57,6 @@ export const TextWrapper = styled.View`
 
 export const Title = styled(TypographyComponent).attrs({
   variant: 'lg',
-  size: 20,
 })<ThemePrimaryStyleProps>`
   color: ${getThemePrimaryContrastTextColor};
   font-weight: bold;
@@ -64,7 +64,6 @@ export const Title = styled(TypographyComponent).attrs({
 
 export const Subtitle = styled(TypographyComponent).attrs({
   variant: 'sm',
-  size: 14,
 })<ThemePrimaryStyleProps>`
   color: ${getThemePrimaryContrastTextColor};
   margin-top: ${spacingSm}px;
@@ -72,5 +71,4 @@ export const Subtitle = styled(TypographyComponent).attrs({
 
 export const StyledIcon = styled(Icon).attrs((props) => ({
   color: getThemePrimaryContrastTextColor(props),
-  ...props,
 }))<ThemePrimaryStyleProps>``;
