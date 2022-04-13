@@ -23,4 +23,5 @@ export { default as SearchInput } from './SearchInput';
 export { default as Markdown } from './Markdown';
 export { default as DisplayVersion } from './DisplayVersion';
 export { default as LabelDivider } from './LabelDivider';
+export { default as Header } from './Header';
 export { TextInputMask, MaskService, TextMask } from './MaskedText';

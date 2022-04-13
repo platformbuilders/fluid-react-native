@@ -1,0 +1,222 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should render Header 1`] = `
+<View
+  isIOSPlatform={true}
+  isThemePrimary={true}
+  style={
+    Array [
+      Object {
+        "overflow": "hidden",
+        "paddingBottom": 5,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "elevation": 3,
+          "shadowOffset": Object {
+            "height": 4,
+            "width": 0,
+          },
+          "shadowOpacity": 0.2,
+          "shadowRadius": 4,
+        },
+      ]
+    }
+  >
+    <View
+      isIOSPlatform={true}
+      isThemePrimary={true}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#C6B09E",
+            "flexDirection": "row",
+            "height": 64,
+            "justifyContent": "space-between",
+            "paddingHorizontal": 20,
+            "paddingVertical": 20,
+          },
+        ]
+      }
+    >
+      <View
+        collapsable={false}
+        nativeID="animatedComponent"
+        style={Object {}}
+      >
+        <View
+          accessibilityLabel="arrow-left"
+          accessibilityState={
+            Object {
+              "disabled": false,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          nativeID="animatedComponent"
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+          testID="arrow-left"
+        >
+          <View>
+            <Text
+              allowFontScaling={false}
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 20,
+                  },
+                  undefined,
+                  Object {
+                    "fontFamily": "FontAwesome5Free-Solid",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {
+                    "fontWeight": "900",
+                  },
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+            },
+          ]
+        }
+      >
+        <Text
+          accessibility="Cadastro"
+          accessibilityLabel="Cadastro"
+          isThemePrimary={true}
+          lineHeightVariant="min"
+          style={
+            Array [
+              Object {
+                "color": "#000000",
+                "fontSize": 17,
+                "lineHeight": 17,
+              },
+              Object {
+                "color": "#ffffff",
+                "fontWeight": "bold",
+              },
+            ]
+          }
+          testID="Cadastro"
+          variant="lg"
+        >
+          Cadastro
+        </Text>
+        <Text
+          accessibility="O seu saldo é de R$2.500,00"
+          accessibilityLabel="O seu saldo é de R$2.500,00"
+          isThemePrimary={true}
+          lineHeightVariant="min"
+          style={
+            Array [
+              Object {
+                "color": "#000000",
+                "fontSize": 14,
+                "lineHeight": 14,
+              },
+              Object {
+                "color": "#ffffff",
+                "marginTop": 12,
+              },
+            ]
+          }
+          testID="O seu saldo é de R$2.500,00"
+          variant="sm"
+        >
+          O seu saldo é de R$2.500,00
+        </Text>
+      </View>
+      <View
+        collapsable={false}
+        nativeID="animatedComponent"
+        style={Object {}}
+      >
+        <View
+          accessibilityLabel="times"
+          accessibilityState={
+            Object {
+              "disabled": false,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          nativeID="animatedComponent"
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+          testID="times"
+        >
+          <View>
+            <Text
+              allowFontScaling={false}
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 20,
+                  },
+                  undefined,
+                  Object {
+                    "fontFamily": "FontAwesome5Free-Solid",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {
+                    "fontWeight": "900",
+                  },
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

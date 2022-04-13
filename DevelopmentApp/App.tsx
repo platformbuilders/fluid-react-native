@@ -1,25 +1,26 @@
 import React from 'react';
-import { SafeAreaView } from 'react-native';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { ThemeProvider } from 'styled-components';
 
 import { themeFormatter } from '@platformbuilders/theme-toolkit';
 
-import { Button } from '../src';
+import { Header } from '../src';
+import { HeaderTheme } from '../src/enums';
 
 import theme from './theme';
 
-const containerStyle = {
-  backgroundColor: '#fff',
-  padding: 20,
-  flex: 1,
-};
-
 const App = () => (
-  <ThemeProvider theme={themeFormatter(theme)}>
-    <SafeAreaView style={containerStyle}>
-      <Button accessibility="botao">Button</Button>
+  <SafeAreaProvider>
+    <SafeAreaView>
+      <ThemeProvider theme={themeFormatter(theme)}>
+        <Header
+          title="Cadastro"
+          subtitle="O seu saldo é de R$2.500,00"
+          theme={HeaderTheme.PRIMARY}
+        />
+      </ThemeProvider>
     </SafeAreaView>
-  </ThemeProvider>
+  </SafeAreaProvider>
 );
 
 export default App;
