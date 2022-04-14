@@ -87,3 +87,6 @@ DevelopmentApp/ios/Pods/
 *.prefs
 .classpath
 .project
+
+# Codewall
+.codewall
