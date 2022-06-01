@@ -39,9 +39,7 @@ export const Wrapper = styled.View<WrapperProps>`
   flex-direction: row;
 `;
 
-export const PinCodeInput = styled(DefaultCodeInput).attrs((props) =>
-  defaultStyling(props),
-)``;
+export const PinCodeInput = styled(DefaultCodeInput)``;
 
 type IconProps = {
   contrast: boolean;
