@@ -1,4 +1,3 @@
-import { ComponentType } from 'react';
 import { Animated, StyleSheet } from 'react-native';
 import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
@@ -195,9 +194,7 @@ export const TextLabel = styled.Text<any>`
   top: ${LABEL_LOWER_STYLE.top}px;
 `;
 
-export const Label = Animated.createAnimatedComponent<ComponentType<any>>(
-  TextLabel,
-);
+export const Label = Animated.createAnimatedComponent(TextLabel);
 
 export const TextInput = styled.TextInput.attrs((props: TextInputType) => ({
   accessibilityLabel: props.accessibilityLabel || props.accessibility,

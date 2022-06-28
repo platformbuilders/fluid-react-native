@@ -1,4 +1,4 @@
-import React, { FC, useCallback, useEffect, useState } from 'react';
+import React, { VFC, useCallback, useEffect, useState } from 'react';
 import { isEmpty } from 'lodash';
 import { Animated } from 'react-native';
 import { IconFonts, InputStatus } from '../../enums';
@@ -22,7 +22,7 @@ import {
   Wrapper,
 } from './styles';
 
-const TextInput: FC<TextInputType> = ({
+const TextInput: VFC<TextInputType> = ({
   id,
   accessibility,
   accessibilityLabel,

@@ -44,6 +44,9 @@
       "yarn test"
     ]
   },
+  "resolutions": {
+    "@types/react": "^17.0.43"
+  },
   "dependencies": {
     "@babel/runtime": "^7.17.8",
     "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
@@ -80,14 +83,14 @@
     "@types/lodash": "4.14.161",
     "@types/moment": "2.13.0",
     "@types/numeral": "0.0.28",
-    "@types/react": "16.9.49",
+    "@types/react": "^17.0.43",
     "@types/react-input-mask": "2.0.5",
     "@types/react-lottie": "1.2.5",
     "@types/react-native": "0.63.2",
     "@types/react-native-check-box": "2.1.1",
     "@types/react-native-datepicker": "1.7.0",
     "@types/react-native-vector-icons": "6.4.5",
-    "@types/react-router-dom": "5.1.5",
+    "@types/react-router-dom": "^5.3.3",
     "@types/react-test-renderer": "16.9.3",
     "@types/react-text-mask": "5.4.6",
     "@types/styled-components": "5.1.4",
