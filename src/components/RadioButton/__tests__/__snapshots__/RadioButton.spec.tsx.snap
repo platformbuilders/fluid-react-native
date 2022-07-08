@@ -22,14 +22,14 @@ exports[`<RadioButton /> should render radio button component 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "borderColor": "#000000",
-      "borderRadius": 14.142857142857142,
+      "borderColor": "#0000004D",
+      "borderRadius": 15.714285714285714,
       "borderStyle": "solid",
-      "borderWidth": 1.5714285714285714,
-      "height": 28.285714285714285,
+      "borderWidth": 3.142857142857143,
+      "height": 31.428571428571427,
       "justifyContent": "center",
       "opacity": 1,
-      "width": 28.285714285714285,
+      "width": 31.428571428571427,
     }
   }
   testID="testing_radio_btn"
@@ -58,27 +58,27 @@ exports[`<RadioButton /> should render radio button component with custom checke
   style={
     Object {
       "alignItems": "center",
-      "borderColor": "#000000",
-      "borderRadius": 14.142857142857142,
+      "borderColor": "#0000004D",
+      "borderRadius": 15.714285714285714,
       "borderStyle": "solid",
-      "borderWidth": 1.5714285714285714,
-      "height": 28.285714285714285,
+      "borderWidth": 3.142857142857143,
+      "height": 31.428571428571427,
       "justifyContent": "center",
       "opacity": 1,
-      "width": 28.285714285714285,
+      "width": 31.428571428571427,
     }
   }
   testID="testing_radio_btn"
 >
   <View
-    internalSize={13}
+    internalSize={10}
     style={
       Array [
         Object {
-          "backgroundColor": "#000000",
-          "borderRadius": 10.214285714285715,
-          "height": 20.42857142857143,
-          "width": 20.42857142857143,
+          "backgroundColor": "#C6B09E",
+          "borderRadius": 7.857142857142857,
+          "height": 15.714285714285714,
+          "width": 15.714285714285714,
         },
       ]
     }
@@ -108,14 +108,14 @@ exports[`<RadioButton /> should render radio button component with custom checke
   style={
     Object {
       "alignItems": "center",
-      "borderColor": "#000000",
-      "borderRadius": 14.142857142857142,
+      "borderColor": "#0000004D",
+      "borderRadius": 15.714285714285714,
       "borderStyle": "solid",
-      "borderWidth": 1.5714285714285714,
-      "height": 28.285714285714285,
+      "borderWidth": 3.142857142857143,
+      "height": 31.428571428571427,
       "justifyContent": "center",
       "opacity": 1,
-      "width": 28.285714285714285,
+      "width": 31.428571428571427,
     }
   }
   testID="testing_radio_btn"
@@ -144,14 +144,14 @@ exports[`<RadioButton /> should render radio button component with custom intern
   style={
     Object {
       "alignItems": "center",
-      "borderColor": "#000000",
-      "borderRadius": 14.142857142857142,
+      "borderColor": "#0000004D",
+      "borderRadius": 15.714285714285714,
       "borderStyle": "solid",
-      "borderWidth": 1.5714285714285714,
-      "height": 28.285714285714285,
+      "borderWidth": 3.142857142857143,
+      "height": 31.428571428571427,
       "justifyContent": "center",
       "opacity": 1,
-      "width": 28.285714285714285,
+      "width": 31.428571428571427,
     }
   }
   testID="testing_radio_btn"
@@ -181,13 +181,13 @@ exports[`<RadioButton /> should render radio button component with custom radio 
     Object {
       "alignItems": "center",
       "borderColor": "#3498db",
-      "borderRadius": 14.142857142857142,
+      "borderRadius": 15.714285714285714,
       "borderStyle": "solid",
-      "borderWidth": 1.5714285714285714,
-      "height": 28.285714285714285,
+      "borderWidth": 3.142857142857143,
+      "height": 31.428571428571427,
       "justifyContent": "center",
       "opacity": 1,
-      "width": 28.285714285714285,
+      "width": 31.428571428571427,
     }
   }
   testID="testing_radio_btn"
@@ -216,10 +216,10 @@ exports[`<RadioButton /> should render radio button component with custom size 1
   style={
     Object {
       "alignItems": "center",
-      "borderColor": "#000000",
+      "borderColor": "#0000004D",
       "borderRadius": 18.857142857142858,
       "borderStyle": "solid",
-      "borderWidth": 1.5714285714285714,
+      "borderWidth": 3.142857142857143,
       "height": 37.714285714285715,
       "justifyContent": "center",
       "opacity": 1,
