@@ -5,6 +5,9 @@ import Touchable from '../Touchable';
 
 const textColor = getTheme('text.main');
 const checkedRadioColor = getTheme('brand.primary.main');
+
+const smBorderWidth = getTheme('borderWidth.sm');
+
 const hasColor = ifStyle('radioButtonColor');
 const hasCheckedColor = ifStyle('checkedRadioButtonColor');
 
@@ -17,7 +20,7 @@ export const Radio = styled(Touchable)<RadioProps>`
   width: ${({ size }: RadioProps) => moderateScale(size)}px;
   height: ${({ size }: RadioProps) => moderateScale(size)}px;
   border-radius: ${({ size }: RadioProps) => moderateScale(size / 2)}px;
-  border: ${moderateScale(2)}px
+  border: ${smBorderWidth}px
     ${({ radioButtonColor }: RadioProps): any =>
       hasColor(radioButtonColor, textColor)}${hasColor('', '4D')};
   align-items: center;
