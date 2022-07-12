@@ -18,8 +18,8 @@ const RadioButton: React.FC<Props> = ({
   accessibility,
   radioButtonColor,
   checkedRadioButtonColor,
-  size = 18,
-  internalSize = 13,
+  size = 20,
+  internalSize = 10,
   checked = false,
   onPress = () => {},
 }) => (
