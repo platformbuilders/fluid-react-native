@@ -27,6 +27,5 @@ dist/**/*.js.map
 __tests__/
 src/
 example/
-index.js
 metro.config.js
 react-native.config.js
