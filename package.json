@@ -16,7 +16,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rm -rf dist && yarn lint && tsc && yarn copyassets",
+    "build": "rm -rf dist && yarn lint && tsc --project ./tsconfig.publish.json && yarn copyassets",
     "start": "react-native start -- --reset-cache",
     "start:android": "react-native run-android --no-jetifier",
     "start:ios": "react-native run-ios --project-path DevelopmentApp/ios",

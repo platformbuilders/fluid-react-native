@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "images.d.ts",
+    "src",
+  ],
+  "exclude": [
+    "index.js",
+    "src/**/*.spec.{ts,tsx}",
+    "DevelopmentApp/**/*.spec.{ts,tsx}",
+    "node_modules",
+    "dist",
+    "documentation",
+  ]
+}
