@@ -1,6 +1,6 @@
 {
   "name": "@platformbuilders/react-native-elements",
-  "version": "0.4.40",
+  "version": "0.4.41",
   "private": false,
   "description": "Platform Builders Shared Components Library For React Native",
   "keywords": [
@@ -68,6 +68,8 @@
     "@commitlint/config-conventional": "11.0.0",
     "@platformbuilders/helpers": "^0.4.6",
     "@platformbuilders/theme-toolkit": "^0.0.13",
+    "@react-navigation/native": "6.0.11",
+    "@react-navigation/native-stack": "6.7.0",
     "@storybook/addon-actions": "6.0.22",
     "@storybook/addon-backgrounds": "6.0.22",
     "@storybook/addon-knobs": "6.0.22",
