@@ -1,0 +1,431 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navbar /> should render navbar component 1`] = `
+<View
+  safeBottomArea={false}
+  style={
+    Array [
+      Object {
+        "alignItems": "flex-start",
+        "backgroundColor": "",
+        "elevation": 3,
+        "flexDirection": "row",
+        "justifyContent": "space-evenly",
+        "marginTop": "auto",
+        "paddingBottom": 12,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 12,
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.2,
+        "shadowRadius": 6.285714285714286,
+        "width": "100%",
+      },
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Ir para Home"
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    nativeID="animatedComponent"
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "opacity": 1,
+        "width": 110,
+      }
+    }
+    testID="Home"
+  >
+    <View
+      collapsable={false}
+      nativeID="animatedComponent"
+      style={
+        Object {
+          "opacity": 100,
+        }
+      }
+    >
+      <View
+        accessibilityLabel="flag"
+        accessibilityState={
+          Object {
+            "disabled": true,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID="IconHome"
+      >
+        <View>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "#C6B09E",
+                  "fontSize": 47.14285714285714,
+                },
+                undefined,
+                Object {
+                  "fontFamily": "Material Design Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          >
+            󰈻
+          </Text>
+        </View>
+      </View>
+    </View>
+    <Text
+      accessibility="Home"
+      accessibilityLabel="Home"
+      active={true}
+      lineHeightVariant="min"
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 13,
+            "lineHeight": 13,
+          },
+          Object {
+            "color": "#C6B09E",
+            "fontWeight": "bold",
+            "opacity": 100,
+            "textAlign": "center",
+            "textTransform": "uppercase",
+          },
+        ]
+      }
+      testID="LabelHome"
+      variant="xs"
+    >
+      Home
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`<Navbar /> should render navbar component with custom color 1`] = `
+<View
+  safeBottomArea={false}
+  style={
+    Array [
+      Object {
+        "alignItems": "flex-start",
+        "backgroundColor": "",
+        "elevation": 3,
+        "flexDirection": "row",
+        "justifyContent": "space-evenly",
+        "marginTop": "auto",
+        "paddingBottom": 12,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 12,
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.2,
+        "shadowRadius": 6.285714285714286,
+        "width": "100%",
+      },
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Ir para Home"
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    nativeID="animatedComponent"
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "opacity": 1,
+        "width": 110,
+      }
+    }
+    testID="Home"
+  >
+    <View
+      collapsable={false}
+      nativeID="animatedComponent"
+      style={
+        Object {
+          "opacity": 100,
+        }
+      }
+    >
+      <View
+        accessibilityLabel="flag"
+        accessibilityState={
+          Object {
+            "disabled": true,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID="IconHome"
+      >
+        <View>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "#000000",
+                  "fontSize": 47.14285714285714,
+                },
+                undefined,
+                Object {
+                  "fontFamily": "Material Design Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          >
+            󰈻
+          </Text>
+        </View>
+      </View>
+    </View>
+    <Text
+      accessibility="Home"
+      accessibilityLabel="Home"
+      active={true}
+      activeColor="#000000"
+      lineHeightVariant="min"
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 13,
+            "lineHeight": 13,
+          },
+          Object {
+            "color": "#000000",
+            "fontWeight": "bold",
+            "opacity": 100,
+            "textAlign": "center",
+            "textTransform": "uppercase",
+          },
+        ]
+      }
+      testID="LabelHome"
+      variant="xs"
+    >
+      Home
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`<Navbar /> should render navbar component with safe bottom area 1`] = `
+<View
+  safeBottomArea={true}
+  style={
+    Array [
+      Object {
+        "alignItems": "flex-start",
+        "backgroundColor": "",
+        "elevation": 3,
+        "flexDirection": "row",
+        "justifyContent": "space-evenly",
+        "marginTop": "auto",
+        "paddingBottom": 0,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 12,
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.2,
+        "shadowRadius": 6.285714285714286,
+        "width": "100%",
+      },
+    ]
+  }
+>
+  <View
+    accessibilityLabel="Ir para Home"
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    nativeID="animatedComponent"
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "opacity": 1,
+        "width": 110,
+      }
+    }
+    testID="Home"
+  >
+    <View
+      collapsable={false}
+      nativeID="animatedComponent"
+      style={
+        Object {
+          "opacity": 100,
+        }
+      }
+    >
+      <View
+        accessibilityLabel="flag"
+        accessibilityState={
+          Object {
+            "disabled": true,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID="IconHome"
+      >
+        <View>
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "#C6B09E",
+                  "fontSize": 47.14285714285714,
+                },
+                undefined,
+                Object {
+                  "fontFamily": "Material Design Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          >
+            󰈻
+          </Text>
+        </View>
+      </View>
+    </View>
+    <Text
+      accessibility="Home"
+      accessibilityLabel="Home"
+      active={true}
+      lineHeightVariant="min"
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 13,
+            "lineHeight": 13,
+          },
+          Object {
+            "color": "#C6B09E",
+            "fontWeight": "bold",
+            "opacity": 100,
+            "textAlign": "center",
+            "textTransform": "uppercase",
+          },
+        ]
+      }
+      testID="LabelHome"
+      variant="xs"
+    >
+      Home
+    </Text>
+  </View>
+</View>
+`;
