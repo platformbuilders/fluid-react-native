@@ -2,7 +2,7 @@
   "name": "@platformbuilders/fluid-react-native",
   "version": "0.1.0",
   "private": false,
-  "description": "Platform Builders Shared Components Library For React Native",
+  "description": "Builders React Native for Fluid Design System",
   "keywords": [
     "platformbuilders",
     "react",
