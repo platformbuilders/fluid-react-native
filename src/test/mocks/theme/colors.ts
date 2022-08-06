@@ -1,5 +1,5 @@
 import { darken, lighten } from 'polished';
-import { Colors } from '../../../types';
+import { Colors } from '@platformbuilders/theme-toolkit';
 
 const text = '#000000';
 const primary = '#C6B09E';

@@ -1,4 +1,4 @@
-import { ThemeType } from '../types';
+import { FluidTheme } from '@platformbuilders/theme-toolkit';
 import {
   animations,
   borderRadius,
@@ -10,7 +10,7 @@ import {
   typography,
 } from './mocks/theme';
 
-export const theme: ThemeType = {
+export const theme: FluidTheme = {
   ...colors,
   ...animations,
   opacity,

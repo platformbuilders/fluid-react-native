@@ -7,11 +7,11 @@ import {
   ViewStyle,
 } from 'react-native';
 
+import { TypographyVariants } from '@platformbuilders/theme-toolkit';
 import { TextInputMaskTypeProp } from '../components/MaskedText';
 
 import { HitSlopType } from './Common';
 import { IconFonts } from './IconType';
-import { TypographyVariants } from './theme_types/Variants';
 
 export type TextInputType = {
   id: string;

@@ -2797,7 +2797,6 @@ Array [
     }
   />,
   <Text
-    accessibility="Erro test"
     accessibilityLabel="Erro test"
     centered={false}
     large={false}

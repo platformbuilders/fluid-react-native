@@ -12,7 +12,6 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
   }
 >
   <Text
-    accessibility=""
     accessibilityLabel=""
     lineHeightVariant="min"
     style={
@@ -77,7 +76,6 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
     </View>
   </View>
   <Text
-    accessibility=""
     accessibilityLabel=""
     lineHeightVariant="min"
     style={

@@ -1,4 +1,4 @@
-import { BorderWidth } from '../../../types';
+import { BorderWidth } from '@platformbuilders/theme-toolkit';
 
 export default {
   min: 4,

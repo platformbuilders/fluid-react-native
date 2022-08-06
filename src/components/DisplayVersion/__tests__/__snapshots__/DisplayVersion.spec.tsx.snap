@@ -2,7 +2,6 @@
 
 exports[`<DisplayVersion /> should render and match snapshot for default props 1`] = `
 <Text
-  accessibility="display-version"
   accessibilityLabel="display-version"
   lineHeightVariant="min"
   style={

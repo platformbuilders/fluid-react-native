@@ -1,4 +1,4 @@
-import { BorderRadius } from '../../../types';
+import { BorderRadius } from '@platformbuilders/theme-toolkit';
 
 export default {
   base: 2,

@@ -1,6 +1,6 @@
 module.exports = {
   dependencies: {
-    'react-native-elements': {
+    'fluid-react-native': {
       root: __dirname,
     },
     'react-native-vector-icons': {

@@ -1,4 +1,4 @@
-import { Spacing } from '../../../types';
+import { Spacing } from '@platformbuilders/theme-toolkit';
 
 export default {
   xs: 4,
