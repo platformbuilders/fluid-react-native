@@ -114,7 +114,6 @@ exports[`<Navbar /> should render navbar component 1`] = `
       </View>
     </View>
     <Text
-      accessibility="Home"
       accessibilityLabel="Home"
       active={true}
       lineHeightVariant="min"
@@ -257,7 +256,6 @@ exports[`<Navbar /> should render navbar component with custom color 1`] = `
       </View>
     </View>
     <Text
-      accessibility="Home"
       accessibilityLabel="Home"
       active={true}
       activeColor="#000000"
@@ -401,7 +399,6 @@ exports[`<Navbar /> should render navbar component with safe bottom area 1`] = `
       </View>
     </View>
     <Text
-      accessibility="Home"
       accessibilityLabel="Home"
       active={true}
       lineHeightVariant="min"

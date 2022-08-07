@@ -1,14 +1,10 @@
-import type { DefaultTheme } from 'styled-components';
 import styled from 'styled-components/native';
+import { ThemeProps } from '@platformbuilders/theme-toolkit';
 
 import { getTheme, ifStyle } from '../../utils/helpers';
 import Icon from '../Icon';
 
 import TypographyComponent from '../Typography';
-
-type ThemeProps = {
-  theme: DefaultTheme;
-};
 
 type WrapperStyleProps = {
   isIOSPlatform: boolean;

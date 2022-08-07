@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { TypographyType } from '../../types';
+import { TypographyType } from '@platformbuilders/theme-toolkit';
 import { Text } from './styles';
 
 const Typography: FC<TypographyType> = ({
@@ -13,7 +13,6 @@ const Typography: FC<TypographyType> = ({
 }) => (
   <Text
     testID={id || accessibility || `${children}`}
-    accessibility={accessibility || `${children}`}
     accessibilityLabel={accessibility || `${children}`}
     ref={textRef}
     variant={variant}

@@ -1,6 +1,9 @@
 import { ReactNode } from 'react';
 import { StyleProp, TextStyle, ViewStyle } from 'react-native';
-import { ButtonVariants, TypographyVariants } from './theme_types/Variants';
+import {
+  ButtonVariants,
+  TypographyVariants,
+} from '@platformbuilders/theme-toolkit';
 import { TouchableType } from './TouchableType';
 
 export type ButtonProps = {

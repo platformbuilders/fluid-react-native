@@ -1,7 +1,6 @@
 import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
-import { ThemeProps } from '../../types';
-import { getTheme, ifStyle } from '../../utils/helpers';
+import { ThemeProps, getTheme, ifStyle } from '@platformbuilders/theme-toolkit';
 import DefaultIcon from '../Icon';
 import Typography from '../Typography';
 import DefaultCodeInput from './lib';

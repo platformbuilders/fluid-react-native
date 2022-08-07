@@ -3,10 +3,12 @@ export {
   parseToThousands,
   removeWhiteSpaces,
   toOnlyNumbers,
+} from '@platformbuilders/helpers';
+export {
   getTheme,
   ifStyle,
   switchStyle,
-} from '@platformbuilders/helpers';
+} from '@platformbuilders/theme-toolkit';
 export * from './generateHaptic';
 export * from './getByTypographyVariant';
 export * from './shadow';

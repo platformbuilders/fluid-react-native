@@ -1,8 +1,9 @@
 import React, { VFC, useCallback, useEffect, useState } from 'react';
 import { isEmpty } from 'lodash';
 import { Animated } from 'react-native';
+import { TypographyVariants } from '@platformbuilders/theme-toolkit';
 import { IconFonts, InputStatus } from '../../enums';
-import { TextInputType, TypographyVariants } from '../../types';
+import { TextInputType } from '../../types';
 import { useAutoFocus, usePrevious } from '../../utils/hooks';
 
 import FormError from '../FormError';

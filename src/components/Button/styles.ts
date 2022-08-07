@@ -1,5 +1,9 @@
 import styled from 'styled-components/native';
-import { ButtonVariants, ThemeProps, TypographyVariants } from '../../types';
+import {
+  ButtonVariants,
+  ThemeProps,
+  TypographyVariants,
+} from '@platformbuilders/theme-toolkit';
 import { getTheme, ifStyle } from '../../utils/helpers';
 import DefaultIcon from '../Icon';
 import LoadingIndicator from '../LoadingIndicator';

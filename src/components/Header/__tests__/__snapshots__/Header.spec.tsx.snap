@@ -114,7 +114,6 @@ exports[`<Header /> should render Header 1`] = `
         }
       >
         <Text
-          accessibility="Cadastro"
           accessibilityLabel="Cadastro"
           isThemePrimary={true}
           lineHeightVariant="min"
@@ -137,7 +136,6 @@ exports[`<Header /> should render Header 1`] = `
           Cadastro
         </Text>
         <Text
-          accessibility="O seu saldo é de R$2.500,00"
           accessibilityLabel="O seu saldo é de R$2.500,00"
           isThemePrimary={true}
           lineHeightVariant="min"

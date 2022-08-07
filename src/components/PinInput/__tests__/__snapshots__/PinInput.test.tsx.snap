@@ -1050,7 +1050,6 @@ Array [
     </View>
   </View>,
   <Text
-    accessibility="test"
     accessibilityLabel="test"
     centered={false}
     lineHeightVariant="min"
@@ -1566,7 +1565,6 @@ Array [
     </View>
   </View>,
   <Text
-    accessibility="Erro testError"
     accessibilityLabel="Erro testError"
     centered={false}
     large={false}

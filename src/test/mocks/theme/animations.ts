@@ -1,4 +1,4 @@
-import { Animations } from '../../../types';
+import { Animations } from '@platformbuilders/theme-toolkit';
 import ContrastLoadingAnimation from '../animations/contrast_loading.json';
 import LoadingAnimation from '../animations/loading.json';
 

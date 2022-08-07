@@ -1,7 +1,8 @@
 import { getBottomSpace } from 'react-native-iphone-x-helper';
 import { moderateScale } from 'react-native-size-matters';
-import styled, { DefaultTheme } from 'styled-components/native';
+import styled from 'styled-components/native';
 import { isIOS } from '@platformbuilders/helpers/native';
+import { ThemeProps } from '@platformbuilders/theme-toolkit';
 import { getShadow, getTheme, ifStyle } from '../../utils/helpers';
 import Icon from '../Icon';
 import Touchable from '../Touchable';
@@ -25,10 +26,9 @@ type NavbarWrapperProps = {
 };
 
 type FieldsProps = {
-  theme: DefaultTheme;
   active: boolean;
   activeColor?: string;
-};
+} & ThemeProps;
 
 export const NavbarWrapper = styled.View<NavbarWrapperProps>`
   width: 100%;

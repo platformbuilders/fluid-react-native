@@ -1,7 +1,7 @@
 import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
 
-import { ThemeProps } from '../../types';
+import { ThemeProps } from '@platformbuilders/theme-toolkit';
 import { getShadow, getTheme, ifStyle } from '../../utils/helpers';
 import DefaultIcon from '../Icon';
 import Touchable from '../Touchable';

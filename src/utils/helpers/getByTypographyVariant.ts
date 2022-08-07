@@ -1,6 +1,7 @@
 import { toNumber } from 'lodash';
 import { PixelRatio } from 'react-native';
-import { getTheme, toOnlyNumbers } from '@platformbuilders/helpers';
+import { toOnlyNumbers } from '@platformbuilders/helpers';
+import { getTheme } from '@platformbuilders/theme-toolkit';
 
 const baseFontSize = 16;
 
