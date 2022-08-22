@@ -11,8 +11,8 @@ exports[`<LoadingIndicator /> should render LoadingIndicator correctly 1`] = `
       Array [
         Object {},
         Object {
-          "height": 94.28571428571428,
-          "width": 94.28571428571428,
+          "height": 60,
+          "width": 60,
         },
       ],
     ]
@@ -37,8 +37,8 @@ exports[`<LoadingIndicator /> should render LoadingIndicator correctly 1`] = `
     style={
       Object {
         "aspectRatio": 1,
-        "height": 94.28571428571428,
-        "width": 94.28571428571428,
+        "height": 60,
+        "width": 60,
       }
     }
     testID="loading"
@@ -58,8 +58,8 @@ exports[`<LoadingIndicator /> should render LoadingIndicator with accessibility 
       Array [
         Object {},
         Object {
-          "height": 94.28571428571428,
-          "width": 94.28571428571428,
+          "height": 60,
+          "width": 60,
         },
       ],
     ]
@@ -84,8 +84,8 @@ exports[`<LoadingIndicator /> should render LoadingIndicator with accessibility 
     style={
       Object {
         "aspectRatio": 1,
-        "height": 94.28571428571428,
-        "width": 94.28571428571428,
+        "height": 60,
+        "width": 60,
       }
     }
     testID="loading"
@@ -105,8 +105,8 @@ exports[`<LoadingIndicator /> should render LoadingIndicator with contrast 1`] =
       Array [
         Object {},
         Object {
-          "height": 94.28571428571428,
-          "width": 94.28571428571428,
+          "height": 60,
+          "width": 60,
         },
       ],
     ]
@@ -131,8 +131,8 @@ exports[`<LoadingIndicator /> should render LoadingIndicator with contrast 1`] =
     style={
       Object {
         "aspectRatio": 1,
-        "height": 94.28571428571428,
-        "width": 94.28571428571428,
+        "height": 60,
+        "width": 60,
       }
     }
     testID="loading"
@@ -152,8 +152,8 @@ exports[`<LoadingIndicator /> should render LoadingIndicator with large 1`] = `
       Array [
         Object {},
         Object {
-          "height": 188.57142857142856,
-          "width": 188.57142857142856,
+          "height": 120,
+          "width": 120,
         },
       ],
     ]
@@ -178,8 +178,8 @@ exports[`<LoadingIndicator /> should render LoadingIndicator with large 1`] = `
     style={
       Object {
         "aspectRatio": 1,
-        "height": 188.57142857142856,
-        "width": 188.57142857142856,
+        "height": 120,
+        "width": 120,
       }
     }
     testID="loading"
@@ -199,8 +199,8 @@ exports[`<LoadingIndicator /> should render LoadingIndicator with variant 1`] = 
       Array [
         Object {},
         Object {
-          "height": 94.28571428571428,
-          "width": 94.28571428571428,
+          "height": 60,
+          "width": 60,
         },
       ],
     ]
@@ -225,8 +225,8 @@ exports[`<LoadingIndicator /> should render LoadingIndicator with variant 1`] = 
     style={
       Object {
         "aspectRatio": 1,
-        "height": 94.28571428571428,
-        "width": 94.28571428571428,
+        "height": 60,
+        "width": 60,
       }
     }
     testID="loading"
