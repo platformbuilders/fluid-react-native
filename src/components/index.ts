@@ -26,3 +26,4 @@ export { default as LabelDivider } from './LabelDivider';
 export { default as Header } from './Header';
 export { TextInputMask, MaskService, TextMask } from './MaskedText';
 export { default as Navbar } from './Navbar';
+export { default as Toggle } from './Toggle';
