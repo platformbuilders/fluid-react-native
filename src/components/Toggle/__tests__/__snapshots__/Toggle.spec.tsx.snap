@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ToggleButton /> should render component disabled if disable props is passed 1`] = `
+<RCTSwitch
+  accessibilityRole="switch"
+  disabled={true}
+  onChange={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  onTintColor="#C6B09E80"
+  style={
+    Array [
+      Object {
+        "height": 31,
+        "width": 51,
+      },
+      Array [
+        Array [
+          Object {},
+        ],
+        Object {
+          "backgroundColor": "#0000004D",
+          "borderRadius": 16,
+        },
+      ],
+    ]
+  }
+  testID="toggle_button"
+  thumbTintColor="#C6B09E"
+  tintColor="#0000004D"
+  value={true}
+/>
+`;
+
+exports[`<ToggleButton /> should render component with custom thumb color 1`] = `
+<RCTSwitch
+  accessibilityRole="switch"
+  disabled={false}
+  onChange={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  onTintColor="#C6B09E80"
+  style={
+    Array [
+      Object {
+        "height": 31,
+        "width": 51,
+      },
+      Array [
+        Array [
+          Object {},
+        ],
+        Object {
+          "backgroundColor": "#0000004D",
+          "borderRadius": 16,
+        },
+      ],
+    ]
+  }
+  testID="toggle_button"
+  thumbColorProps={
+    Object {
+      "falseColor": "blue",
+      "trueColor": "red",
+    }
+  }
+  thumbTintColor="red"
+  tintColor="#0000004D"
+  value={true}
+/>
+`;
+
+exports[`<ToggleButton /> should render component with custom track color 1`] = `
+<RCTSwitch
+  accessibilityRole="switch"
+  disabled={false}
+  onChange={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  onTintColor="red"
+  style={
+    Array [
+      Object {
+        "height": 31,
+        "width": 51,
+      },
+      Array [
+        Array [
+          Object {},
+        ],
+        Object {
+          "backgroundColor": "blue",
+          "borderRadius": 16,
+        },
+      ],
+    ]
+  }
+  testID="toggle_button"
+  thumbTintColor="#C6B09E"
+  tintColor="blue"
+  trackColorProps={
+    Object {
+      "falseColor": "blue",
+      "trueColor": "red",
+    }
+  }
+  value={true}
+/>
+`;
+
+exports[`<ToggleButton /> should render toggle component 1`] = `
+<RCTSwitch
+  accessibilityRole="switch"
+  disabled={false}
+  onChange={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  onTintColor="#C6B09E80"
+  style={
+    Array [
+      Object {
+        "height": 31,
+        "width": 51,
+      },
+      Array [
+        Array [
+          Object {},
+        ],
+        Object {
+          "backgroundColor": "#0000004D",
+          "borderRadius": 16,
+        },
+      ],
+    ]
+  }
+  testID="toggle_button"
+  thumbTintColor="#C6B09E"
+  tintColor="#0000004D"
+  value={true}
+/>
+`;
