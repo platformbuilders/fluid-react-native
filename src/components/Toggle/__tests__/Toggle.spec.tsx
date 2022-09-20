@@ -74,7 +74,7 @@ describe('<ToggleButton />', () => {
     const component = getByTestId('toggle_button');
 
     expect(component).toHaveProperty(
-      ['_fiber', 'memoizedProps', ['disabled']],
+      ['_fiber', 'memoizedProps', 'disabled'],
       true,
     );
   });
