@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {
-  I18nManager,
-  StyleSheet,
-  Text,
-  TextInput,
-  View,
-  ViewPropTypes,
-} from 'react-native';
+import { I18nManager, StyleSheet, Text, TextInput, View } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 const styles = StyleSheet.create({
   containerDefault: {},
@@ -287,12 +280,12 @@ SmoothPinCodeInput.propTypes = {
   password: PropTypes.bool,
   autoFocus: PropTypes.bool,
   restrictToNumbers: PropTypes.bool,
-  containerStyle: ViewPropTypes.style,
-  cellStyle: ViewPropTypes.style,
-  cellStyleFocused: ViewPropTypes.style,
-  cellStyleFilled: ViewPropTypes.style,
-  textStyle: Text.propTypes.style,
-  textStyleFocused: Text.propTypes.style,
+  containerStyle: PropTypes.style,
+  cellStyle: PropTypes.style,
+  cellStyleFocused: PropTypes.style,
+  cellStyleFilled: PropTypes.style,
+  textStyle: PropTypes.style,
+  textStyleFocused: PropTypes.style,
   animated: PropTypes.bool,
   animationFocused: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   onFulfill: PropTypes.func,
