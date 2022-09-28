@@ -51,9 +51,7 @@ exports[`<TextInput /> should render textinput 1`] = `
       }
       testID="error_test"
       variant="md"
-    >
-      
-    </Text>
+    />
     <View
       multiline={false}
       rightIcon={false}
