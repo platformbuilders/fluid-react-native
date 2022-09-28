@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC, PropsWithChildren } from 'react';
 import { StyleProp, ViewStyle } from 'react-native';
 import { TypographyVariants } from '@platformbuilders/theme-toolkit';
 import { TouchableType } from '../../types';
@@ -8,10 +8,9 @@ import { Text } from './styles';
 interface Props extends TouchableType {
   variant?: TypographyVariants;
   style?: StyleProp<ViewStyle>;
-  children?: ReactNode;
 }
 
-const Link: FC<Props> = ({
+const Link: FC<PropsWithChildren<Props>> = ({
   id,
   onPress,
   children,

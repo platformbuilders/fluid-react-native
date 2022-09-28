@@ -1,14 +1,17 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC, PropsWithChildren } from 'react';
 import { View as DefaultView } from 'react-native';
 import If from '../If';
 import { View } from './styles';
 
 type Props = {
   hasShadow?: boolean;
-  children?: ReactNode;
 };
 
-const Shadow: FC<Props> = ({ children, hasShadow = true, ...rest }) => (
+const Shadow: FC<PropsWithChildren<Props>> = ({
+  children,
+  hasShadow = true,
+  ...rest
+}) => (
   <>
     <If condition={hasShadow}>
       <View {...rest}>{children}</View>
