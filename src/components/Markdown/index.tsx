@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { TextStyle } from 'react-native';
 import Markdown from 'react-native-markdown-display';
 
 type Props = {
   textStyle?: TextStyle;
+  children?: ReactNode;
 };
 
 const MarkdownRenderer: React.FC<Props> = ({ textStyle = {}, children }) => (
