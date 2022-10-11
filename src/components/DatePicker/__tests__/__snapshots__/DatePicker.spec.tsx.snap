@@ -21,9 +21,7 @@ Array [
         },
       ]
     }
-  >
-    
-  </Text>,
+  />,
   <View
     accessible={true}
     focusable={true}
@@ -332,9 +330,7 @@ Array [
         },
       ]
     }
-  >
-    
-  </Text>,
+  />,
   <View
     accessible={true}
     focusable={true}
@@ -643,9 +639,7 @@ Array [
         },
       ]
     }
-  >
-    
-  </Text>,
+  />,
   <View
     accessible={true}
     focusable={true}
@@ -954,9 +948,7 @@ Array [
         },
       ]
     }
-  >
-    
-  </Text>,
+  />,
   <View
     accessible={true}
     focusable={true}
@@ -1265,9 +1257,7 @@ Array [
         },
       ]
     }
-  >
-    
-  </Text>,
+  />,
   <View
     accessible={true}
     focusable={true}
@@ -1576,9 +1566,7 @@ Array [
         },
       ]
     }
-  >
-    
-  </Text>,
+  />,
   <View
     accessible={true}
     focusable={true}
@@ -1887,9 +1875,7 @@ Array [
         },
       ]
     }
-  >
-    
-  </Text>,
+  />,
   <View
     accessible={true}
     focusable={true}
@@ -2198,9 +2184,7 @@ Array [
         },
       ]
     }
-  >
-    
-  </Text>,
+  />,
   <View
     accessible={true}
     focusable={true}
@@ -2509,9 +2493,7 @@ Array [
         },
       ]
     }
-  >
-    
-  </Text>,
+  />,
   <View
     accessible={true}
     focusable={true}
@@ -2844,9 +2826,7 @@ Array [
         },
       ]
     }
-  >
-    
-  </Text>,
+  />,
   <View
     accessible={true}
     focusable={true}
@@ -3466,9 +3446,7 @@ Array [
         },
       ]
     }
-  >
-    
-  </Text>,
+  />,
   <View
     accessible={true}
     focusable={true}
@@ -3777,9 +3755,7 @@ Array [
         },
       ]
     }
-  >
-    
-  </Text>,
+  />,
   <View
     accessible={true}
     focusable={true}
@@ -4088,9 +4064,7 @@ Array [
         },
       ]
     }
-  >
-    
-  </Text>,
+  />,
   <View
     accessible={true}
     focusable={true}
@@ -4399,9 +4373,7 @@ Array [
         },
       ]
     }
-  >
-    
-  </Text>,
+  />,
   <View
     accessible={true}
     focusable={true}

@@ -68,9 +68,7 @@ exports[`<PinInput /> should render textinput 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 1"
@@ -103,9 +101,7 @@ exports[`<PinInput /> should render textinput 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 2"
@@ -138,9 +134,7 @@ exports[`<PinInput /> should render textinput 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 3"
@@ -173,9 +167,7 @@ exports[`<PinInput /> should render textinput 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
     </View>
     <TextInput
@@ -278,9 +270,7 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 1"
@@ -313,9 +303,7 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 2"
@@ -348,9 +336,7 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 3"
@@ -383,9 +369,7 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
     </View>
     <TextInput
@@ -488,9 +472,7 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 1"
@@ -523,9 +505,7 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 2"
@@ -558,9 +538,7 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 3"
@@ -593,9 +571,7 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
     </View>
     <TextInput
@@ -698,9 +674,7 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 1"
@@ -733,9 +707,7 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 2"
@@ -768,9 +740,7 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 3"
@@ -803,9 +773,7 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
     </View>
     <TextInput
@@ -909,9 +877,7 @@ Array [
                 Object {},
               ]
             }
-          >
-            
-          </Text>
+          />
         </View>
         <View
           accessibilityLabel="Insira o PIN 1"
@@ -944,9 +910,7 @@ Array [
                 Object {},
               ]
             }
-          >
-            
-          </Text>
+          />
         </View>
         <View
           accessibilityLabel="Insira o PIN 2"
@@ -979,9 +943,7 @@ Array [
                 Object {},
               ]
             }
-          >
-            
-          </Text>
+          />
         </View>
         <View
           accessibilityLabel="Insira o PIN 3"
@@ -1014,9 +976,7 @@ Array [
                 Object {},
               ]
             }
-          >
-            
-          </Text>
+          />
         </View>
       </View>
       <TextInput
@@ -1143,9 +1103,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 1"
@@ -1178,9 +1136,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 2"
@@ -1213,9 +1169,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 3"
@@ -1248,9 +1202,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 4"
@@ -1283,9 +1235,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 5"
@@ -1318,9 +1268,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
     </View>
     <TextInput
@@ -1424,9 +1372,7 @@ Array [
                 Object {},
               ]
             }
-          >
-            
-          </Text>
+          />
         </View>
         <View
           accessibilityLabel="Insira o PIN 1"
@@ -1459,9 +1405,7 @@ Array [
                 Object {},
               ]
             }
-          >
-            
-          </Text>
+          />
         </View>
         <View
           accessibilityLabel="Insira o PIN 2"
@@ -1494,9 +1438,7 @@ Array [
                 Object {},
               ]
             }
-          >
-            
-          </Text>
+          />
         </View>
         <View
           accessibilityLabel="Insira o PIN 3"
@@ -1529,9 +1471,7 @@ Array [
                 Object {},
               ]
             }
-          >
-            
-          </Text>
+          />
         </View>
       </View>
       <TextInput
@@ -1659,9 +1599,7 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 1"
@@ -1694,9 +1632,7 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 2"
@@ -1729,9 +1665,7 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 3"
@@ -1764,9 +1698,7 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
     </View>
     <TextInput
@@ -1869,9 +1801,7 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 1"
@@ -1904,9 +1834,7 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 2"
@@ -1939,9 +1867,7 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 3"
@@ -1974,9 +1900,7 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
     </View>
     <TextInput
@@ -2079,9 +2003,7 @@ exports[`<PinInput /> should render textinput with error 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 1"
@@ -2114,9 +2036,7 @@ exports[`<PinInput /> should render textinput with error 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 2"
@@ -2149,9 +2069,7 @@ exports[`<PinInput /> should render textinput with error 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 3"
@@ -2184,9 +2102,7 @@ exports[`<PinInput /> should render textinput with error 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
     </View>
     <TextInput
@@ -2289,9 +2205,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 1"
@@ -2324,9 +2238,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 2"
@@ -2359,9 +2271,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <View
         accessibilityLabel="Insira o PIN 3"
@@ -2394,9 +2304,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
     </View>
     <TextInput

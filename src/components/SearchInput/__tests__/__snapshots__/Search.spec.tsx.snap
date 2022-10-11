@@ -76,9 +76,7 @@ exports[`<Search /> should render search 1`] = `
         }
         testID="error_test"
         variant="md"
-      >
-        
-      </Text>
+      />
       <View
         multiline={false}
         rightIcon={false}
@@ -297,9 +295,7 @@ exports[`<Search /> should render search with auto focus 1`] = `
         }
         testID="error_test"
         variant="xs"
-      >
-        
-      </Text>
+      />
       <View
         multiline={false}
         rightIcon={false}
@@ -517,9 +513,7 @@ exports[`<Search /> should render search with custom container style 1`] = `
         }
         testID="error_test"
         variant="xs"
-      >
-        
-      </Text>
+      />
       <View
         multiline={false}
         rightIcon={false}
@@ -734,9 +728,7 @@ exports[`<Search /> should render search with custom icon color 1`] = `
         }
         testID="error_test"
         variant="xs"
-      >
-        
-      </Text>
+      />
       <View
         multiline={false}
         rightIcon={false}
@@ -953,9 +945,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
         }
         testID="error_test"
         variant="md"
-      >
-        
-      </Text>
+      />
       <View
         multiline={false}
         rightIcon={false}
@@ -1176,9 +1166,7 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
         }
         testID="error_test"
         variant="md"
-      >
-        
-      </Text>
+      />
       <View
         multiline={false}
         rightIcon={false}
@@ -1399,9 +1387,7 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
         }
         testID="error_test"
         variant="md"
-      >
-        
-      </Text>
+      />
       <View
         multiline={false}
         rightIcon={false}
@@ -1620,9 +1606,7 @@ exports[`<Search /> should render search with custom text style 1`] = `
         }
         testID="error_test"
         variant="xs"
-      >
-        
-      </Text>
+      />
       <View
         multiline={false}
         rightIcon={false}
@@ -1839,9 +1823,7 @@ exports[`<Search /> should render search with icon size 1`] = `
         }
         testID="error_test"
         variant="xs"
-      >
-        
-      </Text>
+      />
       <View
         multiline={false}
         rightIcon={false}
@@ -2056,9 +2038,7 @@ exports[`<Search /> should render search with left icon 1`] = `
         }
         testID="error_test"
         variant="xs"
-      >
-        
-      </Text>
+      />
       <View
         multiline={false}
         rightIcon={false}
@@ -2273,9 +2253,7 @@ exports[`<Search /> should render search with padding 1`] = `
         }
         testID="error_test"
         variant="md"
-      >
-        
-      </Text>
+      />
       <View
         multiline={false}
         padding={24}
@@ -2497,9 +2475,7 @@ exports[`<Search /> should render search with right icon 1`] = `
         }
         testID="error_test"
         variant="md"
-      >
-        
-      </Text>
+      />
       <View
         multiline={false}
         rightIcon={true}
@@ -2727,9 +2703,7 @@ exports[`<Search /> should render search with shadow 1`] = `
         }
         testID="error_test"
         variant="md"
-      >
-        
-      </Text>
+      />
       <View
         multiline={false}
         rightIcon={false}
@@ -2949,9 +2923,7 @@ exports[`<Search /> should render search with wrapper height 1`] = `
         }
         testID="error_test"
         variant="xs"
-      >
-        
-      </Text>
+      />
       <View
         multiline={false}
         rightIcon={false}

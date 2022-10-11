@@ -31,9 +31,7 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
     }
     testID=""
     variant="md"
-  >
-    
-  </Text>
+  />
   <View
     accessible={true}
     focusable={true}
@@ -95,8 +93,6 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
     }
     testID=""
     variant="md"
-  >
-    
-  </Text>
+  />
 </View>
 `;
