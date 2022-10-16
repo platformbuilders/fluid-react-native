@@ -29,8 +29,8 @@ export type TextInputType = {
   iconTouchableEnabled?: boolean;
   textStyle?: StyleProp<TextStyle>;
   labelStyle?: any;
-  rootStyle?: StyleProp<ViewStyle>;
-  errorStyle?: StyleProp<TextStyle>;
+  rootStyle?: any;
+  errorStyle?: any;
   maskType?: TextInputMaskTypeProp;
   label?: string;
   iconName?: string;
