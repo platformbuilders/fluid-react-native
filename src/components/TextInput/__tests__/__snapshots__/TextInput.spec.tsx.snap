@@ -2,133 +2,142 @@
 
 exports[`<TextInput /> should render textinput 1`] = `
 <View
-  multiline={false}
   style={
     Array [
-      Object {
-        "justifyContent": "flex-start",
-        "paddingTop": 0,
-        "position": "relative",
-      },
+      Object {},
       Object {},
     ]
   }
 >
   <View
-    borderedRadius={0}
-    error={false}
-    showBorderErrored={true}
+    multiline={false}
     style={
       Array [
         Object {
-          "borderColor": "black",
-          "borderStyle": "solid",
-          "borderWidth": 0,
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
         },
+        Object {},
       ]
     }
   >
-    <Text
-      accessibilityLabel="Erro "
-      collapsable={false}
-      contrast={false}
-      nativeID="animatedComponent"
-      status="default"
-      style={
-        Array [
-          Object {
-            "color": "#000000",
-            "fontSize": 15,
-            "lineHeight": 18,
-            "position": "absolute",
-            "top": 8,
-          },
-          Object {
-            "fontSize": 18,
-            "top": 8,
-          },
-        ]
-      }
-      testID="error_test"
-      variant="md"
-    />
     <View
-      multiline={false}
-      rightIcon={false}
+      borderedRadius={0}
+      error={false}
+      showBorderErrored={true}
       style={
         Array [
           Object {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "maxWidth": "100%",
-            "overflow": "hidden",
-            "paddingLeft": 4,
-            "paddingRight": 4,
-            "paddingTop": 4,
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
           },
         ]
       }
     >
-      <TextInput
-        accessibility=""
-        accessibilityLabel=""
-        allowFontScaling={false}
-        centered={false}
+      <Text
+        accessibilityLabel="Erro "
+        collapsable={false}
         contrast={false}
-        id="test"
-        inputRef="$text"
-        isPlaceholder={true}
-        keyboardType="default"
-        large={false}
-        multiline={false}
-        onBlur={[Function]}
-        onChangeText={[Function]}
-        onFocus={[Function]}
-        placeholder=""
-        placeholderTextColor="#72727260"
+        nativeID="animatedComponent"
         status="default"
         style={
           Array [
             Object {
-              "borderWidth": 0,
               "color": "#000000",
-              "flexBasis": 0,
-              "flexGrow": 1,
-              "flexShrink": 1,
               "fontSize": 15,
-              "marginTop": 0,
-              "minHeight": 37.714285714285715,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-              "width": "100%",
+              "lineHeight": 18,
+              "position": "absolute",
+              "top": 8,
             },
-            Object {},
+            Object {
+              "fontSize": 18,
+              "top": 8,
+            },
           ]
         }
-        testID="test"
-        textAlign="left"
-        type="no-mask"
-        underlineColorAndroid="transparent"
-        value=""
+        testID="error_test"
         variant="md"
-        withBottomline={true}
+      />
+      <View
+        multiline={false}
+        rightIcon={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityLabel=""
+          allowFontScaling={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          inputRef="$text"
+          isPlaceholder={true}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          placeholder=""
+          placeholderTextColor="#72727260"
+          status="default"
+          style={
+            Array [
+              Object {
+                "borderWidth": 0,
+                "color": "#000000",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontSize": 15,
+                "marginTop": 0,
+                "minHeight": 37.714285714285715,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": "100%",
+              },
+              Object {},
+            ]
+          }
+          testID="test"
+          textAlign="left"
+          type="no-mask"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
+        />
+      </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#000000",
+              "height": 0.5,
+            },
+          ]
+        }
       />
     </View>
-    <View
-      contrast={false}
-      status="default"
-      style={
-        Array [
-          Object {
-            "backgroundColor": "#000000",
-            "height": 0.5,
-          },
-        ]
-      }
-    />
   </View>
 </View>
 `;

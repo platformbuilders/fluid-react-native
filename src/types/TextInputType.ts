@@ -28,13 +28,15 @@ export type TextInputType = {
   iconSize?: number;
   iconTouchableEnabled?: boolean;
   textStyle?: StyleProp<TextStyle>;
+  labelStyle?: any;
+  rootStyle?: StyleProp<ViewStyle>;
+  errorStyle?: StyleProp<TextStyle>;
   maskType?: TextInputMaskTypeProp;
   label?: string;
   iconName?: string;
   status?: string;
   error?: string | boolean;
   iconHitSlop?: HitSlopType;
-  labelStyle?: any;
   isPlaceholder?: boolean;
   onPressIcon?(arg?: any): void;
   onBlur?(x?: any): void;

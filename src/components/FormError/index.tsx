@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { StyleProp, TextStyle } from 'react-native';
 import { ErrorText } from './styles';
 
 const warnBoolean = (): void =>
@@ -13,6 +14,7 @@ type Props = {
   error?: string | string[] | boolean;
   id?: string;
   accessibility?: string;
+  style?: StyleProp<TextStyle>;
 };
 
 const FormError: FC<Props> = ({
