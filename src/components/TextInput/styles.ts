@@ -105,7 +105,13 @@ type WrapperProps = {
   style?: any;
 };
 
-export const Wrapper = styled.View<WrapperProps>`
+type RootWrapperProps = {
+  style?: any;
+};
+
+export const RootWrapper = styled.View<RootWrapperProps>``;
+
+export const InputWrapper = styled.View<WrapperProps>`
   justify-content: ${hasLabel('flex-end', 'flex-start')};
   padding-top: ${hasLabel(smallSpacing, 0)}px;
   position: relative;

@@ -17,10 +17,11 @@ import {
   InputAreaWrapper,
   InputBorderedAreaWrapper,
   InputBorderedColumnWrapper,
+  InputWrapper,
   LABEL_LOWER_STYLE,
   LABEL_UPPER_STYLE,
   Label,
-  Wrapper,
+  RootWrapper,
 } from './styles';
 
 const TextInput: VFC<TextInputType> = ({
@@ -47,7 +48,9 @@ const TextInput: VFC<TextInputType> = ({
   placeholder = '',
   error = '',
   style = {},
+  errorStyle = {},
   textStyle = {},
+  rootStyle = {},
   labelStyle = {},
   iconHitSlop = {},
   inputRef,
@@ -228,86 +231,91 @@ const TextInput: VFC<TextInputType> = ({
   );
 
   return (
-    <Wrapper style={style} multiline={multiline}>
+    <RootWrapper style={rootStyle}>
       <FormError
         id={id || accessibility}
         accessibility={accessibility}
         centered={centered}
         error={error}
         large={large}
+        style={errorStyle}
       >
-        <BorderedWrapper
-          borderedBackgroundColor={borderedBackgroundColor}
-          borderedHeight={borderedHeight}
-          borderedColor={borderedColor}
-          borderedRadius={borderedRadius}
-          error={hasError}
-          showBorderErrored={showBorderErrored}
-        >
-          {!centered &&
-            !borderedHeight &&
-            !(hidePlaceholderOnFocus && !isPlaceholder) && (
-              <Label
-                status={status}
-                contrast={contrast}
-                style={[labelAnimatedStyle, labelStyle]}
-                variant={isPlaceholder ? placeholderVariant : labelVariant}
-                testID={`error_${id || accessibility}`}
-                accessibilityLabel={`Erro ${accessibility}`}
+        <InputWrapper style={style} multiline={multiline}>
+          <BorderedWrapper
+            borderedBackgroundColor={borderedBackgroundColor}
+            borderedHeight={borderedHeight}
+            borderedColor={borderedColor}
+            borderedRadius={borderedRadius}
+            error={hasError}
+            showBorderErrored={showBorderErrored}
+          >
+            {!centered &&
+              !borderedHeight &&
+              !(hidePlaceholderOnFocus && !isPlaceholder) && (
+                <Label
+                  status={status}
+                  contrast={contrast}
+                  style={[labelAnimatedStyle, labelStyle]}
+                  variant={isPlaceholder ? placeholderVariant : labelVariant}
+                  testID={`error_${id || accessibility}`}
+                  accessibilityLabel={`Erro ${accessibility}`}
+                >
+                  {label}
+                </Label>
+              )}
+            {!isEmpty(borderedLabel) && isEmpty(label) && !!borderedHeight && (
+              <FixedLabelAboveBorder
+                style={labelStyle}
+                variant={fixedLabelVariant}
               >
-                {label}
-              </Label>
+                {borderedLabel}
+              </FixedLabelAboveBorder>
             )}
-          {!isEmpty(borderedLabel) && isEmpty(label) && !!borderedHeight && (
-            <FixedLabelAboveBorder
-              style={labelStyle}
-              variant={fixedLabelVariant}
-            >
-              {borderedLabel}
-            </FixedLabelAboveBorder>
-          )}
-          {borderedHeight ? (
-            <InputBorderedAreaWrapper hasBottomLine={withBottomline}>
-              {!isEmpty(iconBordered) && renderIcon(iconBordered, true)}
-              <InputBorderedColumnWrapper
-                hasLeftIcon={!isEmpty(iconBordered)}
+            {borderedHeight ? (
+              <InputBorderedAreaWrapper hasBottomLine={withBottomline}>
+                {!isEmpty(iconBordered) && renderIcon(iconBordered, true)}
+                <InputBorderedColumnWrapper
+                  hasLeftIcon={!isEmpty(iconBordered)}
+                  multiline={multiline}
+                  padding={inputPadding}
+                >
+                  {!isEmpty(label) && isEmpty(borderedLabel) && (
+                    <FixedLabel
+                      hasLeftIcon={!isEmpty(iconBordered)}
+                      variant={fixedLabelVariant}
+                    >
+                      {label}
+                    </FixedLabel>
+                  )}
+                  {renderTextInput(renderStatus)}
+                </InputBorderedColumnWrapper>
+                {!isEmpty(icon) && renderIcon(icon || '')}
+              </InputBorderedAreaWrapper>
+            ) : (
+              <InputAreaWrapper
                 multiline={multiline}
                 padding={inputPadding}
+                rightIcon={!!rightIconName}
+                inputLeftPadding={inputLeftPadding}
+                inputRightPadding={inputRightPadding}
               >
-                {!isEmpty(label) && isEmpty(borderedLabel) && (
-                  <FixedLabel
-                    hasLeftIcon={!isEmpty(iconBordered)}
-                    variant={fixedLabelVariant}
-                  >
-                    {label}
-                  </FixedLabel>
-                )}
+                {borderedHeight && <FixedLabel>{label}</FixedLabel>}
+                {!!leftIconName && renderIcon(leftIconName, true)}
                 {renderTextInput(renderStatus)}
-              </InputBorderedColumnWrapper>
-              {!isEmpty(icon) && renderIcon(icon || '')}
-            </InputBorderedAreaWrapper>
-          ) : (
-            <InputAreaWrapper
-              multiline={multiline}
-              padding={inputPadding}
-              rightIcon={!!rightIconName}
-              inputLeftPadding={inputLeftPadding}
-              inputRightPadding={inputRightPadding}
-            >
-              {borderedHeight && <FixedLabel>{label}</FixedLabel>}
-              {!!leftIconName && renderIcon(leftIconName, true)}
-              {renderTextInput(renderStatus)}
-              {!!rightIconName && renderIcon(rightIconName)}
-              {!leftIconName &&
-                !rightIconName &&
-                !isEmpty(icon) &&
-                renderIcon(icon as string)}
-            </InputAreaWrapper>
-          )}
-          {withBottomline && <BottomLine status={status} contrast={contrast} />}
-        </BorderedWrapper>
+                {!!rightIconName && renderIcon(rightIconName)}
+                {!leftIconName &&
+                  !rightIconName &&
+                  !isEmpty(icon) &&
+                  renderIcon(icon as string)}
+              </InputAreaWrapper>
+            )}
+            {withBottomline && (
+              <BottomLine status={status} contrast={contrast} />
+            )}
+          </BorderedWrapper>
+        </InputWrapper>
       </FormError>
-    </Wrapper>
+    </RootWrapper>
   );
 };
 
