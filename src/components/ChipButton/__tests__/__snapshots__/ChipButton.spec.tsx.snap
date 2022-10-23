@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Button /> should render button 1`] = `
+exports[`<ChipButton /> should render Chipbutton 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
@@ -21,7 +21,7 @@ exports[`<Button /> should render button 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 3,
+      "borderRadius": 20,
       "opacity": 1,
     }
   }
@@ -32,25 +32,24 @@ exports[`<Button /> should render button 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
-    rounded={false}
+    minWidth={140}
     style={
       Array [
         Object {
+          "//": 40,
           "alignItems": "center",
-          "backgroundColor": "#C6B09E",
-          "borderColor": "#C6B09E",
-          "borderRadius": 3,
+          "alignSelf": "center",
+          "backgroundColor": undefined,
+          "borderColor": undefined,
+          "borderRadius": 40,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 45,
           "justifyContent": "center",
-          "maxWidth": "100%",
-          "minWidth": 180,
           "overflow": "hidden",
-          "paddingBottom": 4,
-          "paddingLeft": 4,
-          "paddingRight": 4,
-          "paddingTop": 4,
+          "paddingBottom": 12,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 12,
         },
         Object {},
       ]
@@ -72,7 +71,7 @@ exports[`<Button /> should render button 1`] = `
           Object {
             "color": "#ffffff",
             "fontWeight": "bold",
-            "letterSpacing": 0.4,
+            "letterSpacing": -0.41,
           },
           Object {},
         ]
@@ -84,7 +83,7 @@ exports[`<Button /> should render button 1`] = `
 </View>
 `;
 
-exports[`<Button /> should render button when rounded 1`] = `
+exports[`<ChipButton /> should render Chipbutton when rounded 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
@@ -105,7 +104,7 @@ exports[`<Button /> should render button when rounded 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 22.5,
+      "borderRadius": 20,
       "opacity": 1,
     }
   }
@@ -116,25 +115,24 @@ exports[`<Button /> should render button when rounded 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
-    rounded={true}
+    minWidth={140}
     style={
       Array [
         Object {
+          "//": 40,
           "alignItems": "center",
-          "backgroundColor": "#C6B09E",
-          "borderColor": "#C6B09E",
-          "borderRadius": 22.5,
+          "alignSelf": "center",
+          "backgroundColor": undefined,
+          "borderColor": undefined,
+          "borderRadius": 40,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 45,
           "justifyContent": "center",
-          "maxWidth": "100%",
-          "minWidth": 180,
           "overflow": "hidden",
-          "paddingBottom": 0,
-          "paddingLeft": 0,
-          "paddingRight": 0,
-          "paddingTop": 0,
+          "paddingBottom": 12,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 12,
         },
         Object {},
       ]
@@ -156,7 +154,7 @@ exports[`<Button /> should render button when rounded 1`] = `
           Object {
             "color": "#ffffff",
             "fontWeight": "bold",
-            "letterSpacing": 0.4,
+            "letterSpacing": -0.41,
           },
           Object {},
         ]
@@ -168,7 +166,7 @@ exports[`<Button /> should render button when rounded 1`] = `
 </View>
 `;
 
-exports[`<Button /> should render button with children 1`] = `
+exports[`<ChipButton /> should render Chipbutton with children 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
@@ -189,7 +187,7 @@ exports[`<Button /> should render button with children 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 3,
+      "borderRadius": 20,
       "opacity": 1,
     }
   }
@@ -200,25 +198,24 @@ exports[`<Button /> should render button with children 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
-    rounded={false}
+    minWidth={140}
     style={
       Array [
         Object {
+          "//": 40,
           "alignItems": "center",
-          "backgroundColor": "#C6B09E",
-          "borderColor": "#C6B09E",
-          "borderRadius": 3,
+          "alignSelf": "center",
+          "backgroundColor": undefined,
+          "borderColor": undefined,
+          "borderRadius": 40,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 45,
           "justifyContent": "center",
-          "maxWidth": "100%",
-          "minWidth": 180,
           "overflow": "hidden",
-          "paddingBottom": 4,
-          "paddingLeft": 4,
-          "paddingRight": 4,
-          "paddingTop": 4,
+          "paddingBottom": 12,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 12,
         },
         Object {},
       ]
@@ -240,7 +237,7 @@ exports[`<Button /> should render button with children 1`] = `
           Object {
             "color": "#ffffff",
             "fontWeight": "bold",
-            "letterSpacing": 0.4,
+            "letterSpacing": -0.41,
           },
           Object {},
         ]
@@ -270,7 +267,7 @@ exports[`<Button /> should render button with children 1`] = `
 </View>
 `;
 
-exports[`<Button /> should render button with contrast 1`] = `
+exports[`<ChipButton /> should render Chipbutton with contrast 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
@@ -291,7 +288,7 @@ exports[`<Button /> should render button with contrast 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 3,
+      "borderRadius": 20,
       "opacity": 1,
     }
   }
@@ -302,25 +299,24 @@ exports[`<Button /> should render button with contrast 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
-    rounded={false}
+    minWidth={140}
     style={
       Array [
         Object {
+          "//": 40,
           "alignItems": "center",
-          "backgroundColor": "#C6B09E",
-          "borderColor": "#C6B09E",
-          "borderRadius": 3,
+          "alignSelf": "center",
+          "backgroundColor": undefined,
+          "borderColor": undefined,
+          "borderRadius": 40,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 45,
           "justifyContent": "center",
-          "maxWidth": "100%",
-          "minWidth": 180,
           "overflow": "hidden",
-          "paddingBottom": 4,
-          "paddingLeft": 4,
-          "paddingRight": 4,
-          "paddingTop": 4,
+          "paddingBottom": 12,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 12,
         },
         Object {},
       ]
@@ -342,7 +338,7 @@ exports[`<Button /> should render button with contrast 1`] = `
           Object {
             "color": "#ffffff",
             "fontWeight": "bold",
-            "letterSpacing": 0.4,
+            "letterSpacing": -0.41,
           },
           Object {},
         ]
@@ -354,7 +350,7 @@ exports[`<Button /> should render button with contrast 1`] = `
 </View>
 `;
 
-exports[`<Button /> should render button with custom accessibility label 1`] = `
+exports[`<ChipButton /> should render Chipbutton with custom accessibility label 1`] = `
 <View
   accessibilityLabel="testing"
   accessibilityState={
@@ -375,7 +371,7 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 3,
+      "borderRadius": 20,
       "opacity": 1,
     }
   }
@@ -386,25 +382,24 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
-    rounded={false}
+    minWidth={140}
     style={
       Array [
         Object {
+          "//": 40,
           "alignItems": "center",
-          "backgroundColor": "#C6B09E",
-          "borderColor": "#C6B09E",
-          "borderRadius": 3,
+          "alignSelf": "center",
+          "backgroundColor": undefined,
+          "borderColor": undefined,
+          "borderRadius": 40,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 45,
           "justifyContent": "center",
-          "maxWidth": "100%",
-          "minWidth": 180,
           "overflow": "hidden",
-          "paddingBottom": 4,
-          "paddingLeft": 4,
-          "paddingRight": 4,
-          "paddingTop": 4,
+          "paddingBottom": 12,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 12,
         },
         Object {},
       ]
@@ -426,7 +421,7 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
           Object {
             "color": "#ffffff",
             "fontWeight": "bold",
-            "letterSpacing": 0.4,
+            "letterSpacing": -0.41,
           },
           Object {},
         ]
@@ -438,7 +433,7 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
 </View>
 `;
 
-exports[`<Button /> should render button with custom style 1`] = `
+exports[`<ChipButton /> should render Chipbutton with custom style 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
@@ -459,7 +454,7 @@ exports[`<Button /> should render button with custom style 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 3,
+      "borderRadius": 20,
       "opacity": 1,
     }
   }
@@ -470,25 +465,24 @@ exports[`<Button /> should render button with custom style 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
-    rounded={false}
+    minWidth={140}
     style={
       Array [
         Object {
+          "//": 40,
           "alignItems": "center",
-          "backgroundColor": "#C6B09E",
-          "borderColor": "#C6B09E",
-          "borderRadius": 3,
+          "alignSelf": "center",
+          "backgroundColor": undefined,
+          "borderColor": undefined,
+          "borderRadius": 40,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 45,
           "justifyContent": "center",
-          "maxWidth": "100%",
-          "minWidth": 180,
           "overflow": "hidden",
-          "paddingBottom": 4,
-          "paddingLeft": 4,
-          "paddingRight": 4,
-          "paddingTop": 4,
+          "paddingBottom": 12,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 12,
         },
         Object {
           "backgroundColor": "#2980b9",
@@ -512,7 +506,7 @@ exports[`<Button /> should render button with custom style 1`] = `
           Object {
             "color": "#ffffff",
             "fontWeight": "bold",
-            "letterSpacing": 0.4,
+            "letterSpacing": -0.41,
           },
           Object {},
         ]
@@ -524,7 +518,7 @@ exports[`<Button /> should render button with custom style 1`] = `
 </View>
 `;
 
-exports[`<Button /> should render button with custom text style 1`] = `
+exports[`<ChipButton /> should render Chipbutton with custom text style 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
@@ -545,7 +539,7 @@ exports[`<Button /> should render button with custom text style 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 3,
+      "borderRadius": 20,
       "opacity": 1,
     }
   }
@@ -556,25 +550,24 @@ exports[`<Button /> should render button with custom text style 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
-    rounded={false}
+    minWidth={140}
     style={
       Array [
         Object {
+          "//": 40,
           "alignItems": "center",
-          "backgroundColor": "#C6B09E",
-          "borderColor": "#C6B09E",
-          "borderRadius": 3,
+          "alignSelf": "center",
+          "backgroundColor": undefined,
+          "borderColor": undefined,
+          "borderRadius": 40,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 45,
           "justifyContent": "center",
-          "maxWidth": "100%",
-          "minWidth": 180,
           "overflow": "hidden",
-          "paddingBottom": 4,
-          "paddingLeft": 4,
-          "paddingRight": 4,
-          "paddingTop": 4,
+          "paddingBottom": 12,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 12,
         },
         Object {},
       ]
@@ -596,7 +589,7 @@ exports[`<Button /> should render button with custom text style 1`] = `
           Object {
             "color": "#ffffff",
             "fontWeight": "bold",
-            "letterSpacing": 0.4,
+            "letterSpacing": -0.41,
           },
           Object {
             "color": "#2980b9",
@@ -610,7 +603,7 @@ exports[`<Button /> should render button with custom text style 1`] = `
 </View>
 `;
 
-exports[`<Button /> should render button with disabled 1`] = `
+exports[`<ChipButton /> should render Chipbutton with disabled 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
@@ -631,7 +624,7 @@ exports[`<Button /> should render button with disabled 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 3,
+      "borderRadius": 20,
       "opacity": 1,
     }
   }
@@ -642,25 +635,24 @@ exports[`<Button /> should render button with disabled 1`] = `
     disabled={true}
     flat={false}
     hasBorder={false}
-    rounded={false}
+    minWidth={140}
     style={
       Array [
         Object {
+          "//": 40,
           "alignItems": "center",
+          "alignSelf": "center",
           "backgroundColor": "#C6B09E70",
           "borderColor": "#C6B09E70",
-          "borderRadius": 3,
+          "borderRadius": 40,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 45,
           "justifyContent": "center",
-          "maxWidth": "100%",
-          "minWidth": 180,
           "overflow": "hidden",
-          "paddingBottom": 4,
-          "paddingLeft": 4,
-          "paddingRight": 4,
-          "paddingTop": 4,
+          "paddingBottom": 12,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 12,
         },
         Object {},
       ]
@@ -682,7 +674,7 @@ exports[`<Button /> should render button with disabled 1`] = `
           Object {
             "color": "#ffffff",
             "fontWeight": "bold",
-            "letterSpacing": 0.4,
+            "letterSpacing": -0.41,
           },
           Object {},
         ]
@@ -694,7 +686,7 @@ exports[`<Button /> should render button with disabled 1`] = `
 </View>
 `;
 
-exports[`<Button /> should render button with loading 1`] = `
+exports[`<ChipButton /> should render Chipbutton with loading 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
@@ -715,7 +707,7 @@ exports[`<Button /> should render button with loading 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 3,
+      "borderRadius": 20,
       "opacity": 1,
     }
   }
@@ -726,25 +718,24 @@ exports[`<Button /> should render button with loading 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
-    rounded={false}
+    minWidth={140}
     style={
       Array [
         Object {
+          "//": 40,
           "alignItems": "center",
-          "backgroundColor": "#C6B09E",
-          "borderColor": "#C6B09E",
-          "borderRadius": 3,
+          "alignSelf": "center",
+          "backgroundColor": undefined,
+          "borderColor": undefined,
+          "borderRadius": 40,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 45,
           "justifyContent": "center",
-          "maxWidth": "100%",
-          "minWidth": 180,
           "overflow": "hidden",
-          "paddingBottom": 4,
-          "paddingLeft": 4,
-          "paddingRight": 4,
-          "paddingTop": 4,
+          "paddingBottom": 12,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 12,
         },
         Object {},
       ]
@@ -799,7 +790,7 @@ exports[`<Button /> should render button with loading 1`] = `
 </View>
 `;
 
-exports[`<Button /> should render button with test id 1`] = `
+exports[`<ChipButton /> should render Chipbutton with test id 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
@@ -820,7 +811,7 @@ exports[`<Button /> should render button with test id 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 3,
+      "borderRadius": 20,
       "opacity": 1,
     }
   }
@@ -831,25 +822,24 @@ exports[`<Button /> should render button with test id 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
-    rounded={false}
+    minWidth={140}
     style={
       Array [
         Object {
+          "//": 40,
           "alignItems": "center",
-          "backgroundColor": "#C6B09E",
-          "borderColor": "#C6B09E",
-          "borderRadius": 3,
+          "alignSelf": "center",
+          "backgroundColor": undefined,
+          "borderColor": undefined,
+          "borderRadius": 40,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 45,
           "justifyContent": "center",
-          "maxWidth": "100%",
-          "minWidth": 180,
           "overflow": "hidden",
-          "paddingBottom": 4,
-          "paddingLeft": 4,
-          "paddingRight": 4,
-          "paddingTop": 4,
+          "paddingBottom": 12,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 12,
         },
         Object {},
       ]
@@ -871,7 +861,7 @@ exports[`<Button /> should render button with test id 1`] = `
           Object {
             "color": "#ffffff",
             "fontWeight": "bold",
-            "letterSpacing": 0.4,
+            "letterSpacing": -0.41,
           },
           Object {},
         ]
@@ -883,7 +873,7 @@ exports[`<Button /> should render button with test id 1`] = `
 </View>
 `;
 
-exports[`<Button /> should render button with typography variant 1`] = `
+exports[`<ChipButton /> should render Chipbutton with typography variant 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
@@ -904,7 +894,7 @@ exports[`<Button /> should render button with typography variant 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 3,
+      "borderRadius": 20,
       "opacity": 1,
     }
   }
@@ -915,25 +905,24 @@ exports[`<Button /> should render button with typography variant 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
-    rounded={false}
+    minWidth={140}
     style={
       Array [
         Object {
+          "//": 40,
           "alignItems": "center",
-          "backgroundColor": "#C6B09E",
-          "borderColor": "#C6B09E",
-          "borderRadius": 3,
+          "alignSelf": "center",
+          "backgroundColor": undefined,
+          "borderColor": undefined,
+          "borderRadius": 40,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 45,
           "justifyContent": "center",
-          "maxWidth": "100%",
-          "minWidth": 180,
           "overflow": "hidden",
-          "paddingBottom": 4,
-          "paddingLeft": 4,
-          "paddingRight": 4,
-          "paddingTop": 4,
+          "paddingBottom": 12,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 12,
         },
         Object {},
       ]
@@ -955,7 +944,7 @@ exports[`<Button /> should render button with typography variant 1`] = `
           Object {
             "color": "#ffffff",
             "fontWeight": "bold",
-            "letterSpacing": 0.4,
+            "letterSpacing": -0.41,
           },
           Object {},
         ]
@@ -967,7 +956,7 @@ exports[`<Button /> should render button with typography variant 1`] = `
 </View>
 `;
 
-exports[`<Button /> should render button with variant 1`] = `
+exports[`<ChipButton /> should render Chipbutton with variant 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
@@ -988,7 +977,7 @@ exports[`<Button /> should render button with variant 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
-      "borderRadius": 3,
+      "borderRadius": 20,
       "opacity": 1,
     }
   }
@@ -999,25 +988,24 @@ exports[`<Button /> should render button with variant 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
-    rounded={false}
+    minWidth={140}
     style={
       Array [
         Object {
+          "//": 40,
           "alignItems": "center",
+          "alignSelf": "center",
           "backgroundColor": "#805281",
           "borderColor": "#805281",
-          "borderRadius": 3,
+          "borderRadius": 40,
           "borderWidth": 0,
           "flexDirection": "row",
-          "height": 45,
           "justifyContent": "center",
-          "maxWidth": "100%",
-          "minWidth": 180,
           "overflow": "hidden",
-          "paddingBottom": 4,
-          "paddingLeft": 4,
-          "paddingRight": 4,
-          "paddingTop": 4,
+          "paddingBottom": 12,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 12,
         },
         Object {},
       ]
@@ -1039,7 +1027,7 @@ exports[`<Button /> should render button with variant 1`] = `
           Object {
             "color": "#ffffff",
             "fontWeight": "bold",
-            "letterSpacing": 0.4,
+            "letterSpacing": -0.41,
           },
           Object {},
         ]

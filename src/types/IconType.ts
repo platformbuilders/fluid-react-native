@@ -7,6 +7,7 @@ export { IconFonts };
 export interface IconType extends TouchableType {
   name: string;
   touchable?: boolean;
+  isEmoji?: boolean;
   size?: number;
   color?: string;
   style?: any;
