@@ -23,7 +23,7 @@ const ChipButton: FC<ChipButtonProps> = ({
   hasBorder = false,
   variant = 'primary',
   typographyVariant = 'md',
-  minWidth = 140,
+  minWidth = 110,
   maxWidth,
   rightIconName,
   leftIconName,

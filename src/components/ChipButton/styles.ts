@@ -27,6 +27,7 @@ const dangerContrast = getTheme('danger.contrast');
 const warningMain = getTheme('warning.main');
 const warningContrast = getTheme('warning.contrast');
 const buttonSpacing = getTheme('spacing.sm');
+const buttonHorizontalSpacing = getTheme('spacing.md');
 const smallSpacing = getTheme('spacing.sm');
 const isLeftIcon = ifStyle('leftIcon');
 const isRightIcon = ifStyle('rightIcon');
@@ -121,7 +122,8 @@ export const ButtonWrapper = styled.View<ButtonWrapperProps>`
   flex-direction: row;
   align-items: center;
   overflow: hidden;
-  padding: ${buttonSpacing}px;
+  padding-vertical: ${buttonSpacing}px;
+  padding-horizontal: ${buttonHorizontalSpacing}px;
   border-radius: ${buttonSize}px;
   justify-content: center;
   background-color: ${isFlat('transparent', getBackgroundColor)};

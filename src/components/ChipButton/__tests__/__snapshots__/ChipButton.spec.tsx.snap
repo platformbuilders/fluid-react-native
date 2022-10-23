@@ -32,7 +32,7 @@ exports[`<ChipButton /> should render Chipbutton 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
-    minWidth={140}
+    minWidth={110}
     style={
       Array [
         Object {
@@ -46,10 +46,8 @@ exports[`<ChipButton /> should render Chipbutton 1`] = `
           "flexDirection": "row",
           "justifyContent": "center",
           "overflow": "hidden",
-          "paddingBottom": 12,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 12,
+          "paddingHorizontal": 20,
+          "paddingVertical": 12,
         },
         Object {},
       ]
@@ -115,7 +113,7 @@ exports[`<ChipButton /> should render Chipbutton when rounded 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
-    minWidth={140}
+    minWidth={110}
     style={
       Array [
         Object {
@@ -129,10 +127,8 @@ exports[`<ChipButton /> should render Chipbutton when rounded 1`] = `
           "flexDirection": "row",
           "justifyContent": "center",
           "overflow": "hidden",
-          "paddingBottom": 12,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 12,
+          "paddingHorizontal": 20,
+          "paddingVertical": 12,
         },
         Object {},
       ]
@@ -198,7 +194,7 @@ exports[`<ChipButton /> should render Chipbutton with children 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
-    minWidth={140}
+    minWidth={110}
     style={
       Array [
         Object {
@@ -212,10 +208,8 @@ exports[`<ChipButton /> should render Chipbutton with children 1`] = `
           "flexDirection": "row",
           "justifyContent": "center",
           "overflow": "hidden",
-          "paddingBottom": 12,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 12,
+          "paddingHorizontal": 20,
+          "paddingVertical": 12,
         },
         Object {},
       ]
@@ -299,7 +293,7 @@ exports[`<ChipButton /> should render Chipbutton with contrast 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
-    minWidth={140}
+    minWidth={110}
     style={
       Array [
         Object {
@@ -313,10 +307,8 @@ exports[`<ChipButton /> should render Chipbutton with contrast 1`] = `
           "flexDirection": "row",
           "justifyContent": "center",
           "overflow": "hidden",
-          "paddingBottom": 12,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 12,
+          "paddingHorizontal": 20,
+          "paddingVertical": 12,
         },
         Object {},
       ]
@@ -382,7 +374,7 @@ exports[`<ChipButton /> should render Chipbutton with custom accessibility label
     disabled={false}
     flat={false}
     hasBorder={false}
-    minWidth={140}
+    minWidth={110}
     style={
       Array [
         Object {
@@ -396,10 +388,8 @@ exports[`<ChipButton /> should render Chipbutton with custom accessibility label
           "flexDirection": "row",
           "justifyContent": "center",
           "overflow": "hidden",
-          "paddingBottom": 12,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 12,
+          "paddingHorizontal": 20,
+          "paddingVertical": 12,
         },
         Object {},
       ]
@@ -465,7 +455,7 @@ exports[`<ChipButton /> should render Chipbutton with custom style 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
-    minWidth={140}
+    minWidth={110}
     style={
       Array [
         Object {
@@ -479,10 +469,8 @@ exports[`<ChipButton /> should render Chipbutton with custom style 1`] = `
           "flexDirection": "row",
           "justifyContent": "center",
           "overflow": "hidden",
-          "paddingBottom": 12,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 12,
+          "paddingHorizontal": 20,
+          "paddingVertical": 12,
         },
         Object {
           "backgroundColor": "#2980b9",
@@ -550,7 +538,7 @@ exports[`<ChipButton /> should render Chipbutton with custom text style 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
-    minWidth={140}
+    minWidth={110}
     style={
       Array [
         Object {
@@ -564,10 +552,8 @@ exports[`<ChipButton /> should render Chipbutton with custom text style 1`] = `
           "flexDirection": "row",
           "justifyContent": "center",
           "overflow": "hidden",
-          "paddingBottom": 12,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 12,
+          "paddingHorizontal": 20,
+          "paddingVertical": 12,
         },
         Object {},
       ]
@@ -635,7 +621,7 @@ exports[`<ChipButton /> should render Chipbutton with disabled 1`] = `
     disabled={true}
     flat={false}
     hasBorder={false}
-    minWidth={140}
+    minWidth={110}
     style={
       Array [
         Object {
@@ -649,10 +635,8 @@ exports[`<ChipButton /> should render Chipbutton with disabled 1`] = `
           "flexDirection": "row",
           "justifyContent": "center",
           "overflow": "hidden",
-          "paddingBottom": 12,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 12,
+          "paddingHorizontal": 20,
+          "paddingVertical": 12,
         },
         Object {},
       ]
@@ -718,7 +702,7 @@ exports[`<ChipButton /> should render Chipbutton with loading 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
-    minWidth={140}
+    minWidth={110}
     style={
       Array [
         Object {
@@ -732,10 +716,8 @@ exports[`<ChipButton /> should render Chipbutton with loading 1`] = `
           "flexDirection": "row",
           "justifyContent": "center",
           "overflow": "hidden",
-          "paddingBottom": 12,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 12,
+          "paddingHorizontal": 20,
+          "paddingVertical": 12,
         },
         Object {},
       ]
@@ -822,7 +804,7 @@ exports[`<ChipButton /> should render Chipbutton with test id 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
-    minWidth={140}
+    minWidth={110}
     style={
       Array [
         Object {
@@ -836,10 +818,8 @@ exports[`<ChipButton /> should render Chipbutton with test id 1`] = `
           "flexDirection": "row",
           "justifyContent": "center",
           "overflow": "hidden",
-          "paddingBottom": 12,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 12,
+          "paddingHorizontal": 20,
+          "paddingVertical": 12,
         },
         Object {},
       ]
@@ -905,7 +885,7 @@ exports[`<ChipButton /> should render Chipbutton with typography variant 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
-    minWidth={140}
+    minWidth={110}
     style={
       Array [
         Object {
@@ -919,10 +899,8 @@ exports[`<ChipButton /> should render Chipbutton with typography variant 1`] = `
           "flexDirection": "row",
           "justifyContent": "center",
           "overflow": "hidden",
-          "paddingBottom": 12,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 12,
+          "paddingHorizontal": 20,
+          "paddingVertical": 12,
         },
         Object {},
       ]
@@ -988,7 +966,7 @@ exports[`<ChipButton /> should render Chipbutton with variant 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
-    minWidth={140}
+    minWidth={110}
     style={
       Array [
         Object {
@@ -1002,10 +980,8 @@ exports[`<ChipButton /> should render Chipbutton with variant 1`] = `
           "flexDirection": "row",
           "justifyContent": "center",
           "overflow": "hidden",
-          "paddingBottom": 12,
-          "paddingLeft": 12,
-          "paddingRight": 12,
-          "paddingTop": 12,
+          "paddingHorizontal": 20,
+          "paddingVertical": 12,
         },
         Object {},
       ]
