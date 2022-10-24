@@ -15,6 +15,7 @@ export const Icon: FC<IconType> = ({
   testID,
   name = '',
   touchable = true,
+  isEmoji = false,
   size = 20,
   color = undefined,
   style = [{}],
@@ -55,7 +56,21 @@ export const Icon: FC<IconType> = ({
         {...rest}
       >
         <View>
-          {Svg ? (
+          {isEmoji && (
+            <Animated.Text
+              style={{
+                fontSize: size,
+                color,
+                borderColor,
+                backgroundColor,
+                width,
+                height,
+              }}
+            >
+              {name}
+            </Animated.Text>
+          )}
+          {Svg && (
             <Svg
               width={width || size}
               height={height || size}
@@ -63,7 +78,8 @@ export const Icon: FC<IconType> = ({
               borderColor={borderColor}
               backgroundColor={backgroundColor}
             />
-          ) : (
+          )}
+          {!isEmoji && !Svg && (
             <IconComponent name={name} color={color} size={size} />
           )}
         </View>
