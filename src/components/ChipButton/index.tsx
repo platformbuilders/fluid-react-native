@@ -2,9 +2,10 @@ import React, { FC } from 'react';
 import { ButtonProps } from '../../types';
 import { ButtonWrapper, Icon, Loading, TextButton, Touchable } from './styles';
 
-export type ChipButtonProps = {
+export type ChipButtonProps = ButtonProps & {
   isEmoji?: boolean;
-} & ButtonProps;
+  iconTouchable?: boolean;
+};
 
 const ChipButton: FC<ChipButtonProps> = ({
   id,
@@ -16,6 +17,7 @@ const ChipButton: FC<ChipButtonProps> = ({
   style = [{}],
   textStyle = {},
   disabled = false,
+  iconTouchable = false,
   loading = false,
   contrast = false,
   flat = false,
@@ -23,10 +25,9 @@ const ChipButton: FC<ChipButtonProps> = ({
   hasBorder = false,
   variant = 'primary',
   typographyVariant = 'md',
-  minWidth = 110,
-  maxWidth,
   rightIconName,
   leftIconName,
+  ...rest
 }) => {
   return (
     <Touchable
@@ -36,14 +37,13 @@ const ChipButton: FC<ChipButtonProps> = ({
       testID={testID || id || accessibility}
       disabled={loading || disabled}
       onPress={onPress}
+      {...rest}
     >
       <ButtonWrapper
         hasBorder={hasBorder}
         buttonVariant={variant}
         style={style}
         disabled={disabled}
-        minWidth={minWidth}
-        maxWidth={maxWidth}
         flat={flat}
       >
         {loading && <Loading contrast={contrast} />}
@@ -75,6 +75,7 @@ const ChipButton: FC<ChipButtonProps> = ({
                 buttonVariant={variant}
                 style={style}
                 rightIcon
+                touchable={iconTouchable}
               />
             )}
           </>

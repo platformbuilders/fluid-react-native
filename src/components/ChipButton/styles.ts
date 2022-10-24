@@ -18,7 +18,7 @@ const brandSecondary = getTheme('brand.secondary.main');
 const brandSecondaryContrast = getTheme('brand.secondary.contrast');
 const brandTertiary = getTheme('brand.tertiary.main');
 const brandTertiaryContrast = getTheme('brand.tertiary.contrast');
-const brandAccent = getTheme('brand.accent.main');
+const brandAccent = getTheme('brand.accent.light');
 const brandAccentContrast = getTheme('brand.accent.contrast');
 const infoMain = getTheme('info.main');
 const infoContrast = getTheme('info.contrast');
@@ -26,9 +26,7 @@ const dangerMain = getTheme('danger.main');
 const dangerContrast = getTheme('danger.contrast');
 const warningMain = getTheme('warning.main');
 const warningContrast = getTheme('warning.contrast');
-const buttonSpacing = getTheme('spacing.sm');
-const buttonHorizontalSpacing = getTheme('spacing.md');
-const smallSpacing = getTheme('spacing.sm');
+const spacingSm = getTheme('spacing.sm');
 const isLeftIcon = ifStyle('leftIcon');
 const isRightIcon = ifStyle('rightIcon');
 const hasBorder = ifStyle('hasBorder');
@@ -40,8 +38,6 @@ type ButtonWrapperProps = {
   buttonVariant: ButtonVariants;
   disabled?: boolean;
   style: any;
-  minWidth?: string | number;
-  maxWidth?: string | number;
 } & ThemeProps;
 
 const buttonSize = 40;
@@ -122,8 +118,8 @@ export const ButtonWrapper = styled.View<ButtonWrapperProps>`
   flex-direction: row;
   align-items: center;
   overflow: hidden;
-  padding-vertical: ${buttonSpacing}px;
-  padding-horizontal: ${buttonHorizontalSpacing}px;
+  padding-vertical: ${spacingSm}px;
+  padding-horizontal: ${spacingSm}px;
   border-radius: ${buttonSize}px;
   justify-content: center;
   background-color: ${isFlat('transparent', getBackgroundColor)};
@@ -155,6 +151,6 @@ type IconProps = {
 export const Icon = styled(DefaultIcon).attrs((props: IconProps) => ({
   color: getTextColor(props),
 }))<IconProps>`
-  margin-right: ${isLeftIcon(smallSpacing, 0)}px;
-  margin-left: ${isRightIcon(smallSpacing, 0)}px;
+  margin-right: ${isLeftIcon(spacingSm, 0)}px;
+  margin-left: ${isRightIcon(spacingSm, 0)}px;
 `;
