@@ -3,6 +3,7 @@ import styled from 'styled-components/native';
 import { getTheme, ifStyle } from '../../utils/helpers';
 import Icon from '../Icon';
 import Touchable from '../Touchable';
+import Typography from '../Typography';
 
 const brandPrimary = getTheme('brand.primary.main');
 const brandAccent = getTheme('brand.accent.main');
@@ -48,6 +49,10 @@ export const UploadIconWrapper = styled.View<IconWrapperProps>`
 
 export const UploadIcon = styled(Icon).attrs({ name: 'camera' })`
   color: ${brandAccent};
+`;
+
+export const NameInitials = styled(Typography).attrs({ variant: 'sm' })`
+  color: red;
 `;
 
 export const CameraView = styled(RNCamera)<{ size: number }>`

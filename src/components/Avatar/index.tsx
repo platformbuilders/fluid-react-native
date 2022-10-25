@@ -4,26 +4,11 @@ import { RNCamera } from 'react-native-camera';
 import FastImage, { Source } from 'react-native-fast-image';
 import ImagePicker from 'react-native-image-picker';
 import { ImageAvatarPlaceholder as defaultAvatar } from '../../assets/images';
+import { AvatarType } from '../../types';
 import If from '../If';
 import { CameraView, UploadIcon, UploadIconWrapper, Wrapper } from './styles';
 
-type Props = {
-  ref?: any;
-  image?: string;
-  showBorder?: boolean;
-  borderWidth?: number;
-  borderColor?: string;
-  displayCamera?: boolean;
-  size?: number;
-  onPress?: (x: any) => void;
-  onUpload?: (x: any) => any;
-  id?: string;
-  accessibility: string;
-  accessibilityLabel?: string;
-  testID?: string;
-};
-
-const Avatar: React.FC<Props> = React.forwardRef(
+const Avatar: React.FC<AvatarType> = React.forwardRef(
   (
     {
       id,
@@ -32,10 +17,12 @@ const Avatar: React.FC<Props> = React.forwardRef(
       accessibilityLabel,
       testID,
       size = 50,
+      borderWidth = 2,
       onPress,
       onUpload,
       showBorder = true,
       displayCamera = false,
+      name,
       ...rest
     },
     ref,
@@ -111,6 +98,7 @@ const Avatar: React.FC<Props> = React.forwardRef(
         onPress={onPress}
         disabled={!onPress}
         showBorder={showBorder}
+        borderWidth={borderWidth}
         {...rest}
       >
         {displayCamera && !uploadedImage ? (
@@ -133,7 +121,8 @@ const Avatar: React.FC<Props> = React.forwardRef(
             style={{ width: '101%', height: '101%' }}
           />
         )}
-        <If condition={!!displayCamera}>
+
+        <If condition={!!name && !!displayCamera}>
           <UploadIconWrapper size={size}>
             <UploadIcon id="" accessibility="" />
           </UploadIconWrapper>

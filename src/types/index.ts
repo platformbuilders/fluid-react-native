@@ -1,4 +1,5 @@
 export * from './Accordion';
+export * from './Avatar';
 export * from './Button';
 export * from './Checkbox';
 export * from './Common';
