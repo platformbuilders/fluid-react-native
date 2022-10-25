@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import { ButtonProps } from '../../types';
+import If from '../If';
 import { ButtonWrapper, Icon, Loading, TextButton, Touchable } from './styles';
 
 const Button: FC<ButtonProps> = ({
@@ -44,10 +45,12 @@ const Button: FC<ButtonProps> = ({
         maxWidth={maxWidth}
         flat={flat}
       >
-        {loading && <Loading contrast={contrast} />}
-        {!loading && (
+        <If condition={loading}>
+          <Loading contrast={contrast} />
+        </If>
+        <If condition={!loading}>
           <>
-            {!!leftIconName && (
+            <If condition={!!leftIconName}>
               <Icon
                 accessibility=""
                 name={leftIconName as string}
@@ -55,7 +58,7 @@ const Button: FC<ButtonProps> = ({
                 style={style}
                 leftIcon
               />
-            )}
+            </If>
             <TextButton
               style={textStyle}
               disabled={disabled}
@@ -65,7 +68,7 @@ const Button: FC<ButtonProps> = ({
             >
               {children}
             </TextButton>
-            {!!rightIconName && (
+            <If condition={!!rightIconName}>
               <Icon
                 accessibility=""
                 name={rightIconName as string}
@@ -73,9 +76,9 @@ const Button: FC<ButtonProps> = ({
                 style={style}
                 rightIcon
               />
-            )}
+            </If>
           </>
-        )}
+        </If>
       </ButtonWrapper>
     </Touchable>
   );

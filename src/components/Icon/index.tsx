@@ -5,6 +5,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import * as SvgIcons from '../../assets/svg';
 import { IconFonts } from '../../enums';
 import { IconType } from '../../types';
+import If from '../If';
 import Touchable from '../Touchable';
 import { FaBrands, FaLight, FaRegular, FaSolid } from './FontAwesomeProIcons';
 
@@ -56,7 +57,7 @@ export const Icon: FC<IconType> = ({
         {...rest}
       >
         <View>
-          {isEmoji && (
+          <If condition={isEmoji}>
             <Animated.Text
               style={{
                 fontSize: size,
@@ -69,7 +70,7 @@ export const Icon: FC<IconType> = ({
             >
               {name}
             </Animated.Text>
-          )}
+          </If>
           {Svg && (
             <Svg
               width={width || size}
@@ -79,9 +80,9 @@ export const Icon: FC<IconType> = ({
               backgroundColor={backgroundColor}
             />
           )}
-          {!isEmoji && !Svg && (
+          <If condition={!isEmoji && !Svg}>
             <IconComponent name={name} color={color} size={size} />
-          )}
+          </If>
         </View>
       </Touchable>
     </Animated.View>
