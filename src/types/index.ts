@@ -9,3 +9,4 @@ export * from './TextInputType';
 export * from './Loading';
 export * from './SmoothPinCodeInput';
 export * from './SvgType';
+export * from './UploadPhoto';

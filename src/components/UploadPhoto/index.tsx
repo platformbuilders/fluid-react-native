@@ -6,27 +6,31 @@ import {
   ImagePickerResponse,
   launchImageLibrary,
 } from 'react-native-image-picker';
-import { ImageAvatarPlaceholder as defaultAvatar } from '../../assets/images';
-import { AvatarType } from '../../types';
-import If from '../If';
-import { CameraView, UploadIcon, UploadIconWrapper, Wrapper } from './styles';
+import { IconFonts, UploadPhotoType } from '../../types';
+import {
+  CameraView,
+  UploadIcon,
+  UploadIconWrapper,
+  UploadText,
+  Wrapper,
+} from './styles';
 
-const Avatar: React.FC<AvatarType> = React.forwardRef(
+const UploadPhoto: React.FC<UploadPhotoType> = React.forwardRef(
   (
     {
       id,
-      image = defaultAvatar,
-      accessibility = 'Upload de Avatar',
+      image,
+      accessibility,
       accessibilityLabel,
       testID,
-      size = 50,
+      uploadText = 'Adicionar Foto',
+      uploadIcon = 'image',
       imageQuality = 0.5,
-      borderWidth = 2,
+      iconSize = 36,
       onPress,
       onUpload,
-      showBorder = true,
       displayCamera = false,
-      name,
+      iconType = IconFonts.Material,
       ...rest
     },
     ref,
@@ -78,14 +82,14 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
       setUploadedImage('');
     };
 
-    const getCurrentAvatar = (): Source | any => {
+    const getCurrentPhoto = (): Source | any => {
       if (uploadedImage) {
         return { uri: uploadedImage };
       }
       if (image && !isEmpty(image)) {
         return { uri: image };
       }
-      return defaultAvatar;
+      return '';
     };
 
     useImperativeHandle(ref, () => ({
@@ -101,17 +105,13 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
         accessibility={accessibility}
         accessibilityLabel={accessibilityLabel || accessibility}
         testID={testID || id}
-        size={size}
         onPress={onPress || (onUpload && openPicker)}
         disabled={!onPress && !onUpload}
-        showBorder={showBorder}
-        borderWidth={borderWidth}
         {...rest}
       >
-        {displayCamera && !uploadedImage ? (
+        {displayCamera && !uploadedImage && (
           <CameraView
             ref={cameraRef}
-            size={size}
             type={RNCamera.Constants.Type.front}
             flashMode={RNCamera.Constants.FlashMode.auto}
             androidCameraPermissionOptions={{
@@ -121,24 +121,32 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
               buttonNegative: 'Cancelar',
             }}
           />
-        ) : (
+        )}
+        {uploadedImage && (
           <FastImage
-            source={getCurrentAvatar()}
+            source={getCurrentPhoto()}
             resizeMode={FastImage.resizeMode.cover}
             style={{ width: '101%', height: '101%' }}
           />
         )}
-
-        <If condition={!!name && !!displayCamera}>
-          <UploadIconWrapper size={size}>
-            <UploadIcon id="" accessibility="" />
+        {!displayCamera && !uploadedImage && (
+          <UploadIconWrapper>
+            <UploadIcon
+              disabled
+              size={iconSize}
+              name={uploadIcon}
+              id=""
+              accessibility=""
+              type={iconType}
+            />
+            {uploadText && <UploadText>{uploadText}</UploadText>}
           </UploadIconWrapper>
-        </If>
+        )}
       </Wrapper>
     );
   },
 );
 
-Avatar.displayName = 'AvatarComponent';
+UploadPhoto.displayName = 'UploadPhotoComponent';
 
-export default Avatar;
+export default UploadPhoto;

@@ -14445,10 +14445,10 @@ react-native-biometrics@2.1.4:
   resolved "https://registry.yarnpkg.com/react-native-biometrics/-/react-native-biometrics-2.1.4.tgz#e201e9f18baeb560eeaba8d41fbd4f90d04152fe"
   integrity sha512-Ek7NmzgHB4rot2DdzV9Q3pzxFjnEFipGSFsmWZw5vcM9vkMoebhz8d8UYgsp0efroyeLITDNHwcFGEzq8XW9Kg==
 
-react-native-camera@3.31.1:
-  version "3.31.1"
-  resolved "https://registry.yarnpkg.com/react-native-camera/-/react-native-camera-3.31.1.tgz#debc045601189d77e4e41117ea45686ffd2b3b77"
-  integrity sha512-Z2VQ2IpyQqIfyvyx7HxdxMxm7vq2hNX1RNcLmKirjS/c9jq0bsKbmerwojMFfw2kBSzp9CitDYqsa1CxZ0lZRg==
+react-native-camera@>=4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/react-native-camera/-/react-native-camera-4.2.1.tgz#caf74081f055e89d7e9b0cd5108965d808c60e90"
+  integrity sha512-+Vkql24PFYQfsPRznJCvPwJQfyzCnjlcww/iZ4Ej80bgivKjL9eU0IMQIXp4yi6XCrKi4voWXxIDPMupQZKeIQ==
   dependencies:
     prop-types "^15.6.2"
 
@@ -14564,10 +14564,10 @@ react-native-haptic@1.0.1:
   resolved "https://registry.yarnpkg.com/react-native-haptic/-/react-native-haptic-1.0.1.tgz#5ecedb6049c1b0cdeca5e31e4fbde16a622675f3"
   integrity sha512-Eg5omAZYZsIGe+QsVkQrK3Krgv96qejYyfgPUfyIELZ1j6W7RnisduJJ+65aV9Nw/k6gxrmvEUC/Uuap4qf8JA==
 
-react-native-image-picker@2.3.4:
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/react-native-image-picker/-/react-native-image-picker-2.3.4.tgz#1c31dbe9872ade17e2ed6457b0c669d63c322590"
-  integrity sha512-4UHu+zOyDT570r5mIbjH6h1iMrKIq/qfsKiAVUEZwncVegh0usJiEYNyJw4CEVwNeehmye/ia5sLDsa+kzIE4g==
+react-native-image-picker@>4.0.0:
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/react-native-image-picker/-/react-native-image-picker-4.10.0.tgz#471ca942bd1189134eff63e25903147f54aeb8c2"
+  integrity sha512-QNK4ZnFLD+BdiM1QL1jh9GUALhRXm3MV97crhnTCSMv50H6E4tq3ozgfyxF5uKz0cECbNkWswg4sjgqZKEJtww==
 
 react-native-iphone-x-helper@1.3.1, react-native-iphone-x-helper@^1.0.2, react-native-iphone-x-helper@^1.3.1:
   version "1.3.1"

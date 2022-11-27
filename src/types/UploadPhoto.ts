@@ -1,17 +1,18 @@
-export type AvatarType = {
+import { IconFonts } from './IconType';
+
+export type UploadPhotoType = {
   ref?: any;
   image?: string;
-  name?: string;
-  showBorder?: boolean;
-  borderWidth?: number;
   imageQuality?: number;
-  borderColor?: string;
   displayCamera?: boolean;
-  size?: number;
   onPress?: (x: any) => void;
   onUpload?: (x: any) => any;
   id?: string;
   accessibility: string;
   accessibilityLabel?: string;
+  uploadText?: string;
+  iconSize?: number;
+  uploadIcon?: string;
   testID?: string;
+  iconType?: IconFonts;
 };

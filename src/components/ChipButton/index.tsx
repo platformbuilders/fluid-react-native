@@ -57,6 +57,7 @@ const ChipButton: FC<ChipButtonProps> = ({
                 style={style}
                 leftIcon
                 isEmoji={isEmoji}
+                touchable={false}
               />
             )}
             <TextButton
