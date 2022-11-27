@@ -112,6 +112,7 @@ exports[`<ChipButton /> should render Chipbutton when rounded 1`] = `
     disabled={false}
     flat={false}
     hasBorder={false}
+    rounded={true}
     style={
       Array [
         Object {

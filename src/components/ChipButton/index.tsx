@@ -3,6 +3,7 @@ import { ButtonProps } from '../../types';
 import { ButtonWrapper, Icon, Loading, TextButton, Touchable } from './styles';
 
 export type ChipButtonProps = ButtonProps & {
+  iconStyle?: any;
   isEmoji?: boolean;
   iconTouchable?: boolean;
 };
@@ -15,7 +16,8 @@ const ChipButton: FC<ChipButtonProps> = ({
   accessibilityLabel,
   testID,
   style = [{}],
-  textStyle = {},
+  textStyle = [{}],
+  iconStyle = [{}],
   disabled = false,
   iconTouchable = false,
   loading = false,
@@ -37,14 +39,14 @@ const ChipButton: FC<ChipButtonProps> = ({
       testID={testID || id || accessibility}
       disabled={loading || disabled}
       onPress={onPress}
-      {...rest}
     >
       <ButtonWrapper
         hasBorder={hasBorder}
         buttonVariant={variant}
-        style={style}
         disabled={disabled}
         flat={flat}
+        style={style}
+        {...rest}
       >
         {loading && <Loading contrast={contrast} />}
         {!loading && (
@@ -54,7 +56,7 @@ const ChipButton: FC<ChipButtonProps> = ({
                 accessibility=""
                 name={leftIconName as string}
                 buttonVariant={variant}
-                style={style}
+                style={iconStyle}
                 leftIcon
                 isEmoji={isEmoji}
                 touchable={false}
@@ -74,7 +76,7 @@ const ChipButton: FC<ChipButtonProps> = ({
                 accessibility=""
                 name={rightIconName as string}
                 buttonVariant={variant}
-                style={style}
+                style={iconStyle}
                 rightIcon
                 touchable={iconTouchable}
               />

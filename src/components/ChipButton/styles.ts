@@ -34,16 +34,16 @@ const hasBorder = ifStyle('hasBorder');
 const isFlat = ifStyle('flat');
 
 type ButtonWrapperProps = {
+  style: any;
   hasBorder: boolean;
   flat: boolean;
   buttonVariant: ButtonVariants;
   disabled?: boolean;
-  style: any;
 } & ThemeProps;
 
 const buttonSize = 40;
 
-const getBackgroundColor = (props: ButtonWrapperProps): string => {
+const getBackgroundColor = (props: any): string => {
   if (props.disabled) {
     return `${brandPrimary(props)}70`;
   }
@@ -79,8 +79,8 @@ type TextButtonProps = {
   style: any;
 } & ThemeProps;
 
-const getTextColor = (props: TextButtonProps): string => {
-  if (props.disabled) {
+const getTextColor = (props: any): string => {
+  if (props?.disabled) {
     return `${brandPrimaryContrast(props)}`;
   }
   switch (props.buttonVariant) {
@@ -145,11 +145,10 @@ type IconProps = {
   rightIcon?: boolean;
   leftIcon?: boolean;
   buttonVariant: ButtonVariants;
-  style: any;
   isEmoji?: boolean;
 } & ThemeProps;
 
-export const Icon = styled(DefaultIcon).attrs((props: IconProps) => ({
+export const Icon = styled(DefaultIcon).attrs((props) => ({
   color: getTextColor(props),
 }))<IconProps>`
   margin-right: ${isLeftIcon(spacingSm, 0)}px;
