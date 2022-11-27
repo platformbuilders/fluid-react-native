@@ -15,6 +15,7 @@ const RadioButton: React.FC = () => {
     <RadioButton
       id="id_radio_button"
       accessibility="Select Information"
+      label="Ser ou não ser?"
       size={18}
       internalSize={13}
       checked

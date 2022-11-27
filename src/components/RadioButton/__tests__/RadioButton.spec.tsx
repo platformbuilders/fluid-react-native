@@ -108,4 +108,33 @@ describe('<RadioButton />', () => {
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
+
+  it('should render checked radio button component with label', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <RadioButton
+          id="testing_radio_btn"
+          accessibility="Select information"
+          label="Select information"
+          checked
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render unchecked radio button component with label', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <RadioButton
+          id="testing_radio_btn"
+          accessibility="Select information"
+          label="Select information"
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
 });
