@@ -24,7 +24,7 @@ export const CheckBox = styled(DefaultCheckbox).attrs((props) => ({
 
 export const Label = styled(TypographyComponent).attrs({
   variant: 'md',
-})`
+})<any>`
   flex-direction: row;
   color: ${textColor};
   opacity: ${opacityOverlay};

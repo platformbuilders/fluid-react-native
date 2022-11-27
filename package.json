@@ -199,7 +199,7 @@
     "styled-components": "5.2.1",
     "svg-inline-loader": "0.8.2",
     "ts-loader": "8.0.4",
-    "typescript": "4.2.3"
+    "typescript": "4.9.3"
   },
   "peerDependencies": {
     "react-native-camera": ">=4.2.1",
