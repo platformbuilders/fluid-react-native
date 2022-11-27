@@ -1,10 +1,13 @@
+import { StyleProp, TextStyle } from 'react-native';
 import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
 import { getTheme, ifStyle } from '../../utils/helpers';
 import Touchable from '../Touchable';
+import Typography from '../Typography';
 
 const textColor = getTheme('text.main');
 const checkedRadioColor = getTheme('brand.primary.main');
+const spacingSm = getTheme('spacing.sm');
 
 const smBorderWidth = getTheme('borderWidth.sm');
 
@@ -15,6 +18,11 @@ type RadioProps = {
   radioButtonColor?: string;
   size: number;
 };
+
+export const Wrapper = styled(Touchable)`
+  flex-direction: row;
+  align-items: center;
+`;
 
 export const Radio = styled(Touchable)<RadioProps>`
   width: ${({ size }: RadioProps) => moderateScale(size)}px;
@@ -41,4 +49,12 @@ export const CheckedRadio = styled.View<CheckRadioProps>`
     hasCheckedColor(checkedRadioButtonColor, checkedRadioColor)};
   border-radius: ${({ internalSize }: CheckRadioProps) =>
     moderateScale(internalSize / 2)}px;
+`;
+
+type LabelProps = {
+  style?: StyleProp<TextStyle>;
+};
+
+export const Label = styled(Typography).attrs({ variant: 'sm' })<LabelProps>`
+  margin-left: ${spacingSm}px;
 `;
