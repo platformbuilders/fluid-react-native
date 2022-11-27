@@ -67,7 +67,7 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
         }
         style={
           Object {
-            "tintColor": "#353a48",
+            "tintColor": "#C6B09E",
           }
         }
       />

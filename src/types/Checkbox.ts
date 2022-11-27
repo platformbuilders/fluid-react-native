@@ -12,7 +12,6 @@ export type CheckBoxType = {
   onPress?(): void;
   labelStyle?: StyleProp<TextStyle>;
   rightTextStyle?: StyleProp<TextStyle>;
-  style?: any;
   checkBoxColor?: string | number;
   checkedCheckBoxColor?: string;
   uncheckedCheckBoxColor?: string;

@@ -11,16 +11,16 @@ const CheckboxComponent: FC<CheckBoxType> = ({
   labelBefore = '',
   checked = false,
   onPress = (): void => {},
-  style,
   labelStyle,
   rightTextStyle,
+  ...rest
 }) => (
   <FormError
     id={id || accessibility}
     accessibility={accessibility}
     error={error}
   >
-    <Wrapper style={style}>
+    <Wrapper {...rest}>
       <Label {...labelStyle}>{label}</Label>
       <CheckBox
         testID={`check_${id || accessibility}`}
