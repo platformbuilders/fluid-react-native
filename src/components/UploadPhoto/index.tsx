@@ -34,7 +34,6 @@ const UploadPhoto: React.FC<UploadPhotoType> = React.forwardRef(
       ...rest
     },
     ref,
-    // eslint-disable-next-line sonarjs/cognitive-complexity
   ) => {
     const [uploadedImage, setUploadedImage] = useState<any>();
     const cameraRef = useRef<any>();
