@@ -1,5 +1,4 @@
 import React, { useImperativeHandle, useRef, useState } from 'react';
-import { isEmpty } from 'lodash';
 import { RNCamera } from 'react-native-camera';
 import FastImage, { Source } from 'react-native-fast-image';
 import {
@@ -19,7 +18,6 @@ const UploadPhoto: React.FC<UploadPhotoType> = React.forwardRef(
   (
     {
       id,
-      image,
       accessibility,
       accessibilityLabel,
       testID,
@@ -85,9 +83,6 @@ const UploadPhoto: React.FC<UploadPhotoType> = React.forwardRef(
     const getCurrentPhoto = (): Source | any => {
       if (uploadedImage) {
         return { uri: uploadedImage };
-      }
-      if (image && !isEmpty(image)) {
-        return { uri: image };
       }
       return '';
     };

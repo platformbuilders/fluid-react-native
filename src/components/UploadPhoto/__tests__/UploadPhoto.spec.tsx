@@ -3,7 +3,6 @@ import { fireEvent, render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import UploadPhoto from '..';
-import { ImageAvatarPlaceholder as defaultImage } from '../../../assets/images';
 import { theme } from '../../../test/helpers';
 
 describe('<UploadPhoto />', () => {
@@ -38,15 +37,6 @@ describe('<UploadPhoto />', () => {
     fireEvent.press(component);
 
     expect(onPressEvent).toHaveBeenCalled();
-  });
-
-  it('should render UploadPhoto with custom image', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <UploadPhoto id="testing" accessibility="" image={defaultImage} />
-      </ThemeProvider>,
-    );
-    expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render UploadPhoto with custom accessibility label', () => {

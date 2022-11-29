@@ -1,8 +1,6 @@
 import { IconFonts } from './IconType';
 
 export type UploadPhotoType = {
-  ref?: any;
-  image?: string;
   imageQuality?: number;
   displayCamera?: boolean;
   onPress?: (x: any) => void;
