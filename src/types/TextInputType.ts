@@ -1,11 +1,5 @@
 import { RefObject } from 'react';
-import {
-  KeyboardTypeOptions,
-  StyleProp,
-  TextInputProps,
-  TextStyle,
-  ViewStyle,
-} from 'react-native';
+import { KeyboardTypeOptions, TextInputProps } from 'react-native';
 
 import { TypographyVariants } from '@platformbuilders/theme-toolkit';
 import { TextInputMaskTypeProp } from '../components/MaskedText';
@@ -27,10 +21,10 @@ export type TextInputType = {
   iconSets?: any;
   iconSize?: number;
   iconTouchableEnabled?: boolean;
-  textStyle?: StyleProp<TextStyle>;
+  textStyle?: any;
   labelStyle?: any;
-  rootStyle?: StyleProp<ViewStyle>;
-  errorStyle?: StyleProp<TextStyle>;
+  rootStyle?: any;
+  errorStyle?: any;
   maskType?: TextInputMaskTypeProp;
   label?: string;
   iconName?: string;
@@ -99,7 +93,7 @@ export interface PinInputType {
   cellStyleFocused?: any;
   textStyle?: any;
   textStyleFocused?: any;
-  wrapperStyle?: StyleProp<ViewStyle>;
+  wrapperStyle?: any;
   keyboardType?: KeyboardTypeOptions;
   inputProps?: TextInputProps;
   labelStyle?: any;

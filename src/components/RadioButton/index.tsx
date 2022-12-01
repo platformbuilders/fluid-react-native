@@ -1,42 +1,44 @@
 import React from 'react';
-import If from '../If';
-import { CheckedRadio, Radio } from './styles';
+import { RadioButtonType } from '../../types';
+import { CheckedRadio, Label, Radio, Wrapper } from './styles';
 
-type Props = {
-  id?: string;
-  accessibility: string;
-  radioButtonColor?: string;
-  checkedRadioButtonColor?: string;
-  size?: number;
-  internalSize?: number;
-  checked?: boolean;
-  onPress?(): void;
-};
+const defaultSize = 20;
 
-const RadioButton: React.FC<Props> = ({
+const RadioButton: React.FC<RadioButtonType> = ({
   id,
   accessibility,
   radioButtonColor,
   checkedRadioButtonColor,
-  size = 20,
-  internalSize = 10,
+  size = defaultSize,
+  internalSize = defaultSize - 7,
   checked = false,
   onPress = () => {},
+  label,
+  labelStyle = {},
+  ...rest
 }) => (
-  <Radio
+  <Wrapper
     id={id || accessibility}
     accessibility={accessibility}
     onPress={onPress}
-    radioButtonColor={radioButtonColor}
-    size={size}
+    {...rest}
   >
-    <If condition={checked}>
-      <CheckedRadio
-        checkedRadioButtonColor={checkedRadioButtonColor}
-        internalSize={internalSize}
-      />
-    </If>
-  </Radio>
+    <Radio
+      id=""
+      accessibility={''}
+      onPress={onPress}
+      radioButtonColor={radioButtonColor}
+      size={size}
+    >
+      {checked && (
+        <CheckedRadio
+          checkedRadioButtonColor={checkedRadioButtonColor}
+          internalSize={internalSize}
+        />
+      )}
+    </Radio>
+    {label && <Label style={labelStyle}>{label}</Label>}
+  </Wrapper>
 );
 
 export default RadioButton;

@@ -5,7 +5,6 @@ import TypographyComponent from '../Typography';
 
 const primaryColor = getTheme('brand.primary.main');
 const textColor = getTheme('text.main');
-const checkColor = getTheme('brand.tertiary.light');
 const spacingSm = getTheme('spacing.sm');
 const opacityOverlay = getTheme('opacity.overlay');
 
@@ -19,13 +18,13 @@ export const containerStyle = {
 };
 
 export const CheckBox = styled(DefaultCheckbox).attrs((props) => ({
-  checkBoxColor: `${checkColor(props)}`,
+  checkBoxColor: `${primaryColor(props)}`,
   checkedCheckBoxColor: `${primaryColor(props)}`,
 }))<{ testID?: string; accessibilityLabel?: string }>``;
 
 export const Label = styled(TypographyComponent).attrs({
   variant: 'md',
-})`
+})<any>`
   flex-direction: row;
   color: ${textColor};
   opacity: ${opacityOverlay};

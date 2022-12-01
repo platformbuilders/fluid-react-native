@@ -1,4 +1,5 @@
 export * from './Accordion';
+export * from './Avatar';
 export * from './Button';
 export * from './Checkbox';
 export * from './Common';
@@ -8,3 +9,5 @@ export * from './TextInputType';
 export * from './Loading';
 export * from './SmoothPinCodeInput';
 export * from './SvgType';
+export * from './UploadPhoto';
+export * from './RadioButton';

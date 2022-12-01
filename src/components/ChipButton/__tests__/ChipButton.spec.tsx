@@ -148,14 +148,4 @@ describe('<ChipButton />', () => {
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
-
-  it('should render Chipbutton with typography variant', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <ChipButton id="testing" accessibility="" typographyVariant="lg" />
-      </ThemeProvider>,
-    );
-
-    expect(wrapper.toJSON()).toMatchSnapshot();
-  });
 });
