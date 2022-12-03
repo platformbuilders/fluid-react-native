@@ -5,7 +5,7 @@ import { ErrorText } from './styles';
 const warnBoolean = (): void =>
   // eslint-disable-next-line no-console
   console.warn(
-    "@platformbuilders/react-native-ui: received a truthy boolean error instead of string, which won't be rendered.",
+    "@platformbuilders/fluid-react-native: received a truthy boolean error instead of string, which won't be rendered.",
   );
 
 type Props = {

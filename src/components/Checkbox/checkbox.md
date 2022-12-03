@@ -1,4 +1,3 @@
-
 # CheckBox ☑
 
 Simple CheckBox Example:
@@ -7,35 +6,35 @@ Simple CheckBox Example:
 
 ```js
 import React, { useState } from 'react';
-import { CheckBox } from '@platformbuilders/react-native-ui';
+import { CheckBox } from '@platformbuilders/fluid-react-native';
 
 const Home: React.FC = () => {
   const [checked, setChecked] = useState(false);
   const handleCheckBox = () => setChecked(!checked);
 
   return (
-      <CheckBox
-        label="Enable Notification"
-        checked={checked}
-        labelBefore="Control Notification"
-        onPress={handleCheckBox}
-        error="This is an error message"
-      />
+    <CheckBox
+      label="Enable Notification"
+      checked={checked}
+      labelBefore="Control Notification"
+      onPress={handleCheckBox}
+      error="This is an error message"
+    />
   );
-}
+};
 
 export default Home;
 ```
 
 ## Props
 
-| Name  | Required | Type | Default Value | Description 
-| ------------- | ------------- | ------------- |------------- |------------- |
-| checked  | false | boolean | false | enable/ disable |
-| label  | false | string / ReactElement | '' | label of checkbox |
-| labelBefore  | false | string | '' | text shown on the left side |
-| error  | false | string | '' | error message |
-| onPress  | false | function | () => null | handle checkbox |
-| labelStyle  | false | object[] | [] | style label |
-| labelStyle  | false | object[] | [] | style label |
-| style  | false | any | {} | style wrapper checkbox |
+| Name        | Required | Type                  | Default Value | Description                 |
+| ----------- | -------- | --------------------- | ------------- | --------------------------- |
+| checked     | false    | boolean               | false         | enable/ disable             |
+| label       | false    | string / ReactElement | ''            | label of checkbox           |
+| labelBefore | false    | string                | ''            | text shown on the left side |
+| error       | false    | string                | ''            | error message               |
+| onPress     | false    | function              | () => null    | handle checkbox             |
+| labelStyle  | false    | object[]              | []            | style label                 |
+| labelStyle  | false    | object[]              | []            | style label                 |
+| style       | false    | any                   | {}            | style wrapper checkbox      |

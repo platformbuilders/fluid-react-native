@@ -8,7 +8,7 @@
 
 ```js
 import React from 'react';
-import { RadioButton as DefaultRadioButton } from '@platformbuilders/react-native-ui';
+import { RadioButton as DefaultRadioButton } from '@platformbuilders/fluid-react-native';
 
 const RadioButton: React.FC = () => {
   return (

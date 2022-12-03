@@ -8,7 +8,7 @@
 
 ```js
 import React from 'react';
-import { TextInput } from '@platformbuilders/react-native-ui';
+import { TextInput } from '@platformbuilders/fluid-react-native';
 
 const Home: React.FC = () => {
   return (

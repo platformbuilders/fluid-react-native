@@ -1,12 +1,11 @@
-
-# If 
+# If
 
 ## If a condition is true it will display the component
 
 ```js
 import React from 'react';
 import { Text } from 'react-native';
-import { If } from '@platformbuilders/react-native-ui';
+import { If } from '@platformbuilders/fluid-react-native';
 
 const Home: React.FC = () => {
    <If condition={true}>
@@ -18,7 +17,6 @@ const Home: React.FC = () => {
 export default Home;
 ```
 
-
-| Name  | Required | Type | Default Value | Description 
-| ------------- | ------------- | ------------- |------------- |------------- |
-| condition | true | boolean |  |  |
+| Name      | Required | Type    | Default Value | Description |
+| --------- | -------- | ------- | ------------- | ----------- |
+| condition | true     | boolean |               |             |
