@@ -63,7 +63,6 @@ const ChipButton: FC<ChipButtonProps> = ({
                 leftIcon
                 touchable={iconTouchable}
                 isEmoji={isEmoji}
-                touchable={false}
               />
             </If>
             <TextButton
