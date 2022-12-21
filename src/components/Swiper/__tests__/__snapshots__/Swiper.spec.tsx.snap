@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Swiper /> should render swiper by children 1`] = `
+<RCTScrollView
+  accessibilityLabel="swiper_with_children"
+  data={
+    Array [
+      <Typography>
+        Unity Test
+      </Typography>,
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  horizontal={true}
+  initialNumToRender={1}
+  initialScrollIndex={0}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  onScrollToIndexFailed={[Function]}
+  onViewableItemsChanged={[Function]}
+  pagingEnabled={true}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEnabled={true}
+  scrollEventThrottle={50}
+  showsHorizontalScrollIndicator={false}
+  showsVerticalScrollIndicator={false}
+  stickyHeaderIndices={Array []}
+  testID="swiper_with_children"
+  viewabilityConfig={
+    Object {
+      "itemVisiblePercentThreshold": 60,
+      "minimumViewTime": 200,
+    }
+  }
+  viewabilityConfigCallbackPairs={
+    Array [
+      Object {
+        "onViewableItemsChanged": [Function],
+        "viewabilityConfig": Object {
+          "itemVisiblePercentThreshold": 60,
+          "minimumViewTime": 200,
+        },
+      },
+    ]
+  }
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+          },
+          null,
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Unity Test"
+        lineHeightVariant="min"
+        style={
+          Array [
+            Object {
+              "color": "#000000",
+              "fontSize": 15,
+              "lineHeight": 15,
+            },
+          ]
+        }
+        testID="Unity Test"
+        variant="md"
+      >
+        Unity Test
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`<Swiper /> should render swiper by renderItems 1`] = `
+<RCTScrollView
+  accessibilityLabel="swiper_with_render_items"
+  data={
+    Array [
+      Object {
+        "content": "Mock Content",
+        "title": "Mock",
+      },
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  horizontal={true}
+  initialNumToRender={1}
+  initialScrollIndex={0}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  onScrollToIndexFailed={[Function]}
+  onViewableItemsChanged={[Function]}
+  pagingEnabled={true}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEnabled={true}
+  scrollEventThrottle={50}
+  showsHorizontalScrollIndicator={false}
+  showsVerticalScrollIndicator={false}
+  stickyHeaderIndices={Array []}
+  testID="swiper_with_render_items"
+  viewabilityConfig={
+    Object {
+      "itemVisiblePercentThreshold": 60,
+      "minimumViewTime": 200,
+    }
+  }
+  viewabilityConfigCallbackPairs={
+    Array [
+      Object {
+        "onViewableItemsChanged": [Function],
+        "viewabilityConfig": Object {
+          "itemVisiblePercentThreshold": 60,
+          "minimumViewTime": 200,
+        },
+      },
+    ]
+  }
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+          },
+          null,
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Mock Content"
+        lineHeightVariant="min"
+        style={
+          Array [
+            Object {
+              "color": "#000000",
+              "fontSize": 15,
+              "lineHeight": 15,
+            },
+          ]
+        }
+        testID="Mock Content"
+        variant="md"
+      >
+        Mock Content
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;

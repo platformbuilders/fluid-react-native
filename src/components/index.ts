@@ -29,3 +29,4 @@ export { default as Navbar } from './Navbar';
 export { default as Toggle } from './Toggle';
 export { default as ChipButton } from './ChipButton';
 export { default as UploadPhoto } from './UploadPhoto';
+export { Swiper, SwiperPagination } from './Swiper';
