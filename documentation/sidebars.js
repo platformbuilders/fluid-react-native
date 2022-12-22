@@ -17,6 +17,7 @@ module.exports = {
       'native.component.pinInput',
       'native.component.radioButton',
       'native.component.searchButton',
+      'native.component.swiper',
       'native.component.touchable',
       'native.component.typography'
     ]
