@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "react-native-elements-e381d",
+    "site": "fluid-react-native",
     "public": "build",
     "ignore": [
       "firebase.json",
