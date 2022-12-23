@@ -1,7 +1,7 @@
 module.exports = {
   title: '@platformbuilders/react-native-elements',
   tagline: `react-native-elements agora é fluid-react-native 😎`,
-  url: 'https://fluid-react-native.web.app/',
+  url: 'https://fluid-react-native.firebaseapp.com/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',

@@ -71,7 +71,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={"https://fluid-react-native.web.app/"}>
+              to={siteConfig.url}>
               Get Started with Fluid React Native
             </Link>
           </div>
