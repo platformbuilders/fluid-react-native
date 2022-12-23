@@ -1,7 +1,7 @@
 module.exports = {
-  title: '@platformbuilders/react-native-elements',
-  tagline: `react-native-elements agora é fluid-react-native 😎`,
-  url: 'https://fluid-react-native.firebaseapp.com/',
+  title: '@platformbuilders/fluid-react-native',
+  tagline: `The perfect environment to learn and with the option to don't get your eyes burned down 😎`,
+  url: 'https://fluid-react-native.web.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
@@ -9,7 +9,7 @@ module.exports = {
   projectName: 'fluid-react-native', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: `React Native Elements`,
+      title: `Fluid React Native - v${require('./../package.json').version}`,
       logo: {
         alt: 'My Site Logo',
         src: 'img/favicon.ico',
