@@ -9,7 +9,7 @@ module.exports = {
   projectName: 'fluid-react-native', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'React Native Elements',
+      title: `Fluid React Native - v${require('./../package.json').version}`,
       logo: {
         alt: 'My Site Logo',
         src: 'img/favicon.ico',
