@@ -11,3 +11,4 @@ export * from './SmoothPinCodeInput';
 export * from './SvgType';
 export * from './UploadPhoto';
 export * from './RadioButton';
+export * from './Swiper';
