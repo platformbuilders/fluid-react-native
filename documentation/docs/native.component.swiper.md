@@ -23,21 +23,21 @@ Por esse método, o swiper cria os "deslizáveis" a partir dos componentes filho
 ### Fonte
 
 ```typescript
-import {Swiper } from '@platformbuilders/fluid-react-native';
+import { Swiper } from '@platformbuilders/fluid-react-native';
 .
 .
 .
-  <Swiper accessibility={'swiper com children'}>
-    <SwiperItem>
-      <Title>Swiper Example 1</Title>
-    </SwiperItem>
-    <SwiperItem>
-      <Title>Swiper Example 2</Title>
-    </SwiperItem>
-    <SwiperItem>
-      <Title>Swiper Example 3</Title>
-    </SwiperItem>
-  </Swiper>
+<Swiper accessibility={'swiper com children'}>
+  <SwiperItem>
+    <Title>Swiper Example 1</Title>
+  </SwiperItem>
+  <SwiperItem>
+    <Title>Swiper Example 2</Title>
+  </SwiperItem>
+  <SwiperItem>
+    <Title>Swiper Example 3</Title>
+  </SwiperItem>
+</Swiper>
 ```
 
 ## Exemplo com renderItems
@@ -50,29 +50,30 @@ Por esse método, o swiper cria os "deslizáveis" a partir de um array de dados 
 ### Fonte
 
 ```typescript
-import {Swiper } from '@platformbuilders/fluid-react-native';
+import { Swiper } from '@platformbuilders/fluid-react-native';
+import { ListRenderItem } from 'react-native';
 .
 .
 .
 const renderItem: ListRenderItem<string> = ({ item }) => {
-    return (
-      <SwiperItem>
-        <Title>{item}</Title>
-      </SwiperItem>
-    );
-  };
-
   return (
-    <Swiper
-      accessibility={'swiper com renderItems'}
-      data={[
-        'Swiper Example RenderItems 1',
-        'Swiper Example RenderItems 2',
-        'Swiper Example RenderItems 3',
-      ]}
-      renderItem={renderItem}
-    />
+    <SwiperItem>
+      <Title>{item}</Title>
+    </SwiperItem>
   );
+};
+
+return (
+  <Swiper
+    accessibility={'swiper com renderItems'}
+    data={[
+      'Swiper Example RenderItems 1',
+      'Swiper Example RenderItems 2',
+      'Swiper Example RenderItems 3',
+    ]}
+    renderItem={renderItem}
+  />
+);
 ```
 ## Exemplo com Pagination (SwiperPagination)
 O Swiper disponibiliza um componente padrão de paginação, o SwiperPagination, sendo exibido ao passar a prop showPagination={true}
@@ -91,8 +92,26 @@ import {Swiper, SwiperPagination, SwiperPaginationProps } from '@platformbuilder
 .
 
 // Utilizando props do Swiper
-  <Swiper
-      accessibility="swiper com pagination"
+<Swiper
+  accessibility="swiper com pagination"
+  showPagination={true}
+  paginationActiveColor="red"
+  paginationDefaultColor="blue"
+  paginationStyleItem={{
+    width: 8,
+    height: 8,
+  }}
+  paginationStyleItemActive={{
+    width: 20,
+    height: 8,
+  }} 
+/>
+
+// Utilizando componente Customizável
+const PaginationCustom = (paginationProps: SwiperPaginationProps) => {
+  return (
+    <SwiperPagination
+      {...paginationProps}
       paginationActiveColor="red"
       paginationDefaultColor="blue"
       paginationStyleItem={{
@@ -102,35 +121,19 @@ import {Swiper, SwiperPagination, SwiperPaginationProps } from '@platformbuilder
       paginationStyleItemActive={{
         width: 20,
         height: 8,
-      }} 
-  />
+      }}
+    />
+  );
+};
 
-// Utilizando componente Customizável
-const PaginationCustom = (paginationProps: SwiperPaginationProps) => {
-    return (
-      <SwiperPagination
-        {...paginationProps}
-        paginationActiveColor="red"
-        paginationDefaultColor="blue"
-        paginationStyleItem={{
-          width: 8,
-          height: 8,
-        }}
-        paginationStyleItemActive={{
-          width: 20,
-          height: 8,
-        }}
-      />
-    );
-  };
-
-  return (
-      <Swiper
-        accessibility="swiper com pagination custom"
-        PaginationComponent={PaginationCustom}
-        .
-        .
-        .
+return (
+  <Swiper
+    accessibility="swiper com pagination custom"
+    PaginationComponent={PaginationCustom}
+    showPagination={true}
+    .
+    .
+    .
 
 ```
 
@@ -180,8 +183,8 @@ import { Swiper, SwiperRefProps } from '@platformbuilders/fluid-react-native';
 const swiperRef = useRef<SwiperRefProps>(null);
 return (
   <Swiper
-      accessibility='swiper_com_ref'
-      swiperRef={swiperRef}
+    accessibility='swiper_com_ref'
+    swiperRef={swiperRef}
     .
     .
     .
