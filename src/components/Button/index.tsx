@@ -24,6 +24,7 @@ const Button: FC<ButtonProps> = ({
   maxWidth,
   rightIconName,
   leftIconName,
+  useSentryTraceability,
 }) => {
   return (
     <Touchable
@@ -34,6 +35,7 @@ const Button: FC<ButtonProps> = ({
       disabled={loading || disabled}
       onPress={onPress}
       rounded={rounded}
+      useSentryTraceability={useSentryTraceability}
     >
       <ButtonWrapper
         hasBorder={hasBorder}

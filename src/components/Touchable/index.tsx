@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { TouchableOpacity } from 'react-native';
 import { TouchableType } from '../../types';
-import { generateHaptic } from '../../utils/helpers';
+import { generateHaptic, handleSentryTraceability } from '../../utils/helpers';
 
 const CommonTouchable: FC<TouchableType> = ({
   onPress = (): void => {},
@@ -11,6 +11,7 @@ const CommonTouchable: FC<TouchableType> = ({
   accessibilityLabel,
   testID,
   id,
+  useSentryTraceability = false,
   ...rest
 }) => (
   <TouchableOpacity
@@ -19,6 +20,16 @@ const CommonTouchable: FC<TouchableType> = ({
     testID={testID || id || accessibility}
     disabled={disabled}
     onPress={(e): void => {
+      handleSentryTraceability({
+        useSentryTraceability,
+        category: 'touchable',
+        data: {
+          id,
+          accessibility,
+          accessibilityLabel,
+          testID,
+        },
+      });
       generateHaptic(haptic);
       onPress(e);
     }}
