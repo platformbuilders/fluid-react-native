@@ -72,6 +72,7 @@
     "@platformbuilders/theme-toolkit": "^0.1.1",
     "@react-navigation/native": "6.0.11",
     "@react-navigation/native-stack": "6.7.0",
+    "@sentry/react-native": "4.13.0",
     "@storybook/addon-actions": "6.0.22",
     "@storybook/addon-backgrounds": "6.0.22",
     "@storybook/addon-knobs": "6.0.22",
