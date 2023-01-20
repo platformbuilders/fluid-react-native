@@ -1,3 +1,6 @@
+import * as Sentry from '@sentry/react-native';
+
+export { Sentry };
 export {
   currencyParser,
   parseToThousands,
@@ -12,3 +15,4 @@ export {
 export * from './generateHaptic';
 export * from './getByTypographyVariant';
 export * from './shadow';
+export * from './sentry';
