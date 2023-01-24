@@ -188,6 +188,7 @@
     "react-native-touch-id": "4.4.1",
     "react-native-tracking-transparency": "0.1.1",
     "react-native-typography": "1.4.1",
+    "react-native-vision-camera": "^2.15.2",
     "react-native-web-image-loader": "0.1.1",
     "react-router-dom": "5.2.0",
     "react-test-renderer": "18.2.0",

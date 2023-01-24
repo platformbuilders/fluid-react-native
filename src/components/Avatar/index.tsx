@@ -7,11 +7,11 @@ import {
   launchImageLibrary,
 } from 'react-native-image-picker';
 import { ImageAvatarPlaceholder as defaultAvatar } from '../../assets/images';
-import { AvatarType } from '../../types';
+import { AvatarRef, AvatarType } from '../../types';
 import If from '../If';
 import { CameraView, UploadIcon, UploadIconWrapper, Wrapper } from './styles';
 
-const Avatar: React.FC<AvatarType> = React.forwardRef(
+const Avatar = React.forwardRef<AvatarRef, AvatarType>(
   (
     {
       id,
@@ -32,7 +32,7 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
     ref,
     // eslint-disable-next-line sonarjs/cognitive-complexity
   ) => {
-    const [uploadedImage, setUploadedImage] = useState<any>();
+    const [uploadedImage, setUploadedImage] = useState<string>();
     const cameraRef = useRef<any>();
 
     const openPicker = (): Promise<void> => {
@@ -51,9 +51,10 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
       return new Promise((resolve) => {
         launchImageLibrary(options as any, (response: ImagePickerResponse) => {
           if (!response.didCancel && response.assets) {
-            setUploadedImage(response?.assets[0]?.uri);
+            const photo = response?.assets[0]?.uri;
+            setUploadedImage(photo);
             if (onUpload) {
-              onUpload(response);
+              onUpload(photo);
             }
           }
           resolve();
@@ -108,12 +109,13 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
         borderWidth={borderWidth}
         {...rest}
       >
-        {displayCamera && !uploadedImage ? (
+        {displayCamera ? (
           <CameraView
             ref={cameraRef}
             size={size}
             type={RNCamera.Constants.Type.front}
             flashMode={RNCamera.Constants.FlashMode.auto}
+            captureAudio={false}
             androidCameraPermissionOptions={{
               title: 'Câmera',
               message: 'Precisamos da sua permissão para usar a câmera',
