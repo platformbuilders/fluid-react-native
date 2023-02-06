@@ -1,11 +1,22 @@
-import React, { useImperativeHandle, useRef, useState } from 'react';
+import React, {
+  useEffect,
+  useImperativeHandle,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import { isEmpty } from 'lodash';
-import { RNCamera } from 'react-native-camera';
-import FastImage, { Source } from 'react-native-fast-image';
+import { Linking } from 'react-native';
+import FastImage from 'react-native-fast-image';
 import {
   ImagePickerResponse,
   launchImageLibrary,
 } from 'react-native-image-picker';
+import {
+  Camera,
+  CameraPermissionStatus,
+  useCameraDevices,
+} from 'react-native-vision-camera';
 import { ImageAvatarPlaceholder as defaultAvatar } from '../../assets/images';
 import { AvatarRef, AvatarType } from '../../types';
 import If from '../If';
@@ -32,8 +43,25 @@ const Avatar = React.forwardRef<AvatarRef, AvatarType>(
     ref,
     // eslint-disable-next-line sonarjs/cognitive-complexity
   ) => {
+    const [permission, setPermission] = useState<CameraPermissionStatus>(
+      'not-determined',
+    );
     const [uploadedImage, setUploadedImage] = useState<string>();
-    const cameraRef = useRef<any>();
+    const cameraRef = useRef<Camera>(null);
+    const devices = useCameraDevices();
+    const device = devices.front ?? devices.back;
+
+    useEffect(() => {
+      if (displayCamera) {
+        requestCameraPermission();
+      }
+    }, [displayCamera]);
+
+    const requestCameraPermission = async () => {
+      const permission = await Camera.requestCameraPermission();
+      if (permission === 'denied') await Linking.openSettings();
+      setPermission(permission);
+    };
 
     const openPicker = (): Promise<void> => {
       const options = {
@@ -64,14 +92,12 @@ const Avatar = React.forwardRef<AvatarRef, AvatarType>(
 
     const takePicture = async (): Promise<void> => {
       if (cameraRef.current) {
-        const options = { quality: 0.5, base64: true };
-        const data = await cameraRef.current.takePictureAsync(options);
-        setUploadedImage(data);
-        return data;
+        const photo = await cameraRef.current.takeSnapshot();
+        setUploadedImage(`file://${photo.path}`);
       }
     };
 
-    const getUploadImage = (): any => {
+    const getUploadImage = (): string | undefined => {
       return uploadedImage;
     };
 
@@ -79,7 +105,7 @@ const Avatar = React.forwardRef<AvatarRef, AvatarType>(
       setUploadedImage('');
     };
 
-    const getCurrentAvatar = (): Source | any => {
+    const currentAvatar = useMemo(() => {
       if (uploadedImage) {
         return { uri: uploadedImage };
       }
@@ -87,7 +113,7 @@ const Avatar = React.forwardRef<AvatarRef, AvatarType>(
         return { uri: image };
       }
       return defaultAvatar;
-    };
+    }, [image, uploadedImage]);
 
     useImperativeHandle(ref, () => ({
       getUploadImage,
@@ -95,6 +121,8 @@ const Avatar = React.forwardRef<AvatarRef, AvatarType>(
       takePicture,
       openPicker,
     }));
+
+    const allowCamera = permission === 'authorized';
 
     return (
       <Wrapper
@@ -109,23 +137,11 @@ const Avatar = React.forwardRef<AvatarRef, AvatarType>(
         borderWidth={borderWidth}
         {...rest}
       >
-        {displayCamera ? (
-          <CameraView
-            ref={cameraRef}
-            size={size}
-            type={RNCamera.Constants.Type.front}
-            flashMode={RNCamera.Constants.FlashMode.auto}
-            captureAudio={false}
-            androidCameraPermissionOptions={{
-              title: 'Câmera',
-              message: 'Precisamos da sua permissão para usar a câmera',
-              buttonPositive: 'Ok',
-              buttonNegative: 'Cancelar',
-            }}
-          />
+        {allowCamera && device && displayCamera ? (
+          <CameraView size={size} ref={cameraRef} device={device} />
         ) : (
           <FastImage
-            source={getCurrentAvatar()}
+            source={currentAvatar}
             resizeMode={FastImage.resizeMode.cover}
             style={{ width: '101%', height: '101%' }}
           />

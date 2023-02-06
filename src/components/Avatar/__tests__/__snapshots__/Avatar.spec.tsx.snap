@@ -104,15 +104,35 @@ exports[`<Avatar /> should render Avatar with all custom props 1`] = `
 >
   <View
     style={
-      Object {
-        "alignItems": "center",
-        "flex": 1,
-        "justifyContent": "center",
-      }
+      Array [
+        Object {
+          "overflow": "hidden",
+        },
+        Object {
+          "height": "101%",
+          "width": "101%",
+        },
+      ]
     }
   >
-    <ActivityIndicator
-      size="small"
+    <FastImageView
+      resizeMode="cover"
+      source={
+        Object {
+          "uri": Object {
+            "testUri": "../../../src/assets/images/avatar-placeholder.png",
+          },
+        }
+      }
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
     />
   </View>
 </View>
@@ -222,15 +242,35 @@ exports[`<Avatar /> should render Avatar with camera 1`] = `
 >
   <View
     style={
-      Object {
-        "alignItems": "center",
-        "flex": 1,
-        "justifyContent": "center",
-      }
+      Array [
+        Object {
+          "overflow": "hidden",
+        },
+        Object {
+          "height": "101%",
+          "width": "101%",
+        },
+      ]
     }
   >
-    <ActivityIndicator
-      size="small"
+    <FastImageView
+      resizeMode="cover"
+      source={
+        Object {
+          "uri": Object {
+            "testUri": "../../../src/assets/images/avatar-placeholder.png",
+          },
+        }
+      }
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
     />
   </View>
 </View>

@@ -1,4 +1,4 @@
-import { RNCamera } from 'react-native-camera';
+import { Camera } from 'react-native-vision-camera';
 import styled from 'styled-components/native';
 import { getTheme, ifStyle } from '../../utils/helpers';
 import Icon from '../Icon';
@@ -55,7 +55,12 @@ export const NameInitials = styled(Typography).attrs({ variant: 'sm' })`
   color: red;
 `;
 
-export const CameraView = styled(RNCamera)<{ size: number }>`
+export const CameraView = styled(Camera).attrs({
+  isActive: true,
+  photo: true,
+  audio: false,
+  orientation: 'portrait',
+})<{ size: number }>`
   width: ${(props: any): number => props.size}px;
   height: 100%;
   border-radius: ${(props: any): number => props.size / 2}px;

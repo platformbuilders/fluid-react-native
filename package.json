@@ -188,7 +188,7 @@
     "react-native-touch-id": "4.4.1",
     "react-native-tracking-transparency": "0.1.1",
     "react-native-typography": "1.4.1",
-    "react-native-vision-camera": "^2.15.2",
+    "react-native-vision-camera": "2.15.4",
     "react-native-web-image-loader": "0.1.1",
     "react-router-dom": "5.2.0",
     "react-test-renderer": "18.2.0",
@@ -226,6 +226,7 @@
     "react-native-svg": ">=12.1.0",
     "react-native-typography": ">=1.4.1",
     "react-native-vector-icons": ">=7.0.0",
+    "react-native-vision-camera": ">=2.15.2",
     "react-router-dom": ">=5",
     "styled-components": ">=5"
   }
