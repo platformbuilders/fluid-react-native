@@ -9,7 +9,10 @@
 /* eslint-env jest */
 
 import { NativeModules } from 'react-native';
+import mockRNDeviceInfo from 'react-native-device-info/jest/react-native-device-info-mock';
 import { beforeAll } from '@jest/globals';
+
+jest.mock('react-native-device-info', () => mockRNDeviceInfo);
 
 // Mock the ImagePickerManager native module to allow us to unit test the JavaScript code
 NativeModules.ImagePickerManager = {

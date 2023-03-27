@@ -1,7 +1,6 @@
-import { getBottomSpace } from 'react-native-iphone-x-helper';
 import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
-import { isIOS } from '@platformbuilders/helpers/native';
+import { getBottomSpace, isIOS } from '@platformbuilders/helpers/native';
 import { ThemeProps } from '@platformbuilders/theme-toolkit';
 import { getShadow, getTheme, ifStyle } from '../../utils/helpers';
 import Icon from '../Icon';
