@@ -2076,7 +2076,7 @@
 
 "@platformbuilders/helpers@0.8.0":
   version "0.8.0"
-  resolved "https://npm.pkg.github.com/download/@platformbuilders/helpers/0.8.0/6916e1cbf5edbd73a0d52ba7aa0d7dd7ae039aa1#6916e1cbf5edbd73a0d52ba7aa0d7dd7ae039aa1"
+  resolved "https://registry.yarnpkg.com/@platformbuilders/helpers/-/helpers-0.8.0.tgz#6916e1cbf5edbd73a0d52ba7aa0d7dd7ae039aa1"
   integrity sha512-HVgFfPuC+jhVW9GnQYTj2M8S2FPgIg7FixjjQ0OneRSEJ2QXcKqcX4gtFen/mxjNadLBiIZVyluq4Mx+/AO5OA==
 
 "@platformbuilders/theme-toolkit@^0.1.1":
