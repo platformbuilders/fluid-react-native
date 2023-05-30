@@ -17,6 +17,7 @@ import {
 const UploadPhoto: React.FC<UploadPhotoType> = React.forwardRef(
   (
     {
+      image,
       id,
       accessibility,
       accessibilityLabel,
@@ -33,7 +34,7 @@ const UploadPhoto: React.FC<UploadPhotoType> = React.forwardRef(
     },
     ref,
   ) => {
-    const [uploadedImage, setUploadedImage] = useState<any>();
+    const [uploadedImage, setUploadedImage] = useState<any>(image);
     const cameraRef = useRef<any>();
 
     const openPicker = (): Promise<void> => {
