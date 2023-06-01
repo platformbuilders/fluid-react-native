@@ -1,5 +1,5 @@
+import TextInputMask from 'react-native-masked-input';
 import styled from 'styled-components/native';
-import { TextInputMask } from '../../MaskedText';
 import { TextInput as TextInputStyle } from '../styles';
 
 const Input = TextInputStyle.withComponent(TextInputMask);

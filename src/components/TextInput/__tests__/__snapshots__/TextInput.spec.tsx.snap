@@ -118,7 +118,7 @@ exports[`<TextInput /> should render textinput 1`] = `
           }
           testID="test"
           textAlign="left"
-          type="no-mask"
+          type="custom"
           underlineColorAndroid="transparent"
           value=""
           variant="md"
