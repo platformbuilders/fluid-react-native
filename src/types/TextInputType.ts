@@ -2,10 +2,23 @@ import { RefObject } from 'react';
 import { KeyboardTypeOptions, TextInputProps } from 'react-native';
 
 import { TypographyVariants } from '@platformbuilders/theme-toolkit';
-import { TextInputMaskTypeProp } from '../components/MaskedText';
 
 import { HitSlopType } from './Common';
 import { IconFonts } from './IconType';
+
+type TextInputMaskTypeProp =
+  | 'document'
+  | 'credit-card'
+  | 'cpf'
+  | 'cnpj'
+  | 'zip-code'
+  | 'only-numbers'
+  | 'money'
+  | 'cel-phone'
+  | 'datetime'
+  | 'no-mask'
+  | 'custom'
+  | 'uppercase';
 
 export type TextInputType = {
   id: string;
