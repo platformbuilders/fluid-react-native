@@ -56,7 +56,7 @@ const MaskedTextInput: FC<MaskedTextInputType> = ({
     }
   };
 
-  const maskTypeControll = (value: any) => {
+  const maskTypeControll = (value: string) => {
     switch (maskType) {
       case 'document':
         if (value && isValidCpf(value)) {
