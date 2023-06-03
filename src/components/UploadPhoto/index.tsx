@@ -1,4 +1,4 @@
-import React, { useImperativeHandle, useRef, useState } from 'react';
+import React, { useEffect, useImperativeHandle, useRef, useState } from 'react';
 import { RNCamera } from 'react-native-camera';
 import FastImage, { Source } from 'react-native-fast-image';
 import {
@@ -8,6 +8,8 @@ import {
 import { IconFonts, UploadPhotoType } from '../../types';
 import {
   CameraView,
+  DeleteIcon,
+  DeleteIconWrapper,
   UploadIcon,
   UploadIconWrapper,
   UploadText,
@@ -24,18 +26,26 @@ const UploadPhoto: React.FC<UploadPhotoType> = React.forwardRef(
       testID,
       uploadText = 'Adicionar Foto',
       uploadIcon = 'image',
+      deleteIcon = 'image',
       imageQuality = 0.5,
-      iconSize = 36,
+      uploadIconSize = 36,
       onPress,
       onUpload,
+      onClearUpload,
       displayCamera = false,
       iconType = IconFonts.Material,
       ...rest
     },
     ref,
   ) => {
-    const [uploadedImage, setUploadedImage] = useState<any>(image);
+    const [uploadedImage, setUploadedImage] = useState<any>('');
     const cameraRef = useRef<any>();
+
+    useEffect(() => {
+      if (image) {
+        setUploadedImage(image);
+      }
+    }, [image]);
 
     const openPicker = (): Promise<void> => {
       const options = {
@@ -78,6 +88,13 @@ const UploadPhoto: React.FC<UploadPhotoType> = React.forwardRef(
 
     const clearUploadImage = (): void => {
       setUploadedImage('');
+    };
+
+    const clearUpload = (): void => {
+      setUploadedImage('');
+      if (onClearUpload) {
+        onClearUpload();
+      }
     };
 
     const getCurrentPhoto = (): Source | any => {
@@ -128,7 +145,7 @@ const UploadPhoto: React.FC<UploadPhotoType> = React.forwardRef(
           <UploadIconWrapper>
             <UploadIcon
               disabled
-              size={iconSize}
+              size={uploadIconSize}
               name={uploadIcon}
               id=""
               accessibility=""
@@ -136,6 +153,20 @@ const UploadPhoto: React.FC<UploadPhotoType> = React.forwardRef(
             />
             {uploadText && <UploadText>{uploadText}</UploadText>}
           </UploadIconWrapper>
+        )}
+        {uploadedImage && (
+          <DeleteIconWrapper
+            accessibility="Remover imagem"
+            onPress={clearUpload}
+          >
+            <DeleteIcon
+              disabled
+              name={deleteIcon}
+              id="remove_image_button"
+              accessibility=""
+              type={iconType}
+            />
+          </DeleteIconWrapper>
         )}
       </Wrapper>
     );
