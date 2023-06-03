@@ -6,12 +6,14 @@ export type UploadPhotoType = {
   displayCamera?: boolean;
   onPress?: (x: any) => void;
   onUpload?: (x: any) => any;
+  onClearUpload?: () => any;
   id?: string;
   accessibility: string;
   accessibilityLabel?: string;
   uploadText?: string;
-  iconSize?: number;
+  uploadIconSize?: number;
   uploadIcon?: string;
+  deleteIcon?: string;
   testID?: string;
   iconType?: IconFonts;
 };

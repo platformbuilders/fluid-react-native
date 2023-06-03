@@ -6,10 +6,12 @@ import Touchable from '../Touchable';
 import Typography from '../Typography';
 
 const iconColor = getTheme('text.main');
+const deleteIconColor = getTheme('text.main');
 const brandPrimaryMain = getTheme('brand.primary.main');
 const backgroundZ2 = getTheme('background.z2');
 const borderRadius = getTheme('themeRadius.card');
 const spacingMd = getTheme('spacing.md');
+const spacingSm = getTheme('spacing.sm');
 
 type WrapperProps = {
   disabled: boolean;
@@ -38,6 +40,25 @@ export const UploadIcon = styled(Icon).attrs((props) => ({
   margin-bottom: ${spacingMd}px;
   opacity: 0.6;
 `;
+
+export const DeleteIconWrapper = styled(Touchable)`
+  position: absolute;
+  top: ${spacingSm}px;
+  right: ${spacingSm}px;
+  z-index: 1;
+  height: 24px;
+  width: 24px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: ${backgroundZ2};
+  opacity: 0.6;
+`;
+
+export const DeleteIcon = styled(Icon).attrs((props) => ({
+  color: deleteIconColor(props),
+  size: 10,
+}))``;
 
 export const CameraView = styled(RNCamera)`
   height: 100%;
