@@ -70,7 +70,7 @@ const TextInput: VFC<TextInputType> = ({
   borderedHeight,
   borderedColor,
   borderedRadius = 0,
-  iconType = IconFonts.Material,
+  iconType = IconFonts.FontAwesome,
   fixedLabelVariant = 'xs',
   suppressAnimation = false,
   borderedLabel = '',

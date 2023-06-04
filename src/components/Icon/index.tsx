@@ -23,7 +23,7 @@ export const Icon: FC<IconType> = ({
   onPress = (): void => {},
   borderColor = '',
   backgroundColor = '',
-  type = IconFonts.Material,
+  type = IconFonts.FontAwesome,
   iconSets,
   width,
   height,

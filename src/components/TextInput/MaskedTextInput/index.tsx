@@ -32,7 +32,7 @@ const MaskedTextInput: FC<MaskedTextInputType> = ({
   status = InputStatus.Default,
   value = '',
   onChangeText,
-  options,
+  options = optionDefault,
   ...props
 }) => {
   const [maskSelected, setMaskSelected] = useState<OptionMask>({
@@ -73,7 +73,9 @@ const MaskedTextInput: FC<MaskedTextInputType> = ({
       case 'no-mask':
         handleSetMask({
           typeMask: 'custom',
-          options: optionDefault,
+          options: {
+            mask: '*'.repeat(400),
+          },
         });
         break;
       case 'uppercase':
