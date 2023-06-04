@@ -1,6 +1,7 @@
 import DefaultCheckbox from 'react-native-check-box';
 import styled from 'styled-components/native';
 import { getTheme } from '../../utils/helpers';
+import Touchable from '../Touchable';
 import TypographyComponent from '../Typography';
 
 const primaryColor = getTheme('brand.primary.main');
@@ -8,7 +9,7 @@ const textColor = getTheme('text.main');
 const spacingSm = getTheme('spacing.sm');
 const opacityOverlay = getTheme('opacity.overlay');
 
-export const Wrapper = styled.View`
+export const Wrapper = styled(Touchable)`
   flex-direction: row;
   align-items: center;
 `;
