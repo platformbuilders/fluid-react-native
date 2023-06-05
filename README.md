@@ -18,15 +18,15 @@ A Fluid React Native é uma biblioteca de componentes UI pronta para uso, desenv
 
 **Instalação**
 
-    npm install fluid-react-native
+    npm install @platformbuilders/fluid-react-native
 	//ou
-    yarn add fluid-react-native
+    yarn add @platformbuilders/fluid-react-native
 
 **Uso**
 Após a instalação, você pode importar e utilizar os componentes da Fluid React Native em seu aplicativo. Aqui está um exemplo básico de como utilizar um botão da Fluid:
 
     import React from 'react';
-    import { Button } from 'fluid-react-native';
+    import { Button } from '@platformbuilders/fluid-react-native';
     
     const App = () => {
       return (
@@ -94,7 +94,7 @@ Isso fará com que a biblioteca Fluid React Native seja disponibilizada localmen
 
 No seu projeto React Native, navegue até o diretório raiz e execute o comando yalc add seguido do nome da biblioteca. Por exemplo:
 
-    yalc add fluid-react-native
+    yalc add @platformbuilders/fluid-react-native
 
 Isso adicionará a biblioteca Fluid React Native ao seu projeto localmente através do Yalc.
 
