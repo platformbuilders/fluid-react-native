@@ -12,37 +12,96 @@
 [workflows]: https://github.com/platformbuilders/fluid-react-native/actions
 [check-badge]: https://github.com/platformbuilders/fluid-react-native/workflows/check/badge.svg
 
-Welcome to the @platformbuilders/elements package here you will find out all of our components shared with the community
+# Fluid React Native
+A Fluid React Native é uma biblioteca de componentes UI pronta para uso, desenvolvida pela Platform Builders. Ela foi criada com o objetivo de acelerar o processo de desenvolvimento de aplicativos React Native, oferecendo uma ampla variedade de componentes prontos para serem utilizados.
 
-# Whats the idea of this repository
 
-Its a place that we can share a little bit of our code base and show how we work on our projects with our components!
+**Instalação**
 
-# How can i use the library?
+    npm install fluid-react-native
+	//ou
+    yarn add fluid-react-native
 
-Here's how you add our dependencie to your project @platformbuilders/elements
+**Uso**
+Após a instalação, você pode importar e utilizar os componentes da Fluid React Native em seu aplicativo. Aqui está um exemplo básico de como utilizar um botão da Fluid:
 
-1. depend on it:
+    import React from 'react';
+    import { Button } from 'fluid-react-native';
+    
+    const App = () => {
+      return (
+        <Button title="Clique aqui" onPress={() => console.log('Botão clicado!')} />
+      );
+    }
+    export default App;
 
-```bash
-yarn add @platformbuilders/fluid-react-native
-```
+## Como criar um componente na Fluid
 
-2. import the ThemeProvider from [styled-components](https://styled-components.com/docs/advanced) and provide the Theme following the ThemeType definition.
+Para criar um novo componente na Fluid React Native, você pode seguir os seguintes passos:
 
-```jsx
-import { ThemeProvider } from 'styled-components';
-import { ThemeType } from '@platformbuilders/fluid-react-native';
+Crie um novo arquivo para o seu componente. Por exemplo, MeuComponente.js.
 
-const theme: ThemeType = { ... };
+        import React from 'react';
+        import { Text } from 'react-native';
+        const MeuComponente = () => {
+	        return (
+		        <Text>Olá, Mundo!</Text>
+		     );
+	    }
+	    export default MeuComponente;
 
-<ThemeProvider theme={theme}>
-    <App />
-</ThemeProvider>
-```
+  
+  No arquivo src/components/index.ts exporte seu novo componente:
 
-3. use it
+    export { default  as  MeuComponente } from  './MeuComponente';
 
-```jsx
-import { Button } from '@platformbuilders/fluid-react-native';
-```
+***Não esqueça de criar testes para seu novo componente**
+1.  Crie um arquivo de teste para o seu componente. Por exemplo, `MeuComponente.spec.js`. 
+2. Escreva um teste para verificar se o componente é renderizado corretamente:
+
+    	import React from 'react';
+        import { render, getByText } from 'react-native-testing-library';
+        import MeuComponente from './MeuComponente';
+    	describe('MeuComponente', () => {
+   	      it('deve renderizar corretamente', () => {
+   	        const { getByText } = render(<MeuComponente />);
+   	        const textoElement = getByText('Olá, Mundo!');
+   	        expect(textElement).toBeDefined();
+   	      });
+   	    });
+    
+    Neste exemplo, estamos verificando se o texto "Olá, Mundo!" é renderizado corretamente no componente `MeuComponente`.
+    
+6.  Execute os testes para verificar se o componente está funcionando corretamente. No seu terminal, execute o seguinte comando:
+
+        npm test
+        // ou
+        yarn test
+
+## Como testar usando o Yalc
+
+Certifique-se de ter o Yalc instalado globalmente em sua máquina. Se ainda não o tiver, você pode instalá-lo executando o seguinte comando:
+
+    npm install -g yalc
+
+Navegue até o diretório raiz do projeto da Fluid React Native.
+
+Execute o comando yalc publish para publicar a biblioteca localmente:
+
+    yalc publish
+
+Isso fará com que a biblioteca Fluid React Native seja disponibilizada localmente por meio do Yalc.
+
+No seu projeto React Native, navegue até o diretório raiz e execute o comando yalc add seguido do nome da biblioteca. Por exemplo:
+
+    yalc add fluid-react-native
+
+Isso adicionará a biblioteca Fluid React Native ao seu projeto localmente através do Yalc.
+
+Agora você pode importar e utilizar os componentes da Fluid React Native em seu aplicativo normalmente.
+
+Sempre que você fizer alterações na biblioteca Fluid React Native, execute o comando yalc push no diretório raiz do projeto para atualizar o pacote no seu projeto React Native:
+
+    yalc publish --push
+
+Isso fará com que as alterações sejam refletidas automaticamente no seu projeto React Native.
