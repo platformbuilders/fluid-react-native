@@ -33,7 +33,7 @@ const MaskedTextInput: FC<MaskedTextInputType> = ({
   value = '',
   onChangeText,
   options = optionDefault,
-  ...props
+  ...rest
 }) => {
   const [maskSelected, setMaskSelected] = useState<OptionMask>({
     typeMask: 'custom',
@@ -100,19 +100,15 @@ const MaskedTextInput: FC<MaskedTextInputType> = ({
 
   return (
     <TextInput
-      {...props}
-      onChangeText={(maskedText) => {
-        if (onChangeText) {
-          onChangeText(maskedText.toString());
-        }
-      }}
+      {...rest}
+      onChangeText={onChangeText}
       value={value}
       id={id || accessibility}
       status={status}
       accessibility={accessibility}
       testID={id || accessibility}
       accessibilityLabel={accessibility}
-      inputRef={inputRef}
+      refInput={inputRef}
       contrast={contrast}
       multiline={multiline}
       type={maskSelected.typeMask}

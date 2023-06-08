@@ -174,9 +174,9 @@ const TextInput: VFC<TextInputType> = ({
       onBlur: handleOnBlur,
       onFocus: handleOnFocus,
       underlineColorAndroid: 'transparent',
+      autoFocus,
       ...rest,
     };
-
     return (
       <MaskedTextInput
         {...textInputProps}
