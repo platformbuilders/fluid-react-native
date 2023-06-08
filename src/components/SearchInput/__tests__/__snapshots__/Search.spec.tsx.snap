@@ -110,10 +110,10 @@ exports[`<Search /> should render search 1`] = `
             autoCapitalize="none"
             autoCompleteType="off"
             autoCorrect={false}
+            autoFocus={false}
             centered={false}
             contrast={false}
             id="test"
-            inputRef="$text"
             isPlaceholder={true}
             keyboardType="default"
             large={false}
@@ -133,6 +133,7 @@ exports[`<Search /> should render search 1`] = `
             }
             placeholder=""
             placeholderTextColor="#72727260"
+            refInput="$text"
             status="default"
             style={
               Array [
@@ -350,10 +351,10 @@ exports[`<Search /> should render search with auto focus 1`] = `
             autoCapitalize="none"
             autoCompleteType="off"
             autoCorrect={false}
+            autoFocus={true}
             centered={false}
             contrast={false}
             id="test"
-            inputRef="$text"
             isPlaceholder={false}
             keyboardType="default"
             large={false}
@@ -369,6 +370,7 @@ exports[`<Search /> should render search with auto focus 1`] = `
             }
             placeholder="Pesquise aqui"
             placeholderTextColor="#72727260"
+            refInput="$text"
             status="default"
             style={
               Array [
@@ -585,10 +587,10 @@ exports[`<Search /> should render search with custom container style 1`] = `
             autoCapitalize="none"
             autoCompleteType="off"
             autoCorrect={false}
+            autoFocus={false}
             centered={false}
             contrast={false}
             id="test"
-            inputRef="$text"
             isPlaceholder={false}
             keyboardType="default"
             large={false}
@@ -604,6 +606,7 @@ exports[`<Search /> should render search with custom container style 1`] = `
             }
             placeholder="Pesquise aqui"
             placeholderTextColor="#72727260"
+            refInput="$text"
             status="default"
             style={
               Array [
@@ -817,10 +820,10 @@ exports[`<Search /> should render search with custom icon color 1`] = `
             autoCapitalize="none"
             autoCompleteType="off"
             autoCorrect={false}
+            autoFocus={false}
             centered={false}
             contrast={false}
             id="test"
-            inputRef="$text"
             isPlaceholder={false}
             keyboardType="default"
             large={false}
@@ -836,6 +839,7 @@ exports[`<Search /> should render search with custom icon color 1`] = `
             }
             placeholder="Pesquise aqui"
             placeholderTextColor="#72727260"
+            refInput="$text"
             status="default"
             style={
               Array [
@@ -1051,10 +1055,10 @@ exports[`<Search /> should render search with custom input style 1`] = `
             autoCapitalize="none"
             autoCompleteType="off"
             autoCorrect={false}
+            autoFocus={false}
             centered={false}
             contrast={false}
             id="test"
-            inputRef="$text"
             isPlaceholder={true}
             keyboardType="default"
             large={false}
@@ -1074,6 +1078,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
             }
             placeholder=""
             placeholderTextColor="#72727260"
+            refInput="$text"
             status="default"
             style={
               Array [
@@ -1293,10 +1298,10 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
             autoCapitalize="none"
             autoCompleteType="off"
             autoCorrect={false}
+            autoFocus={false}
             centered={false}
             contrast={false}
             id="test"
-            inputRef="$text"
             isPlaceholder={true}
             keyboardType="default"
             large={false}
@@ -1316,6 +1321,7 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
             }
             placeholder=""
             placeholderTextColor="#72727260"
+            refInput="$text"
             status="default"
             style={
               Array [
@@ -1535,10 +1541,10 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
             autoCapitalize="none"
             autoCompleteType="off"
             autoCorrect={false}
+            autoFocus={false}
             centered={false}
             contrast={false}
             id="test"
-            inputRef="$text"
             isPlaceholder={true}
             keyboardType="default"
             large={false}
@@ -1558,6 +1564,7 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
             }
             placeholder=""
             placeholderTextColor="#123983"
+            refInput="$text"
             status="default"
             style={
               Array [
@@ -1775,10 +1782,10 @@ exports[`<Search /> should render search with custom text style 1`] = `
             autoCapitalize="none"
             autoCompleteType="off"
             autoCorrect={false}
+            autoFocus={false}
             centered={false}
             contrast={false}
             id="test"
-            inputRef="$text"
             isPlaceholder={false}
             keyboardType="default"
             large={false}
@@ -1794,6 +1801,7 @@ exports[`<Search /> should render search with custom text style 1`] = `
             }
             placeholder="Pesquise aqui"
             placeholderTextColor="#72727260"
+            refInput="$text"
             status="default"
             style={
               Array [
@@ -2009,10 +2017,10 @@ exports[`<Search /> should render search with icon size 1`] = `
             autoCapitalize="none"
             autoCompleteType="off"
             autoCorrect={false}
+            autoFocus={false}
             centered={false}
             contrast={false}
             id="test"
-            inputRef="$text"
             isPlaceholder={false}
             keyboardType="default"
             large={false}
@@ -2028,6 +2036,7 @@ exports[`<Search /> should render search with icon size 1`] = `
             }
             placeholder="Pesquise aqui"
             placeholderTextColor="#72727260"
+            refInput="$text"
             status="default"
             style={
               Array [
@@ -2295,10 +2304,10 @@ exports[`<Search /> should render search with left icon 1`] = `
             autoCapitalize="none"
             autoCompleteType="off"
             autoCorrect={false}
+            autoFocus={false}
             centered={false}
             contrast={false}
             id="test"
-            inputRef="$text"
             isPlaceholder={false}
             keyboardType="default"
             large={false}
@@ -2314,6 +2323,7 @@ exports[`<Search /> should render search with left icon 1`] = `
             }
             placeholder="Pesquise aqui"
             placeholderTextColor="#72727260"
+            refInput="$text"
             status="default"
             style={
               Array [
@@ -2474,10 +2484,10 @@ exports[`<Search /> should render search with padding 1`] = `
             autoCapitalize="none"
             autoCompleteType="off"
             autoCorrect={false}
+            autoFocus={false}
             centered={false}
             contrast={false}
             id="test"
-            inputRef="$text"
             isPlaceholder={true}
             keyboardType="default"
             large={false}
@@ -2497,6 +2507,7 @@ exports[`<Search /> should render search with padding 1`] = `
             }
             placeholder=""
             placeholderTextColor="#72727260"
+            refInput="$text"
             status="default"
             style={
               Array [
@@ -2716,10 +2727,10 @@ exports[`<Search /> should render search with right icon 1`] = `
             autoCapitalize="none"
             autoCompleteType="off"
             autoCorrect={false}
+            autoFocus={false}
             centered={false}
             contrast={false}
             id="test"
-            inputRef="$text"
             isPlaceholder={true}
             keyboardType="default"
             large={false}
@@ -2739,6 +2750,7 @@ exports[`<Search /> should render search with right icon 1`] = `
             }
             placeholder=""
             placeholderTextColor="#72727260"
+            refInput="$text"
             status="default"
             style={
               Array [
@@ -2965,10 +2977,10 @@ exports[`<Search /> should render search with shadow 1`] = `
             autoCapitalize="none"
             autoCompleteType="off"
             autoCorrect={false}
+            autoFocus={false}
             centered={false}
             contrast={false}
             id="test"
-            inputRef="$text"
             isPlaceholder={true}
             keyboardType="default"
             large={false}
@@ -2988,6 +3000,7 @@ exports[`<Search /> should render search with shadow 1`] = `
             }
             placeholder=""
             placeholderTextColor="#72727260"
+            refInput="$text"
             status="default"
             style={
               Array [
@@ -3206,10 +3219,10 @@ exports[`<Search /> should render search with wrapper height 1`] = `
             autoCapitalize="none"
             autoCompleteType="off"
             autoCorrect={false}
+            autoFocus={false}
             centered={false}
             contrast={false}
             id="test"
-            inputRef="$text"
             isPlaceholder={false}
             keyboardType="default"
             large={false}
@@ -3225,6 +3238,7 @@ exports[`<Search /> should render search with wrapper height 1`] = `
             }
             placeholder="Pesquise aqui"
             placeholderTextColor="#72727260"
+            refInput="$text"
             status="default"
             style={
               Array [
