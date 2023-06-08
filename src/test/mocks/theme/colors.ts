@@ -11,7 +11,17 @@ const success = '#357a38';
 const warning = '#F5B800';
 const danger = '#cc0000';
 
+const backgroundColors = {
+  z0: '#000',
+  z1: '#1C1C1D',
+  z2: '#2C2C2D',
+  z3: '#363638',
+  z4: '#454545',
+  z5: '#454545',
+};
+
 export default {
+  background: backgroundColors,
   text: {
     light: lighten(0.05, text),
     main: text,

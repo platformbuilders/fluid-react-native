@@ -13,7 +13,9 @@ module.exports = {
   transform: {
     ...tsjPreset.preset,
   },
-  transformIgnorePatterns: ['node_modules/(?!react-native-haptic)/'],
+  transformIgnorePatterns: [
+    'node_modules/(?!react-native-haptic|rn-placeholder)/',
+  ],
   modulePathIgnorePatterns: ['<rootDir>/dist/'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   setupFilesAfterEnv: [

@@ -122,6 +122,15 @@ exports[`<Search /> should render search 1`] = `
             onChangeText={[Function]}
             onFocus={[Function]}
             onSubmitEditing={[Function]}
+            options={
+              Object {
+                "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+                "translation": Object {
+                  "*": [Function],
+                },
+                "validator": [Function],
+              }
+            }
             placeholder=""
             placeholderTextColor="#72727260"
             status="default"
@@ -187,6 +196,7 @@ exports[`<Search /> should render search 1`] = `
               <View>
                 <Text
                   allowFontScaling={false}
+                  selectable={false}
                   style={
                     Array [
                       Object {
@@ -198,15 +208,17 @@ exports[`<Search /> should render search 1`] = `
                       },
                       undefined,
                       Object {
-                        "fontFamily": "Material Design Icons",
+                        "fontFamily": "FontAwesome5Free-Regular",
                         "fontStyle": "normal",
                         "fontWeight": "normal",
                       },
-                      Object {},
+                      Object {
+                        "fontWeight": "400",
+                      },
                     ]
                   }
                 >
-                  󰍉
+                  ?
                 </Text>
               </View>
             </View>
@@ -353,10 +365,6 @@ exports[`<Search /> should render search with auto focus 1`] = `
             options={
               Object {
                 "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-                "translation": Object {
-                  "*": [Function],
-                },
-                "validator": [Function],
               }
             }
             placeholder="Pesquise aqui"
@@ -420,6 +428,7 @@ exports[`<Search /> should render search with auto focus 1`] = `
               <View>
                 <Text
                   allowFontScaling={false}
+                  selectable={false}
                   style={
                     Array [
                       Object {
@@ -431,15 +440,17 @@ exports[`<Search /> should render search with auto focus 1`] = `
                       },
                       undefined,
                       Object {
-                        "fontFamily": "Material Design Icons",
+                        "fontFamily": "FontAwesome5Free-Regular",
                         "fontStyle": "normal",
                         "fontWeight": "normal",
                       },
-                      Object {},
+                      Object {
+                        "fontWeight": "400",
+                      },
                     ]
                   }
                 >
-                  󰍉
+                  ?
                 </Text>
               </View>
             </View>
@@ -589,10 +600,6 @@ exports[`<Search /> should render search with custom container style 1`] = `
             options={
               Object {
                 "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-                "translation": Object {
-                  "*": [Function],
-                },
-                "validator": [Function],
               }
             }
             placeholder="Pesquise aqui"
@@ -656,6 +663,7 @@ exports[`<Search /> should render search with custom container style 1`] = `
               <View>
                 <Text
                   allowFontScaling={false}
+                  selectable={false}
                   style={
                     Array [
                       Object {
@@ -667,15 +675,17 @@ exports[`<Search /> should render search with custom container style 1`] = `
                       },
                       undefined,
                       Object {
-                        "fontFamily": "Material Design Icons",
+                        "fontFamily": "FontAwesome5Free-Regular",
                         "fontStyle": "normal",
                         "fontWeight": "normal",
                       },
-                      Object {},
+                      Object {
+                        "fontWeight": "400",
+                      },
                     ]
                   }
                 >
-                  󰍉
+                  ?
                 </Text>
               </View>
             </View>
@@ -822,10 +832,6 @@ exports[`<Search /> should render search with custom icon color 1`] = `
             options={
               Object {
                 "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-                "translation": Object {
-                  "*": [Function],
-                },
-                "validator": [Function],
               }
             }
             placeholder="Pesquise aqui"
@@ -889,6 +895,7 @@ exports[`<Search /> should render search with custom icon color 1`] = `
               <View>
                 <Text
                   allowFontScaling={false}
+                  selectable={false}
                   style={
                     Array [
                       Object {
@@ -897,15 +904,17 @@ exports[`<Search /> should render search with custom icon color 1`] = `
                       },
                       undefined,
                       Object {
-                        "fontFamily": "Material Design Icons",
+                        "fontFamily": "FontAwesome5Free-Regular",
                         "fontStyle": "normal",
                         "fontWeight": "normal",
                       },
-                      Object {},
+                      Object {
+                        "fontWeight": "400",
+                      },
                     ]
                   }
                 >
-                  󰍉
+                  ?
                 </Text>
               </View>
             </View>
@@ -1054,6 +1063,15 @@ exports[`<Search /> should render search with custom input style 1`] = `
             onChangeText={[Function]}
             onFocus={[Function]}
             onSubmitEditing={[Function]}
+            options={
+              Object {
+                "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+                "translation": Object {
+                  "*": [Function],
+                },
+                "validator": [Function],
+              }
+            }
             placeholder=""
             placeholderTextColor="#72727260"
             status="default"
@@ -1119,6 +1137,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
               <View>
                 <Text
                   allowFontScaling={false}
+                  selectable={false}
                   style={
                     Array [
                       Object {
@@ -1130,15 +1149,17 @@ exports[`<Search /> should render search with custom input style 1`] = `
                       },
                       undefined,
                       Object {
-                        "fontFamily": "Material Design Icons",
+                        "fontFamily": "FontAwesome5Free-Regular",
                         "fontStyle": "normal",
                         "fontWeight": "normal",
                       },
-                      Object {},
+                      Object {
+                        "fontWeight": "400",
+                      },
                     ]
                   }
                 >
-                  󰍉
+                  ?
                 </Text>
               </View>
             </View>
@@ -1284,6 +1305,15 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
             onChangeText={[Function]}
             onFocus={[Function]}
             onSubmitEditing={[Function]}
+            options={
+              Object {
+                "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+                "translation": Object {
+                  "*": [Function],
+                },
+                "validator": [Function],
+              }
+            }
             placeholder=""
             placeholderTextColor="#72727260"
             status="default"
@@ -1349,6 +1379,7 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
               <View>
                 <Text
                   allowFontScaling={false}
+                  selectable={false}
                   style={
                     Array [
                       Object {
@@ -1360,15 +1391,17 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
                       },
                       undefined,
                       Object {
-                        "fontFamily": "Material Design Icons",
+                        "fontFamily": "FontAwesome5Free-Regular",
                         "fontStyle": "normal",
                         "fontWeight": "normal",
                       },
-                      Object {},
+                      Object {
+                        "fontWeight": "400",
+                      },
                     ]
                   }
                 >
-                  󰍉
+                  ?
                 </Text>
               </View>
             </View>
@@ -1514,6 +1547,15 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
             onChangeText={[Function]}
             onFocus={[Function]}
             onSubmitEditing={[Function]}
+            options={
+              Object {
+                "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+                "translation": Object {
+                  "*": [Function],
+                },
+                "validator": [Function],
+              }
+            }
             placeholder=""
             placeholderTextColor="#123983"
             status="default"
@@ -1579,6 +1621,7 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
               <View>
                 <Text
                   allowFontScaling={false}
+                  selectable={false}
                   style={
                     Array [
                       Object {
@@ -1590,15 +1633,17 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
                       },
                       undefined,
                       Object {
-                        "fontFamily": "Material Design Icons",
+                        "fontFamily": "FontAwesome5Free-Regular",
                         "fontStyle": "normal",
                         "fontWeight": "normal",
                       },
-                      Object {},
+                      Object {
+                        "fontWeight": "400",
+                      },
                     ]
                   }
                 >
-                  󰍉
+                  ?
                 </Text>
               </View>
             </View>
@@ -1745,10 +1790,6 @@ exports[`<Search /> should render search with custom text style 1`] = `
             options={
               Object {
                 "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-                "translation": Object {
-                  "*": [Function],
-                },
-                "validator": [Function],
               }
             }
             placeholder="Pesquise aqui"
@@ -1814,6 +1855,7 @@ exports[`<Search /> should render search with custom text style 1`] = `
               <View>
                 <Text
                   allowFontScaling={false}
+                  selectable={false}
                   style={
                     Array [
                       Object {
@@ -1825,15 +1867,17 @@ exports[`<Search /> should render search with custom text style 1`] = `
                       },
                       undefined,
                       Object {
-                        "fontFamily": "Material Design Icons",
+                        "fontFamily": "FontAwesome5Free-Regular",
                         "fontStyle": "normal",
                         "fontWeight": "normal",
                       },
-                      Object {},
+                      Object {
+                        "fontWeight": "400",
+                      },
                     ]
                   }
                 >
-                  󰍉
+                  ?
                 </Text>
               </View>
             </View>
@@ -1980,10 +2024,6 @@ exports[`<Search /> should render search with icon size 1`] = `
             options={
               Object {
                 "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-                "translation": Object {
-                  "*": [Function],
-                },
-                "validator": [Function],
               }
             }
             placeholder="Pesquise aqui"
@@ -2047,6 +2087,7 @@ exports[`<Search /> should render search with icon size 1`] = `
               <View>
                 <Text
                   allowFontScaling={false}
+                  selectable={false}
                   style={
                     Array [
                       Object {
@@ -2058,15 +2099,17 @@ exports[`<Search /> should render search with icon size 1`] = `
                       },
                       undefined,
                       Object {
-                        "fontFamily": "Material Design Icons",
+                        "fontFamily": "FontAwesome5Free-Regular",
                         "fontStyle": "normal",
                         "fontWeight": "normal",
                       },
-                      Object {},
+                      Object {
+                        "fontWeight": "400",
+                      },
                     ]
                   }
                 >
-                  󰍉
+                  ?
                 </Text>
               </View>
             </View>
@@ -2221,6 +2264,7 @@ exports[`<Search /> should render search with left icon 1`] = `
               <View>
                 <Text
                   allowFontScaling={false}
+                  selectable={false}
                   style={
                     Array [
                       Object {
@@ -2229,15 +2273,17 @@ exports[`<Search /> should render search with left icon 1`] = `
                       },
                       undefined,
                       Object {
-                        "fontFamily": "Material Design Icons",
+                        "fontFamily": "FontAwesome5Free-Solid",
                         "fontStyle": "normal",
                         "fontWeight": "normal",
                       },
-                      Object {},
+                      Object {
+                        "fontWeight": "900",
+                      },
                     ]
                   }
                 >
-                  󰏢
+                  
                 </Text>
               </View>
             </View>
@@ -2264,10 +2310,6 @@ exports[`<Search /> should render search with left icon 1`] = `
             options={
               Object {
                 "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-                "translation": Object {
-                  "*": [Function],
-                },
-                "validator": [Function],
               }
             }
             placeholder="Pesquise aqui"
@@ -2444,6 +2486,15 @@ exports[`<Search /> should render search with padding 1`] = `
             onChangeText={[Function]}
             onFocus={[Function]}
             onSubmitEditing={[Function]}
+            options={
+              Object {
+                "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+                "translation": Object {
+                  "*": [Function],
+                },
+                "validator": [Function],
+              }
+            }
             placeholder=""
             placeholderTextColor="#72727260"
             status="default"
@@ -2509,6 +2560,7 @@ exports[`<Search /> should render search with padding 1`] = `
               <View>
                 <Text
                   allowFontScaling={false}
+                  selectable={false}
                   style={
                     Array [
                       Object {
@@ -2520,15 +2572,17 @@ exports[`<Search /> should render search with padding 1`] = `
                       },
                       undefined,
                       Object {
-                        "fontFamily": "Material Design Icons",
+                        "fontFamily": "FontAwesome5Free-Regular",
                         "fontStyle": "normal",
                         "fontWeight": "normal",
                       },
-                      Object {},
+                      Object {
+                        "fontWeight": "400",
+                      },
                     ]
                   }
                 >
-                  󰍉
+                  ?
                 </Text>
               </View>
             </View>
@@ -2674,6 +2728,15 @@ exports[`<Search /> should render search with right icon 1`] = `
             onChangeText={[Function]}
             onFocus={[Function]}
             onSubmitEditing={[Function]}
+            options={
+              Object {
+                "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+                "translation": Object {
+                  "*": [Function],
+                },
+                "validator": [Function],
+              }
+            }
             placeholder=""
             placeholderTextColor="#72727260"
             status="default"
@@ -2739,6 +2802,7 @@ exports[`<Search /> should render search with right icon 1`] = `
               <View>
                 <Text
                   allowFontScaling={false}
+                  selectable={false}
                   style={
                     Array [
                       Object {
@@ -2750,15 +2814,17 @@ exports[`<Search /> should render search with right icon 1`] = `
                       },
                       undefined,
                       Object {
-                        "fontFamily": "Material Design Icons",
+                        "fontFamily": "FontAwesome5Free-Regular",
                         "fontStyle": "normal",
                         "fontWeight": "normal",
                       },
-                      Object {},
+                      Object {
+                        "fontWeight": "400",
+                      },
                     ]
                   }
                 >
-                  󰲴
+                  ?
                 </Text>
               </View>
             </View>
@@ -2911,6 +2977,15 @@ exports[`<Search /> should render search with shadow 1`] = `
             onChangeText={[Function]}
             onFocus={[Function]}
             onSubmitEditing={[Function]}
+            options={
+              Object {
+                "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+                "translation": Object {
+                  "*": [Function],
+                },
+                "validator": [Function],
+              }
+            }
             placeholder=""
             placeholderTextColor="#72727260"
             status="default"
@@ -2976,6 +3051,7 @@ exports[`<Search /> should render search with shadow 1`] = `
               <View>
                 <Text
                   allowFontScaling={false}
+                  selectable={false}
                   style={
                     Array [
                       Object {
@@ -2987,15 +3063,17 @@ exports[`<Search /> should render search with shadow 1`] = `
                       },
                       undefined,
                       Object {
-                        "fontFamily": "Material Design Icons",
+                        "fontFamily": "FontAwesome5Free-Regular",
                         "fontStyle": "normal",
                         "fontWeight": "normal",
                       },
-                      Object {},
+                      Object {
+                        "fontWeight": "400",
+                      },
                     ]
                   }
                 >
-                  󰍉
+                  ?
                 </Text>
               </View>
             </View>
@@ -3143,10 +3221,6 @@ exports[`<Search /> should render search with wrapper height 1`] = `
             options={
               Object {
                 "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-                "translation": Object {
-                  "*": [Function],
-                },
-                "validator": [Function],
               }
             }
             placeholder="Pesquise aqui"
@@ -3210,6 +3284,7 @@ exports[`<Search /> should render search with wrapper height 1`] = `
               <View>
                 <Text
                   allowFontScaling={false}
+                  selectable={false}
                   style={
                     Array [
                       Object {
@@ -3221,15 +3296,17 @@ exports[`<Search /> should render search with wrapper height 1`] = `
                       },
                       undefined,
                       Object {
-                        "fontFamily": "Material Design Icons",
+                        "fontFamily": "FontAwesome5Free-Regular",
                         "fontStyle": "normal",
                         "fontWeight": "normal",
                       },
-                      Object {},
+                      Object {
+                        "fontWeight": "400",
+                      },
                     ]
                   }
                 >
-                  󰍉
+                  ?
                 </Text>
               </View>
             </View>

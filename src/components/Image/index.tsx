@@ -19,12 +19,10 @@ const Image: React.FC<ImageProps> = ({
   const theme = useContext(ThemeContext);
 
   const onImageLoad = () => {
-    console.log('LOG:  onImageLoad  onImageLoad:');
     setIsLoading(false);
   };
 
   const onImageLoadStart = () => {
-    console.log('LOG:  onImageLoadStart  onImageLoadStart:');
     setIsLoading(true);
   };
 
@@ -34,7 +32,7 @@ const Image: React.FC<ImageProps> = ({
       style={[
         animationProps.style,
         {
-          backgroundColor: animationColor || theme.background.z3,
+          backgroundColor: animationColor || theme?.background?.z3,
         },
       ]}
     />
@@ -48,7 +46,8 @@ const Image: React.FC<ImageProps> = ({
             style={[
               style,
               {
-                backgroundColor: animationContainerColor || theme.background.z2,
+                backgroundColor:
+                  animationContainerColor || theme?.background?.z2,
               },
             ]}
           />

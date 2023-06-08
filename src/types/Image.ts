@@ -1,4 +1,3 @@
-import { StyleProp, ViewStyle } from 'react-native';
 import { FastImageProps } from 'react-native-fast-image';
 
 export interface ImageProps extends FastImageProps {

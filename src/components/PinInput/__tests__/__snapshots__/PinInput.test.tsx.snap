@@ -2373,6 +2373,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
       <View>
         <Text
           allowFontScaling={false}
+          selectable={false}
           style={
             Array [
               Object {
@@ -2381,15 +2382,17 @@ exports[`<PinInput /> should render textinput with password 1`] = `
               },
               undefined,
               Object {
-                "fontFamily": "Material Design Icons",
+                "fontFamily": "FontAwesome5Free-Regular",
                 "fontStyle": "normal",
                 "fontWeight": "normal",
               },
-              Object {},
+              Object {
+                "fontWeight": "400",
+              },
             ]
           }
         >
-          󰈈
+          
         </Text>
       </View>
     </View>

@@ -332,6 +332,7 @@ exports[`<Accordion /> should render Accordion with icon 1`] = `
             <View>
               <Text
                 allowFontScaling={false}
+                selectable={false}
                 style={
                   Array [
                     Object {
@@ -340,15 +341,17 @@ exports[`<Accordion /> should render Accordion with icon 1`] = `
                     },
                     undefined,
                     Object {
-                      "fontFamily": "Material Design Icons",
+                      "fontFamily": "FontAwesome5Free-Solid",
                       "fontStyle": "normal",
                       "fontWeight": "normal",
                     },
-                    Object {},
+                    Object {
+                      "fontWeight": "900",
+                    },
                   ]
                 }
               >
-                󰅀
+                
               </Text>
             </View>
           </View>
@@ -448,6 +451,7 @@ exports[`<Accordion /> should render Accordion with icon color grey inactive 1`]
             <View>
               <Text
                 allowFontScaling={false}
+                selectable={false}
                 style={
                   Array [
                     Object {
@@ -456,15 +460,17 @@ exports[`<Accordion /> should render Accordion with icon color grey inactive 1`]
                     },
                     undefined,
                     Object {
-                      "fontFamily": "Material Design Icons",
+                      "fontFamily": "FontAwesome5Free-Solid",
                       "fontStyle": "normal",
                       "fontWeight": "normal",
                     },
-                    Object {},
+                    Object {
+                      "fontWeight": "900",
+                    },
                   ]
                 }
               >
-                󰅀
+                
               </Text>
             </View>
           </View>
@@ -564,6 +570,7 @@ exports[`<Accordion /> should render Accordion with icon color red 1`] = `
             <View>
               <Text
                 allowFontScaling={false}
+                selectable={false}
                 style={
                   Array [
                     Object {
@@ -572,15 +579,17 @@ exports[`<Accordion /> should render Accordion with icon color red 1`] = `
                     },
                     undefined,
                     Object {
-                      "fontFamily": "Material Design Icons",
+                      "fontFamily": "FontAwesome5Free-Solid",
                       "fontStyle": "normal",
                       "fontWeight": "normal",
                     },
-                    Object {},
+                    Object {
+                      "fontWeight": "900",
+                    },
                   ]
                 }
               >
-                󰅀
+                
               </Text>
             </View>
           </View>
@@ -680,6 +689,7 @@ exports[`<Accordion /> should render Accordion with icon down text custom 1`] = 
             <View>
               <Text
                 allowFontScaling={false}
+                selectable={false}
                 style={
                   Array [
                     Object {
@@ -688,15 +698,17 @@ exports[`<Accordion /> should render Accordion with icon down text custom 1`] = 
                     },
                     undefined,
                     Object {
-                      "fontFamily": "Material Design Icons",
+                      "fontFamily": "FontAwesome5Free-Solid",
                       "fontStyle": "normal",
                       "fontWeight": "normal",
                     },
-                    Object {},
+                    Object {
+                      "fontWeight": "900",
+                    },
                   ]
                 }
               >
-                󰅀
+                
               </Text>
             </View>
           </View>
@@ -796,6 +808,7 @@ exports[`<Accordion /> should render Accordion with icon up text custom 1`] = `
             <View>
               <Text
                 allowFontScaling={false}
+                selectable={false}
                 style={
                   Array [
                     Object {
@@ -804,15 +817,17 @@ exports[`<Accordion /> should render Accordion with icon up text custom 1`] = `
                     },
                     undefined,
                     Object {
-                      "fontFamily": "Material Design Icons",
+                      "fontFamily": "FontAwesome5Free-Solid",
                       "fontStyle": "normal",
                       "fontWeight": "normal",
                     },
-                    Object {},
+                    Object {
+                      "fontWeight": "900",
+                    },
                   ]
                 }
               >
-                󰅀
+                
               </Text>
             </View>
           </View>
