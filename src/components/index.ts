@@ -28,4 +28,5 @@ export { default as Navbar } from './Navbar';
 export { default as Toggle } from './Toggle';
 export { default as ChipButton } from './ChipButton';
 export { default as UploadPhoto } from './UploadPhoto';
+export { default as Image } from './Image';
 export { Swiper, SwiperPagination } from './Swiper';
