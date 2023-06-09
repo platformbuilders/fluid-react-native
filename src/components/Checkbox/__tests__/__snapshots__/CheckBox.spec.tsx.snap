@@ -2,14 +2,31 @@
 
 exports[`<CheckBox /> should render checkbox component 1`] = `
 <View
-  style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-      },
-    ]
+  accessibilityLabel="checbox de "
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
   }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  nativeID="animatedComponent"
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "opacity": 1,
+    }
+  }
+  testID="checbox de "
 >
   <Text
     accessibilityLabel=""

@@ -78,6 +78,7 @@ exports[`<Header /> should render Header 1`] = `
           <View>
             <Text
               allowFontScaling={false}
+              selectable={false}
               style={
                 Array [
                   Object {
@@ -191,6 +192,7 @@ exports[`<Header /> should render Header 1`] = `
           <View>
             <Text
               allowFontScaling={false}
+              selectable={false}
               style={
                 Array [
                   Object {

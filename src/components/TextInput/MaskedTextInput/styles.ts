@@ -1,17 +1,15 @@
 import TextInputMask from 'react-native-masked-input';
 import styled from 'styled-components/native';
+import { getTheme } from '@platformbuilders/theme-toolkit';
 import { TextInput as TextInputStyle } from '../styles';
 
-const Input = TextInputStyle.withComponent(TextInputMask);
+const MaskedInput = TextInputStyle.withComponent(TextInputMask);
+const placeholderTextColor = getTheme('text.light');
 
-type Props = {
-  placeholderTextColor?: string;
-};
-
-export const TextInput = styled(Input).attrs((props: Props) => ({
+export const TextInput = styled(MaskedInput).attrs((props) => ({
   placeholderTextColor: props.placeholderTextColor
     ? props.placeholderTextColor
-    : '#72727260',
+    : placeholderTextColor(props),
 }))`
   flex: 1;
 `;

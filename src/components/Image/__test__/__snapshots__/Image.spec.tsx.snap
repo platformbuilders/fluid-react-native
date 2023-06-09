@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Image /> should render Image component correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {},
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+        },
+        undefined,
+      ]
+    }
+  >
+    <FastImageView
+      accessibilityLabel="testing_image"
+      onFastImageLoad={[Function]}
+      onFastImageLoadStart={[Function]}
+      resizeMode="cover"
+      source={
+        Object {
+          "uri": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+        }
+      }
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      testID="testing"
+    />
+  </View>
+</View>
+`;
+
+exports[`<Image /> should render with custom placeholder animation and container colors 1`] = `
+<View
+  style={
+    Array [
+      Object {},
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+        },
+        undefined,
+      ]
+    }
+  >
+    <FastImageView
+      accessibilityLabel="testing_image"
+      onFastImageLoad={[Function]}
+      onFastImageLoadStart={[Function]}
+      resizeMode="cover"
+      source={
+        Object {
+          "uri": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+        }
+      }
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      testID="testing"
+    />
+  </View>
+</View>
+`;
+
+exports[`<Image /> should render with custom placeholder animation color 1`] = `
+<View
+  style={
+    Array [
+      Object {},
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+        },
+        undefined,
+      ]
+    }
+  >
+    <FastImageView
+      accessibilityLabel="testing_image"
+      onFastImageLoad={[Function]}
+      onFastImageLoadStart={[Function]}
+      resizeMode="cover"
+      source={
+        Object {
+          "uri": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+        }
+      }
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      testID="testing"
+    />
+  </View>
+</View>
+`;
+
+exports[`<Image /> should render with no placeholder 1`] = `
+<View
+  style={
+    Array [
+      Object {},
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+        },
+        undefined,
+      ]
+    }
+  >
+    <FastImageView
+      accessibilityLabel="testing_image"
+      onFastImageLoad={[Function]}
+      onFastImageLoadStart={[Function]}
+      resizeMode="cover"
+      source={
+        Object {
+          "uri": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+        }
+      }
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      testID="testing"
+    />
+  </View>
+</View>
+`;

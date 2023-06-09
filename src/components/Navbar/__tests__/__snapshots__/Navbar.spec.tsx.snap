@@ -7,7 +7,7 @@ exports[`<Navbar /> should render navbar component 1`] = `
     Array [
       Object {
         "alignItems": "flex-start",
-        "backgroundColor": "",
+        "backgroundColor": "#454545",
         "elevation": 3,
         "flexDirection": "row",
         "justifyContent": "space-evenly",
@@ -92,6 +92,7 @@ exports[`<Navbar /> should render navbar component 1`] = `
         <View>
           <Text
             allowFontScaling={false}
+            selectable={false}
             style={
               Array [
                 Object {
@@ -100,15 +101,17 @@ exports[`<Navbar /> should render navbar component 1`] = `
                 },
                 undefined,
                 Object {
-                  "fontFamily": "Material Design Icons",
+                  "fontFamily": "FontAwesome5Free-Regular",
                   "fontStyle": "normal",
                   "fontWeight": "normal",
                 },
-                Object {},
+                Object {
+                  "fontWeight": "400",
+                },
               ]
             }
           >
-            󰈻
+            
           </Text>
         </View>
       </View>
@@ -149,7 +152,7 @@ exports[`<Navbar /> should render navbar component with custom color 1`] = `
     Array [
       Object {
         "alignItems": "flex-start",
-        "backgroundColor": "",
+        "backgroundColor": "#454545",
         "elevation": 3,
         "flexDirection": "row",
         "justifyContent": "space-evenly",
@@ -234,6 +237,7 @@ exports[`<Navbar /> should render navbar component with custom color 1`] = `
         <View>
           <Text
             allowFontScaling={false}
+            selectable={false}
             style={
               Array [
                 Object {
@@ -242,15 +246,17 @@ exports[`<Navbar /> should render navbar component with custom color 1`] = `
                 },
                 undefined,
                 Object {
-                  "fontFamily": "Material Design Icons",
+                  "fontFamily": "FontAwesome5Free-Regular",
                   "fontStyle": "normal",
                   "fontWeight": "normal",
                 },
-                Object {},
+                Object {
+                  "fontWeight": "400",
+                },
               ]
             }
           >
-            󰈻
+            
           </Text>
         </View>
       </View>
@@ -292,7 +298,7 @@ exports[`<Navbar /> should render navbar component with safe bottom area 1`] = `
     Array [
       Object {
         "alignItems": "flex-start",
-        "backgroundColor": "",
+        "backgroundColor": "#454545",
         "elevation": 3,
         "flexDirection": "row",
         "justifyContent": "space-evenly",
@@ -377,6 +383,7 @@ exports[`<Navbar /> should render navbar component with safe bottom area 1`] = `
         <View>
           <Text
             allowFontScaling={false}
+            selectable={false}
             style={
               Array [
                 Object {
@@ -385,15 +392,17 @@ exports[`<Navbar /> should render navbar component with safe bottom area 1`] = `
                 },
                 undefined,
                 Object {
-                  "fontFamily": "Material Design Icons",
+                  "fontFamily": "FontAwesome5Free-Regular",
                   "fontStyle": "normal",
                   "fontWeight": "normal",
                 },
-                Object {},
+                Object {
+                  "fontWeight": "400",
+                },
               ]
             }
           >
-            󰈻
+            
           </Text>
         </View>
       </View>

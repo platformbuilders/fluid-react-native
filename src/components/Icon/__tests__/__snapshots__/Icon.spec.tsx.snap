@@ -34,6 +34,7 @@ exports[`<Icon /> should render icon component correctly 1`] = `
     <View>
       <Text
         allowFontScaling={false}
+        selectable={false}
         style={
           Array [
             Object {
@@ -42,15 +43,17 @@ exports[`<Icon /> should render icon component correctly 1`] = `
             },
             undefined,
             Object {
-              "fontFamily": "Material Design Icons",
+              "fontFamily": "FontAwesome5Free-Regular",
               "fontStyle": "normal",
               "fontWeight": "normal",
             },
-            Object {},
+            Object {
+              "fontWeight": "400",
+            },
           ]
         }
       >
-        󰀃
+        ?
       </Text>
     </View>
   </View>

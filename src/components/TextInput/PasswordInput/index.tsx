@@ -5,10 +5,10 @@ import TextInput from '../index';
 const PasswordInput: FC<TextInputType> = (props) => {
   const [hidePassword, setHidePassword] = useState<boolean>(true);
   const hitSlop = {
-    left: 40,
-    right: 40,
-    top: 40,
-    bottom: 40,
+    left: 25,
+    right: 25,
+    top: 25,
+    bottom: 25,
   };
 
   const onPressShowPassword = useCallback((): void => {
