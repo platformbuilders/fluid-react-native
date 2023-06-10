@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { TouchableOpacity } from 'react-native';
-// import { generateHaptic } from '@platformbuilders/helpers/native';
+import { generateHaptic } from '@platformbuilders/helpers/native';
 import { TouchableType } from '../../types';
 
 const CommonTouchable: FC<TouchableType> = ({
@@ -20,6 +20,7 @@ const CommonTouchable: FC<TouchableType> = ({
     disabled={disabled}
     onPress={(e): void => {
       onPress(e);
+      generateHaptic();
     }}
   />
 );

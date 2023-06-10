@@ -303,7 +303,7 @@ exports[`<Navbar /> should render navbar component with safe bottom area 1`] = `
         "flexDirection": "row",
         "justifyContent": "space-evenly",
         "marginTop": "auto",
-        "paddingBottom": 0,
+        "paddingBottom": 8,
         "paddingLeft": 8,
         "paddingRight": 8,
         "paddingTop": 8,

@@ -2,14 +2,10 @@
 
 exports[`<Header /> should render Header 1`] = `
 <View
-  isIOSPlatform={true}
   isThemePrimary={true}
   style={
     Array [
-      Object {
-        "overflow": "hidden",
-        "paddingBottom": 5,
-      },
+      Object {},
     ]
   }
 >
@@ -29,13 +25,13 @@ exports[`<Header /> should render Header 1`] = `
     }
   >
     <View
-      isIOSPlatform={true}
       isThemePrimary={true}
       style={
         Array [
           Object {
             "alignItems": "center",
             "backgroundColor": "#007AFF",
+            "elevation": 3,
             "flexDirection": "row",
             "height": 64,
             "justifyContent": "space-between",
