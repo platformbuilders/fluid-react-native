@@ -59,7 +59,8 @@
     "rn-placeholder": "^3.0.3",
     "text-mask-addons": "3.8.0",
     "ts-jest": "26.5.4",
-    "vanilla-masker": "1.2.0"
+    "vanilla-masker": "1.2.0",
+    "@platformbuilders/helpers": "0.8.2"
   },
   "devDependencies": {
     "@babel/core": "7.14.6",

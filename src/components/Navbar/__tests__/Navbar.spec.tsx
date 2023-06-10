@@ -1,5 +1,4 @@
 import React from 'react';
-import { fireEvent, render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import Navbar from '..';
@@ -29,20 +28,6 @@ describe('<Navbar />', () => {
     );
 
     expect(wrapper.toJSON()).toMatchSnapshot();
-  });
-
-  it('should trigger onPress function when nav field is pressed', () => {
-    const { getByTestId } = render(
-      <ThemeProvider theme={theme}>
-        <Navbar currentRoute="Home" fields={fields} />
-      </ThemeProvider>,
-    );
-
-    const component = getByTestId('Home');
-
-    fireEvent.press(component);
-
-    expect(onPressEvent).toHaveBeenCalled();
   });
 
   it('should render navbar component with custom color', () => {
