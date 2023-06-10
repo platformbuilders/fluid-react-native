@@ -100,6 +100,35 @@ describe('<Avatar />', () => {
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
+  it('should render Avatar with monogram', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Avatar
+          id="testing"
+          accessibility=""
+          testID="testId"
+          name="Builders Test"
+        />
+      </ThemeProvider>,
+    );
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render Avatar with styled monogram', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Avatar
+          id="testing"
+          accessibility=""
+          testID="testId"
+          name="Builders Test"
+          monogramStyle={{ backgroundColor: '#2ecc71' }}
+        />
+      </ThemeProvider>,
+    );
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
   it('should render Avatar with all custom props', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>

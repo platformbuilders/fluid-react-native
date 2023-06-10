@@ -1,21 +1,30 @@
-import React, { useImperativeHandle, useRef, useState } from 'react';
+import React, { useEffect, useImperativeHandle, useRef, useState } from 'react';
 import { isEmpty } from 'lodash';
 import { RNCamera } from 'react-native-camera';
-import FastImage, { Source } from 'react-native-fast-image';
+import { Source } from 'react-native-fast-image';
 import {
-  ImagePickerResponse,
+  ImageLibraryOptions,
   launchImageLibrary,
 } from 'react-native-image-picker';
+import { formatToMonogram } from '@platformbuilders/helpers';
 import { ImageAvatarPlaceholder as defaultAvatar } from '../../assets/images';
 import { AvatarType } from '../../types';
-import If from '../If';
-import { CameraView, UploadIcon, UploadIconWrapper, Wrapper } from './styles';
+import Image from '../Image';
+import {
+  CameraView,
+  MonogramText,
+  MonogramWrapper,
+  UploadIcon,
+  UploadIconWrapper,
+  Wrapper,
+} from './styles';
 
 const Avatar: React.FC<AvatarType> = React.forwardRef(
   (
     {
       id,
-      image = defaultAvatar,
+      image,
+      animatedLoading = true,
       accessibility = 'Upload de Avatar',
       accessibilityLabel,
       testID,
@@ -26,35 +35,34 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
       onUpload,
       showBorder = true,
       displayCamera = false,
+      displayMonogram = true,
       name,
+      monogramStyle,
       ...rest
     },
     ref,
     // eslint-disable-next-line sonarjs/cognitive-complexity
   ) => {
-    const [uploadedImage, setUploadedImage] = useState<any>();
+    const [visibleImage, setVisibleImage] = useState<string | undefined>();
+    const [uploadedImage, setUploadedImage] = useState<string | undefined>();
     const cameraRef = useRef<any>();
 
     const openPicker = (): Promise<void> => {
-      const options = {
+      const options: any | ImageLibraryOptions = {
         title: 'Selecionar foto',
         cancelButtonTitle: 'Cancelar',
         takePhotoButtonTitle: 'Tirar foto',
         chooseFromLibraryButtonTitle: 'Escolher da galeria',
-        includeBase64: true,
-        quality: imageQuality,
+        imageQuality,
         storageOptions: {
           skipBackup: true,
           path: 'images',
         },
       };
       return new Promise((resolve) => {
-        launchImageLibrary(options as any, (response: ImagePickerResponse) => {
+        launchImageLibrary(options, (response) => {
           if (!response.didCancel && response.assets) {
             setUploadedImage(response?.assets[0]?.uri);
-            if (onUpload) {
-              onUpload(response);
-            }
           }
           resolve();
         });
@@ -65,22 +73,22 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
       if (cameraRef.current) {
         const options = { quality: 0.5, base64: true };
         const data = await cameraRef.current.takePictureAsync(options);
-        setUploadedImage(data);
+        setUploadedImage(data.uri);
         return data;
       }
     };
 
     const getUploadImage = (): any => {
-      return uploadedImage;
+      return visibleImage;
     };
 
     const clearUploadImage = (): void => {
-      setUploadedImage('');
+      setVisibleImage(undefined);
     };
 
     const getCurrentAvatar = (): Source | any => {
-      if (uploadedImage) {
-        return { uri: uploadedImage };
+      if (visibleImage) {
+        return { uri: visibleImage };
       }
       if (image && !isEmpty(image)) {
         return { uri: image };
@@ -95,6 +103,18 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
       openPicker,
     }));
 
+    useEffect(() => {
+      if (!!image) {
+        setVisibleImage(image);
+      }
+    }, [image]);
+
+    useEffect(() => {
+      if (!!uploadedImage && !!onUpload) {
+        onUpload(uploadedImage);
+      }
+    }, [uploadedImage]);
+
     return (
       <Wrapper
         id={id || accessibility}
@@ -108,7 +128,7 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
         borderWidth={borderWidth}
         {...rest}
       >
-        {displayCamera && !uploadedImage ? (
+        {displayCamera && !visibleImage ? (
           <CameraView
             ref={cameraRef}
             size={size}
@@ -122,18 +142,25 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
             }}
           />
         ) : (
-          <FastImage
+          <Image
+            displayPlaceholder={animatedLoading}
             source={getCurrentAvatar()}
-            resizeMode={FastImage.resizeMode.cover}
+            resizeMode="cover"
             style={{ width: '101%', height: '101%' }}
           />
         )}
-
-        <If condition={!!name && !!displayCamera}>
+        {!visibleImage && !!name && !!displayCamera && (
           <UploadIconWrapper size={size}>
             <UploadIcon id="" accessibility="" />
           </UploadIconWrapper>
-        </If>
+        )}
+        {!visibleImage && !displayCamera && !!name && displayMonogram && (
+          <MonogramWrapper size={size}>
+            <MonogramText size={size} style={monogramStyle}>
+              {formatToMonogram(name)}
+            </MonogramText>
+          </MonogramWrapper>
+        )}
       </Wrapper>
     );
   },

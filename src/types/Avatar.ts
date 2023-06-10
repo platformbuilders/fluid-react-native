@@ -1,15 +1,21 @@
+import { StyleProp, TextStyle } from 'react-native';
+import { PhotoQuality } from 'react-native-image-picker';
+
 export type AvatarType = {
   ref?: any;
   image?: string;
   name?: string;
   showBorder?: boolean;
+  animatedLoading?: boolean;
   borderWidth?: number;
-  imageQuality?: number;
+  imageQuality?: PhotoQuality;
   borderColor?: string;
+  monogramStyle?: StyleProp<TextStyle>;
   displayCamera?: boolean;
+  displayMonogram?: boolean;
   size?: number;
-  onPress?: (x: any) => void;
-  onUpload?: (x: any) => any;
+  onPress?: () => void;
+  onUpload?: (uri: string) => any;
   id?: string;
   accessibility: string;
   accessibilityLabel?: string;

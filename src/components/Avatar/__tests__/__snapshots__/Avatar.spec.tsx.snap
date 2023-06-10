@@ -36,35 +36,103 @@ exports[`<Avatar /> should render Avatar 1`] = `
   <View
     style={
       Array [
-        Object {
-          "overflow": "hidden",
-        },
-        Object {
-          "height": "101%",
-          "width": "101%",
-        },
+        Object {},
       ]
     }
   >
-    <FastImageView
-      resizeMode="cover"
-      source={
-        Object {
-          "uri": Object {
-            "testUri": "../../../src/assets/images/avatar-placeholder.png",
-          },
-        }
-      }
+    <View
       style={
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        }
+        Array [
+          Object {
+            "flexDirection": "row",
+            "width": "100%",
+          },
+          undefined,
+        ]
       }
-    />
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#efefef",
+                "borderRadius": 3,
+                "height": 40,
+                "width": 40,
+              },
+              Array [
+                Object {
+                  "height": "101%",
+                  "width": "101%",
+                },
+                Object {
+                  "backgroundColor": undefined,
+                },
+              ],
+              Object {
+                "overflow": "hidden",
+              },
+            ]
+          }
+        >
+          <View
+            collapsable={false}
+            nativeID="animatedComponent"
+            style={
+              Object {
+                "backgroundColor": undefined,
+                "height": "100%",
+                "left": "0%",
+                "opacity": 0.5,
+                "width": "40%",
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "height": "101%",
+            "width": "101%",
+          },
+        ]
+      }
+    >
+      <FastImageView
+        onFastImageLoad={[Function]}
+        onFastImageLoadStart={[Function]}
+        resizeMode="cover"
+        source={
+          Object {
+            "uri": Object {
+              "testUri": "../../../src/assets/images/avatar-placeholder.png",
+            },
+          }
+        }
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
+    </View>
   </View>
 </View>
 `;
@@ -104,16 +172,104 @@ exports[`<Avatar /> should render Avatar with all custom props 1`] = `
 >
   <View
     style={
-      Object {
-        "alignItems": "center",
-        "flex": 1,
-        "justifyContent": "center",
-      }
+      Array [
+        Object {},
+      ]
     }
   >
-    <ActivityIndicator
-      size="small"
-    />
+    <View
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#efefef",
+                "borderRadius": 3,
+                "height": 40,
+                "width": 40,
+              },
+              Array [
+                Object {
+                  "height": "101%",
+                  "width": "101%",
+                },
+                Object {
+                  "backgroundColor": undefined,
+                },
+              ],
+              Object {
+                "overflow": "hidden",
+              },
+            ]
+          }
+        >
+          <View
+            collapsable={false}
+            nativeID="animatedComponent"
+            style={
+              Object {
+                "backgroundColor": undefined,
+                "height": "100%",
+                "left": "0%",
+                "opacity": 0.5,
+                "width": "40%",
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "height": "101%",
+            "width": "101%",
+          },
+        ]
+      }
+    >
+      <FastImageView
+        onFastImageLoad={[Function]}
+        onFastImageLoadStart={[Function]}
+        resizeMode="cover"
+        source={
+          Object {
+            "uri": Object {
+              "testUri": "../../../src/assets/images/avatar-placeholder.png",
+            },
+          }
+        }
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
+    </View>
   </View>
 </View>
 `;
@@ -154,35 +310,103 @@ exports[`<Avatar /> should render Avatar with border 1`] = `
   <View
     style={
       Array [
-        Object {
-          "overflow": "hidden",
-        },
-        Object {
-          "height": "101%",
-          "width": "101%",
-        },
+        Object {},
       ]
     }
   >
-    <FastImageView
-      resizeMode="cover"
-      source={
-        Object {
-          "uri": Object {
-            "testUri": "../../../src/assets/images/avatar-placeholder.png",
-          },
-        }
-      }
+    <View
       style={
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        }
+        Array [
+          Object {
+            "flexDirection": "row",
+            "width": "100%",
+          },
+          undefined,
+        ]
       }
-    />
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#efefef",
+                "borderRadius": 3,
+                "height": 40,
+                "width": 40,
+              },
+              Array [
+                Object {
+                  "height": "101%",
+                  "width": "101%",
+                },
+                Object {
+                  "backgroundColor": undefined,
+                },
+              ],
+              Object {
+                "overflow": "hidden",
+              },
+            ]
+          }
+        >
+          <View
+            collapsable={false}
+            nativeID="animatedComponent"
+            style={
+              Object {
+                "backgroundColor": undefined,
+                "height": "100%",
+                "left": "0%",
+                "opacity": 0.5,
+                "width": "40%",
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "height": "101%",
+            "width": "101%",
+          },
+        ]
+      }
+    >
+      <FastImageView
+        onFastImageLoad={[Function]}
+        onFastImageLoadStart={[Function]}
+        resizeMode="cover"
+        source={
+          Object {
+            "uri": Object {
+              "testUri": "../../../src/assets/images/avatar-placeholder.png",
+            },
+          }
+        }
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
+    </View>
   </View>
 </View>
 `;
@@ -222,16 +446,104 @@ exports[`<Avatar /> should render Avatar with camera 1`] = `
 >
   <View
     style={
-      Object {
-        "alignItems": "center",
-        "flex": 1,
-        "justifyContent": "center",
-      }
+      Array [
+        Object {},
+      ]
     }
   >
-    <ActivityIndicator
-      size="small"
-    />
+    <View
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#efefef",
+                "borderRadius": 3,
+                "height": 40,
+                "width": 40,
+              },
+              Array [
+                Object {
+                  "height": "101%",
+                  "width": "101%",
+                },
+                Object {
+                  "backgroundColor": undefined,
+                },
+              ],
+              Object {
+                "overflow": "hidden",
+              },
+            ]
+          }
+        >
+          <View
+            collapsable={false}
+            nativeID="animatedComponent"
+            style={
+              Object {
+                "backgroundColor": undefined,
+                "height": "100%",
+                "left": "0%",
+                "opacity": 0.5,
+                "width": "40%",
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "height": "101%",
+            "width": "101%",
+          },
+        ]
+      }
+    >
+      <FastImageView
+        onFastImageLoad={[Function]}
+        onFastImageLoadStart={[Function]}
+        resizeMode="cover"
+        source={
+          Object {
+            "uri": Object {
+              "testUri": "../../../src/assets/images/avatar-placeholder.png",
+            },
+          }
+        }
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
+    </View>
   </View>
 </View>
 `;
@@ -272,35 +584,103 @@ exports[`<Avatar /> should render Avatar with custom accessibility label 1`] = `
   <View
     style={
       Array [
-        Object {
-          "overflow": "hidden",
-        },
-        Object {
-          "height": "101%",
-          "width": "101%",
-        },
+        Object {},
       ]
     }
   >
-    <FastImageView
-      resizeMode="cover"
-      source={
-        Object {
-          "uri": Object {
-            "testUri": "../../../src/assets/images/avatar-placeholder.png",
-          },
-        }
-      }
+    <View
       style={
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        }
+        Array [
+          Object {
+            "flexDirection": "row",
+            "width": "100%",
+          },
+          undefined,
+        ]
       }
-    />
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#efefef",
+                "borderRadius": 3,
+                "height": 40,
+                "width": 40,
+              },
+              Array [
+                Object {
+                  "height": "101%",
+                  "width": "101%",
+                },
+                Object {
+                  "backgroundColor": undefined,
+                },
+              ],
+              Object {
+                "overflow": "hidden",
+              },
+            ]
+          }
+        >
+          <View
+            collapsable={false}
+            nativeID="animatedComponent"
+            style={
+              Object {
+                "backgroundColor": undefined,
+                "height": "100%",
+                "left": "0%",
+                "opacity": 0.5,
+                "width": "40%",
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "height": "101%",
+            "width": "101%",
+          },
+        ]
+      }
+    >
+      <FastImageView
+        onFastImageLoad={[Function]}
+        onFastImageLoadStart={[Function]}
+        resizeMode="cover"
+        source={
+          Object {
+            "uri": Object {
+              "testUri": "../../../src/assets/images/avatar-placeholder.png",
+            },
+          }
+        }
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
+    </View>
   </View>
 </View>
 `;
@@ -341,35 +721,103 @@ exports[`<Avatar /> should render Avatar with custom border 1`] = `
   <View
     style={
       Array [
-        Object {
-          "overflow": "hidden",
-        },
-        Object {
-          "height": "101%",
-          "width": "101%",
-        },
+        Object {},
       ]
     }
   >
-    <FastImageView
-      resizeMode="cover"
-      source={
-        Object {
-          "uri": Object {
-            "testUri": "../../../src/assets/images/avatar-placeholder.png",
-          },
-        }
-      }
+    <View
       style={
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        }
+        Array [
+          Object {
+            "flexDirection": "row",
+            "width": "100%",
+          },
+          undefined,
+        ]
       }
-    />
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#efefef",
+                "borderRadius": 3,
+                "height": 40,
+                "width": 40,
+              },
+              Array [
+                Object {
+                  "height": "101%",
+                  "width": "101%",
+                },
+                Object {
+                  "backgroundColor": undefined,
+                },
+              ],
+              Object {
+                "overflow": "hidden",
+              },
+            ]
+          }
+        >
+          <View
+            collapsable={false}
+            nativeID="animatedComponent"
+            style={
+              Object {
+                "backgroundColor": undefined,
+                "height": "100%",
+                "left": "0%",
+                "opacity": 0.5,
+                "width": "40%",
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "height": "101%",
+            "width": "101%",
+          },
+        ]
+      }
+    >
+      <FastImageView
+        onFastImageLoad={[Function]}
+        onFastImageLoadStart={[Function]}
+        resizeMode="cover"
+        source={
+          Object {
+            "uri": Object {
+              "testUri": "../../../src/assets/images/avatar-placeholder.png",
+            },
+          }
+        }
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
+    </View>
   </View>
 </View>
 `;
@@ -410,35 +858,103 @@ exports[`<Avatar /> should render Avatar with custom image 1`] = `
   <View
     style={
       Array [
-        Object {
-          "overflow": "hidden",
-        },
-        Object {
-          "height": "101%",
-          "width": "101%",
-        },
+        Object {},
       ]
     }
   >
-    <FastImageView
-      resizeMode="cover"
-      source={
-        Object {
-          "uri": Object {
-            "testUri": "../../../src/assets/images/avatar-placeholder.png",
-          },
-        }
-      }
+    <View
       style={
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        }
+        Array [
+          Object {
+            "flexDirection": "row",
+            "width": "100%",
+          },
+          undefined,
+        ]
       }
-    />
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#efefef",
+                "borderRadius": 3,
+                "height": 40,
+                "width": 40,
+              },
+              Array [
+                Object {
+                  "height": "101%",
+                  "width": "101%",
+                },
+                Object {
+                  "backgroundColor": undefined,
+                },
+              ],
+              Object {
+                "overflow": "hidden",
+              },
+            ]
+          }
+        >
+          <View
+            collapsable={false}
+            nativeID="animatedComponent"
+            style={
+              Object {
+                "backgroundColor": undefined,
+                "height": "100%",
+                "left": "0%",
+                "opacity": 0.5,
+                "width": "40%",
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "height": "101%",
+            "width": "101%",
+          },
+        ]
+      }
+    >
+      <FastImageView
+        onFastImageLoad={[Function]}
+        onFastImageLoadStart={[Function]}
+        resizeMode="cover"
+        source={
+          Object {
+            "uri": Object {
+              "testUri": "../../../src/assets/images/avatar-placeholder.png",
+            },
+          }
+        }
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
+    </View>
   </View>
 </View>
 `;
@@ -479,35 +995,103 @@ exports[`<Avatar /> should render Avatar with custom size 1`] = `
   <View
     style={
       Array [
-        Object {
-          "overflow": "hidden",
-        },
-        Object {
-          "height": "101%",
-          "width": "101%",
-        },
+        Object {},
       ]
     }
   >
-    <FastImageView
-      resizeMode="cover"
-      source={
-        Object {
-          "uri": Object {
-            "testUri": "../../../src/assets/images/avatar-placeholder.png",
-          },
-        }
-      }
+    <View
       style={
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        }
+        Array [
+          Object {
+            "flexDirection": "row",
+            "width": "100%",
+          },
+          undefined,
+        ]
       }
-    />
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#efefef",
+                "borderRadius": 3,
+                "height": 40,
+                "width": 40,
+              },
+              Array [
+                Object {
+                  "height": "101%",
+                  "width": "101%",
+                },
+                Object {
+                  "backgroundColor": undefined,
+                },
+              ],
+              Object {
+                "overflow": "hidden",
+              },
+            ]
+          }
+        >
+          <View
+            collapsable={false}
+            nativeID="animatedComponent"
+            style={
+              Object {
+                "backgroundColor": undefined,
+                "height": "100%",
+                "left": "0%",
+                "opacity": 0.5,
+                "width": "40%",
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "height": "101%",
+            "width": "101%",
+          },
+        ]
+      }
+    >
+      <FastImageView
+        onFastImageLoad={[Function]}
+        onFastImageLoadStart={[Function]}
+        resizeMode="cover"
+        source={
+          Object {
+            "uri": Object {
+              "testUri": "../../../src/assets/images/avatar-placeholder.png",
+            },
+          }
+        }
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
+    </View>
   </View>
 </View>
 `;
@@ -548,35 +1132,377 @@ exports[`<Avatar /> should render Avatar with custom test id 1`] = `
   <View
     style={
       Array [
-        Object {
-          "overflow": "hidden",
-        },
-        Object {
-          "height": "101%",
-          "width": "101%",
-        },
+        Object {},
       ]
     }
   >
-    <FastImageView
-      resizeMode="cover"
-      source={
-        Object {
-          "uri": Object {
-            "testUri": "../../../src/assets/images/avatar-placeholder.png",
-          },
-        }
-      }
+    <View
       style={
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        }
+        Array [
+          Object {
+            "flexDirection": "row",
+            "width": "100%",
+          },
+          undefined,
+        ]
       }
-    />
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#efefef",
+                "borderRadius": 3,
+                "height": 40,
+                "width": 40,
+              },
+              Array [
+                Object {
+                  "height": "101%",
+                  "width": "101%",
+                },
+                Object {
+                  "backgroundColor": undefined,
+                },
+              ],
+              Object {
+                "overflow": "hidden",
+              },
+            ]
+          }
+        >
+          <View
+            collapsable={false}
+            nativeID="animatedComponent"
+            style={
+              Object {
+                "backgroundColor": undefined,
+                "height": "100%",
+                "left": "0%",
+                "opacity": 0.5,
+                "width": "40%",
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "height": "101%",
+            "width": "101%",
+          },
+        ]
+      }
+    >
+      <FastImageView
+        onFastImageLoad={[Function]}
+        onFastImageLoadStart={[Function]}
+        resizeMode="cover"
+        source={
+          Object {
+            "uri": Object {
+              "testUri": "../../../src/assets/images/avatar-placeholder.png",
+            },
+          }
+        }
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Avatar /> should render Avatar with monogram 1`] = `
+<View
+  accessibilityLabel=""
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  nativeID="animatedComponent"
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderColor": "#C6B09E",
+      "borderRadius": 25,
+      "borderWidth": 2,
+      "height": 50,
+      "opacity": 1,
+      "overflow": "hidden",
+      "position": "relative",
+      "width": 50,
+    }
+  }
+  testID="testId"
+>
+  <View
+    style={
+      Array [
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#efefef",
+                "borderRadius": 3,
+                "height": 40,
+                "width": 40,
+              },
+              Array [
+                Object {
+                  "height": "101%",
+                  "width": "101%",
+                },
+                Object {
+                  "backgroundColor": undefined,
+                },
+              ],
+              Object {
+                "overflow": "hidden",
+              },
+            ]
+          }
+        >
+          <View
+            collapsable={false}
+            nativeID="animatedComponent"
+            style={
+              Object {
+                "backgroundColor": undefined,
+                "height": "100%",
+                "left": "0%",
+                "opacity": 0.5,
+                "width": "40%",
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "height": "101%",
+            "width": "101%",
+          },
+        ]
+      }
+    >
+      <FastImageView
+        onFastImageLoad={[Function]}
+        onFastImageLoadStart={[Function]}
+        resizeMode="cover"
+        source={
+          Object {
+            "uri": Object {
+              "testUri": "../../../src/assets/images/avatar-placeholder.png",
+            },
+          }
+        }
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Avatar /> should render Avatar with styled monogram 1`] = `
+<View
+  accessibilityLabel=""
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  nativeID="animatedComponent"
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderColor": "#C6B09E",
+      "borderRadius": 25,
+      "borderWidth": 2,
+      "height": 50,
+      "opacity": 1,
+      "overflow": "hidden",
+      "position": "relative",
+      "width": 50,
+    }
+  }
+  testID="testId"
+>
+  <View
+    style={
+      Array [
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#efefef",
+                "borderRadius": 3,
+                "height": 40,
+                "width": 40,
+              },
+              Array [
+                Object {
+                  "height": "101%",
+                  "width": "101%",
+                },
+                Object {
+                  "backgroundColor": undefined,
+                },
+              ],
+              Object {
+                "overflow": "hidden",
+              },
+            ]
+          }
+        >
+          <View
+            collapsable={false}
+            nativeID="animatedComponent"
+            style={
+              Object {
+                "backgroundColor": undefined,
+                "height": "100%",
+                "left": "0%",
+                "opacity": 0.5,
+                "width": "40%",
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "height": "101%",
+            "width": "101%",
+          },
+        ]
+      }
+    >
+      <FastImageView
+        onFastImageLoad={[Function]}
+        onFastImageLoadStart={[Function]}
+        resizeMode="cover"
+        source={
+          Object {
+            "uri": Object {
+              "testUri": "../../../src/assets/images/avatar-placeholder.png",
+            },
+          }
+        }
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
+    </View>
   </View>
 </View>
 `;

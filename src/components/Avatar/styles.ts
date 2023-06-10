@@ -7,6 +7,8 @@ import Typography from '../Typography';
 
 const brandPrimary = getTheme('brand.primary.main');
 const brandAccent = getTheme('brand.accent.main');
+const textMain = getTheme('text.main');
+const linkAccent = getTheme('text.link.accent');
 
 const showBorder = ifStyle('showBorder');
 const hasBorderWidth = ifStyle('borderWidth');
@@ -51,14 +53,37 @@ export const UploadIcon = styled(Icon).attrs({ name: 'camera' })`
   color: ${brandAccent};
 `;
 
-export const NameInitials = styled(Typography).attrs({ variant: 'sm' })`
-  color: red;
-`;
-
 export const CameraView = styled(RNCamera)<{ size: number }>`
   width: ${(props: any): number => props.size}px;
   height: 100%;
   border-radius: ${(props: any): number => props.size / 2}px;
   overflow: hidden;
   border: ${showBorder('4px solid white', '')};
+`;
+
+export const MonogramWrapper = styled.View<IconWrapperProps>`
+  align-items: center;
+  justify-content: center;
+  width: ${(props: IconWrapperProps): number => props.size}px;
+  height: ${(props: IconWrapperProps): number => props.size}px;
+  position: absolute;
+  z-index: 3;
+  background-color: ${linkAccent};
+  text-align: center;
+`;
+
+type MonogramTextProps = {
+  size?: number;
+  style?: any;
+};
+
+export const MonogramText = styled(Typography)<MonogramTextProps>`
+  color: ${textMain};
+  font-size: ${(props: any): number => props.size / 2}px;
+  line-height: ${(props: any): number => props.size / 2}px;
+  letter-spacing: 1.3px;
+  align-self: center;
+  text-align: center;
+  position: relative;
+  top: 3px;
 `;
