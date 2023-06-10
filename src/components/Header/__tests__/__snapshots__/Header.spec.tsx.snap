@@ -35,12 +35,12 @@ exports[`<Header /> should render Header 1`] = `
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#C6B09E",
+            "backgroundColor": "#007AFF",
             "flexDirection": "row",
             "height": 64,
             "justifyContent": "space-between",
-            "paddingHorizontal": 20,
-            "paddingVertical": 20,
+            "paddingHorizontal": 16,
+            "paddingVertical": 16,
           },
         ]
       }
@@ -82,7 +82,7 @@ exports[`<Header /> should render Header 1`] = `
               style={
                 Array [
                   Object {
-                    "color": "#ffffff",
+                    "color": "#fff",
                     "fontSize": 20,
                   },
                   undefined,
@@ -126,7 +126,7 @@ exports[`<Header /> should render Header 1`] = `
                 "lineHeight": 17,
               },
               Object {
-                "color": "#ffffff",
+                "color": "#fff",
                 "fontWeight": "bold",
               },
             ]
@@ -148,8 +148,8 @@ exports[`<Header /> should render Header 1`] = `
                 "lineHeight": 14,
               },
               Object {
-                "color": "#ffffff",
-                "marginTop": 12,
+                "color": "#fff",
+                "marginTop": 8,
               },
             ]
           }
@@ -196,7 +196,7 @@ exports[`<Header /> should render Header 1`] = `
               style={
                 Array [
                   Object {
-                    "color": "#ffffff",
+                    "color": "#fff",
                     "fontSize": 20,
                   },
                   undefined,

@@ -4,9 +4,12 @@ import DefaultDatePicker, {
   DatePickerCustomStylesProps,
 } from 'react-native-datepicker';
 import styled from 'styled-components/native';
-import { ThemeProps } from '@platformbuilders/theme-toolkit';
+import {
+  ThemeProps,
+  getTheme,
+  switchStyle,
+} from '@platformbuilders/theme-toolkit';
 import { InputStatus } from '../../enums';
-import { getTheme, switchStyle } from '../../utils/helpers';
 
 const getStatusStyle = switchStyle('status');
 const brandContrast = getTheme('brand.primary.contrast');

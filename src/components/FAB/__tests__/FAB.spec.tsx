@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import FAB from '..';
-import { theme } from '../../../test/helpers';
+import theme from '../../../theme';
 
 describe('<FAB />', () => {
   it('should render fab', () => {

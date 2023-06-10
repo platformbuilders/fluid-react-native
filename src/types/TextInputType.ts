@@ -26,7 +26,7 @@ export type TextInputType = {
   inputRef?: any;
   options?: any;
   ref?: RefObject<any>;
-  variant?: TypographyVariants;
+  variant?: any;
   large?: boolean;
   withBottomline?: boolean;
   contrast?: boolean;
@@ -59,7 +59,7 @@ export type TextInputType = {
   borderedColor?: string;
   borderedRadius?: number;
   iconNameBordered?: string;
-  fixedLabelVariant?: TypographyVariants;
+  fixedLabelVariant?: any;
   rightIconName?: string;
   leftIconName?: string;
   iconType?: IconFonts;

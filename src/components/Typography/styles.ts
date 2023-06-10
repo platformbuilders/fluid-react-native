@@ -1,8 +1,11 @@
 import styled from 'styled-components/native';
-import { TypographyType, getTheme } from '@platformbuilders/theme-toolkit';
-import { getFontSize, getLineHeight } from '../../utils/helpers';
+import {
+  getFontSize,
+  getLineHeight,
+  getTheme,
+} from '@platformbuilders/theme-toolkit';
 
-export const Text = styled.Text<TypographyType>`
+export const Text = styled.Text<any>`
   color: ${getTheme('text.main')};
   font-size: ${getFontSize}px;
   line-height: ${getLineHeight}px;

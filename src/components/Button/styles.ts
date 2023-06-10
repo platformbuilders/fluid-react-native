@@ -3,8 +3,10 @@ import {
   ButtonVariants,
   ThemeProps,
   TypographyVariants,
+  getTheme,
+  ifStyle,
 } from '@platformbuilders/theme-toolkit';
-import { getTheme, ifStyle } from '../../utils/helpers';
+
 import DefaultIcon from '../Icon';
 import LoadingIndicator from '../LoadingIndicator';
 import TouchableComponent from '../Touchable';
@@ -15,8 +17,6 @@ const brandPrimary = getTheme('brand.primary.main');
 const brandPrimaryContrast = getTheme('brand.primary.contrast');
 const brandSecondary = getTheme('brand.secondary.main');
 const brandSecondaryContrast = getTheme('brand.secondary.contrast');
-const brandTertiary = getTheme('brand.tertiary.main');
-const brandTertiaryContrast = getTheme('brand.tertiary.contrast');
 const brandAccent = getTheme('brand.accent.main');
 const brandAccentContrast = getTheme('brand.accent.contrast');
 const infoMain = getTheme('info.main');
@@ -55,8 +55,6 @@ const getBackgroundColor = (props: ButtonWrapperProps): string => {
       return `${brandPrimary(props)}`;
     case 'secondary':
       return `${brandSecondary(props)}`;
-    case 'tertiary':
-      return `${brandTertiary(props)}`;
     case 'accent':
       return `${brandAccent(props)}`;
     case 'info':
@@ -91,8 +89,6 @@ const getTextColor = (props: TextButtonProps): string => {
       return `${brandPrimaryContrast(props)}`;
     case 'secondary':
       return `${brandSecondaryContrast(props)}`;
-    case 'tertiary':
-      return `${brandTertiaryContrast(props)}`;
     case 'accent':
       return `${brandAccentContrast(props)}`;
     case 'danger':

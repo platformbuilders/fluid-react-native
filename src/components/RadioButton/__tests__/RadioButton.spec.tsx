@@ -3,7 +3,7 @@ import { fireEvent, render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import RadioButton from '..';
-import { theme } from '../../../test/helpers';
+import theme from '../../../theme';
 
 describe('<RadioButton />', () => {
   it('should render radio button component', () => {

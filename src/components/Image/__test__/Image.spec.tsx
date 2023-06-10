@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import Image from '..';
-import { theme } from '../../../test/helpers';
+import theme from '../../../theme';
 
 const uri =
   'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png';

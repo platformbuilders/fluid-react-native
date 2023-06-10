@@ -4,7 +4,7 @@ import { fireEvent, render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import Link from '..';
-import { theme } from '../../../test/helpers';
+import theme from '../../../theme';
 
 describe('<Link />', () => {
   it('should render link', () => {

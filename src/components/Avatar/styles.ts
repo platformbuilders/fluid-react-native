@@ -1,6 +1,6 @@
 import { RNCamera } from 'react-native-camera';
 import styled from 'styled-components/native';
-import { getTheme, ifStyle } from '../../utils/helpers';
+import { getTheme, ifStyle } from '@platformbuilders/theme-toolkit';
 import Icon from '../Icon';
 import Touchable from '../Touchable';
 import Typography from '../Typography';
@@ -79,8 +79,8 @@ type MonogramTextProps = {
 
 export const MonogramText = styled(Typography)<MonogramTextProps>`
   color: ${textMain};
-  font-size: ${(props: any): number => props.size / 2}px;
-  line-height: ${(props: any): number => props.size / 2}px;
+  font-size: ${(props: any): number => props.size * 0.45}px;
+  line-height: ${(props: any): number => props.size * 0.45}px;
   letter-spacing: 1.3px;
   align-self: center;
   text-align: center;

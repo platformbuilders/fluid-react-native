@@ -1,16 +1,16 @@
 import { Animated, StyleSheet } from 'react-native';
 import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
-import { ThemeProps } from '@platformbuilders/theme-toolkit';
-import { InputStatus } from '../../enums';
-import { TextInputType } from '../../types';
 import {
+  ThemeProps,
   getFontSize,
   getLineHeight,
   getTheme,
   ifStyle,
   switchStyle,
-} from '../../utils/helpers';
+} from '@platformbuilders/theme-toolkit';
+import { InputStatus } from '../../enums';
+import { TextInputType } from '../../types';
 import DefaultIcon from '../Icon';
 import Typography from '../Typography';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import Accordion from '..';
-import { theme } from '../../../test/helpers';
+import theme from '../../../theme';
 import Typography from '../../Typography';
 import { Container } from '../styles';
 

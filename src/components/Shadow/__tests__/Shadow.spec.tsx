@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import Shadow from '..';
-import { theme } from '../../../test/helpers';
+import theme from '../../../theme';
 
 describe('<Shadow />', () => {
   it('should render Shadow correctly', () => {

@@ -41,8 +41,8 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
         Object {
           "color": "#000000",
           "flexDirection": "row",
-          "marginLeft": 12,
-          "opacity": 80,
+          "marginLeft": 8,
+          "opacity": 0.8,
         },
       ]
     }
@@ -84,7 +84,7 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
         }
         style={
           Object {
-            "tintColor": "#C6B09E",
+            "tintColor": "#007AFF",
           }
         }
       />
@@ -103,8 +103,8 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
         Object {
           "color": "#000000",
           "flexDirection": "row",
-          "marginLeft": 12,
-          "opacity": 80,
+          "marginLeft": 8,
+          "opacity": 0.8,
         },
       ]
     }

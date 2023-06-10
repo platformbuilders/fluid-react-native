@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components/native';
 
 import Header, { DEFAULT_LEFT_ICON_NAME, DEFAULT_RIGHT_ICON_NAME } from '..';
 import { HeaderTheme } from '../../../enums';
-import { theme } from '../../../test/helpers';
+import theme from '../../../theme';
 
 const onPressLeftIcon = jest.fn();
 const onPressRightIcon = jest.fn();

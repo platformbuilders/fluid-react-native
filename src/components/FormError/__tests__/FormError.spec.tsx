@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import FormError from '..';
-import { theme } from '../../../test/helpers';
+import theme from '../../../theme';
 
 describe('<FormError />', () => {
   it('should render the form error component', () => {

@@ -7,7 +7,7 @@ exports[`<ToggleButton /> should render component with custom thumb color 1`] = 
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  onTintColor="#C6B09E80"
+  onTintColor="#007AFF80"
   style={
     Array [
       Object {
@@ -64,7 +64,7 @@ exports[`<ToggleButton /> should render component with custom track color 1`] = 
     ]
   }
   testID="toggle_button"
-  thumbTintColor="#C6B09E"
+  thumbTintColor="#007AFF"
   tintColor="blue"
   trackColorProps={
     Object {
@@ -83,7 +83,7 @@ exports[`<ToggleButton /> should render toggle component 1`] = `
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  onTintColor="#C6B09E80"
+  onTintColor="#007AFF80"
   style={
     Array [
       Object {
@@ -102,7 +102,7 @@ exports[`<ToggleButton /> should render toggle component 1`] = `
     ]
   }
   testID="toggle_button"
-  thumbTintColor="#C6B09E"
+  thumbTintColor="#007AFF"
   tintColor="#0000004D"
   value={true}
 />

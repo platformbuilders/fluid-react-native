@@ -13,3 +13,4 @@ export * from './UploadPhoto';
 export * from './RadioButton';
 export * from './Swiper';
 export * from './Image';
+export * from './Typography';

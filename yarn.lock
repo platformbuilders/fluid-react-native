@@ -2086,10 +2086,10 @@
   dependencies:
     lint-staged "^13.2.2"
 
-"@platformbuilders/theme-toolkit@^0.1.1":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@platformbuilders/theme-toolkit/-/theme-toolkit-0.1.3.tgz#321029005556b4601540f30d0d9d96224124f2f2"
-  integrity sha512-2QbEV1s1kIFoctadBI0wOB3aaBsBmvcCICdGkY94ssbEhredkRUUciD2VUr3Yp2jGUyZgl3nORtp6tCqZxjNmw==
+"@platformbuilders/theme-toolkit@^0.1.4":
+  version "0.1.4"
+  resolved "https://npm.pkg.github.com/download/@platformbuilders/theme-toolkit/0.1.4/882b7e980a360fa675f81f3c8f235d2e5536505b#882b7e980a360fa675f81f3c8f235d2e5536505b"
+  integrity sha512-1oGmBHA9nl1Gb1rFymtzHopmfMIa4iUj1+80GgJCg88n7oeAhUj6fBkKxxGMc9YLs56cjOVvFocBmpUQyta+FQ==
   dependencies:
     lodash "4.17.21"
 
@@ -11786,10 +11786,10 @@ json5@2.1.1:
   dependencies:
     minimist "^1.2.0"
 
-json5@2.x, json5@^2.1.1, json5@^2.1.2, json5@^2.2.1:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.2.tgz#64471c5bdcc564c18f7c1d4df2e2297f2457c5ab"
-  integrity sha512-46Tk9JiOL2z7ytNQWFLpj99RZkVgeHf87yGQKsIkaPz1qSH9UczKH1rO7K3wgRselo0tYMUNfecYpm/p1vC7tQ==
+json5@2.x, json5@^2.2.2:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.3.tgz#78cd6f1a19bdc12b73db5ad0c61efd66c1e29283"
+  integrity sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==
 
 json5@^0.5.0:
   version "0.5.1"
@@ -11810,10 +11810,10 @@ json5@^1.0.2:
   dependencies:
     minimist "^1.2.0"
 
-json5@^2.2.2:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.3.tgz#78cd6f1a19bdc12b73db5ad0c61efd66c1e29283"
-  integrity sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==
+json5@^2.1.1, json5@^2.1.2, json5@^2.2.1:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.2.tgz#64471c5bdcc564c18f7c1d4df2e2297f2457c5ab"
+  integrity sha512-46Tk9JiOL2z7ytNQWFLpj99RZkVgeHf87yGQKsIkaPz1qSH9UczKH1rO7K3wgRselo0tYMUNfecYpm/p1vC7tQ==
 
 jsonc-parser@^3.0.0:
   version "3.2.0"

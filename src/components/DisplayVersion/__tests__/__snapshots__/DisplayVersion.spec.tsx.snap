@@ -12,8 +12,8 @@ exports[`<DisplayVersion /> should render and match snapshot for default props 1
         "lineHeight": 13,
       },
       Object {
-        "color": "#C6B09E",
-        "marginVertical": 12,
+        "color": "#007AFF",
+        "marginVertical": 8,
         "textAlign": "center",
       },
     ]

@@ -1,6 +1,6 @@
 import DefaultCheckbox from 'react-native-check-box';
 import styled from 'styled-components/native';
-import { getTheme } from '../../utils/helpers';
+import { getTheme } from '@platformbuilders/theme-toolkit';
 import Touchable from '../Touchable';
 import TypographyComponent from '../Typography';
 

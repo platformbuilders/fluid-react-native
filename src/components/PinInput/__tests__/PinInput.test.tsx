@@ -3,7 +3,7 @@ import { render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import PinInput from '..';
-import { theme } from '../../../test/helpers';
+import theme from '../../../theme';
 import { defaultStyling } from '../styles';
 
 describe('<PinInput />', () => {

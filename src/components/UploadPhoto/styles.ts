@@ -1,6 +1,6 @@
 import { RNCamera } from 'react-native-camera';
 import styled from 'styled-components/native';
-import { getTheme } from '../../utils/helpers';
+import { getTheme } from '@platformbuilders/theme-toolkit';
 import Icon from '../Icon';
 import Touchable from '../Touchable';
 import Typography from '../Typography';

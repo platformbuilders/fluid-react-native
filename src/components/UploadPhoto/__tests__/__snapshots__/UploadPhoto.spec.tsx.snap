@@ -22,8 +22,8 @@ exports[`<UploadPhoto /> should render UploadPhoto 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "borderColor": "#2C2C2D",
-      "borderRadius": "px",
+      "borderColor": "#fff",
+      "borderRadius": 16,
       "borderStyle": "dashed",
       "borderWidth": 2,
       "justifyContent": "center",
@@ -50,7 +50,7 @@ exports[`<UploadPhoto /> should render UploadPhoto 1`] = `
       nativeID="animatedComponent"
       style={
         Object {
-          "marginBottom": 20,
+          "marginBottom": 16,
           "opacity": 0.6,
         }
       }
@@ -118,7 +118,7 @@ exports[`<UploadPhoto /> should render UploadPhoto 1`] = `
             "lineHeight": 15,
           },
           Object {
-            "color": "#C6B09E",
+            "color": "#007AFF",
           },
         ]
       }
@@ -153,8 +153,8 @@ exports[`<UploadPhoto /> should render UploadPhoto with all custom props 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "borderColor": "#2C2C2D",
-      "borderRadius": "px",
+      "borderColor": "#fff",
+      "borderRadius": 16,
       "borderStyle": "dashed",
       "borderWidth": 2,
       "justifyContent": "center",
@@ -204,8 +204,8 @@ exports[`<UploadPhoto /> should render UploadPhoto with camera 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "borderColor": "#2C2C2D",
-      "borderRadius": "px",
+      "borderColor": "#fff",
+      "borderRadius": 16,
       "borderStyle": "dashed",
       "borderWidth": 2,
       "justifyContent": "center",
@@ -255,8 +255,8 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom accessibility lab
   style={
     Object {
       "alignItems": "center",
-      "borderColor": "#2C2C2D",
-      "borderRadius": "px",
+      "borderColor": "#fff",
+      "borderRadius": 16,
       "borderStyle": "dashed",
       "borderWidth": 2,
       "justifyContent": "center",
@@ -283,7 +283,7 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom accessibility lab
       nativeID="animatedComponent"
       style={
         Object {
-          "marginBottom": 20,
+          "marginBottom": 16,
           "opacity": 0.6,
         }
       }
@@ -351,7 +351,7 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom accessibility lab
             "lineHeight": 15,
           },
           Object {
-            "color": "#C6B09E",
+            "color": "#007AFF",
           },
         ]
       }
@@ -386,8 +386,8 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom test id 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "borderColor": "#2C2C2D",
-      "borderRadius": "px",
+      "borderColor": "#fff",
+      "borderRadius": 16,
       "borderStyle": "dashed",
       "borderWidth": 2,
       "justifyContent": "center",
@@ -414,7 +414,7 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom test id 1`] = `
       nativeID="animatedComponent"
       style={
         Object {
-          "marginBottom": 20,
+          "marginBottom": 16,
           "opacity": 0.6,
         }
       }
@@ -482,7 +482,7 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom test id 1`] = `
             "lineHeight": 15,
           },
           Object {
-            "color": "#C6B09E",
+            "color": "#007AFF",
           },
         ]
       }

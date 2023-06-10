@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import Avatar from '..';
 import { ImageAvatarPlaceholder as defaultAvatar } from '../../../assets/images';
-import { theme } from '../../../test/helpers';
+import theme from '../../../theme';
 
 describe('<Avatar />', () => {
   it('should render Avatar', () => {

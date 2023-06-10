@@ -1,7 +1,7 @@
 import { StyleProp, TextStyle } from 'react-native';
 import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
-import { getTheme, ifStyle } from '../../utils/helpers';
+import { getTheme, ifStyle } from '@platformbuilders/theme-toolkit';
 import Touchable from '../Touchable';
 import Typography from '../Typography';
 

@@ -1517,7 +1517,7 @@ Array [
           "lineHeight": 13,
         },
         Object {
-          "color": "#cc0000",
+          "color": "#FF3B30",
           "marginTop": 4,
           "textAlign": "left",
         },
@@ -2341,7 +2341,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
     nativeID="animatedComponent"
     style={
       Object {
-        "marginLeft": 20,
+        "marginLeft": 16,
       }
     }
   >
@@ -2377,7 +2377,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
           style={
             Array [
               Object {
-                "color": "#C6B09E",
+                "color": "#007AFF",
                 "fontSize": 37.714285714285715,
               },
               undefined,
