@@ -21,7 +21,7 @@ module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   setupFilesAfterEnv: [
     '@testing-library/jest-native/extend-expect',
-    '<rootDir>/src/test/mocks.ts',
+    '<rootDir>/src/test/mocks.tsx',
   ],
   cacheDirectory: '.jest/cache',
   collectCoverage: true,

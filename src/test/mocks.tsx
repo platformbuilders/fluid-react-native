@@ -1,13 +1,3 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @format
- */
-/* eslint-env jest */
-
 import { NativeModules } from 'react-native';
 import mockRNDeviceInfo from 'react-native-device-info/jest/react-native-device-info-mock';
 import { beforeAll } from '@jest/globals';
@@ -17,9 +7,20 @@ jest.mock('@platformbuilders/helpers/native', () => ({
   isIOS: jest.fn(),
 }));
 
-jest.mock('rn-placeholder', () => ({
-  timing: jest.fn(),
-}));
+jest.mock('rn-placeholder', () => {
+  const RealPlaceholder = jest.requireActual('rn-placeholder');
+
+  const MockShine = jest.fn().mockImplementation((props) => {
+    // Mock para o componente Shine
+    return <RealPlaceholder.Shine {...props} />;
+  });
+
+  return {
+    ...RealPlaceholder,
+    Shine: MockShine,
+    timing: jest.fn(),
+  };
+});
 
 jest.mock('react-native-device-info', () => mockRNDeviceInfo);
 

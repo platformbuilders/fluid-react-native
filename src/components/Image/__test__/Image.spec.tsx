@@ -7,20 +7,6 @@ import theme from '../../../theme';
 const uri =
   'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png';
 
-jest.mock('rn-placeholder', () => {
-  const RealPlaceholder = jest.requireActual('rn-placeholder');
-
-  const MockShine = jest.fn().mockImplementation((props) => {
-    // Mock para o componente Shine
-    return <RealPlaceholder.Shine {...props} />;
-  });
-
-  return {
-    ...RealPlaceholder,
-    Shine: MockShine,
-  };
-});
-
 describe('<Image />', () => {
   it('should render Image component correctly', () => {
     const render = renderer.create(
