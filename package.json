@@ -27,7 +27,7 @@
     "clean": "rm -rf ./node_modules native yarn.lock dist coverage && yarn install",
     "copyassets": "npx copyfiles -f ./src/assets/images/*.png ./dist/assets/images",
     "lint": "tsc --noEmit && eslint \"src/**/*.{ts,tsx}\" --fix",
-    "precommit": "yarn test && yarn lint",
+    "precommit": "yarn lint && yarn test",
     "pretty": "prettier --config ./.prettierrc.js --write \"src/**/*.{ts,tsx,js}\"",
     "prepublish": "yarn build",
     "storybook": "start-storybook -p 9009 -c storybook",

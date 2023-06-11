@@ -1,3 +1,4 @@
+import React from 'react';
 import { NativeModules } from 'react-native';
 import mockRNDeviceInfo from 'react-native-device-info/jest/react-native-device-info-mock';
 import { beforeAll } from '@jest/globals';
