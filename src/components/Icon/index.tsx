@@ -30,9 +30,9 @@ export const Icon: FC<IconType> = ({
   ...rest
 }) => {
   const iconName = name?.charAt(0).toUpperCase() + name?.slice(1);
-  const Svg = iconSets
-    ? iconSets[`Icon${iconName}`]
-    : SvgIcons[`Icon${iconName}`];
+  const bundleName = `Icon${iconName}`;
+  const svgIcons: any = SvgIcons[bundleName];
+  const Svg: any = iconSets ? iconSets[bundleName] : svgIcons;
 
   const iconSet = {
     [IconFonts.FontAwesome]: FontAwesome5Icons,

@@ -10,6 +10,7 @@ import {
   switchStyle,
 } from '@platformbuilders/theme-toolkit';
 import { InputStatus } from '../../enums';
+import Typography from '../Typography';
 
 const getStatusStyle = switchStyle('status');
 const brandContrast = getTheme('brand.primary.contrast');
@@ -43,16 +44,15 @@ type TextProps = {
   isPlaceholder?: boolean;
 } & ThemeProps;
 
-export const TextLabel = styled.Text<TextProps>`
+export const TextLabel = styled(Typography)<TextProps>`
   line-height: 19px;
   padding-bottom: ${mediumSpacing}px;
   color: ${(props: TextProps): string =>
     props.dark ? `${brandPrimary(props)}` : `${brandContrast(props)}`};
 `;
 
-export const Label = Animated.createAnimatedComponent<ComponentType<any>>(
-  TextLabel,
-);
+export const Label =
+  Animated.createAnimatedComponent<ComponentType<any>>(TextLabel);
 
 type DatePickerProps = {
   customStyles?: DatePickerCustomStylesProps;
@@ -68,7 +68,7 @@ export const BottomLine = styled.View`
   background-color: ${inputMainColor};
 `;
 
-const commonDatePickerStyles = {
+const commonDatePickerStyles: Partial<DatePickerCustomStylesProps> = {
   disabled: {
     backgroundColor: 'transparent',
   },

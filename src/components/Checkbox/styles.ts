@@ -18,7 +18,7 @@ export const containerStyle = {
   marginBottom: 0,
 };
 
-export const CheckBox = styled(DefaultCheckbox).attrs((props) => ({
+export const CheckBox = styled(DefaultCheckbox).attrs((props: any) => ({
   checkBoxColor: `${primaryColor(props)}`,
   checkedCheckBoxColor: `${primaryColor(props)}`,
 }))<{ testID?: string; accessibilityLabel?: string }>``;

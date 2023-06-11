@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, PropsWithChildren } from 'react';
 import { StyleProp, TextStyle } from 'react-native';
 import { ErrorText } from './styles';
 
@@ -17,7 +17,7 @@ type Props = {
   style?: StyleProp<TextStyle>;
 };
 
-const FormError: FC<Props> = ({
+const FormError: FC<PropsWithChildren<Props>> = ({
   id = 'form_error',
   accessibility,
   error = '',

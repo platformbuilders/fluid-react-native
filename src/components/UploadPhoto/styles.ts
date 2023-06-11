@@ -34,7 +34,7 @@ export const UploadIconWrapper = styled.View`
   justify-content: center;
 `;
 
-export const UploadIcon = styled(Icon).attrs((props) => ({
+export const UploadIcon = styled(Icon).attrs((props: any) => ({
   color: iconColor(props),
 }))`
   margin-bottom: ${spacingMd}px;
@@ -55,7 +55,7 @@ export const DeleteIconWrapper = styled(Touchable)`
   opacity: 0.6;
 `;
 
-export const DeleteIcon = styled(Icon).attrs((props) => ({
+export const DeleteIcon = styled(Icon).attrs((props: any) => ({
   color: deleteIconColor(props),
   size: 10,
 }))``;
