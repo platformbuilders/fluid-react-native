@@ -7,14 +7,14 @@ exports[`<FormError /> should render the form error component 1`] = `
   large={true}
   lineHeightVariant="min"
   style={
-    Array [
-      Object {
-        "color": "#000000",
+    [
+      {
+        "color": "#444444",
         "fontSize": 14,
-        "lineHeight": 14,
+        "lineHeight": 16.8,
       },
-      Object {
-        "color": "#FF3B30",
+      {
+        "color": "#FF4F3F",
         "marginTop": 0,
         "textAlign": "left",
       },
@@ -34,14 +34,14 @@ exports[`<FormError /> should render the form error component with centered 1`] 
   large={true}
   lineHeightVariant="min"
   style={
-    Array [
-      Object {
-        "color": "#000000",
+    [
+      {
+        "color": "#444444",
         "fontSize": 14,
-        "lineHeight": 14,
+        "lineHeight": 16.8,
       },
-      Object {
-        "color": "#FF3B30",
+      {
+        "color": "#FF4F3F",
         "marginTop": 0,
         "textAlign": "center",
       },

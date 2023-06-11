@@ -11,7 +11,6 @@ export type AvatarType = {
   imageQuality?: PhotoQuality;
   borderColor?: string;
   monogramStyle?: StyleProp<TextStyle>;
-  displayCamera?: boolean;
   displayMonogram?: boolean;
   size?: number;
   onPress?: () => void;

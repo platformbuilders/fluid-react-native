@@ -4,14 +4,25 @@ exports[`<FAB /> should render fab 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -20,9 +31,9 @@ exports[`<FAB /> should render fab 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "alignItems": "center",
-      "backgroundColor": "#D90080",
+      "backgroundColor": "#F49D19",
       "borderRadius": 55,
       "height": 110,
       "justifyContent": "center",
@@ -35,20 +46,30 @@ exports[`<FAB /> should render fab 1`] = `
 >
   <View
     collapsable={false}
-    nativeID="animatedComponent"
-    style={Object {}}
+    style={{}}
   >
     <View
       accessibilityLabel="Plus"
       accessibilityState={
-        Object {
+        {
+          "busy": undefined,
+          "checked": undefined,
           "disabled": true,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
         }
       }
       accessible={true}
       collapsable={false}
       focusable={true}
-      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -57,7 +78,7 @@ exports[`<FAB /> should render fab 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "opacity": 1,
         }
       }
@@ -68,18 +89,18 @@ exports[`<FAB /> should render fab 1`] = `
           allowFontScaling={false}
           selectable={false}
           style={
-            Array [
-              Object {
-                "color": "#fff",
+            [
+              {
+                "color": "#ffffff",
                 "fontSize": 37.714285714285715,
               },
               undefined,
-              Object {
+              {
                 "fontFamily": "FontAwesome5Free-Solid",
                 "fontStyle": "normal",
                 "fontWeight": "normal",
               },
-              Object {
+              {
                 "fontWeight": "900",
               },
             ]
@@ -97,14 +118,25 @@ exports[`<FAB /> should render fab with custom icon 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -113,9 +145,9 @@ exports[`<FAB /> should render fab with custom icon 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "alignItems": "center",
-      "backgroundColor": "#D90080",
+      "backgroundColor": "#F49D19",
       "borderRadius": 55,
       "height": 110,
       "justifyContent": "center",
@@ -128,20 +160,30 @@ exports[`<FAB /> should render fab with custom icon 1`] = `
 >
   <View
     collapsable={false}
-    nativeID="animatedComponent"
-    style={Object {}}
+    style={{}}
   >
     <View
       accessibilityLabel="Book"
       accessibilityState={
-        Object {
+        {
+          "busy": undefined,
+          "checked": undefined,
           "disabled": true,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
         }
       }
       accessible={true}
       collapsable={false}
       focusable={true}
-      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -150,7 +192,7 @@ exports[`<FAB /> should render fab with custom icon 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "opacity": 1,
         }
       }
@@ -161,18 +203,18 @@ exports[`<FAB /> should render fab with custom icon 1`] = `
           allowFontScaling={false}
           selectable={false}
           style={
-            Array [
-              Object {
-                "color": "#fff",
+            [
+              {
+                "color": "#ffffff",
                 "fontSize": 37.714285714285715,
               },
               undefined,
-              Object {
+              {
                 "fontFamily": "FontAwesome5Free-Solid",
                 "fontStyle": "normal",
                 "fontWeight": "normal",
               },
-              Object {
+              {
                 "fontWeight": "900",
               },
             ]
@@ -190,14 +232,25 @@ exports[`<FAB /> should render fab with custom icon color 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -206,9 +259,9 @@ exports[`<FAB /> should render fab with custom icon color 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "alignItems": "center",
-      "backgroundColor": "#D90080",
+      "backgroundColor": "#F49D19",
       "borderRadius": 55,
       "height": 110,
       "justifyContent": "center",
@@ -221,20 +274,30 @@ exports[`<FAB /> should render fab with custom icon color 1`] = `
 >
   <View
     collapsable={false}
-    nativeID="animatedComponent"
-    style={Object {}}
+    style={{}}
   >
     <View
       accessibilityLabel="Plus"
       accessibilityState={
-        Object {
+        {
+          "busy": undefined,
+          "checked": undefined,
           "disabled": true,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
         }
       }
       accessible={true}
       collapsable={false}
       focusable={true}
-      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -243,7 +306,7 @@ exports[`<FAB /> should render fab with custom icon color 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "opacity": 1,
         }
       }
@@ -254,18 +317,18 @@ exports[`<FAB /> should render fab with custom icon color 1`] = `
           allowFontScaling={false}
           selectable={false}
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#2980b9",
                 "fontSize": 37.714285714285715,
               },
               undefined,
-              Object {
+              {
                 "fontFamily": "FontAwesome5Free-Solid",
                 "fontStyle": "normal",
                 "fontWeight": "normal",
               },
-              Object {
+              {
                 "fontWeight": "900",
               },
             ]
@@ -283,14 +346,25 @@ exports[`<FAB /> should render fab with custom icon size 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -299,9 +373,9 @@ exports[`<FAB /> should render fab with custom icon size 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "alignItems": "center",
-      "backgroundColor": "#D90080",
+      "backgroundColor": "#F49D19",
       "borderRadius": 55,
       "height": 110,
       "justifyContent": "center",
@@ -314,20 +388,30 @@ exports[`<FAB /> should render fab with custom icon size 1`] = `
 >
   <View
     collapsable={false}
-    nativeID="animatedComponent"
-    style={Object {}}
+    style={{}}
   >
     <View
       accessibilityLabel="Plus"
       accessibilityState={
-        Object {
+        {
+          "busy": undefined,
+          "checked": undefined,
           "disabled": true,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
         }
       }
       accessible={true}
       collapsable={false}
       focusable={true}
-      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -336,7 +420,7 @@ exports[`<FAB /> should render fab with custom icon size 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "opacity": 1,
         }
       }
@@ -347,18 +431,18 @@ exports[`<FAB /> should render fab with custom icon size 1`] = `
           allowFontScaling={false}
           selectable={false}
           style={
-            Array [
-              Object {
-                "color": "#fff",
+            [
+              {
+                "color": "#ffffff",
                 "fontSize": 37.714285714285715,
               },
               undefined,
-              Object {
+              {
                 "fontFamily": "FontAwesome5Free-Solid",
                 "fontStyle": "normal",
                 "fontWeight": "normal",
               },
-              Object {
+              {
                 "fontWeight": "900",
               },
             ]
@@ -376,14 +460,25 @@ exports[`<FAB /> should render fab with custom text color 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -392,7 +487,7 @@ exports[`<FAB /> should render fab with custom text color 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "alignItems": "center",
       "backgroundColor": "#2980b9",
       "borderRadius": 55,
@@ -407,20 +502,30 @@ exports[`<FAB /> should render fab with custom text color 1`] = `
 >
   <View
     collapsable={false}
-    nativeID="animatedComponent"
-    style={Object {}}
+    style={{}}
   >
     <View
       accessibilityLabel="Plus"
       accessibilityState={
-        Object {
+        {
+          "busy": undefined,
+          "checked": undefined,
           "disabled": true,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
         }
       }
       accessible={true}
       collapsable={false}
       focusable={true}
-      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -429,7 +534,7 @@ exports[`<FAB /> should render fab with custom text color 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "opacity": 1,
         }
       }
@@ -440,18 +545,18 @@ exports[`<FAB /> should render fab with custom text color 1`] = `
           allowFontScaling={false}
           selectable={false}
           style={
-            Array [
-              Object {
-                "color": "#fff",
+            [
+              {
+                "color": "#ffffff",
                 "fontSize": 37.714285714285715,
               },
               undefined,
-              Object {
+              {
                 "fontFamily": "FontAwesome5Free-Solid",
                 "fontStyle": "normal",
                 "fontWeight": "normal",
               },
-              Object {
+              {
                 "fontWeight": "900",
               },
             ]
@@ -469,14 +574,25 @@ exports[`<FAB /> should render fab with relative pos 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -485,9 +601,9 @@ exports[`<FAB /> should render fab with relative pos 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "alignItems": "center",
-      "backgroundColor": "#D90080",
+      "backgroundColor": "#F49D19",
       "borderRadius": 55,
       "height": 110,
       "justifyContent": "center",
@@ -500,20 +616,30 @@ exports[`<FAB /> should render fab with relative pos 1`] = `
 >
   <View
     collapsable={false}
-    nativeID="animatedComponent"
-    style={Object {}}
+    style={{}}
   >
     <View
       accessibilityLabel="Plus"
       accessibilityState={
-        Object {
+        {
+          "busy": undefined,
+          "checked": undefined,
           "disabled": true,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
         }
       }
       accessible={true}
       collapsable={false}
       focusable={true}
-      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -522,7 +648,7 @@ exports[`<FAB /> should render fab with relative pos 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "opacity": 1,
         }
       }
@@ -533,18 +659,18 @@ exports[`<FAB /> should render fab with relative pos 1`] = `
           allowFontScaling={false}
           selectable={false}
           style={
-            Array [
-              Object {
-                "color": "#fff",
+            [
+              {
+                "color": "#ffffff",
                 "fontSize": 37.714285714285715,
               },
               undefined,
-              Object {
+              {
                 "fontFamily": "FontAwesome5Free-Solid",
                 "fontStyle": "normal",
                 "fontWeight": "normal",
               },
-              Object {
+              {
                 "fontWeight": "900",
               },
             ]
@@ -562,14 +688,25 @@ exports[`<FAB /> should render fab with shadow 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -578,16 +715,16 @@ exports[`<FAB /> should render fab with shadow 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "alignItems": "center",
-      "backgroundColor": "#D90080",
+      "backgroundColor": "#F49D19",
       "borderRadius": 55,
       "elevation": 3,
       "height": 110,
       "justifyContent": "center",
       "opacity": 1,
       "position": "absolute",
-      "shadowOffset": Object {
+      "shadowOffset": {
         "height": 4,
         "width": 0,
       },
@@ -600,20 +737,30 @@ exports[`<FAB /> should render fab with shadow 1`] = `
 >
   <View
     collapsable={false}
-    nativeID="animatedComponent"
-    style={Object {}}
+    style={{}}
   >
     <View
       accessibilityLabel="Plus"
       accessibilityState={
-        Object {
+        {
+          "busy": undefined,
+          "checked": undefined,
           "disabled": true,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
         }
       }
       accessible={true}
       collapsable={false}
       focusable={true}
-      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -622,7 +769,7 @@ exports[`<FAB /> should render fab with shadow 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "opacity": 1,
         }
       }
@@ -633,18 +780,18 @@ exports[`<FAB /> should render fab with shadow 1`] = `
           allowFontScaling={false}
           selectable={false}
           style={
-            Array [
-              Object {
-                "color": "#fff",
+            [
+              {
+                "color": "#ffffff",
                 "fontSize": 37.714285714285715,
               },
               undefined,
-              Object {
+              {
                 "fontFamily": "FontAwesome5Free-Solid",
                 "fontStyle": "normal",
                 "fontWeight": "normal",
               },
-              Object {
+              {
                 "fontWeight": "900",
               },
             ]

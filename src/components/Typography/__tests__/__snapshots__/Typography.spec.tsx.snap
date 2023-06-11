@@ -5,11 +5,11 @@ exports[`<Typography /> should render and match snapshot for default props 1`] =
   accessibilityLabel="undefined"
   lineHeightVariant="min"
   style={
-    Array [
-      Object {
-        "color": "#000000",
+    [
+      {
+        "color": "#444444",
         "fontSize": 15,
-        "lineHeight": 15,
+        "lineHeight": 18,
       },
     ]
   }
@@ -23,11 +23,11 @@ exports[`<Typography /> should render and match snapshot for variant lg 1`] = `
   accessibilityLabel="undefined"
   lineHeightVariant="min"
   style={
-    Array [
-      Object {
-        "color": "#000000",
+    [
+      {
+        "color": "#444444",
         "fontSize": 17,
-        "lineHeight": 17,
+        "lineHeight": 20.4,
       },
     ]
   }
@@ -41,11 +41,11 @@ exports[`<Typography /> should render and match snapshot for variant max 1`] = `
   accessibilityLabel="undefined"
   lineHeightVariant="min"
   style={
-    Array [
-      Object {
-        "color": "#000000",
+    [
+      {
+        "color": "#444444",
         "fontSize": 32,
-        "lineHeight": 32,
+        "lineHeight": 38.4,
       },
     ]
   }
@@ -59,11 +59,11 @@ exports[`<Typography /> should render and match snapshot for variant md 1`] = `
   accessibilityLabel="undefined"
   lineHeightVariant="min"
   style={
-    Array [
-      Object {
-        "color": "#000000",
+    [
+      {
+        "color": "#444444",
         "fontSize": 15,
-        "lineHeight": 15,
+        "lineHeight": 18,
       },
     ]
   }
@@ -77,11 +77,11 @@ exports[`<Typography /> should render and match snapshot for variant min 1`] = `
   accessibilityLabel="undefined"
   lineHeightVariant="min"
   style={
-    Array [
-      Object {
-        "color": "#000000",
+    [
+      {
+        "color": "#444444",
         "fontSize": 10,
-        "lineHeight": 10,
+        "lineHeight": 12,
       },
     ]
   }
@@ -95,11 +95,11 @@ exports[`<Typography /> should render and match snapshot for variant xl 1`] = `
   accessibilityLabel="undefined"
   lineHeightVariant="min"
   style={
-    Array [
-      Object {
-        "color": "#000000",
+    [
+      {
+        "color": "#444444",
         "fontSize": 20,
-        "lineHeight": 20,
+        "lineHeight": 24,
       },
     ]
   }
@@ -113,11 +113,11 @@ exports[`<Typography /> should render and match snapshot for variant xs 1`] = `
   accessibilityLabel="undefined"
   lineHeightVariant="min"
   style={
-    Array [
-      Object {
-        "color": "#000000",
+    [
+      {
+        "color": "#444444",
         "fontSize": 13,
-        "lineHeight": 13,
+        "lineHeight": 15.6,
       },
     ]
   }
@@ -131,11 +131,11 @@ exports[`<Typography /> should render and match snapshot for variant xxl 1`] = `
   accessibilityLabel="undefined"
   lineHeightVariant="min"
   style={
-    Array [
-      Object {
-        "color": "#000000",
+    [
+      {
+        "color": "#444444",
         "fontSize": 24,
-        "lineHeight": 24,
+        "lineHeight": 28.8,
       },
     ]
   }
@@ -149,11 +149,11 @@ exports[`<Typography /> should render and match snapshot for variant xxs 1`] = `
   accessibilityLabel="undefined"
   lineHeightVariant="min"
   style={
-    Array [
-      Object {
-        "color": "#000000",
+    [
+      {
+        "color": "#444444",
         "fontSize": 11,
-        "lineHeight": 11,
+        "lineHeight": 13.2,
       },
     ]
   }

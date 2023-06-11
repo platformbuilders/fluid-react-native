@@ -1,10 +1,12 @@
 import React from 'react';
 import { fireEvent, render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components/native';
 import Avatar from '..';
 import { ImageAvatarPlaceholder as defaultAvatar } from '../../../assets/images';
 import theme from '../../../theme';
+
+const defaultAvatarUrl = 'https://avatars.githubusercontent.com/u/4726921?v=4';
 
 describe('<Avatar />', () => {
   it('should render Avatar', () => {
@@ -16,10 +18,10 @@ describe('<Avatar />', () => {
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
-  it('should render Avatar with camera', () => {
+  it('should render Avatar with external image', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <Avatar id="testing" accessibility="" displayCamera />
+        <Avatar id="testing" accessibility="" image={defaultAvatarUrl} />
       </ThemeProvider>,
     );
     expect(wrapper.toJSON()).toMatchSnapshot();
@@ -137,7 +139,6 @@ describe('<Avatar />', () => {
           testID="testId"
           accessibility=""
           accessibilityLabel="testing"
-          displayCamera
           size={24}
           showBorder
           borderWidth={1}

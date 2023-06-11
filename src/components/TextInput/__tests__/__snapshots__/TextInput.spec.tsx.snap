@@ -3,22 +3,22 @@
 exports[`<TextInput /> should render textinput 1`] = `
 <View
   style={
-    Array [
-      Object {},
-      Object {},
+    [
+      {},
+      {},
     ]
   }
 >
   <View
     multiline={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "justifyContent": "flex-start",
           "paddingTop": 0,
           "position": "relative",
         },
-        Object {},
+        {},
       ]
     }
   >
@@ -27,8 +27,8 @@ exports[`<TextInput /> should render textinput 1`] = `
       error={false}
       showBorderErrored={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "borderColor": "black",
             "borderStyle": "solid",
             "borderWidth": 0,
@@ -40,18 +40,21 @@ exports[`<TextInput /> should render textinput 1`] = `
         accessibilityLabel="Erro "
         collapsable={false}
         contrast={false}
-        nativeID="animatedComponent"
+        lineHeightVariant="min"
         status="default"
         style={
-          Array [
-            Object {
-              "color": "#000000",
+          [
+            {
+              "color": "#444444",
               "fontSize": 15,
               "lineHeight": 18,
+            },
+            {
+              "color": "#444444",
               "position": "absolute",
               "top": 8,
             },
-            Object {
+            {
               "fontSize": 18,
               "top": 8,
             },
@@ -64,8 +67,8 @@ exports[`<TextInput /> should render textinput 1`] = `
         multiline={false}
         rightIcon={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "alignItems": "center",
               "flexDirection": "row",
               "justifyContent": "center",
@@ -94,9 +97,9 @@ exports[`<TextInput /> should render textinput 1`] = `
           onChangeText={[Function]}
           onFocus={[Function]}
           options={
-            Object {
+            {
               "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-              "translation": Object {
+              "translation": {
                 "*": [Function],
               },
               "validator": [Function],
@@ -107,10 +110,10 @@ exports[`<TextInput /> should render textinput 1`] = `
           refInput="$text"
           status="default"
           style={
-            Array [
-              Object {
+            [
+              {
                 "borderWidth": 0,
-                "color": "#000000",
+                "color": "#444444",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
@@ -123,7 +126,7 @@ exports[`<TextInput /> should render textinput 1`] = `
                 "paddingTop": 0,
                 "width": "100%",
               },
-              Object {},
+              {},
             ]
           }
           testID="test"
@@ -139,9 +142,9 @@ exports[`<TextInput /> should render textinput 1`] = `
         contrast={false}
         status="default"
         style={
-          Array [
-            Object {
-              "backgroundColor": "#000000",
+          [
+            {
+              "backgroundColor": "#444444",
               "height": 0.5,
             },
           ]

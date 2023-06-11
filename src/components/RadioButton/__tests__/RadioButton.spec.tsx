@@ -1,7 +1,7 @@
 import React from 'react';
 import { fireEvent, render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components/native';
 import RadioButton from '..';
 import theme from '../../../theme';
 

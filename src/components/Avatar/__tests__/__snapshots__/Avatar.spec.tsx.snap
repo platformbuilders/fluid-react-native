@@ -4,14 +4,25 @@ exports[`<Avatar /> should render Avatar 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -20,8 +31,8 @@ exports[`<Avatar /> should render Avatar 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
-      "borderColor": "#007AFF",
+    {
+      "borderColor": "#4255EF",
       "borderRadius": 25,
       "borderWidth": 2,
       "height": 50,
@@ -32,121 +43,32 @@ exports[`<Avatar /> should render Avatar 1`] = `
     }
   }
   testID="testing"
->
-  <View
-    style={
-      Array [
-        Object {},
-      ]
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-            "width": "100%",
-          },
-          undefined,
-        ]
-      }
-    >
-      <View
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#efefef",
-                "borderRadius": 3,
-                "height": 40,
-                "width": 40,
-              },
-              Array [
-                Object {
-                  "height": "101%",
-                  "width": "101%",
-                },
-                Object {
-                  "backgroundColor": undefined,
-                },
-              ],
-              Object {
-                "overflow": "hidden",
-              },
-            ]
-          }
-        >
-          <View
-            collapsable={false}
-            nativeID="animatedComponent"
-            style={
-              Object {
-                "backgroundColor": undefined,
-                "height": "100%",
-                "left": "0%",
-                "opacity": 0.5,
-                "width": "40%",
-              }
-            }
-          />
-        </View>
-      </View>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "overflow": "hidden",
-          },
-          Object {
-            "height": "101%",
-            "width": "101%",
-          },
-        ]
-      }
-    >
-      <FastImageView
-        onFastImageLoad={[Function]}
-        onFastImageLoadStart={[Function]}
-        resizeMode="cover"
-        source={
-          Object {
-            "testUri": "../../../src/assets/images/avatar-placeholder.png",
-          }
-        }
-        style={
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      />
-    </View>
-  </View>
-</View>
+/>
 `;
 
 exports[`<Avatar /> should render Avatar with all custom props 1`] = `
 <View
   accessibilityLabel="testing"
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -155,7 +77,7 @@ exports[`<Avatar /> should render Avatar with all custom props 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "borderColor": "#2ecc71",
       "borderRadius": 12,
       "borderWidth": 1,
@@ -167,35 +89,32 @@ exports[`<Avatar /> should render Avatar with all custom props 1`] = `
     }
   }
   testID="testId"
->
-  <View
-    style={
-      Object {
-        "alignItems": "center",
-        "flex": 1,
-        "justifyContent": "center",
-      }
-    }
-  >
-    <ActivityIndicator
-      size="small"
-    />
-  </View>
-</View>
+/>
 `;
 
 exports[`<Avatar /> should render Avatar with border 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -204,8 +123,8 @@ exports[`<Avatar /> should render Avatar with border 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
-      "borderColor": "#007AFF",
+    {
+      "borderColor": "#4255EF",
       "borderRadius": 25,
       "borderWidth": 2,
       "height": 50,
@@ -216,170 +135,32 @@ exports[`<Avatar /> should render Avatar with border 1`] = `
     }
   }
   testID="testing"
->
-  <View
-    style={
-      Array [
-        Object {},
-      ]
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-            "width": "100%",
-          },
-          undefined,
-        ]
-      }
-    >
-      <View
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#efefef",
-                "borderRadius": 3,
-                "height": 40,
-                "width": 40,
-              },
-              Array [
-                Object {
-                  "height": "101%",
-                  "width": "101%",
-                },
-                Object {
-                  "backgroundColor": undefined,
-                },
-              ],
-              Object {
-                "overflow": "hidden",
-              },
-            ]
-          }
-        >
-          <View
-            collapsable={false}
-            nativeID="animatedComponent"
-            style={
-              Object {
-                "backgroundColor": undefined,
-                "height": "100%",
-                "left": "0%",
-                "opacity": 0.5,
-                "width": "40%",
-              }
-            }
-          />
-        </View>
-      </View>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "overflow": "hidden",
-          },
-          Object {
-            "height": "101%",
-            "width": "101%",
-          },
-        ]
-      }
-    >
-      <FastImageView
-        onFastImageLoad={[Function]}
-        onFastImageLoadStart={[Function]}
-        resizeMode="cover"
-        source={
-          Object {
-            "testUri": "../../../src/assets/images/avatar-placeholder.png",
-          }
-        }
-        style={
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      />
-    </View>
-  </View>
-</View>
-`;
-
-exports[`<Avatar /> should render Avatar with camera 1`] = `
-<View
-  accessibilityLabel=""
-  accessibilityState={
-    Object {
-      "disabled": true,
-    }
-  }
-  accessible={true}
-  collapsable={false}
-  focusable={true}
-  nativeID="animatedComponent"
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "borderColor": "#007AFF",
-      "borderRadius": 25,
-      "borderWidth": 2,
-      "height": 50,
-      "opacity": 1,
-      "overflow": "hidden",
-      "position": "relative",
-      "width": 50,
-    }
-  }
-  testID="testing"
->
-  <View
-    style={
-      Object {
-        "alignItems": "center",
-        "flex": 1,
-        "justifyContent": "center",
-      }
-    }
-  >
-    <ActivityIndicator
-      size="small"
-    />
-  </View>
-</View>
+/>
 `;
 
 exports[`<Avatar /> should render Avatar with custom accessibility label 1`] = `
 <View
   accessibilityLabel="testing"
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -388,8 +169,8 @@ exports[`<Avatar /> should render Avatar with custom accessibility label 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
-      "borderColor": "#007AFF",
+    {
+      "borderColor": "#4255EF",
       "borderRadius": 25,
       "borderWidth": 2,
       "height": 50,
@@ -400,121 +181,32 @@ exports[`<Avatar /> should render Avatar with custom accessibility label 1`] = `
     }
   }
   testID="testing"
->
-  <View
-    style={
-      Array [
-        Object {},
-      ]
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-            "width": "100%",
-          },
-          undefined,
-        ]
-      }
-    >
-      <View
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#efefef",
-                "borderRadius": 3,
-                "height": 40,
-                "width": 40,
-              },
-              Array [
-                Object {
-                  "height": "101%",
-                  "width": "101%",
-                },
-                Object {
-                  "backgroundColor": undefined,
-                },
-              ],
-              Object {
-                "overflow": "hidden",
-              },
-            ]
-          }
-        >
-          <View
-            collapsable={false}
-            nativeID="animatedComponent"
-            style={
-              Object {
-                "backgroundColor": undefined,
-                "height": "100%",
-                "left": "0%",
-                "opacity": 0.5,
-                "width": "40%",
-              }
-            }
-          />
-        </View>
-      </View>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "overflow": "hidden",
-          },
-          Object {
-            "height": "101%",
-            "width": "101%",
-          },
-        ]
-      }
-    >
-      <FastImageView
-        onFastImageLoad={[Function]}
-        onFastImageLoadStart={[Function]}
-        resizeMode="cover"
-        source={
-          Object {
-            "testUri": "../../../src/assets/images/avatar-placeholder.png",
-          }
-        }
-        style={
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      />
-    </View>
-  </View>
-</View>
+/>
 `;
 
 exports[`<Avatar /> should render Avatar with custom border 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -523,7 +215,7 @@ exports[`<Avatar /> should render Avatar with custom border 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "borderColor": "#2ecc71",
       "borderRadius": 25,
       "borderWidth": 1,
@@ -535,121 +227,32 @@ exports[`<Avatar /> should render Avatar with custom border 1`] = `
     }
   }
   testID="testing"
->
-  <View
-    style={
-      Array [
-        Object {},
-      ]
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-            "width": "100%",
-          },
-          undefined,
-        ]
-      }
-    >
-      <View
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#efefef",
-                "borderRadius": 3,
-                "height": 40,
-                "width": 40,
-              },
-              Array [
-                Object {
-                  "height": "101%",
-                  "width": "101%",
-                },
-                Object {
-                  "backgroundColor": undefined,
-                },
-              ],
-              Object {
-                "overflow": "hidden",
-              },
-            ]
-          }
-        >
-          <View
-            collapsable={false}
-            nativeID="animatedComponent"
-            style={
-              Object {
-                "backgroundColor": undefined,
-                "height": "100%",
-                "left": "0%",
-                "opacity": 0.5,
-                "width": "40%",
-              }
-            }
-          />
-        </View>
-      </View>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "overflow": "hidden",
-          },
-          Object {
-            "height": "101%",
-            "width": "101%",
-          },
-        ]
-      }
-    >
-      <FastImageView
-        onFastImageLoad={[Function]}
-        onFastImageLoadStart={[Function]}
-        resizeMode="cover"
-        source={
-          Object {
-            "testUri": "../../../src/assets/images/avatar-placeholder.png",
-          }
-        }
-        style={
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      />
-    </View>
-  </View>
-</View>
+/>
 `;
 
 exports[`<Avatar /> should render Avatar with custom image 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -658,8 +261,8 @@ exports[`<Avatar /> should render Avatar with custom image 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
-      "borderColor": "#007AFF",
+    {
+      "borderColor": "#4255EF",
       "borderRadius": 25,
       "borderWidth": 2,
       "height": 50,
@@ -670,123 +273,32 @@ exports[`<Avatar /> should render Avatar with custom image 1`] = `
     }
   }
   testID="testing"
->
-  <View
-    style={
-      Array [
-        Object {},
-      ]
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-            "width": "100%",
-          },
-          undefined,
-        ]
-      }
-    >
-      <View
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#efefef",
-                "borderRadius": 3,
-                "height": 40,
-                "width": 40,
-              },
-              Array [
-                Object {
-                  "height": "101%",
-                  "width": "101%",
-                },
-                Object {
-                  "backgroundColor": undefined,
-                },
-              ],
-              Object {
-                "overflow": "hidden",
-              },
-            ]
-          }
-        >
-          <View
-            collapsable={false}
-            nativeID="animatedComponent"
-            style={
-              Object {
-                "backgroundColor": undefined,
-                "height": "100%",
-                "left": "0%",
-                "opacity": 0.5,
-                "width": "40%",
-              }
-            }
-          />
-        </View>
-      </View>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "overflow": "hidden",
-          },
-          Object {
-            "height": "101%",
-            "width": "101%",
-          },
-        ]
-      }
-    >
-      <FastImageView
-        onFastImageLoad={[Function]}
-        onFastImageLoadStart={[Function]}
-        resizeMode="cover"
-        source={
-          Object {
-            "uri": Object {
-              "testUri": "../../../src/assets/images/avatar-placeholder.png",
-            },
-          }
-        }
-        style={
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      />
-    </View>
-  </View>
-</View>
+/>
 `;
 
 exports[`<Avatar /> should render Avatar with custom size 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -795,8 +307,8 @@ exports[`<Avatar /> should render Avatar with custom size 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
-      "borderColor": "#007AFF",
+    {
+      "borderColor": "#4255EF",
       "borderRadius": 12,
       "borderWidth": 2,
       "height": 24,
@@ -807,121 +319,32 @@ exports[`<Avatar /> should render Avatar with custom size 1`] = `
     }
   }
   testID="testing"
->
-  <View
-    style={
-      Array [
-        Object {},
-      ]
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-            "width": "100%",
-          },
-          undefined,
-        ]
-      }
-    >
-      <View
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#efefef",
-                "borderRadius": 3,
-                "height": 40,
-                "width": 40,
-              },
-              Array [
-                Object {
-                  "height": "101%",
-                  "width": "101%",
-                },
-                Object {
-                  "backgroundColor": undefined,
-                },
-              ],
-              Object {
-                "overflow": "hidden",
-              },
-            ]
-          }
-        >
-          <View
-            collapsable={false}
-            nativeID="animatedComponent"
-            style={
-              Object {
-                "backgroundColor": undefined,
-                "height": "100%",
-                "left": "0%",
-                "opacity": 0.5,
-                "width": "40%",
-              }
-            }
-          />
-        </View>
-      </View>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "overflow": "hidden",
-          },
-          Object {
-            "height": "101%",
-            "width": "101%",
-          },
-        ]
-      }
-    >
-      <FastImageView
-        onFastImageLoad={[Function]}
-        onFastImageLoadStart={[Function]}
-        resizeMode="cover"
-        source={
-          Object {
-            "testUri": "../../../src/assets/images/avatar-placeholder.png",
-          }
-        }
-        style={
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      />
-    </View>
-  </View>
-</View>
+/>
 `;
 
 exports[`<Avatar /> should render Avatar with custom test id 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -930,8 +353,8 @@ exports[`<Avatar /> should render Avatar with custom test id 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
-      "borderColor": "#007AFF",
+    {
+      "borderColor": "#4255EF",
       "borderRadius": 25,
       "borderWidth": 2,
       "height": 50,
@@ -942,121 +365,78 @@ exports[`<Avatar /> should render Avatar with custom test id 1`] = `
     }
   }
   testID="testId"
->
-  <View
-    style={
-      Array [
-        Object {},
-      ]
+/>
+`;
+
+exports[`<Avatar /> should render Avatar with external image 1`] = `
+<View
+  accessibilityLabel=""
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
     }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-            "width": "100%",
-          },
-          undefined,
-        ]
-      }
-    >
-      <View
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#efefef",
-                "borderRadius": 3,
-                "height": 40,
-                "width": 40,
-              },
-              Array [
-                Object {
-                  "height": "101%",
-                  "width": "101%",
-                },
-                Object {
-                  "backgroundColor": undefined,
-                },
-              ],
-              Object {
-                "overflow": "hidden",
-              },
-            ]
-          }
-        >
-          <View
-            collapsable={false}
-            nativeID="animatedComponent"
-            style={
-              Object {
-                "backgroundColor": undefined,
-                "height": "100%",
-                "left": "0%",
-                "opacity": 0.5,
-                "width": "40%",
-              }
-            }
-          />
-        </View>
-      </View>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "overflow": "hidden",
-          },
-          Object {
-            "height": "101%",
-            "width": "101%",
-          },
-        ]
-      }
-    >
-      <FastImageView
-        onFastImageLoad={[Function]}
-        onFastImageLoadStart={[Function]}
-        resizeMode="cover"
-        source={
-          Object {
-            "testUri": "../../../src/assets/images/avatar-placeholder.png",
-          }
-        }
-        style={
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      />
-    </View>
-  </View>
-</View>
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "borderColor": "#4255EF",
+      "borderRadius": 25,
+      "borderWidth": 2,
+      "height": 50,
+      "opacity": 1,
+      "overflow": "hidden",
+      "position": "relative",
+      "width": 50,
+    }
+  }
+  testID="testing"
+/>
 `;
 
 exports[`<Avatar /> should render Avatar with monogram 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -1065,8 +445,8 @@ exports[`<Avatar /> should render Avatar with monogram 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
-      "borderColor": "#007AFF",
+    {
+      "borderColor": "#4255EF",
       "borderRadius": 25,
       "borderWidth": 2,
       "height": 50,
@@ -1079,111 +459,101 @@ exports[`<Avatar /> should render Avatar with monogram 1`] = `
   testID="testId"
 >
   <View
+    size={50}
     style={
-      Array [
-        Object {},
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#4255EF",
+          "borderRadius": 6.25,
+          "height": 12.5,
+          "justifyContent": "center",
+          "position": "absolute",
+          "width": 12.5,
+          "zIndex": 2,
+        },
       ]
     }
   >
     <View
+      collapsable={false}
       style={
-        Array [
-          Object {
-            "flexDirection": "row",
-            "width": "100%",
-          },
-          undefined,
-        ]
+        {
+          "color": "#F49D19",
+        }
       }
     >
       <View
-        style={
-          Object {
-            "flex": 1,
+        accessibilityLabel="Camera"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": false,
+            "expanded": undefined,
+            "selected": undefined,
           }
         }
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#efefef",
-                "borderRadius": 3,
-                "height": 40,
-                "width": 40,
-              },
-              Array [
-                Object {
-                  "height": "101%",
-                  "width": "101%",
-                },
-                Object {
-                  "backgroundColor": undefined,
-                },
-              ],
-              Object {
-                "overflow": "hidden",
-              },
-            ]
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
           }
-        >
-          <View
-            collapsable={false}
-            nativeID="animatedComponent"
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+        testID="Camera"
+      >
+        <View>
+          <Text
+            allowFontScaling={false}
+            selectable={false}
             style={
-              Object {
-                "backgroundColor": undefined,
-                "height": "100%",
-                "left": "0%",
-                "opacity": 0.5,
-                "width": "40%",
-              }
+              [
+                {
+                  "color": undefined,
+                  "fontSize": 20,
+                },
+                undefined,
+                {
+                  "fontFamily": "FontAwesome5Free-Solid",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {
+                  "fontWeight": "900",
+                },
+              ]
             }
-          />
+          >
+            
+          </Text>
         </View>
       </View>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "overflow": "hidden",
-          },
-          Object {
-            "height": "101%",
-            "width": "101%",
-          },
-        ]
-      }
-    >
-      <FastImageView
-        onFastImageLoad={[Function]}
-        onFastImageLoadStart={[Function]}
-        resizeMode="cover"
-        source={
-          Object {
-            "testUri": "../../../src/assets/images/avatar-placeholder.png",
-          }
-        }
-        style={
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      />
     </View>
   </View>
   <View
     size={50}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
-          "backgroundColor": "#D90080",
+          "backgroundColor": "",
           "height": 50,
           "justifyContent": "center",
           "position": "absolute",
@@ -1199,15 +569,15 @@ exports[`<Avatar /> should render Avatar with monogram 1`] = `
       lineHeightVariant="min"
       size={50}
       style={
-        Array [
-          Object {
-            "color": "#000000",
+        [
+          {
+            "color": "#444444",
             "fontSize": 15,
-            "lineHeight": 15,
+            "lineHeight": 18,
           },
-          Object {
+          {
             "alignSelf": "center",
-            "color": "#000000",
+            "color": "#444444",
             "fontSize": 22.5,
             "letterSpacing": 1.3,
             "lineHeight": 22.5,
@@ -1217,7 +587,6 @@ exports[`<Avatar /> should render Avatar with monogram 1`] = `
           },
         ]
       }
-      testID="BT"
       variant="md"
     >
       BT
@@ -1230,14 +599,25 @@ exports[`<Avatar /> should render Avatar with styled monogram 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -1246,8 +626,8 @@ exports[`<Avatar /> should render Avatar with styled monogram 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
-      "borderColor": "#007AFF",
+    {
+      "borderColor": "#4255EF",
       "borderRadius": 25,
       "borderWidth": 2,
       "height": 50,
@@ -1260,111 +640,101 @@ exports[`<Avatar /> should render Avatar with styled monogram 1`] = `
   testID="testId"
 >
   <View
+    size={50}
     style={
-      Array [
-        Object {},
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#4255EF",
+          "borderRadius": 6.25,
+          "height": 12.5,
+          "justifyContent": "center",
+          "position": "absolute",
+          "width": 12.5,
+          "zIndex": 2,
+        },
       ]
     }
   >
     <View
+      collapsable={false}
       style={
-        Array [
-          Object {
-            "flexDirection": "row",
-            "width": "100%",
-          },
-          undefined,
-        ]
+        {
+          "color": "#F49D19",
+        }
       }
     >
       <View
-        style={
-          Object {
-            "flex": 1,
+        accessibilityLabel="Camera"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": false,
+            "expanded": undefined,
+            "selected": undefined,
           }
         }
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#efefef",
-                "borderRadius": 3,
-                "height": 40,
-                "width": 40,
-              },
-              Array [
-                Object {
-                  "height": "101%",
-                  "width": "101%",
-                },
-                Object {
-                  "backgroundColor": undefined,
-                },
-              ],
-              Object {
-                "overflow": "hidden",
-              },
-            ]
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
           }
-        >
-          <View
-            collapsable={false}
-            nativeID="animatedComponent"
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+        testID="Camera"
+      >
+        <View>
+          <Text
+            allowFontScaling={false}
+            selectable={false}
             style={
-              Object {
-                "backgroundColor": undefined,
-                "height": "100%",
-                "left": "0%",
-                "opacity": 0.5,
-                "width": "40%",
-              }
+              [
+                {
+                  "color": undefined,
+                  "fontSize": 20,
+                },
+                undefined,
+                {
+                  "fontFamily": "FontAwesome5Free-Solid",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {
+                  "fontWeight": "900",
+                },
+              ]
             }
-          />
+          >
+            
+          </Text>
         </View>
       </View>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "overflow": "hidden",
-          },
-          Object {
-            "height": "101%",
-            "width": "101%",
-          },
-        ]
-      }
-    >
-      <FastImageView
-        onFastImageLoad={[Function]}
-        onFastImageLoadStart={[Function]}
-        resizeMode="cover"
-        source={
-          Object {
-            "testUri": "../../../src/assets/images/avatar-placeholder.png",
-          }
-        }
-        style={
-          Object {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-      />
     </View>
   </View>
   <View
     size={50}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
-          "backgroundColor": "#D90080",
+          "backgroundColor": "",
           "height": 50,
           "justifyContent": "center",
           "position": "absolute",
@@ -1380,15 +750,15 @@ exports[`<Avatar /> should render Avatar with styled monogram 1`] = `
       lineHeightVariant="min"
       size={50}
       style={
-        Array [
-          Object {
-            "color": "#000000",
+        [
+          {
+            "color": "#444444",
             "fontSize": 15,
-            "lineHeight": 15,
+            "lineHeight": 18,
           },
-          Object {
+          {
             "alignSelf": "center",
-            "color": "#000000",
+            "color": "#444444",
             "fontSize": 22.5,
             "letterSpacing": 1.3,
             "lineHeight": 22.5,
@@ -1396,12 +766,11 @@ exports[`<Avatar /> should render Avatar with styled monogram 1`] = `
             "textAlign": "center",
             "top": 3,
           },
-          Object {
+          {
             "backgroundColor": "#2ecc71",
           },
         ]
       }
-      testID="BT"
       variant="md"
     >
       BT

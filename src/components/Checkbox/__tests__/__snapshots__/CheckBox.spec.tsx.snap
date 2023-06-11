@@ -4,14 +4,25 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
 <View
   accessibilityLabel="checbox de "
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -20,7 +31,7 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "alignItems": "center",
       "flexDirection": "row",
       "opacity": 1,
@@ -32,24 +43,31 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
     accessibilityLabel=""
     lineHeightVariant="min"
     style={
-      Array [
-        Object {
-          "color": "#000000",
+      [
+        {
+          "color": "#444444",
           "fontSize": 15,
-          "lineHeight": 15,
+          "lineHeight": 18,
         },
-        Object {
-          "color": "#000000",
+        {
+          "color": "#444444",
           "flexDirection": "row",
           "marginLeft": 8,
           "opacity": 0.8,
         },
       ]
     }
-    testID=""
     variant="md"
   />
   <View
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -60,9 +78,9 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {},
-        Object {
+      [
+        {},
+        {
           "marginBottom": 0,
         },
       ]
@@ -70,7 +88,7 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "flexDirection": "row",
         }
@@ -78,13 +96,13 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
     >
       <Image
         source={
-          Object {
+          {
             "testUri": "../../react-native-check-box/img/ic_check_box_outline_blank.png",
           }
         }
         style={
-          Object {
-            "tintColor": "#007AFF",
+          {
+            "tintColor": "#4255EF",
           }
         }
       />
@@ -94,21 +112,20 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
     accessibilityLabel=""
     lineHeightVariant="min"
     style={
-      Array [
-        Object {
-          "color": "#000000",
+      [
+        {
+          "color": "#444444",
           "fontSize": 15,
-          "lineHeight": 15,
+          "lineHeight": 18,
         },
-        Object {
-          "color": "#000000",
+        {
+          "color": "#444444",
           "flexDirection": "row",
           "marginLeft": 8,
           "opacity": 0.8,
         },
       ]
     }
-    testID=""
     variant="md"
   />
 </View>

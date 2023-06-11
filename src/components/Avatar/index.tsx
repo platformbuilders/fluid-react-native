@@ -1,17 +1,13 @@
-import React, { useEffect, useImperativeHandle, useRef, useState } from 'react';
-import { isEmpty } from 'lodash';
-import { RNCamera } from 'react-native-camera';
-import { Source } from 'react-native-fast-image';
+import React, { useEffect, useImperativeHandle, useState } from 'react';
 import {
   ImageLibraryOptions,
   launchImageLibrary,
 } from 'react-native-image-picker';
 import { formatToMonogram } from '@platformbuilders/helpers';
-import { ImageAvatarPlaceholder as defaultAvatar } from '../../assets/images';
+import { ImageAvatarPlaceholder } from '../../assets/images';
 import { AvatarType } from '../../types';
 import Image from '../Image';
 import {
-  CameraView,
   MonogramText,
   MonogramWrapper,
   UploadIcon,
@@ -34,18 +30,17 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
       onPress,
       onUpload,
       showBorder = true,
-      displayCamera = false,
       displayMonogram = true,
       name,
       monogramStyle,
       ...rest
     },
     ref,
-    // eslint-disable-next-line sonarjs/cognitive-complexity
   ) => {
-    const [visibleImage, setVisibleImage] = useState<string | undefined>();
+    const [visibleImage, setVisibleImage] = useState<string | undefined>(
+      ImageAvatarPlaceholder,
+    );
     const [uploadedImage, setUploadedImage] = useState<string | undefined>();
-    const cameraRef = useRef<any>();
 
     const openPicker = (): Promise<void> => {
       const options: any | ImageLibraryOptions = {
@@ -69,15 +64,6 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
       });
     };
 
-    const takePicture = async (): Promise<void> => {
-      if (cameraRef.current) {
-        const options = { quality: 0.5, base64: true };
-        const data = await cameraRef.current.takePictureAsync(options);
-        setUploadedImage(data.uri);
-        return data;
-      }
-    };
-
     const getUploadImage = (): any => {
       return visibleImage;
     };
@@ -86,20 +72,9 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
       setVisibleImage(undefined);
     };
 
-    const getCurrentAvatar = (): Source | any => {
-      if (visibleImage) {
-        return { uri: visibleImage };
-      }
-      if (image && !isEmpty(image)) {
-        return { uri: image };
-      }
-      return defaultAvatar;
-    };
-
     useImperativeHandle(ref, () => ({
       getUploadImage,
       clearUploadImage,
-      takePicture,
       openPicker,
     }));
 
@@ -128,33 +103,19 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
         borderWidth={borderWidth}
         {...rest}
       >
-        {displayCamera && !visibleImage ? (
-          <CameraView
-            ref={cameraRef}
-            size={size}
-            type={RNCamera.Constants.Type.front}
-            flashMode={RNCamera.Constants.FlashMode.auto}
-            androidCameraPermissionOptions={{
-              title: 'Câmera',
-              message: 'Precisamos da sua permissão para usar a câmera',
-              buttonPositive: 'Ok',
-              buttonNegative: 'Cancelar',
-            }}
-          />
-        ) : (
-          <Image
-            displayPlaceholder={animatedLoading}
-            source={getCurrentAvatar()}
-            resizeMode="cover"
-            style={{ width: '101%', height: '101%' }}
-          />
-        )}
-        {!visibleImage && !!name && !!displayCamera && (
+        <Image
+          displayPlaceholder={animatedLoading}
+          source={{ uri: visibleImage }}
+          resizeMode="cover"
+          style={{ width: '101%', height: '101%' }}
+        />
+
+        {!visibleImage && !!name && (
           <UploadIconWrapper size={size}>
             <UploadIcon id="" accessibility="" />
           </UploadIconWrapper>
         )}
-        {!visibleImage && !displayCamera && !!name && displayMonogram && (
+        {!visibleImage && !!name && displayMonogram && (
           <MonogramWrapper size={size}>
             <MonogramText size={size} style={monogramStyle}>
               {formatToMonogram(name)}

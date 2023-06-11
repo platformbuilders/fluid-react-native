@@ -5,21 +5,21 @@ import { configure, addParameters, addDecorator } from '@storybook/react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { withPaddings } from 'storybook-addon-paddings';
 import { addReadme } from 'storybook-readme';
-import { ThemeProvider } from 'styled-components';
-import { colors, metrics, animations, radius, } from '../src/theme';
+import { ThemeProvider } from 'styled-components/native';
+import { colors, metrics, animations, radius } from '../src/theme';
 
 const theme = {
   ...colors,
   ...metrics,
   ...animations,
   ...radius,
-}
+};
 
 addDecorator(addReadme);
 addDecorator(withPaddings);
 addDecorator((storyFn) => (
   <ThemeProvider theme={theme}>{storyFn()}</ThemeProvider>
-))
+));
 addParameters({
   viewport: {
     viewports: INITIAL_VIEWPORTS,
@@ -38,9 +38,9 @@ addParameters({
   ],
   readme: {
     codeTheme: 'darcula',
-  }
+  },
 });
 
 const req = require.context('../src', true, /\.stories\.(js|jsx|tsx|ts)$/);
-const loadStories = () => req.keys().forEach(filename => req(filename));
+const loadStories = () => req.keys().forEach((filename) => req(filename));
 configure(loadStories, module);

@@ -1,6 +1,7 @@
 import React from 'react';
+import 'jest-styled-components';
 import renderer from 'react-test-renderer';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components/native';
 import LoadingIndicator from '..';
 import theme from '../../../theme';
 

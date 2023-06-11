@@ -4,14 +4,25 @@ exports[`<Link /> should render link 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -20,7 +31,7 @@ exports[`<Link /> should render link 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "opacity": 1,
     }
   }
@@ -30,16 +41,17 @@ exports[`<Link /> should render link 1`] = `
     accessibilityLabel="Texto "
     lineHeightVariant="min"
     style={
-      Array [
-        Object {
-          "color": "#000000",
+      [
+        {
+          "color": "#444444",
           "fontSize": 15,
-          "lineHeight": 15,
+          "lineHeight": 18,
         },
-        Object {
-          "color": "#007AFF",
+        {
+          "color": "#444444",
           "fontWeight": "500",
-          "textDecorationColor": "#007AFF",
+          "marginLeft": 8,
+          "textDecorationColor": "#4255EF",
           "textDecorationLine": "underline",
         },
       ]

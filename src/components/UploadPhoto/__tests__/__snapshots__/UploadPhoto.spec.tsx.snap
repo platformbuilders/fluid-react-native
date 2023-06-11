@@ -4,14 +4,25 @@ exports[`<UploadPhoto /> should render UploadPhoto 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -20,10 +31,10 @@ exports[`<UploadPhoto /> should render UploadPhoto 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "alignItems": "center",
-      "borderColor": "#fff",
-      "borderRadius": 16,
+      "borderColor": "#f0f0f0",
+      "borderRadius": 6,
       "borderStyle": "dashed",
       "borderWidth": 2,
       "justifyContent": "center",
@@ -37,8 +48,8 @@ exports[`<UploadPhoto /> should render UploadPhoto 1`] = `
 >
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "justifyContent": "center",
         },
@@ -47,9 +58,8 @@ exports[`<UploadPhoto /> should render UploadPhoto 1`] = `
   >
     <View
       collapsable={false}
-      nativeID="animatedComponent"
       style={
-        Object {
+        {
           "marginBottom": 16,
           "opacity": 0.6,
         }
@@ -58,14 +68,25 @@ exports[`<UploadPhoto /> should render UploadPhoto 1`] = `
       <View
         accessibilityLabel="Image"
         accessibilityState={
-          Object {
+          {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": true,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
           }
         }
         accessible={true}
         collapsable={false}
         focusable={true}
-        nativeID="animatedComponent"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -74,7 +95,7 @@ exports[`<UploadPhoto /> should render UploadPhoto 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Object {
+          {
             "opacity": 1,
           }
         }
@@ -85,18 +106,18 @@ exports[`<UploadPhoto /> should render UploadPhoto 1`] = `
             allowFontScaling={false}
             selectable={false}
             style={
-              Array [
-                Object {
-                  "color": "#000000",
+              [
+                {
+                  "color": "#444444",
                   "fontSize": 36,
                 },
                 undefined,
-                Object {
+                {
                   "fontFamily": "FontAwesome5Free-Regular",
                   "fontStyle": "normal",
                   "fontWeight": "normal",
                 },
-                Object {
+                {
                   "fontWeight": "400",
                 },
               ]
@@ -111,18 +132,17 @@ exports[`<UploadPhoto /> should render UploadPhoto 1`] = `
       accessibilityLabel="Adicionar Foto"
       lineHeightVariant="min"
       style={
-        Array [
-          Object {
-            "color": "#000000",
+        [
+          {
+            "color": "#444444",
             "fontSize": 15,
-            "lineHeight": 15,
+            "lineHeight": 18,
           },
-          Object {
-            "color": "#007AFF",
+          {
+            "color": "#4255EF",
           },
         ]
       }
-      testID="Adicionar Foto"
       variant="md"
     >
       Adicionar Foto
@@ -135,14 +155,25 @@ exports[`<UploadPhoto /> should render UploadPhoto with all custom props 1`] = `
 <View
   accessibilityLabel="testing"
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -151,10 +182,10 @@ exports[`<UploadPhoto /> should render UploadPhoto with all custom props 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "alignItems": "center",
-      "borderColor": "#fff",
-      "borderRadius": 16,
+      "borderColor": "#f0f0f0",
+      "borderRadius": 6,
       "borderStyle": "dashed",
       "borderWidth": 2,
       "justifyContent": "center",
@@ -168,7 +199,7 @@ exports[`<UploadPhoto /> should render UploadPhoto with all custom props 1`] = `
 >
   <View
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "justifyContent": "center",
@@ -186,14 +217,25 @@ exports[`<UploadPhoto /> should render UploadPhoto with camera 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -202,10 +244,10 @@ exports[`<UploadPhoto /> should render UploadPhoto with camera 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "alignItems": "center",
-      "borderColor": "#fff",
-      "borderRadius": 16,
+      "borderColor": "#f0f0f0",
+      "borderRadius": 6,
       "borderStyle": "dashed",
       "borderWidth": 2,
       "justifyContent": "center",
@@ -219,7 +261,7 @@ exports[`<UploadPhoto /> should render UploadPhoto with camera 1`] = `
 >
   <View
     style={
-      Object {
+      {
         "alignItems": "center",
         "flex": 1,
         "justifyContent": "center",
@@ -237,14 +279,25 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom accessibility lab
 <View
   accessibilityLabel="testing"
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -253,10 +306,10 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom accessibility lab
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "alignItems": "center",
-      "borderColor": "#fff",
-      "borderRadius": 16,
+      "borderColor": "#f0f0f0",
+      "borderRadius": 6,
       "borderStyle": "dashed",
       "borderWidth": 2,
       "justifyContent": "center",
@@ -270,8 +323,8 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom accessibility lab
 >
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "justifyContent": "center",
         },
@@ -280,9 +333,8 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom accessibility lab
   >
     <View
       collapsable={false}
-      nativeID="animatedComponent"
       style={
-        Object {
+        {
           "marginBottom": 16,
           "opacity": 0.6,
         }
@@ -291,14 +343,25 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom accessibility lab
       <View
         accessibilityLabel="Image"
         accessibilityState={
-          Object {
+          {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": true,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
           }
         }
         accessible={true}
         collapsable={false}
         focusable={true}
-        nativeID="animatedComponent"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -307,7 +370,7 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom accessibility lab
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Object {
+          {
             "opacity": 1,
           }
         }
@@ -318,18 +381,18 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom accessibility lab
             allowFontScaling={false}
             selectable={false}
             style={
-              Array [
-                Object {
-                  "color": "#000000",
+              [
+                {
+                  "color": "#444444",
                   "fontSize": 36,
                 },
                 undefined,
-                Object {
+                {
                   "fontFamily": "FontAwesome5Free-Regular",
                   "fontStyle": "normal",
                   "fontWeight": "normal",
                 },
-                Object {
+                {
                   "fontWeight": "400",
                 },
               ]
@@ -344,18 +407,17 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom accessibility lab
       accessibilityLabel="Adicionar Foto"
       lineHeightVariant="min"
       style={
-        Array [
-          Object {
-            "color": "#000000",
+        [
+          {
+            "color": "#444444",
             "fontSize": 15,
-            "lineHeight": 15,
+            "lineHeight": 18,
           },
-          Object {
-            "color": "#007AFF",
+          {
+            "color": "#4255EF",
           },
         ]
       }
-      testID="Adicionar Foto"
       variant="md"
     >
       Adicionar Foto
@@ -368,14 +430,25 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom test id 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -384,10 +457,10 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom test id 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "alignItems": "center",
-      "borderColor": "#fff",
-      "borderRadius": 16,
+      "borderColor": "#f0f0f0",
+      "borderRadius": 6,
       "borderStyle": "dashed",
       "borderWidth": 2,
       "justifyContent": "center",
@@ -401,8 +474,8 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom test id 1`] = `
 >
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "justifyContent": "center",
         },
@@ -411,9 +484,8 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom test id 1`] = `
   >
     <View
       collapsable={false}
-      nativeID="animatedComponent"
       style={
-        Object {
+        {
           "marginBottom": 16,
           "opacity": 0.6,
         }
@@ -422,14 +494,25 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom test id 1`] = `
       <View
         accessibilityLabel="Image"
         accessibilityState={
-          Object {
+          {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": true,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
           }
         }
         accessible={true}
         collapsable={false}
         focusable={true}
-        nativeID="animatedComponent"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -438,7 +521,7 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom test id 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Object {
+          {
             "opacity": 1,
           }
         }
@@ -449,18 +532,18 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom test id 1`] = `
             allowFontScaling={false}
             selectable={false}
             style={
-              Array [
-                Object {
-                  "color": "#000000",
+              [
+                {
+                  "color": "#444444",
                   "fontSize": 36,
                 },
                 undefined,
-                Object {
+                {
                   "fontFamily": "FontAwesome5Free-Regular",
                   "fontStyle": "normal",
                   "fontWeight": "normal",
                 },
-                Object {
+                {
                   "fontWeight": "400",
                 },
               ]
@@ -475,18 +558,17 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom test id 1`] = `
       accessibilityLabel="Adicionar Foto"
       lineHeightVariant="min"
       style={
-        Array [
-          Object {
-            "color": "#000000",
+        [
+          {
+            "color": "#444444",
             "fontSize": 15,
-            "lineHeight": 15,
+            "lineHeight": 18,
           },
-          Object {
-            "color": "#007AFF",
+          {
+            "color": "#4255EF",
           },
         ]
       }
-      testID="Adicionar Foto"
       variant="md"
     >
       Adicionar Foto

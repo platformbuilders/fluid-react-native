@@ -4,14 +4,25 @@ exports[`<Button /> should render button 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -20,7 +31,7 @@ exports[`<Button /> should render button 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "borderRadius": 4,
       "opacity": 1,
     }
@@ -34,11 +45,11 @@ exports[`<Button /> should render button 1`] = `
     hasBorder={false}
     rounded={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
-          "backgroundColor": "#007AFF",
-          "borderColor": "#007AFF",
+          "backgroundColor": "#4255EF",
+          "borderColor": "#4255EF",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -52,7 +63,7 @@ exports[`<Button /> should render button 1`] = `
           "paddingRight": 4,
           "paddingTop": 4,
         },
-        Object {},
+        {},
       ]
     }
   >
@@ -63,21 +74,20 @@ exports[`<Button /> should render button 1`] = `
       flat={false}
       lineHeightVariant="min"
       style={
-        Array [
-          Object {
-            "color": "#000000",
+        [
+          {
+            "color": "#444444",
             "fontSize": 15,
-            "lineHeight": 15,
+            "lineHeight": 18,
           },
-          Object {
-            "color": "#fff",
+          {
+            "color": "#ffffff",
             "fontWeight": "bold",
             "letterSpacing": 0.4,
           },
-          Object {},
+          {},
         ]
       }
-      testID="undefined"
       variant="md"
     />
   </View>
@@ -88,14 +98,25 @@ exports[`<Button /> should render button when rounded 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -104,7 +125,7 @@ exports[`<Button /> should render button when rounded 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "borderRadius": 22.5,
       "opacity": 1,
     }
@@ -118,11 +139,11 @@ exports[`<Button /> should render button when rounded 1`] = `
     hasBorder={false}
     rounded={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
-          "backgroundColor": "#007AFF",
-          "borderColor": "#007AFF",
+          "backgroundColor": "#4255EF",
+          "borderColor": "#4255EF",
           "borderRadius": 22.5,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -136,7 +157,7 @@ exports[`<Button /> should render button when rounded 1`] = `
           "paddingRight": 0,
           "paddingTop": 0,
         },
-        Object {},
+        {},
       ]
     }
   >
@@ -147,21 +168,20 @@ exports[`<Button /> should render button when rounded 1`] = `
       flat={false}
       lineHeightVariant="min"
       style={
-        Array [
-          Object {
-            "color": "#000000",
+        [
+          {
+            "color": "#444444",
             "fontSize": 15,
-            "lineHeight": 15,
+            "lineHeight": 18,
           },
-          Object {
-            "color": "#fff",
+          {
+            "color": "#ffffff",
             "fontWeight": "bold",
             "letterSpacing": 0.4,
           },
-          Object {},
+          {},
         ]
       }
-      testID="undefined"
       variant="md"
     />
   </View>
@@ -172,14 +192,25 @@ exports[`<Button /> should render button with children 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -188,7 +219,7 @@ exports[`<Button /> should render button with children 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "borderRadius": 4,
       "opacity": 1,
     }
@@ -202,11 +233,11 @@ exports[`<Button /> should render button with children 1`] = `
     hasBorder={false}
     rounded={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
-          "backgroundColor": "#007AFF",
-          "borderColor": "#007AFF",
+          "backgroundColor": "#4255EF",
+          "borderColor": "#4255EF",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -220,7 +251,7 @@ exports[`<Button /> should render button with children 1`] = `
           "paddingRight": 4,
           "paddingTop": 4,
         },
-        Object {},
+        {},
       ]
     }
   >
@@ -231,32 +262,31 @@ exports[`<Button /> should render button with children 1`] = `
       flat={false}
       lineHeightVariant="min"
       style={
-        Array [
-          Object {
-            "color": "#000000",
+        [
+          {
+            "color": "#444444",
             "fontSize": 15,
-            "lineHeight": 15,
+            "lineHeight": 18,
           },
-          Object {
-            "color": "#fff",
+          {
+            "color": "#ffffff",
             "fontWeight": "bold",
             "letterSpacing": 0.4,
           },
-          Object {},
+          {},
         ]
       }
-      testID="[object Object]"
       variant="md"
     >
       <Text
         accessibilityLabel="Test"
         lineHeightVariant="min"
         style={
-          Array [
-            Object {
-              "color": "#000000",
+          [
+            {
+              "color": "#444444",
               "fontSize": 15,
-              "lineHeight": 15,
+              "lineHeight": 18,
             },
           ]
         }
@@ -274,14 +304,25 @@ exports[`<Button /> should render button with contrast 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -290,7 +331,7 @@ exports[`<Button /> should render button with contrast 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "borderRadius": 4,
       "opacity": 1,
     }
@@ -304,11 +345,11 @@ exports[`<Button /> should render button with contrast 1`] = `
     hasBorder={false}
     rounded={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
-          "backgroundColor": "#007AFF",
-          "borderColor": "#007AFF",
+          "backgroundColor": "#4255EF",
+          "borderColor": "#4255EF",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -322,7 +363,7 @@ exports[`<Button /> should render button with contrast 1`] = `
           "paddingRight": 4,
           "paddingTop": 4,
         },
-        Object {},
+        {},
       ]
     }
   >
@@ -333,21 +374,20 @@ exports[`<Button /> should render button with contrast 1`] = `
       flat={false}
       lineHeightVariant="min"
       style={
-        Array [
-          Object {
-            "color": "#000000",
+        [
+          {
+            "color": "#444444",
             "fontSize": 15,
-            "lineHeight": 15,
+            "lineHeight": 18,
           },
-          Object {
-            "color": "#fff",
+          {
+            "color": "#ffffff",
             "fontWeight": "bold",
             "letterSpacing": 0.4,
           },
-          Object {},
+          {},
         ]
       }
-      testID="undefined"
       variant="md"
     />
   </View>
@@ -358,14 +398,25 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
 <View
   accessibilityLabel="testing"
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -374,7 +425,7 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "borderRadius": 4,
       "opacity": 1,
     }
@@ -388,11 +439,11 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
     hasBorder={false}
     rounded={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
-          "backgroundColor": "#007AFF",
-          "borderColor": "#007AFF",
+          "backgroundColor": "#4255EF",
+          "borderColor": "#4255EF",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -406,7 +457,7 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
           "paddingRight": 4,
           "paddingTop": 4,
         },
-        Object {},
+        {},
       ]
     }
   >
@@ -417,21 +468,20 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
       flat={false}
       lineHeightVariant="min"
       style={
-        Array [
-          Object {
-            "color": "#000000",
+        [
+          {
+            "color": "#444444",
             "fontSize": 15,
-            "lineHeight": 15,
+            "lineHeight": 18,
           },
-          Object {
-            "color": "#fff",
+          {
+            "color": "#ffffff",
             "fontWeight": "bold",
             "letterSpacing": 0.4,
           },
-          Object {},
+          {},
         ]
       }
-      testID="undefined"
       variant="md"
     />
   </View>
@@ -442,14 +492,25 @@ exports[`<Button /> should render button with custom style 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -458,7 +519,7 @@ exports[`<Button /> should render button with custom style 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "borderRadius": 4,
       "opacity": 1,
     }
@@ -472,11 +533,11 @@ exports[`<Button /> should render button with custom style 1`] = `
     hasBorder={false}
     rounded={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
-          "backgroundColor": "#007AFF",
-          "borderColor": "#007AFF",
+          "backgroundColor": "#4255EF",
+          "borderColor": "#4255EF",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -490,7 +551,7 @@ exports[`<Button /> should render button with custom style 1`] = `
           "paddingRight": 4,
           "paddingTop": 4,
         },
-        Object {
+        {
           "backgroundColor": "#2980b9",
         },
       ]
@@ -503,21 +564,20 @@ exports[`<Button /> should render button with custom style 1`] = `
       flat={false}
       lineHeightVariant="min"
       style={
-        Array [
-          Object {
-            "color": "#000000",
+        [
+          {
+            "color": "#444444",
             "fontSize": 15,
-            "lineHeight": 15,
+            "lineHeight": 18,
           },
-          Object {
-            "color": "#fff",
+          {
+            "color": "#ffffff",
             "fontWeight": "bold",
             "letterSpacing": 0.4,
           },
-          Object {},
+          {},
         ]
       }
-      testID="undefined"
       variant="md"
     />
   </View>
@@ -528,14 +588,25 @@ exports[`<Button /> should render button with custom text style 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -544,7 +615,7 @@ exports[`<Button /> should render button with custom text style 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "borderRadius": 4,
       "opacity": 1,
     }
@@ -558,11 +629,11 @@ exports[`<Button /> should render button with custom text style 1`] = `
     hasBorder={false}
     rounded={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
-          "backgroundColor": "#007AFF",
-          "borderColor": "#007AFF",
+          "backgroundColor": "#4255EF",
+          "borderColor": "#4255EF",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -576,7 +647,7 @@ exports[`<Button /> should render button with custom text style 1`] = `
           "paddingRight": 4,
           "paddingTop": 4,
         },
-        Object {},
+        {},
       ]
     }
   >
@@ -587,23 +658,22 @@ exports[`<Button /> should render button with custom text style 1`] = `
       flat={false}
       lineHeightVariant="min"
       style={
-        Array [
-          Object {
-            "color": "#000000",
+        [
+          {
+            "color": "#444444",
             "fontSize": 15,
-            "lineHeight": 15,
+            "lineHeight": 18,
           },
-          Object {
-            "color": "#fff",
+          {
+            "color": "#ffffff",
             "fontWeight": "bold",
             "letterSpacing": 0.4,
           },
-          Object {
+          {
             "color": "#2980b9",
           },
         ]
       }
-      testID="undefined"
       variant="md"
     />
   </View>
@@ -614,14 +684,25 @@ exports[`<Button /> should render button with disabled 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -630,7 +711,7 @@ exports[`<Button /> should render button with disabled 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "borderRadius": 4,
       "opacity": 1,
     }
@@ -644,11 +725,11 @@ exports[`<Button /> should render button with disabled 1`] = `
     hasBorder={false}
     rounded={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
-          "backgroundColor": "#007AFF70",
-          "borderColor": "#007AFF70",
+          "backgroundColor": "#4255EF70",
+          "borderColor": "#4255EF70",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -662,7 +743,7 @@ exports[`<Button /> should render button with disabled 1`] = `
           "paddingRight": 4,
           "paddingTop": 4,
         },
-        Object {},
+        {},
       ]
     }
   >
@@ -673,21 +754,20 @@ exports[`<Button /> should render button with disabled 1`] = `
       flat={false}
       lineHeightVariant="min"
       style={
-        Array [
-          Object {
-            "color": "#000000",
+        [
+          {
+            "color": "#444444",
             "fontSize": 15,
-            "lineHeight": 15,
+            "lineHeight": 18,
           },
-          Object {
-            "color": "#fff",
+          {
+            "color": "#ffffff",
             "fontWeight": "bold",
             "letterSpacing": 0.4,
           },
-          Object {},
+          {},
         ]
       }
-      testID="undefined"
       variant="md"
     />
   </View>
@@ -698,14 +778,25 @@ exports[`<Button /> should render button with loading 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -714,7 +805,7 @@ exports[`<Button /> should render button with loading 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "borderRadius": 4,
       "opacity": 1,
     }
@@ -728,11 +819,11 @@ exports[`<Button /> should render button with loading 1`] = `
     hasBorder={false}
     rounded={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
-          "backgroundColor": "#007AFF",
-          "borderColor": "#007AFF",
+          "backgroundColor": "#4255EF",
+          "borderColor": "#4255EF",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -746,20 +837,20 @@ exports[`<Button /> should render button with loading 1`] = `
           "paddingRight": 4,
           "paddingTop": 4,
         },
-        Object {},
+        {},
       ]
     }
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "aspectRatio": 1,
           },
           undefined,
-          Array [
-            Object {},
-            Object {
+          [
+            {},
+            {
               "alignSelf": "center",
               "width": 55,
             },
@@ -769,29 +860,29 @@ exports[`<Button /> should render button with loading 1`] = `
     >
       <View
         accessibilityLabel="Aguarde"
-        autoPlay={true}
         cacheComposition={true}
         collapsable={false}
+        colorFilters={[]}
         contrast={false}
         enableMergePathsAndroidForKitKatAndAbove={false}
         forwardedRef={[Function]}
         loop={true}
-        nativeID="animatedComponent"
         onAnimationFinish={[Function]}
-        onLayout={[Function]}
         progress={0}
         resizeMode="contain"
-        sourceJson="{\\"v\\":\\"5.5.5\\",\\"fr\\":60,\\"ip\\":0,\\"op\\":60,\\"w\\":375,\\"h\\":375,\\"nm\\":\\"dots-loader\\",\\"ddd\\":0,\\"assets\\":[],\\"layers\\":[{\\"ddd\\":0,\\"ind\\":1,\\"ty\\":4,\\"nm\\":\\"Shape Layer 3\\",\\"sr\\":1,\\"ks\\":{\\"o\\":{\\"a\\":1,\\"k\\":[{\\"i\\":{\\"x\\":[0.833],\\"y\\":[0.833]},\\"o\\":{\\"x\\":[0.167],\\"y\\":[0.167]},\\"t\\":20,\\"s\\":[100]},{\\"i\\":{\\"x\\":[0.833],\\"y\\":[0.833]},\\"o\\":{\\"x\\":[0.167],\\"y\\":[0.167]},\\"t\\":40,\\"s\\":[70]},{\\"t\\":60,\\"s\\":[99]}],\\"ix\\":11},\\"r\\":{\\"a\\":0,\\"k\\":0,\\"ix\\":10},\\"p\\":{\\"a\\":0,\\"k\\":[250,187,0],\\"ix\\":2},\\"a\\":{\\"a\\":0,\\"k\\":[-101.84,-18.84,0],\\"ix\\":1},\\"s\\":{\\"a\\":0,\\"k\\":[100,100,100],\\"ix\\":6}},\\"ao\\":0,\\"shapes\\":[{\\"ty\\":\\"gr\\",\\"it\\":[{\\"d\\":1,\\"ty\\":\\"el\\",\\"s\\":{\\"a\\":0,\\"k\\":[43.32,43.32],\\"ix\\":2},\\"p\\":{\\"a\\":0,\\"k\\":[0,0],\\"ix\\":3},\\"nm\\":\\"Ellipse Path 1\\",\\"mn\\":\\"ADBE Vector Shape - Ellipse\\",\\"hd\\":false},{\\"ty\\":\\"fl\\",\\"c\\":{\\"a\\":0,\\"k\\":[1,1,1,1],\\"ix\\":4},\\"o\\":{\\"a\\":0,\\"k\\":100,\\"ix\\":5},\\"r\\":1,\\"bm\\":0,\\"nm\\":\\"Fill 1\\",\\"mn\\":\\"ADBE Vector Graphic - Fill\\",\\"hd\\":false},{\\"ty\\":\\"tr\\",\\"p\\":{\\"a\\":0,\\"k\\":[-100.84,-18.84],\\"ix\\":2},\\"a\\":{\\"a\\":0,\\"k\\":[0,0],\\"ix\\":1},\\"s\\":{\\"a\\":0,\\"k\\":[100,100],\\"ix\\":3},\\"r\\":{\\"a\\":0,\\"k\\":0,\\"ix\\":6},\\"o\\":{\\"a\\":0,\\"k\\":100,\\"ix\\":7},\\"sk\\":{\\"a\\":0,\\"k\\":0,\\"ix\\":4},\\"sa\\":{\\"a\\":0,\\"k\\":0,\\"ix\\":5},\\"nm\\":\\"Transform\\"}],\\"nm\\":\\"Ellipse 1\\",\\"np\\":3,\\"cix\\":2,\\"bm\\":0,\\"ix\\":1,\\"mn\\":\\"ADBE Vector Group\\",\\"hd\\":false}],\\"ip\\":0,\\"op\\":180,\\"st\\":0,\\"bm\\":0},{\\"ddd\\":0,\\"ind\\":2,\\"ty\\":4,\\"nm\\":\\"Shape Layer 2\\",\\"sr\\":1,\\"ks\\":{\\"o\\":{\\"a\\":1,\\"k\\":[{\\"i\\":{\\"x\\":[0.833],\\"y\\":[0.833]},\\"o\\":{\\"x\\":[0.167],\\"y\\":[0.167]},\\"t\\":10,\\"s\\":[100]},{\\"i\\":{\\"x\\":[0.833],\\"y\\":[0.833]},\\"o\\":{\\"x\\":[0.167],\\"y\\":[0.167]},\\"t\\":30,\\"s\\":[60]},{\\"t\\":50,\\"s\\":[100]}],\\"ix\\":11},\\"r\\":{\\"a\\":0,\\"k\\":0,\\"ix\\":10},\\"p\\":{\\"a\\":0,\\"k\\":[187,187,0],\\"ix\\":2},\\"a\\":{\\"a\\":0,\\"k\\":[-100.84,-18.84,0],\\"ix\\":1},\\"s\\":{\\"a\\":0,\\"k\\":[100,100,100],\\"ix\\":6}},\\"ao\\":0,\\"shapes\\":[{\\"ty\\":\\"gr\\",\\"it\\":[{\\"d\\":1,\\"ty\\":\\"el\\",\\"s\\":{\\"a\\":0,\\"k\\":[43.32,43.32],\\"ix\\":2},\\"p\\":{\\"a\\":0,\\"k\\":[0,0],\\"ix\\":3},\\"nm\\":\\"Ellipse Path 1\\",\\"mn\\":\\"ADBE Vector Shape - Ellipse\\",\\"hd\\":false},{\\"ty\\":\\"fl\\",\\"c\\":{\\"a\\":0,\\"k\\":[1,1,1,1],\\"ix\\":4},\\"o\\":{\\"a\\":0,\\"k\\":100,\\"ix\\":5},\\"r\\":1,\\"bm\\":0,\\"nm\\":\\"Fill 1\\",\\"mn\\":\\"ADBE Vector Graphic - Fill\\",\\"hd\\":false},{\\"ty\\":\\"tr\\",\\"p\\":{\\"a\\":0,\\"k\\":[-100.84,-18.84],\\"ix\\":2},\\"a\\":{\\"a\\":0,\\"k\\":[0,0],\\"ix\\":1},\\"s\\":{\\"a\\":0,\\"k\\":[100,100],\\"ix\\":3},\\"r\\":{\\"a\\":0,\\"k\\":0,\\"ix\\":6},\\"o\\":{\\"a\\":0,\\"k\\":100,\\"ix\\":7},\\"sk\\":{\\"a\\":0,\\"k\\":0,\\"ix\\":4},\\"sa\\":{\\"a\\":0,\\"k\\":0,\\"ix\\":5},\\"nm\\":\\"Transform\\"}],\\"nm\\":\\"Ellipse 1\\",\\"np\\":3,\\"cix\\":2,\\"bm\\":0,\\"ix\\":1,\\"mn\\":\\"ADBE Vector Group\\",\\"hd\\":false}],\\"ip\\":0,\\"op\\":180,\\"st\\":0,\\"bm\\":0},{\\"ddd\\":0,\\"ind\\":3,\\"ty\\":4,\\"nm\\":\\"Shape Layer 1\\",\\"sr\\":1,\\"ks\\":{\\"o\\":{\\"a\\":1,\\"k\\":[{\\"i\\":{\\"x\\":[0.833],\\"y\\":[0.833]},\\"o\\":{\\"x\\":[0.167],\\"y\\":[0.167]},\\"t\\":0,\\"s\\":[100]},{\\"i\\":{\\"x\\":[0.833],\\"y\\":[0.833]},\\"o\\":{\\"x\\":[0.167],\\"y\\":[0.167]},\\"t\\":20,\\"s\\":[60]},{\\"t\\":40,\\"s\\":[100]}],\\"ix\\":11},\\"r\\":{\\"a\\":0,\\"k\\":0,\\"ix\\":10},\\"p\\":{\\"a\\":0,\\"k\\":[123,187,0],\\"ix\\":2},\\"a\\":{\\"a\\":0,\\"k\\":[-100.84,-18.84,0],\\"ix\\":1},\\"s\\":{\\"a\\":0,\\"k\\":[100,100,100],\\"ix\\":6}},\\"ao\\":0,\\"shapes\\":[{\\"ty\\":\\"gr\\",\\"it\\":[{\\"d\\":1,\\"ty\\":\\"el\\",\\"s\\":{\\"a\\":0,\\"k\\":[43.32,43.32],\\"ix\\":2},\\"p\\":{\\"a\\":0,\\"k\\":[0,0],\\"ix\\":3},\\"nm\\":\\"Ellipse Path 1\\",\\"mn\\":\\"ADBE Vector Shape - Ellipse\\",\\"hd\\":false},{\\"ty\\":\\"fl\\",\\"c\\":{\\"a\\":0,\\"k\\":[1,1,1,1],\\"ix\\":4},\\"o\\":{\\"a\\":0,\\"k\\":100,\\"ix\\":5},\\"r\\":1,\\"bm\\":0,\\"nm\\":\\"Fill 1\\",\\"mn\\":\\"ADBE Vector Graphic - Fill\\",\\"hd\\":false},{\\"ty\\":\\"tr\\",\\"p\\":{\\"a\\":0,\\"k\\":[-100.84,-18.84],\\"ix\\":2},\\"a\\":{\\"a\\":0,\\"k\\":[0,0],\\"ix\\":1},\\"s\\":{\\"a\\":0,\\"k\\":[100,100],\\"ix\\":3},\\"r\\":{\\"a\\":0,\\"k\\":0,\\"ix\\":6},\\"o\\":{\\"a\\":0,\\"k\\":100,\\"ix\\":7},\\"sk\\":{\\"a\\":0,\\"k\\":0,\\"ix\\":4},\\"sa\\":{\\"a\\":0,\\"k\\":0,\\"ix\\":5},\\"nm\\":\\"Transform\\"}],\\"nm\\":\\"Ellipse 1\\",\\"np\\":3,\\"cix\\":2,\\"bm\\":0,\\"ix\\":1,\\"mn\\":\\"ADBE Vector Group\\",\\"hd\\":false}],\\"ip\\":0,\\"op\\":180,\\"st\\":0,\\"bm\\":0}],\\"markers\\":[]}"
+        sourceJson="{"v":"5.5.5","fr":60,"ip":0,"op":60,"w":375,"h":375,"nm":"dots-loader","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"Shape Layer 3","sr":1,"ks":{"o":{"a":1,"k":[{"i":{"x":[0.833],"y":[0.833]},"o":{"x":[0.167],"y":[0.167]},"t":20,"s":[100]},{"i":{"x":[0.833],"y":[0.833]},"o":{"x":[0.167],"y":[0.167]},"t":40,"s":[70]},{"t":60,"s":[99]}],"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[250,187,0],"ix":2},"a":{"a":0,"k":[-101.84,-18.84,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"d":1,"ty":"el","s":{"a":0,"k":[43.32,43.32],"ix":2},"p":{"a":0,"k":[0,0],"ix":3},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fill 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[-100.84,-18.84],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Ellipse 1","np":3,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":180,"st":0,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"Shape Layer 2","sr":1,"ks":{"o":{"a":1,"k":[{"i":{"x":[0.833],"y":[0.833]},"o":{"x":[0.167],"y":[0.167]},"t":10,"s":[100]},{"i":{"x":[0.833],"y":[0.833]},"o":{"x":[0.167],"y":[0.167]},"t":30,"s":[60]},{"t":50,"s":[100]}],"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[187,187,0],"ix":2},"a":{"a":0,"k":[-100.84,-18.84,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"d":1,"ty":"el","s":{"a":0,"k":[43.32,43.32],"ix":2},"p":{"a":0,"k":[0,0],"ix":3},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fill 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[-100.84,-18.84],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Ellipse 1","np":3,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":180,"st":0,"bm":0},{"ddd":0,"ind":3,"ty":4,"nm":"Shape Layer 1","sr":1,"ks":{"o":{"a":1,"k":[{"i":{"x":[0.833],"y":[0.833]},"o":{"x":[0.167],"y":[0.167]},"t":0,"s":[100]},{"i":{"x":[0.833],"y":[0.833]},"o":{"x":[0.167],"y":[0.167]},"t":20,"s":[60]},{"t":40,"s":[100]}],"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":0,"k":[123,187,0],"ix":2},"a":{"a":0,"k":[-100.84,-18.84,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"d":1,"ty":"el","s":{"a":0,"k":[43.32,43.32],"ix":2},"p":{"a":0,"k":[0,0],"ix":3},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fill 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[-100.84,-18.84],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Ellipse 1","np":3,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":180,"st":0,"bm":0}],"markers":[]}"
         speed={1}
         style={
-          Object {
+          {
             "alignSelf": "center",
             "aspectRatio": 1,
             "height": "100%",
             "width": 55,
           }
         }
-        testID="loading"
+        textFiltersAndroid={[]}
+        textFiltersIOS={[]}
+        useNativeLooping={false}
         variant="button"
       />
     </View>
@@ -803,14 +894,25 @@ exports[`<Button /> should render button with test id 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -819,7 +921,7 @@ exports[`<Button /> should render button with test id 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "borderRadius": 4,
       "opacity": 1,
     }
@@ -833,11 +935,11 @@ exports[`<Button /> should render button with test id 1`] = `
     hasBorder={false}
     rounded={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
-          "backgroundColor": "#007AFF",
-          "borderColor": "#007AFF",
+          "backgroundColor": "#4255EF",
+          "borderColor": "#4255EF",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -851,7 +953,7 @@ exports[`<Button /> should render button with test id 1`] = `
           "paddingRight": 4,
           "paddingTop": 4,
         },
-        Object {},
+        {},
       ]
     }
   >
@@ -862,21 +964,20 @@ exports[`<Button /> should render button with test id 1`] = `
       flat={false}
       lineHeightVariant="min"
       style={
-        Array [
-          Object {
-            "color": "#000000",
+        [
+          {
+            "color": "#444444",
             "fontSize": 15,
-            "lineHeight": 15,
+            "lineHeight": 18,
           },
-          Object {
-            "color": "#fff",
+          {
+            "color": "#ffffff",
             "fontWeight": "bold",
             "letterSpacing": 0.4,
           },
-          Object {},
+          {},
         ]
       }
-      testID="undefined"
       variant="md"
     />
   </View>
@@ -887,14 +988,25 @@ exports[`<Button /> should render button with typography variant 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -903,7 +1015,7 @@ exports[`<Button /> should render button with typography variant 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "borderRadius": 4,
       "opacity": 1,
     }
@@ -917,11 +1029,11 @@ exports[`<Button /> should render button with typography variant 1`] = `
     hasBorder={false}
     rounded={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
-          "backgroundColor": "#007AFF",
-          "borderColor": "#007AFF",
+          "backgroundColor": "#4255EF",
+          "borderColor": "#4255EF",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -935,7 +1047,7 @@ exports[`<Button /> should render button with typography variant 1`] = `
           "paddingRight": 4,
           "paddingTop": 4,
         },
-        Object {},
+        {},
       ]
     }
   >
@@ -946,21 +1058,20 @@ exports[`<Button /> should render button with typography variant 1`] = `
       flat={false}
       lineHeightVariant="min"
       style={
-        Array [
-          Object {
-            "color": "#000000",
+        [
+          {
+            "color": "#444444",
             "fontSize": 17,
-            "lineHeight": 17,
+            "lineHeight": 20.4,
           },
-          Object {
-            "color": "#fff",
+          {
+            "color": "#ffffff",
             "fontWeight": "bold",
             "letterSpacing": 0.4,
           },
-          Object {},
+          {},
         ]
       }
-      testID="undefined"
       variant="lg"
     />
   </View>
@@ -971,14 +1082,25 @@ exports[`<Button /> should render button with variant 1`] = `
 <View
   accessibilityLabel=""
   accessibilityState={
-    Object {
+    {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
     }
   }
   accessible={true}
   collapsable={false}
   focusable={true}
-  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -987,7 +1109,7 @@ exports[`<Button /> should render button with variant 1`] = `
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Object {
+    {
       "borderRadius": 4,
       "opacity": 1,
     }
@@ -1001,11 +1123,11 @@ exports[`<Button /> should render button with variant 1`] = `
     hasBorder={false}
     rounded={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
-          "backgroundColor": "#153164",
-          "borderColor": "#153164",
+          "backgroundColor": "#42ADEF",
+          "borderColor": "#42ADEF",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -1019,7 +1141,7 @@ exports[`<Button /> should render button with variant 1`] = `
           "paddingRight": 4,
           "paddingTop": 4,
         },
-        Object {},
+        {},
       ]
     }
   >
@@ -1030,21 +1152,20 @@ exports[`<Button /> should render button with variant 1`] = `
       flat={false}
       lineHeightVariant="min"
       style={
-        Array [
-          Object {
-            "color": "#000000",
+        [
+          {
+            "color": "#444444",
             "fontSize": 15,
-            "lineHeight": 15,
+            "lineHeight": 18,
           },
-          Object {
-            "color": "#F8F9FA",
+          {
+            "color": "#ffffff",
             "fontWeight": "bold",
             "letterSpacing": 0.4,
           },
-          Object {},
+          {},
         ]
       }
-      testID="undefined"
       variant="md"
     />
   </View>

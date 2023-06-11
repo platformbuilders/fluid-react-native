@@ -1,7 +1,7 @@
 import React from 'react';
 import { fireEvent, render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components/native';
 
 import Header, { DEFAULT_LEFT_ICON_NAME, DEFAULT_RIGHT_ICON_NAME } from '..';
 import { HeaderTheme } from '../../../enums';

@@ -4,17 +4,17 @@ exports[`<Header /> should render Header 1`] = `
 <View
   isThemePrimary={true}
   style={
-    Array [
-      Object {},
+    [
+      {},
     ]
   }
 >
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "elevation": 3,
-          "shadowOffset": Object {
+          "shadowOffset": {
             "height": 4,
             "width": 0,
           },
@@ -27,10 +27,10 @@ exports[`<Header /> should render Header 1`] = `
     <View
       isThemePrimary={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
-            "backgroundColor": "#007AFF",
+            "backgroundColor": "#4255EF",
             "elevation": 3,
             "flexDirection": "row",
             "height": 64,
@@ -43,20 +43,30 @@ exports[`<Header /> should render Header 1`] = `
     >
       <View
         collapsable={false}
-        nativeID="animatedComponent"
-        style={Object {}}
+        style={{}}
       >
         <View
           accessibilityLabel="arrow-left"
           accessibilityState={
-            Object {
+            {
+              "busy": undefined,
+              "checked": undefined,
               "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
             }
           }
           accessible={true}
           collapsable={false}
           focusable={true}
-          nativeID="animatedComponent"
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -65,7 +75,7 @@ exports[`<Header /> should render Header 1`] = `
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           style={
-            Object {
+            {
               "opacity": 1,
             }
           }
@@ -76,18 +86,18 @@ exports[`<Header /> should render Header 1`] = `
               allowFontScaling={false}
               selectable={false}
               style={
-                Array [
-                  Object {
-                    "color": "#fff",
+                [
+                  {
+                    "color": "#ffffff",
                     "fontSize": 20,
                   },
                   undefined,
-                  Object {
+                  {
                     "fontFamily": "FontAwesome5Free-Solid",
                     "fontStyle": "normal",
                     "fontWeight": "normal",
                   },
-                  Object {
+                  {
                     "fontWeight": "900",
                   },
                 ]
@@ -100,8 +110,8 @@ exports[`<Header /> should render Header 1`] = `
       </View>
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "alignItems": "center",
               "flexBasis": 0,
               "flexGrow": 1,
@@ -115,19 +125,18 @@ exports[`<Header /> should render Header 1`] = `
           isThemePrimary={true}
           lineHeightVariant="min"
           style={
-            Array [
-              Object {
-                "color": "#000000",
+            [
+              {
+                "color": "#444444",
                 "fontSize": 17,
-                "lineHeight": 17,
+                "lineHeight": 20.4,
               },
-              Object {
-                "color": "#fff",
+              {
+                "color": "#ffffff",
                 "fontWeight": "bold",
               },
             ]
           }
-          testID="Cadastro"
           variant="lg"
         >
           Cadastro
@@ -137,19 +146,18 @@ exports[`<Header /> should render Header 1`] = `
           isThemePrimary={true}
           lineHeightVariant="min"
           style={
-            Array [
-              Object {
-                "color": "#000000",
+            [
+              {
+                "color": "#444444",
                 "fontSize": 14,
-                "lineHeight": 14,
+                "lineHeight": 16.8,
               },
-              Object {
-                "color": "#fff",
+              {
+                "color": "#ffffff",
                 "marginTop": 8,
               },
             ]
           }
-          testID="O seu saldo é de R$2.500,00"
           variant="sm"
         >
           O seu saldo é de R$2.500,00
@@ -157,20 +165,30 @@ exports[`<Header /> should render Header 1`] = `
       </View>
       <View
         collapsable={false}
-        nativeID="animatedComponent"
-        style={Object {}}
+        style={{}}
       >
         <View
           accessibilityLabel="times"
           accessibilityState={
-            Object {
+            {
+              "busy": undefined,
+              "checked": undefined,
               "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
             }
           }
           accessible={true}
           collapsable={false}
           focusable={true}
-          nativeID="animatedComponent"
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -179,7 +197,7 @@ exports[`<Header /> should render Header 1`] = `
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           style={
-            Object {
+            {
               "opacity": 1,
             }
           }
@@ -190,18 +208,18 @@ exports[`<Header /> should render Header 1`] = `
               allowFontScaling={false}
               selectable={false}
               style={
-                Array [
-                  Object {
-                    "color": "#fff",
+                [
+                  {
+                    "color": "#ffffff",
                     "fontSize": 20,
                   },
                   undefined,
-                  Object {
+                  {
                     "fontFamily": "FontAwesome5Free-Solid",
                     "fontStyle": "normal",
                     "fontWeight": "normal",
                   },
-                  Object {
+                  {
                     "fontWeight": "900",
                   },
                 ]
