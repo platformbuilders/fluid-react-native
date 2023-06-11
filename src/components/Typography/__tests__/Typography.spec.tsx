@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import Typography from '..';
-import { theme } from '../../../test/helpers';
+import theme from '../../../theme';
 
 describe('<Typography />', () => {
   it('should render and match snapshot for default props', () => {

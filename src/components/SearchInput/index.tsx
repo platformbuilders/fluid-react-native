@@ -54,6 +54,7 @@ const SearchInput: React.FC<Props> = ({
   ...rest
 }) => {
   const [searchText, setSearchText] = useState('');
+  const [autoCompleteType] = useState<any>('off'); // ['off', 'username', 'password', 'email', 'name', 'tel', 'street-address', 'postal-code'
   const [isSearching, setSearching] = useState(false);
   const [isFocused, setFocused] = useState(false);
   const ref = inputRef || useRef<HTMLInputElement>(null);
@@ -67,6 +68,8 @@ const SearchInput: React.FC<Props> = ({
     setSearching(false);
     Keyboard.dismiss();
   };
+
+  // @TODO: AutocompleteType de acordo com o tipo de máscara
 
   return (
     <Wrapper
@@ -86,8 +89,8 @@ const SearchInput: React.FC<Props> = ({
         autoFocus={autoFocus}
         autoCapitalize="none"
         autoCorrect={false}
-        iconName={isFocused || !!searchText ? 'close' : 'magnify'}
-        autoCompleteType="off"
+        iconName={isFocused || !!searchText ? 'times' : 'search'}
+        autoComplete={autoCompleteType}
         placeholder={isSearching ? '' : placeholder || 'Pesquise aqui'}
         onChangeText={(value: string): void => {
           setSearchText(value);

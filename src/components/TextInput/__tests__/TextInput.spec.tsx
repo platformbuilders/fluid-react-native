@@ -3,7 +3,7 @@ import { fireEvent, render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import TextInput from '..';
-import { theme } from '../../../test/helpers';
+import theme from '../../../theme';
 
 describe('<TextInput />', () => {
   it('should render textinput', () => {
@@ -31,7 +31,7 @@ describe('<TextInput />', () => {
             onChangeText={setValue}
             onBlur={onBlurFN}
             onFocus={onFocusFN}
-            iconName="access-point"
+            iconName="book"
           />
         </ThemeProvider>
       );

@@ -1,16 +1,15 @@
 import { Animated, StyleSheet } from 'react-native';
 import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
-import { ThemeProps } from '@platformbuilders/theme-toolkit';
-import { InputStatus } from '../../enums';
-import { TextInputType } from '../../types';
 import {
+  ThemeProps,
   getFontSize,
-  getLineHeight,
   getTheme,
   ifStyle,
   switchStyle,
-} from '../../utils/helpers';
+} from '@platformbuilders/theme-toolkit';
+import { InputStatus } from '../../enums';
+import { TextInputType } from '../../types';
 import DefaultIcon from '../Icon';
 import Typography from '../Typography';
 
@@ -193,9 +192,7 @@ export const InputAreaWrapper = styled.View<InputAreaWrapperProps>`
   overflow: hidden;
 `;
 
-export const TextLabel = styled.Text<any>`
-  font-size: ${getFontSize}px;
-  line-height: ${getLineHeight}px;
+export const TextLabel = styled(Typography)<any>`
   position: absolute;
   color: ${inputColor};
   top: ${LABEL_LOWER_STYLE.top}px;

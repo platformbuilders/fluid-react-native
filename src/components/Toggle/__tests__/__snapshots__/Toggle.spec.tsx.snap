@@ -7,19 +7,19 @@ exports[`<ToggleButton /> should render component with custom thumb color 1`] = 
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  onTintColor="#C6B09E80"
+  onTintColor="#4255EF80"
   style={
-    Array [
-      Object {
+    [
+      {
         "height": 31,
         "width": 51,
       },
-      Array [
-        Array [
-          Object {},
+      [
+        [
+          {},
         ],
-        Object {
-          "backgroundColor": "#0000004D",
+        {
+          "backgroundColor": "#4444444D",
           "borderRadius": 16,
         },
       ],
@@ -27,13 +27,13 @@ exports[`<ToggleButton /> should render component with custom thumb color 1`] = 
   }
   testID="toggle_button"
   thumbColorProps={
-    Object {
+    {
       "falseColor": "blue",
       "trueColor": "red",
     }
   }
   thumbTintColor="red"
-  tintColor="#0000004D"
+  tintColor="#4444444D"
   value={true}
 />
 `;
@@ -47,16 +47,16 @@ exports[`<ToggleButton /> should render component with custom track color 1`] = 
   onStartShouldSetResponder={[Function]}
   onTintColor="red"
   style={
-    Array [
-      Object {
+    [
+      {
         "height": 31,
         "width": 51,
       },
-      Array [
-        Array [
-          Object {},
+      [
+        [
+          {},
         ],
-        Object {
+        {
           "backgroundColor": "blue",
           "borderRadius": 16,
         },
@@ -64,10 +64,10 @@ exports[`<ToggleButton /> should render component with custom track color 1`] = 
     ]
   }
   testID="toggle_button"
-  thumbTintColor="#C6B09E"
+  thumbTintColor="#4255EF"
   tintColor="blue"
   trackColorProps={
-    Object {
+    {
       "falseColor": "blue",
       "trueColor": "red",
     }
@@ -83,27 +83,27 @@ exports[`<ToggleButton /> should render toggle component 1`] = `
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  onTintColor="#C6B09E80"
+  onTintColor="#4255EF80"
   style={
-    Array [
-      Object {
+    [
+      {
         "height": 31,
         "width": 51,
       },
-      Array [
-        Array [
-          Object {},
+      [
+        [
+          {},
         ],
-        Object {
-          "backgroundColor": "#0000004D",
+        {
+          "backgroundColor": "#4444444D",
           "borderRadius": 16,
         },
       ],
     ]
   }
   testID="toggle_button"
-  thumbTintColor="#C6B09E"
-  tintColor="#0000004D"
+  thumbTintColor="#4255EF"
+  tintColor="#4444444D"
   value={true}
 />
 `;

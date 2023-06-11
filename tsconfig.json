@@ -2,9 +2,9 @@
   "compilerOptions": {
     "allowJs": true,
     "target": "esnext",
-    "module": "esnext",
+    "module": "commonjs",
     "lib": ["esnext"],
-    "types": ["react-native", "jest"],
+
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
@@ -15,7 +15,7 @@
     "baseUrl": ".",
     "skipLibCheck": true,
     "strict": true,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true,
@@ -29,9 +29,13 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "ignoreDeprecations": "5.0",
+    "types": [
+      "react-native",
+      "jest",
+    ],
     "typeRoots": [
       "./node_modules/@types",
-      "styled-components.d.ts",
       "./src/types"
     ],
   },

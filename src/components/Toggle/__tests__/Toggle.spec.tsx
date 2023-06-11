@@ -2,7 +2,7 @@ import React from 'react';
 import { fireEvent, render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
-import { theme } from '../../../test/helpers';
+import theme from '../../../theme';
 import ToggleButton from '../index';
 
 const onPressEvent = jest.fn();

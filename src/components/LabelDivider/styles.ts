@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import { getTheme } from '../../utils/helpers';
+import { getTheme } from '@platformbuilders/theme-toolkit';
 import Typography from '../Typography';
 
 const smallerSpacing = getTheme('spacing.xs');

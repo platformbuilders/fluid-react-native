@@ -1,28 +1,36 @@
 import React, { FC } from 'react';
-import { TouchableOpacity } from 'react-native';
+import { GestureResponderEvent, TouchableOpacity } from 'react-native';
+import { generateHaptic } from '@platformbuilders/helpers/native';
 import { TouchableType } from '../../types';
-import { generateHaptic } from '../../utils/helpers';
 
 const CommonTouchable: FC<TouchableType> = ({
   onPress = (): void => {},
-  haptic = 'impact',
+  haptic = 'impactLight',
   disabled = false,
   accessibility,
   accessibilityLabel,
   testID,
   id,
   ...rest
-}) => (
-  <TouchableOpacity
-    {...rest}
-    accessibilityLabel={accessibilityLabel || accessibility}
-    testID={testID || id || accessibility}
-    disabled={disabled}
-    onPress={(e): void => {
+}) => {
+  const onBasicPress = (event: GestureResponderEvent): void => {
+    onPress(event);
+    try {
       generateHaptic(haptic);
-      onPress(e);
-    }}
-  />
-);
+    } catch (error) {
+      console.log('LOG:  onBasicPress  generateHaptic:', error);
+    }
+  };
+
+  return (
+    <TouchableOpacity
+      {...rest}
+      accessibilityLabel={accessibilityLabel || accessibility}
+      testID={testID || id || accessibility}
+      disabled={disabled}
+      onPress={onBasicPress}
+    />
+  );
+};
 
 export default CommonTouchable;

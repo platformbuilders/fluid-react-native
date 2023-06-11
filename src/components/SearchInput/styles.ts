@@ -1,6 +1,7 @@
 import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
-import { getShadow, getTheme } from '../../utils/helpers';
+import { getTheme } from '@platformbuilders/theme-toolkit';
+import { getShadow } from '../../utils/helpers';
 import TextInput from '../TextInput';
 
 const brandSecondary = getTheme('brand.secondary.main');

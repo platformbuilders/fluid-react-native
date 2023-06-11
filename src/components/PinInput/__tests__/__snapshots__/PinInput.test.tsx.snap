@@ -3,8 +3,8 @@
 exports[`<PinInput /> should render textinput 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "flexDirection": "row",
       },
@@ -14,9 +14,8 @@ exports[`<PinInput /> should render textinput 1`] = `
   <View
     collapsable={false}
     forwardedRef={[Function]}
-    nativeID="animatedComponent"
     style={
-      Object {
+      {
         "alignItems": "stretch",
         "flexDirection": "row",
         "height": 88,
@@ -28,7 +27,7 @@ exports[`<PinInput /> should render textinput 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "flexDirection": "row",
           "height": "100%",
@@ -41,9 +40,8 @@ exports[`<PinInput /> should render textinput 1`] = `
         accessibilityLabel="Insira o PIN 0"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -60,12 +58,12 @@ exports[`<PinInput /> should render textinput 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -74,9 +72,8 @@ exports[`<PinInput /> should render textinput 1`] = `
         accessibilityLabel="Insira o PIN 1"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -93,12 +90,12 @@ exports[`<PinInput /> should render textinput 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -107,9 +104,8 @@ exports[`<PinInput /> should render textinput 1`] = `
         accessibilityLabel="Insira o PIN 2"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -126,12 +122,12 @@ exports[`<PinInput /> should render textinput 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -140,9 +136,8 @@ exports[`<PinInput /> should render textinput 1`] = `
         accessibilityLabel="Insira o PIN 3"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -159,12 +154,12 @@ exports[`<PinInput /> should render textinput 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -183,14 +178,14 @@ exports[`<PinInput /> should render textinput 1`] = `
       onFocus={[Function]}
       onKeyPress={[Function]}
       selection={
-        Object {
+        {
           "end": 0,
           "start": 0,
         }
       }
       spellCheck={false}
       style={
-        Object {
+        {
           "flex": 1,
           "opacity": 0,
           "textAlign": "center",
@@ -205,8 +200,8 @@ exports[`<PinInput /> should render textinput 1`] = `
 exports[`<PinInput /> should render textinput with animated 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "flexDirection": "row",
       },
@@ -216,9 +211,8 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
   <View
     collapsable={false}
     forwardedRef={[Function]}
-    nativeID="animatedComponent"
     style={
-      Object {
+      {
         "alignItems": "stretch",
         "flexDirection": "row",
         "height": 88,
@@ -230,7 +224,7 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "flexDirection": "row",
           "height": "100%",
@@ -243,9 +237,8 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
         accessibilityLabel="Insira o PIN 0"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -262,12 +255,12 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -276,9 +269,8 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
         accessibilityLabel="Insira o PIN 1"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -295,12 +287,12 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -309,9 +301,8 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
         accessibilityLabel="Insira o PIN 2"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -328,12 +319,12 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -342,9 +333,8 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
         accessibilityLabel="Insira o PIN 3"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -361,12 +351,12 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -385,14 +375,14 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
       onFocus={[Function]}
       onKeyPress={[Function]}
       selection={
-        Object {
+        {
           "end": 0,
           "start": 0,
         }
       }
       spellCheck={false}
       style={
-        Object {
+        {
           "flex": 1,
           "opacity": 0,
           "textAlign": "center",
@@ -407,8 +397,8 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
 exports[`<PinInput /> should render textinput with centered 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "flexDirection": "row",
       },
@@ -418,9 +408,8 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
   <View
     collapsable={false}
     forwardedRef={[Function]}
-    nativeID="animatedComponent"
     style={
-      Object {
+      {
         "alignItems": "stretch",
         "flexDirection": "row",
         "height": 88,
@@ -432,7 +421,7 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "flexDirection": "row",
           "height": "100%",
@@ -445,9 +434,8 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
         accessibilityLabel="Insira o PIN 0"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -464,12 +452,12 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -478,9 +466,8 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
         accessibilityLabel="Insira o PIN 1"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -497,12 +484,12 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -511,9 +498,8 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
         accessibilityLabel="Insira o PIN 2"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -530,12 +516,12 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -544,9 +530,8 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
         accessibilityLabel="Insira o PIN 3"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -563,12 +548,12 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -587,14 +572,14 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
       onFocus={[Function]}
       onKeyPress={[Function]}
       selection={
-        Object {
+        {
           "end": 0,
           "start": 0,
         }
       }
       spellCheck={false}
       style={
-        Object {
+        {
           "flex": 1,
           "opacity": 0,
           "textAlign": "center",
@@ -609,8 +594,8 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
 exports[`<PinInput /> should render textinput with contrast 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "flexDirection": "row",
       },
@@ -620,9 +605,8 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
   <View
     collapsable={false}
     forwardedRef={[Function]}
-    nativeID="animatedComponent"
     style={
-      Object {
+      {
         "alignItems": "stretch",
         "flexDirection": "row",
         "height": 88,
@@ -634,7 +618,7 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "flexDirection": "row",
           "height": "100%",
@@ -647,9 +631,8 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
         accessibilityLabel="Insira o PIN 0"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -666,12 +649,12 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -680,9 +663,8 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
         accessibilityLabel="Insira o PIN 1"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -699,12 +681,12 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -713,9 +695,8 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
         accessibilityLabel="Insira o PIN 2"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -732,12 +713,12 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -746,9 +727,8 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
         accessibilityLabel="Insira o PIN 3"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -765,12 +745,12 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -789,14 +769,14 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
       onFocus={[Function]}
       onKeyPress={[Function]}
       selection={
-        Object {
+        {
           "end": 0,
           "start": 0,
         }
       }
       spellCheck={false}
       style={
-        Object {
+        {
           "flex": 1,
           "opacity": 0,
           "textAlign": "center",
@@ -809,11 +789,11 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
 `;
 
 exports[`<PinInput /> should render textinput with custom caption 1`] = `
-Array [
+[
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
         },
@@ -823,9 +803,8 @@ Array [
     <View
       collapsable={false}
       forwardedRef={[Function]}
-      nativeID="animatedComponent"
       style={
-        Object {
+        {
           "alignItems": "stretch",
           "flexDirection": "row",
           "height": 88,
@@ -837,7 +816,7 @@ Array [
     >
       <View
         style={
-          Object {
+          {
             "alignItems": "center",
             "flexDirection": "row",
             "height": "100%",
@@ -850,9 +829,8 @@ Array [
           accessibilityLabel="Insira o PIN 0"
           collapsable={false}
           forwardedRef={[Function]}
-          nativeID="animatedComponent"
           style={
-            Object {
+            {
               "alignItems": "center",
               "borderColor": null,
               "borderRadius": 8,
@@ -869,12 +847,12 @@ Array [
         >
           <Text
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": null,
                   "fontSize": 40.85714285714286,
                 },
-                Object {},
+                {},
               ]
             }
           />
@@ -883,9 +861,8 @@ Array [
           accessibilityLabel="Insira o PIN 1"
           collapsable={false}
           forwardedRef={[Function]}
-          nativeID="animatedComponent"
           style={
-            Object {
+            {
               "alignItems": "center",
               "borderColor": null,
               "borderRadius": 8,
@@ -902,12 +879,12 @@ Array [
         >
           <Text
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": null,
                   "fontSize": 40.85714285714286,
                 },
-                Object {},
+                {},
               ]
             }
           />
@@ -916,9 +893,8 @@ Array [
           accessibilityLabel="Insira o PIN 2"
           collapsable={false}
           forwardedRef={[Function]}
-          nativeID="animatedComponent"
           style={
-            Object {
+            {
               "alignItems": "center",
               "borderColor": null,
               "borderRadius": 8,
@@ -935,12 +911,12 @@ Array [
         >
           <Text
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": null,
                   "fontSize": 40.85714285714286,
                 },
-                Object {},
+                {},
               ]
             }
           />
@@ -949,9 +925,8 @@ Array [
           accessibilityLabel="Insira o PIN 3"
           collapsable={false}
           forwardedRef={[Function]}
-          nativeID="animatedComponent"
           style={
-            Object {
+            {
               "alignItems": "center",
               "borderColor": null,
               "borderRadius": 8,
@@ -968,12 +943,12 @@ Array [
         >
           <Text
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": null,
                   "fontSize": 40.85714285714286,
                 },
-                Object {},
+                {},
               ]
             }
           />
@@ -992,14 +967,14 @@ Array [
         onFocus={[Function]}
         onKeyPress={[Function]}
         selection={
-          Object {
+          {
             "end": 0,
             "start": 0,
           }
         }
         spellCheck={false}
         style={
-          Object {
+          {
             "flex": 1,
             "opacity": 0,
             "textAlign": "center",
@@ -1014,20 +989,19 @@ Array [
     centered={false}
     lineHeightVariant="min"
     style={
-      Array [
-        Object {
-          "color": "#000000",
+      [
+        {
+          "color": "#444444",
           "fontSize": 13,
-          "lineHeight": 13,
+          "lineHeight": 15.6,
         },
-        Object {
+        {
           "fontWeight": "300",
           "opacity": 0.67,
           "textAlign": "left",
         },
       ]
     }
-    testID="test"
     variant="xs"
   >
     test
@@ -1038,8 +1012,8 @@ Array [
 exports[`<PinInput /> should render textinput with custom code length 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "flexDirection": "row",
       },
@@ -1049,9 +1023,8 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
   <View
     collapsable={false}
     forwardedRef={[Function]}
-    nativeID="animatedComponent"
     style={
-      Object {
+      {
         "alignItems": "stretch",
         "flexDirection": "row",
         "height": 88,
@@ -1063,7 +1036,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "flexDirection": "row",
           "height": "100%",
@@ -1076,9 +1049,8 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
         accessibilityLabel="Insira o PIN 0"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -1095,12 +1067,12 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -1109,9 +1081,8 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
         accessibilityLabel="Insira o PIN 1"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -1128,12 +1099,12 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -1142,9 +1113,8 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
         accessibilityLabel="Insira o PIN 2"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -1161,12 +1131,12 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -1175,9 +1145,8 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
         accessibilityLabel="Insira o PIN 3"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -1194,12 +1163,12 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -1208,9 +1177,8 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
         accessibilityLabel="Insira o PIN 4"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -1227,12 +1195,12 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -1241,9 +1209,8 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
         accessibilityLabel="Insira o PIN 5"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -1260,12 +1227,12 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -1284,14 +1251,14 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       onFocus={[Function]}
       onKeyPress={[Function]}
       selection={
-        Object {
+        {
           "end": 0,
           "start": 0,
         }
       }
       spellCheck={false}
       style={
-        Object {
+        {
           "flex": 1,
           "opacity": 0,
           "textAlign": "center",
@@ -1304,11 +1271,11 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
 `;
 
 exports[`<PinInput /> should render textinput with custom error message 1`] = `
-Array [
+[
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
         },
@@ -1318,9 +1285,8 @@ Array [
     <View
       collapsable={false}
       forwardedRef={[Function]}
-      nativeID="animatedComponent"
       style={
-        Object {
+        {
           "alignItems": "stretch",
           "flexDirection": "row",
           "height": 88,
@@ -1332,7 +1298,7 @@ Array [
     >
       <View
         style={
-          Object {
+          {
             "alignItems": "center",
             "flexDirection": "row",
             "height": "100%",
@@ -1345,9 +1311,8 @@ Array [
           accessibilityLabel="Insira o PIN 0"
           collapsable={false}
           forwardedRef={[Function]}
-          nativeID="animatedComponent"
           style={
-            Object {
+            {
               "alignItems": "center",
               "borderColor": null,
               "borderRadius": 8,
@@ -1364,12 +1329,12 @@ Array [
         >
           <Text
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": null,
                   "fontSize": 40.85714285714286,
                 },
-                Object {},
+                {},
               ]
             }
           />
@@ -1378,9 +1343,8 @@ Array [
           accessibilityLabel="Insira o PIN 1"
           collapsable={false}
           forwardedRef={[Function]}
-          nativeID="animatedComponent"
           style={
-            Object {
+            {
               "alignItems": "center",
               "borderColor": null,
               "borderRadius": 8,
@@ -1397,12 +1361,12 @@ Array [
         >
           <Text
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": null,
                   "fontSize": 40.85714285714286,
                 },
-                Object {},
+                {},
               ]
             }
           />
@@ -1411,9 +1375,8 @@ Array [
           accessibilityLabel="Insira o PIN 2"
           collapsable={false}
           forwardedRef={[Function]}
-          nativeID="animatedComponent"
           style={
-            Object {
+            {
               "alignItems": "center",
               "borderColor": null,
               "borderRadius": 8,
@@ -1430,12 +1393,12 @@ Array [
         >
           <Text
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": null,
                   "fontSize": 40.85714285714286,
                 },
-                Object {},
+                {},
               ]
             }
           />
@@ -1444,9 +1407,8 @@ Array [
           accessibilityLabel="Insira o PIN 3"
           collapsable={false}
           forwardedRef={[Function]}
-          nativeID="animatedComponent"
           style={
-            Object {
+            {
               "alignItems": "center",
               "borderColor": null,
               "borderRadius": 8,
@@ -1463,12 +1425,12 @@ Array [
         >
           <Text
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": null,
                   "fontSize": 40.85714285714286,
                 },
-                Object {},
+                {},
               ]
             }
           />
@@ -1487,14 +1449,14 @@ Array [
         onFocus={[Function]}
         onKeyPress={[Function]}
         selection={
-          Object {
+          {
             "end": 0,
             "start": 0,
           }
         }
         spellCheck={false}
         style={
-          Object {
+          {
             "flex": 1,
             "opacity": 0,
             "textAlign": "center",
@@ -1510,14 +1472,14 @@ Array [
     large={false}
     lineHeightVariant="min"
     style={
-      Array [
-        Object {
-          "color": "#000000",
+      [
+        {
+          "color": "#444444",
           "fontSize": 13,
-          "lineHeight": 13,
+          "lineHeight": 15.6,
         },
-        Object {
-          "color": "#cc0000",
+        {
+          "color": "#FF4F3F",
           "marginTop": 4,
           "textAlign": "left",
         },
@@ -1534,8 +1496,8 @@ Array [
 exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "flexDirection": "row",
       },
@@ -1545,9 +1507,8 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
   <View
     collapsable={false}
     forwardedRef={[Function]}
-    nativeID="animatedComponent"
     style={
-      Object {
+      {
         "alignItems": "stretch",
         "flexDirection": "row",
         "height": 88,
@@ -1559,7 +1520,7 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "flexDirection": "row",
           "height": "100%",
@@ -1572,9 +1533,8 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
         accessibilityLabel="Insira o PIN 0"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -1591,12 +1551,12 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -1605,9 +1565,8 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
         accessibilityLabel="Insira o PIN 1"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -1624,12 +1583,12 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -1638,9 +1597,8 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
         accessibilityLabel="Insira o PIN 2"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -1657,12 +1615,12 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -1671,9 +1629,8 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
         accessibilityLabel="Insira o PIN 3"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -1690,12 +1647,12 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -1714,14 +1671,14 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
       onFocus={[Function]}
       onKeyPress={[Function]}
       selection={
-        Object {
+        {
           "end": 0,
           "start": 0,
         }
       }
       spellCheck={false}
       style={
-        Object {
+        {
           "flex": 1,
           "opacity": 0,
           "textAlign": "center",
@@ -1736,8 +1693,8 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
 exports[`<PinInput /> should render textinput with custom mask 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "flexDirection": "row",
       },
@@ -1747,9 +1704,8 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
   <View
     collapsable={false}
     forwardedRef={[Function]}
-    nativeID="animatedComponent"
     style={
-      Object {
+      {
         "alignItems": "stretch",
         "flexDirection": "row",
         "height": 88,
@@ -1761,7 +1717,7 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "flexDirection": "row",
           "height": "100%",
@@ -1774,9 +1730,8 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
         accessibilityLabel="Insira o PIN 0"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -1793,12 +1748,12 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -1807,9 +1762,8 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
         accessibilityLabel="Insira o PIN 1"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -1826,12 +1780,12 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -1840,9 +1794,8 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
         accessibilityLabel="Insira o PIN 2"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -1859,12 +1812,12 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -1873,9 +1826,8 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
         accessibilityLabel="Insira o PIN 3"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -1892,12 +1844,12 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -1916,14 +1868,14 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
       onFocus={[Function]}
       onKeyPress={[Function]}
       selection={
-        Object {
+        {
           "end": 0,
           "start": 0,
         }
       }
       spellCheck={false}
       style={
-        Object {
+        {
           "flex": 1,
           "opacity": 0,
           "textAlign": "center",
@@ -1938,8 +1890,8 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
 exports[`<PinInput /> should render textinput with error 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "flexDirection": "row",
       },
@@ -1949,9 +1901,8 @@ exports[`<PinInput /> should render textinput with error 1`] = `
   <View
     collapsable={false}
     forwardedRef={[Function]}
-    nativeID="animatedComponent"
     style={
-      Object {
+      {
         "alignItems": "stretch",
         "flexDirection": "row",
         "height": 88,
@@ -1963,7 +1914,7 @@ exports[`<PinInput /> should render textinput with error 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "flexDirection": "row",
           "height": "100%",
@@ -1976,9 +1927,8 @@ exports[`<PinInput /> should render textinput with error 1`] = `
         accessibilityLabel="Insira o PIN 0"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -1995,12 +1945,12 @@ exports[`<PinInput /> should render textinput with error 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -2009,9 +1959,8 @@ exports[`<PinInput /> should render textinput with error 1`] = `
         accessibilityLabel="Insira o PIN 1"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -2028,12 +1977,12 @@ exports[`<PinInput /> should render textinput with error 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -2042,9 +1991,8 @@ exports[`<PinInput /> should render textinput with error 1`] = `
         accessibilityLabel="Insira o PIN 2"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -2061,12 +2009,12 @@ exports[`<PinInput /> should render textinput with error 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -2075,9 +2023,8 @@ exports[`<PinInput /> should render textinput with error 1`] = `
         accessibilityLabel="Insira o PIN 3"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -2094,12 +2041,12 @@ exports[`<PinInput /> should render textinput with error 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -2118,14 +2065,14 @@ exports[`<PinInput /> should render textinput with error 1`] = `
       onFocus={[Function]}
       onKeyPress={[Function]}
       selection={
-        Object {
+        {
           "end": 0,
           "start": 0,
         }
       }
       spellCheck={false}
       style={
-        Object {
+        {
           "flex": 1,
           "opacity": 0,
           "textAlign": "center",
@@ -2140,8 +2087,8 @@ exports[`<PinInput /> should render textinput with error 1`] = `
 exports[`<PinInput /> should render textinput with password 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "flexDirection": "row",
       },
@@ -2151,9 +2098,8 @@ exports[`<PinInput /> should render textinput with password 1`] = `
   <View
     collapsable={false}
     forwardedRef={[Function]}
-    nativeID="animatedComponent"
     style={
-      Object {
+      {
         "alignItems": "stretch",
         "flexDirection": "row",
         "height": 88,
@@ -2165,7 +2111,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "flexDirection": "row",
           "height": "100%",
@@ -2178,9 +2124,8 @@ exports[`<PinInput /> should render textinput with password 1`] = `
         accessibilityLabel="Insira o PIN 0"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -2197,12 +2142,12 @@ exports[`<PinInput /> should render textinput with password 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -2211,9 +2156,8 @@ exports[`<PinInput /> should render textinput with password 1`] = `
         accessibilityLabel="Insira o PIN 1"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -2230,12 +2174,12 @@ exports[`<PinInput /> should render textinput with password 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -2244,9 +2188,8 @@ exports[`<PinInput /> should render textinput with password 1`] = `
         accessibilityLabel="Insira o PIN 2"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -2263,12 +2206,12 @@ exports[`<PinInput /> should render textinput with password 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -2277,9 +2220,8 @@ exports[`<PinInput /> should render textinput with password 1`] = `
         accessibilityLabel="Insira o PIN 3"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -2296,12 +2238,12 @@ exports[`<PinInput /> should render textinput with password 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         />
@@ -2320,14 +2262,14 @@ exports[`<PinInput /> should render textinput with password 1`] = `
       onFocus={[Function]}
       onKeyPress={[Function]}
       selection={
-        Object {
+        {
           "end": 0,
           "start": 0,
         }
       }
       spellCheck={false}
       style={
-        Object {
+        {
           "flex": 1,
           "opacity": 0,
           "textAlign": "center",
@@ -2338,24 +2280,34 @@ exports[`<PinInput /> should render textinput with password 1`] = `
   </View>
   <View
     collapsable={false}
-    nativeID="animatedComponent"
     style={
-      Object {
-        "marginLeft": 20,
+      {
+        "marginLeft": 16,
       }
     }
   >
     <View
       accessibilityLabel="Exibir ou ocultar inputs - eye"
       accessibilityState={
-        Object {
+        {
+          "busy": undefined,
+          "checked": undefined,
           "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
         }
       }
       accessible={true}
       collapsable={false}
       focusable={true}
-      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -2364,7 +2316,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "opacity": 1,
         }
       }
@@ -2375,18 +2327,18 @@ exports[`<PinInput /> should render textinput with password 1`] = `
           allowFontScaling={false}
           selectable={false}
           style={
-            Array [
-              Object {
-                "color": "#C6B09E",
+            [
+              {
+                "color": "#4255EF",
                 "fontSize": 37.714285714285715,
               },
               undefined,
-              Object {
+              {
                 "fontFamily": "FontAwesome5Free-Regular",
                 "fontStyle": "normal",
                 "fontWeight": "normal",
               },
-              Object {
+              {
                 "fontWeight": "400",
               },
             ]
@@ -2403,8 +2355,8 @@ exports[`<PinInput /> should render textinput with password 1`] = `
 exports[`<PinInput /> should render textinput with value 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "flexDirection": "row",
       },
@@ -2414,9 +2366,8 @@ exports[`<PinInput /> should render textinput with value 1`] = `
   <View
     collapsable={false}
     forwardedRef={[Function]}
-    nativeID="animatedComponent"
     style={
-      Object {
+      {
         "alignItems": "stretch",
         "flexDirection": "row",
         "height": 88,
@@ -2428,7 +2379,7 @@ exports[`<PinInput /> should render textinput with value 1`] = `
   >
     <View
       style={
-        Object {
+        {
           "alignItems": "center",
           "flexDirection": "row",
           "height": "100%",
@@ -2441,9 +2392,8 @@ exports[`<PinInput /> should render textinput with value 1`] = `
         accessibilityLabel="Insira o PIN 0"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -2460,12 +2410,12 @@ exports[`<PinInput /> should render textinput with value 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         >
@@ -2476,9 +2426,8 @@ exports[`<PinInput /> should render textinput with value 1`] = `
         accessibilityLabel="Insira o PIN 1"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -2495,12 +2444,12 @@ exports[`<PinInput /> should render textinput with value 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         >
@@ -2511,9 +2460,8 @@ exports[`<PinInput /> should render textinput with value 1`] = `
         accessibilityLabel="Insira o PIN 2"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -2530,12 +2478,12 @@ exports[`<PinInput /> should render textinput with value 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         >
@@ -2546,9 +2494,8 @@ exports[`<PinInput /> should render textinput with value 1`] = `
         accessibilityLabel="Insira o PIN 3"
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         style={
-          Object {
+          {
             "alignItems": "center",
             "borderColor": null,
             "borderRadius": 8,
@@ -2565,12 +2512,12 @@ exports[`<PinInput /> should render textinput with value 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": null,
                 "fontSize": 40.85714285714286,
               },
-              Object {},
+              {},
             ]
           }
         >
@@ -2591,14 +2538,14 @@ exports[`<PinInput /> should render textinput with value 1`] = `
       onFocus={[Function]}
       onKeyPress={[Function]}
       selection={
-        Object {
+        {
           "end": 7,
           "start": 7,
         }
       }
       spellCheck={false}
       style={
-        Object {
+        {
           "flex": 1,
           "opacity": 0,
           "textAlign": "center",

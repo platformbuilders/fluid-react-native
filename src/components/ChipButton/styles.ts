@@ -3,8 +3,10 @@ import {
   ButtonVariants,
   ThemeProps,
   TypographyVariants,
+  getTheme,
+  ifStyle,
 } from '@platformbuilders/theme-toolkit';
-import { getTheme, ifStyle } from '../../utils/helpers';
+
 import DefaultIcon from '../Icon';
 import LoadingIndicator from '../LoadingIndicator';
 import TouchableComponent from '../Touchable';
@@ -12,6 +14,7 @@ import TypographyComponent from '../Typography';
 
 const borderWidthSmall = getTheme('borderWidth.sm');
 const backgroundElevation = getTheme('background.z1');
+const textMain = getTheme('text.main');
 const brandPrimary = getTheme('brand.primary.main');
 const brandPrimaryContrast = getTheme('brand.primary.contrast');
 const brandSecondary = getTheme('brand.secondary.main');
@@ -85,7 +88,7 @@ const getTextColor = (props: any): string => {
   }
   switch (props.buttonVariant) {
     case 'primary':
-      return `${brandPrimaryContrast(props)}`;
+      return `${textMain(props)}`;
     case 'secondary':
       return `${brandSecondaryContrast(props)}`;
     case 'tertiary':
@@ -103,7 +106,7 @@ const getTextColor = (props: any): string => {
     case 'flat':
       return `${brandPrimary(props)}`;
     default:
-      return `${brandPrimaryContrast(props)}`;
+      return `${textMain(props)}`;
   }
 };
 

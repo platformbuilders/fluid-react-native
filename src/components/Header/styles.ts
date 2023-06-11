@@ -1,7 +1,5 @@
 import styled from 'styled-components/native';
-import { ThemeProps } from '@platformbuilders/theme-toolkit';
-
-import { getTheme, ifStyle } from '../../utils/helpers';
+import { ThemeProps, getTheme, ifStyle } from '@platformbuilders/theme-toolkit';
 import Icon from '../Icon';
 
 import TypographyComponent from '../Typography';

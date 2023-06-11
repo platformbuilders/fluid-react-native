@@ -5,20 +5,19 @@ exports[`<DisplayVersion /> should render and match snapshot for default props 1
   accessibilityLabel="display-version"
   lineHeightVariant="min"
   style={
-    Array [
-      Object {
-        "color": "#000000",
+    [
+      {
+        "color": "#444444",
         "fontSize": 13,
-        "lineHeight": 13,
+        "lineHeight": 15.6,
       },
-      Object {
-        "color": "#C6B09E",
-        "marginVertical": 12,
+      {
+        "color": "#4255EF",
+        "marginVertical": 8,
         "textAlign": "center",
       },
     ]
   }
-  testID="display-version"
   variant="xs"
 >
   Versão 

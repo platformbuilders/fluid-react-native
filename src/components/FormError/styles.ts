@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import { getTheme, ifStyle } from '../../utils/helpers';
+import { getTheme, ifStyle } from '@platformbuilders/theme-toolkit';
 import Typography from '../Typography';
 
 const isCentered = ifStyle('centered');

@@ -1,4 +1,4 @@
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components/native';
 
 type AnyIfEmpty<T extends object> = keyof T extends never ? any : T
 

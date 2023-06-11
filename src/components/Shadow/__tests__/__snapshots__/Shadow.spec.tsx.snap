@@ -3,10 +3,10 @@
 exports[`<Shadow /> should render Shadow correctly 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "elevation": 3,
-        "shadowOffset": Object {
+        "shadowOffset": {
           "height": 4,
           "width": 0,
         },

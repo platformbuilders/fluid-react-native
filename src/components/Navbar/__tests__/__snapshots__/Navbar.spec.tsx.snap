@@ -4,19 +4,19 @@ exports[`<Navbar /> should render navbar component 1`] = `
 <View
   safeBottomArea={false}
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "flex-start",
-        "backgroundColor": "#454545",
+        "backgroundColor": "#d1d1d1",
         "elevation": 3,
         "flexDirection": "row",
         "justifyContent": "space-evenly",
         "marginTop": "auto",
-        "paddingBottom": 12,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 12,
-        "shadowOffset": Object {
+        "paddingBottom": 8,
+        "paddingLeft": 8,
+        "paddingRight": 8,
+        "paddingTop": 8,
+        "shadowOffset": {
           "height": 4,
           "width": 0,
         },
@@ -30,14 +30,25 @@ exports[`<Navbar /> should render navbar component 1`] = `
   <View
     accessibilityLabel="Ir para Home"
     accessibilityState={
-      Object {
+      {
+        "busy": undefined,
+        "checked": undefined,
         "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
       }
     }
     accessible={true}
     collapsable={false}
     focusable={true}
-    nativeID="animatedComponent"
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -46,7 +57,7 @@ exports[`<Navbar /> should render navbar component 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "justifyContent": "center",
         "opacity": 1,
@@ -57,24 +68,34 @@ exports[`<Navbar /> should render navbar component 1`] = `
   >
     <View
       collapsable={false}
-      nativeID="animatedComponent"
       style={
-        Object {
-          "opacity": 100,
+        {
+          "opacity": "",
         }
       }
     >
       <View
         accessibilityLabel="flag"
         accessibilityState={
-          Object {
+          {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": true,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
           }
         }
         accessible={true}
         collapsable={false}
         focusable={true}
-        nativeID="animatedComponent"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -83,7 +104,7 @@ exports[`<Navbar /> should render navbar component 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Object {
+          {
             "opacity": 1,
           }
         }
@@ -94,18 +115,18 @@ exports[`<Navbar /> should render navbar component 1`] = `
             allowFontScaling={false}
             selectable={false}
             style={
-              Array [
-                Object {
-                  "color": "#C6B09E",
+              [
+                {
+                  "color": "#4255EF",
                   "fontSize": 47.14285714285714,
                 },
                 undefined,
-                Object {
+                {
                   "fontFamily": "FontAwesome5Free-Regular",
                   "fontStyle": "normal",
                   "fontWeight": "normal",
                 },
-                Object {
+                {
                   "fontWeight": "400",
                 },
               ]
@@ -121,22 +142,21 @@ exports[`<Navbar /> should render navbar component 1`] = `
       active={true}
       lineHeightVariant="min"
       style={
-        Array [
-          Object {
-            "color": "#000000",
+        [
+          {
+            "color": "#444444",
             "fontSize": 13,
-            "lineHeight": 13,
+            "lineHeight": 15.6,
           },
-          Object {
-            "color": "#C6B09E",
+          {
+            "color": "#4255EF",
             "fontWeight": "bold",
-            "opacity": 100,
+            "opacity": "",
             "textAlign": "center",
             "textTransform": "uppercase",
           },
         ]
       }
-      testID="LabelHome"
       variant="xs"
     >
       Home
@@ -149,19 +169,19 @@ exports[`<Navbar /> should render navbar component with custom color 1`] = `
 <View
   safeBottomArea={false}
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "flex-start",
-        "backgroundColor": "#454545",
+        "backgroundColor": "#d1d1d1",
         "elevation": 3,
         "flexDirection": "row",
         "justifyContent": "space-evenly",
         "marginTop": "auto",
-        "paddingBottom": 12,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 12,
-        "shadowOffset": Object {
+        "paddingBottom": 8,
+        "paddingLeft": 8,
+        "paddingRight": 8,
+        "paddingTop": 8,
+        "shadowOffset": {
           "height": 4,
           "width": 0,
         },
@@ -175,14 +195,25 @@ exports[`<Navbar /> should render navbar component with custom color 1`] = `
   <View
     accessibilityLabel="Ir para Home"
     accessibilityState={
-      Object {
+      {
+        "busy": undefined,
+        "checked": undefined,
         "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
       }
     }
     accessible={true}
     collapsable={false}
     focusable={true}
-    nativeID="animatedComponent"
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -191,7 +222,7 @@ exports[`<Navbar /> should render navbar component with custom color 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "justifyContent": "center",
         "opacity": 1,
@@ -202,24 +233,34 @@ exports[`<Navbar /> should render navbar component with custom color 1`] = `
   >
     <View
       collapsable={false}
-      nativeID="animatedComponent"
       style={
-        Object {
-          "opacity": 100,
+        {
+          "opacity": "",
         }
       }
     >
       <View
         accessibilityLabel="flag"
         accessibilityState={
-          Object {
+          {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": true,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
           }
         }
         accessible={true}
         collapsable={false}
         focusable={true}
-        nativeID="animatedComponent"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -228,7 +269,7 @@ exports[`<Navbar /> should render navbar component with custom color 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Object {
+          {
             "opacity": 1,
           }
         }
@@ -239,18 +280,18 @@ exports[`<Navbar /> should render navbar component with custom color 1`] = `
             allowFontScaling={false}
             selectable={false}
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": "#000000",
                   "fontSize": 47.14285714285714,
                 },
                 undefined,
-                Object {
+                {
                   "fontFamily": "FontAwesome5Free-Regular",
                   "fontStyle": "normal",
                   "fontWeight": "normal",
                 },
-                Object {
+                {
                   "fontWeight": "400",
                 },
               ]
@@ -267,22 +308,21 @@ exports[`<Navbar /> should render navbar component with custom color 1`] = `
       activeColor="#000000"
       lineHeightVariant="min"
       style={
-        Array [
-          Object {
-            "color": "#000000",
+        [
+          {
+            "color": "#444444",
             "fontSize": 13,
-            "lineHeight": 13,
+            "lineHeight": 15.6,
           },
-          Object {
+          {
             "color": "#000000",
             "fontWeight": "bold",
-            "opacity": 100,
+            "opacity": "",
             "textAlign": "center",
             "textTransform": "uppercase",
           },
         ]
       }
-      testID="LabelHome"
       variant="xs"
     >
       Home
@@ -295,19 +335,19 @@ exports[`<Navbar /> should render navbar component with safe bottom area 1`] = `
 <View
   safeBottomArea={true}
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "flex-start",
-        "backgroundColor": "#454545",
+        "backgroundColor": "#d1d1d1",
         "elevation": 3,
         "flexDirection": "row",
         "justifyContent": "space-evenly",
         "marginTop": "auto",
-        "paddingBottom": 0,
-        "paddingLeft": 12,
-        "paddingRight": 12,
-        "paddingTop": 12,
-        "shadowOffset": Object {
+        "paddingBottom": 8,
+        "paddingLeft": 8,
+        "paddingRight": 8,
+        "paddingTop": 8,
+        "shadowOffset": {
           "height": 4,
           "width": 0,
         },
@@ -321,14 +361,25 @@ exports[`<Navbar /> should render navbar component with safe bottom area 1`] = `
   <View
     accessibilityLabel="Ir para Home"
     accessibilityState={
-      Object {
+      {
+        "busy": undefined,
+        "checked": undefined,
         "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
       }
     }
     accessible={true}
     collapsable={false}
     focusable={true}
-    nativeID="animatedComponent"
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -337,7 +388,7 @@ exports[`<Navbar /> should render navbar component with safe bottom area 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
+      {
         "alignItems": "center",
         "justifyContent": "center",
         "opacity": 1,
@@ -348,24 +399,34 @@ exports[`<Navbar /> should render navbar component with safe bottom area 1`] = `
   >
     <View
       collapsable={false}
-      nativeID="animatedComponent"
       style={
-        Object {
-          "opacity": 100,
+        {
+          "opacity": "",
         }
       }
     >
       <View
         accessibilityLabel="flag"
         accessibilityState={
-          Object {
+          {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": true,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
           }
         }
         accessible={true}
         collapsable={false}
         focusable={true}
-        nativeID="animatedComponent"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -374,7 +435,7 @@ exports[`<Navbar /> should render navbar component with safe bottom area 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Object {
+          {
             "opacity": 1,
           }
         }
@@ -385,18 +446,18 @@ exports[`<Navbar /> should render navbar component with safe bottom area 1`] = `
             allowFontScaling={false}
             selectable={false}
             style={
-              Array [
-                Object {
-                  "color": "#C6B09E",
+              [
+                {
+                  "color": "#4255EF",
                   "fontSize": 47.14285714285714,
                 },
                 undefined,
-                Object {
+                {
                   "fontFamily": "FontAwesome5Free-Regular",
                   "fontStyle": "normal",
                   "fontWeight": "normal",
                 },
-                Object {
+                {
                   "fontWeight": "400",
                 },
               ]
@@ -412,22 +473,21 @@ exports[`<Navbar /> should render navbar component with safe bottom area 1`] = `
       active={true}
       lineHeightVariant="min"
       style={
-        Array [
-          Object {
-            "color": "#000000",
+        [
+          {
+            "color": "#444444",
             "fontSize": 13,
-            "lineHeight": 13,
+            "lineHeight": 15.6,
           },
-          Object {
-            "color": "#C6B09E",
+          {
+            "color": "#4255EF",
             "fontWeight": "bold",
-            "opacity": 100,
+            "opacity": "",
             "textAlign": "center",
             "textTransform": "uppercase",
           },
         ]
       }
-      testID="LabelHome"
       variant="xs"
     >
       Home

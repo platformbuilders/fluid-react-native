@@ -3,13 +3,29 @@
 exports[`<Accordion /> should render Accordion 1`] = `
 <View>
   <View
-    style={Object {}}
+    style={{}}
   >
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
       accessible={true}
       collapsable={false}
       focusable={true}
-      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -18,7 +34,7 @@ exports[`<Accordion /> should render Accordion 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "opacity": 1,
         }
       }
@@ -35,10 +51,9 @@ exports[`<Accordion /> should render Accordion 1`] = `
     </View>
     <View
       collapsable={false}
-      nativeID="animatedComponent"
       pointerEvents="none"
       style={
-        Object {
+        {
           "height": 0,
           "overflow": "hidden",
         }
@@ -47,9 +62,8 @@ exports[`<Accordion /> should render Accordion 1`] = `
       <View
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         onLayout={[Function]}
-        style={Object {}}
+        style={{}}
       >
         <View>
           <Text>
@@ -65,13 +79,29 @@ exports[`<Accordion /> should render Accordion 1`] = `
 exports[`<Accordion /> should render Accordion with body custom 1`] = `
 <View>
   <View
-    style={Object {}}
+    style={{}}
   >
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
       accessible={true}
       collapsable={false}
       focusable={true}
-      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -80,7 +110,7 @@ exports[`<Accordion /> should render Accordion with body custom 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "opacity": 1,
         }
       }
@@ -97,10 +127,9 @@ exports[`<Accordion /> should render Accordion with body custom 1`] = `
     </View>
     <View
       collapsable={false}
-      nativeID="animatedComponent"
       pointerEvents="none"
       style={
-        Object {
+        {
           "height": 0,
           "overflow": "hidden",
         }
@@ -109,20 +138,19 @@ exports[`<Accordion /> should render Accordion with body custom 1`] = `
       <View
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         onLayout={[Function]}
-        style={Object {}}
+        style={{}}
       >
         <View>
           <Text
             accessibilityLabel="Unity Test"
             lineHeightVariant="min"
             style={
-              Array [
-                Object {
-                  "color": "#000000",
+              [
+                {
+                  "color": "#444444",
                   "fontSize": 15,
-                  "lineHeight": 15,
+                  "lineHeight": 18,
                 },
               ]
             }
@@ -141,13 +169,29 @@ exports[`<Accordion /> should render Accordion with body custom 1`] = `
 exports[`<Accordion /> should render Accordion with content custom 1`] = `
 <View>
   <View
-    style={Object {}}
+    style={{}}
   >
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
       accessible={true}
       collapsable={false}
       focusable={true}
-      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -156,7 +200,7 @@ exports[`<Accordion /> should render Accordion with content custom 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "opacity": 1,
         }
       }
@@ -173,10 +217,9 @@ exports[`<Accordion /> should render Accordion with content custom 1`] = `
     </View>
     <View
       collapsable={false}
-      nativeID="animatedComponent"
       pointerEvents="none"
       style={
-        Object {
+        {
           "height": 0,
           "overflow": "hidden",
         }
@@ -185,15 +228,14 @@ exports[`<Accordion /> should render Accordion with content custom 1`] = `
       <View
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         onLayout={[Function]}
-        style={Object {}}
+        style={{}}
       >
         <View
           style={
-            Array [
-              Object {},
-              Object {
+            [
+              {},
+              {
                 "backgroundColor": "#f1c40f",
               },
             ]
@@ -208,13 +250,29 @@ exports[`<Accordion /> should render Accordion with content custom 1`] = `
 exports[`<Accordion /> should render Accordion with header custom 1`] = `
 <View>
   <View
-    style={Object {}}
+    style={{}}
   >
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
       accessible={true}
       collapsable={false}
       focusable={true}
-      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -223,16 +281,16 @@ exports[`<Accordion /> should render Accordion with header custom 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "opacity": 1,
         }
       }
     >
       <View
         style={
-          Array [
-            Object {},
-            Object {
+          [
+            {},
+            {
               "backgroundColor": "#27ae60",
             },
           ]
@@ -241,10 +299,9 @@ exports[`<Accordion /> should render Accordion with header custom 1`] = `
     </View>
     <View
       collapsable={false}
-      nativeID="animatedComponent"
       pointerEvents="none"
       style={
-        Object {
+        {
           "height": 0,
           "overflow": "hidden",
         }
@@ -253,9 +310,8 @@ exports[`<Accordion /> should render Accordion with header custom 1`] = `
       <View
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         onLayout={[Function]}
-        style={Object {}}
+        style={{}}
       >
         <View>
           <Text>
@@ -271,13 +327,29 @@ exports[`<Accordion /> should render Accordion with header custom 1`] = `
 exports[`<Accordion /> should render Accordion with icon 1`] = `
 <View>
   <View
-    style={Object {}}
+    style={{}}
   >
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
       accessible={true}
       collapsable={false}
       focusable={true}
-      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -286,7 +358,7 @@ exports[`<Accordion /> should render Accordion with icon 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "opacity": 1,
         }
       }
@@ -301,20 +373,30 @@ exports[`<Accordion /> should render Accordion with icon 1`] = `
         </Text>
         <View
           collapsable={false}
-          nativeID="animatedComponent"
-          style={Object {}}
+          style={{}}
         >
           <View
             accessibilityLabel="Abrir"
             accessibilityState={
-              Object {
+              {
+                "busy": undefined,
+                "checked": undefined,
                 "disabled": true,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
               }
             }
             accessible={true}
             collapsable={false}
             focusable={true}
-            nativeID="animatedComponent"
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -323,7 +405,7 @@ exports[`<Accordion /> should render Accordion with icon 1`] = `
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             style={
-              Object {
+              {
                 "opacity": 1,
               }
             }
@@ -334,18 +416,18 @@ exports[`<Accordion /> should render Accordion with icon 1`] = `
                 allowFontScaling={false}
                 selectable={false}
                 style={
-                  Array [
-                    Object {
+                  [
+                    {
                       "color": undefined,
                       "fontSize": 37.714285714285715,
                     },
                     undefined,
-                    Object {
+                    {
                       "fontFamily": "FontAwesome5Free-Solid",
                       "fontStyle": "normal",
                       "fontWeight": "normal",
                     },
-                    Object {
+                    {
                       "fontWeight": "900",
                     },
                   ]
@@ -360,10 +442,9 @@ exports[`<Accordion /> should render Accordion with icon 1`] = `
     </View>
     <View
       collapsable={false}
-      nativeID="animatedComponent"
       pointerEvents="none"
       style={
-        Object {
+        {
           "height": 0,
           "overflow": "hidden",
         }
@@ -372,9 +453,8 @@ exports[`<Accordion /> should render Accordion with icon 1`] = `
       <View
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         onLayout={[Function]}
-        style={Object {}}
+        style={{}}
       >
         <View>
           <Text>
@@ -390,13 +470,29 @@ exports[`<Accordion /> should render Accordion with icon 1`] = `
 exports[`<Accordion /> should render Accordion with icon color grey inactive 1`] = `
 <View>
   <View
-    style={Object {}}
+    style={{}}
   >
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
       accessible={true}
       collapsable={false}
       focusable={true}
-      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -405,7 +501,7 @@ exports[`<Accordion /> should render Accordion with icon color grey inactive 1`]
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "opacity": 1,
         }
       }
@@ -420,20 +516,30 @@ exports[`<Accordion /> should render Accordion with icon color grey inactive 1`]
         </Text>
         <View
           collapsable={false}
-          nativeID="animatedComponent"
-          style={Object {}}
+          style={{}}
         >
           <View
             accessibilityLabel="Abrir"
             accessibilityState={
-              Object {
+              {
+                "busy": undefined,
+                "checked": undefined,
                 "disabled": true,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
               }
             }
             accessible={true}
             collapsable={false}
             focusable={true}
-            nativeID="animatedComponent"
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -442,7 +548,7 @@ exports[`<Accordion /> should render Accordion with icon color grey inactive 1`]
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             style={
-              Object {
+              {
                 "opacity": 1,
               }
             }
@@ -453,18 +559,18 @@ exports[`<Accordion /> should render Accordion with icon color grey inactive 1`]
                 allowFontScaling={false}
                 selectable={false}
                 style={
-                  Array [
-                    Object {
+                  [
+                    {
                       "color": "#95a5a6",
                       "fontSize": 37.714285714285715,
                     },
                     undefined,
-                    Object {
+                    {
                       "fontFamily": "FontAwesome5Free-Solid",
                       "fontStyle": "normal",
                       "fontWeight": "normal",
                     },
-                    Object {
+                    {
                       "fontWeight": "900",
                     },
                   ]
@@ -479,10 +585,9 @@ exports[`<Accordion /> should render Accordion with icon color grey inactive 1`]
     </View>
     <View
       collapsable={false}
-      nativeID="animatedComponent"
       pointerEvents="none"
       style={
-        Object {
+        {
           "height": 0,
           "overflow": "hidden",
         }
@@ -491,9 +596,8 @@ exports[`<Accordion /> should render Accordion with icon color grey inactive 1`]
       <View
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         onLayout={[Function]}
-        style={Object {}}
+        style={{}}
       >
         <View>
           <Text>
@@ -509,13 +613,29 @@ exports[`<Accordion /> should render Accordion with icon color grey inactive 1`]
 exports[`<Accordion /> should render Accordion with icon color red 1`] = `
 <View>
   <View
-    style={Object {}}
+    style={{}}
   >
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
       accessible={true}
       collapsable={false}
       focusable={true}
-      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -524,7 +644,7 @@ exports[`<Accordion /> should render Accordion with icon color red 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "opacity": 1,
         }
       }
@@ -539,20 +659,30 @@ exports[`<Accordion /> should render Accordion with icon color red 1`] = `
         </Text>
         <View
           collapsable={false}
-          nativeID="animatedComponent"
-          style={Object {}}
+          style={{}}
         >
           <View
             accessibilityLabel="Abrir"
             accessibilityState={
-              Object {
+              {
+                "busy": undefined,
+                "checked": undefined,
                 "disabled": true,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
               }
             }
             accessible={true}
             collapsable={false}
             focusable={true}
-            nativeID="animatedComponent"
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -561,7 +691,7 @@ exports[`<Accordion /> should render Accordion with icon color red 1`] = `
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             style={
-              Object {
+              {
                 "opacity": 1,
               }
             }
@@ -572,18 +702,18 @@ exports[`<Accordion /> should render Accordion with icon color red 1`] = `
                 allowFontScaling={false}
                 selectable={false}
                 style={
-                  Array [
-                    Object {
+                  [
+                    {
                       "color": undefined,
                       "fontSize": 37.714285714285715,
                     },
                     undefined,
-                    Object {
+                    {
                       "fontFamily": "FontAwesome5Free-Solid",
                       "fontStyle": "normal",
                       "fontWeight": "normal",
                     },
-                    Object {
+                    {
                       "fontWeight": "900",
                     },
                   ]
@@ -598,10 +728,9 @@ exports[`<Accordion /> should render Accordion with icon color red 1`] = `
     </View>
     <View
       collapsable={false}
-      nativeID="animatedComponent"
       pointerEvents="none"
       style={
-        Object {
+        {
           "height": 0,
           "overflow": "hidden",
         }
@@ -610,9 +739,8 @@ exports[`<Accordion /> should render Accordion with icon color red 1`] = `
       <View
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         onLayout={[Function]}
-        style={Object {}}
+        style={{}}
       >
         <View>
           <Text>
@@ -628,13 +756,29 @@ exports[`<Accordion /> should render Accordion with icon color red 1`] = `
 exports[`<Accordion /> should render Accordion with icon down text custom 1`] = `
 <View>
   <View
-    style={Object {}}
+    style={{}}
   >
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
       accessible={true}
       collapsable={false}
       focusable={true}
-      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -643,7 +787,7 @@ exports[`<Accordion /> should render Accordion with icon down text custom 1`] = 
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "opacity": 1,
         }
       }
@@ -658,20 +802,30 @@ exports[`<Accordion /> should render Accordion with icon down text custom 1`] = 
         </Text>
         <View
           collapsable={false}
-          nativeID="animatedComponent"
-          style={Object {}}
+          style={{}}
         >
           <View
             accessibilityLabel="Abrir"
             accessibilityState={
-              Object {
+              {
+                "busy": undefined,
+                "checked": undefined,
                 "disabled": true,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
               }
             }
             accessible={true}
             collapsable={false}
             focusable={true}
-            nativeID="animatedComponent"
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -680,7 +834,7 @@ exports[`<Accordion /> should render Accordion with icon down text custom 1`] = 
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             style={
-              Object {
+              {
                 "opacity": 1,
               }
             }
@@ -691,18 +845,18 @@ exports[`<Accordion /> should render Accordion with icon down text custom 1`] = 
                 allowFontScaling={false}
                 selectable={false}
                 style={
-                  Array [
-                    Object {
+                  [
+                    {
                       "color": undefined,
                       "fontSize": 37.714285714285715,
                     },
                     undefined,
-                    Object {
+                    {
                       "fontFamily": "FontAwesome5Free-Solid",
                       "fontStyle": "normal",
                       "fontWeight": "normal",
                     },
-                    Object {
+                    {
                       "fontWeight": "900",
                     },
                   ]
@@ -717,10 +871,9 @@ exports[`<Accordion /> should render Accordion with icon down text custom 1`] = 
     </View>
     <View
       collapsable={false}
-      nativeID="animatedComponent"
       pointerEvents="none"
       style={
-        Object {
+        {
           "height": 0,
           "overflow": "hidden",
         }
@@ -729,9 +882,8 @@ exports[`<Accordion /> should render Accordion with icon down text custom 1`] = 
       <View
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         onLayout={[Function]}
-        style={Object {}}
+        style={{}}
       >
         <View>
           <Text>
@@ -747,13 +899,29 @@ exports[`<Accordion /> should render Accordion with icon down text custom 1`] = 
 exports[`<Accordion /> should render Accordion with icon up text custom 1`] = `
 <View>
   <View
-    style={Object {}}
+    style={{}}
   >
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
       accessible={true}
       collapsable={false}
       focusable={true}
-      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -762,7 +930,7 @@ exports[`<Accordion /> should render Accordion with icon up text custom 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "opacity": 1,
         }
       }
@@ -777,20 +945,30 @@ exports[`<Accordion /> should render Accordion with icon up text custom 1`] = `
         </Text>
         <View
           collapsable={false}
-          nativeID="animatedComponent"
-          style={Object {}}
+          style={{}}
         >
           <View
             accessibilityLabel="Abrir"
             accessibilityState={
-              Object {
+              {
+                "busy": undefined,
+                "checked": undefined,
                 "disabled": true,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
               }
             }
             accessible={true}
             collapsable={false}
             focusable={true}
-            nativeID="animatedComponent"
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -799,7 +977,7 @@ exports[`<Accordion /> should render Accordion with icon up text custom 1`] = `
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             style={
-              Object {
+              {
                 "opacity": 1,
               }
             }
@@ -810,18 +988,18 @@ exports[`<Accordion /> should render Accordion with icon up text custom 1`] = `
                 allowFontScaling={false}
                 selectable={false}
                 style={
-                  Array [
-                    Object {
+                  [
+                    {
                       "color": undefined,
                       "fontSize": 37.714285714285715,
                     },
                     undefined,
-                    Object {
+                    {
                       "fontFamily": "FontAwesome5Free-Solid",
                       "fontStyle": "normal",
                       "fontWeight": "normal",
                     },
-                    Object {
+                    {
                       "fontWeight": "900",
                     },
                   ]
@@ -836,10 +1014,9 @@ exports[`<Accordion /> should render Accordion with icon up text custom 1`] = `
     </View>
     <View
       collapsable={false}
-      nativeID="animatedComponent"
       pointerEvents="none"
       style={
-        Object {
+        {
           "height": 0,
           "overflow": "hidden",
         }
@@ -848,9 +1025,8 @@ exports[`<Accordion /> should render Accordion with icon up text custom 1`] = `
       <View
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         onLayout={[Function]}
-        style={Object {}}
+        style={{}}
       >
         <View>
           <Text>
@@ -866,13 +1042,29 @@ exports[`<Accordion /> should render Accordion with icon up text custom 1`] = `
 exports[`<Accordion /> should render Accordion with markdown 1`] = `
 <View>
   <View
-    style={Object {}}
+    style={{}}
   >
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
       accessible={true}
       collapsable={false}
       focusable={true}
-      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -881,7 +1073,7 @@ exports[`<Accordion /> should render Accordion with markdown 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "opacity": 1,
         }
       }
@@ -898,10 +1090,9 @@ exports[`<Accordion /> should render Accordion with markdown 1`] = `
     </View>
     <View
       collapsable={false}
-      nativeID="animatedComponent"
       pointerEvents="none"
       style={
-        Object {
+        {
           "height": 0,
           "overflow": "hidden",
         }
@@ -910,17 +1101,16 @@ exports[`<Accordion /> should render Accordion with markdown 1`] = `
       <View
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         onLayout={[Function]}
-        style={Object {}}
+        style={{}}
       >
         <View>
           <View
-            style={Object {}}
+            style={{}}
           >
             <View
               style={
-                Object {
+                {
                   "alignItems": "flex-start",
                   "flexDirection": "row",
                   "flexWrap": "wrap",
@@ -932,13 +1122,13 @@ exports[`<Accordion /> should render Accordion with markdown 1`] = `
               }
             >
               <Text
-                style={Object {}}
+                style={{}}
               >
                 <Text
                   style={
-                    Array [
-                      Object {},
-                      Object {},
+                    [
+                      {},
+                      {},
                     ]
                   }
                 >
@@ -957,13 +1147,29 @@ exports[`<Accordion /> should render Accordion with markdown 1`] = `
 exports[`<Accordion /> should render Accordion with onChange function 1`] = `
 <View>
   <View
-    style={Object {}}
+    style={{}}
   >
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
       accessible={true}
       collapsable={false}
       focusable={true}
-      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -972,7 +1178,7 @@ exports[`<Accordion /> should render Accordion with onChange function 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "opacity": 1,
         }
       }
@@ -989,10 +1195,9 @@ exports[`<Accordion /> should render Accordion with onChange function 1`] = `
     </View>
     <View
       collapsable={false}
-      nativeID="animatedComponent"
       pointerEvents="none"
       style={
-        Object {
+        {
           "height": 0,
           "overflow": "hidden",
         }
@@ -1001,9 +1206,8 @@ exports[`<Accordion /> should render Accordion with onChange function 1`] = `
       <View
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         onLayout={[Function]}
-        style={Object {}}
+        style={{}}
       >
         <View>
           <Text>
@@ -1019,13 +1223,29 @@ exports[`<Accordion /> should render Accordion with onChange function 1`] = `
 exports[`<Accordion /> should render Accordion with title custom 1`] = `
 <View>
   <View
-    style={Object {}}
+    style={{}}
   >
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
       accessible={true}
       collapsable={false}
       focusable={true}
-      nativeID="animatedComponent"
       onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
@@ -1034,7 +1254,7 @@ exports[`<Accordion /> should render Accordion with title custom 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "opacity": 1,
         }
       }
@@ -1046,11 +1266,11 @@ exports[`<Accordion /> should render Accordion with title custom 1`] = `
           accessibilityLabel="Unity Test"
           lineHeightVariant="min"
           style={
-            Array [
-              Object {
-                "color": "#000000",
+            [
+              {
+                "color": "#444444",
                 "fontSize": 15,
-                "lineHeight": 15,
+                "lineHeight": 18,
               },
             ]
           }
@@ -1063,10 +1283,9 @@ exports[`<Accordion /> should render Accordion with title custom 1`] = `
     </View>
     <View
       collapsable={false}
-      nativeID="animatedComponent"
       pointerEvents="none"
       style={
-        Object {
+        {
           "height": 0,
           "overflow": "hidden",
         }
@@ -1075,9 +1294,8 @@ exports[`<Accordion /> should render Accordion with title custom 1`] = `
       <View
         collapsable={false}
         forwardedRef={[Function]}
-        nativeID="animatedComponent"
         onLayout={[Function]}
-        style={Object {}}
+        style={{}}
       >
         <View>
           <Text>

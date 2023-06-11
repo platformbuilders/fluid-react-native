@@ -1,8 +1,9 @@
 import React from 'react';
+import 'jest-styled-components';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import LoadingIndicator from '..';
-import { theme } from '../../../test/helpers';
+import theme from '../../../theme';
 
 describe('<LoadingIndicator />', () => {
   it('should render LoadingIndicator correctly', () => {

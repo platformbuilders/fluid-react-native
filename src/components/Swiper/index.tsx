@@ -2,14 +2,14 @@ import React, { PropsWithChildren } from 'react';
 import { Pagination, SwiperFlatList } from 'react-native-swiper-flatlist';
 import { SwiperProps } from '../../types';
 
-const Swiper = <T extends unknown>({
+const Swiper = ({
   swiperRef,
   children,
   id,
   accessibility,
   testID,
   ...rest
-}: PropsWithChildren<SwiperProps<T>>) => {
+}: PropsWithChildren<SwiperProps<any>>) => {
   return (
     <SwiperFlatList
       ref={swiperRef}

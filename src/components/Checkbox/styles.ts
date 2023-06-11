@@ -1,6 +1,6 @@
 import DefaultCheckbox from 'react-native-check-box';
 import styled from 'styled-components/native';
-import { getTheme } from '../../utils/helpers';
+import { getTheme } from '@platformbuilders/theme-toolkit';
 import Touchable from '../Touchable';
 import TypographyComponent from '../Typography';
 
@@ -18,7 +18,7 @@ export const containerStyle = {
   marginBottom: 0,
 };
 
-export const CheckBox = styled(DefaultCheckbox).attrs((props) => ({
+export const CheckBox = styled(DefaultCheckbox).attrs((props: any) => ({
   checkBoxColor: `${primaryColor(props)}`,
   checkedCheckBoxColor: `${primaryColor(props)}`,
 }))<{ testID?: string; accessibilityLabel?: string }>``;

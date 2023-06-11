@@ -2,9 +2,9 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import DatePicker from '..';
-import { theme } from '../../../test/helpers';
+import theme from '../../../theme';
 
-jest.useFakeTimers('modern').setSystemTime(new Date('2020-01-01').getTime());
+jest.useFakeTimers().setSystemTime(new Date('2020-01-01').getTime());
 
 describe('<DatePicker />', () => {
   it('should render datepicker', () => {

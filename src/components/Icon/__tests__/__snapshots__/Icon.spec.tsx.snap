@@ -3,20 +3,30 @@
 exports[`<Icon /> should render icon component correctly 1`] = `
 <View
   collapsable={false}
-  nativeID="animatedComponent"
-  style={Object {}}
+  style={{}}
 >
   <View
     accessibilityLabel="testing_icon"
     accessibilityState={
-      Object {
+      {
+        "busy": undefined,
+        "checked": undefined,
         "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
       }
     }
     accessible={true}
     collapsable={false}
     focusable={true}
-    nativeID="animatedComponent"
     onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
@@ -25,7 +35,7 @@ exports[`<Icon /> should render icon component correctly 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
+      {
         "opacity": 1,
       }
     }
@@ -36,24 +46,24 @@ exports[`<Icon /> should render icon component correctly 1`] = `
         allowFontScaling={false}
         selectable={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": undefined,
               "fontSize": 20,
             },
             undefined,
-            Object {
-              "fontFamily": "FontAwesome5Free-Regular",
+            {
+              "fontFamily": "FontAwesome5Free-Solid",
               "fontStyle": "normal",
               "fontWeight": "normal",
             },
-            Object {
-              "fontWeight": "400",
+            {
+              "fontWeight": "900",
             },
           ]
         }
       >
-        ?
+        
       </Text>
     </View>
   </View>

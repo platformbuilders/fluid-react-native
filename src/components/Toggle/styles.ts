@@ -1,7 +1,6 @@
 import { SwitchProps } from 'react-native';
 import styled from 'styled-components/native';
-import { ThemeProps } from '@platformbuilders/theme-toolkit';
-import { getTheme } from '../../utils/helpers';
+import { ThemeProps, getTheme } from '@platformbuilders/theme-toolkit';
 
 const textColor = getTheme('text.main');
 const primaryMain = getTheme('brand.primary.main');

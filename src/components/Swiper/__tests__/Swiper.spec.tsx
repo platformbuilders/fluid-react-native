@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import { Swiper } from '..';
-import { theme } from '../../../test/helpers';
+import theme from '../../../theme';
 import Typography from '../../Typography';
 
 const mockData = [

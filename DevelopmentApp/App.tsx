@@ -1,6 +1,6 @@
 import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components/native';
 
 import { themeFormatter } from '@platformbuilders/theme-toolkit';
 import { NavigationContainer } from '@react-navigation/native';

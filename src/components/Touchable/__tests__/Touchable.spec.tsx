@@ -2,8 +2,10 @@ import React from 'react';
 import { fireEvent, render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
+import { generateHaptic } from '@platformbuilders/helpers/native';
+
 import Touchable from '..';
-import { theme } from '../../../test/helpers';
+import theme from '../../../theme';
 
 describe('<Touchable />', () => {
   it('should render Touchable', () => {
@@ -30,5 +32,6 @@ describe('<Touchable />', () => {
     fireEvent.press(component);
 
     expect(onPressEvent).toHaveBeenCalled();
+    expect(generateHaptic).toHaveBeenCalled();
   });
 });

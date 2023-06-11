@@ -1,7 +1,6 @@
 import React, { VFC, useCallback, useEffect, useState } from 'react';
 import { isEmpty } from 'lodash';
 import { Animated } from 'react-native';
-import { TypographyVariants } from '@platformbuilders/theme-toolkit';
 import { IconFonts, InputStatus } from '../../enums';
 import { TextInputType } from '../../types';
 import { useAutoFocus, usePrevious } from '../../utils/hooks';
@@ -97,9 +96,9 @@ const TextInput: VFC<TextInputType> = ({
     suppressAnimation ? false : true,
   );
   const previousValue = usePrevious<string>(value || '');
-  const labelVariant: TypographyVariants = large ? 'md' : 'xs';
-  const textVariant: TypographyVariants = large ? 'lg' : 'md';
-  const placeholderVariant: TypographyVariants = large ? 'lg' : 'md';
+  const labelVariant = large ? 'md' : 'xs';
+  const textVariant = large ? 'lg' : 'md';
+  const placeholderVariant = large ? 'lg' : 'md';
 
   const animateComponent = useCallback(
     (updatedLabelStyle: any): void => {

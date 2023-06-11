@@ -14,7 +14,7 @@ import {
 } from './styles';
 
 const iconString = (hidePassword: boolean): string =>
-  hidePassword ? 'eye' : 'eye-off';
+  hidePassword ? 'eye' : 'eye-slash';
 
 const PinInput: React.FC<PinInputType> = ({
   password = false,
