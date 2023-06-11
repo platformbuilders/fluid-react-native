@@ -1,6 +1,6 @@
 {
   "name": "@platformbuilders/fluid-react-native",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "private": false,
   "description": "Builders React Native for Fluid Design System",
   "keywords": [
@@ -28,7 +28,7 @@
     "copyassets": "npx copyfiles -f ./src/assets/images/*.png ./dist/assets/images",
     "lint": "tsc --noEmit && eslint \"src/**/*.{ts,tsx}\" --fix",
     "precommit": "yarn lint && yarn test",
-    "pretty": "prettier --config ./.prettierrc.js --write \"src/**/*.{ts,tsx,js}\"",
+    "pretty": "patch-package && prettier --config ./.prettierrc.js --write \"src/**/*.{ts,tsx,js}\"",
     "prepublish": "yarn build",
     "storybook": "start-storybook -p 9009 -c storybook",
     "storybook:build": "rimraf storybook-static; build-storybook -c storybook",
@@ -37,7 +37,6 @@
     "test:watch": "yarn test -- --watch",
     "preversion": "yarn test && yarn lint",
     "postversion": "git push && git push --tags",
-    "postinstall": "patch-package",
     "version:major": "npm version major",
     "version:minor": "npm version minor",
     "version:patch": "npm version patch"
