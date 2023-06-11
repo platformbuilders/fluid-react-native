@@ -22,11 +22,13 @@ jobs:
       - name: Install
         run: yarn install && yarn build
       # Publish to npm
-      - name: Publish
+      - name: Publish to NPM
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       # Setup .npmrc file to publish to GitHub Packages
+      - name: Publish to GPR
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > .npmrc
       - uses: actions/setup-node@v1
         with:
           node-version: 18
