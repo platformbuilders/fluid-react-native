@@ -8,7 +8,7 @@ describe('<Icon />', () => {
   it('should render icon component correctly', () => {
     const render = renderer.create(
       <ThemeProvider theme={theme}>
-        <Icon name="access-point" id="testing" accessibility="testing_icon" />
+        <Icon name="book" id="testing" accessibility="testing_icon" />
       </ThemeProvider>,
     );
 

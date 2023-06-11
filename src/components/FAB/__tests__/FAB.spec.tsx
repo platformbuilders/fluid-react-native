@@ -43,7 +43,7 @@ describe('<FAB />', () => {
           id="testing"
           accessibility=""
           onPress={onPressEvent}
-          iconName="access-point"
+          iconName="book"
         />
       </ThemeProvider>,
     );

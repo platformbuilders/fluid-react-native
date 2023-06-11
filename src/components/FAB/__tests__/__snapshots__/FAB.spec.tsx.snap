@@ -132,7 +132,7 @@ exports[`<FAB /> should render fab with custom icon 1`] = `
     style={Object {}}
   >
     <View
-      accessibilityLabel="Access-point"
+      accessibilityLabel="Book"
       accessibilityState={
         Object {
           "disabled": true,
@@ -168,17 +168,17 @@ exports[`<FAB /> should render fab with custom icon 1`] = `
               },
               undefined,
               Object {
-                "fontFamily": "FontAwesome5Free-Regular",
+                "fontFamily": "FontAwesome5Free-Solid",
                 "fontStyle": "normal",
                 "fontWeight": "normal",
               },
               Object {
-                "fontWeight": "400",
+                "fontWeight": "900",
               },
             ]
           }
         >
-          ?
+          
         </Text>
       </View>
     </View>

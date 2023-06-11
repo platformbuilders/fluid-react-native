@@ -31,7 +31,7 @@ describe('<TextInput />', () => {
             onChangeText={setValue}
             onBlur={onBlurFN}
             onFocus={onFocusFN}
-            iconName="access-point"
+            iconName="book"
           />
         </ThemeProvider>
       );
