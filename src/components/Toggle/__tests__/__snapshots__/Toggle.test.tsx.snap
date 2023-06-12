@@ -25,7 +25,6 @@ exports[`<ToggleButton /> should render component with custom thumb color 1`] = 
       ],
     ]
   }
-  testID="toggle_button"
   thumbColorProps={
     {
       "falseColor": "blue",
@@ -63,7 +62,6 @@ exports[`<ToggleButton /> should render component with custom track color 1`] = 
       ],
     ]
   }
-  testID="toggle_button"
   thumbTintColor="#4255EF"
   tintColor="blue"
   trackColorProps={
@@ -101,7 +99,6 @@ exports[`<ToggleButton /> should render toggle component 1`] = `
       ],
     ]
   }
-  testID="toggle_button"
   thumbTintColor="#4255EF"
   tintColor="#4444444D"
   value={true}
