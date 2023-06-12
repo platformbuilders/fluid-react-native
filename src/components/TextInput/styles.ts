@@ -18,7 +18,6 @@ const hasLeftIcon = ifStyle('hasLeftIcon');
 type InputAreaWrapperProps = {
   rightIcon?: boolean;
   leftIcon?: boolean;
-  multiline: boolean;
   padding?: number;
   inputRightPadding?: number;
   inputLeftPadding?: number;
@@ -39,7 +38,6 @@ type InputBorderedAreaWrapperProps = {
 
 type InputBorderedColumnWrapperProps = {
   hasLeftIcon?: boolean;
-  multiline?: boolean;
   padding?: number;
 };
 
@@ -58,7 +56,6 @@ type BottomLineProps = {
 
 type TextLabelProps = (TextInputType | BottomLineProps) & ThemeProps;
 
-const isMultiline = ifStyle('multiline');
 const isCentered = ifStyle('centered');
 const hasLabel = ifStyle('label');
 const hasError = ifStyle('error');
@@ -214,7 +211,6 @@ export const TextInput = styled.TextInput.attrs((props: TextInputType) => ({
   border-width: 0;
   min-height: ${moderateScale(24)}px;
   color: ${inputColor};
-  margin-top: ${isMultiline(smallSpacing, 0)}px;
   font-size: ${getFontSize}px;
   width: 100%;
 `;
