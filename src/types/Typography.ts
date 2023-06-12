@@ -7,4 +7,5 @@ export type TypographyType = {
   id?: string;
   accessibility?: string;
   numberOfLines?: number;
+  animated?: boolean;
 };

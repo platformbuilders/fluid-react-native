@@ -72,6 +72,7 @@ const switchStatus = switchStyle('status');
 const brandContrast = getTheme('brand.primary.contrast');
 const brandPrimary = getTheme('brand.primary.main');
 const minimumSpacing = getTheme('spacing.xs');
+const sizingMD = getTheme('sizing.md');
 const smallSpacing = getTheme('spacing.sm');
 const extraLargeSpacing = getTheme('spacing.xl');
 const success = getTheme('success.main');
@@ -228,6 +229,7 @@ type IconProps = {
   error: boolean;
   iconColor?: string;
   showIconErrored?: boolean;
+  size?: number;
 } & ThemeProps;
 
 const defaultIconColor = (props: IconProps) =>
@@ -237,6 +239,7 @@ const defaultIconColor = (props: IconProps) =>
 const erroredIconColor = (props: IconProps) => dangerMain(props);
 
 export const Icon = styled(DefaultIcon).attrs((props: IconProps) => ({
+  size: props?.size || sizingMD(props),
   color: showIconErrored(
     hasError(erroredIconColor(props), defaultIconColor(props))(props),
     defaultIconColor(props),
