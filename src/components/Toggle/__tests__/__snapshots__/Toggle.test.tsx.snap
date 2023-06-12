@@ -7,7 +7,7 @@ exports[`<ToggleButton /> should render component with custom thumb color 1`] = 
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  onTintColor="#4255EF80"
+  onTintColor="red30"
   style={
     [
       {
@@ -19,7 +19,7 @@ exports[`<ToggleButton /> should render component with custom thumb color 1`] = 
           {},
         ],
         {
-          "backgroundColor": "#4444444D",
+          "backgroundColor": "blue4D",
           "borderRadius": 16,
         },
       ],
@@ -32,7 +32,7 @@ exports[`<ToggleButton /> should render component with custom thumb color 1`] = 
     }
   }
   thumbTintColor="red"
-  tintColor="#4444444D"
+  tintColor="#dddddd"
   value={true}
 />
 `;
@@ -81,7 +81,7 @@ exports[`<ToggleButton /> should render toggle component 1`] = `
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
-  onTintColor="#4255EF80"
+  onTintColor="#4255EF30"
   style={
     [
       {
@@ -93,14 +93,14 @@ exports[`<ToggleButton /> should render toggle component 1`] = `
           {},
         ],
         {
-          "backgroundColor": "#4444444D",
+          "backgroundColor": "#d1d1d14D",
           "borderRadius": 16,
         },
       ],
     ]
   }
   thumbTintColor="#4255EF"
-  tintColor="#4444444D"
+  tintColor="#dddddd"
   value={true}
 />
 `;
