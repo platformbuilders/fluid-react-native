@@ -18,7 +18,6 @@ const hasLeftIcon = ifStyle('hasLeftIcon');
 type InputAreaWrapperProps = {
   rightIcon?: boolean;
   leftIcon?: boolean;
-  multiline: boolean;
   padding?: number;
   inputRightPadding?: number;
   inputLeftPadding?: number;
@@ -39,7 +38,6 @@ type InputBorderedAreaWrapperProps = {
 
 type InputBorderedColumnWrapperProps = {
   hasLeftIcon?: boolean;
-  multiline?: boolean;
   padding?: number;
 };
 
@@ -58,7 +56,6 @@ type BottomLineProps = {
 
 type TextLabelProps = (TextInputType | BottomLineProps) & ThemeProps;
 
-const isMultiline = ifStyle('multiline');
 const isCentered = ifStyle('centered');
 const hasLabel = ifStyle('label');
 const hasError = ifStyle('error');
@@ -72,6 +69,7 @@ const switchStatus = switchStyle('status');
 const brandContrast = getTheme('brand.primary.contrast');
 const brandPrimary = getTheme('brand.primary.main');
 const minimumSpacing = getTheme('spacing.xs');
+const sizingMD = getTheme('sizing.md');
 const smallSpacing = getTheme('spacing.sm');
 const extraLargeSpacing = getTheme('spacing.xl');
 const success = getTheme('success.main');
@@ -213,7 +211,6 @@ export const TextInput = styled.TextInput.attrs((props: TextInputType) => ({
   border-width: 0;
   min-height: ${moderateScale(24)}px;
   color: ${inputColor};
-  margin-top: ${isMultiline(smallSpacing, 0)}px;
   font-size: ${getFontSize}px;
   width: 100%;
 `;
@@ -228,6 +225,7 @@ type IconProps = {
   error: boolean;
   iconColor?: string;
   showIconErrored?: boolean;
+  size?: number;
 } & ThemeProps;
 
 const defaultIconColor = (props: IconProps) =>
@@ -237,6 +235,7 @@ const defaultIconColor = (props: IconProps) =>
 const erroredIconColor = (props: IconProps) => dangerMain(props);
 
 export const Icon = styled(DefaultIcon).attrs((props: IconProps) => ({
+  size: props?.size || sizingMD(props),
   color: showIconErrored(
     hasError(erroredIconColor(props), defaultIconColor(props))(props),
     defaultIconColor(props),

@@ -1,3 +1,4 @@
+import { Animated } from 'react-native';
 import styled from 'styled-components/native';
 import {
   getFontSize,
@@ -10,3 +11,5 @@ export const Text = styled.Text<any>`
   font-size: ${getFontSize}px;
   line-height: ${getLineHeight}px;
 `;
+
+export const AnimatedText = Animated.createAnimatedComponent(Text);

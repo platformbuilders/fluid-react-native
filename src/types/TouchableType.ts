@@ -1,7 +1,7 @@
+import { PropsWithChildren } from 'react';
 import { HapticFeedbackType } from 'react-native-haptic';
 
-export interface TouchableType {
-  children?: React.ReactNode;
+export type TouchableType = PropsWithChildren<{
   id?: string;
   accessibility: string;
   accessibilityLabel?: string;
@@ -9,4 +9,4 @@ export interface TouchableType {
   disabled?: boolean;
   onPress?: (param: any) => void;
   haptic?: HapticFeedbackType;
-}
+}>;

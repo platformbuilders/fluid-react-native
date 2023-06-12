@@ -71,8 +71,8 @@ exports[`<Search /> should render search 1`] = `
             [
               {
                 "color": "#444444",
-                "fontSize": 15,
-                "lineHeight": 18,
+                "fontSize": 13,
+                "lineHeight": 15.6,
               },
               {
                 "color": "#444444",
@@ -80,13 +80,13 @@ exports[`<Search /> should render search 1`] = `
                 "top": 8,
               },
               {
-                "fontSize": 18,
-                "top": 8,
+                "fontSize": 14,
+                "top": -12,
               },
             ]
           }
           testID="error_test"
-          variant="md"
+          variant="xs"
         />
         <View
           multiline={false}
@@ -117,7 +117,7 @@ exports[`<Search /> should render search 1`] = `
             centered={false}
             contrast={false}
             id="test"
-            isPlaceholder={true}
+            isPlaceholder={false}
             keyboardType="default"
             large={false}
             multiline={false}
@@ -134,7 +134,7 @@ exports[`<Search /> should render search 1`] = `
                 "validator": [Function],
               }
             }
-            placeholder=""
+            placeholder="Pesquise aqui"
             placeholderTextColor="#72727260"
             refInput="$text"
             status="default"
@@ -147,7 +147,6 @@ exports[`<Search /> should render search 1`] = `
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "fontSize": 15,
-                  "marginTop": 0,
                   "minHeight": 37.714285714285715,
                   "paddingBottom": 0,
                   "paddingLeft": 0,
@@ -336,8 +335,8 @@ exports[`<Search /> should render search with auto focus 1`] = `
                 "top": 8,
               },
               {
-                "fontSize": 18,
-                "top": 8,
+                "fontSize": 14,
+                "top": -12,
               },
             ]
           }
@@ -399,7 +398,6 @@ exports[`<Search /> should render search with auto focus 1`] = `
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "fontSize": 15,
-                  "marginTop": 0,
                   "minHeight": 37.714285714285715,
                   "paddingBottom": 0,
                   "paddingLeft": 0,
@@ -591,8 +589,8 @@ exports[`<Search /> should render search with custom container style 1`] = `
                 "top": 8,
               },
               {
-                "fontSize": 18,
-                "top": 8,
+                "fontSize": 14,
+                "top": -12,
               },
             ]
           }
@@ -654,7 +652,6 @@ exports[`<Search /> should render search with custom container style 1`] = `
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "fontSize": 15,
-                  "marginTop": 0,
                   "minHeight": 37.714285714285715,
                   "paddingBottom": 0,
                   "paddingLeft": 0,
@@ -843,8 +840,8 @@ exports[`<Search /> should render search with custom icon color 1`] = `
                 "top": 8,
               },
               {
-                "fontSize": 18,
-                "top": 8,
+                "fontSize": 14,
+                "top": -12,
               },
             ]
           }
@@ -906,7 +903,6 @@ exports[`<Search /> should render search with custom icon color 1`] = `
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "fontSize": 15,
-                  "marginTop": 0,
                   "minHeight": 37.714285714285715,
                   "paddingBottom": 0,
                   "paddingLeft": 0,
@@ -1086,8 +1082,8 @@ exports[`<Search /> should render search with custom input style 1`] = `
             [
               {
                 "color": "#444444",
-                "fontSize": 15,
-                "lineHeight": 18,
+                "fontSize": 13,
+                "lineHeight": 15.6,
               },
               {
                 "color": "#444444",
@@ -1095,13 +1091,13 @@ exports[`<Search /> should render search with custom input style 1`] = `
                 "top": 8,
               },
               {
-                "fontSize": 18,
-                "top": 8,
+                "fontSize": 14,
+                "top": -12,
               },
             ]
           }
           testID="error_test"
-          variant="md"
+          variant="xs"
         />
         <View
           multiline={false}
@@ -1132,7 +1128,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
             centered={false}
             contrast={false}
             id="test"
-            isPlaceholder={true}
+            isPlaceholder={false}
             keyboardType="default"
             large={false}
             multiline={false}
@@ -1149,7 +1145,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
                 "validator": [Function],
               }
             }
-            placeholder=""
+            placeholder="Pesquise aqui"
             placeholderTextColor="#72727260"
             refInput="$text"
             status="default"
@@ -1162,7 +1158,6 @@ exports[`<Search /> should render search with custom input style 1`] = `
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "fontSize": 15,
-                  "marginTop": 0,
                   "minHeight": 37.714285714285715,
                   "paddingBottom": 0,
                   "paddingLeft": 0,
@@ -1342,8 +1337,8 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
             [
               {
                 "color": "#444444",
-                "fontSize": 15,
-                "lineHeight": 18,
+                "fontSize": 13,
+                "lineHeight": 15.6,
               },
               {
                 "color": "#444444",
@@ -1351,13 +1346,13 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
                 "top": 8,
               },
               {
-                "fontSize": 18,
-                "top": 8,
+                "fontSize": 14,
+                "top": -12,
               },
             ]
           }
           testID="error_test"
-          variant="md"
+          variant="xs"
         />
         <View
           multiline={false}
@@ -1388,7 +1383,7 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
             centered={false}
             contrast={false}
             id="test"
-            isPlaceholder={true}
+            isPlaceholder={false}
             keyboardType="default"
             large={false}
             multiline={false}
@@ -1405,7 +1400,7 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
                 "validator": [Function],
               }
             }
-            placeholder=""
+            placeholder="Test"
             placeholderTextColor="#72727260"
             refInput="$text"
             status="default"
@@ -1418,7 +1413,6 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "fontSize": 15,
-                  "marginTop": 0,
                   "minHeight": 37.714285714285715,
                   "paddingBottom": 0,
                   "paddingLeft": 0,
@@ -1598,8 +1592,8 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
             [
               {
                 "color": "#444444",
-                "fontSize": 15,
-                "lineHeight": 18,
+                "fontSize": 13,
+                "lineHeight": 15.6,
               },
               {
                 "color": "#444444",
@@ -1607,13 +1601,13 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
                 "top": 8,
               },
               {
-                "fontSize": 18,
-                "top": 8,
+                "fontSize": 14,
+                "top": -12,
               },
             ]
           }
           testID="error_test"
-          variant="md"
+          variant="xs"
         />
         <View
           multiline={false}
@@ -1644,7 +1638,7 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
             centered={false}
             contrast={false}
             id="test"
-            isPlaceholder={true}
+            isPlaceholder={false}
             keyboardType="default"
             large={false}
             multiline={false}
@@ -1661,7 +1655,7 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
                 "validator": [Function],
               }
             }
-            placeholder=""
+            placeholder="Pesquise aqui"
             placeholderTextColor="#123983"
             refInput="$text"
             status="default"
@@ -1674,7 +1668,6 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "fontSize": 15,
-                  "marginTop": 0,
                   "minHeight": 37.714285714285715,
                   "paddingBottom": 0,
                   "paddingLeft": 0,
@@ -1863,8 +1856,8 @@ exports[`<Search /> should render search with custom text style 1`] = `
                 "top": 8,
               },
               {
-                "fontSize": 18,
-                "top": 8,
+                "fontSize": 14,
+                "top": -12,
               },
             ]
           }
@@ -1926,7 +1919,6 @@ exports[`<Search /> should render search with custom text style 1`] = `
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "fontSize": 15,
-                  "marginTop": 0,
                   "minHeight": 37.714285714285715,
                   "paddingBottom": 0,
                   "paddingLeft": 0,
@@ -2117,8 +2109,8 @@ exports[`<Search /> should render search with icon size 1`] = `
                 "top": 8,
               },
               {
-                "fontSize": 18,
-                "top": 8,
+                "fontSize": 14,
+                "top": -12,
               },
             ]
           }
@@ -2180,7 +2172,6 @@ exports[`<Search /> should render search with icon size 1`] = `
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "fontSize": 15,
-                  "marginTop": 0,
                   "minHeight": 37.714285714285715,
                   "paddingBottom": 0,
                   "paddingLeft": 0,
@@ -2369,8 +2360,8 @@ exports[`<Search /> should render search with left icon 1`] = `
                 "top": 8,
               },
               {
-                "fontSize": 18,
-                "top": 8,
+                "fontSize": 14,
+                "top": -12,
               },
             ]
           }
@@ -2500,7 +2491,6 @@ exports[`<Search /> should render search with left icon 1`] = `
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "fontSize": 15,
-                  "marginTop": 0,
                   "minHeight": 37.714285714285715,
                   "paddingBottom": 0,
                   "paddingLeft": 0,
@@ -2610,8 +2600,8 @@ exports[`<Search /> should render search with padding 1`] = `
             [
               {
                 "color": "#444444",
-                "fontSize": 15,
-                "lineHeight": 18,
+                "fontSize": 13,
+                "lineHeight": 15.6,
               },
               {
                 "color": "#444444",
@@ -2619,13 +2609,13 @@ exports[`<Search /> should render search with padding 1`] = `
                 "top": 8,
               },
               {
-                "fontSize": 18,
-                "top": 8,
+                "fontSize": 14,
+                "top": -12,
               },
             ]
           }
           testID="error_test"
-          variant="md"
+          variant="xs"
         />
         <View
           multiline={false}
@@ -2657,7 +2647,7 @@ exports[`<Search /> should render search with padding 1`] = `
             centered={false}
             contrast={false}
             id="test"
-            isPlaceholder={true}
+            isPlaceholder={false}
             keyboardType="default"
             large={false}
             multiline={false}
@@ -2674,7 +2664,7 @@ exports[`<Search /> should render search with padding 1`] = `
                 "validator": [Function],
               }
             }
-            placeholder=""
+            placeholder="Pesquise aqui"
             placeholderTextColor="#72727260"
             refInput="$text"
             status="default"
@@ -2687,7 +2677,6 @@ exports[`<Search /> should render search with padding 1`] = `
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "fontSize": 15,
-                  "marginTop": 0,
                   "minHeight": 37.714285714285715,
                   "paddingBottom": 0,
                   "paddingLeft": 0,
@@ -2867,8 +2856,8 @@ exports[`<Search /> should render search with right icon 1`] = `
             [
               {
                 "color": "#444444",
-                "fontSize": 15,
-                "lineHeight": 18,
+                "fontSize": 13,
+                "lineHeight": 15.6,
               },
               {
                 "color": "#444444",
@@ -2876,13 +2865,13 @@ exports[`<Search /> should render search with right icon 1`] = `
                 "top": 8,
               },
               {
-                "fontSize": 18,
-                "top": 8,
+                "fontSize": 14,
+                "top": -12,
               },
             ]
           }
           testID="error_test"
-          variant="md"
+          variant="xs"
         />
         <View
           multiline={false}
@@ -2913,7 +2902,7 @@ exports[`<Search /> should render search with right icon 1`] = `
             centered={false}
             contrast={false}
             id="test"
-            isPlaceholder={true}
+            isPlaceholder={false}
             keyboardType="default"
             large={false}
             multiline={false}
@@ -2930,7 +2919,7 @@ exports[`<Search /> should render search with right icon 1`] = `
                 "validator": [Function],
               }
             }
-            placeholder=""
+            placeholder="Pesquise aqui"
             placeholderTextColor="#72727260"
             refInput="$text"
             status="default"
@@ -2943,7 +2932,6 @@ exports[`<Search /> should render search with right icon 1`] = `
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "fontSize": 15,
-                  "marginTop": 0,
                   "minHeight": 37.714285714285715,
                   "paddingBottom": 0,
                   "paddingLeft": 0,
@@ -3130,8 +3118,8 @@ exports[`<Search /> should render search with shadow 1`] = `
             [
               {
                 "color": "#444444",
-                "fontSize": 15,
-                "lineHeight": 18,
+                "fontSize": 13,
+                "lineHeight": 15.6,
               },
               {
                 "color": "#444444",
@@ -3139,13 +3127,13 @@ exports[`<Search /> should render search with shadow 1`] = `
                 "top": 8,
               },
               {
-                "fontSize": 18,
-                "top": 8,
+                "fontSize": 14,
+                "top": -12,
               },
             ]
           }
           testID="error_test"
-          variant="md"
+          variant="xs"
         />
         <View
           multiline={false}
@@ -3176,7 +3164,7 @@ exports[`<Search /> should render search with shadow 1`] = `
             centered={false}
             contrast={false}
             id="test"
-            isPlaceholder={true}
+            isPlaceholder={false}
             keyboardType="default"
             large={false}
             multiline={false}
@@ -3193,7 +3181,7 @@ exports[`<Search /> should render search with shadow 1`] = `
                 "validator": [Function],
               }
             }
-            placeholder=""
+            placeholder="Pesquise aqui"
             placeholderTextColor="#72727260"
             refInput="$text"
             status="default"
@@ -3206,7 +3194,6 @@ exports[`<Search /> should render search with shadow 1`] = `
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "fontSize": 15,
-                  "marginTop": 0,
                   "minHeight": 37.714285714285715,
                   "paddingBottom": 0,
                   "paddingLeft": 0,
@@ -3396,8 +3383,8 @@ exports[`<Search /> should render search with wrapper height 1`] = `
                 "top": 8,
               },
               {
-                "fontSize": 18,
-                "top": 8,
+                "fontSize": 14,
+                "top": -12,
               },
             ]
           }
@@ -3459,7 +3446,6 @@ exports[`<Search /> should render search with wrapper height 1`] = `
                   "flexGrow": 1,
                   "flexShrink": 1,
                   "fontSize": 15,
-                  "marginTop": 0,
                   "minHeight": 37.714285714285715,
                   "paddingBottom": 0,
                   "paddingLeft": 0,
