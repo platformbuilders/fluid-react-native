@@ -23,13 +23,14 @@ describe('<ToggleButton />', () => {
   });
 
   it('should trigger onValueChange function when toggle is pressed', () => {
+    const testId = 'toggle_button';
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <ToggleButton value={false} onValueChange={onPressEvent} />
+        <ToggleButton id={testId} value={false} onValueChange={onPressEvent} />
       </ThemeProvider>,
     );
 
-    const component = getByTestId('toggle_button');
+    const component = getByTestId(testId);
 
     fireEvent(component, 'onValueChange', true);
 
@@ -65,13 +66,19 @@ describe('<ToggleButton />', () => {
   });
 
   it('should render component disabled if disable prop is passed', () => {
+    const testId = 'toggle_button';
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <ToggleButton value={true} onValueChange={() => {}} isDisabled />
+        <ToggleButton
+          id={testId}
+          value={true}
+          onValueChange={() => {}}
+          isDisabled
+        />
       </ThemeProvider>,
     );
 
-    const component = getByTestId('toggle_button');
+    const component = getByTestId(testId);
 
     expect(component).toHaveProperty(
       ['_fiber', 'memoizedProps', 'disabled'],
