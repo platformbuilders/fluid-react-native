@@ -13,10 +13,7 @@ type Props = {
 
 export const Text = styled(Typography)<Props>`
   font-weight: 500;
-  color: ${(props) => {
-    console.log('Text props', props);
-    return props.theme.text.main;
-  }};
+  color: ${(props) => props.theme.text.main};
   text-decoration-color: ${brandPrimary};
   text-decoration-line: underline;
   margin-left: ${spacingSm}px;
