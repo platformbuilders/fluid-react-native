@@ -13,7 +13,7 @@ export const useAutoFocus = (autoFocus = false, inputRef: any) => {
   React.useEffect(() => {
     if (autoFocus && inputRef) {
       InteractionManager.runAfterInteractions(() => {
-        inputRef?.current?.focus();
+        inputRef?.current?._inputElement.current?.focus();
       });
     }
   }, [autoFocus, inputRef]);

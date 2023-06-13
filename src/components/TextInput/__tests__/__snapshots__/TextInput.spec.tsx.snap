@@ -107,7 +107,6 @@ exports[`<TextInput /> should render textinput 1`] = `
           }
           placeholder=""
           placeholderTextColor="#72727260"
-          refInput="$text"
           status="default"
           style={
             [
