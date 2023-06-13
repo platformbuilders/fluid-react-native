@@ -1,10 +1,9 @@
 import React from 'react';
+import { fireEvent, render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import Search from '..';
 import theme from '../../../theme';
-
-jest.useFakeTimers();
 
 describe('<Search />', () => {
   it('should render search', () => {
@@ -242,5 +241,48 @@ describe('<Search />', () => {
     );
 
     expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+  it('should change value of input', () => {
+    const onChange = jest.fn();
+
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Search
+          inputRef="$text"
+          id="testing_searching"
+          accessibility=""
+          onChange={onChange}
+          leftIconName="paperclip"
+        />
+      </ThemeProvider>,
+    );
+
+    const component = getByTestId('testing_searching');
+
+    fireEvent.changeText(component, 'Value changed');
+    expect(component.props.value).toBe('Value changed');
+  });
+
+  it('should change value pressing button', () => {
+    const onChange = jest.fn();
+
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Search
+          inputRef="$text"
+          id="testing_searching"
+          accessibility=""
+          onChange={onChange}
+          onIconPress={onChange}
+          leftIconName="paperclip"
+        />
+      </ThemeProvider>,
+    );
+
+    const component = getByTestId('testing_searching');
+    const icon = getByTestId('id_paperclip');
+
+    fireEvent.press(icon);
+    expect(component.props.value).toBe('');
   });
 });
