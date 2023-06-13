@@ -1,5 +1,5 @@
 import { RefObject } from 'react';
-import { KeyboardTypeOptions, TextInputProps } from 'react-native';
+import { KeyboardTypeOptions, TextInput, TextInputProps } from 'react-native';
 
 import { TypographyVariants } from '@platformbuilders/theme-toolkit';
 
@@ -19,6 +19,8 @@ type TextInputMaskTypeProp =
   | 'no-mask'
   | 'custom'
   | 'uppercase';
+
+export type TextInputTypeRef = { _inputElement: RefObject<TextInput> };
 
 export type TextInputType = {
   id: string;
