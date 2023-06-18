@@ -1,4 +1,5 @@
 import React, { useCallback } from 'react';
+import { useSpacingsWithSafeArea } from '@platformbuilders/helpers/native';
 import { NavField, NavIcon, NavLabel, NavbarWrapper } from './styles';
 
 type Props = {
@@ -10,15 +11,14 @@ type Props = {
   }[];
   currentRoute: string;
   activeFieldColor?: string;
-  activateSafeBottomArea?: boolean;
 };
 
 const Navbar: React.FC<Props> = ({
   fields,
   currentRoute,
   activeFieldColor,
-  activateSafeBottomArea,
 }) => {
+  const { bottomSpacing } = useSpacingsWithSafeArea();
   const renderFields = useCallback(
     () =>
       fields.map((navField) => (
@@ -49,7 +49,7 @@ const Navbar: React.FC<Props> = ({
   );
 
   return (
-    <NavbarWrapper safeBottomArea={!!activateSafeBottomArea}>
+    <NavbarWrapper bottomSpacing={bottomSpacing}>
       {renderFields()}
     </NavbarWrapper>
   );

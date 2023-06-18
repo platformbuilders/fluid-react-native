@@ -1,6 +1,5 @@
 import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
-import { getBottomSpace, isIOS } from '@platformbuilders/helpers/native';
 import { ThemeProps, getTheme, ifStyle } from '@platformbuilders/theme-toolkit';
 import { getShadow } from '../../utils/helpers';
 import Icon from '../Icon';
@@ -17,11 +16,10 @@ const opaqueOpacity = getTheme('opacity.opaque');
 const smSpacing = getTheme('spacing.sm');
 
 const isActive = ifStyle('active');
-const hasSafeBottomArea = ifStyle('safeBottomArea');
-const bottomSpace = isIOS() ? getBottomSpace() : smSpacing;
 
 type NavbarWrapperProps = {
   safeBottomArea: boolean;
+  bottomSpacing: number;
 };
 
 type FieldsProps = {
@@ -31,8 +29,8 @@ type FieldsProps = {
 
 export const NavbarWrapper = styled.View<NavbarWrapperProps>`
   width: 100%;
-  padding: ${smSpacing}px ${smSpacing}px
-    ${hasSafeBottomArea(bottomSpace, smSpacing)}px;
+  padding: ${smSpacing}px;
+  padding-bottom: ${({ bottomSpacing }) => `${bottomSpacing}px`};
   background-color: ${backgroundZ4};
   flex-direction: row;
   justify-content: space-evenly;
