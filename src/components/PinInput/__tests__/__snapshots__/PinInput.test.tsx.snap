@@ -1684,6 +1684,7 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
           "textAlign": "center",
         }
       }
+      testID="pinInput"
       value=""
     />
   </View>
