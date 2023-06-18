@@ -245,7 +245,7 @@ describe('<Search />', () => {
     );
 
     const component = getByTestId('testing_searching');
-    const icon = getByTestId('id_paperclip');
+    const icon = getByTestId('icon_paperclip');
 
     fireEvent.press(icon);
     expect(component.props.value).toBe('');
@@ -269,22 +269,13 @@ describe('<Search />', () => {
       </ThemeProvider>,
     );
 
-    // Simule o evento de foco
     fireEvent(getByTestId('test'), 'focus');
-
-    // Verifique se onFocus foi chamado
     expect(onFocus).toHaveBeenCalled();
 
-    // Simule o evento de blur
     fireEvent(getByTestId('test'), 'blur');
-
-    // Verifique se onBlur foi chamado
     expect(onBlur).toHaveBeenCalled();
 
-    // Simule o evento de submit
     fireEvent(getByTestId('test'), 'onSubmitEditing');
-
-    // Verifique se onSubmit foi chamado
     expect(onSubmit).toHaveBeenCalled();
   });
 });
