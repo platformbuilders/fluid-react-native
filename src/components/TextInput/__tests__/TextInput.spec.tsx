@@ -49,4 +49,43 @@ describe('<TextInput />', () => {
     expect(onFocusFN).toHaveBeenCalled();
     expect(component.props.value).toBe('Value changed');
   });
+
+  it('should render with bottom line', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <TextInput id="test" accessibility="" withBottomline />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render without bottom line', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <TextInput id="test" accessibility="" withBottomline={false} />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render with icon and handle icon press', () => {
+    const onPressIcon = jest.fn();
+    const wrapper = render(
+      <ThemeProvider theme={theme}>
+        <TextInput
+          id="test"
+          accessibility=""
+          iconName="book"
+          onPressIcon={onPressIcon}
+        />
+      </ThemeProvider>,
+    );
+
+    // Simulate icon press
+    fireEvent.press(wrapper.getByTestId('id_book'));
+
+    expect(onPressIcon).toHaveBeenCalled();
+  });
 });
