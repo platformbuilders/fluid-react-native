@@ -37,7 +37,6 @@
     "test:watch": "yarn test -- --watch",
     "preversion": "yarn test && yarn lint",
     "postversion": "git push && git push --tags",
-    "postintall": "yarn add ",
     "version:major": "npm version major",
     "version:minor": "npm version minor",
     "version:patch": "npm version patch"
