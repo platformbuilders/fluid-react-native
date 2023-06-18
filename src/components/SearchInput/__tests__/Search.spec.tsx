@@ -250,4 +250,41 @@ describe('<Search />', () => {
     fireEvent.press(icon);
     expect(component.props.value).toBe('');
   });
+
+  it('should call onFocus, onBlur, and onSubmit when events occur', () => {
+    const onFocus = jest.fn();
+    const onBlur = jest.fn();
+    const onSubmit = jest.fn();
+    const onChangeText = jest.fn();
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Search
+          id="test"
+          accessibility="Exibir ou ocultar inputs - eye"
+          onChange={onChangeText}
+          onFocus={onFocus}
+          onBlur={onBlur}
+          onSubmit={onSubmit}
+        />
+      </ThemeProvider>,
+    );
+
+    // Simule o evento de foco
+    fireEvent(getByTestId('test'), 'focus');
+
+    // Verifique se onFocus foi chamado
+    expect(onFocus).toHaveBeenCalled();
+
+    // Simule o evento de blur
+    fireEvent(getByTestId('test'), 'blur');
+
+    // Verifique se onBlur foi chamado
+    expect(onBlur).toHaveBeenCalled();
+
+    // Simule o evento de submit
+    fireEvent(getByTestId('test'), 'onSubmitEditing');
+
+    // Verifique se onSubmit foi chamado
+    expect(onSubmit).toHaveBeenCalled();
+  });
 });
