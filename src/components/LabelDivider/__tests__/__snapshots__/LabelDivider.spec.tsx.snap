@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Label /> should render Label 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 0,
+        "marginTop": 0,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#99999990",
+          "height": 1,
+          "width": "33%",
+        },
+      ]
+    }
+  />
+  <Text
+    accessibilityLabel="label"
+    lineHeightVariant="min"
+    style={
+      [
+        {
+          "color": "#444444",
+          "fontSize": 15,
+          "lineHeight": 18,
+        },
+        {
+          "color": "#99999990",
+          "fontWeight": "bold",
+          "paddingBottom": 4,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "paddingTop": 4,
+        },
+      ]
+    }
+    variant="md"
+  >
+    label
+  </Text>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#99999990",
+          "height": 1,
+          "width": "33%",
+        },
+      ]
+    }
+  />
+</View>
+`;
