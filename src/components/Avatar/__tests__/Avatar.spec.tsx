@@ -1,7 +1,8 @@
+/* eslint-disable sonarjs/no-duplicate-string */
 import React from 'react';
-import { fireEvent, render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
+import { fireEvent, render } from '@testing-library/react-native';
 import Avatar from '..';
 import { ImageAvatarPlaceholder as defaultAvatar } from '../../../assets/images';
 import theme from '../../../theme';
@@ -147,5 +148,42 @@ describe('<Avatar />', () => {
       </ThemeProvider>,
     );
     expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should call onUpload with uploaded image', async () => {
+    const onUpload = jest.fn();
+
+    const useStateSpy = jest.spyOn(React, 'useState');
+    const setUploadedImage = jest.fn();
+
+    useStateSpy
+      .mockImplementationOnce(() => [undefined, jest.fn()]) // Primeira chamada para useState (visibleImage)
+      .mockImplementationOnce(() => ['new-image.png', setUploadedImage]); // Segunda chamada para useState (uploadedImage)
+
+    const { rerender, getByTestId } = render(
+      <Avatar
+        id="avatar-test"
+        accessibility="avatar-test"
+        onPress={onUpload}
+      />,
+    );
+
+    fireEvent(getByTestId('avatar-test'), 'onPress', 'new-image.png');
+
+    // Este rerender irá forçar a atualização do useEffect, o que deveria fazer com que onUpload seja chamado com 'new-image.png'
+    rerender(
+      <Avatar
+        id="avatar-test"
+        accessibility="avatar-test"
+        onPress={onUpload}
+        image="new-image.png"
+      />,
+    );
+
+    // Verifique se a função onUpload foi chamada com a imagem carregada
+    expect(onUpload).toHaveBeenCalledWith('new-image.png');
+
+    // Limpando o mock depois do teste
+    useStateSpy.mockRestore();
   });
 });

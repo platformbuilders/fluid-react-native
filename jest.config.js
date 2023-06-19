@@ -44,6 +44,8 @@ module.exports = {
     '!**/styles.ts',
     '!**/*.enum.ts',
     '!src/enums/index.ts', // No need to test exported files
+    '!src/utils/helpers/index.ts', // No need to test exported files
+    '!src/theme/animations.ts', // No need to test exported files
     '!src/index.ts', // No need to test exported files
     '!src/components/index.ts', // No need to test exported files
     '!**/*.d.ts', // No need to test types declarations
