@@ -4,8 +4,13 @@ import mockRNDeviceInfo from 'react-native-device-info/jest/react-native-device-
 import { beforeAll } from '@jest/globals';
 
 jest.mock('@platformbuilders/helpers/native', () => ({
-  generateHaptic: jest.fn(),
   isIOS: jest.fn(),
+  scale: jest.fn(),
+  moderateScale: jest.fn(),
+  useSpacingsWithSafeArea: () => ({
+    topSpacing: 20,
+    bottomSpacing: 20,
+  }),
 }));
 
 jest.mock('rn-placeholder', () => {

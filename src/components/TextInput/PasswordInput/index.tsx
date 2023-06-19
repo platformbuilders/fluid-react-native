@@ -23,6 +23,7 @@ const PasswordInput: FC<TextInputType> = (props) => {
       onPressIcon={onPressShowPassword}
       onRightIconPress={onPressShowPassword}
       iconHitSlop={hitSlop}
+      textContentType="password"
       {...props}
     />
   );

@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { GestureResponderEvent, TouchableOpacity } from 'react-native';
-import { generateHaptic } from '@platformbuilders/helpers/native';
+import Haptic from 'react-native-haptic-feedback';
 import { TouchableType } from '../../types';
 
 const CommonTouchable: FC<TouchableType> = ({
@@ -16,7 +16,7 @@ const CommonTouchable: FC<TouchableType> = ({
   const onBasicPress = (event: GestureResponderEvent): void => {
     onPress(event);
     try {
-      generateHaptic(haptic);
+      Haptic.trigger(haptic);
     } catch (error) {
       console.log('LOG:  onBasicPress  generateHaptic:', error);
     }

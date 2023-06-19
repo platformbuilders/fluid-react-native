@@ -2,7 +2,7 @@
 
 exports[`<Navbar /> should render navbar component 1`] = `
 <View
-  safeBottomArea={false}
+  bottomSpacing={20}
   style={
     [
       {
@@ -12,7 +12,7 @@ exports[`<Navbar /> should render navbar component 1`] = `
         "flexDirection": "row",
         "justifyContent": "space-evenly",
         "marginTop": "auto",
-        "paddingBottom": 8,
+        "paddingBottom": 20,
         "paddingLeft": 8,
         "paddingRight": 8,
         "paddingTop": 8,
@@ -167,7 +167,7 @@ exports[`<Navbar /> should render navbar component 1`] = `
 
 exports[`<Navbar /> should render navbar component with custom color 1`] = `
 <View
-  safeBottomArea={false}
+  bottomSpacing={20}
   style={
     [
       {
@@ -177,7 +177,7 @@ exports[`<Navbar /> should render navbar component with custom color 1`] = `
         "flexDirection": "row",
         "justifyContent": "space-evenly",
         "marginTop": "auto",
-        "paddingBottom": 8,
+        "paddingBottom": 20,
         "paddingLeft": 8,
         "paddingRight": 8,
         "paddingTop": 8,
@@ -316,171 +316,6 @@ exports[`<Navbar /> should render navbar component with custom color 1`] = `
           },
           {
             "color": "#000000",
-            "fontWeight": "bold",
-            "opacity": "",
-            "textAlign": "center",
-            "textTransform": "uppercase",
-          },
-        ]
-      }
-      variant="xs"
-    >
-      Home
-    </Text>
-  </View>
-</View>
-`;
-
-exports[`<Navbar /> should render navbar component with safe bottom area 1`] = `
-<View
-  safeBottomArea={true}
-  style={
-    [
-      {
-        "alignItems": "flex-start",
-        "backgroundColor": "#d1d1d1",
-        "elevation": 3,
-        "flexDirection": "row",
-        "justifyContent": "space-evenly",
-        "marginTop": "auto",
-        "paddingBottom": 8,
-        "paddingLeft": 8,
-        "paddingRight": 8,
-        "paddingTop": 8,
-        "shadowOffset": {
-          "height": 4,
-          "width": 0,
-        },
-        "shadowOpacity": 0.2,
-        "shadowRadius": 6.285714285714286,
-        "width": "100%",
-      },
-    ]
-  }
->
-  <View
-    accessibilityLabel="Ir para Home"
-    accessibilityState={
-      {
-        "busy": undefined,
-        "checked": undefined,
-        "disabled": false,
-        "expanded": undefined,
-        "selected": undefined,
-      }
-    }
-    accessibilityValue={
-      {
-        "max": undefined,
-        "min": undefined,
-        "now": undefined,
-        "text": undefined,
-      }
-    }
-    accessible={true}
-    collapsable={false}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      {
-        "alignItems": "center",
-        "justifyContent": "center",
-        "opacity": 1,
-        "width": 110,
-      }
-    }
-    testID="Home"
-  >
-    <View
-      collapsable={false}
-      style={
-        {
-          "opacity": "",
-        }
-      }
-    >
-      <View
-        accessibilityLabel="flag"
-        accessibilityState={
-          {
-            "busy": undefined,
-            "checked": undefined,
-            "disabled": true,
-            "expanded": undefined,
-            "selected": undefined,
-          }
-        }
-        accessibilityValue={
-          {
-            "max": undefined,
-            "min": undefined,
-            "now": undefined,
-            "text": undefined,
-          }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          {
-            "opacity": 1,
-          }
-        }
-        testID="IconHome"
-      >
-        <View>
-          <Text
-            allowFontScaling={false}
-            selectable={false}
-            style={
-              [
-                {
-                  "color": "#4255EF",
-                  "fontSize": 47.14285714285714,
-                },
-                undefined,
-                {
-                  "fontFamily": "FontAwesome5Free-Regular",
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                },
-                {
-                  "fontWeight": "400",
-                },
-              ]
-            }
-          >
-            
-          </Text>
-        </View>
-      </View>
-    </View>
-    <Text
-      accessibilityLabel="Home"
-      active={true}
-      lineHeightVariant="min"
-      style={
-        [
-          {
-            "color": "#444444",
-            "fontSize": 13,
-            "lineHeight": 15.6,
-          },
-          {
-            "color": "#4255EF",
             "fontWeight": "bold",
             "opacity": "",
             "textAlign": "center",

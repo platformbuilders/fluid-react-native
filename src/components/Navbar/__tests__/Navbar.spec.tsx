@@ -43,14 +43,4 @@ describe('<Navbar />', () => {
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
-
-  it('should render navbar component with safe bottom area', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Navbar currentRoute="Home" fields={fields} activateSafeBottomArea />
-      </ThemeProvider>,
-    );
-
-    expect(wrapper.toJSON()).toMatchSnapshot();
-  });
 });
