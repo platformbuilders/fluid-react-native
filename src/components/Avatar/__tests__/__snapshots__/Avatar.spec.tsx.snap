@@ -85,6 +85,7 @@ exports[`<Avatar /> should render Avatar 1`] = `
             "top": 0,
           }
         }
+        testID="avatar-image"
       />
     </View>
   </View>
@@ -176,6 +177,7 @@ exports[`<Avatar /> should render Avatar with all custom props 1`] = `
             "top": 0,
           }
         }
+        testID="avatar-image"
       />
     </View>
   </View>
@@ -267,6 +269,7 @@ exports[`<Avatar /> should render Avatar with border 1`] = `
             "top": 0,
           }
         }
+        testID="avatar-image"
       />
     </View>
   </View>
@@ -358,6 +361,7 @@ exports[`<Avatar /> should render Avatar with custom accessibility label 1`] = `
             "top": 0,
           }
         }
+        testID="avatar-image"
       />
     </View>
   </View>
@@ -449,6 +453,7 @@ exports[`<Avatar /> should render Avatar with custom border 1`] = `
             "top": 0,
           }
         }
+        testID="avatar-image"
       />
     </View>
   </View>
@@ -540,6 +545,7 @@ exports[`<Avatar /> should render Avatar with custom image 1`] = `
             "top": 0,
           }
         }
+        testID="avatar-image"
       />
     </View>
   </View>
@@ -631,6 +637,7 @@ exports[`<Avatar /> should render Avatar with custom size 1`] = `
             "top": 0,
           }
         }
+        testID="avatar-image"
       />
     </View>
   </View>
@@ -722,6 +729,7 @@ exports[`<Avatar /> should render Avatar with custom test id 1`] = `
             "top": 0,
           }
         }
+        testID="avatar-image"
       />
     </View>
   </View>
@@ -813,6 +821,7 @@ exports[`<Avatar /> should render Avatar with external image 1`] = `
             "top": 0,
           }
         }
+        testID="avatar-image"
       />
     </View>
   </View>
@@ -904,6 +913,7 @@ exports[`<Avatar /> should render Avatar with monogram 1`] = `
             "top": 0,
           }
         }
+        testID="avatar-image"
       />
     </View>
   </View>
@@ -995,6 +1005,7 @@ exports[`<Avatar /> should render Avatar with styled monogram 1`] = `
             "top": 0,
           }
         }
+        testID="avatar-image"
       />
     </View>
   </View>

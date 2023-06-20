@@ -104,6 +104,7 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
         {...rest}
       >
         <Image
+          testID="avatar-image"
           displayPlaceholder={animatedLoading}
           source={{ uri: visibleImage }}
           resizeMode="cover"

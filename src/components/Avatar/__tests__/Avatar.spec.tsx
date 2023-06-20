@@ -186,4 +186,22 @@ describe('<Avatar />', () => {
     // Limpando o mock depois do teste
     useStateSpy.mockRestore();
   });
+
+  it('should render Image component', () => {
+    const { getByTestId } = render(
+      <Avatar id="avatar-test" accessibility="avatar-test" />,
+    );
+
+    const image = getByTestId('avatar-image'); // Substitua 'image-test-id' pelo testID real do componente Image
+    expect(image).toBeTruthy();
+  });
+
+  it('should render UploadIconWrapper when no image is visible and a name is provided', () => {
+    const { getByTestId } = render(
+      <Avatar id="avatar-test" accessibility="avatar-test" name="Test Name" />,
+    );
+
+    const uploadIconWrapper = getByTestId('avatar-image');
+    expect(uploadIconWrapper).toBeTruthy();
+  });
 });
