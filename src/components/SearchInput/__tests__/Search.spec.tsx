@@ -245,9 +245,37 @@ describe('<Search />', () => {
     );
 
     const component = getByTestId('testing_searching');
-    const icon = getByTestId('id_paperclip');
+    const icon = getByTestId('icon_paperclip');
 
     fireEvent.press(icon);
     expect(component.props.value).toBe('');
+  });
+
+  it('should call onFocus, onBlur, and onSubmit when events occur', () => {
+    const onFocus = jest.fn();
+    const onBlur = jest.fn();
+    const onSubmit = jest.fn();
+    const onChangeText = jest.fn();
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Search
+          id="test"
+          accessibility="Exibir ou ocultar inputs - eye"
+          onChange={onChangeText}
+          onFocus={onFocus}
+          onBlur={onBlur}
+          onSubmit={onSubmit}
+        />
+      </ThemeProvider>,
+    );
+
+    fireEvent(getByTestId('test'), 'focus');
+    expect(onFocus).toHaveBeenCalled();
+
+    fireEvent(getByTestId('test'), 'blur');
+    expect(onBlur).toHaveBeenCalled();
+
+    fireEvent(getByTestId('test'), 'onSubmitEditing');
+    expect(onSubmit).toHaveBeenCalled();
   });
 });

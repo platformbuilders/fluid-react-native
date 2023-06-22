@@ -75,4 +75,34 @@ describe('<UploadPhoto />', () => {
     );
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
+
+  it('should call onUpload when an image is selected', () => {
+    const onClearUpload = jest.fn();
+    const onUpload = jest.fn();
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <UploadPhoto
+          id="testing"
+          accessibility=""
+          onUpload={onUpload}
+          onClearUpload={onClearUpload}
+        />
+      </ThemeProvider>,
+    );
+
+    const component = getByTestId('testing');
+    fireEvent(component, 'onUpload', {
+      didCancel: false,
+      assets: [{ uri: 'image_uri' }],
+    });
+
+    expect(onUpload).toHaveBeenCalledWith({
+      didCancel: false,
+      assets: [{ uri: 'image_uri' }],
+    });
+
+    fireEvent(component, 'onClearUpload');
+
+    expect(onClearUpload).toHaveBeenCalled();
+  });
 });

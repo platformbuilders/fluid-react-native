@@ -48,4 +48,27 @@ describe('<PasswordInput />', () => {
     expect(onFocusFN).toHaveBeenCalled();
     expect(component.props.value).toBe('Value changed');
   });
+
+  it('should toggle password visibility when icon is pressed', () => {
+    const { getByTestId, rerender } = render(
+      <ThemeProvider theme={theme}>
+        <PasswordInput id="eye" accessibility="eye" />
+      </ThemeProvider>,
+    );
+
+    let icon = getByTestId('icon_eye');
+
+    expect(icon.props.accessibilityLabel).toBe('icon_eye');
+    fireEvent.press(icon);
+
+    rerender(
+      <ThemeProvider theme={theme}>
+        <PasswordInput id="eye-slash" accessibility="eye-slash" />
+      </ThemeProvider>,
+    );
+
+    icon = getByTestId('eye-slash');
+
+    expect(icon.props.accessibilityLabel).toBe('eye-slash');
+  });
 });

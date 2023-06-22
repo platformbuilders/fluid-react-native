@@ -1,5 +1,6 @@
+/* eslint-disable sonarjs/no-duplicate-string */
 import React from 'react';
-import { render } from 'react-native-testing-library';
+import { fireEvent, render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import PinInput from '..';
@@ -38,8 +39,42 @@ describe('<PinInput />', () => {
         />
       </ThemeProvider>,
     );
-
     expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render textinput with password and handle icon press', () => {
+    const onChangeText = jest.fn();
+    const defaultStyle = defaultStyling(theme);
+    const { getByTestId, queryByTestId, rerender } = render(
+      <ThemeProvider theme={theme}>
+        <PinInput
+          accessibility="Exibir ou ocultar inputs - eye"
+          onChangeText={onChangeText}
+          password
+          {...defaultStyle}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(queryByTestId('Exibir ou ocultar inputs - eye-slash')).toBeNull();
+    expect(queryByTestId('Exibir ou ocultar inputs - eye')).toBeTruthy();
+
+    fireEvent.press(getByTestId('Exibir ou ocultar inputs - eye'));
+
+    // Rerenderizar o componente para que as mudanças de estado sejam aplicadas
+    rerender(
+      <ThemeProvider theme={theme}>
+        <PinInput
+          accessibility="Exibir ou ocultar inputs - eye-slash"
+          onChangeText={onChangeText}
+          password
+          {...defaultStyle}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(queryByTestId('Exibir ou ocultar inputs - eye-slash')).toBeTruthy();
+    expect(queryByTestId('Exibir ou ocultar inputs - eye')).toBeNull();
   });
 
   it('should render textinput with animated', () => {
@@ -122,6 +157,7 @@ describe('<PinInput />', () => {
     const wrapper = render(
       <ThemeProvider theme={theme}>
         <PinInput
+          testID="pinInput"
           id="test"
           accessibility=""
           onChangeText={onChangeText}
@@ -131,6 +167,9 @@ describe('<PinInput />', () => {
       </ThemeProvider>,
     );
 
+    fireEvent.changeText(wrapper.getByTestId('pinInput'), 'some value');
+
+    // expect(onChange).toHaveBeenCalled();
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 

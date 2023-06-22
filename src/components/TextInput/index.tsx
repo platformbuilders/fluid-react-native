@@ -213,6 +213,7 @@ const TextInput: VFC<TextInputType> = ({
 
   const renderIcon = (iconProp: string, isLeft?: boolean) => (
     <Icon
+      testID={`icon_${iconProp || ''}`}
       type={iconType}
       id={`id_${iconProp}`}
       accessibility={`icon_${accessibility}`}

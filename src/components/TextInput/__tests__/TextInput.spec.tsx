@@ -49,4 +49,136 @@ describe('<TextInput />', () => {
     expect(onFocusFN).toHaveBeenCalled();
     expect(component.props.value).toBe('Value changed');
   });
+
+  it('should render with bottom line', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <TextInput id="test" accessibility="" withBottomline />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render without bottom line', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <TextInput id="test" accessibility="" withBottomline={false} />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render with icon and handle icon press', () => {
+    const onPressIcon = jest.fn();
+    const wrapper = render(
+      <ThemeProvider theme={theme}>
+        <TextInput
+          id="test"
+          accessibility=""
+          iconName="book"
+          onPressIcon={onPressIcon}
+        />
+      </ThemeProvider>,
+    );
+
+    console.log(wrapper);
+    // Simulate icon press
+    fireEvent.press(wrapper.getByTestId('icon_book'));
+
+    expect(onPressIcon).toHaveBeenCalled();
+  });
+  it('should render with props', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <TextInput
+          id="test"
+          accessibility=""
+          label="Name"
+          placeholder="Enter your name"
+          large
+          multiline
+          contrast
+          centered
+          autoFocus
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render textinput with error', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <TextInput id="test" accessibility="" error="Some error occurred" />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should handle right icon press', () => {
+    const onRightIconPress = jest.fn();
+    const wrapper = render(
+      <ThemeProvider theme={theme}>
+        <TextInput
+          id="test"
+          accessibility=""
+          rightIconName="right-icon"
+          onRightIconPress={onRightIconPress}
+        />
+      </ThemeProvider>,
+    );
+
+    fireEvent.press(wrapper.getByTestId('icon_right-icon'));
+
+    expect(onRightIconPress).toHaveBeenCalled();
+  });
+  it('should handle focus and blur animations', () => {
+    const { getByTestId, rerender } = render(
+      <ThemeProvider theme={theme}>
+        <TextInput
+          id="testing_textInput"
+          accessibility=""
+          label="Test"
+          suppressAnimation={false}
+          hidePlaceholderOnFocus={false}
+        />
+      </ThemeProvider>,
+    );
+
+    const component = getByTestId('testing_textInput');
+
+    fireEvent(component, 'focus');
+    rerender(
+      <ThemeProvider theme={theme}>
+        <TextInput
+          id="testing_textInput"
+          accessibility=""
+          label="Test"
+          value="test"
+          suppressAnimation={false}
+          hidePlaceholderOnFocus={false}
+        />
+      </ThemeProvider>,
+    );
+    fireEvent(component, 'blur');
+
+    expect(component.props.isPlaceholder).toBe(false);
+  });
+  it('should handle when label is empty', () => {
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <TextInput id="testing_textInput" accessibility="" label="" />
+      </ThemeProvider>,
+    );
+
+    const component = getByTestId('testing_textInput');
+
+    fireEvent(component, 'blur');
+
+    expect(component.props.isPlaceholder).toBe(false);
+  });
 });

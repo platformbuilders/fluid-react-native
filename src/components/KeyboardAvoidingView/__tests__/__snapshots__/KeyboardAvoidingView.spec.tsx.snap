@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Keyboard /> should render Keyboard 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <View />
+</View>
+`;
