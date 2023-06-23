@@ -4,7 +4,6 @@ import {
   launchImageLibrary,
 } from 'react-native-image-picker';
 import { formatToMonogram } from '@platformbuilders/helpers';
-import { ImageAvatarPlaceholder } from '../../assets/images';
 import { AvatarType } from '../../types';
 import Image from '../Image';
 import {
@@ -37,9 +36,7 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
     },
     ref,
   ) => {
-    const [visibleImage, setVisibleImage] = useState<string | undefined>(
-      ImageAvatarPlaceholder,
-    );
+    const [visibleImage, setVisibleImage] = useState<string | undefined>();
     const [uploadedImage, setUploadedImage] = useState<string | undefined>();
 
     const openPicker = (): Promise<void> => {
