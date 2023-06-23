@@ -1,1 +1,1 @@
-export { default as Placeholder } from './placeholder.png';
+export { default as ImagePlaceholder } from './placeholder.png';

@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import { fireEvent, render } from '@testing-library/react-native';
 import Avatar from '..';
-import { ImageAvatarPlaceholder as defaultAvatar } from '../../../assets/images';
+import { ImagePlaceholder as defaultAvatar } from '../../../assets/images';
 import theme from '../../../theme';
 
 const defaultAvatarUrl = 'https://avatars.githubusercontent.com/u/4726921?v=4';
