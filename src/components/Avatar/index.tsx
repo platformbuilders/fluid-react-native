@@ -39,7 +39,6 @@ const Avatar: React.FC<AvatarProps> = React.forwardRef(
     },
     ref,
   ) => {
-    console.log('LOG:  image:', image);
     const [visibleImage, setVisibleImage] = useState<ImageSource | undefined>();
     const [uploadedImage, setUploadedImage] = useState<string | undefined>();
 
