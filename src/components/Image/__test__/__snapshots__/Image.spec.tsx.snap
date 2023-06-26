@@ -18,11 +18,10 @@ exports[`<Image /> should render Image component correctly 1`] = `
       ]
     }
   >
-    <FastImageView
+    <Image
       accessibilityLabel="testing_image"
-      defaultSource={null}
-      onFastImageLoad={[Function]}
-      onFastImageLoadStart={[Function]}
+      onLoad={[Function]}
+      onLoadStart={[Function]}
       resizeMode="cover"
       source={
         {
@@ -30,13 +29,18 @@ exports[`<Image /> should render Image component correctly 1`] = `
         }
       }
       style={
-        {
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        }
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "tintColor": undefined,
+          },
+        ]
       }
       testID="testing"
     />
@@ -62,11 +66,10 @@ exports[`<Image /> should render with custom placeholder animation and container
       ]
     }
   >
-    <FastImageView
+    <Image
       accessibilityLabel="testing_image"
-      defaultSource={null}
-      onFastImageLoad={[Function]}
-      onFastImageLoadStart={[Function]}
+      onLoad={[Function]}
+      onLoadStart={[Function]}
       resizeMode="cover"
       source={
         {
@@ -74,13 +77,18 @@ exports[`<Image /> should render with custom placeholder animation and container
         }
       }
       style={
-        {
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        }
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "tintColor": undefined,
+          },
+        ]
       }
       testID="testing"
     />
@@ -106,11 +114,10 @@ exports[`<Image /> should render with custom placeholder animation color 1`] = `
       ]
     }
   >
-    <FastImageView
+    <Image
       accessibilityLabel="testing_image"
-      defaultSource={null}
-      onFastImageLoad={[Function]}
-      onFastImageLoadStart={[Function]}
+      onLoad={[Function]}
+      onLoadStart={[Function]}
       resizeMode="cover"
       source={
         {
@@ -118,13 +125,18 @@ exports[`<Image /> should render with custom placeholder animation color 1`] = `
         }
       }
       style={
-        {
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        }
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "tintColor": undefined,
+          },
+        ]
       }
       testID="testing"
     />
@@ -150,11 +162,10 @@ exports[`<Image /> should render with no placeholder 1`] = `
       ]
     }
   >
-    <FastImageView
+    <Image
       accessibilityLabel="testing_image"
-      defaultSource={null}
-      onFastImageLoad={[Function]}
-      onFastImageLoadStart={[Function]}
+      onLoad={[Function]}
+      onLoadStart={[Function]}
       resizeMode="cover"
       source={
         {
@@ -162,13 +173,18 @@ exports[`<Image /> should render with no placeholder 1`] = `
         }
       }
       style={
-        {
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        }
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "tintColor": undefined,
+          },
+        ]
       }
       testID="testing"
     />

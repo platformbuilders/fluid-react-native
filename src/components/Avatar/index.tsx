@@ -4,7 +4,7 @@ import {
   launchImageLibrary,
 } from 'react-native-image-picker';
 import { formatToMonogram } from '@platformbuilders/helpers';
-import { AvatarType } from '../../types';
+import { AvatarProps, ImageSource } from '../../types';
 import Image from '../Image';
 import {
   MonogramText,
@@ -14,7 +14,10 @@ import {
   Wrapper,
 } from './styles';
 
-const Avatar: React.FC<AvatarType> = React.forwardRef(
+const isValidURI = (value?: string): boolean =>
+  value ? /(?:https?|file):\/\/|www\.[^\s]+/.test(value) : false;
+
+const Avatar: React.FC<AvatarProps> = React.forwardRef(
   (
     {
       id,
@@ -36,7 +39,8 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
     },
     ref,
   ) => {
-    const [visibleImage, setVisibleImage] = useState<string | undefined>();
+    console.log('LOG:  image:', image);
+    const [visibleImage, setVisibleImage] = useState<ImageSource | undefined>();
     const [uploadedImage, setUploadedImage] = useState<string | undefined>();
 
     const openPicker = (): Promise<void> => {
@@ -87,6 +91,11 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
       }
     }, [uploadedImage]);
 
+    const source =
+      typeof visibleImage == 'string' && isValidURI(visibleImage)
+        ? { uri: visibleImage }
+        : visibleImage;
+
     return (
       <Wrapper
         id={id || accessibility}
@@ -103,7 +112,7 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
         <Image
           testID="avatar-image"
           displayPlaceholder={animatedLoading}
-          source={{ uri: visibleImage }}
+          source={source}
           resizeMode="cover"
           style={{ width: '101%', height: '101%' }}
         />

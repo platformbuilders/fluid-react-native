@@ -50,43 +50,7 @@ exports[`<Avatar /> should render Avatar 1`] = `
         {},
       ]
     }
-  >
-    <View
-      style={
-        [
-          {
-            "overflow": "hidden",
-          },
-          {
-            "height": "101%",
-            "width": "101%",
-          },
-        ]
-      }
-    >
-      <FastImageView
-        defaultSource={null}
-        onFastImageLoad={[Function]}
-        onFastImageLoadStart={[Function]}
-        resizeMode="cover"
-        source={
-          {
-            "uri": undefined,
-          }
-        }
-        style={
-          {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-        testID="avatar-image"
-      />
-    </View>
-  </View>
+  />
 </View>
 `;
 
@@ -140,43 +104,7 @@ exports[`<Avatar /> should render Avatar with all custom props 1`] = `
         {},
       ]
     }
-  >
-    <View
-      style={
-        [
-          {
-            "overflow": "hidden",
-          },
-          {
-            "height": "101%",
-            "width": "101%",
-          },
-        ]
-      }
-    >
-      <FastImageView
-        defaultSource={null}
-        onFastImageLoad={[Function]}
-        onFastImageLoadStart={[Function]}
-        resizeMode="cover"
-        source={
-          {
-            "uri": undefined,
-          }
-        }
-        style={
-          {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-        testID="avatar-image"
-      />
-    </View>
-  </View>
+  />
 </View>
 `;
 
@@ -230,43 +158,7 @@ exports[`<Avatar /> should render Avatar with border 1`] = `
         {},
       ]
     }
-  >
-    <View
-      style={
-        [
-          {
-            "overflow": "hidden",
-          },
-          {
-            "height": "101%",
-            "width": "101%",
-          },
-        ]
-      }
-    >
-      <FastImageView
-        defaultSource={null}
-        onFastImageLoad={[Function]}
-        onFastImageLoadStart={[Function]}
-        resizeMode="cover"
-        source={
-          {
-            "uri": undefined,
-          }
-        }
-        style={
-          {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-        testID="avatar-image"
-      />
-    </View>
-  </View>
+  />
 </View>
 `;
 
@@ -320,43 +212,7 @@ exports[`<Avatar /> should render Avatar with custom accessibility label 1`] = `
         {},
       ]
     }
-  >
-    <View
-      style={
-        [
-          {
-            "overflow": "hidden",
-          },
-          {
-            "height": "101%",
-            "width": "101%",
-          },
-        ]
-      }
-    >
-      <FastImageView
-        defaultSource={null}
-        onFastImageLoad={[Function]}
-        onFastImageLoadStart={[Function]}
-        resizeMode="cover"
-        source={
-          {
-            "uri": undefined,
-          }
-        }
-        style={
-          {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-        testID="avatar-image"
-      />
-    </View>
-  </View>
+  />
 </View>
 `;
 
@@ -410,43 +266,7 @@ exports[`<Avatar /> should render Avatar with custom border 1`] = `
         {},
       ]
     }
-  >
-    <View
-      style={
-        [
-          {
-            "overflow": "hidden",
-          },
-          {
-            "height": "101%",
-            "width": "101%",
-          },
-        ]
-      }
-    >
-      <FastImageView
-        defaultSource={null}
-        onFastImageLoad={[Function]}
-        onFastImageLoadStart={[Function]}
-        resizeMode="cover"
-        source={
-          {
-            "uri": undefined,
-          }
-        }
-        style={
-          {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-        testID="avatar-image"
-      />
-    </View>
-  </View>
+  />
 </View>
 `;
 
@@ -500,43 +320,7 @@ exports[`<Avatar /> should render Avatar with custom image 1`] = `
         {},
       ]
     }
-  >
-    <View
-      style={
-        [
-          {
-            "overflow": "hidden",
-          },
-          {
-            "height": "101%",
-            "width": "101%",
-          },
-        ]
-      }
-    >
-      <FastImageView
-        defaultSource={null}
-        onFastImageLoad={[Function]}
-        onFastImageLoadStart={[Function]}
-        resizeMode="cover"
-        source={
-          {
-            "uri": undefined,
-          }
-        }
-        style={
-          {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-        testID="avatar-image"
-      />
-    </View>
-  </View>
+  />
 </View>
 `;
 
@@ -590,43 +374,7 @@ exports[`<Avatar /> should render Avatar with custom size 1`] = `
         {},
       ]
     }
-  >
-    <View
-      style={
-        [
-          {
-            "overflow": "hidden",
-          },
-          {
-            "height": "101%",
-            "width": "101%",
-          },
-        ]
-      }
-    >
-      <FastImageView
-        defaultSource={null}
-        onFastImageLoad={[Function]}
-        onFastImageLoadStart={[Function]}
-        resizeMode="cover"
-        source={
-          {
-            "uri": undefined,
-          }
-        }
-        style={
-          {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-        testID="avatar-image"
-      />
-    </View>
-  </View>
+  />
 </View>
 `;
 
@@ -680,43 +428,7 @@ exports[`<Avatar /> should render Avatar with custom test id 1`] = `
         {},
       ]
     }
-  >
-    <View
-      style={
-        [
-          {
-            "overflow": "hidden",
-          },
-          {
-            "height": "101%",
-            "width": "101%",
-          },
-        ]
-      }
-    >
-      <FastImageView
-        defaultSource={null}
-        onFastImageLoad={[Function]}
-        onFastImageLoadStart={[Function]}
-        resizeMode="cover"
-        source={
-          {
-            "uri": undefined,
-          }
-        }
-        style={
-          {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-        testID="avatar-image"
-      />
-    </View>
-  </View>
+  />
 </View>
 `;
 
@@ -770,43 +482,7 @@ exports[`<Avatar /> should render Avatar with external image 1`] = `
         {},
       ]
     }
-  >
-    <View
-      style={
-        [
-          {
-            "overflow": "hidden",
-          },
-          {
-            "height": "101%",
-            "width": "101%",
-          },
-        ]
-      }
-    >
-      <FastImageView
-        defaultSource={null}
-        onFastImageLoad={[Function]}
-        onFastImageLoadStart={[Function]}
-        resizeMode="cover"
-        source={
-          {
-            "uri": undefined,
-          }
-        }
-        style={
-          {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-        testID="avatar-image"
-      />
-    </View>
-  </View>
+  />
 </View>
 `;
 
@@ -860,43 +536,7 @@ exports[`<Avatar /> should render Avatar with monogram 1`] = `
         {},
       ]
     }
-  >
-    <View
-      style={
-        [
-          {
-            "overflow": "hidden",
-          },
-          {
-            "height": "101%",
-            "width": "101%",
-          },
-        ]
-      }
-    >
-      <FastImageView
-        defaultSource={null}
-        onFastImageLoad={[Function]}
-        onFastImageLoadStart={[Function]}
-        resizeMode="cover"
-        source={
-          {
-            "uri": undefined,
-          }
-        }
-        style={
-          {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-        testID="avatar-image"
-      />
-    </View>
-  </View>
+  />
   <View
     size={50}
     style={
@@ -1084,43 +724,7 @@ exports[`<Avatar /> should render Avatar with styled monogram 1`] = `
         {},
       ]
     }
-  >
-    <View
-      style={
-        [
-          {
-            "overflow": "hidden",
-          },
-          {
-            "height": "101%",
-            "width": "101%",
-          },
-        ]
-      }
-    >
-      <FastImageView
-        defaultSource={null}
-        onFastImageLoad={[Function]}
-        onFastImageLoadStart={[Function]}
-        resizeMode="cover"
-        source={
-          {
-            "uri": undefined,
-          }
-        }
-        style={
-          {
-            "bottom": 0,
-            "left": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-          }
-        }
-        testID="avatar-image"
-      />
-    </View>
-  </View>
+  />
   <View
     size={50}
     style={

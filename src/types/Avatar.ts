@@ -1,9 +1,10 @@
 import { StyleProp, TextStyle } from 'react-native';
 import { PhotoQuality } from 'react-native-image-picker';
+import { ImageSource } from './Image';
 
-export type AvatarType = {
+export type AvatarProps = {
   ref?: any;
-  image?: string;
+  image?: ImageSource;
   name?: string;
   showBorder?: boolean;
   animatedLoading?: boolean;
@@ -19,4 +20,5 @@ export type AvatarType = {
   accessibility: string;
   accessibilityLabel?: string;
   testID?: string;
+  style?: any;
 };

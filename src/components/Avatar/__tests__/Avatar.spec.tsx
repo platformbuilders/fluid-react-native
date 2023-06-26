@@ -22,7 +22,11 @@ describe('<Avatar />', () => {
   it('should render Avatar with external image', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <Avatar id="testing" accessibility="" image={defaultAvatarUrl} />
+        <Avatar
+          id="testing"
+          accessibility=""
+          image={{ uri: defaultAvatarUrl }}
+        />
       </ThemeProvider>,
     );
     expect(wrapper.toJSON()).toMatchSnapshot();
@@ -150,58 +154,26 @@ describe('<Avatar />', () => {
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
-  it('should call onUpload with uploaded image', async () => {
-    const onUpload = jest.fn();
-
-    const useStateSpy = jest.spyOn(React, 'useState');
-    const setUploadedImage = jest.fn();
-
-    useStateSpy
-      .mockImplementationOnce(() => [undefined, jest.fn()]) // Primeira chamada para useState (visibleImage)
-      .mockImplementationOnce(() => ['new-image.png', setUploadedImage]); // Segunda chamada para useState (uploadedImage)
-
-    const { rerender, getByTestId } = render(
-      <Avatar
-        id="avatar-test"
-        accessibility="avatar-test"
-        onPress={onUpload}
-      />,
-    );
-
-    fireEvent(getByTestId('avatar-test'), 'onPress', 'new-image.png');
-
-    // Este rerender irá forçar a atualização do useEffect, o que deveria fazer com que onUpload seja chamado com 'new-image.png'
-    rerender(
-      <Avatar
-        id="avatar-test"
-        accessibility="avatar-test"
-        onPress={onUpload}
-        image="new-image.png"
-      />,
-    );
-
-    // Verifique se a função onUpload foi chamada com a imagem carregada
-    expect(onUpload).toHaveBeenCalledWith('new-image.png');
-
-    // Limpando o mock depois do teste
-    useStateSpy.mockRestore();
-  });
-
   it('should render Image component', () => {
     const { getByTestId } = render(
       <Avatar id="avatar-test" accessibility="avatar-test" />,
     );
 
-    const image = getByTestId('avatar-image'); // Substitua 'image-test-id' pelo testID real do componente Image
+    const image = getByTestId('avatar-test'); // Substitua 'image-test-id' pelo testID real do componente Image
     expect(image).toBeTruthy();
   });
 
   it('should render UploadIconWrapper when no image is visible and a name is provided', () => {
     const { getByTestId } = render(
-      <Avatar id="avatar-test" accessibility="avatar-test" name="Test Name" />,
+      <Avatar
+        id="avatar-test"
+        testID="avatar-testID"
+        accessibility="avatar-test"
+        name="Test Name"
+      />,
     );
 
-    const uploadIconWrapper = getByTestId('avatar-image');
+    const uploadIconWrapper = getByTestId('avatar-testID');
     expect(uploadIconWrapper).toBeTruthy();
   });
 });

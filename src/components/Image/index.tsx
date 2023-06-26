@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react';
+import { Image as RNImage } from 'react-native';
 import FastImage from 'react-native-fast-image';
 import { Placeholder, PlaceholderMedia, Shine } from 'rn-placeholder';
 import { ThemeContext } from 'styled-components';
@@ -7,15 +8,17 @@ import { Wrapper } from './styles';
 
 const Image: React.FC<ImageProps> = ({
   id,
+  testID,
   accessibility,
   containerStyle,
   displayPlaceholder = true,
   animationColor,
   animationContainerColor,
   style,
+  source,
   ...rest
 }) => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const theme = useContext(ThemeContext);
 
   const onImageLoad = () => {
@@ -53,14 +56,27 @@ const Image: React.FC<ImageProps> = ({
           />
         </Placeholder>
       )}
-      <FastImage
-        testID={id}
-        accessibilityLabel={accessibility}
-        onLoadStart={onImageLoadStart}
-        onLoad={onImageLoad}
-        style={style}
-        {...rest}
-      />
+      {(typeof source === 'object' || typeof source === 'string') && (
+        <FastImage
+          fallback
+          source={source as any}
+          testID={testID || id}
+          accessibilityLabel={accessibility}
+          onLoadStart={onImageLoadStart}
+          onLoad={onImageLoad}
+          style={style}
+          {...rest}
+        />
+      )}
+      {typeof source === 'number' && (
+        <RNImage
+          source={source as any}
+          testID={testID || id}
+          accessibilityLabel={accessibility}
+          style={style as any}
+          {...rest}
+        />
+      )}
     </Wrapper>
   );
 };
