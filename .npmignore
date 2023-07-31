@@ -30,3 +30,4 @@ example/
 metro.config.js
 react-native.config.js
 .npmrc
+.nvmrc
