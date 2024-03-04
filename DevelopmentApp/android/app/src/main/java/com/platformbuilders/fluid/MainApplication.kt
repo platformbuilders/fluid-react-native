@@ -1,4 +1,4 @@
-package com.fluiddocs
+package com.platformbuilders.fluid
 
 import android.app.Application
 import com.facebook.react.PackageList

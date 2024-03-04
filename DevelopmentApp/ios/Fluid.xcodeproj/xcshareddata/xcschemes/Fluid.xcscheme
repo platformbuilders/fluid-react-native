@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "fluidDocs.app"
-               BlueprintName = "fluidDocs"
-               ReferencedContainer = "container:fluidDocs.xcodeproj">
+               BuildableName = "Fluid.app"
+               BlueprintName = "Fluid"
+               ReferencedContainer = "container:Fluid.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "fluidDocsTests.xctest"
-               BlueprintName = "fluidDocsTests"
-               ReferencedContainer = "container:fluidDocs.xcodeproj">
+               BuildableName = "FluidTests.xctest"
+               BlueprintName = "FluidTests"
+               ReferencedContainer = "container:Fluid.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "fluidDocs.app"
-            BlueprintName = "fluidDocs"
-            ReferencedContainer = "container:fluidDocs.xcodeproj">
+            BuildableName = "Fluid.app"
+            BlueprintName = "Fluid"
+            ReferencedContainer = "container:Fluid.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "fluidDocs.app"
-            BlueprintName = "fluidDocs"
-            ReferencedContainer = "container:fluidDocs.xcodeproj">
+            BuildableName = "Fluid.app"
+            BlueprintName = "Fluid"
+            ReferencedContainer = "container:Fluid.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
