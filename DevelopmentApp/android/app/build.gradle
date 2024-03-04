@@ -51,28 +51,18 @@ react {
     // hermesFlags = ["-O", "-output-source-map"]
 }
 
-apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
 project.ext.vectoricons = [
     iconFontNames: [
-      "AntDesign.ttf",
-      "Fontisto.ttf",
-      "Entypo.ttf",
-      "Foundation.ttf",
-      "EvilIcons.ttf",
-      "Ionicons.ttf",
-      "Feather.ttf",
-      "MaterialCommunityIcons.ttf",
-      "FontAwesome.ttf",
-      "MaterialIcons.ttf",
-      "FontAwesome5_Brands.ttf",
-      "Octicons.ttf",
-      "FontAwesome5_Regular.ttf",
-      "SimpleLineIcons.ttf",
-      "FontAwesome5_Solid.ttf",
-      "Zocial.ttf"
+        'MaterialCommunityIcons.ttf',
+        'FontAwesome.ttf',
+        'FontAwesome5_Brands.ttf',
+        'FontAwesome5_Regular.ttf',
+        'FontAwesome5_Solid.ttf'
     ]
 ]
+
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
 /**
  * Set this to true to Run Proguard on Release builds to minify the Java bytecode.
@@ -148,7 +138,6 @@ dependencies {
     } else {
         implementation jscFlavor
     }
-    implementation project(':react-native-vector-icons')
 }
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
