@@ -1,6 +1,8 @@
 name: Storybook Building 🚀
 
-on: [push]
+on:
+  release:
+    types: [published]
 
 jobs:
   release-android:
