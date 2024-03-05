@@ -1,4 +1,3 @@
 <resources>
-    <string name="app_name">DevelopmentApp</string>
-    <string name="CodePushDeploymentKey">CodePushDeploymentKey</string>
+    <string name="app_name">Fluid</string>
 </resources>
