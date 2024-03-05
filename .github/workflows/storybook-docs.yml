@@ -1,8 +1,6 @@
 name: Storybook Building 🚀
 
-on:
-  release:
-    types: [released]
+on: [push]
 
 jobs:
   release-android:
@@ -10,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./DevelopmentApp
+        working-directory: DevelopmentApp
     steps:
       - uses: actions/checkout@v2
         with:
@@ -19,8 +17,10 @@ jobs:
         run: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
       - uses: actions/setup-node@v1
         with:
-          node-version: "16.x"
+          node-version: "18.x"
       - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "2.7.5"
       - name: Install Ubuntu dependencies
         run: |
           sudo apt update
