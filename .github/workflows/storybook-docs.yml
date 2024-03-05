@@ -10,12 +10,18 @@ jobs:
       run:
         working-directory: DevelopmentApp
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: Setup kernel for react native, increase watchers
         run: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-      - uses: actions/setup-node@v1
+
+      - name: Set up Java
+        uses: actions/setup-java@v2
+        with:
+          java-version: 17
+          distribution: "temurin"
+      - uses: actions/setup-node@v3
         with:
           node-version: "18.x"
       - name: Set NPM Variables
@@ -25,6 +31,7 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "2.7.5"
+          bundler-cache: true
       - name: Install Ubuntu dependencies
         run: |
           sudo apt update
@@ -38,4 +45,4 @@ jobs:
 
 
       - name: Build and Upload to Appetize
-        run: fastlane android prd
+        run: fastlane android appetize
