@@ -1,0 +1,35 @@
+name: Storybook Building 🚀
+
+on:
+  release:
+    types: [released]
+
+jobs:
+  release-android:
+    name: Build App
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./DevelopmentApp
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Setup kernel for react native, increase watchers
+        run: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "16.x"
+      - uses: ruby/setup-ruby@v1
+      - name: Install Ubuntu dependencies
+        run: |
+          sudo apt update
+          sudo apt install libcurl4-openssl-dev
+      - name: Install Fastlane
+        run: |
+          bundle install
+          gem install fastlane
+      - name: Install packages
+        run: yarn cache clean --all && yarn install
+      - name: Build and Upload to Appetize
+        run: fastlane android prd
