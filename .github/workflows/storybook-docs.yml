@@ -18,6 +18,10 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "18.x"
+      - name: Set NPM Variables
+        run: echo "$PACKAGES_NPMRC" > .npmrc
+        env:
+          PACKAGES_NPMRC: ${{ secrets.PACKAGES_NPMRC }}
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "2.7.5"
@@ -31,5 +35,7 @@ jobs:
           gem install fastlane
       - name: Install packages
         run: yarn cache clean --all && yarn install
+
+
       - name: Build and Upload to Appetize
         run: fastlane android prd
