@@ -15,10 +15,23 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 ## Android
 
-### android prd
+### android appetize
 
 ```sh
-[bundle exec] fastlane android prd
+[bundle exec] fastlane android appetize
+```
+
+
+
+----
+
+
+## iOS
+
+### ios appetize
+
+```sh
+[bundle exec] fastlane ios appetize
 ```
 
 
