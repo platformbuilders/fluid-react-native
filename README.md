@@ -3,7 +3,6 @@
 [![Build Status][check-badge]][workflows]
 [![npm][npm-badge]][npm]
 [![MIT][license-badge]][license]
-[![Docusaurus Firebase Deploy](https://github.com/platformbuilders/fluid-react-native/actions/workflows/docusaurus_release.yml/badge.svg)](https://github.com/platformbuilders/fluid-react-native/actions/workflows/docusaurus_release.yml)
 
 [npm-badge]: https://img.shields.io/npm/v/@platformbuilders/fluid-react-native.svg
 [npm]: https://www.npmjs.com/package/@platformbuilders/fluid-react-native
