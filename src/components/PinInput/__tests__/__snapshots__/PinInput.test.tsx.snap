@@ -13,7 +13,6 @@ exports[`<PinInput /> should render textinput 1`] = `
 >
   <View
     collapsable={false}
-    forwardedRef={[Function]}
     style={
       {
         "alignItems": "stretch",
@@ -39,7 +38,6 @@ exports[`<PinInput /> should render textinput 1`] = `
       <View
         accessibilityLabel="Insira o PIN 0"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -71,7 +69,6 @@ exports[`<PinInput /> should render textinput 1`] = `
       <View
         accessibilityLabel="Insira o PIN 1"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -103,7 +100,6 @@ exports[`<PinInput /> should render textinput 1`] = `
       <View
         accessibilityLabel="Insira o PIN 2"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -135,7 +131,6 @@ exports[`<PinInput /> should render textinput 1`] = `
       <View
         accessibilityLabel="Insira o PIN 3"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -210,7 +205,6 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
 >
   <View
     collapsable={false}
-    forwardedRef={[Function]}
     style={
       {
         "alignItems": "stretch",
@@ -236,7 +230,6 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
       <View
         accessibilityLabel="Insira o PIN 0"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -268,7 +261,6 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
       <View
         accessibilityLabel="Insira o PIN 1"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -300,7 +292,6 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
       <View
         accessibilityLabel="Insira o PIN 2"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -332,7 +323,6 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
       <View
         accessibilityLabel="Insira o PIN 3"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -407,7 +397,6 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
 >
   <View
     collapsable={false}
-    forwardedRef={[Function]}
     style={
       {
         "alignItems": "stretch",
@@ -433,7 +422,6 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
       <View
         accessibilityLabel="Insira o PIN 0"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -465,7 +453,6 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
       <View
         accessibilityLabel="Insira o PIN 1"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -497,7 +484,6 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
       <View
         accessibilityLabel="Insira o PIN 2"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -529,7 +515,6 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
       <View
         accessibilityLabel="Insira o PIN 3"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -604,7 +589,6 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
 >
   <View
     collapsable={false}
-    forwardedRef={[Function]}
     style={
       {
         "alignItems": "stretch",
@@ -630,7 +614,6 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
       <View
         accessibilityLabel="Insira o PIN 0"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -662,7 +645,6 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
       <View
         accessibilityLabel="Insira o PIN 1"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -694,7 +676,6 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
       <View
         accessibilityLabel="Insira o PIN 2"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -726,7 +707,6 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
       <View
         accessibilityLabel="Insira o PIN 3"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -802,7 +782,6 @@ exports[`<PinInput /> should render textinput with custom caption 1`] = `
   >
     <View
       collapsable={false}
-      forwardedRef={[Function]}
       style={
         {
           "alignItems": "stretch",
@@ -828,7 +807,6 @@ exports[`<PinInput /> should render textinput with custom caption 1`] = `
         <View
           accessibilityLabel="Insira o PIN 0"
           collapsable={false}
-          forwardedRef={[Function]}
           style={
             {
               "alignItems": "center",
@@ -860,7 +838,6 @@ exports[`<PinInput /> should render textinput with custom caption 1`] = `
         <View
           accessibilityLabel="Insira o PIN 1"
           collapsable={false}
-          forwardedRef={[Function]}
           style={
             {
               "alignItems": "center",
@@ -892,7 +869,6 @@ exports[`<PinInput /> should render textinput with custom caption 1`] = `
         <View
           accessibilityLabel="Insira o PIN 2"
           collapsable={false}
-          forwardedRef={[Function]}
           style={
             {
               "alignItems": "center",
@@ -924,7 +900,6 @@ exports[`<PinInput /> should render textinput with custom caption 1`] = `
         <View
           accessibilityLabel="Insira o PIN 3"
           collapsable={false}
-          forwardedRef={[Function]}
           style={
             {
               "alignItems": "center",
@@ -1022,7 +997,6 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
 >
   <View
     collapsable={false}
-    forwardedRef={[Function]}
     style={
       {
         "alignItems": "stretch",
@@ -1048,7 +1022,6 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       <View
         accessibilityLabel="Insira o PIN 0"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -1080,7 +1053,6 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       <View
         accessibilityLabel="Insira o PIN 1"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -1112,7 +1084,6 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       <View
         accessibilityLabel="Insira o PIN 2"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -1144,7 +1115,6 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       <View
         accessibilityLabel="Insira o PIN 3"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -1176,7 +1146,6 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       <View
         accessibilityLabel="Insira o PIN 4"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -1208,7 +1177,6 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       <View
         accessibilityLabel="Insira o PIN 5"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -1284,7 +1252,6 @@ exports[`<PinInput /> should render textinput with custom error message 1`] = `
   >
     <View
       collapsable={false}
-      forwardedRef={[Function]}
       style={
         {
           "alignItems": "stretch",
@@ -1310,7 +1277,6 @@ exports[`<PinInput /> should render textinput with custom error message 1`] = `
         <View
           accessibilityLabel="Insira o PIN 0"
           collapsable={false}
-          forwardedRef={[Function]}
           style={
             {
               "alignItems": "center",
@@ -1342,7 +1308,6 @@ exports[`<PinInput /> should render textinput with custom error message 1`] = `
         <View
           accessibilityLabel="Insira o PIN 1"
           collapsable={false}
-          forwardedRef={[Function]}
           style={
             {
               "alignItems": "center",
@@ -1374,7 +1339,6 @@ exports[`<PinInput /> should render textinput with custom error message 1`] = `
         <View
           accessibilityLabel="Insira o PIN 2"
           collapsable={false}
-          forwardedRef={[Function]}
           style={
             {
               "alignItems": "center",
@@ -1406,7 +1370,6 @@ exports[`<PinInput /> should render textinput with custom error message 1`] = `
         <View
           accessibilityLabel="Insira o PIN 3"
           collapsable={false}
-          forwardedRef={[Function]}
           style={
             {
               "alignItems": "center",
@@ -1506,7 +1469,6 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
 >
   <View
     collapsable={false}
-    forwardedRef={[Function]}
     style={
       {
         "alignItems": "stretch",
@@ -1532,7 +1494,6 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
       <View
         accessibilityLabel="Insira o PIN 0"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -1564,7 +1525,6 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
       <View
         accessibilityLabel="Insira o PIN 1"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -1596,7 +1556,6 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
       <View
         accessibilityLabel="Insira o PIN 2"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -1628,7 +1587,6 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
       <View
         accessibilityLabel="Insira o PIN 3"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -1704,7 +1662,6 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
 >
   <View
     collapsable={false}
-    forwardedRef={[Function]}
     style={
       {
         "alignItems": "stretch",
@@ -1730,7 +1687,6 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
       <View
         accessibilityLabel="Insira o PIN 0"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -1762,7 +1718,6 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
       <View
         accessibilityLabel="Insira o PIN 1"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -1794,7 +1749,6 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
       <View
         accessibilityLabel="Insira o PIN 2"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -1826,7 +1780,6 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
       <View
         accessibilityLabel="Insira o PIN 3"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -1901,7 +1854,6 @@ exports[`<PinInput /> should render textinput with error 1`] = `
 >
   <View
     collapsable={false}
-    forwardedRef={[Function]}
     style={
       {
         "alignItems": "stretch",
@@ -1927,7 +1879,6 @@ exports[`<PinInput /> should render textinput with error 1`] = `
       <View
         accessibilityLabel="Insira o PIN 0"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -1959,7 +1910,6 @@ exports[`<PinInput /> should render textinput with error 1`] = `
       <View
         accessibilityLabel="Insira o PIN 1"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -1991,7 +1941,6 @@ exports[`<PinInput /> should render textinput with error 1`] = `
       <View
         accessibilityLabel="Insira o PIN 2"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -2023,7 +1972,6 @@ exports[`<PinInput /> should render textinput with error 1`] = `
       <View
         accessibilityLabel="Insira o PIN 3"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -2098,7 +2046,6 @@ exports[`<PinInput /> should render textinput with password 1`] = `
 >
   <View
     collapsable={false}
-    forwardedRef={[Function]}
     style={
       {
         "alignItems": "stretch",
@@ -2124,7 +2071,6 @@ exports[`<PinInput /> should render textinput with password 1`] = `
       <View
         accessibilityLabel="Insira o PIN 0"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -2156,7 +2102,6 @@ exports[`<PinInput /> should render textinput with password 1`] = `
       <View
         accessibilityLabel="Insira o PIN 1"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -2188,7 +2133,6 @@ exports[`<PinInput /> should render textinput with password 1`] = `
       <View
         accessibilityLabel="Insira o PIN 2"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -2220,7 +2164,6 @@ exports[`<PinInput /> should render textinput with password 1`] = `
       <View
         accessibilityLabel="Insira o PIN 3"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -2366,7 +2309,6 @@ exports[`<PinInput /> should render textinput with value 1`] = `
 >
   <View
     collapsable={false}
-    forwardedRef={[Function]}
     style={
       {
         "alignItems": "stretch",
@@ -2392,7 +2334,6 @@ exports[`<PinInput /> should render textinput with value 1`] = `
       <View
         accessibilityLabel="Insira o PIN 0"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -2426,7 +2367,6 @@ exports[`<PinInput /> should render textinput with value 1`] = `
       <View
         accessibilityLabel="Insira o PIN 1"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -2460,7 +2400,6 @@ exports[`<PinInput /> should render textinput with value 1`] = `
       <View
         accessibilityLabel="Insira o PIN 2"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",
@@ -2494,7 +2433,6 @@ exports[`<PinInput /> should render textinput with value 1`] = `
       <View
         accessibilityLabel="Insira o PIN 3"
         collapsable={false}
-        forwardedRef={[Function]}
         style={
           {
             "alignItems": "center",

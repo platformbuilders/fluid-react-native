@@ -4,10 +4,11 @@ import { getTheme } from '@platformbuilders/theme-toolkit';
 import Touchable from '../Touchable';
 import TypographyComponent from '../Typography';
 
-const primaryColor = getTheme('brand.primary.main');
 const textColor = getTheme('text.main');
 const spacingSm = getTheme('spacing.sm');
 const opacityOverlay = getTheme('opacity.overlay');
+
+const infoMain = getTheme('info.main');
 
 export const Wrapper = styled(Touchable)`
   flex-direction: row;
@@ -19,8 +20,8 @@ export const containerStyle = {
 };
 
 export const CheckBox = styled(DefaultCheckbox).attrs((props: any) => ({
-  checkBoxColor: `${primaryColor(props)}`,
-  checkedCheckBoxColor: `${primaryColor(props)}`,
+  checkBoxColor: `${infoMain(props)}`,
+  checkedCheckBoxColor: `${infoMain(props)}`,
 }))<{ testID?: string; accessibilityLabel?: string }>``;
 
 export const Label = styled(TypographyComponent).attrs({

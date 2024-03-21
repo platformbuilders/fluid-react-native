@@ -41,7 +41,7 @@ export const Icon: FC<IconType> = ({
     [IconFonts.FALight]: FaLight,
     [IconFonts.FARegular]: FaRegular,
     [IconFonts.FASolid]: FaSolid,
-  };
+  } as Record<string, any>;
 
   const IconComponent = iconSet[type];
 

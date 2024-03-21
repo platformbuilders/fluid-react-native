@@ -865,7 +865,6 @@ exports[`<Button /> should render button with loading 1`] = `
         colorFilters={[]}
         contrast={false}
         enableMergePathsAndroidForKitKatAndAbove={false}
-        forwardedRef={[Function]}
         loop={true}
         onAnimationFinish={[Function]}
         progress={0}
