@@ -5,6 +5,12 @@ import { ThemeProvider } from 'styled-components/native';
 import UploadPhoto from '..';
 import theme from '../../../theme';
 
+jest.mock('react-native-camera', () => ({
+  RNCamera: jest.fn().mockImplementation(() => {
+    return <></>;
+  }),
+}));
+
 describe('<UploadPhoto />', () => {
   it('should render UploadPhoto', () => {
     const wrapper = renderer.create(

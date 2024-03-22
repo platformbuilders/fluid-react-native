@@ -12,13 +12,13 @@
 [check-badge]: https://github.com/platformbuilders/fluid-react-native/workflows/check/badge.svg
 
 # Fluid React Native
-A Fluid React Native é uma biblioteca de componentes UI pronta para uso, desenvolvida pela Platform Builders. Ela foi criada com o objetivo de acelerar o processo de desenvolvimento de aplicativos React Native, oferecendo uma ampla variedade de componentes prontos para serem utilizados.
 
+A Fluid React Native é uma biblioteca de componentes UI pronta para uso, desenvolvida pela Platform Builders. Ela foi criada com o objetivo de acelerar o processo de desenvolvimento de aplicativos React Native, oferecendo uma ampla variedade de componentes prontos para serem utilizados.
 
 **Instalação**
 
     npm install @platformbuilders/fluid-react-native
-	//ou
+    //ou
     yarn add @platformbuilders/fluid-react-native
 
 **Uso**
@@ -26,7 +26,7 @@ Após a instalação, você pode importar e utilizar os componentes da Fluid Rea
 
     import React from 'react';
     import { Button } from '@platformbuilders/fluid-react-native';
-    
+
     const App = () => {
       return (
         <Button title="Clique aqui" onPress={() => console.log('Botão clicado!')} />
@@ -43,35 +43,35 @@ Crie um novo arquivo para o seu componente. Por exemplo, MeuComponente.js.
         import React from 'react';
         import { Text } from 'react-native';
         const MeuComponente = () => {
-	        return (
-		        <Text>Olá, Mundo!</Text>
-		     );
-	    }
-	    export default MeuComponente;
+            return (
+    	        <Text>Olá, Mundo!</Text>
+    	     );
+        }
+        export default MeuComponente;
 
-  
-  No arquivo src/components/index.ts exporte seu novo componente:
+No arquivo src/components/index.ts exporte seu novo componente:
 
     export { default  as  MeuComponente } from  './MeuComponente';
 
-***Não esqueça de criar testes para seu novo componente**
-1.  Crie um arquivo de teste para o seu componente. Por exemplo, `MeuComponente.spec.js`. 
-2. Escreva um teste para verificar se o componente é renderizado corretamente:
+**\*Não esqueça de criar testes para seu novo componente**
 
-    	import React from 'react';
+1.  Crie um arquivo de teste para o seu componente. Por exemplo, `MeuComponente.spec.js`.
+2.  Escreva um teste para verificar se o componente é renderizado corretamente:
+
+        import React from 'react';
         import { render, getByText } from 'react-native-testing-library';
         import MeuComponente from './MeuComponente';
-    	describe('MeuComponente', () => {
-   	      it('deve renderizar corretamente', () => {
-   	        const { getByText } = render(<MeuComponente />);
-   	        const textoElement = getByText('Olá, Mundo!');
-   	        expect(textElement).toBeDefined();
-   	      });
-   	    });
-    
+        describe('MeuComponente', () => {
+          it('deve renderizar corretamente', () => {
+            const { getByText } = render(<MeuComponente />);
+            const textoElement = getByText('Olá, Mundo!');
+            expect(textElement).toBeDefined();
+          });
+        });
+
     Neste exemplo, estamos verificando se o texto "Olá, Mundo!" é renderizado corretamente no componente `MeuComponente`.
-    
-6.  Execute os testes para verificar se o componente está funcionando corretamente. No seu terminal, execute o seguinte comando:
+
+3.  Execute os testes para verificar se o componente está funcionando corretamente. No seu terminal, execute o seguinte comando:
 
         npm test
         // ou

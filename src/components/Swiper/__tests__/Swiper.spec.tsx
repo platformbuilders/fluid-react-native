@@ -12,6 +12,12 @@ const mockData = [
   },
 ];
 
+jest.mock('react-native-swiper-flatlist', () => {
+  const SwiperFlatList = ({ children }) => children;
+  const Pagination = () => null;
+  return { SwiperFlatList, Pagination };
+});
+
 describe('<Swiper />', () => {
   it('should render swiper by renderItems', () => {
     const wrapper = renderer.create(

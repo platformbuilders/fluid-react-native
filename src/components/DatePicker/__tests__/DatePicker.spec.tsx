@@ -6,6 +6,19 @@ import theme from '../../../theme';
 
 jest.useFakeTimers().setSystemTime(new Date('2020-01-01').getTime());
 
+jest.mock('react-native-datepicker', () => {
+  const Mock = jest.fn().mockImplementation(() => {
+    return <></>;
+  });
+
+  return {
+    DatePickerProps: {},
+    DatePickerCustomStylesProps: {},
+    default: Mock,
+    __esModule: true,
+  };
+});
+
 describe('<DatePicker />', () => {
   it('should render datepicker', () => {
     const wrapper = renderer.create(

@@ -14,9 +14,6 @@ npm-debug.log
 .jest
 coverage
 
-#Development App
-DevelopmentApp
-
 #storybook
 storybook/
 
