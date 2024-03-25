@@ -37,8 +37,9 @@
   "exclude": [
     "node_modules",
     "dist",
-    "documentation",
     "index.js",
-    "src/**/*.spec.{ts,tsx}"
+    "**/*.spec.tsx",
+    "**/*.stories.tsx",
+    "**/test"
   ]
 }

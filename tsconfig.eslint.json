@@ -4,7 +4,6 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     ".eslintrc.js",
-    "react-native.config.js",
     "metro.config.js",
     ".prettierrc.js",
     "commitlint.config.js",

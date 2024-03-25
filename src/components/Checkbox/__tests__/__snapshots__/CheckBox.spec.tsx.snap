@@ -39,26 +39,6 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
   }
   testID="checbox de "
 >
-  <Text
-    accessibilityLabel=""
-    lineHeightVariant="min"
-    style={
-      [
-        {
-          "color": "#444444",
-          "fontSize": 15,
-          "lineHeight": 18,
-        },
-        {
-          "color": "#444444",
-          "flexDirection": "row",
-          "marginLeft": 8,
-          "opacity": 0.8,
-        },
-      ]
-    }
-    variant="md"
-  />
   <View
     accessibilityValue={
       {
@@ -102,7 +82,7 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
         }
         style={
           {
-            "tintColor": "#4255EF",
+            "tintColor": "#42CCD4",
           }
         }
       />

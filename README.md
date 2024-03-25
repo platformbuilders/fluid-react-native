@@ -1,79 +1,106 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# @platformbuilders/fluid-react-native
 
-# Getting Started
+[![Build Status][check-badge]][workflows]
+[![npm][npm-badge]][npm]
+[![MIT][license-badge]][license]
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+[npm-badge]: https://img.shields.io/npm/v/@platformbuilders/fluid-react-native.svg
+[npm]: https://www.npmjs.com/package/@platformbuilders/fluid-react-native
+[license-badge]: https://img.shields.io/dub/l/vibe-d.svg
+[license]: https://raw.githubusercontent.com/platformbuilders/fluid-react-native/master/LICENSE.md
+[workflows]: https://github.com/platformbuilders/fluid-react-native/actions
+[check-badge]: https://github.com/platformbuilders/fluid-react-native/workflows/check/badge.svg
 
-## Step 1: Start the Metro Server
+# Fluid React Native
+A Fluid React Native é uma biblioteca de componentes UI pronta para uso, desenvolvida pela Platform Builders. Ela foi criada com o objetivo de acelerar o processo de desenvolvimento de aplicativos React Native, oferecendo uma ampla variedade de componentes prontos para serem utilizados.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+**Instalação**
 
-```bash
-# using npm
-npm start
+    npm install @platformbuilders/fluid-react-native
+	//ou
+    yarn add @platformbuilders/fluid-react-native
 
-# OR using Yarn
-yarn start
-```
+**Uso**
+Após a instalação, você pode importar e utilizar os componentes da Fluid React Native em seu aplicativo. Aqui está um exemplo básico de como utilizar um botão da Fluid:
 
-## Step 2: Start your Application
+    import React from 'react';
+    import { Button } from '@platformbuilders/fluid-react-native';
+    
+    const App = () => {
+      return (
+        <Button title="Clique aqui" onPress={() => console.log('Botão clicado!')} />
+      );
+    }
+    export default App;
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+## Como criar um componente na Fluid
 
-### For Android
+Para criar um novo componente na Fluid React Native, você pode seguir os seguintes passos:
 
-```bash
-# using npm
-npm run android
+Crie um novo arquivo para o seu componente. Por exemplo, MeuComponente.js.
 
-# OR using Yarn
-yarn android
-```
+        import React from 'react';
+        import { Text } from 'react-native';
+        const MeuComponente = () => {
+	        return (
+		        <Text>Olá, Mundo!</Text>
+		     );
+	    }
+	    export default MeuComponente;
 
-### For iOS
+  
+  No arquivo src/components/index.ts exporte seu novo componente:
 
-```bash
-# using npm
-npm run ios
+    export { default  as  MeuComponente } from  './MeuComponente';
 
-# OR using Yarn
-yarn ios
-```
+***Não esqueça de criar testes para seu novo componente**
+1.  Crie um arquivo de teste para o seu componente. Por exemplo, `MeuComponente.spec.js`. 
+2. Escreva um teste para verificar se o componente é renderizado corretamente:
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+    	import React from 'react';
+        import { render, getByText } from 'react-native-testing-library';
+        import MeuComponente from './MeuComponente';
+    	describe('MeuComponente', () => {
+   	      it('deve renderizar corretamente', () => {
+   	        const { getByText } = render(<MeuComponente />);
+   	        const textoElement = getByText('Olá, Mundo!');
+   	        expect(textElement).toBeDefined();
+   	      });
+   	    });
+    
+    Neste exemplo, estamos verificando se o texto "Olá, Mundo!" é renderizado corretamente no componente `MeuComponente`.
+    
+6.  Execute os testes para verificar se o componente está funcionando corretamente. No seu terminal, execute o seguinte comando:
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+        npm test
+        // ou
+        yarn test
 
-## Step 3: Modifying your App
+## Como testar usando o Yalc
 
-Now that you have successfully run the app, let's modify it.
+Certifique-se de ter o Yalc instalado globalmente em sua máquina. Se ainda não o tiver, você pode instalá-lo executando o seguinte comando:
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+    npm install -g yalc
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+Navegue até o diretório raiz do projeto da Fluid React Native.
 
-## Congratulations! :tada:
+Execute o comando yalc publish para publicar a biblioteca localmente:
 
-You've successfully run and modified your React Native App. :partying_face:
+    yalc publish
 
-### Now what?
+Isso fará com que a biblioteca Fluid React Native seja disponibilizada localmente por meio do Yalc.
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+No seu projeto React Native, navegue até o diretório raiz e execute o comando yalc add seguido do nome da biblioteca. Por exemplo:
 
-# Troubleshooting
+    yalc add @platformbuilders/fluid-react-native
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+Isso adicionará a biblioteca Fluid React Native ao seu projeto localmente através do Yalc.
 
-# Learn More
+Agora você pode importar e utilizar os componentes da Fluid React Native em seu aplicativo normalmente.
 
-To learn more about React Native, take a look at the following resources:
+Sempre que você fizer alterações na biblioteca Fluid React Native, execute o comando yalc push no diretório raiz do projeto para atualizar o pacote no seu projeto React Native:
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+    yalc publish --push
+
+Isso fará com que as alterações sejam refletidas automaticamente no seu projeto React Native.
