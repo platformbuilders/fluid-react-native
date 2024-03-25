@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from 'react-native';
-import Header from '@platformbuilders/fluid-react-native/dist/components/Header';
 import type { Meta } from '@storybook/react';
+import Header from '.';
 
 const meta: Meta<typeof Header> = {
   title: 'Header',
