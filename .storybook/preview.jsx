@@ -1,13 +1,7 @@
 import { View } from "react-native";
 import { ThemeProvider } from "styled-components";
 import { themeFormatter } from '@platformbuilders/theme-toolkit';
-import darkTheme from './theme/dark.json';
-import * as animations from './theme/animations';
-
-const theme = {
-  ...themeFormatter(darkTheme),
-  ...animations,
-};
+import theme from '../src/theme';
 
 /** @type{import("@storybook/react").Preview} */
 const preview = {
