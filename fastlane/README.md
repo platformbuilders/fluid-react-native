@@ -15,23 +15,10 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 ## Android
 
-### android appetize
+### android storybook
 
 ```sh
-[bundle exec] fastlane android appetize
-```
-
-
-
-----
-
-
-## iOS
-
-### ios appetize
-
-```sh
-[bundle exec] fastlane ios appetize
+[bundle exec] fastlane android storybook
 ```
 
 
