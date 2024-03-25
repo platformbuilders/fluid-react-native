@@ -4,6 +4,11 @@ import { ThemeProvider } from 'styled-components/native';
 import Typography from '..';
 import theme from '../../../theme';
 
+beforeEach(() => {
+  React.useContext = jest.fn();
+  React.useMemo = jest.fn();
+});
+
 describe('<Typography />', () => {
   it('should render and match snapshot for default props', () => {
     const render = renderer.create(
@@ -11,6 +16,7 @@ describe('<Typography />', () => {
         <Typography accessibility="" />
       </ThemeProvider>,
     );
+
     expect(render.toJSON()).toMatchSnapshot();
   });
 
@@ -83,6 +89,7 @@ describe('<Typography />', () => {
         <Typography accessibility="" variant="xxs" />
       </ThemeProvider>,
     );
+
     expect(render.toJSON()).toMatchSnapshot();
   });
 });

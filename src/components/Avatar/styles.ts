@@ -49,7 +49,7 @@ export const UploadIconWrapper = styled.View<IconWrapperProps>`
   background-color: ${brandPrimary};
 `;
 
-export const UploadIcon = styled(Icon).attrs({ name: 'camera' })`
+export const UploadIcon = styled(Icon)`
   color: ${brandAccent};
 `;
 

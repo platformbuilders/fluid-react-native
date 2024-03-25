@@ -30,7 +30,7 @@ export const Icon: FC<IconType> = ({
   ...rest
 }) => {
   const iconName = name?.charAt(0).toUpperCase() + name?.slice(1);
-  const bundleName = `Icon${iconName}`;
+  const bundleName = `Icon${iconName}` as keyof typeof SvgIcons;
   const svgIcons: any = SvgIcons[bundleName];
   const Svg: any = iconSets ? iconSets[bundleName] : svgIcons;
 
@@ -43,7 +43,7 @@ export const Icon: FC<IconType> = ({
     [IconFonts.FASolid]: FaSolid,
   };
 
-  const IconComponent = iconSet[type];
+  const IconComponent = iconSet[type] as any;
 
   return (
     <Animated.View style={style}>

@@ -61,7 +61,6 @@ exports[`<Accordion /> should render Accordion 1`] = `
     >
       <View
         collapsable={false}
-        forwardedRef={[Function]}
         onLayout={[Function]}
         style={{}}
       >
@@ -137,7 +136,6 @@ exports[`<Accordion /> should render Accordion with body custom 1`] = `
     >
       <View
         collapsable={false}
-        forwardedRef={[Function]}
         onLayout={[Function]}
         style={{}}
       >
@@ -227,7 +225,6 @@ exports[`<Accordion /> should render Accordion with content custom 1`] = `
     >
       <View
         collapsable={false}
-        forwardedRef={[Function]}
         onLayout={[Function]}
         style={{}}
       >
@@ -309,7 +306,6 @@ exports[`<Accordion /> should render Accordion with header custom 1`] = `
     >
       <View
         collapsable={false}
-        forwardedRef={[Function]}
         onLayout={[Function]}
         style={{}}
       >
@@ -452,7 +448,6 @@ exports[`<Accordion /> should render Accordion with icon 1`] = `
     >
       <View
         collapsable={false}
-        forwardedRef={[Function]}
         onLayout={[Function]}
         style={{}}
       >
@@ -595,7 +590,6 @@ exports[`<Accordion /> should render Accordion with icon color grey inactive 1`]
     >
       <View
         collapsable={false}
-        forwardedRef={[Function]}
         onLayout={[Function]}
         style={{}}
       >
@@ -738,7 +732,6 @@ exports[`<Accordion /> should render Accordion with icon color red 1`] = `
     >
       <View
         collapsable={false}
-        forwardedRef={[Function]}
         onLayout={[Function]}
         style={{}}
       >
@@ -881,7 +874,6 @@ exports[`<Accordion /> should render Accordion with icon down text custom 1`] = 
     >
       <View
         collapsable={false}
-        forwardedRef={[Function]}
         onLayout={[Function]}
         style={{}}
       >
@@ -1024,7 +1016,6 @@ exports[`<Accordion /> should render Accordion with icon up text custom 1`] = `
     >
       <View
         collapsable={false}
-        forwardedRef={[Function]}
         onLayout={[Function]}
         style={{}}
       >
@@ -1100,7 +1091,6 @@ exports[`<Accordion /> should render Accordion with markdown 1`] = `
     >
       <View
         collapsable={false}
-        forwardedRef={[Function]}
         onLayout={[Function]}
         style={{}}
       >
@@ -1205,7 +1195,6 @@ exports[`<Accordion /> should render Accordion with onChange function 1`] = `
     >
       <View
         collapsable={false}
-        forwardedRef={[Function]}
         onLayout={[Function]}
         style={{}}
       >
@@ -1293,7 +1282,6 @@ exports[`<Accordion /> should render Accordion with title custom 1`] = `
     >
       <View
         collapsable={false}
-        forwardedRef={[Function]}
         onLayout={[Function]}
         style={{}}
       >
