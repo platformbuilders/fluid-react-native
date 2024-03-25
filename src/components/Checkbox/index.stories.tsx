@@ -24,7 +24,6 @@ const meta: Meta<typeof Checkbox> = {
     id: 'checkbox-id',
     label: 'Habilitar Recurso',
     labelStyle: { color: '#37ABA2' },
-    error: 'Não marque esta opção!',
   },
   parameters: {
     notes:
@@ -35,3 +34,10 @@ const meta: Meta<typeof Checkbox> = {
 export default meta;
 
 export const Default = {};
+
+export const Errors = {
+  args: {
+    ...meta.args,
+    error: 'Não marque esta opção!',
+  },
+};
