@@ -22,9 +22,8 @@ const meta: Meta<typeof Checkbox> = {
   args: {
     accessibility: 'Caixa de seleção',
     id: 'checkbox-id',
-    label: 'label',
-    labelBefore: 'Habilitar Recurso',
-    labelStyle: { color: '#362' },
+    label: 'Habilitar Recurso',
+    labelStyle: { color: '#37ABA2' },
     error: 'Não marque esta opção!',
   },
   parameters: {
