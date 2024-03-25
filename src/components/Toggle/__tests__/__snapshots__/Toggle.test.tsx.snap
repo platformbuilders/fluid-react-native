@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ToggleButton /> should render component with custom thumb color 1`] = `
+<RCTSwitch
+  accessibilityRole="switch"
+  disabled={false}
+  onChange={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  onTintColor="red30"
+  style={
+    [
+      {
+        "height": 31,
+        "width": 51,
+      },
+      [
+        [
+          {},
+        ],
+        {
+          "backgroundColor": "blue4D",
+          "borderRadius": 16,
+        },
+      ],
+    ]
+  }
+  thumbColorProps={
+    {
+      "falseColor": "blue",
+      "trueColor": "red",
+    }
+  }
+  thumbTintColor="red"
+  tintColor="#dddddd"
+  value={true}
+/>
+`;
+
+exports[`<ToggleButton /> should render component with custom track color 1`] = `
+<RCTSwitch
+  accessibilityRole="switch"
+  disabled={false}
+  onChange={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  onTintColor="red"
+  style={
+    [
+      {
+        "height": 31,
+        "width": 51,
+      },
+      [
+        [
+          {},
+        ],
+        {
+          "backgroundColor": "blue",
+          "borderRadius": 16,
+        },
+      ],
+    ]
+  }
+  thumbTintColor="#4255EF"
+  tintColor="blue"
+  trackColorProps={
+    {
+      "falseColor": "blue",
+      "trueColor": "red",
+    }
+  }
+  value={true}
+/>
+`;
+
+exports[`<ToggleButton /> should render toggle component 1`] = `
+<RCTSwitch
+  accessibilityRole="switch"
+  disabled={false}
+  onChange={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  onTintColor="#4255EF30"
+  style={
+    [
+      {
+        "height": 31,
+        "width": 51,
+      },
+      [
+        [
+          {},
+        ],
+        {
+          "backgroundColor": "#d1d1d14D",
+          "borderRadius": 16,
+        },
+      ],
+    ]
+  }
+  thumbTintColor="#4255EF"
+  tintColor="#dddddd"
+  value={true}
+/>
+`;
