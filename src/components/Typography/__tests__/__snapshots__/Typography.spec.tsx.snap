@@ -4,6 +4,15 @@ exports[`<Typography /> should render and match snapshot for default props 1`] =
 <Text
   accessibilityLabel="undefined"
   lineHeightVariant="min"
+  style={
+    [
+      {
+        "color": "",
+        "fontSize": 16,
+        "lineHeight": 0,
+      },
+    ]
+  }
   testID="undefined"
   variant="md"
 />
@@ -13,6 +22,15 @@ exports[`<Typography /> should render and match snapshot for variant lg 1`] = `
 <Text
   accessibilityLabel="undefined"
   lineHeightVariant="min"
+  style={
+    [
+      {
+        "color": "",
+        "fontSize": 16,
+        "lineHeight": 0,
+      },
+    ]
+  }
   testID="undefined"
   variant="lg"
 />
@@ -22,6 +40,15 @@ exports[`<Typography /> should render and match snapshot for variant max 1`] = `
 <Text
   accessibilityLabel="undefined"
   lineHeightVariant="min"
+  style={
+    [
+      {
+        "color": "",
+        "fontSize": 16,
+        "lineHeight": 0,
+      },
+    ]
+  }
   testID="undefined"
   variant="max"
 />
@@ -31,6 +58,15 @@ exports[`<Typography /> should render and match snapshot for variant md 1`] = `
 <Text
   accessibilityLabel="undefined"
   lineHeightVariant="min"
+  style={
+    [
+      {
+        "color": "",
+        "fontSize": 16,
+        "lineHeight": 0,
+      },
+    ]
+  }
   testID="undefined"
   variant="md"
 />
@@ -40,6 +76,15 @@ exports[`<Typography /> should render and match snapshot for variant min 1`] = `
 <Text
   accessibilityLabel="undefined"
   lineHeightVariant="min"
+  style={
+    [
+      {
+        "color": "",
+        "fontSize": 16,
+        "lineHeight": 0,
+      },
+    ]
+  }
   testID="undefined"
   variant="min"
 />
@@ -49,6 +94,15 @@ exports[`<Typography /> should render and match snapshot for variant xl 1`] = `
 <Text
   accessibilityLabel="undefined"
   lineHeightVariant="min"
+  style={
+    [
+      {
+        "color": "",
+        "fontSize": 16,
+        "lineHeight": 0,
+      },
+    ]
+  }
   testID="undefined"
   variant="xl"
 />
@@ -58,6 +112,15 @@ exports[`<Typography /> should render and match snapshot for variant xs 1`] = `
 <Text
   accessibilityLabel="undefined"
   lineHeightVariant="min"
+  style={
+    [
+      {
+        "color": "",
+        "fontSize": 16,
+        "lineHeight": 0,
+      },
+    ]
+  }
   testID="undefined"
   variant="xs"
 />
@@ -67,6 +130,15 @@ exports[`<Typography /> should render and match snapshot for variant xxl 1`] = `
 <Text
   accessibilityLabel="undefined"
   lineHeightVariant="min"
+  style={
+    [
+      {
+        "color": "",
+        "fontSize": 16,
+        "lineHeight": 0,
+      },
+    ]
+  }
   testID="undefined"
   variant="xxl"
 />
@@ -76,6 +148,15 @@ exports[`<Typography /> should render and match snapshot for variant xxs 1`] = `
 <Text
   accessibilityLabel="undefined"
   lineHeightVariant="min"
+  style={
+    [
+      {
+        "color": "",
+        "fontSize": 16,
+        "lineHeight": 0,
+      },
+    ]
+  }
   testID="undefined"
   variant="xxs"
 />
