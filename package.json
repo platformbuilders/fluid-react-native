@@ -91,7 +91,7 @@
     "styled-components": ">=5.3.11",
     "@babel/core": "^7.20.0",
     "@babel/preset-env": "^7.20.0",
-    "@babel/runtime": "^7.20.13",
+    "@babel/runtime": "7.22.6",
     "@platformbuilders/eslint-config-builders": "1.0.2",
     "@react-native-async-storage/async-storage": "1.22.2",
     "@react-native-community/datetimepicker": "7.6.1",
