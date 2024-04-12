@@ -7,11 +7,9 @@ export type CheckBoxType = {
   accessibility?: string;
   checked?: boolean;
   label?: ReactElement | string;
-  labelBefore?: ReactElement | string;
   error?: string;
   onPress?(): void;
   labelStyle?: StyleProp<TextStyle>;
-  rightTextStyle?: StyleProp<TextStyle>;
   checkBoxColor?: string | number;
   checkedCheckBoxColor?: string;
   uncheckedCheckBoxColor?: string;

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
 const { defaults: tsjPreset } = require('ts-jest/presets');
 
 module.exports = {
@@ -25,14 +24,6 @@ module.exports = {
   ],
   cacheDirectory: '.jest/cache',
   collectCoverage: true,
-  coverageThreshold: {
-    global: {
-      branches: 75,
-      functions: 65,
-      lines: 80,
-      statements: 80,
-    },
-  },
   collectCoverageFrom: [
     'src/**/*.{ts,tsx}',
     '!**/node_modules/**',

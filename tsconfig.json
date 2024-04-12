@@ -30,27 +30,10 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "ignoreDeprecations": "5.0",
-    "types": [
-      "react-native",
-      "jest",
-    ],
-    "typeRoots": [
-      "./node_modules/@types",
-      "./src/types"
-    ],
+    "types": ["react-native", "jest"],
+    "typeRoots": ["./node_modules/@types", "./src/types"]
   },
   "compileOnSave": true,
-  "include": [
-    "images.d.ts",
-    "src",
-    "DevelopmentApp",
-    "index.js",
-  ],
-  "exclude": [
-    "src/**/*.spec.{ts,tsx}",
-    "DevelopmentApp/**/*.spec.{ts,tsx}",
-    "node_modules",
-    "dist",
-    "documentation",
-  ]
+  "include": ["images.d.ts", "src", "index.js"],
+  "exclude": ["src/**/*.spec.{ts,tsx}", "node_modules", "dist"]
 }

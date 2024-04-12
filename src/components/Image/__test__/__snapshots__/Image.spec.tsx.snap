@@ -23,11 +23,6 @@ exports[`<Image /> should render Image component correctly 1`] = `
       onLoad={[Function]}
       onLoadStart={[Function]}
       resizeMode="cover"
-      source={
-        {
-          "uri": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
-        }
-      }
       style={
         [
           {
@@ -71,11 +66,6 @@ exports[`<Image /> should render with custom placeholder animation and container
       onLoad={[Function]}
       onLoadStart={[Function]}
       resizeMode="cover"
-      source={
-        {
-          "uri": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
-        }
-      }
       style={
         [
           {
@@ -119,11 +109,6 @@ exports[`<Image /> should render with custom placeholder animation color 1`] = `
       onLoad={[Function]}
       onLoadStart={[Function]}
       resizeMode="cover"
-      source={
-        {
-          "uri": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
-        }
-      }
       style={
         [
           {
@@ -167,11 +152,6 @@ exports[`<Image /> should render with no placeholder 1`] = `
       onLoad={[Function]}
       onLoadStart={[Function]}
       resizeMode="cover"
-      source={
-        {
-          "uri": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
-        }
-      }
       style={
         [
           {

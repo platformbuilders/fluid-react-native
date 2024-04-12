@@ -1,5 +1,4 @@
-import React from 'react';
-import { View } from 'react-native';
+import React, { View } from 'react-native';
 import renderer from 'react-test-renderer';
 import Keyboard from '..';
 

@@ -118,7 +118,7 @@ const Avatar: React.FC<AvatarProps> = React.forwardRef(
 
         {!visibleImage && !!name && (
           <UploadIconWrapper size={size}>
-            <UploadIcon id="" accessibility="" />
+            <UploadIcon id="" accessibility="" name="camera" />
           </UploadIconWrapper>
         )}
         {!visibleImage && !!name && displayMonogram && (

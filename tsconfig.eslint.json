@@ -1,16 +1,13 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "./tsconfig.publish.json",
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
-    "DevelopmentApp/**/*.ts",
-    "DevelopmentApp/**/*.tsx",
     ".eslintrc.js",
-    "react-native.config.js",
     "metro.config.js",
     ".prettierrc.js",
     "commitlint.config.js",
     "babel.config.js",
-    "jest.config.js",
+    "jest.config.js"
   ]
 }
