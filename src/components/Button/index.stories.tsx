@@ -8,8 +8,26 @@ const meta: Meta<typeof Button> = {
   argTypes: {
     onPress: { action: 'clicked' },
     typographyVariant: { control: { type: 'select' }, options: VARIANT_SIZE },
+    variant: {
+      control: { type: 'select' },
+      options: ['filled', 'ghost', 'tint', 'outline', 'flat'],
+    },
+    colorVariant: {
+      control: { type: 'select' },
+      options: [
+        'primary',
+        'secondary',
+        'accent',
+        'danger',
+        'success',
+        'warning',
+        'info',
+      ],
+    },
   },
   args: {
+    variant: 'filled',
+    colorVariant: 'primary',
     accessibility: 'Button',
     accessibilityLabel: 'Button',
     disabled: false,
