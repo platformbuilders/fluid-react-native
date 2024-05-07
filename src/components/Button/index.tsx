@@ -17,8 +17,8 @@ const Button: FC<ButtonProps> = ({
   loading = false,
   contrast = false,
   flat = false,
-  hasBorder = false,
-  variant = 'primary',
+  variant = 'filled',
+  colorVariant = 'primary',
   typographyVariant = 'md',
   minWidth,
   maxWidth,
@@ -36,8 +36,9 @@ const Button: FC<ButtonProps> = ({
       rounded={rounded}
     >
       <ButtonWrapper
-        hasBorder={hasBorder}
+        hasBorder={variant === 'outline'}
         buttonVariant={variant}
+        colorVariant={colorVariant}
         style={style}
         disabled={disabled}
         rounded={rounded}
@@ -55,6 +56,7 @@ const Button: FC<ButtonProps> = ({
                 accessibility=""
                 name={leftIconName as string}
                 buttonVariant={variant}
+                colorVariant={colorVariant}
                 style={style}
                 leftIcon
               />
@@ -63,6 +65,7 @@ const Button: FC<ButtonProps> = ({
               style={textStyle}
               disabled={disabled}
               flat={flat}
+              colorVariant={colorVariant}
               variant={typographyVariant}
               buttonVariant={variant}
             >
@@ -72,6 +75,7 @@ const Button: FC<ButtonProps> = ({
               <Icon
                 accessibility=""
                 name={rightIconName as string}
+                colorVariant={colorVariant}
                 buttonVariant={variant}
                 style={style}
                 rightIcon

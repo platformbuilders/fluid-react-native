@@ -39,7 +39,8 @@ exports[`<Button /> should render button 1`] = `
   testID="testing"
 >
   <View
-    buttonVariant="primary"
+    buttonVariant="filled"
+    colorVariant="primary"
     disabled={false}
     flat={false}
     hasBorder={false}
@@ -49,7 +50,7 @@ exports[`<Button /> should render button 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#4255EF",
-          "borderColor": "#4255EF",
+          "borderColor": "#ffffff",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -57,6 +58,7 @@ exports[`<Button /> should render button 1`] = `
           "justifyContent": "center",
           "maxWidth": "100%",
           "minWidth": 180,
+          "opacity": 1,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -69,7 +71,8 @@ exports[`<Button /> should render button 1`] = `
   >
     <Text
       accessibilityLabel="undefined"
-      buttonVariant="primary"
+      buttonVariant="filled"
+      colorVariant="primary"
       disabled={false}
       flat={false}
       lineHeightVariant="min"
@@ -133,7 +136,8 @@ exports[`<Button /> should render button when rounded 1`] = `
   testID="testing"
 >
   <View
-    buttonVariant="primary"
+    buttonVariant="filled"
+    colorVariant="primary"
     disabled={false}
     flat={false}
     hasBorder={false}
@@ -143,7 +147,7 @@ exports[`<Button /> should render button when rounded 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#4255EF",
-          "borderColor": "#4255EF",
+          "borderColor": "#ffffff",
           "borderRadius": 22.5,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -151,6 +155,7 @@ exports[`<Button /> should render button when rounded 1`] = `
           "justifyContent": "center",
           "maxWidth": "100%",
           "minWidth": 180,
+          "opacity": 1,
           "overflow": "hidden",
           "paddingBottom": 0,
           "paddingLeft": 0,
@@ -163,7 +168,8 @@ exports[`<Button /> should render button when rounded 1`] = `
   >
     <Text
       accessibilityLabel="undefined"
-      buttonVariant="primary"
+      buttonVariant="filled"
+      colorVariant="primary"
       disabled={false}
       flat={false}
       lineHeightVariant="min"
@@ -227,7 +233,8 @@ exports[`<Button /> should render button with children 1`] = `
   testID="testing"
 >
   <View
-    buttonVariant="primary"
+    buttonVariant="filled"
+    colorVariant="primary"
     disabled={false}
     flat={false}
     hasBorder={false}
@@ -237,7 +244,7 @@ exports[`<Button /> should render button with children 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#4255EF",
-          "borderColor": "#4255EF",
+          "borderColor": "#ffffff",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -245,6 +252,7 @@ exports[`<Button /> should render button with children 1`] = `
           "justifyContent": "center",
           "maxWidth": "100%",
           "minWidth": 180,
+          "opacity": 1,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -257,7 +265,8 @@ exports[`<Button /> should render button with children 1`] = `
   >
     <Text
       accessibilityLabel="[object Object]"
-      buttonVariant="primary"
+      buttonVariant="filled"
+      colorVariant="primary"
       disabled={false}
       flat={false}
       lineHeightVariant="min"
@@ -339,7 +348,8 @@ exports[`<Button /> should render button with contrast 1`] = `
   testID="testing"
 >
   <View
-    buttonVariant="primary"
+    buttonVariant="filled"
+    colorVariant="primary"
     disabled={false}
     flat={false}
     hasBorder={false}
@@ -349,7 +359,7 @@ exports[`<Button /> should render button with contrast 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#4255EF",
-          "borderColor": "#4255EF",
+          "borderColor": "#ffffff",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -357,6 +367,7 @@ exports[`<Button /> should render button with contrast 1`] = `
           "justifyContent": "center",
           "maxWidth": "100%",
           "minWidth": 180,
+          "opacity": 1,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -369,7 +380,8 @@ exports[`<Button /> should render button with contrast 1`] = `
   >
     <Text
       accessibilityLabel="undefined"
-      buttonVariant="primary"
+      buttonVariant="filled"
+      colorVariant="primary"
       disabled={false}
       flat={false}
       lineHeightVariant="min"
@@ -433,7 +445,8 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
   testID="testing"
 >
   <View
-    buttonVariant="primary"
+    buttonVariant="filled"
+    colorVariant="primary"
     disabled={false}
     flat={false}
     hasBorder={false}
@@ -443,7 +456,7 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#4255EF",
-          "borderColor": "#4255EF",
+          "borderColor": "#ffffff",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -451,6 +464,7 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
           "justifyContent": "center",
           "maxWidth": "100%",
           "minWidth": 180,
+          "opacity": 1,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -463,7 +477,8 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
   >
     <Text
       accessibilityLabel="undefined"
-      buttonVariant="primary"
+      buttonVariant="filled"
+      colorVariant="primary"
       disabled={false}
       flat={false}
       lineHeightVariant="min"
@@ -527,7 +542,8 @@ exports[`<Button /> should render button with custom style 1`] = `
   testID="testing"
 >
   <View
-    buttonVariant="primary"
+    buttonVariant="filled"
+    colorVariant="primary"
     disabled={false}
     flat={false}
     hasBorder={false}
@@ -537,7 +553,7 @@ exports[`<Button /> should render button with custom style 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#4255EF",
-          "borderColor": "#4255EF",
+          "borderColor": "#ffffff",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -545,6 +561,7 @@ exports[`<Button /> should render button with custom style 1`] = `
           "justifyContent": "center",
           "maxWidth": "100%",
           "minWidth": 180,
+          "opacity": 1,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -559,7 +576,8 @@ exports[`<Button /> should render button with custom style 1`] = `
   >
     <Text
       accessibilityLabel="undefined"
-      buttonVariant="primary"
+      buttonVariant="filled"
+      colorVariant="primary"
       disabled={false}
       flat={false}
       lineHeightVariant="min"
@@ -623,7 +641,8 @@ exports[`<Button /> should render button with custom text style 1`] = `
   testID="testing"
 >
   <View
-    buttonVariant="primary"
+    buttonVariant="filled"
+    colorVariant="primary"
     disabled={false}
     flat={false}
     hasBorder={false}
@@ -633,7 +652,7 @@ exports[`<Button /> should render button with custom text style 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#4255EF",
-          "borderColor": "#4255EF",
+          "borderColor": "#ffffff",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -641,6 +660,7 @@ exports[`<Button /> should render button with custom text style 1`] = `
           "justifyContent": "center",
           "maxWidth": "100%",
           "minWidth": 180,
+          "opacity": 1,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -653,7 +673,8 @@ exports[`<Button /> should render button with custom text style 1`] = `
   >
     <Text
       accessibilityLabel="undefined"
-      buttonVariant="primary"
+      buttonVariant="filled"
+      colorVariant="primary"
       disabled={false}
       flat={false}
       lineHeightVariant="min"
@@ -719,7 +740,8 @@ exports[`<Button /> should render button with disabled 1`] = `
   testID="testing"
 >
   <View
-    buttonVariant="primary"
+    buttonVariant="filled"
+    colorVariant="primary"
     disabled={true}
     flat={false}
     hasBorder={false}
@@ -728,8 +750,8 @@ exports[`<Button /> should render button with disabled 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "#4255EF70",
-          "borderColor": "#4255EF70",
+          "backgroundColor": "#4255EF",
+          "borderColor": "#ffffff",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -737,6 +759,7 @@ exports[`<Button /> should render button with disabled 1`] = `
           "justifyContent": "center",
           "maxWidth": "100%",
           "minWidth": 180,
+          "opacity": 0.3,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -749,7 +772,8 @@ exports[`<Button /> should render button with disabled 1`] = `
   >
     <Text
       accessibilityLabel="undefined"
-      buttonVariant="primary"
+      buttonVariant="filled"
+      colorVariant="primary"
       disabled={true}
       flat={false}
       lineHeightVariant="min"
@@ -813,7 +837,8 @@ exports[`<Button /> should render button with loading 1`] = `
   testID="testing"
 >
   <View
-    buttonVariant="primary"
+    buttonVariant="filled"
+    colorVariant="primary"
     disabled={false}
     flat={false}
     hasBorder={false}
@@ -823,7 +848,7 @@ exports[`<Button /> should render button with loading 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#4255EF",
-          "borderColor": "#4255EF",
+          "borderColor": "#ffffff",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -831,6 +856,7 @@ exports[`<Button /> should render button with loading 1`] = `
           "justifyContent": "center",
           "maxWidth": "100%",
           "minWidth": 180,
+          "opacity": 1,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -913,7 +939,8 @@ exports[`<Button /> should render button with test id 1`] = `
   testID="test"
 >
   <View
-    buttonVariant="primary"
+    buttonVariant="filled"
+    colorVariant="primary"
     disabled={false}
     flat={false}
     hasBorder={false}
@@ -923,7 +950,7 @@ exports[`<Button /> should render button with test id 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#4255EF",
-          "borderColor": "#4255EF",
+          "borderColor": "#ffffff",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -931,6 +958,7 @@ exports[`<Button /> should render button with test id 1`] = `
           "justifyContent": "center",
           "maxWidth": "100%",
           "minWidth": 180,
+          "opacity": 1,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -943,7 +971,8 @@ exports[`<Button /> should render button with test id 1`] = `
   >
     <Text
       accessibilityLabel="undefined"
-      buttonVariant="primary"
+      buttonVariant="filled"
+      colorVariant="primary"
       disabled={false}
       flat={false}
       lineHeightVariant="min"
@@ -1007,7 +1036,8 @@ exports[`<Button /> should render button with typography variant 1`] = `
   testID="testing"
 >
   <View
-    buttonVariant="primary"
+    buttonVariant="filled"
+    colorVariant="primary"
     disabled={false}
     flat={false}
     hasBorder={false}
@@ -1017,7 +1047,7 @@ exports[`<Button /> should render button with typography variant 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#4255EF",
-          "borderColor": "#4255EF",
+          "borderColor": "#ffffff",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -1025,6 +1055,7 @@ exports[`<Button /> should render button with typography variant 1`] = `
           "justifyContent": "center",
           "maxWidth": "100%",
           "minWidth": 180,
+          "opacity": 1,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -1037,7 +1068,8 @@ exports[`<Button /> should render button with typography variant 1`] = `
   >
     <Text
       accessibilityLabel="undefined"
-      buttonVariant="primary"
+      buttonVariant="filled"
+      colorVariant="primary"
       disabled={false}
       flat={false}
       lineHeightVariant="min"
@@ -1101,7 +1133,8 @@ exports[`<Button /> should render button with variant 1`] = `
   testID="testing"
 >
   <View
-    buttonVariant="secondary"
+    buttonVariant="filled"
+    colorVariant="primary"
     disabled={false}
     flat={false}
     hasBorder={false}
@@ -1110,8 +1143,8 @@ exports[`<Button /> should render button with variant 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "#42ADEF",
-          "borderColor": "#42ADEF",
+          "backgroundColor": "#4255EF",
+          "borderColor": "#ffffff",
           "borderRadius": 4,
           "borderWidth": 0,
           "flexDirection": "row",
@@ -1119,6 +1152,7 @@ exports[`<Button /> should render button with variant 1`] = `
           "justifyContent": "center",
           "maxWidth": "100%",
           "minWidth": 180,
+          "opacity": 1,
           "overflow": "hidden",
           "paddingBottom": 4,
           "paddingLeft": 4,
@@ -1131,7 +1165,8 @@ exports[`<Button /> should render button with variant 1`] = `
   >
     <Text
       accessibilityLabel="undefined"
-      buttonVariant="secondary"
+      buttonVariant="filled"
+      colorVariant="primary"
       disabled={false}
       flat={false}
       lineHeightVariant="min"
