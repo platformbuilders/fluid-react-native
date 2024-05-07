@@ -24,6 +24,7 @@ exports[`<TextInput /> should render textinput 1`] = `
   >
     <View
       borderedRadius={0}
+      borderedWidth={1}
       error={false}
       showBorderErrored={true}
       style={
@@ -177,6 +178,7 @@ exports[`<TextInput /> should render textinput with error 1`] = `
   >
     <View
       borderedRadius={0}
+      borderedWidth={1}
       error={true}
       showBorderErrored={true}
       style={
@@ -355,6 +357,7 @@ exports[`<TextInput /> should render with bottom line 1`] = `
   >
     <View
       borderedRadius={0}
+      borderedWidth={1}
       error={false}
       showBorderErrored={true}
       style={
@@ -508,6 +511,7 @@ exports[`<TextInput /> should render with props 1`] = `
   >
     <View
       borderedRadius={0}
+      borderedWidth={1}
       error={false}
       showBorderErrored={true}
       style={
@@ -634,6 +638,7 @@ exports[`<TextInput /> should render without bottom line 1`] = `
   >
     <View
       borderedRadius={0}
+      borderedWidth={1}
       error={false}
       showBorderErrored={true}
       style={

@@ -28,6 +28,7 @@ type BorderedWrapperProps = {
   borderedHeight?: number;
   borderedColor?: string;
   borderedRadius?: number;
+  borderedWidth?: number;
   error?: boolean;
   showBorderErrored?: boolean;
 } & ThemeProps;
@@ -120,17 +121,18 @@ export const BorderedWrapper = styled.View<BorderedWrapperProps>`
     borderedColor,
     borderedHeight,
     borderedRadius,
+    borderedWidth,
     error,
     showBorderErrored,
     ...rest
   }: BorderedWrapperProps) => {
     const borderedStyle = `
       justify-content: center;
-      border: 1px solid ${
-        error && showBorderErrored
-          ? dangerMain(rest)
-          : borderedColor || brandPrimary(rest)
-      };
+      border: ${borderedWidth}px solid ${
+      error && showBorderErrored
+        ? dangerMain(rest)
+        : borderedColor || brandPrimary(rest)
+    };
       background-color: ${borderedBackgroundColor || 'transparent'};
       height: ${borderedHeight}px;
       border-radius: ${borderedRadius}px;
