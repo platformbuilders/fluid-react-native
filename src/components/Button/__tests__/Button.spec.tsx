@@ -142,7 +142,12 @@ describe('<Button />', () => {
   it('should render button with variant', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <Button id="testing" accessibility="" variant="secondary" />
+        <Button
+          id="testing"
+          accessibility=""
+          variant="filled"
+          colorVariant="primary"
+        />
       </ThemeProvider>,
     );
 

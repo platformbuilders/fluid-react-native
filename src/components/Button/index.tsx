@@ -17,7 +17,6 @@ const Button: FC<ButtonProps> = ({
   loading = false,
   contrast = false,
   flat = false,
-  hasBorder = false,
   variant = 'filled',
   colorVariant = 'primary',
   typographyVariant = 'md',
@@ -37,7 +36,7 @@ const Button: FC<ButtonProps> = ({
       rounded={rounded}
     >
       <ButtonWrapper
-        hasBorder={hasBorder || variant === 'outline'}
+        hasBorder={variant === 'outline'}
         buttonVariant={variant}
         colorVariant={colorVariant}
         style={style}

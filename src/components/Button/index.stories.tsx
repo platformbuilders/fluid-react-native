@@ -35,7 +35,6 @@ const meta: Meta<typeof Button> = {
     testID: 'button-test-id',
     children: 'Ver Usuário',
     flat: false,
-    hasBorder: false,
     id: 'button-id',
     loading: false,
     maxWidth: '250px',
