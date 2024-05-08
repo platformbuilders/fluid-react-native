@@ -39,10 +39,11 @@ export const Default: Story = {
 
 export const Bordered: Story = {
   args: {
+    status: 'success',
     borderedHeight: 56,
-    label: 'Password Label',
+    label: 'Input value here',
     suppressAnimation: false,
-    borderedRadius: 4,
+    borderedRadius: 6,
     borderedWidth: 2,
     borderedColor: '#D3D7D9',
     withBottomline: false,
@@ -53,12 +54,12 @@ export const Bordered: Story = {
     },
     labelStyle: {
       color: '#101416',
-      fontWeight: 600,
+      fontWeight: 400,
       lineHeight: 24,
     },
     animationValues: {
       upper: {
-        top: 6,
+        top: 4,
         fontSize: 12,
       },
       lower: {
