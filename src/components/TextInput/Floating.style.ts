@@ -37,7 +37,7 @@ const getBorderedRadius = getTheme('borderRadius.md');
 const getTextMain = getTheme('text.main');
 const getBorderWidth = getTheme('borderWidth.xxs');
 
-export const TextInputFloating = styled(TextInput).attrs((props: any) => ({
+const TextInputFloating = styled(TextInput).attrs((props: any) => ({
   borderedHeight: 56,
   suppressAnimation: false,
   borderedRadius: getBorderedRadius(props),
@@ -66,3 +66,5 @@ export const TextInputFloating = styled(TextInput).attrs((props: any) => ({
     },
   },
 }))``;
+
+export default TextInputFloating;
