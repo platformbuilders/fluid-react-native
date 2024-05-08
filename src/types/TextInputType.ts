@@ -59,7 +59,9 @@ export type TextInputType = {
   borderedBackgroundColor?: string;
   borderedHeight?: number;
   borderedColor?: string;
+  focusBorderedColor?: string;
   borderedRadius?: number;
+  borderedWidth?: number;
   iconNameBordered?: string;
   fixedLabelVariant?: any;
   rightIconName?: string;
@@ -74,6 +76,10 @@ export type TextInputType = {
   showBorderErrored?: boolean;
   showIconErrored?: boolean;
   hidePlaceholderOnFocus?: boolean;
+  animationValues?: {
+    upper: any;
+    lower: any;
+  };
 } & TextInputProps;
 
 export interface MaskedTextInputType extends TextInputType {

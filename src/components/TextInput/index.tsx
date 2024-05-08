@@ -4,7 +4,6 @@ import { Animated } from 'react-native';
 import { IconFonts, InputStatus } from '../../enums';
 import { TextInputType } from '../../types';
 import { useAutoFocus, usePrevious } from '../../utils/hooks';
-
 import FormError from '../FormError';
 import MaskedTextInput from './MaskedTextInput';
 import {
@@ -68,6 +67,8 @@ const TextInput: VFC<TextInputType> = ({
   borderedBackgroundColor,
   borderedHeight,
   borderedColor,
+  focusBorderedColor,
+  borderedWidth = 1,
   borderedRadius = 0,
   iconType = IconFonts.FontAwesome,
   fixedLabelVariant = 'xs',
@@ -77,15 +78,22 @@ const TextInput: VFC<TextInputType> = ({
   showIconErrored = true,
   iconSets,
   hidePlaceholderOnFocus = false,
+  animationValues = {
+    upper: LABEL_UPPER_STYLE,
+    lower: LABEL_LOWER_STYLE,
+  },
   ...rest
   // eslint-disable-next-line sonarjs/cognitive-complexity
 }) => {
   const customRef = useAutoFocus(autoFocus, inputRef);
+
   const animationInitialValues = {
-    top: suppressAnimation ? LABEL_UPPER_STYLE.top : LABEL_LOWER_STYLE.top,
+    top: suppressAnimation
+      ? animationValues.upper.top
+      : animationValues.lower.top,
     fontSize: suppressAnimation
-      ? LABEL_UPPER_STYLE.fontSize
-      : LABEL_LOWER_STYLE.fontSize,
+      ? animationValues.upper.fontSize
+      : animationValues.lower.fontSize,
   };
 
   const [labelAnimatedStyle] = useState({
@@ -95,6 +103,9 @@ const TextInput: VFC<TextInputType> = ({
   const [isPlaceholder, setIsPlaceHolder] = useState(
     suppressAnimation ? false : true,
   );
+
+  const [focusBorderColor, setFocusBorderColor] = useState(borderedColor);
+
   const previousValue = usePrevious<string>(value || '');
   const labelVariant = large ? 'md' : 'xs';
   const textVariant = large ? 'lg' : 'md';
@@ -115,16 +126,19 @@ const TextInput: VFC<TextInputType> = ({
   );
 
   const animationUp = (): void => {
-    animateComponent(LABEL_UPPER_STYLE);
+    animateComponent(animationValues.upper);
   };
 
   const animationDown = (): void => {
-    animateComponent(LABEL_LOWER_STYLE);
+    animateComponent(animationValues.lower);
   };
 
   const handleOnFocus = (event: any): void => {
     if (isPlaceholder && !suppressAnimation && !hidePlaceholderOnFocus) {
       animationUp();
+    }
+    if (borderedHeight) {
+      setFocusBorderColor(focusBorderedColor);
     }
     setIsPlaceHolder(false);
     onFocus(event);
@@ -142,6 +156,9 @@ const TextInput: VFC<TextInputType> = ({
     }
     if (isEmpty(label)) {
       setIsPlaceHolder(false);
+    }
+    if (borderedHeight) {
+      setFocusBorderColor(borderedColor);
     }
     onBlur(event);
   };
@@ -206,7 +223,6 @@ const TextInput: VFC<TextInputType> = ({
   }, [value, previousValue]);
 
   const hasError = !isEmpty(error);
-
   const icon = iconName;
   const iconBordered = iconNameBordered;
   const renderStatus = hasError ? InputStatus.Danger : status;
@@ -229,7 +245,6 @@ const TextInput: VFC<TextInputType> = ({
       iconSets={iconSets}
     />
   );
-
   return (
     <RootWrapper style={rootStyle}>
       <FormError
@@ -244,8 +259,9 @@ const TextInput: VFC<TextInputType> = ({
           <BorderedWrapper
             borderedBackgroundColor={borderedBackgroundColor}
             borderedHeight={borderedHeight}
-            borderedColor={borderedColor}
+            borderedColor={focusBorderColor}
             borderedRadius={borderedRadius}
+            borderedWidth={borderedWidth}
             error={hasError}
             showBorderErrored={showBorderErrored}
           >
@@ -273,6 +289,7 @@ const TextInput: VFC<TextInputType> = ({
             )}
             {borderedHeight ? (
               <InputBorderedAreaWrapper hasBottomLine={withBottomline}>
+                {!!leftIconName && renderIcon(leftIconName, true)}
                 {!isEmpty(iconBordered) && renderIcon(iconBordered, true)}
                 <InputBorderedColumnWrapper
                   hasLeftIcon={!isEmpty(iconBordered)}
@@ -282,6 +299,11 @@ const TextInput: VFC<TextInputType> = ({
                   {!isEmpty(label) && isEmpty(borderedLabel) && (
                     <FixedLabel
                       hasLeftIcon={!isEmpty(iconBordered)}
+                      style={
+                        fixedLabelVariant === 'animated'
+                          ? [labelAnimatedStyle, labelStyle]
+                          : labelStyle
+                      }
                       variant={fixedLabelVariant}
                     >
                       {label}
@@ -289,6 +311,7 @@ const TextInput: VFC<TextInputType> = ({
                   )}
                   {renderTextInput(renderStatus)}
                 </InputBorderedColumnWrapper>
+                {!!rightIconName && renderIcon(rightIconName)}
                 {!isEmpty(icon) && renderIcon(icon || '')}
               </InputBorderedAreaWrapper>
             ) : (
