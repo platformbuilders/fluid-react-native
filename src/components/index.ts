@@ -1,6 +1,6 @@
 // Inputs
 export { default as FormError } from './FormError';
-export { default as TextInput } from './TextInput';
+export { default as TextInput, TextInputFloating } from './TextInput';
 export { default as PinInput } from './PinInput';
 export { default as PasswordInput } from './TextInput/PasswordInput';
 // Buttons
