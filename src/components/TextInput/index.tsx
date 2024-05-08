@@ -343,3 +343,4 @@ const TextInput: VFC<TextInputType> = ({
 };
 
 export default TextInput;
+export { TextInputFloating } from './Floating.style';

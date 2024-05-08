@@ -12,7 +12,6 @@ import { InputStatus } from '../../enums';
 import { TextInputType } from '../../types';
 import DefaultIcon from '../Icon';
 import Typography from '../Typography';
-import TextInputBase from './index';
 
 const hasLeftIcon = ifStyle('hasLeftIcon');
 
@@ -88,38 +87,6 @@ const inputColor = (props: TextLabelProps) =>
     )(props),
     [InputStatus.Disabled]: disabled(props),
   });
-
-const getColorByStatus = (props: any) => {
-  const configByStatus: any = {
-    default: {
-      borderedColor: getTheme('text.light')(props),
-      iconColor: getTheme('text.light')(props),
-    },
-    success: {
-      borderedColor: success(props),
-      iconColor: success(props),
-    },
-    error: {
-      borderedColor: dangerMain(props),
-      iconColor: dangerMain(props),
-    },
-    select: {
-      borderedColor: getTheme('primary.main')(props),
-      iconColor: getTheme('primary.main')(props),
-    },
-    focus: {
-      borderedColor: getTheme('info.main')(props),
-      iconColor: getTheme('info.main')(props),
-    },
-  };
-
-  return configByStatus[props?.status || 'default'];
-};
-
-const getTextBase = getTheme('sizing.md');
-const getBorderedRadius = getTheme('borderRadius.md');
-const getTextMain = getTheme('text.main');
-const getBorderWidth = getTheme('borderWidth.xxs');
 
 export const LABEL_UPPER_STYLE = {
   top: -12,
@@ -276,33 +243,3 @@ export const Icon = styled(DefaultIcon).attrs((props: IconProps) => ({
     defaultIconColor(props),
   )(props),
 }))<IconProps>``;
-
-export const TextInputFloating = styled(TextInputBase).attrs((props: any) => ({
-  borderedHeight: 56,
-  suppressAnimation: false,
-  borderedRadius: getBorderedRadius(props),
-  borderedWidth: getBorderWidth(props),
-  borderedColor: getColorByStatus(props)?.borderedColor,
-  focusBorderedColor: getColorByStatus(props)?.borderedColor,
-  iconColor: getColorByStatus(props)?.iconColor,
-  withBottomline: false,
-  fixedLabelVariant: 'animated',
-  textStyle: {
-    fontSize: getTextBase(props),
-  },
-  labelStyle: {
-    color: getTextMain(props),
-    fontWeight: 400,
-    lineHeight: 24,
-  },
-  animationValues: {
-    upper: {
-      top: 2,
-      fontSize: 12,
-    },
-    lower: {
-      top: 15,
-      fontSize: 16,
-    },
-  },
-}))``;
