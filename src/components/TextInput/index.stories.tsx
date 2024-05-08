@@ -1,7 +1,8 @@
 import React from 'react';
 import { View } from 'react-native';
 import type { Meta, StoryObj } from '@storybook/react';
-import TextInput, { TextInputFloating } from '.';
+import TextInputFloating from './Floating.style';
+import TextInput from '.';
 
 const spacing = { marginTop: 16 };
 
