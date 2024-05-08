@@ -9,6 +9,9 @@
     "fluid",
     "elements"
   ],
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/platformbuilders/fluid-react-native.git"
