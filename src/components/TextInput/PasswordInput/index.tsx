@@ -1,5 +1,6 @@
 import React, { FC, useCallback, useState } from 'react';
 import { TextInputType } from '../../../types';
+import TextInputFloating from '../Floating.style';
 import TextInput from '../index';
 
 const PasswordInput: FC<TextInputType> = (props) => {
@@ -15,7 +16,18 @@ const PasswordInput: FC<TextInputType> = (props) => {
     setHidePassword(!hidePassword);
   }, [hidePassword]);
 
-  return (
+  return props.isFloating ? (
+    <TextInputFloating
+      secureTextEntry={hidePassword}
+      rightIconName={hidePassword ? 'eye' : 'eye-slash'}
+      iconTouchableEnabled
+      onPressIcon={onPressShowPassword}
+      onRightIconPress={onPressShowPassword}
+      iconHitSlop={hitSlop}
+      textContentType="password"
+      {...props}
+    />
+  ) : (
     <TextInput
       secureTextEntry={hidePassword}
       rightIconName={hidePassword ? 'eye' : 'eye-slash'}
