@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import {
+  ButtonColorType,
   ButtonVariants,
   ThemeProps,
   TypographyVariants,
@@ -23,6 +24,8 @@ const infoMain = getTheme('info.main');
 const infoContrast = getTheme('info.contrast');
 const dangerMain = getTheme('danger.main');
 const dangerContrast = getTheme('danger.contrast');
+const successMain = getTheme('success.main');
+const successContrast = getTheme('success.contrast');
 const warningMain = getTheme('warning.main');
 const warningContrast = getTheme('warning.contrast');
 const buttonRadius = getTheme('borderRadius.sm');
@@ -32,12 +35,14 @@ const isLeftIcon = ifStyle('leftIcon');
 const isRightIcon = ifStyle('rightIcon');
 const hasBorder = ifStyle('hasBorder');
 const isFlat = ifStyle('flat');
+const isDisabled = ifStyle('disabled');
 
 type ButtonWrapperProps = {
   rounded: boolean;
   hasBorder: boolean;
   flat: boolean;
   buttonVariant: ButtonVariants;
+  colorVariant: ButtonColorType;
   disabled?: boolean;
   style: any;
   minWidth?: string | number;
@@ -46,27 +51,38 @@ type ButtonWrapperProps = {
 
 const buttonSize = 45;
 
-const getBackgroundColor = (props: ButtonWrapperProps): string => {
-  if (props.disabled) {
-    return `${brandPrimary(props)}70`;
+function isTintVariant(bandSelected, props) {
+  if (props.buttonVariant === 'tint') {
+    return `${bandSelected(props)}10`;
+  } else {
+    return `${bandSelected(props)}`;
   }
-  switch (props.buttonVariant) {
+}
+
+const getBackgroundColor = (props: ButtonWrapperProps): string => {
+  if (
+    props.buttonVariant === 'flat' ||
+    props.buttonVariant === 'ghost' ||
+    props.buttonVariant === 'outline'
+  ) {
+    return 'transparent';
+  }
+
+  switch (props.colorVariant) {
     case 'primary':
-      return `${brandPrimary(props)}`;
+      return isTintVariant(brandPrimary, props);
     case 'secondary':
-      return `${brandSecondary(props)}`;
+      return isTintVariant(brandSecondary, props);
     case 'accent':
-      return `${brandAccent(props)}`;
+      return isTintVariant(brandAccent, props);
     case 'info':
-      return `${infoMain(props)}`;
+      return isTintVariant(infoMain, props);
     case 'warning':
-      return `${warningMain(props)}`;
+      return isTintVariant(warningMain, props);
     case 'danger':
-      return `${dangerMain(props)}`;
-    case 'invert':
-      return `${brandPrimaryContrast(props)}`;
-    case 'flat':
-      return `${'transparent'}`;
+      return isTintVariant(dangerMain, props);
+    case 'success':
+      return isTintVariant(successMain, props);
     default:
       return `${brandPrimary(props)}`;
   }
@@ -74,6 +90,7 @@ const getBackgroundColor = (props: ButtonWrapperProps): string => {
 
 type TextButtonProps = {
   buttonVariant: ButtonVariants;
+  colorVariant: ButtonColorType;
   variant?: TypographyVariants;
   disabled?: boolean;
   flat?: boolean;
@@ -81,26 +98,47 @@ type TextButtonProps = {
 } & ThemeProps;
 
 const getTextColor = (props: TextButtonProps): string => {
-  if (props.disabled) {
-    return `${brandPrimaryContrast(props)}`;
-  }
-  switch (props.buttonVariant) {
+  switch (props.colorVariant) {
     case 'primary':
-      return `${brandPrimaryContrast(props)}`;
+      return `${
+        props.buttonVariant === 'filled'
+          ? brandPrimaryContrast(props)
+          : brandPrimary(props)
+      }`;
     case 'secondary':
-      return `${brandSecondaryContrast(props)}`;
+      return `${
+        props.buttonVariant === 'filled'
+          ? brandSecondaryContrast(props)
+          : brandSecondary(props)
+      }`;
     case 'accent':
-      return `${brandAccentContrast(props)}`;
+      return `${
+        props.buttonVariant === 'filled'
+          ? brandAccentContrast(props)
+          : brandAccent(props)
+      }`;
     case 'danger':
-      return `${dangerContrast(props)}`;
+      return `${
+        props.buttonVariant === 'filled'
+          ? dangerContrast(props)
+          : dangerMain(props)
+      }`;
     case 'info':
-      return `${infoContrast(props)}`;
+      return `${
+        props.buttonVariant === 'filled' ? infoContrast(props) : infoMain(props)
+      }`;
     case 'warning':
-      return `${warningContrast(props)}`;
-    case 'invert':
-      return `${brandPrimary(props)}`;
-    case 'flat':
-      return `${brandPrimary(props)}`;
+      return `${
+        props.buttonVariant === 'filled'
+          ? warningContrast(props)
+          : warningMain(props)
+      }`;
+    case 'success':
+      return `${
+        props.buttonVariant === 'filled'
+          ? successContrast(props)
+          : successMain(props)
+      }`;
     default:
       return `${brandPrimaryContrast(props)}`;
   }
@@ -129,8 +167,9 @@ export const ButtonWrapper = styled.View<ButtonWrapperProps>`
     props.rounded ? buttonSize / 2 : buttonRadius(props)}px;
   justify-content: center;
   background-color: ${isFlat('transparent', getBackgroundColor)};
-  border-color: ${getBackgroundColor};
+  border-color: ${getTextColor};
   border-width: ${hasBorder(borderWidthSmall, '0')}px;
+  opacity: ${isDisabled(0.3, 1)};
 `;
 
 export const TextButton = styled(TypographyComponent)<TextButtonProps>`
@@ -149,6 +188,7 @@ export const Loading = styled(LoadingIndicator).attrs({
 type IconProps = {
   rightIcon?: boolean;
   leftIcon?: boolean;
+  colorVariant: ButtonColorType;
   buttonVariant: ButtonVariants;
   style: any;
 } & ThemeProps;
