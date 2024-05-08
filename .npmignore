@@ -18,7 +18,7 @@ coverage
 DevelopmentApp
 
 #storybook
-storybook/
+.storybook/
 
 # dist
 dist/**/*.ts.map
