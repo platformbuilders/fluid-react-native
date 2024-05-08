@@ -1,15 +1,53 @@
 import React from 'react';
 import { View } from 'react-native';
 import type { Meta, StoryObj } from '@storybook/react';
+import { TextInputFloating } from './styles';
 import TextInput from '.';
+
+const spacing = { marginTop: 16 };
 
 const Render = ({ ...args }) => {
   return (
     <View style={{ width: 320 }}>
-      <TextInput
+      <TextInputFloating
         {...args}
         id="textInput"
-        accessibility="Este componente TextInput"
+        accessibility="Este componente TextInputFloating"
+        style={spacing}
+      />
+      <TextInputFloating
+        {...args}
+        id="textInput"
+        accessibility="Este componente TextInputFloating"
+        style={spacing}
+      />
+      <TextInputFloating
+        {...args}
+        id="textInput"
+        accessibility="Este componente TextInputFloating"
+        style={spacing}
+        status="error"
+      />
+      <TextInputFloating
+        {...args}
+        id="textInput"
+        accessibility="Este componente TextInputFloating"
+        style={spacing}
+        status="success"
+      />
+      <TextInputFloating
+        {...args}
+        id="textInput"
+        accessibility="Este componente TextInputFloating"
+        style={spacing}
+        status="selected"
+      />
+      <TextInputFloating
+        {...args}
+        id="textInput"
+        accessibility="Este componente TextInputFloating"
+        style={spacing}
+        status="focus"
       />
     </View>
   );
@@ -31,8 +69,14 @@ const meta: Meta<typeof TextInput> = {
 export default meta;
 type Story = StoryObj<typeof TextInput>;
 
-export const Default: Story = {
+export const Floating: Story = {
   args: {
-    suppressAnimation: false,
+    id: 'textInput',
+    label: 'Input value here',
+    value: '',
+    iconName: 'flag',
+  },
+  parameters: {
+    notes: 'Este componente é utilizado para renderizar um TextInputFloating.',
   },
 };
