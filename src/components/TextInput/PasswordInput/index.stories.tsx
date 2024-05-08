@@ -37,35 +37,8 @@ export const Default: Story = {
   },
 };
 
-export const Bordered: Story = {
+export const Floating: Story = {
   args: {
-    status: 'success',
-    borderedHeight: 56,
-    label: 'Input value here',
-    suppressAnimation: false,
-    borderedRadius: 6,
-    borderedWidth: 2,
-    borderedColor: '#D3D7D9',
-    withBottomline: false,
-    fixedLabelVariant: 'animated',
-    focusBorderedColor: '#0068FF',
-    textStyle: {
-      fontSize: 16,
-    },
-    labelStyle: {
-      color: '#101416',
-      fontWeight: 400,
-      lineHeight: 24,
-    },
-    animationValues: {
-      upper: {
-        top: 4,
-        fontSize: 12,
-      },
-      lower: {
-        top: 15,
-        fontSize: 16,
-      },
-    },
+    isFloating: true,
   },
 };

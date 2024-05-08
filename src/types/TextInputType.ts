@@ -76,6 +76,7 @@ export type TextInputType = {
   showBorderErrored?: boolean;
   showIconErrored?: boolean;
   hidePlaceholderOnFocus?: boolean;
+  isFloating?: boolean;
   animationValues?: {
     upper: any;
     lower: any;
