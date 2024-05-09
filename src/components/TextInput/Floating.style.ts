@@ -59,7 +59,7 @@ const TextInputFloating = styled(TextInput).attrs((props: any) => ({
     upper: {
       top: 2,
       fontSize: 12,
-      opacity: 0.8,
+      opacity: 0.4,
     },
     lower: {
       top: 15,

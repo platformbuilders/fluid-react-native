@@ -9,6 +9,8 @@ import MaskedTextInput from './MaskedTextInput';
 import {
   BorderedWrapper,
   BottomLine,
+  FONT_WEIGHT_LOWER,
+  FONT_WEIGHT_UPPER,
   FixedLabel,
   FixedLabelAboveBorder,
   Icon,
@@ -105,6 +107,10 @@ const TextInput: VFC<TextInputType> = ({
     fontSize: new Animated.Value(animationInitialValues.fontSize),
     opacity: new Animated.Value(animationInitialValues.opacity),
   });
+  const [labelAnimatedFinish, setLabelAnimatedFinish] = useState({
+    fontWeight: FONT_WEIGHT_LOWER,
+  });
+
   const [isPlaceholder, setIsPlaceHolder] = useState(
     suppressAnimation ? false : true,
   );
@@ -132,10 +138,12 @@ const TextInput: VFC<TextInputType> = ({
 
   const animationUp = (): void => {
     animateComponent(animationValues.upper);
+    setLabelAnimatedFinish({ fontWeight: FONT_WEIGHT_UPPER });
   };
 
   const animationDown = (): void => {
     animateComponent(animationValues.lower);
+    setLabelAnimatedFinish({ fontWeight: FONT_WEIGHT_LOWER });
   };
 
   const handleOnFocus = (event: any): void => {
@@ -308,7 +316,11 @@ const TextInput: VFC<TextInputType> = ({
                       hasLeftIcon={!isEmpty(iconBordered)}
                       style={
                         fixedLabelVariant === 'animated'
-                          ? [labelAnimatedStyle, labelStyle]
+                          ? [
+                              labelAnimatedStyle,
+                              labelAnimatedFinish,
+                              labelStyle,
+                            ]
                           : labelStyle
                       }
                       variant={fixedLabelVariant}

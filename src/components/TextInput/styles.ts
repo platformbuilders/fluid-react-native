@@ -102,6 +102,9 @@ export const LABEL_LOWER_STYLE = {
   opacity: 1,
 };
 
+export const FONT_WEIGHT_UPPER = 600;
+export const FONT_WEIGHT_LOWER = 400;
+
 type WrapperProps = {
   multiline?: boolean;
   style?: any;
@@ -158,8 +161,7 @@ export const InputBorderedAreaWrapper = styled.View<InputBorderedAreaWrapperProp
 `;
 
 const paddingsBordered = css`
-  padding-right: 15px;
-  padding-bottom: 6px;
+  padding-bottom: ${minimumSpacing};
 `;
 
 export const InputBorderedColumnWrapper = styled.View<InputBorderedColumnWrapperProps>`
