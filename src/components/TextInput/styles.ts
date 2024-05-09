@@ -1,6 +1,6 @@
 import { Animated, StyleSheet } from 'react-native';
 import { moderateScale } from 'react-native-size-matters';
-import styled from 'styled-components/native';
+import styled, { css } from 'styled-components/native';
 import {
   ThemeProps,
   getFontSize,
@@ -31,6 +31,7 @@ type BorderedWrapperProps = {
   borderedWidth?: number;
   error?: boolean;
   showBorderErrored?: boolean;
+  isFloating?: boolean;
 } & ThemeProps;
 
 type InputBorderedAreaWrapperProps = {
@@ -39,6 +40,7 @@ type InputBorderedAreaWrapperProps = {
 
 type InputBorderedColumnWrapperProps = {
   hasLeftIcon?: boolean;
+  isFloating?: boolean;
   padding?: number;
 };
 
@@ -91,11 +93,13 @@ const inputColor = (props: TextLabelProps) =>
 export const LABEL_UPPER_STYLE = {
   top: -12,
   fontSize: 14,
+  opacity: 0.8,
 };
 
 export const LABEL_LOWER_STYLE = {
   top: 8,
   fontSize: 18,
+  opacity: 1,
 };
 
 type WrapperProps = {
@@ -124,6 +128,7 @@ export const BorderedWrapper = styled.View<BorderedWrapperProps>`
     borderedWidth,
     error,
     showBorderErrored,
+    isFloating,
     ...rest
   }: BorderedWrapperProps) => {
     const borderedStyle = `
@@ -136,9 +141,8 @@ export const BorderedWrapper = styled.View<BorderedWrapperProps>`
       background-color: ${borderedBackgroundColor || 'transparent'};
       height: ${borderedHeight}px;
       border-radius: ${borderedRadius}px;
-      padding: ${smallSpacing(rest)}px;
+      padding: ${isFloating ? sizingMD(rest) : smallSpacing(rest)}px;
     `;
-
     return `
     border: 0;
     ${borderedHeight ? borderedStyle : ''}
@@ -153,11 +157,17 @@ export const InputBorderedAreaWrapper = styled.View<InputBorderedAreaWrapperProp
   height: ${hasBottomLine('100%', 'auto')};
 `;
 
+const paddingsBordered = css`
+  padding-right: 15px;
+  padding-bottom: 6px;
+`;
+
 export const InputBorderedColumnWrapper = styled.View<InputBorderedColumnWrapperProps>`
   flex-direction: column;
   padding: 0 ${minimumSpacing}px;
   width: ${hasLeftIcon('86%', '92%')};
   margin-left: ${hasLeftIcon(minimumSpacing, 0)}px;
+  ${({ isFloating }) => isFloating && paddingsBordered}
 `;
 
 export const FixedLabelAboveBorder = styled(Typography)<FixedLabelAboveBorder>`

@@ -78,6 +78,7 @@ const TextInput: VFC<TextInputType> = ({
   showIconErrored = true,
   iconSets,
   hidePlaceholderOnFocus = false,
+  isFloating,
   animationValues = {
     upper: LABEL_UPPER_STYLE,
     lower: LABEL_LOWER_STYLE,
@@ -94,11 +95,15 @@ const TextInput: VFC<TextInputType> = ({
     fontSize: suppressAnimation
       ? animationValues.upper.fontSize
       : animationValues.lower.fontSize,
+    opacity: suppressAnimation
+      ? animationValues.upper.opacity
+      : animationValues.lower.opacity,
   };
 
   const [labelAnimatedStyle] = useState({
     top: new Animated.Value(animationInitialValues.top),
     fontSize: new Animated.Value(animationInitialValues.fontSize),
+    opacity: new Animated.Value(animationInitialValues.opacity),
   });
   const [isPlaceholder, setIsPlaceHolder] = useState(
     suppressAnimation ? false : true,
@@ -264,6 +269,7 @@ const TextInput: VFC<TextInputType> = ({
             borderedWidth={borderedWidth}
             error={hasError}
             showBorderErrored={showBorderErrored}
+            isFloating={isFloating}
           >
             {!centered &&
               !borderedHeight &&
@@ -295,6 +301,7 @@ const TextInput: VFC<TextInputType> = ({
                   hasLeftIcon={!isEmpty(iconBordered)}
                   multiline={multiline}
                   padding={inputPadding}
+                  isFloating={isFloating}
                 >
                   {!isEmpty(label) && isEmpty(borderedLabel) && (
                     <FixedLabel

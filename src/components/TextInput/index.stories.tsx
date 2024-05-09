@@ -73,8 +73,8 @@ export const Floating: Story = {
   args: {
     id: 'textInput',
     label: 'Input value here',
-    value: '',
     iconName: 'flag',
+    isFloating: true,
   },
   parameters: {
     notes: 'Este componente é utilizado para renderizar um TextInputFloating.',

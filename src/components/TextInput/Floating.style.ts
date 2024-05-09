@@ -32,37 +32,39 @@ const getColorByStatus = (props: any) => {
   return configByStatus[props?.status || 'default'];
 };
 
-const getTextBase = getTheme('sizing.md');
-const getBorderedRadius = getTheme('borderRadius.md');
+const getTextBase = getTheme('fontSizes.lg');
+const getBorderedRadius = getTheme('borderRadius.lg');
 const getTextMain = getTheme('text.main');
 const getBorderWidth = getTheme('borderWidth.xxs');
+const getSizeMax = getTheme('sizing.max');
 
 const TextInputFloating = styled(TextInput).attrs((props: any) => ({
-  borderedHeight: 56,
+  borderedHeight: getSizeMax(props),
   suppressAnimation: false,
   borderedRadius: getBorderedRadius(props),
   borderedWidth: getBorderWidth(props),
   borderedColor: getColorByStatus(props)?.borderedColor,
-  focusBorderedColor: getColorByStatus(props)?.borderedColor,
   iconColor: getColorByStatus(props)?.iconColor,
   withBottomline: false,
   fixedLabelVariant: 'animated',
   textStyle: {
     fontSize: getTextBase(props),
+    color: getTextMain(props),
   },
   labelStyle: {
     color: getTextMain(props),
-    fontWeight: 400,
     lineHeight: 24,
   },
   animationValues: {
     upper: {
       top: 2,
       fontSize: 12,
+      opacity: 0.8,
     },
     lower: {
       top: 15,
       fontSize: 16,
+      opacity: 1,
     },
   },
 }))``;
