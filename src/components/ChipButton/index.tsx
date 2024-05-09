@@ -7,6 +7,7 @@ export type ChipButtonProps = ButtonProps & {
   iconStyle?: any;
   isEmoji?: boolean;
   iconTouchable?: boolean;
+  hasBorder?: boolean;
 };
 
 const ChipButton: FC<ChipButtonProps> = ({

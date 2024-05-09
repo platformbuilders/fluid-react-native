@@ -37,34 +37,8 @@ export const Default: Story = {
   },
 };
 
-export const Bordered: Story = {
+export const Floating: Story = {
   args: {
-    borderedHeight: 56,
-    label: 'Password Label',
-    suppressAnimation: false,
-    borderedRadius: 4,
-    borderedWidth: 2,
-    borderedColor: '#D3D7D9',
-    withBottomline: false,
-    fixedLabelVariant: 'animated',
-    focusBorderedColor: '#0068FF',
-    textStyle: {
-      fontSize: 16,
-    },
-    labelStyle: {
-      color: '#101416',
-      fontWeight: 600,
-      lineHeight: 24,
-    },
-    animationValues: {
-      upper: {
-        top: 6,
-        fontSize: 12,
-      },
-      lower: {
-        top: 15,
-        fontSize: 16,
-      },
-    },
+    isFloating: true,
   },
 };

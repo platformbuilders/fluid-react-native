@@ -2,6 +2,7 @@ import { PropsWithChildren } from 'react';
 
 import { StyleProp, TextStyle, ViewStyle } from 'react-native';
 import {
+  ButtonColorType,
   ButtonVariants,
   TypographyVariants,
 } from '@platformbuilders/theme-toolkit';
@@ -16,11 +17,11 @@ export type ButtonProps = PropsWithChildren<
     contrast?: boolean;
     flat?: boolean;
     variant?: ButtonVariants;
+    colorVariant?: ButtonColorType;
     typographyVariant?: TypographyVariants;
     minWidth?: string | number;
     maxWidth?: string | number;
     leftIconName?: string;
     rightIconName?: string;
-    hasBorder?: boolean;
   } & TouchableType
 >;

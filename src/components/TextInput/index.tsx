@@ -4,7 +4,6 @@ import { Animated } from 'react-native';
 import { IconFonts, InputStatus } from '../../enums';
 import { TextInputType } from '../../types';
 import { useAutoFocus, usePrevious } from '../../utils/hooks';
-
 import FormError from '../FormError';
 import MaskedTextInput from './MaskedTextInput';
 import {
