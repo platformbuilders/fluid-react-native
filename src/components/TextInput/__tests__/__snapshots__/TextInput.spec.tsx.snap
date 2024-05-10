@@ -57,6 +57,7 @@ exports[`<TextInput /> should render textinput 1`] = `
             },
             {
               "fontSize": 14,
+              "opacity": 0.4,
               "top": -12,
             },
           ]
@@ -211,6 +212,7 @@ exports[`<TextInput /> should render textinput with error 1`] = `
             },
             {
               "fontSize": 14,
+              "opacity": 0.4,
               "top": -12,
             },
           ]
@@ -390,6 +392,7 @@ exports[`<TextInput /> should render with bottom line 1`] = `
             },
             {
               "fontSize": 14,
+              "opacity": 0.4,
               "top": -12,
             },
           ]
@@ -671,6 +674,7 @@ exports[`<TextInput /> should render without bottom line 1`] = `
             },
             {
               "fontSize": 14,
+              "opacity": 0.4,
               "top": -12,
             },
           ]

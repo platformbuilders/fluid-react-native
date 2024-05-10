@@ -32,37 +32,39 @@ const getColorByStatus = (props: any) => {
   return configByStatus[props?.status || 'default'];
 };
 
-const getTextBase = getTheme('sizing.md');
-const getBorderedRadius = getTheme('borderRadius.md');
 const getTextMain = getTheme('text.main');
-const getBorderWidth = getTheme('borderWidth.xxs');
+const getBorderWidth = getTheme('borderWidth.xs');
+const getFontSizeLG = getTheme('fontSizes.lg');
+const getFontSizeXXL = getTheme('fontSizes.xxl');
 
 const TextInputFloating = styled(TextInput).attrs((props: any) => ({
-  borderedHeight: 56,
+  borderedHeight: 90,
   suppressAnimation: false,
-  borderedRadius: getBorderedRadius(props),
+  borderedRadius: 10,
   borderedWidth: getBorderWidth(props),
   borderedColor: getColorByStatus(props)?.borderedColor,
-  focusBorderedColor: getColorByStatus(props)?.borderedColor,
   iconColor: getColorByStatus(props)?.iconColor,
   withBottomline: false,
   fixedLabelVariant: 'animated',
   textStyle: {
-    fontSize: getTextBase(props),
+    fontSize: getFontSizeXXL(props),
+    color: getTextMain(props),
   },
   labelStyle: {
     color: getTextMain(props),
-    fontWeight: 400,
     lineHeight: 24,
   },
+  iconSize: 24,
   animationValues: {
     upper: {
-      top: 2,
-      fontSize: 12,
+      top: -2,
+      fontSize: getFontSizeLG(props),
+      opacity: 0.4,
     },
     lower: {
-      top: 15,
-      fontSize: 16,
+      top: 21,
+      fontSize: getFontSizeXXL(props),
+      opacity: 0.5,
     },
   },
 }))``;

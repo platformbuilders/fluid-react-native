@@ -31,6 +31,7 @@ type BorderedWrapperProps = {
   borderedWidth?: number;
   error?: boolean;
   showBorderErrored?: boolean;
+  isFloating?: boolean;
 } & ThemeProps;
 
 type InputBorderedAreaWrapperProps = {
@@ -39,6 +40,7 @@ type InputBorderedAreaWrapperProps = {
 
 type InputBorderedColumnWrapperProps = {
   hasLeftIcon?: boolean;
+  isFloating?: boolean;
   padding?: number;
 };
 
@@ -91,12 +93,17 @@ const inputColor = (props: TextLabelProps) =>
 export const LABEL_UPPER_STYLE = {
   top: -12,
   fontSize: 14,
+  opacity: 0.4,
 };
 
 export const LABEL_LOWER_STYLE = {
   top: 8,
   fontSize: 18,
+  opacity: 0.5,
 };
+
+export const FONT_WEIGHT_UPPER = 600;
+export const FONT_WEIGHT_LOWER = 400;
 
 type WrapperProps = {
   multiline?: boolean;
@@ -124,6 +131,7 @@ export const BorderedWrapper = styled.View<BorderedWrapperProps>`
     borderedWidth,
     error,
     showBorderErrored,
+    isFloating,
     ...rest
   }: BorderedWrapperProps) => {
     const borderedStyle = `
@@ -136,9 +144,11 @@ export const BorderedWrapper = styled.View<BorderedWrapperProps>`
       background-color: ${borderedBackgroundColor || 'transparent'};
       height: ${borderedHeight}px;
       border-radius: ${borderedRadius}px;
-      padding: ${smallSpacing(rest)}px;
+      paddiing-top: ${isFloating ? 0 : smallSpacing(rest)}px;
+      padding-bottom ${smallSpacing(rest)}px;
+      padding-right: ${isFloating ? sizingMD(rest) : smallSpacing(rest)}px;
+      padding-left: ${isFloating ? sizingMD(rest) : smallSpacing(rest)}px;
     `;
-
     return `
     border: 0;
     ${borderedHeight ? borderedStyle : ''}
