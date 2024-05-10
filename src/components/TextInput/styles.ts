@@ -93,13 +93,13 @@ const inputColor = (props: TextLabelProps) =>
 export const LABEL_UPPER_STYLE = {
   top: -12,
   fontSize: 14,
-  opacity: 0.8,
+  opacity: 0.4,
 };
 
 export const LABEL_LOWER_STYLE = {
   top: 8,
   fontSize: 18,
-  opacity: 1,
+  opacity: 0.5,
 };
 
 export const FONT_WEIGHT_UPPER = 600;
@@ -144,7 +144,10 @@ export const BorderedWrapper = styled.View<BorderedWrapperProps>`
       background-color: ${borderedBackgroundColor || 'transparent'};
       height: ${borderedHeight}px;
       border-radius: ${borderedRadius}px;
-      padding: ${isFloating ? sizingMD(rest) : smallSpacing(rest)}px;
+      paddiing-top: ${isFloating ? 0 : smallSpacing(rest)}px;
+      padding-bottom ${smallSpacing(rest)}px;
+      padding-right: ${isFloating ? sizingMD(rest) : smallSpacing(rest)}px;
+      padding-left: ${isFloating ? sizingMD(rest) : smallSpacing(rest)}px;
     `;
     return `
     border: 0;
@@ -160,16 +163,11 @@ export const InputBorderedAreaWrapper = styled.View<InputBorderedAreaWrapperProp
   height: ${hasBottomLine('100%', 'auto')};
 `;
 
-const paddingsBordered = css`
-  padding-bottom: ${minimumSpacing};
-`;
-
 export const InputBorderedColumnWrapper = styled.View<InputBorderedColumnWrapperProps>`
   flex-direction: column;
   padding: 0 ${minimumSpacing}px;
   width: ${hasLeftIcon('86%', '92%')};
   margin-left: ${hasLeftIcon(minimumSpacing, 0)}px;
-  ${({ isFloating }) => isFloating && paddingsBordered}
 `;
 
 export const FixedLabelAboveBorder = styled(Typography)<FixedLabelAboveBorder>`
