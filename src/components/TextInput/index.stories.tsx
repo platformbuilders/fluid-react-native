@@ -8,7 +8,7 @@ const spacing = { marginTop: 16 };
 
 const Render = ({ ...args }) => {
   return (
-    <View style={{ width: 320 }}>
+    <View style={{ width: 420 }}>
       <TextInputFloating
         {...args}
         id="textInput"
@@ -73,8 +73,8 @@ export const Floating: Story = {
   args: {
     id: 'textInput',
     label: 'Input value here',
-    value: '',
     iconName: 'flag',
+    isFloating: true,
   },
   parameters: {
     notes: 'Este componente é utilizado para renderizar um TextInputFloating.',

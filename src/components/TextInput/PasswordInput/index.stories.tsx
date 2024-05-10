@@ -5,7 +5,7 @@ import PasswordInput from '.';
 
 const Render = ({ ...args }) => {
   return (
-    <View style={{ width: 320 }}>
+    <View style={{ width: 420 }}>
       <PasswordInput
         {...args}
         id="Password"
