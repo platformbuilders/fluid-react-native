@@ -8,7 +8,7 @@ const spacing = { marginTop: 16 };
 
 const Render = ({ ...args }) => {
   return (
-    <View style={{ width: 420 }}>
+    <View style={{ width: 320 }}>
       <TextInputFloating
         {...args}
         id="textInput"

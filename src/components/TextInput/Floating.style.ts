@@ -1,3 +1,4 @@
+import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
 import { getTheme } from '@platformbuilders/theme-toolkit';
 import TextInput from './index';
@@ -34,39 +35,45 @@ const getColorByStatus = (props: any) => {
 
 const getTextMain = getTheme('text.main');
 const getBorderWidth = getTheme('borderWidth.xs');
+const getFontSizeXs = getTheme('fontSizes.xs');
 const getFontSizeLG = getTheme('fontSizes.lg');
-const getFontSizeXXL = getTheme('fontSizes.xxl');
 
-const TextInputFloating = styled(TextInput).attrs((props: any) => ({
-  borderedHeight: 90,
-  suppressAnimation: false,
-  borderedRadius: 10,
-  borderedWidth: getBorderWidth(props),
-  borderedColor: getColorByStatus(props)?.borderedColor,
-  iconColor: getColorByStatus(props)?.iconColor,
-  withBottomline: false,
-  fixedLabelVariant: 'animated',
-  textStyle: {
-    fontSize: getFontSizeXXL(props),
-    color: getTextMain(props),
-  },
-  labelStyle: {
-    color: getTextMain(props),
-    lineHeight: 24,
-  },
-  iconSize: 24,
-  animationValues: {
-    upper: {
-      top: -2,
-      fontSize: getFontSizeLG(props),
-      opacity: 0.4,
+const TextInputFloating = styled(TextInput).attrs((props: any) => {
+  const fontSizeLg = getFontSizeLG(props) as number;
+  const fontSizeXs = getFontSizeXs(props) as number;
+
+  return {
+    borderedHeight: moderateScale(65),
+    suppressAnimation: false,
+    borderedRadius: moderateScale(8),
+    borderedWidth: getBorderWidth(props),
+    borderedColor: getColorByStatus(props)?.borderedColor,
+    iconColor: getColorByStatus(props)?.iconColor,
+    withBottomline: false,
+    fixedLabelVariant: 'animated',
+    textStyle: {
+      fontSize: moderateScale(fontSizeLg),
+      color: getTextMain(props),
+      paddingBottom: moderateScale(5),
     },
-    lower: {
-      top: 21,
-      fontSize: getFontSizeXXL(props),
-      opacity: 0.5,
+    labelStyle: {
+      lineHeight: moderateScale(24),
+      color: getTextMain(props),
     },
-  },
-}))``;
+    iconSize: moderateScale(18),
+    animationValues: {
+      upper: {
+        top: moderateScale(2),
+        fontSize: moderateScale(fontSizeXs),
+        opacity: 0.4,
+      },
+      lower: {
+        top: moderateScale(14),
+        fontSize: moderateScale(fontSizeLg),
+        opacity: 0.5,
+      },
+    },
+  };
+})``;
 
 export default TextInputFloating;
