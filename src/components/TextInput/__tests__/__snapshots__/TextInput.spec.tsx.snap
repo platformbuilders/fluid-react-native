@@ -53,12 +53,12 @@ exports[`<TextInput /> should render textinput 1`] = `
             {
               "color": "#444444",
               "position": "absolute",
-              "top": 8,
+              "top": 12.571428571428571,
             },
             {
-              "fontSize": 14,
+              "fontSize": 18.857142857142858,
               "opacity": 0.4,
-              "top": -12,
+              "top": -18.857142857142858,
             },
           ]
         }
@@ -208,12 +208,12 @@ exports[`<TextInput /> should render textinput with error 1`] = `
             {
               "color": "#444444",
               "position": "absolute",
-              "top": 8,
+              "top": 12.571428571428571,
             },
             {
-              "fontSize": 14,
+              "fontSize": 18.857142857142858,
               "opacity": 0.4,
-              "top": -12,
+              "top": -18.857142857142858,
             },
           ]
         }
@@ -388,12 +388,12 @@ exports[`<TextInput /> should render with bottom line 1`] = `
             {
               "color": "#444444",
               "position": "absolute",
-              "top": 8,
+              "top": 12.571428571428571,
             },
             {
-              "fontSize": 14,
+              "fontSize": 18.857142857142858,
               "opacity": 0.4,
-              "top": -12,
+              "top": -18.857142857142858,
             },
           ]
         }
@@ -670,12 +670,12 @@ exports[`<TextInput /> should render without bottom line 1`] = `
             {
               "color": "#444444",
               "position": "absolute",
-              "top": 8,
+              "top": 12.571428571428571,
             },
             {
-              "fontSize": 14,
+              "fontSize": 18.857142857142858,
               "opacity": 0.4,
-              "top": -12,
+              "top": -18.857142857142858,
             },
           ]
         }
