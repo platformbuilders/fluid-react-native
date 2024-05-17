@@ -29,7 +29,7 @@ jobs:
           PACKAGES_NPMRC: ${{ secrets.PACKAGES_NPMRC }}
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "2.7.5"
+          ruby-version: "3.0.0"
           bundler-cache: true
       - name: Install Ubuntu dependencies
         run: |
