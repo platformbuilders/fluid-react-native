@@ -91,14 +91,14 @@ const inputColor = (props: TextLabelProps) =>
   });
 
 export const LABEL_UPPER_STYLE = {
-  top: -12,
-  fontSize: 14,
+  top: moderateScale(-12),
+  fontSize: moderateScale(12),
   opacity: 0.4,
 };
 
 export const LABEL_LOWER_STYLE = {
-  top: 8,
-  fontSize: 18,
+  top: moderateScale(8),
+  fontSize: moderateScale(18),
   opacity: 0.5,
 };
 
