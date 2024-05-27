@@ -24,6 +24,8 @@ const Button: FC<ButtonProps> = ({
   maxWidth,
   rightIconName,
   leftIconName,
+  leftIconTouchable = true,
+  rightIconTouchable = true,
 }) => {
   return (
     <Touchable
@@ -58,6 +60,7 @@ const Button: FC<ButtonProps> = ({
                 buttonVariant={variant}
                 colorVariant={colorVariant}
                 style={style}
+                touchable={leftIconTouchable}
                 leftIcon
               />
             </If>
@@ -78,6 +81,7 @@ const Button: FC<ButtonProps> = ({
                 colorVariant={colorVariant}
                 buttonVariant={variant}
                 style={style}
+                touchable={rightIconTouchable}
                 rightIcon
               />
             </If>
