@@ -23,5 +23,7 @@ export type ButtonProps = PropsWithChildren<
     maxWidth?: string | number;
     leftIconName?: string;
     rightIconName?: string;
+    leftIconTouchable?: boolean;
+    rightIconTouchable?: boolean;
   } & TouchableType
 >;
