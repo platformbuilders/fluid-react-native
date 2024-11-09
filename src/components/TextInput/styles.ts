@@ -1,5 +1,4 @@
 import { Animated, StyleSheet } from 'react-native';
-import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
 import {
   ThemeProps,
@@ -91,14 +90,14 @@ const inputColor = (props: TextLabelProps) =>
   });
 
 export const LABEL_UPPER_STYLE = {
-  top: moderateScale(-12),
-  fontSize: moderateScale(12),
+  top: -12,
+  fontSize: 12,
   opacity: 0.4,
 };
 
 export const LABEL_LOWER_STYLE = {
-  top: moderateScale(8),
-  fontSize: moderateScale(18),
+  top: 8,
+  fontSize: 18,
   opacity: 0.5,
 };
 
@@ -137,10 +136,10 @@ export const BorderedWrapper = styled.View<BorderedWrapperProps>`
     const borderedStyle = `
       justify-content: center;
       border: ${borderedWidth}px solid ${
-      error && showBorderErrored
-        ? dangerMain(rest)
-        : borderedColor || brandPrimary(rest)
-    };
+        error && showBorderErrored
+          ? dangerMain(rest)
+          : borderedColor || brandPrimary(rest)
+      };
       background-color: ${borderedBackgroundColor || 'transparent'};
       height: ${borderedHeight}px;
       border-radius: ${borderedRadius}px;
@@ -221,7 +220,7 @@ export const TextInput = styled.TextInput.attrs((props: TextInputType) => ({
   padding: 0;
   flex-grow: 1;
   border-width: 0;
-  min-height: ${moderateScale(24)}px;
+  min-height: 24px;
   color: ${inputColor};
   font-size: ${getFontSize}px;
   width: 100%;

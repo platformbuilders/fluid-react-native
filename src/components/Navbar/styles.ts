@@ -1,7 +1,5 @@
-import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
 import { ThemeProps, getTheme, ifStyle } from '@platformbuilders/theme-toolkit';
-import { getShadow } from '../../utils/helpers';
 import Icon from '../Icon';
 import Touchable from '../Touchable';
 import Typography from '../Typography';
@@ -18,8 +16,8 @@ const smSpacing = getTheme('spacing.sm');
 const isActive = ifStyle('active');
 
 type NavbarWrapperProps = {
-  safeBottomArea: boolean;
-  bottomSpacing: number;
+  safeBottomArea?: boolean;
+  bottomSpacing?: number;
 };
 
 type FieldsProps = {
@@ -36,17 +34,20 @@ export const NavbarWrapper = styled.View<NavbarWrapperProps>`
   justify-content: space-evenly;
   align-items: flex-start;
   margin-top: auto;
-  ${getShadow()};
+  shadow-offset: 0px 4px;
+  shadow-opacity: 0.2;
+  shadow-radius: 3px;
+  elevation: 3;
 `;
 
 export const NavField = styled(Touchable)`
-  width: ${moderateScale(70)}px;
+  width: 70px;
   justify-content: center;
   align-items: center;
 `;
 
 export const NavIcon = styled(Icon).attrs((props: FieldsProps) => ({
-  size: moderateScale(30),
+  size: 30,
   color: isActive(
     props?.activeColor || primaryMain(props),
     textColor(props),

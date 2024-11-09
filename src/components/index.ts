@@ -9,7 +9,6 @@ export { default as PasswordInput } from './TextInput/PasswordInput';
 export { default as Touchable } from './Touchable';
 export { default as Icon } from './Icon';
 export { default as Button } from './Button';
-export { default as FAB } from './FAB';
 // General
 export { default as If } from './If';
 export { default as KeyboardAvoidingView } from './KeyboardAvoidingView';

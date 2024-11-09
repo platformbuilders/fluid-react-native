@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
 import { GestureResponderEvent, TouchableOpacity } from 'react-native';
-import Haptic from 'react-native-haptic-feedback';
+import Haptic, { HapticFeedbackTypes } from 'react-native-haptic-feedback';
 import { TouchableType } from '../../types';
 
 const CommonTouchable: FC<TouchableType> = ({
   onPress = (): void => {},
-  haptic = 'impactLight',
+  haptic = HapticFeedbackTypes.impactLight,
   disabled = false,
   accessibility,
   accessibilityLabel,
