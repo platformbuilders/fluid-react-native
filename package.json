@@ -29,7 +29,7 @@
     "clean": "rm -rf ./node_modules native yarn.lock dist coverage && yarn install",
     "ios": "react-native run-ios",
     "lint": "tsc --noEmit && eslint \"src/**/*.{ts,tsx}\" --fix",
-    "precommit": "yarn lint && yarn test",
+    "precommit": "yarn lint && yarn test && yarn semgrep",
     "pretty": "patch-package && prettier --config ./.prettierrc.js --write \"src/**/*.{ts,tsx,js}\"",
     "prepublish": "yarn build",
     "start": "react-native start",
@@ -41,7 +41,8 @@
     "postversion": "git push && git push --tags",
     "version:major": "npm version major",
     "version:minor": "npm version minor",
-    "version:patch": "npm version patch"
+    "version:patch": "npm version patch",
+    "semgrep": "semgrep --config ./codeway/rules ./src --text --output=./codeway/semgrep.txt"
   },
   "lint-staged": {
     "*.{ts,tsx}": [

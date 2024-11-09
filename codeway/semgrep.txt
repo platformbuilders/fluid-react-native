@@ -1,0 +1,91 @@
+                    
+                    
+┌──────────────────┐
+│ 25 Code Findings │
+└──────────────────┘
+                                                  
+  [36m[22m[24m  src/components/Button/index.tsx[0m
+   ❯❯❱ [1mcodeway.rules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings diretamente torna o código menos
+          escalável e mais suscetível a erros.                                                          
+                                                                                                        
+           40┆ hasBorder={variant === 'outline'}
+                                                  
+  [36m[22m[24m  src/components/Button/styles.ts[0m
+   ❯❯❱ [1mcodeway.rules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings diretamente torna o código menos
+          escalável e mais suscetível a erros.                                                          
+                                                                                                        
+           55┆ if (props.buttonVariant === 'tint') {
+            ⋮┆----------------------------------------
+           64┆ props.buttonVariant === 'flat' ||
+            ⋮┆----------------------------------------
+           65┆ props.buttonVariant === 'ghost' ||
+            ⋮┆----------------------------------------
+           66┆ props.buttonVariant === 'outline'
+            ⋮┆----------------------------------------
+          104┆ props.buttonVariant === 'filled'
+            ⋮┆----------------------------------------
+          110┆ props.buttonVariant === 'filled'
+            ⋮┆----------------------------------------
+          116┆ props.buttonVariant === 'filled'
+            ⋮┆----------------------------------------
+          122┆ props.buttonVariant === 'filled'
+            ⋮┆----------------------------------------
+          128┆ props.buttonVariant === 'filled' ? infoContrast(props) : infoMain(props)
+            ⋮┆----------------------------------------
+          132┆ props.buttonVariant === 'filled'
+            ⋮┆----------------------------------------
+          138┆ props.buttonVariant === 'filled'
+                                                                                                      
+  [36m[22m[24m  src/components/PinInput/lib/react-native-smooth-pincode-input/SmoothPinCodeInput.js[0m
+   ❯❯❱ [1mcodeway.rules.no-class-in-components[0m
+          Evite usar classes em componentes. Use funções ou hooks.
+                                                                  
+           23┆ class SmoothPinCodeInput extends Component {
+   
+   ❯❯❱ [1mcodeway.rules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings diretamente torna o código menos
+          escalável e mais suscetível a erros.                                                          
+                                                                                                        
+           71┆ if (event.nativeEvent.key === 'Backspace') {
+            ⋮┆----------------------------------------
+           80┆ if (typeof this.props.onFocus === 'function') {
+            ⋮┆----------------------------------------
+           86┆ if (typeof this.props.onBlur === 'function') {
+            ⋮┆----------------------------------------
+           91┆ if (typeof this.props.useIndexedAccessibilityLabel === 'string')
+            ⋮┆----------------------------------------
+           96┆ if (typeof this.props.useIndexedTestID === 'string')
+            ⋮┆----------------------------------------
+          158┆ const isPlaceholderText = typeof placeholder === 'string';
+            ⋮┆----------------------------------------
+          159┆ const isMaskText = typeof mask === 'string';
+            ⋮┆----------------------------------------
+          175┆ const isCellText = typeof cellText === 'string';
+                                                                        
+  [36m[22m[24m  src/components/TextInput/__tests__/TextInput.spec.tsx[0m
+   ❯❯❱ [1mcodeway.rules.avoid-console-logs[0m
+          Parece que um console.log() ou similar foi esquecido. Remova para evitar exposição de informações.
+                                                                                                            
+           86┆ console.log(wrapper);
+                                                     
+  [36m[22m[24m  src/components/TextInput/index.tsx[0m
+   ❯❯❱ [1mcodeway.rules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings diretamente torna o código menos
+          escalável e mais suscetível a erros.                                                          
+                                                                                                        
+          318┆ fixedLabelVariant === 'animated'
+                                                     
+  [36m[22m[24m  src/components/TextInput/styles.ts[0m
+   ❯❯❱ [1mcodeway.rules.use-variant-instead-of-fontsize[0m
+          Utilize a prop 'variant' do componente Typography em vez de definir 'font-size' manualmente.
+                                                                                                      
+          225┆ font-size: ${getFontSize}px;
+                                                      
+  [36m[22m[24m  src/components/Typography/index.tsx[0m
+   ❯❯❱ [1mcodeway.rules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings diretamente torna o código menos
+          escalável e mais suscetível a erros.                                                          
+                                                                                                        
+           17┆ if (variant === 'animated') {

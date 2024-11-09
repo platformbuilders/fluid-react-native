@@ -17,9 +17,7 @@ const CommonTouchable: FC<TouchableType> = ({
     onPress(event);
     try {
       Haptic.trigger(haptic);
-    } catch (error) {
-      console.log('LOG:  onBasicPress  generateHaptic:', error);
-    }
+    } catch (error) {}
   };
 
   return (

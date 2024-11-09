@@ -1,3 +1,4 @@
+import { StyleSheet } from 'react-native';
 import styled from 'styled-components/native';
 import { getTheme } from '@platformbuilders/theme-toolkit';
 import Typography from '../Typography';
@@ -20,7 +21,7 @@ export const OptionsWrapper = styled.View`
 
 export const Line = styled.View`
   width: 33%;
-  height: 1px;
+  height: ${StyleSheet.hairlineWidth}px;
   background-color: ${disabled}90;
 `;
 

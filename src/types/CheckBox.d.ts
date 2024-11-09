@@ -1,8 +1,8 @@
 declare module 'react-native-check-box' {
-  import { ReactElement, Component } from 'react';
+  import { ReactElement } from 'react';
   import { StyleProp, TextStyle, ViewStyle } from 'react-native';
 
-  export type CheckBoxProps = {
+  export type CheckboxProps = {
     style?: StyleProp<ViewStyle>;
     leftText?: ReactElement | string;
     leftTextStyle?: StyleProp<TextStyle>;
@@ -20,5 +20,4 @@ declare module 'react-native-check-box' {
     uncheckedCheckBoxColor?: string;
   };
 
-  export default class CheckBox extends Component<CheckBoxProps> {}
 }
