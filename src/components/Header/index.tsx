@@ -3,8 +3,6 @@ import React, { Children, FC, ReactChild } from 'react';
 import { isIOS } from '@platformbuilders/helpers/native';
 
 import { HeaderTheme, IconFonts } from '../../enums';
-import If from '../If';
-import Shadow from '../Shadow';
 
 import {
   ContentWrapper,
@@ -63,41 +61,39 @@ const Header: FC<HeaderProps> = ({
 
   return (
     <Wrapper isThemePrimary={isThemePrimary} isIOSPlatform={isIOSPlatform}>
-      <Shadow hasShadow>
-        <ContentWrapper
-          isIOSPlatform={isIOSPlatform}
-          isThemePrimary={isThemePrimary}
-        >
-          <If condition={showLeftIcon && leftIconName?.length > 0}>
-            <StyledIcon
-              isThemePrimary={isThemePrimary}
-              accessibility={accessibilityLeftIcon || leftIconName}
-              type={IconFonts.FontAwesome}
-              onPress={onPressLeftIcon}
-              name={leftIconName}
-            />
-          </If>
-          {hasChildren ? (
-            children
-          ) : (
-            <TextWrapper>
-              <Title isThemePrimary={isThemePrimary}>{title}</Title>
-              <If condition={subtitle?.length > 0}>
-                <Subtitle isThemePrimary={isThemePrimary}>{subtitle}</Subtitle>
-              </If>
-            </TextWrapper>
-          )}
-          <If condition={showRightIcon && rightIconName?.length > 0}>
-            <StyledIcon
-              isThemePrimary={isThemePrimary}
-              accessibility={accessibilityRightIcon || rightIconName}
-              type={IconFonts.FontAwesome}
-              onPress={onPressRightIcon}
-              name={rightIconName}
-            />
-          </If>
-        </ContentWrapper>
-      </Shadow>
+      <ContentWrapper
+        isIOSPlatform={isIOSPlatform}
+        isThemePrimary={isThemePrimary}
+      >
+        {showLeftIcon && leftIconName?.length > 0 && (
+          <StyledIcon
+            isThemePrimary={isThemePrimary}
+            accessibility={accessibilityLeftIcon || leftIconName}
+            type={IconFonts.FontAwesome}
+            onPress={onPressLeftIcon}
+            name={leftIconName}
+          />
+        )}
+        {hasChildren ? (
+          children
+        ) : (
+          <TextWrapper>
+            <Title isThemePrimary={isThemePrimary}>{title}</Title>
+            {subtitle?.length > 0 && (
+              <Subtitle isThemePrimary={isThemePrimary}>{subtitle}</Subtitle>
+            )}
+          </TextWrapper>
+        )}
+        {showRightIcon && rightIconName?.length > 0 && (
+          <StyledIcon
+            isThemePrimary={isThemePrimary}
+            accessibility={accessibilityRightIcon || rightIconName}
+            type={IconFonts.FontAwesome}
+            onPress={onPressRightIcon}
+            name={rightIconName}
+          />
+        )}
+      </ContentWrapper>
     </Wrapper>
   );
 };

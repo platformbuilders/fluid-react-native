@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import { ButtonProps } from '../../types';
-import If from '../If';
 import { ButtonWrapper, Icon, Loading, TextButton, Touchable } from './styles';
 
 export type ChipButtonProps = ButtonProps & {
@@ -50,12 +49,10 @@ const ChipButton: FC<ChipButtonProps> = ({
         style={style}
         {...rest}
       >
-        <If condition={loading}>
-          <Loading contrast={contrast} />
-        </If>
-        <If condition={!loading}>
+        {loading && <Loading contrast={contrast} />}
+        {!loading && (
           <>
-            <If condition={!!leftIconName}>
+            {!!leftIconName && (
               <Icon
                 accessibility=""
                 name={leftIconName as string}
@@ -65,7 +62,7 @@ const ChipButton: FC<ChipButtonProps> = ({
                 touchable={iconTouchable}
                 isEmoji={isEmoji}
               />
-            </If>
+            )}
             <TextButton
               style={textStyle}
               disabled={disabled}
@@ -75,7 +72,7 @@ const ChipButton: FC<ChipButtonProps> = ({
             >
               {children}
             </TextButton>
-            <If condition={!!rightIconName}>
+            {!!rightIconName && (
               <Icon
                 accessibility=""
                 name={rightIconName as string}
@@ -85,9 +82,9 @@ const ChipButton: FC<ChipButtonProps> = ({
                 touchable={iconTouchable}
                 isEmoji={isEmoji}
               />
-            </If>
+            )}
           </>
-        </If>
+        )}
       </ButtonWrapper>
     </Touchable>
   );

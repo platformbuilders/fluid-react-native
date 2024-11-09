@@ -10,12 +10,10 @@ export { default as Touchable } from './Touchable';
 export { default as Icon } from './Icon';
 export { default as Button } from './Button';
 // General
-export { default as If } from './If';
 export { default as KeyboardAvoidingView } from './KeyboardAvoidingView';
 export { default as Typography } from './Typography';
 export { default as Checkbox } from './Checkbox';
 export { default as LoadingIndicator } from './LoadingIndicator';
-export { default as Shadow } from './Shadow';
 export { default as DatePicker } from './DatePicker';
 export { default as Avatar } from './Avatar';
 export { default as Link } from './Link';
