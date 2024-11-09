@@ -8,5 +8,5 @@ export type TouchableType = PropsWithChildren<{
   testID?: string;
   disabled?: boolean;
   onPress?: (param: any) => void;
-  haptic?: HapticFeedbackTypes;
+  haptic?: HapticFeedbackTypes | keyof typeof HapticFeedbackTypes;
 }>;

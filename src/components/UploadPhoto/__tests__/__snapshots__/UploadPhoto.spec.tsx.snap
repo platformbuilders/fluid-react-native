@@ -22,7 +22,7 @@ exports[`<UploadPhoto /> should render UploadPhoto 1`] = `
   }
   accessible={true}
   collapsable={false}
-  focusable={true}
+  focusable={false}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -86,7 +86,7 @@ exports[`<UploadPhoto /> should render UploadPhoto 1`] = `
         }
         accessible={true}
         collapsable={false}
-        focusable={true}
+        focusable={false}
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -297,7 +297,7 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom accessibility lab
   }
   accessible={true}
   collapsable={false}
-  focusable={true}
+  focusable={false}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -361,7 +361,7 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom accessibility lab
         }
         accessible={true}
         collapsable={false}
-        focusable={true}
+        focusable={false}
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -448,7 +448,7 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom test id 1`] = `
   }
   accessible={true}
   collapsable={false}
-  focusable={true}
+  focusable={false}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -512,7 +512,7 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom test id 1`] = `
         }
         accessible={true}
         collapsable={false}
-        focusable={true}
+        focusable={false}
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}

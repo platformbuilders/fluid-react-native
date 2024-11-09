@@ -53,12 +53,12 @@ exports[`<TextInput /> should render textinput 1`] = `
             {
               "color": "#444444",
               "position": "absolute",
-              "top": 12.571428571428571,
+              "top": 8,
             },
             {
-              "fontSize": 18.857142857142858,
+              "fontSize": 12,
               "opacity": 0.4,
-              "top": -18.857142857142858,
+              "top": -12,
             },
           ]
         }
@@ -108,29 +108,19 @@ exports[`<TextInput /> should render textinput 1`] = `
             }
           }
           placeholder=""
-          placeholderTextColor="#72727260"
+          placeholderTextColor="#999999"
           status="default"
           style={
             [
               {
-                "borderWidth": 0,
-                "color": "#444444",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "fontSize": 15,
-                "minHeight": 37.714285714285715,
-                "paddingBottom": 0,
-                "paddingLeft": 0,
-                "paddingRight": 0,
-                "paddingTop": 0,
-                "width": "100%",
               },
               {},
             ]
           }
           testID="test"
-          textAlign="left"
           type="custom"
           underlineColorAndroid="transparent"
           value=""
@@ -208,12 +198,12 @@ exports[`<TextInput /> should render textinput with error 1`] = `
             {
               "color": "#444444",
               "position": "absolute",
-              "top": 12.571428571428571,
+              "top": 8,
             },
             {
-              "fontSize": 18.857142857142858,
+              "fontSize": 12,
               "opacity": 0.4,
-              "top": -18.857142857142858,
+              "top": -12,
             },
           ]
         }
@@ -263,29 +253,19 @@ exports[`<TextInput /> should render textinput with error 1`] = `
             }
           }
           placeholder=""
-          placeholderTextColor="#72727260"
+          placeholderTextColor="#999999"
           status="danger"
           style={
             [
               {
-                "borderWidth": 0,
-                "color": "#FF4F3F",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "fontSize": 15,
-                "minHeight": 37.714285714285715,
-                "paddingBottom": 0,
-                "paddingLeft": 0,
-                "paddingRight": 0,
-                "paddingTop": 0,
-                "width": "100%",
               },
               {},
             ]
           }
           testID="test"
-          textAlign="left"
           type="custom"
           underlineColorAndroid="transparent"
           value=""
@@ -388,12 +368,12 @@ exports[`<TextInput /> should render with bottom line 1`] = `
             {
               "color": "#444444",
               "position": "absolute",
-              "top": 12.571428571428571,
+              "top": 8,
             },
             {
-              "fontSize": 18.857142857142858,
+              "fontSize": 12,
               "opacity": 0.4,
-              "top": -18.857142857142858,
+              "top": -12,
             },
           ]
         }
@@ -443,29 +423,19 @@ exports[`<TextInput /> should render with bottom line 1`] = `
             }
           }
           placeholder=""
-          placeholderTextColor="#72727260"
+          placeholderTextColor="#999999"
           status="default"
           style={
             [
               {
-                "borderWidth": 0,
-                "color": "#444444",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "fontSize": 15,
-                "minHeight": 37.714285714285715,
-                "paddingBottom": 0,
-                "paddingLeft": 0,
-                "paddingRight": 0,
-                "paddingTop": 0,
-                "width": "100%",
               },
               {},
             ]
           }
           testID="test"
-          textAlign="left"
           type="custom"
           underlineColorAndroid="transparent"
           value=""
@@ -570,29 +540,19 @@ exports[`<TextInput /> should render with props 1`] = `
             }
           }
           placeholder="Enter your name"
-          placeholderTextColor="#72727260"
+          placeholderTextColor="#999999"
           status="default"
           style={
             [
               {
-                "borderWidth": 0,
-                "color": "#ffffff",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "fontSize": 17,
-                "minHeight": 37.714285714285715,
-                "paddingBottom": 0,
-                "paddingLeft": 0,
-                "paddingRight": 0,
-                "paddingTop": 0,
-                "width": "100%",
               },
               {},
             ]
           }
           testID="test"
-          textAlign="center"
           type="custom"
           underlineColorAndroid="transparent"
           value=""
@@ -670,12 +630,12 @@ exports[`<TextInput /> should render without bottom line 1`] = `
             {
               "color": "#444444",
               "position": "absolute",
-              "top": 12.571428571428571,
+              "top": 8,
             },
             {
-              "fontSize": 18.857142857142858,
+              "fontSize": 12,
               "opacity": 0.4,
-              "top": -18.857142857142858,
+              "top": -12,
             },
           ]
         }
@@ -725,29 +685,19 @@ exports[`<TextInput /> should render without bottom line 1`] = `
             }
           }
           placeholder=""
-          placeholderTextColor="#72727260"
+          placeholderTextColor="#999999"
           status="default"
           style={
             [
               {
-                "borderWidth": 0,
-                "color": "#444444",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "fontSize": 15,
-                "minHeight": 37.714285714285715,
-                "paddingBottom": 0,
-                "paddingLeft": 0,
-                "paddingRight": 0,
-                "paddingTop": 0,
-                "width": "100%",
               },
               {},
             ]
           }
           testID="test"
-          textAlign="left"
           type="custom"
           underlineColorAndroid="transparent"
           value=""

@@ -21,7 +21,7 @@ exports[`<Navbar /> should render navbar component 1`] = `
           "width": 0,
         },
         "shadowOpacity": 0.2,
-        "shadowRadius": 6.285714285714286,
+        "shadowRadius": 3,
         "width": "100%",
       },
     ]
@@ -61,7 +61,7 @@ exports[`<Navbar /> should render navbar component 1`] = `
         "alignItems": "center",
         "justifyContent": "center",
         "opacity": 1,
-        "width": 110,
+        "width": 70,
       }
     }
     testID="Home"
@@ -95,7 +95,7 @@ exports[`<Navbar /> should render navbar component 1`] = `
         }
         accessible={true}
         collapsable={false}
-        focusable={true}
+        focusable={false}
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -118,7 +118,7 @@ exports[`<Navbar /> should render navbar component 1`] = `
               [
                 {
                   "color": "#4255EF",
-                  "fontSize": 47.14285714285714,
+                  "fontSize": 30,
                 },
                 undefined,
                 {
@@ -186,7 +186,7 @@ exports[`<Navbar /> should render navbar component with custom color 1`] = `
           "width": 0,
         },
         "shadowOpacity": 0.2,
-        "shadowRadius": 6.285714285714286,
+        "shadowRadius": 3,
         "width": "100%",
       },
     ]
@@ -226,7 +226,7 @@ exports[`<Navbar /> should render navbar component with custom color 1`] = `
         "alignItems": "center",
         "justifyContent": "center",
         "opacity": 1,
-        "width": 110,
+        "width": 70,
       }
     }
     testID="Home"
@@ -260,7 +260,7 @@ exports[`<Navbar /> should render navbar component with custom color 1`] = `
         }
         accessible={true}
         collapsable={false}
-        focusable={true}
+        focusable={false}
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -283,7 +283,7 @@ exports[`<Navbar /> should render navbar component with custom color 1`] = `
               [
                 {
                   "color": "#000000",
-                  "fontSize": 47.14285714285714,
+                  "fontSize": 30,
                 },
                 undefined,
                 {

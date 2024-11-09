@@ -72,13 +72,13 @@ exports[`<RadioButton /> should render checked radio button component with label
       {
         "alignItems": "center",
         "borderColor": "#4444444D",
-        "borderRadius": 15.714285714285714,
+        "borderRadius": 10,
         "borderStyle": "solid",
         "borderWidth": 2,
-        "height": 31.428571428571427,
+        "height": 20,
         "justifyContent": "center",
         "opacity": 1,
-        "width": 31.428571428571427,
+        "width": 20,
       }
     }
     testID=""
@@ -89,9 +89,9 @@ exports[`<RadioButton /> should render checked radio button component with label
         [
           {
             "backgroundColor": "#4255EF",
-            "borderRadius": 10.214285714285715,
-            "height": 20.42857142857143,
-            "width": 20.42857142857143,
+            "borderRadius": 6.5,
+            "height": 13,
+            "width": 13,
           },
         ]
       }
@@ -192,13 +192,13 @@ exports[`<RadioButton /> should render radio button component 1`] = `
       {
         "alignItems": "center",
         "borderColor": "#4444444D",
-        "borderRadius": 15.714285714285714,
+        "borderRadius": 10,
         "borderStyle": "solid",
         "borderWidth": 2,
-        "height": 31.428571428571427,
+        "height": 20,
         "justifyContent": "center",
         "opacity": 1,
-        "width": 31.428571428571427,
+        "width": 20,
       }
     }
     testID=""
@@ -278,13 +278,13 @@ exports[`<RadioButton /> should render radio button component with custom checke
       {
         "alignItems": "center",
         "borderColor": "#4444444D",
-        "borderRadius": 15.714285714285714,
+        "borderRadius": 10,
         "borderStyle": "solid",
         "borderWidth": 2,
-        "height": 31.428571428571427,
+        "height": 20,
         "justifyContent": "center",
         "opacity": 1,
-        "width": 31.428571428571427,
+        "width": 20,
       }
     }
     testID=""
@@ -295,9 +295,9 @@ exports[`<RadioButton /> should render radio button component with custom checke
         [
           {
             "backgroundColor": "#4255EF",
-            "borderRadius": 10.214285714285715,
-            "height": 20.42857142857143,
-            "width": 20.42857142857143,
+            "borderRadius": 6.5,
+            "height": 13,
+            "width": 13,
           },
         ]
       }
@@ -378,13 +378,13 @@ exports[`<RadioButton /> should render radio button component with custom checke
       {
         "alignItems": "center",
         "borderColor": "#4444444D",
-        "borderRadius": 15.714285714285714,
+        "borderRadius": 10,
         "borderStyle": "solid",
         "borderWidth": 2,
-        "height": 31.428571428571427,
+        "height": 20,
         "justifyContent": "center",
         "opacity": 1,
-        "width": 31.428571428571427,
+        "width": 20,
       }
     }
     testID=""
@@ -464,13 +464,13 @@ exports[`<RadioButton /> should render radio button component with custom intern
       {
         "alignItems": "center",
         "borderColor": "#4444444D",
-        "borderRadius": 15.714285714285714,
+        "borderRadius": 10,
         "borderStyle": "solid",
         "borderWidth": 2,
-        "height": 31.428571428571427,
+        "height": 20,
         "justifyContent": "center",
         "opacity": 1,
-        "width": 31.428571428571427,
+        "width": 20,
       }
     }
     testID=""
@@ -550,13 +550,13 @@ exports[`<RadioButton /> should render radio button component with custom radio 
       {
         "alignItems": "center",
         "borderColor": "#3498db",
-        "borderRadius": 15.714285714285714,
+        "borderRadius": 10,
         "borderStyle": "solid",
         "borderWidth": 2,
-        "height": 31.428571428571427,
+        "height": 20,
         "justifyContent": "center",
         "opacity": 1,
-        "width": 31.428571428571427,
+        "width": 20,
       }
     }
     testID=""
@@ -636,13 +636,13 @@ exports[`<RadioButton /> should render radio button component with custom size 1
       {
         "alignItems": "center",
         "borderColor": "#4444444D",
-        "borderRadius": 18.857142857142858,
+        "borderRadius": 12,
         "borderStyle": "solid",
         "borderWidth": 2,
-        "height": 37.714285714285715,
+        "height": 24,
         "justifyContent": "center",
         "opacity": 1,
-        "width": 37.714285714285715,
+        "width": 24,
       }
     }
     testID=""
@@ -722,13 +722,13 @@ exports[`<RadioButton /> should render unchecked radio button component with lab
       {
         "alignItems": "center",
         "borderColor": "#4444444D",
-        "borderRadius": 15.714285714285714,
+        "borderRadius": 10,
         "borderStyle": "solid",
         "borderWidth": 2,
-        "height": 31.428571428571427,
+        "height": 20,
         "justifyContent": "center",
         "opacity": 1,
-        "width": 31.428571428571427,
+        "width": 20,
       }
     }
     testID=""

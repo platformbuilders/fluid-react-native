@@ -6,10 +6,6 @@ import Button from '..';
 import theme from '../../../theme';
 import Typography from '../../Typography';
 
-jest.mock('react-native-haptic-feedback', () => ({
-  trigger: jest.fn(),
-}));
-
 describe('<Button />', () => {
   it('should render button', () => {
     const wrapper = renderer.create(

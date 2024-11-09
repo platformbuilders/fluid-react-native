@@ -675,7 +675,7 @@ exports[`<ChipButton /> should render Chipbutton with disabled 1`] = `
   }
   accessible={true}
   collapsable={false}
-  focusable={true}
+  focusable={false}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -765,7 +765,7 @@ exports[`<ChipButton /> should render Chipbutton with loading 1`] = `
   }
   accessible={true}
   collapsable={false}
-  focusable={true}
+  focusable={false}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -813,6 +813,7 @@ exports[`<ChipButton /> should render Chipbutton with loading 1`] = `
       colorFilters={[]}
       contrast={false}
       enableMergePathsAndroidForKitKatAndAbove={false}
+      enableSafeModeAndroid={false}
       loop={true}
       onAnimationFailure={[Function]}
       onAnimationFinish={[Function]}
