@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 import { useSpacingsWithSafeArea } from '@platformbuilders/helpers/native';
-import { NavField, NavIcon, NavLabel, NavbarWrapper } from './styles';
+import { BottomNavigationWrapper, NavField, NavIcon, NavLabel } from './styles';
 
 type Props = {
   fields: {
@@ -13,7 +13,7 @@ type Props = {
   activeFieldColor?: string;
 };
 
-const Navbar: React.FC<Props> = ({
+const BottomNavigation: React.FC<Props> = ({
   fields,
   currentRoute,
   activeFieldColor,
@@ -49,10 +49,10 @@ const Navbar: React.FC<Props> = ({
   );
 
   return (
-    <NavbarWrapper bottomSpacing={bottomSpacing}>
+    <BottomNavigationWrapper bottomSpacing={bottomSpacing}>
       {renderFields()}
-    </NavbarWrapper>
+    </BottomNavigationWrapper>
   );
 };
 
-export default Navbar;
+export default BottomNavigation;

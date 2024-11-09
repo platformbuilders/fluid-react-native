@@ -15,7 +15,7 @@ const smSpacing = getTheme('spacing.sm');
 
 const isActive = ifStyle('active');
 
-type NavbarWrapperProps = {
+type BottomNavigationWrapperProps = {
   safeBottomArea?: boolean;
   bottomSpacing?: number;
 };
@@ -25,7 +25,7 @@ type FieldsProps = {
   activeColor?: string;
 } & ThemeProps;
 
-export const NavbarWrapper = styled.View<NavbarWrapperProps>`
+export const BottomNavigationWrapper = styled.View<BottomNavigationWrapperProps>`
   width: 100%;
   padding: ${smSpacing}px;
   padding-bottom: ${({ bottomSpacing }) => `${bottomSpacing}px`};

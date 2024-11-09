@@ -1,15 +1,15 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
-import Label from '..';
+import Separator from '..';
 
 import theme from '../../../theme';
 
-describe('<Label />', () => {
-  it('should render Label', () => {
+describe('<Separator />', () => {
+  it('should render Separator', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <Label text="label" />
+        <Separator text="Teste Separator" />
       </ThemeProvider>,
     );
     expect(wrapper.toJSON()).toMatchSnapshot();

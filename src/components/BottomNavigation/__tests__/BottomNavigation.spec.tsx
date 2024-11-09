@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
-import Navbar from '..';
+import BottomNavigation from '..';
 import theme from '../../../theme';
 
 const onPressEvent = jest.fn();
@@ -15,25 +15,25 @@ const fields = [
   },
 ];
 
-describe('<Navbar />', () => {
+describe('<BottomNavigation />', () => {
   beforeEach(() => {
     jest.resetAllMocks();
   });
 
-  it('should render navbar component', () => {
+  it('should render BottomNavigation component', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <Navbar currentRoute="Home" fields={fields} />
+        <BottomNavigation currentRoute="Home" fields={fields} />
       </ThemeProvider>,
     );
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
-  it('should render navbar component with custom color', () => {
+  it('should render BottomNavigation component with custom color', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <Navbar
+        <BottomNavigation
           currentRoute="Home"
           fields={fields}
           activeFieldColor={'#000000'}

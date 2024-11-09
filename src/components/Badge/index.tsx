@@ -2,14 +2,14 @@ import React, { FC } from 'react';
 import { ButtonProps } from '../../types';
 import { ButtonWrapper, Icon, Loading, TextButton, Touchable } from './styles';
 
-export type ChipButtonProps = ButtonProps & {
+export type BadgeProps = ButtonProps & {
   iconStyle?: any;
   isEmoji?: boolean;
   iconTouchable?: boolean;
   hasBorder?: boolean;
 };
 
-const ChipButton: FC<ChipButtonProps> = ({
+const Badge: FC<BadgeProps> = ({
   id,
   children,
   onPress,
@@ -90,4 +90,4 @@ const ChipButton: FC<ChipButtonProps> = ({
   );
 };
 
-export default ChipButton;
+export default Badge;

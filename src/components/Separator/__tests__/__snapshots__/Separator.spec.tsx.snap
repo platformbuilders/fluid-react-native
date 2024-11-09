@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Label /> should render Label 1`] = `
+exports[`<Separator /> should render Separator 1`] = `
 <View
   style={
     [
@@ -26,7 +26,7 @@ exports[`<Label /> should render Label 1`] = `
     }
   />
   <Text
-    accessibilityLabel="label"
+    accessibilityLabel="Teste Separator"
     lineHeightVariant="min"
     style={
       [
@@ -47,7 +47,7 @@ exports[`<Label /> should render Label 1`] = `
     }
     variant="md"
   >
-    label
+    Teste Separator
   </Text>
   <View
     style={

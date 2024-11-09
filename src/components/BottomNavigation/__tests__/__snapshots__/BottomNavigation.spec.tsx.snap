@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Navbar /> should render navbar component 1`] = `
+exports[`<BottomNavigation /> should render BottomNavigation component 1`] = `
 <View
   bottomSpacing={20}
   style={
@@ -165,7 +165,7 @@ exports[`<Navbar /> should render navbar component 1`] = `
 </View>
 `;
 
-exports[`<Navbar /> should render navbar component with custom color 1`] = `
+exports[`<BottomNavigation /> should render BottomNavigation component with custom color 1`] = `
 <View
   bottomSpacing={20}
   style={

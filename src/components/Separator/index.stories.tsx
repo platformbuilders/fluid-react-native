@@ -1,9 +1,9 @@
 import type { Meta } from '@storybook/react';
-import LabelDivider from '.';
+import Separator from '.';
 
-const meta: Meta<typeof LabelDivider> = {
-  title: 'LabelDivider',
-  component: LabelDivider,
+const meta: Meta<typeof Separator> = {
+  title: 'Separator',
+  component: Separator,
   args: {
     marginBottom: 10,
     marginTop: 10,

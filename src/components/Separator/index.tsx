@@ -7,7 +7,7 @@ type Props = {
   text: string;
 };
 
-const LabelDivider: React.FC<Props> = ({ text, marginTop, marginBottom }) => (
+const Separator: React.FC<Props> = ({ text, marginTop, marginBottom }) => (
   <OptionsWrapper marginTop={marginTop} marginBottom={marginBottom}>
     <Line />
     <DividerText>{text}</DividerText>
@@ -15,4 +15,4 @@ const LabelDivider: React.FC<Props> = ({ text, marginTop, marginBottom }) => (
   </OptionsWrapper>
 );
 
-export default LabelDivider;
+export default Separator;

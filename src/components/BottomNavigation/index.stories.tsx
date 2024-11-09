@@ -1,9 +1,9 @@
 import type { Meta } from '@storybook/react';
-import Navbar from '.';
+import BottomNavigation from '.';
 
-const meta: Meta<typeof Navbar> = {
-  title: 'Navbar',
-  component: Navbar,
+const meta: Meta<typeof BottomNavigation> = {
+  title: 'BottomNavigation',
+  component: BottomNavigation,
   argTypes: {},
   args: {
     activeFieldColor: '#fff',
