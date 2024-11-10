@@ -1,4 +1,3 @@
-import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
 import { ThemeProps, getTheme, ifStyle } from '@platformbuilders/theme-toolkit';
 import DefaultIcon from '../Icon';
@@ -28,7 +27,7 @@ export const defaultStyling = (theme?: any): any => ({
     borderColor: theme ? brandPrimary(theme) : '#eeeeee',
   },
   textStyle: {
-    fontSize: moderateScale(26),
+    fontSize: 26,
     color: theme ? textColor(theme) : 'black',
   },
 });

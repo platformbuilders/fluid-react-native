@@ -14,6 +14,7 @@ type ThemePrimaryStyleProps = {
 
 const isThemePrimary = ifStyle('isThemePrimary');
 const isIOSPlatform = ifStyle('isIOSPlatform');
+const spacingXs = getTheme('spacing.xs');
 const spacingSm = getTheme('spacing.sm');
 const spacingMd = getTheme('spacing.md');
 const getThemePrimaryContrastTextColor = (props: ThemeProps) =>
@@ -28,7 +29,7 @@ const getThemePrimaryContrastBackgroundColor = (props: ThemeProps) =>
   )(props);
 
 export const Wrapper = styled.View<WrapperStyleProps & ThemePrimaryStyleProps>`
-  ${isIOSPlatform('overflow: hidden; padding-bottom: 5px;', '')};
+  ${isIOSPlatform(`overflow: hidden; padding-bottom: ${spacingXs}px;`, '')};
 `;
 
 export const ContentWrapper = styled.View<

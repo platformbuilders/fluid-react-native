@@ -1,0 +1,29 @@
+rules:
+  - id: avoid-console-logs
+    languages: [javascript, typescript]
+    message: 'Parece que um console.log() ou similar foi esquecido. Remova para evitar exposição de informações.'
+    severity: WARNING
+    patterns:
+      - pattern-regex: "(console\\.log|console\\.warn|console\\.table|console\\.assert|console\\.count|console\\.dir|console\\.error|console\\.group|console\\.info)"
+    paths:
+      exclude:
+        - '*.json'
+        - 'src/bootstrap.tsx'
+        - '*.stories.tsx'
+        - 'src/components/FormError/index.tsx'
+    metadata:
+      description: 'Esta regra captura o uso de funções do console, como log ou warn, que podem ter sido deixadas acidentalmente. É importante remover esses logs em produção para evitar a exposição de informações sensíveis ou desnecessárias.'
+      tags: ['console', 'logs', 'debugging']
+
+  - id: avoid-console-tron-in-production
+    languages: [javascript, typescript]
+    message: 'Evite usar console.tron em builds de produção. Pode causar crashes silenciosos e dificultar o debugging.'
+    severity: WARNING
+    patterns:
+      - pattern-regex: "(console\\.tron\\.log|console\\.tron\\.warn|console\\.tron\\.table|console\\.tron\\.assert|console\\.tron\\.count|console\\.tron\\.dir|console\\.tron\\.error|console\\.tron\\.group|console\\.tron\\.info)"
+    paths:
+      exclude:
+        - '*.json'
+    metadata:
+      description: 'Esta regra detecta o uso de console.tron (Reactotron) em builds de produção, o que pode causar crashes silenciosos. Deve ser removido para evitar problemas graves no ambiente de produção.'
+      tags: ['reactotron', 'logs', 'debugging', 'production']

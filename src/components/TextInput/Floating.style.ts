@@ -1,4 +1,3 @@
-import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
 import { getTheme } from '@platformbuilders/theme-toolkit';
 import TextInput from './index';
@@ -43,33 +42,33 @@ const TextInputFloating = styled(TextInput).attrs((props: any) => {
   const fontSizeXs = getFontSizeXs(props) as number;
 
   return {
-    borderedHeight: moderateScale(65),
+    borderedHeight: 65,
     suppressAnimation: false,
-    borderedRadius: moderateScale(8),
+    borderedRadius: 8,
     borderedWidth: getBorderWidth(props),
     borderedColor: getColorByStatus(props)?.borderedColor,
     iconColor: getColorByStatus(props)?.iconColor,
     withBottomline: false,
     fixedLabelVariant: 'animated',
     textStyle: {
-      fontSize: moderateScale(fontSizeLg),
+      fontSize: fontSizeLg,
       color: getTextMain(props),
-      paddingBottom: moderateScale(5),
+      paddingBottom: 5,
     },
     labelStyle: {
-      lineHeight: moderateScale(24),
+      lineHeight: 24,
       color: getTextMain(props),
     },
-    iconSize: moderateScale(18),
+    iconSize: 18,
     animationValues: {
       upper: {
-        top: moderateScale(2),
-        fontSize: moderateScale(fontSizeXs),
+        top: 2,
+        fontSize: fontSizeXs,
         opacity: 0.4,
       },
       lower: {
-        top: moderateScale(14),
-        fontSize: moderateScale(fontSizeLg),
+        top: 14,
+        fontSize: fontSizeLg,
         opacity: 0.5,
       },
     },

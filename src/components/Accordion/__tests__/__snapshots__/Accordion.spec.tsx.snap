@@ -392,7 +392,7 @@ exports[`<Accordion /> should render Accordion with icon 1`] = `
             }
             accessible={true}
             collapsable={false}
-            focusable={true}
+            focusable={false}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -415,7 +415,7 @@ exports[`<Accordion /> should render Accordion with icon 1`] = `
                   [
                     {
                       "color": undefined,
-                      "fontSize": 37.714285714285715,
+                      "fontSize": 24,
                     },
                     undefined,
                     {
@@ -534,7 +534,7 @@ exports[`<Accordion /> should render Accordion with icon color grey inactive 1`]
             }
             accessible={true}
             collapsable={false}
-            focusable={true}
+            focusable={false}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -557,7 +557,7 @@ exports[`<Accordion /> should render Accordion with icon color grey inactive 1`]
                   [
                     {
                       "color": "#95a5a6",
-                      "fontSize": 37.714285714285715,
+                      "fontSize": 24,
                     },
                     undefined,
                     {
@@ -676,7 +676,7 @@ exports[`<Accordion /> should render Accordion with icon color red 1`] = `
             }
             accessible={true}
             collapsable={false}
-            focusable={true}
+            focusable={false}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -699,7 +699,7 @@ exports[`<Accordion /> should render Accordion with icon color red 1`] = `
                   [
                     {
                       "color": undefined,
-                      "fontSize": 37.714285714285715,
+                      "fontSize": 24,
                     },
                     undefined,
                     {
@@ -818,7 +818,7 @@ exports[`<Accordion /> should render Accordion with icon down text custom 1`] = 
             }
             accessible={true}
             collapsable={false}
-            focusable={true}
+            focusable={false}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -841,7 +841,7 @@ exports[`<Accordion /> should render Accordion with icon down text custom 1`] = 
                   [
                     {
                       "color": undefined,
-                      "fontSize": 37.714285714285715,
+                      "fontSize": 24,
                     },
                     undefined,
                     {
@@ -960,7 +960,7 @@ exports[`<Accordion /> should render Accordion with icon up text custom 1`] = `
             }
             accessible={true}
             collapsable={false}
-            focusable={true}
+            focusable={false}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
@@ -983,7 +983,7 @@ exports[`<Accordion /> should render Accordion with icon up text custom 1`] = `
                   [
                     {
                       "color": undefined,
-                      "fontSize": 37.714285714285715,
+                      "fontSize": 24,
                     },
                     undefined,
                     {

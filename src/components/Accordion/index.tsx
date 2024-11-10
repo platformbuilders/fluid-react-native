@@ -4,7 +4,6 @@ import { Text, TouchableOpacity, View } from 'react-native';
 import Accordion from 'react-native-collapsible/Accordion';
 import Markdown from 'react-native-markdown-display';
 import { AccordionType } from '../../types';
-import If from '../If';
 import { Icon } from './styles';
 
 type Props = {
@@ -56,14 +55,14 @@ const AccordionContainer: React.FC<Props> = ({
     return (
       <StyledHeader isActive={isActive(section)}>
         <StyledTitle isActive={isActive(section)}>{section.title}</StyledTitle>
-        <If condition={hasIcon}>
+        {hasIcon && (
           <Icon
             name={getIconName(section)}
             color={isActive(section) ? activeIconColor : inactiveIconColor}
             id={iconUpName}
             accessibility={isActive(section) ? 'Fechar' : 'Abrir'}
           />
-        </If>
+        )}
       </StyledHeader>
     );
   };
@@ -71,12 +70,8 @@ const AccordionContainer: React.FC<Props> = ({
   const renderContent = (section: SectionType) => {
     return (
       <StyledContent>
-        <If condition={isMarkdown}>
-          <Markdown>{section.content}</Markdown>
-        </If>
-        <If condition={!isMarkdown}>
-          <StyledBody>{section.content}</StyledBody>
-        </If>
+        {isMarkdown && <Markdown>{section.content}</Markdown>}
+        {!isMarkdown && <StyledBody>{section.content}</StyledBody>}
       </StyledContent>
     );
   };

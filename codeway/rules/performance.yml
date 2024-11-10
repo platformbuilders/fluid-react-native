@@ -1,0 +1,13 @@
+rules:
+  - id: use-fastimage-instead-of-image
+    languages: [javascript, typescript]
+    message: 'Sempre use o módulo FastImage no lugar de styled.Image para melhorar a performance no carregamento de imagens.'
+    severity: WARNING
+    patterns:
+      - pattern-regex: "styled\\.Image"
+    paths:
+      exclude:
+        - '*.json'
+    metadata:
+      description: 'O FastImage oferece melhor desempenho no carregamento de imagens em comparação com o Image padrão do React Native. Use FastImage para garantir uma experiência de usuário mais fluida e eficiente.'
+      tags: ['styles', 'image', 'performance', 'fastimage']

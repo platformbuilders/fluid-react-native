@@ -17,10 +17,10 @@ exports[`<PinInput /> should render textinput 1`] = `
       {
         "alignItems": "stretch",
         "flexDirection": "row",
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "position": "relative",
-        "width": 380.2857142857143,
+        "width": 242,
       }
     }
   >
@@ -45,11 +45,11 @@ exports[`<PinInput /> should render textinput 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 0"
@@ -59,7 +59,7 @@ exports[`<PinInput /> should render textinput 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -76,11 +76,11 @@ exports[`<PinInput /> should render textinput 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 1"
@@ -90,7 +90,7 @@ exports[`<PinInput /> should render textinput 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -107,11 +107,11 @@ exports[`<PinInput /> should render textinput 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 2"
@@ -121,7 +121,7 @@ exports[`<PinInput /> should render textinput 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -138,11 +138,11 @@ exports[`<PinInput /> should render textinput 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 3"
@@ -152,7 +152,7 @@ exports[`<PinInput /> should render textinput 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -209,10 +209,10 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
       {
         "alignItems": "stretch",
         "flexDirection": "row",
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "position": "relative",
-        "width": 380.2857142857143,
+        "width": 242,
       }
     }
   >
@@ -237,11 +237,11 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 0"
@@ -251,7 +251,7 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -268,11 +268,11 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 1"
@@ -282,7 +282,7 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -299,11 +299,11 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 2"
@@ -313,7 +313,7 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -330,11 +330,11 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 3"
@@ -344,7 +344,7 @@ exports[`<PinInput /> should render textinput with animated 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -401,10 +401,10 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
       {
         "alignItems": "stretch",
         "flexDirection": "row",
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "position": "relative",
-        "width": 380.2857142857143,
+        "width": 242,
       }
     }
   >
@@ -429,11 +429,11 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 0"
@@ -443,7 +443,7 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -460,11 +460,11 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 1"
@@ -474,7 +474,7 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -491,11 +491,11 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 2"
@@ -505,7 +505,7 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -522,11 +522,11 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 3"
@@ -536,7 +536,7 @@ exports[`<PinInput /> should render textinput with centered 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -593,10 +593,10 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
       {
         "alignItems": "stretch",
         "flexDirection": "row",
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "position": "relative",
-        "width": 380.2857142857143,
+        "width": 242,
       }
     }
   >
@@ -621,11 +621,11 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 0"
@@ -635,7 +635,7 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -652,11 +652,11 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 1"
@@ -666,7 +666,7 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -683,11 +683,11 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 2"
@@ -697,7 +697,7 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -714,11 +714,11 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 3"
@@ -728,7 +728,7 @@ exports[`<PinInput /> should render textinput with contrast 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -786,10 +786,10 @@ exports[`<PinInput /> should render textinput with custom caption 1`] = `
         {
           "alignItems": "stretch",
           "flexDirection": "row",
-          "height": 88,
+          "height": 56,
           "justifyContent": "center",
           "position": "relative",
-          "width": 380.2857142857143,
+          "width": 242,
         }
       }
     >
@@ -814,11 +814,11 @@ exports[`<PinInput /> should render textinput with custom caption 1`] = `
               "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
-              "height": 88,
+              "height": 56,
               "justifyContent": "center",
-              "marginLeft": 4.714285714285714,
-              "marginRight": 4.714285714285714,
-              "width": 88,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "width": 56,
             }
           }
           testID="Insira o PIN 0"
@@ -828,7 +828,7 @@ exports[`<PinInput /> should render textinput with custom caption 1`] = `
               [
                 {
                   "color": null,
-                  "fontSize": 40.85714285714286,
+                  "fontSize": 26,
                 },
                 {},
               ]
@@ -845,11 +845,11 @@ exports[`<PinInput /> should render textinput with custom caption 1`] = `
               "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
-              "height": 88,
+              "height": 56,
               "justifyContent": "center",
-              "marginLeft": 4.714285714285714,
-              "marginRight": 4.714285714285714,
-              "width": 88,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "width": 56,
             }
           }
           testID="Insira o PIN 1"
@@ -859,7 +859,7 @@ exports[`<PinInput /> should render textinput with custom caption 1`] = `
               [
                 {
                   "color": null,
-                  "fontSize": 40.85714285714286,
+                  "fontSize": 26,
                 },
                 {},
               ]
@@ -876,11 +876,11 @@ exports[`<PinInput /> should render textinput with custom caption 1`] = `
               "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
-              "height": 88,
+              "height": 56,
               "justifyContent": "center",
-              "marginLeft": 4.714285714285714,
-              "marginRight": 4.714285714285714,
-              "width": 88,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "width": 56,
             }
           }
           testID="Insira o PIN 2"
@@ -890,7 +890,7 @@ exports[`<PinInput /> should render textinput with custom caption 1`] = `
               [
                 {
                   "color": null,
-                  "fontSize": 40.85714285714286,
+                  "fontSize": 26,
                 },
                 {},
               ]
@@ -907,11 +907,11 @@ exports[`<PinInput /> should render textinput with custom caption 1`] = `
               "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
-              "height": 88,
+              "height": 56,
               "justifyContent": "center",
-              "marginLeft": 4.714285714285714,
-              "marginRight": 4.714285714285714,
-              "width": 88,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "width": 56,
             }
           }
           testID="Insira o PIN 3"
@@ -921,7 +921,7 @@ exports[`<PinInput /> should render textinput with custom caption 1`] = `
               [
                 {
                   "color": null,
-                  "fontSize": 40.85714285714286,
+                  "fontSize": 26,
                 },
                 {},
               ]
@@ -1001,10 +1001,10 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
       {
         "alignItems": "stretch",
         "flexDirection": "row",
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "position": "relative",
-        "width": 575.1428571428571,
+        "width": 366,
       }
     }
   >
@@ -1029,11 +1029,11 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 0"
@@ -1043,7 +1043,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -1060,11 +1060,11 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 1"
@@ -1074,7 +1074,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -1091,11 +1091,11 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 2"
@@ -1105,7 +1105,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -1122,11 +1122,11 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 3"
@@ -1136,7 +1136,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -1153,11 +1153,11 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 4"
@@ -1167,7 +1167,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -1184,11 +1184,11 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 5"
@@ -1198,7 +1198,7 @@ exports[`<PinInput /> should render textinput with custom code length 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -1256,10 +1256,10 @@ exports[`<PinInput /> should render textinput with custom error message 1`] = `
         {
           "alignItems": "stretch",
           "flexDirection": "row",
-          "height": 88,
+          "height": 56,
           "justifyContent": "center",
           "position": "relative",
-          "width": 380.2857142857143,
+          "width": 242,
         }
       }
     >
@@ -1284,11 +1284,11 @@ exports[`<PinInput /> should render textinput with custom error message 1`] = `
               "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
-              "height": 88,
+              "height": 56,
               "justifyContent": "center",
-              "marginLeft": 4.714285714285714,
-              "marginRight": 4.714285714285714,
-              "width": 88,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "width": 56,
             }
           }
           testID="Insira o PIN 0"
@@ -1298,7 +1298,7 @@ exports[`<PinInput /> should render textinput with custom error message 1`] = `
               [
                 {
                   "color": null,
-                  "fontSize": 40.85714285714286,
+                  "fontSize": 26,
                 },
                 {},
               ]
@@ -1315,11 +1315,11 @@ exports[`<PinInput /> should render textinput with custom error message 1`] = `
               "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
-              "height": 88,
+              "height": 56,
               "justifyContent": "center",
-              "marginLeft": 4.714285714285714,
-              "marginRight": 4.714285714285714,
-              "width": 88,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "width": 56,
             }
           }
           testID="Insira o PIN 1"
@@ -1329,7 +1329,7 @@ exports[`<PinInput /> should render textinput with custom error message 1`] = `
               [
                 {
                   "color": null,
-                  "fontSize": 40.85714285714286,
+                  "fontSize": 26,
                 },
                 {},
               ]
@@ -1346,11 +1346,11 @@ exports[`<PinInput /> should render textinput with custom error message 1`] = `
               "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
-              "height": 88,
+              "height": 56,
               "justifyContent": "center",
-              "marginLeft": 4.714285714285714,
-              "marginRight": 4.714285714285714,
-              "width": 88,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "width": 56,
             }
           }
           testID="Insira o PIN 2"
@@ -1360,7 +1360,7 @@ exports[`<PinInput /> should render textinput with custom error message 1`] = `
               [
                 {
                   "color": null,
-                  "fontSize": 40.85714285714286,
+                  "fontSize": 26,
                 },
                 {},
               ]
@@ -1377,11 +1377,11 @@ exports[`<PinInput /> should render textinput with custom error message 1`] = `
               "borderRadius": 8,
               "borderWidth": 2,
               "flexDirection": "row",
-              "height": 88,
+              "height": 56,
               "justifyContent": "center",
-              "marginLeft": 4.714285714285714,
-              "marginRight": 4.714285714285714,
-              "width": 88,
+              "marginLeft": 3,
+              "marginRight": 3,
+              "width": 56,
             }
           }
           testID="Insira o PIN 3"
@@ -1391,7 +1391,7 @@ exports[`<PinInput /> should render textinput with custom error message 1`] = `
               [
                 {
                   "color": null,
-                  "fontSize": 40.85714285714286,
+                  "fontSize": 26,
                 },
                 {},
               ]
@@ -1473,10 +1473,10 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
       {
         "alignItems": "stretch",
         "flexDirection": "row",
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "position": "relative",
-        "width": 380.2857142857143,
+        "width": 242,
       }
     }
   >
@@ -1501,11 +1501,11 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 0"
@@ -1515,7 +1515,7 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -1532,11 +1532,11 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 1"
@@ -1546,7 +1546,7 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -1563,11 +1563,11 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 2"
@@ -1577,7 +1577,7 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -1594,11 +1594,11 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 3"
@@ -1608,7 +1608,7 @@ exports[`<PinInput /> should render textinput with custom ful fill 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -1666,10 +1666,10 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
       {
         "alignItems": "stretch",
         "flexDirection": "row",
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "position": "relative",
-        "width": 380.2857142857143,
+        "width": 242,
       }
     }
   >
@@ -1694,11 +1694,11 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 0"
@@ -1708,7 +1708,7 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -1725,11 +1725,11 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 1"
@@ -1739,7 +1739,7 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -1756,11 +1756,11 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 2"
@@ -1770,7 +1770,7 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -1787,11 +1787,11 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 3"
@@ -1801,7 +1801,7 @@ exports[`<PinInput /> should render textinput with custom mask 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -1858,10 +1858,10 @@ exports[`<PinInput /> should render textinput with error 1`] = `
       {
         "alignItems": "stretch",
         "flexDirection": "row",
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "position": "relative",
-        "width": 380.2857142857143,
+        "width": 242,
       }
     }
   >
@@ -1886,11 +1886,11 @@ exports[`<PinInput /> should render textinput with error 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 0"
@@ -1900,7 +1900,7 @@ exports[`<PinInput /> should render textinput with error 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -1917,11 +1917,11 @@ exports[`<PinInput /> should render textinput with error 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 1"
@@ -1931,7 +1931,7 @@ exports[`<PinInput /> should render textinput with error 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -1948,11 +1948,11 @@ exports[`<PinInput /> should render textinput with error 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 2"
@@ -1962,7 +1962,7 @@ exports[`<PinInput /> should render textinput with error 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -1979,11 +1979,11 @@ exports[`<PinInput /> should render textinput with error 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 3"
@@ -1993,7 +1993,7 @@ exports[`<PinInput /> should render textinput with error 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -2050,10 +2050,10 @@ exports[`<PinInput /> should render textinput with password 1`] = `
       {
         "alignItems": "stretch",
         "flexDirection": "row",
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "position": "relative",
-        "width": 380.2857142857143,
+        "width": 242,
       }
     }
   >
@@ -2078,11 +2078,11 @@ exports[`<PinInput /> should render textinput with password 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 0"
@@ -2092,7 +2092,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -2109,11 +2109,11 @@ exports[`<PinInput /> should render textinput with password 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 1"
@@ -2123,7 +2123,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -2140,11 +2140,11 @@ exports[`<PinInput /> should render textinput with password 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 2"
@@ -2154,7 +2154,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -2171,11 +2171,11 @@ exports[`<PinInput /> should render textinput with password 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 3"
@@ -2185,7 +2185,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -2274,7 +2274,7 @@ exports[`<PinInput /> should render textinput with password 1`] = `
             [
               {
                 "color": "#4255EF",
-                "fontSize": 37.714285714285715,
+                "fontSize": 24,
               },
               undefined,
               {
@@ -2313,10 +2313,10 @@ exports[`<PinInput /> should render textinput with value 1`] = `
       {
         "alignItems": "stretch",
         "flexDirection": "row",
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "position": "relative",
-        "width": 380.2857142857143,
+        "width": 242,
       }
     }
   >
@@ -2341,11 +2341,11 @@ exports[`<PinInput /> should render textinput with value 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 0"
@@ -2355,7 +2355,7 @@ exports[`<PinInput /> should render textinput with value 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -2374,11 +2374,11 @@ exports[`<PinInput /> should render textinput with value 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 1"
@@ -2388,7 +2388,7 @@ exports[`<PinInput /> should render textinput with value 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -2407,11 +2407,11 @@ exports[`<PinInput /> should render textinput with value 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 2"
@@ -2421,7 +2421,7 @@ exports[`<PinInput /> should render textinput with value 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]
@@ -2440,11 +2440,11 @@ exports[`<PinInput /> should render textinput with value 1`] = `
             "borderRadius": 8,
             "borderWidth": 2,
             "flexDirection": "row",
-            "height": 88,
+            "height": 56,
             "justifyContent": "center",
-            "marginLeft": 4.714285714285714,
-            "marginRight": 4.714285714285714,
-            "width": 88,
+            "marginLeft": 3,
+            "marginRight": 3,
+            "width": 56,
           }
         }
         testID="Insira o PIN 3"
@@ -2454,7 +2454,7 @@ exports[`<PinInput /> should render textinput with value 1`] = `
             [
               {
                 "color": null,
-                "fontSize": 40.85714285714286,
+                "fontSize": 26,
               },
               {},
             ]

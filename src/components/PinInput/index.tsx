@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react';
 import { isEmpty } from 'lodash';
-import { moderateScale } from 'react-native-size-matters';
 import { ThemeContext } from 'styled-components';
 import { PinInputType } from '../../types';
 import FormError from '../FormError';
@@ -23,9 +22,9 @@ const PinInput: React.FC<PinInputType> = ({
   contrast = false,
   mask = '•',
   codeLength = 4,
-  cellSpacing = moderateScale(6),
-  iconSize = moderateScale(24),
-  cellSize = moderateScale(56),
+  cellSpacing = 6,
+  iconSize = 24,
+  cellSize = 56,
   caption,
   error,
   value,

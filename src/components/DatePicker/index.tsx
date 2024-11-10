@@ -93,8 +93,8 @@ const DatePickerInput: FC<Props> = ({
   const customStyles = error
     ? { ...DatePickerStyles, dateInput: { borderColor: '#cc0000' } }
     : dark
-    ? DatePickerStylesDark
-    : DatePickerStyles;
+      ? DatePickerStylesDark
+      : DatePickerStyles;
 
   return (
     <FormError

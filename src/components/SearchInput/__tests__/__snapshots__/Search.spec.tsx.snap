@@ -12,7 +12,7 @@ exports[`<Search /> should render search 1`] = `
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "paddingHorizontal": 32,
       },
@@ -78,12 +78,12 @@ exports[`<Search /> should render search 1`] = `
               {
                 "color": "#444444",
                 "position": "absolute",
-                "top": 12.571428571428571,
+                "top": 8,
               },
               {
-                "fontSize": 18.857142857142858,
+                "fontSize": 12,
                 "opacity": 0.4,
-                "top": -18.857142857142858,
+                "top": -12,
               },
             ]
           }
@@ -119,6 +119,11 @@ exports[`<Search /> should render search 1`] = `
             centered={false}
             contrast={false}
             id="test"
+            inputRef={
+              {
+                "current": null,
+              }
+            }
             isPlaceholder={false}
             keyboardType="default"
             large={false}
@@ -137,29 +142,19 @@ exports[`<Search /> should render search 1`] = `
               }
             }
             placeholder="Pesquise aqui"
-            placeholderTextColor="#72727260"
+            placeholderTextColor="#999999"
             status="default"
             style={
               [
                 {
-                  "borderWidth": 0,
-                  "color": "#444444",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
-                  "fontSize": 15,
-                  "minHeight": 37.714285714285715,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
-                  "width": "100%",
                 },
                 {},
               ]
             }
             testID="test"
-            textAlign="left"
             type="custom"
             underlineColorAndroid="transparent"
             value=""
@@ -218,7 +213,7 @@ exports[`<Search /> should render search 1`] = `
     var theme = _ref3.theme;
     return lodash_1(theme, themeProp) || null;
   }",
-                        "fontSize": 40.85714285714286,
+                        "fontSize": 26,
                       },
                       undefined,
                       {
@@ -268,7 +263,7 @@ exports[`<Search /> should render search with auto focus 1`] = `
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "paddingHorizontal": 32,
       },
@@ -334,12 +329,12 @@ exports[`<Search /> should render search with auto focus 1`] = `
               {
                 "color": "#444444",
                 "position": "absolute",
-                "top": 12.571428571428571,
+                "top": 8,
               },
               {
-                "fontSize": 18.857142857142858,
+                "fontSize": 12,
                 "opacity": 0.4,
-                "top": -18.857142857142858,
+                "top": -12,
               },
             ]
           }
@@ -375,6 +370,11 @@ exports[`<Search /> should render search with auto focus 1`] = `
             centered={false}
             contrast={false}
             id="test"
+            inputRef={
+              {
+                "current": null,
+              }
+            }
             isPlaceholder={false}
             keyboardType="default"
             large={false}
@@ -393,29 +393,19 @@ exports[`<Search /> should render search with auto focus 1`] = `
               }
             }
             placeholder="Pesquise aqui"
-            placeholderTextColor="#72727260"
+            placeholderTextColor="#999999"
             status="default"
             style={
               [
                 {
-                  "borderWidth": 0,
-                  "color": "#444444",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
-                  "fontSize": 15,
-                  "minHeight": 37.714285714285715,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
-                  "width": "100%",
                 },
                 {},
               ]
             }
             testID="test"
-            textAlign="left"
             type="custom"
             underlineColorAndroid="transparent"
             value=""
@@ -474,7 +464,7 @@ exports[`<Search /> should render search with auto focus 1`] = `
     var theme = _ref3.theme;
     return lodash_1(theme, themeProp) || null;
   }",
-                        "fontSize": 40.85714285714286,
+                        "fontSize": 26,
                       },
                       undefined,
                       {
@@ -524,7 +514,7 @@ exports[`<Search /> should render search with custom container style 1`] = `
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "paddingHorizontal": 32,
       },
@@ -593,12 +583,12 @@ exports[`<Search /> should render search with custom container style 1`] = `
               {
                 "color": "#444444",
                 "position": "absolute",
-                "top": 12.571428571428571,
+                "top": 8,
               },
               {
-                "fontSize": 18.857142857142858,
+                "fontSize": 12,
                 "opacity": 0.4,
-                "top": -18.857142857142858,
+                "top": -12,
               },
             ]
           }
@@ -634,6 +624,11 @@ exports[`<Search /> should render search with custom container style 1`] = `
             centered={false}
             contrast={false}
             id="test"
+            inputRef={
+              {
+                "current": null,
+              }
+            }
             isPlaceholder={false}
             keyboardType="default"
             large={false}
@@ -652,29 +647,19 @@ exports[`<Search /> should render search with custom container style 1`] = `
               }
             }
             placeholder="Pesquise aqui"
-            placeholderTextColor="#72727260"
+            placeholderTextColor="#999999"
             status="default"
             style={
               [
                 {
-                  "borderWidth": 0,
-                  "color": "#444444",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
-                  "fontSize": 15,
-                  "minHeight": 37.714285714285715,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
-                  "width": "100%",
                 },
                 {},
               ]
             }
             testID="test"
-            textAlign="left"
             type="custom"
             underlineColorAndroid="transparent"
             value=""
@@ -733,7 +718,7 @@ exports[`<Search /> should render search with custom container style 1`] = `
     var theme = _ref3.theme;
     return lodash_1(theme, themeProp) || null;
   }",
-                        "fontSize": 40.85714285714286,
+                        "fontSize": 26,
                       },
                       undefined,
                       {
@@ -783,7 +768,7 @@ exports[`<Search /> should render search with custom icon color 1`] = `
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "paddingHorizontal": 32,
       },
@@ -849,12 +834,12 @@ exports[`<Search /> should render search with custom icon color 1`] = `
               {
                 "color": "#444444",
                 "position": "absolute",
-                "top": 12.571428571428571,
+                "top": 8,
               },
               {
-                "fontSize": 18.857142857142858,
+                "fontSize": 12,
                 "opacity": 0.4,
-                "top": -18.857142857142858,
+                "top": -12,
               },
             ]
           }
@@ -890,6 +875,11 @@ exports[`<Search /> should render search with custom icon color 1`] = `
             centered={false}
             contrast={false}
             id="test"
+            inputRef={
+              {
+                "current": null,
+              }
+            }
             isPlaceholder={false}
             keyboardType="default"
             large={false}
@@ -908,29 +898,19 @@ exports[`<Search /> should render search with custom icon color 1`] = `
               }
             }
             placeholder="Pesquise aqui"
-            placeholderTextColor="#72727260"
+            placeholderTextColor="#999999"
             status="default"
             style={
               [
                 {
-                  "borderWidth": 0,
-                  "color": "#444444",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
-                  "fontSize": 15,
-                  "minHeight": 37.714285714285715,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
-                  "width": "100%",
                 },
                 {},
               ]
             }
             testID="test"
-            textAlign="left"
             type="custom"
             underlineColorAndroid="transparent"
             value=""
@@ -986,7 +966,7 @@ exports[`<Search /> should render search with custom icon color 1`] = `
                     [
                       {
                         "color": "#fff",
-                        "fontSize": 40.85714285714286,
+                        "fontSize": 26,
                       },
                       undefined,
                       {
@@ -1036,7 +1016,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "paddingHorizontal": 32,
       },
@@ -1105,12 +1085,12 @@ exports[`<Search /> should render search with custom input style 1`] = `
               {
                 "color": "#444444",
                 "position": "absolute",
-                "top": 12.571428571428571,
+                "top": 8,
               },
               {
-                "fontSize": 18.857142857142858,
+                "fontSize": 12,
                 "opacity": 0.4,
-                "top": -18.857142857142858,
+                "top": -12,
               },
             ]
           }
@@ -1146,6 +1126,11 @@ exports[`<Search /> should render search with custom input style 1`] = `
             centered={false}
             contrast={false}
             id="test"
+            inputRef={
+              {
+                "current": null,
+              }
+            }
             isPlaceholder={false}
             keyboardType="default"
             large={false}
@@ -1164,29 +1149,19 @@ exports[`<Search /> should render search with custom input style 1`] = `
               }
             }
             placeholder="Pesquise aqui"
-            placeholderTextColor="#72727260"
+            placeholderTextColor="#999999"
             status="default"
             style={
               [
                 {
-                  "borderWidth": 0,
-                  "color": "#444444",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
-                  "fontSize": 15,
-                  "minHeight": 37.714285714285715,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
-                  "width": "100%",
                 },
                 {},
               ]
             }
             testID="test"
-            textAlign="left"
             type="custom"
             underlineColorAndroid="transparent"
             value=""
@@ -1245,7 +1220,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
     var theme = _ref3.theme;
     return lodash_1(theme, themeProp) || null;
   }",
-                        "fontSize": 40.85714285714286,
+                        "fontSize": 26,
                       },
                       undefined,
                       {
@@ -1295,7 +1270,7 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "paddingHorizontal": 32,
       },
@@ -1361,12 +1336,12 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
               {
                 "color": "#444444",
                 "position": "absolute",
-                "top": 12.571428571428571,
+                "top": 8,
               },
               {
-                "fontSize": 18.857142857142858,
+                "fontSize": 12,
                 "opacity": 0.4,
-                "top": -18.857142857142858,
+                "top": -12,
               },
             ]
           }
@@ -1402,6 +1377,11 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
             centered={false}
             contrast={false}
             id="test"
+            inputRef={
+              {
+                "current": null,
+              }
+            }
             isPlaceholder={false}
             keyboardType="default"
             large={false}
@@ -1420,29 +1400,19 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
               }
             }
             placeholder="Test"
-            placeholderTextColor="#72727260"
+            placeholderTextColor="#999999"
             status="default"
             style={
               [
                 {
-                  "borderWidth": 0,
-                  "color": "#444444",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
-                  "fontSize": 15,
-                  "minHeight": 37.714285714285715,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
-                  "width": "100%",
                 },
                 {},
               ]
             }
             testID="test"
-            textAlign="left"
             type="custom"
             underlineColorAndroid="transparent"
             value=""
@@ -1501,7 +1471,7 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
     var theme = _ref3.theme;
     return lodash_1(theme, themeProp) || null;
   }",
-                        "fontSize": 40.85714285714286,
+                        "fontSize": 26,
                       },
                       undefined,
                       {
@@ -1551,7 +1521,7 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "paddingHorizontal": 32,
       },
@@ -1617,12 +1587,12 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
               {
                 "color": "#444444",
                 "position": "absolute",
-                "top": 12.571428571428571,
+                "top": 8,
               },
               {
-                "fontSize": 18.857142857142858,
+                "fontSize": 12,
                 "opacity": 0.4,
-                "top": -18.857142857142858,
+                "top": -12,
               },
             ]
           }
@@ -1658,6 +1628,11 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
             centered={false}
             contrast={false}
             id="test"
+            inputRef={
+              {
+                "current": null,
+              }
+            }
             isPlaceholder={false}
             keyboardType="default"
             large={false}
@@ -1681,24 +1656,14 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
             style={
               [
                 {
-                  "borderWidth": 0,
-                  "color": "#444444",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
-                  "fontSize": 15,
-                  "minHeight": 37.714285714285715,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
-                  "width": "100%",
                 },
                 {},
               ]
             }
             testID="test"
-            textAlign="left"
             type="custom"
             underlineColorAndroid="transparent"
             value=""
@@ -1757,7 +1722,7 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
     var theme = _ref3.theme;
     return lodash_1(theme, themeProp) || null;
   }",
-                        "fontSize": 40.85714285714286,
+                        "fontSize": 26,
                       },
                       undefined,
                       {
@@ -1807,7 +1772,7 @@ exports[`<Search /> should render search with custom text style 1`] = `
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "paddingHorizontal": 32,
       },
@@ -1873,12 +1838,12 @@ exports[`<Search /> should render search with custom text style 1`] = `
               {
                 "color": "#444444",
                 "position": "absolute",
-                "top": 12.571428571428571,
+                "top": 8,
               },
               {
-                "fontSize": 18.857142857142858,
+                "fontSize": 12,
                 "opacity": 0.4,
-                "top": -18.857142857142858,
+                "top": -12,
               },
             ]
           }
@@ -1914,6 +1879,11 @@ exports[`<Search /> should render search with custom text style 1`] = `
             centered={false}
             contrast={false}
             id="test"
+            inputRef={
+              {
+                "current": null,
+              }
+            }
             isPlaceholder={false}
             keyboardType="default"
             large={false}
@@ -1932,23 +1902,14 @@ exports[`<Search /> should render search with custom text style 1`] = `
               }
             }
             placeholder="Pesquise aqui"
-            placeholderTextColor="#72727260"
+            placeholderTextColor="#999999"
             status="default"
             style={
               [
                 {
-                  "borderWidth": 0,
-                  "color": "#444444",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
-                  "fontSize": 15,
-                  "minHeight": 37.714285714285715,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
-                  "width": "100%",
                 },
                 {
                   "color": "#fff",
@@ -1956,7 +1917,6 @@ exports[`<Search /> should render search with custom text style 1`] = `
               ]
             }
             testID="test"
-            textAlign="left"
             type="custom"
             underlineColorAndroid="transparent"
             value=""
@@ -2015,7 +1975,7 @@ exports[`<Search /> should render search with custom text style 1`] = `
     var theme = _ref3.theme;
     return lodash_1(theme, themeProp) || null;
   }",
-                        "fontSize": 40.85714285714286,
+                        "fontSize": 26,
                       },
                       undefined,
                       {
@@ -2065,7 +2025,7 @@ exports[`<Search /> should render search with icon size 1`] = `
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "paddingHorizontal": 32,
       },
@@ -2131,12 +2091,12 @@ exports[`<Search /> should render search with icon size 1`] = `
               {
                 "color": "#444444",
                 "position": "absolute",
-                "top": 12.571428571428571,
+                "top": 8,
               },
               {
-                "fontSize": 18.857142857142858,
+                "fontSize": 12,
                 "opacity": 0.4,
-                "top": -18.857142857142858,
+                "top": -12,
               },
             ]
           }
@@ -2172,6 +2132,11 @@ exports[`<Search /> should render search with icon size 1`] = `
             centered={false}
             contrast={false}
             id="test"
+            inputRef={
+              {
+                "current": null,
+              }
+            }
             isPlaceholder={false}
             keyboardType="default"
             large={false}
@@ -2190,29 +2155,19 @@ exports[`<Search /> should render search with icon size 1`] = `
               }
             }
             placeholder="Pesquise aqui"
-            placeholderTextColor="#72727260"
+            placeholderTextColor="#999999"
             status="default"
             style={
               [
                 {
-                  "borderWidth": 0,
-                  "color": "#444444",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
-                  "fontSize": 15,
-                  "minHeight": 37.714285714285715,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
-                  "width": "100%",
                 },
                 {},
               ]
             }
             testID="test"
-            textAlign="left"
             type="custom"
             underlineColorAndroid="transparent"
             value=""
@@ -2321,7 +2276,7 @@ exports[`<Search /> should render search with left icon 1`] = `
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "paddingHorizontal": 32,
       },
@@ -2387,12 +2342,12 @@ exports[`<Search /> should render search with left icon 1`] = `
               {
                 "color": "#444444",
                 "position": "absolute",
-                "top": 12.571428571428571,
+                "top": 8,
               },
               {
-                "fontSize": 18.857142857142858,
+                "fontSize": 12,
                 "opacity": 0.4,
-                "top": -18.857142857142858,
+                "top": -12,
               },
             ]
           }
@@ -2466,7 +2421,7 @@ exports[`<Search /> should render search with left icon 1`] = `
                     [
                       {
                         "color": "#4255EF",
-                        "fontSize": 40.85714285714286,
+                        "fontSize": 26,
                       },
                       undefined,
                       {
@@ -2496,6 +2451,11 @@ exports[`<Search /> should render search with left icon 1`] = `
             centered={false}
             contrast={false}
             id="test"
+            inputRef={
+              {
+                "current": null,
+              }
+            }
             isPlaceholder={false}
             keyboardType="default"
             large={false}
@@ -2514,29 +2474,19 @@ exports[`<Search /> should render search with left icon 1`] = `
               }
             }
             placeholder="Pesquise aqui"
-            placeholderTextColor="#72727260"
+            placeholderTextColor="#999999"
             status="default"
             style={
               [
                 {
-                  "borderWidth": 0,
-                  "color": "#444444",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
-                  "fontSize": 15,
-                  "minHeight": 37.714285714285715,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
-                  "width": "100%",
                 },
                 {},
               ]
             }
             testID="test"
-            textAlign="left"
             type="custom"
             underlineColorAndroid="transparent"
             value=""
@@ -2575,7 +2525,7 @@ exports[`<Search /> should render search with padding 1`] = `
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "paddingHorizontal": 24,
       },
@@ -2641,12 +2591,12 @@ exports[`<Search /> should render search with padding 1`] = `
               {
                 "color": "#444444",
                 "position": "absolute",
-                "top": 12.571428571428571,
+                "top": 8,
               },
               {
-                "fontSize": 18.857142857142858,
+                "fontSize": 12,
                 "opacity": 0.4,
-                "top": -18.857142857142858,
+                "top": -12,
               },
             ]
           }
@@ -2683,6 +2633,11 @@ exports[`<Search /> should render search with padding 1`] = `
             centered={false}
             contrast={false}
             id="test"
+            inputRef={
+              {
+                "current": null,
+              }
+            }
             isPlaceholder={false}
             keyboardType="default"
             large={false}
@@ -2701,29 +2656,19 @@ exports[`<Search /> should render search with padding 1`] = `
               }
             }
             placeholder="Pesquise aqui"
-            placeholderTextColor="#72727260"
+            placeholderTextColor="#999999"
             status="default"
             style={
               [
                 {
-                  "borderWidth": 0,
-                  "color": "#444444",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
-                  "fontSize": 15,
-                  "minHeight": 37.714285714285715,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
-                  "width": "100%",
                 },
                 {},
               ]
             }
             testID="test"
-            textAlign="left"
             type="custom"
             underlineColorAndroid="transparent"
             value=""
@@ -2782,7 +2727,7 @@ exports[`<Search /> should render search with padding 1`] = `
     var theme = _ref3.theme;
     return lodash_1(theme, themeProp) || null;
   }",
-                        "fontSize": 40.85714285714286,
+                        "fontSize": 26,
                       },
                       undefined,
                       {
@@ -2832,7 +2777,7 @@ exports[`<Search /> should render search with right icon 1`] = `
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "paddingHorizontal": 32,
       },
@@ -2898,12 +2843,12 @@ exports[`<Search /> should render search with right icon 1`] = `
               {
                 "color": "#444444",
                 "position": "absolute",
-                "top": 12.571428571428571,
+                "top": 8,
               },
               {
-                "fontSize": 18.857142857142858,
+                "fontSize": 12,
                 "opacity": 0.4,
-                "top": -18.857142857142858,
+                "top": -12,
               },
             ]
           }
@@ -2939,6 +2884,11 @@ exports[`<Search /> should render search with right icon 1`] = `
             centered={false}
             contrast={false}
             id="test"
+            inputRef={
+              {
+                "current": null,
+              }
+            }
             isPlaceholder={false}
             keyboardType="default"
             large={false}
@@ -2957,29 +2907,19 @@ exports[`<Search /> should render search with right icon 1`] = `
               }
             }
             placeholder="Pesquise aqui"
-            placeholderTextColor="#72727260"
+            placeholderTextColor="#999999"
             status="default"
             style={
               [
                 {
-                  "borderWidth": 0,
-                  "color": "#444444",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
-                  "fontSize": 15,
-                  "minHeight": 37.714285714285715,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
-                  "width": "100%",
                 },
                 {},
               ]
             }
             testID="test"
-            textAlign="left"
             type="custom"
             underlineColorAndroid="transparent"
             value=""
@@ -3038,7 +2978,7 @@ exports[`<Search /> should render search with right icon 1`] = `
     var theme = _ref3.theme;
     return lodash_1(theme, themeProp) || null;
   }",
-                        "fontSize": 40.85714285714286,
+                        "fontSize": 26,
                       },
                       undefined,
                       {
@@ -3089,7 +3029,7 @@ exports[`<Search /> should render search with shadow 1`] = `
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
-        "height": 88,
+        "height": 56,
         "justifyContent": "center",
         "paddingHorizontal": 32,
         "shadowOffset": {
@@ -3097,7 +3037,7 @@ exports[`<Search /> should render search with shadow 1`] = `
           "width": 0,
         },
         "shadowOpacity": 0.2,
-        "shadowRadius": 6.285714285714286,
+        "shadowRadius": 3,
       },
     ]
   }
@@ -3161,12 +3101,12 @@ exports[`<Search /> should render search with shadow 1`] = `
               {
                 "color": "#444444",
                 "position": "absolute",
-                "top": 12.571428571428571,
+                "top": 8,
               },
               {
-                "fontSize": 18.857142857142858,
+                "fontSize": 12,
                 "opacity": 0.4,
-                "top": -18.857142857142858,
+                "top": -12,
               },
             ]
           }
@@ -3202,6 +3142,11 @@ exports[`<Search /> should render search with shadow 1`] = `
             centered={false}
             contrast={false}
             id="test"
+            inputRef={
+              {
+                "current": null,
+              }
+            }
             isPlaceholder={false}
             keyboardType="default"
             large={false}
@@ -3220,29 +3165,19 @@ exports[`<Search /> should render search with shadow 1`] = `
               }
             }
             placeholder="Pesquise aqui"
-            placeholderTextColor="#72727260"
+            placeholderTextColor="#999999"
             status="default"
             style={
               [
                 {
-                  "borderWidth": 0,
-                  "color": "#444444",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
-                  "fontSize": 15,
-                  "minHeight": 37.714285714285715,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
-                  "width": "100%",
                 },
                 {},
               ]
             }
             testID="test"
-            textAlign="left"
             type="custom"
             underlineColorAndroid="transparent"
             value=""
@@ -3301,7 +3236,7 @@ exports[`<Search /> should render search with shadow 1`] = `
     var theme = _ref3.theme;
     return lodash_1(theme, themeProp) || null;
   }",
-                        "fontSize": 40.85714285714286,
+                        "fontSize": 26,
                       },
                       undefined,
                       {
@@ -3418,12 +3353,12 @@ exports[`<Search /> should render search with wrapper height 1`] = `
               {
                 "color": "#444444",
                 "position": "absolute",
-                "top": 12.571428571428571,
+                "top": 8,
               },
               {
-                "fontSize": 18.857142857142858,
+                "fontSize": 12,
                 "opacity": 0.4,
-                "top": -18.857142857142858,
+                "top": -12,
               },
             ]
           }
@@ -3459,6 +3394,11 @@ exports[`<Search /> should render search with wrapper height 1`] = `
             centered={false}
             contrast={false}
             id="test"
+            inputRef={
+              {
+                "current": null,
+              }
+            }
             isPlaceholder={false}
             keyboardType="default"
             large={false}
@@ -3477,29 +3417,19 @@ exports[`<Search /> should render search with wrapper height 1`] = `
               }
             }
             placeholder="Pesquise aqui"
-            placeholderTextColor="#72727260"
+            placeholderTextColor="#999999"
             status="default"
             style={
               [
                 {
-                  "borderWidth": 0,
-                  "color": "#444444",
                   "flexBasis": 0,
                   "flexGrow": 1,
                   "flexShrink": 1,
-                  "fontSize": 15,
-                  "minHeight": 37.714285714285715,
-                  "paddingBottom": 0,
-                  "paddingLeft": 0,
-                  "paddingRight": 0,
-                  "paddingTop": 0,
-                  "width": "100%",
                 },
                 {},
               ]
             }
             testID="test"
-            textAlign="left"
             type="custom"
             underlineColorAndroid="transparent"
             value=""
@@ -3558,7 +3488,7 @@ exports[`<Search /> should render search with wrapper height 1`] = `
     var theme = _ref3.theme;
     return lodash_1(theme, themeProp) || null;
   }",
-                        "fontSize": 40.85714285714286,
+                        "fontSize": 26,
                       },
                       undefined,
                       {

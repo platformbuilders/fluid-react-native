@@ -1,5 +1,4 @@
 import { StyleProp, TextStyle } from 'react-native';
-import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
 import { getTheme, ifStyle } from '@platformbuilders/theme-toolkit';
 import Touchable from '../Touchable';
@@ -25,9 +24,9 @@ export const Wrapper = styled(Touchable)`
 `;
 
 export const Radio = styled(Touchable)<RadioProps>`
-  width: ${({ size }: RadioProps) => moderateScale(size)}px;
-  height: ${({ size }: RadioProps) => moderateScale(size)}px;
-  border-radius: ${({ size }: RadioProps) => moderateScale(size / 2)}px;
+  width: ${({ size }: RadioProps) => size}px;
+  height: ${({ size }: RadioProps) => size}px;
+  border-radius: ${({ size }: RadioProps) => size / 2}px;
   border: ${smBorderWidth}px
     ${({ radioButtonColor }: RadioProps): any =>
       hasColor(radioButtonColor, textColor)}${hasColor('', '4D')};
@@ -41,14 +40,11 @@ type CheckRadioProps = {
 };
 
 export const CheckedRadio = styled.View<CheckRadioProps>`
-  width: ${({ internalSize }: CheckRadioProps) =>
-    moderateScale(internalSize)}px;
-  height: ${({ internalSize }: CheckRadioProps) =>
-    moderateScale(internalSize)}px;
+  width: ${({ internalSize }: CheckRadioProps) => internalSize}px;
+  height: ${({ internalSize }: CheckRadioProps) => internalSize}px;
   background-color: ${({ checkedRadioButtonColor }: CheckRadioProps): any =>
     hasCheckedColor(checkedRadioButtonColor, checkedRadioColor)};
-  border-radius: ${({ internalSize }: CheckRadioProps) =>
-    moderateScale(internalSize / 2)}px;
+  border-radius: ${({ internalSize }: CheckRadioProps) => internalSize / 2}px;
 `;
 
 type LabelProps = {
