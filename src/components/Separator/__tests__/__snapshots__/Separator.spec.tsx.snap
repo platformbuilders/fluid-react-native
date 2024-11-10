@@ -19,7 +19,7 @@ exports[`<Separator /> should render Separator 1`] = `
       [
         {
           "backgroundColor": "#99999990",
-          "height": 1,
+          "height": 0.5,
           "width": "33%",
         },
       ]
@@ -54,7 +54,7 @@ exports[`<Separator /> should render Separator 1`] = `
       [
         {
           "backgroundColor": "#99999990",
-          "height": 1,
+          "height": 0.5,
           "width": "33%",
         },
       ]
