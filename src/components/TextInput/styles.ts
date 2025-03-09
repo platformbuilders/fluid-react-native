@@ -2,7 +2,6 @@ import { Animated, StyleSheet } from 'react-native';
 import styled from 'styled-components/native';
 import {
   ThemeProps,
-  getFontSize,
   getTheme,
   ifStyle,
   switchStyle,
@@ -209,20 +208,31 @@ export const TextLabel = styled(Typography)<any>`
 
 export const Label = Animated.createAnimatedComponent(TextLabel);
 
-export const TextInput = styled.TextInput.attrs((props: TextInputType) => ({
-  accessibilityLabel: props.accessibilityLabel || props.accessibility,
-  testID: props.testID || props.id,
-  textAlign: isCentered('center', 'left')(props),
-  placeholderTextColor: props.placeholderTextColor
-    ? props.placeholderTextColor
-    : '#72727260',
-}))<TextInputType>`
+export const TextInputWrapper = styled.View<TextInputType>`
+  padding: 0;
+  flex-grow: 1;
+  border-width: 0;
+  min-height: 24px;
+  width: 100%;
+`;
+
+export const TextInput = styled.TextInput.attrs(
+  (props: TextInputType & ThemeProps) => ({
+    accessibilityLabel: props.accessibilityLabel || props.accessibility,
+    testID: props.testID || props.id,
+    textAlign: isCentered('center', 'left')(props),
+    placeholderTextColor: props.placeholderTextColor
+      ? props.placeholderTextColor
+      : '#72727260',
+    // Use fontSize from theme instead of hardcoded value
+    fontSize: getTheme('typography.fontSizes.md')(props),
+  }),
+)<TextInputType>`
   padding: 0;
   flex-grow: 1;
   border-width: 0;
   min-height: 24px;
   color: ${inputColor};
-  font-size: ${getFontSize}px;
   width: 100%;
 `;
 

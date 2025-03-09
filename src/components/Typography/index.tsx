@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+import { TextVariant } from '../../enums';
 import { TypographyType } from '../../types';
 import { AnimatedText, Text } from './styles';
 
@@ -14,7 +15,7 @@ const Typography = forwardRef<any, TypographyType>(
     },
     ref,
   ) => {
-    if (variant === 'animated') {
+    if (variant === TextVariant.ANIMATED) {
       return (
         <AnimatedText
           ref={ref}

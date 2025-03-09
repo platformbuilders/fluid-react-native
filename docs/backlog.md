@@ -93,7 +93,8 @@ Esta lista de tarefas serve como um guia prático para implementação das melho
 | Tarefa                              | Descrição                                                                 | Status        | Estimativa |
 | ----------------------------------- | ------------------------------------------------------------------------- | ------------- | ---------- |
 | ✅ Documentação Inicial             | Criar estrutura básica de documentação (arquitetura, features, backlog)   | **CONCLUÍDO** | 1 dia      |
-| ⬜ Resolver Dependências Duplicadas | Eliminar duplicidades e atualizar dependências críticas                   | **PENDENTE**  | 2 dias     |
+| ✅ Resolver Dependências Duplicadas | Eliminar duplicidades e atualizar dependências críticas                   | **CONCLUÍDO** | 2 dias     |
+| ✅ Corrigir Falhas Semgrep          | Corrigir problemas encontrados na análise estática (enums, console.logs)  | **CONCLUÍDO** | 2 dias     |
 | ⬜ Auditoria de Acessibilidade      | Avaliar e corrigir problemas de acessibilidade nos componentes principais | **PENDENTE**  | 3 dias     |
 | ⬜ Expansão do Storybook            | Adicionar mais exemplos e documentação interativa                         | **PENDENTE**  | 4 dias     |
 
@@ -121,10 +122,10 @@ Esta lista de tarefas serve como um guia prático para implementação das melho
 
 ### Próximos Passos
 
-1. Finalizar auditoria de acessibilidade e corrigir problemas críticos
-2. Implementar componentes de alta prioridade (BottomSheet, Toast)
-3. Melhorar documentação e exemplos no Storybook
-4. Resolver problemas de dependências duplicadas
+1. Realizar auditoria de acessibilidade e corrigir problemas críticos
+2. Expandir documentação e exemplos no Storybook
+3. Implementar componentes de alta prioridade (BottomSheet, Toast)
+4. Melhorar cobertura de testes
 5. Revisão de performance geral
 
 Esta lista será atualizada conforme o progresso do desenvolvimento e mudanças nas prioridades do projeto.

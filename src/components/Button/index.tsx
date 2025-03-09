@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { ButtonVariant } from '../../enums';
 import { ButtonProps } from '../../types';
 import { ButtonWrapper, Icon, Loading, TextButton, Touchable } from './styles';
 
@@ -37,7 +38,7 @@ const Button: FC<ButtonProps> = ({
       rounded={rounded}
     >
       <ButtonWrapper
-        hasBorder={variant === 'outline'}
+        hasBorder={variant === ButtonVariant.OUTLINE}
         buttonVariant={variant}
         colorVariant={colorVariant}
         style={style}

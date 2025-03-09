@@ -83,7 +83,6 @@ describe('<TextInput />', () => {
       </ThemeProvider>,
     );
 
-    console.log(wrapper);
     // Simulate icon press
     fireEvent.press(wrapper.getByTestId('icon_book'));
 

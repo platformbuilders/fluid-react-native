@@ -1,12 +1,12 @@
 import styled from 'styled-components/native';
 import {
   ButtonColorType,
-  ButtonVariants,
   ThemeProps,
   TypographyVariants,
   getTheme,
   ifStyle,
 } from '@platformbuilders/theme-toolkit';
+import { ButtonVariant } from '../../enums';
 
 import DefaultIcon from '../Icon';
 import LoadingIndicator from '../LoadingIndicator';
@@ -41,7 +41,7 @@ type ButtonWrapperProps = {
   rounded: boolean;
   hasBorder: boolean;
   flat: boolean;
-  buttonVariant: ButtonVariants;
+  buttonVariant: ButtonVariant | string;
   colorVariant: ButtonColorType;
   disabled?: boolean;
   style: any;
@@ -52,7 +52,7 @@ type ButtonWrapperProps = {
 const buttonSize = 45;
 
 function isTintVariant(bandSelected, props) {
-  if (props.buttonVariant === 'tint') {
+  if (props.buttonVariant === ButtonVariant.TINT) {
     return `${bandSelected(props)}10`;
   } else {
     return `${bandSelected(props)}`;
@@ -61,9 +61,9 @@ function isTintVariant(bandSelected, props) {
 
 const getBackgroundColor = (props: ButtonWrapperProps): string => {
   if (
-    props.buttonVariant === 'flat' ||
-    props.buttonVariant === 'ghost' ||
-    props.buttonVariant === 'outline'
+    props.buttonVariant === ButtonVariant.FLAT ||
+    props.buttonVariant === ButtonVariant.GHOST ||
+    props.buttonVariant === ButtonVariant.OUTLINE
   ) {
     return 'transparent';
   }
@@ -89,7 +89,7 @@ const getBackgroundColor = (props: ButtonWrapperProps): string => {
 };
 
 type TextButtonProps = {
-  buttonVariant: ButtonVariants;
+  buttonVariant: ButtonVariant | string;
   colorVariant: ButtonColorType;
   variant?: TypographyVariants;
   disabled?: boolean;
@@ -101,41 +101,43 @@ const getTextColor = (props: TextButtonProps): string => {
   switch (props.colorVariant) {
     case 'primary':
       return `${
-        props.buttonVariant === 'filled'
+        props.buttonVariant === ButtonVariant.FILLED
           ? brandPrimaryContrast(props)
           : brandPrimary(props)
       }`;
     case 'secondary':
       return `${
-        props.buttonVariant === 'filled'
+        props.buttonVariant === ButtonVariant.FILLED
           ? brandSecondaryContrast(props)
           : brandSecondary(props)
       }`;
     case 'accent':
       return `${
-        props.buttonVariant === 'filled'
+        props.buttonVariant === ButtonVariant.FILLED
           ? brandAccentContrast(props)
           : brandAccent(props)
       }`;
     case 'danger':
       return `${
-        props.buttonVariant === 'filled'
+        props.buttonVariant === ButtonVariant.FILLED
           ? dangerContrast(props)
           : dangerMain(props)
       }`;
     case 'info':
       return `${
-        props.buttonVariant === 'filled' ? infoContrast(props) : infoMain(props)
+        props.buttonVariant === ButtonVariant.FILLED
+          ? infoContrast(props)
+          : infoMain(props)
       }`;
     case 'warning':
       return `${
-        props.buttonVariant === 'filled'
+        props.buttonVariant === ButtonVariant.FILLED
           ? warningContrast(props)
           : warningMain(props)
       }`;
     case 'success':
       return `${
-        props.buttonVariant === 'filled'
+        props.buttonVariant === ButtonVariant.FILLED
           ? successContrast(props)
           : successMain(props)
       }`;
@@ -189,7 +191,7 @@ type IconProps = {
   rightIcon?: boolean;
   leftIcon?: boolean;
   colorVariant: ButtonColorType;
-  buttonVariant: ButtonVariants;
+  buttonVariant: ButtonVariant | string;
   style: any;
 } & ThemeProps;
 

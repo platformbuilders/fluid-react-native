@@ -3,9 +3,9 @@ import { PropsWithChildren } from 'react';
 import { StyleProp, TextStyle, ViewStyle } from 'react-native';
 import {
   ButtonColorType,
-  ButtonVariants,
   TypographyVariants,
 } from '@platformbuilders/theme-toolkit';
+import { ButtonVariant } from '../enums';
 import { TouchableType } from './TouchableType';
 
 export type ButtonProps = PropsWithChildren<
@@ -16,7 +16,7 @@ export type ButtonProps = PropsWithChildren<
     loading?: boolean;
     contrast?: boolean;
     flat?: boolean;
-    variant?: ButtonVariants;
+    variant?: ButtonVariant | string;
     colorVariant?: ButtonColorType;
     typographyVariant?: TypographyVariants;
     minWidth?: string | number;

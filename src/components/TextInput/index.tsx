@@ -1,7 +1,7 @@
 import React, { FC, useCallback, useEffect, useState } from 'react';
 import { isEmpty } from 'lodash';
 import { Animated } from 'react-native';
-import { IconFonts, InputStatus } from '../../enums';
+import { IconFonts, InputStatus, TextVariant } from '../../enums';
 import { TextInputType } from '../../types';
 import { useAutoFocus, usePrevious } from '../../utils/hooks';
 import FormError from '../FormError';
@@ -315,7 +315,7 @@ const TextInput: FC<TextInputType> = ({
                     <FixedLabel
                       hasLeftIcon={!isEmpty(iconBordered)}
                       style={
-                        fixedLabelVariant === 'animated'
+                        fixedLabelVariant === TextVariant.ANIMATED
                           ? [
                               labelAnimatedStyle,
                               labelAnimatedFinish,
