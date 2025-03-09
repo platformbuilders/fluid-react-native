@@ -30,11 +30,17 @@ const Button: FC<ButtonProps> = ({
   return (
     <Touchable
       id={id || accessibility}
-      accessibility={accessibility}
-      accessibilityLabel={accessibilityLabel || accessibility}
-      testID={testID || id || accessibility}
+      accessibilityLabel={accessibilityLabel || accessibility || 'Button'}
+      accessibilityRole="button"
+      accessibilityState={{
+        disabled: loading || disabled,
+        busy: loading,
+      }}
+      accessibilityHint="Activates when tapped"
+      testID={testID || id || `button_${accessibility || ''}`}
       disabled={loading || disabled}
       onPress={onPress}
+      hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
       rounded={rounded}
     >
       <ButtonWrapper

@@ -23,7 +23,7 @@ export const Wrapper = styled(Touchable)`
   align-items: center;
 `;
 
-export const Radio = styled(Touchable)<RadioProps>`
+export const Radio = styled.View<RadioProps>`
   width: ${({ size }: RadioProps) => size}px;
   height: ${({ size }: RadioProps) => size}px;
   border-radius: ${({ size }: RadioProps) => size / 2}px;

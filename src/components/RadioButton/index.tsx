@@ -1,4 +1,5 @@
 import React from 'react';
+import { View } from 'react-native';
 import { RadioButtonType } from '../../types';
 import { CheckedRadio, Label, Radio, Wrapper } from './styles';
 
@@ -19,24 +20,38 @@ const RadioButton: React.FC<RadioButtonType> = ({
 }) => (
   <Wrapper
     id={id || accessibility}
-    accessibility={accessibility}
+    testID={id || `radio_${label || accessibility}`}
+    accessibilityLabel={accessibility || label || 'Radio button'}
+    accessibilityRole="radio"
+    accessibilityState={{ checked }}
+    accessibilityHint={`${label || 'This option'} can be selected by tapping`}
+    accessibilityLiveRegion="polite"
+    accessible={true}
     onPress={onPress}
+    hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
     {...rest}
   >
-    <Radio
-      id=""
-      accessibility={''}
-      onPress={onPress}
-      radioButtonColor={radioButtonColor}
-      size={size}
+    <View
+      style={{
+        minWidth: 44,
+        minHeight: 44,
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
     >
-      {checked && (
-        <CheckedRadio
-          checkedRadioButtonColor={checkedRadioButtonColor}
-          internalSize={internalSize}
-        />
-      )}
-    </Radio>
+      <Radio
+        radioButtonColor={radioButtonColor}
+        size={size}
+        importantForAccessibility="no"
+      >
+        {checked && (
+          <CheckedRadio
+            checkedRadioButtonColor={checkedRadioButtonColor}
+            internalSize={internalSize}
+          />
+        )}
+      </Radio>
+    </View>
     {label && <Label style={labelStyle}>{label}</Label>}
   </Wrapper>
 );

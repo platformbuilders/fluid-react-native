@@ -85,7 +85,15 @@ exports[`<TextInput /> should render textinput 1`] = `
       >
         <TextInput
           accessibility=""
+          accessibilityHint="Enter text"
           accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
+          }
           allowFontScaling={false}
           autoFocus={false}
           centered={false}
@@ -230,7 +238,15 @@ exports[`<TextInput /> should render textinput with error 1`] = `
       >
         <TextInput
           accessibility=""
+          accessibilityHint="Some error occurred"
           accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
+          }
           allowFontScaling={false}
           autoFocus={false}
           centered={false}
@@ -400,7 +416,15 @@ exports[`<TextInput /> should render with bottom line 1`] = `
       >
         <TextInput
           accessibility=""
+          accessibilityHint="Enter text"
           accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
+          }
           allowFontScaling={false}
           autoFocus={false}
           centered={false}
@@ -517,7 +541,15 @@ exports[`<TextInput /> should render with props 1`] = `
       >
         <TextInput
           accessibility=""
+          accessibilityHint="Enter your name"
           accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
+          }
           allowFontScaling={false}
           autoFocus={true}
           centered={true}
@@ -662,7 +694,15 @@ exports[`<TextInput /> should render without bottom line 1`] = `
       >
         <TextInput
           accessibility=""
+          accessibilityHint="Enter text"
           accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
+          }
           allowFontScaling={false}
           autoFocus={false}
           centered={false}

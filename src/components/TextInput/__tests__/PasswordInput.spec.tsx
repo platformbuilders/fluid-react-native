@@ -58,7 +58,7 @@ describe('<PasswordInput />', () => {
 
     let icon = getByTestId('icon_eye');
 
-    expect(icon.props.accessibilityLabel).toBe('icon_eye');
+    expect(icon.props.accessibilityLabel).toBe('eye icon');
     fireEvent.press(icon);
 
     rerender(

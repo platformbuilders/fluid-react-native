@@ -110,7 +110,15 @@ exports[`<Search /> should render search 1`] = `
         >
           <TextInput
             accessibility=""
+            accessibilityHint="Pesquise aqui"
             accessibilityLabel=""
+            accessibilityLiveRegion="polite"
+            accessibilityRole="text"
+            accessibilityState={
+              {
+                "disabled": false,
+              }
+            }
             allowFontScaling={false}
             autoCapitalize="none"
             autoComplete="off"
@@ -166,7 +174,9 @@ exports[`<Search /> should render search 1`] = `
             style={{}}
           >
             <View
-              accessibilityLabel="icon_"
+              accessibilityHint="Double tap to activate"
+              accessibilityLabel="search icon"
+              accessibilityRole="button"
               accessibilityState={
                 {
                   "busy": undefined,
@@ -188,6 +198,7 @@ exports[`<Search /> should render search 1`] = `
               collapsable={false}
               focusable={true}
               hitSlop={{}}
+              importantForAccessibility="yes"
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -361,7 +372,15 @@ exports[`<Search /> should render search with auto focus 1`] = `
         >
           <TextInput
             accessibility=""
+            accessibilityHint="Pesquise aqui"
             accessibilityLabel=""
+            accessibilityLiveRegion="polite"
+            accessibilityRole="text"
+            accessibilityState={
+              {
+                "disabled": false,
+              }
+            }
             allowFontScaling={false}
             autoCapitalize="none"
             autoComplete="off"
@@ -417,7 +436,9 @@ exports[`<Search /> should render search with auto focus 1`] = `
             style={{}}
           >
             <View
-              accessibilityLabel="icon_"
+              accessibilityHint="Double tap to activate"
+              accessibilityLabel="search icon"
+              accessibilityRole="button"
               accessibilityState={
                 {
                   "busy": undefined,
@@ -439,6 +460,7 @@ exports[`<Search /> should render search with auto focus 1`] = `
               collapsable={false}
               focusable={true}
               hitSlop={{}}
+              importantForAccessibility="yes"
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -615,7 +637,15 @@ exports[`<Search /> should render search with custom container style 1`] = `
         >
           <TextInput
             accessibility=""
+            accessibilityHint="Pesquise aqui"
             accessibilityLabel=""
+            accessibilityLiveRegion="polite"
+            accessibilityRole="text"
+            accessibilityState={
+              {
+                "disabled": false,
+              }
+            }
             allowFontScaling={false}
             autoCapitalize="none"
             autoComplete="off"
@@ -671,7 +701,9 @@ exports[`<Search /> should render search with custom container style 1`] = `
             style={{}}
           >
             <View
-              accessibilityLabel="icon_"
+              accessibilityHint="Double tap to activate"
+              accessibilityLabel="search icon"
+              accessibilityRole="button"
               accessibilityState={
                 {
                   "busy": undefined,
@@ -693,6 +725,7 @@ exports[`<Search /> should render search with custom container style 1`] = `
               collapsable={false}
               focusable={true}
               hitSlop={{}}
+              importantForAccessibility="yes"
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -866,7 +899,15 @@ exports[`<Search /> should render search with custom icon color 1`] = `
         >
           <TextInput
             accessibility=""
+            accessibilityHint="Pesquise aqui"
             accessibilityLabel=""
+            accessibilityLiveRegion="polite"
+            accessibilityRole="text"
+            accessibilityState={
+              {
+                "disabled": false,
+              }
+            }
             allowFontScaling={false}
             autoCapitalize="none"
             autoComplete="off"
@@ -922,7 +963,9 @@ exports[`<Search /> should render search with custom icon color 1`] = `
             style={{}}
           >
             <View
-              accessibilityLabel="icon_"
+              accessibilityHint="Double tap to activate"
+              accessibilityLabel="search icon"
+              accessibilityRole="button"
               accessibilityState={
                 {
                   "busy": undefined,
@@ -944,6 +987,7 @@ exports[`<Search /> should render search with custom icon color 1`] = `
               collapsable={false}
               focusable={true}
               hitSlop={{}}
+              importantForAccessibility="yes"
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -1117,7 +1161,15 @@ exports[`<Search /> should render search with custom input style 1`] = `
         >
           <TextInput
             accessibility=""
+            accessibilityHint="Pesquise aqui"
             accessibilityLabel=""
+            accessibilityLiveRegion="polite"
+            accessibilityRole="text"
+            accessibilityState={
+              {
+                "disabled": false,
+              }
+            }
             allowFontScaling={false}
             autoCapitalize="none"
             autoComplete="off"
@@ -1173,7 +1225,9 @@ exports[`<Search /> should render search with custom input style 1`] = `
             style={{}}
           >
             <View
-              accessibilityLabel="icon_"
+              accessibilityHint="Double tap to activate"
+              accessibilityLabel="search icon"
+              accessibilityRole="button"
               accessibilityState={
                 {
                   "busy": undefined,
@@ -1195,6 +1249,7 @@ exports[`<Search /> should render search with custom input style 1`] = `
               collapsable={false}
               focusable={true}
               hitSlop={{}}
+              importantForAccessibility="yes"
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -1368,7 +1423,15 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
         >
           <TextInput
             accessibility=""
+            accessibilityHint="Test"
             accessibilityLabel=""
+            accessibilityLiveRegion="polite"
+            accessibilityRole="text"
+            accessibilityState={
+              {
+                "disabled": false,
+              }
+            }
             allowFontScaling={false}
             autoCapitalize="none"
             autoComplete="off"
@@ -1424,7 +1487,9 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
             style={{}}
           >
             <View
-              accessibilityLabel="icon_"
+              accessibilityHint="Double tap to activate"
+              accessibilityLabel="search icon"
+              accessibilityRole="button"
               accessibilityState={
                 {
                   "busy": undefined,
@@ -1446,6 +1511,7 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
               collapsable={false}
               focusable={true}
               hitSlop={{}}
+              importantForAccessibility="yes"
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -1619,7 +1685,15 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
         >
           <TextInput
             accessibility=""
+            accessibilityHint="Pesquise aqui"
             accessibilityLabel=""
+            accessibilityLiveRegion="polite"
+            accessibilityRole="text"
+            accessibilityState={
+              {
+                "disabled": false,
+              }
+            }
             allowFontScaling={false}
             autoCapitalize="none"
             autoComplete="off"
@@ -1675,7 +1749,9 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
             style={{}}
           >
             <View
-              accessibilityLabel="icon_"
+              accessibilityHint="Double tap to activate"
+              accessibilityLabel="search icon"
+              accessibilityRole="button"
               accessibilityState={
                 {
                   "busy": undefined,
@@ -1697,6 +1773,7 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
               collapsable={false}
               focusable={true}
               hitSlop={{}}
+              importantForAccessibility="yes"
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -1870,7 +1947,15 @@ exports[`<Search /> should render search with custom text style 1`] = `
         >
           <TextInput
             accessibility=""
+            accessibilityHint="Pesquise aqui"
             accessibilityLabel=""
+            accessibilityLiveRegion="polite"
+            accessibilityRole="text"
+            accessibilityState={
+              {
+                "disabled": false,
+              }
+            }
             allowFontScaling={false}
             autoCapitalize="none"
             autoComplete="off"
@@ -1928,7 +2013,9 @@ exports[`<Search /> should render search with custom text style 1`] = `
             style={{}}
           >
             <View
-              accessibilityLabel="icon_"
+              accessibilityHint="Double tap to activate"
+              accessibilityLabel="search icon"
+              accessibilityRole="button"
               accessibilityState={
                 {
                   "busy": undefined,
@@ -1950,6 +2037,7 @@ exports[`<Search /> should render search with custom text style 1`] = `
               collapsable={false}
               focusable={true}
               hitSlop={{}}
+              importantForAccessibility="yes"
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -2123,7 +2211,15 @@ exports[`<Search /> should render search with icon size 1`] = `
         >
           <TextInput
             accessibility=""
+            accessibilityHint="Pesquise aqui"
             accessibilityLabel=""
+            accessibilityLiveRegion="polite"
+            accessibilityRole="text"
+            accessibilityState={
+              {
+                "disabled": false,
+              }
+            }
             allowFontScaling={false}
             autoCapitalize="none"
             autoComplete="off"
@@ -2179,7 +2275,9 @@ exports[`<Search /> should render search with icon size 1`] = `
             style={{}}
           >
             <View
-              accessibilityLabel="icon_"
+              accessibilityHint="Double tap to activate"
+              accessibilityLabel="search icon"
+              accessibilityRole="button"
               accessibilityState={
                 {
                   "busy": undefined,
@@ -2201,6 +2299,7 @@ exports[`<Search /> should render search with icon size 1`] = `
               collapsable={false}
               focusable={true}
               hitSlop={{}}
+              importantForAccessibility="yes"
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -2377,7 +2476,9 @@ exports[`<Search /> should render search with left icon 1`] = `
             style={{}}
           >
             <View
-              accessibilityLabel="icon_"
+              accessibilityHint="Double tap to activate"
+              accessibilityLabel="paperclip icon"
+              accessibilityRole="button"
               accessibilityState={
                 {
                   "busy": undefined,
@@ -2399,6 +2500,7 @@ exports[`<Search /> should render search with left icon 1`] = `
               collapsable={false}
               focusable={true}
               hitSlop={{}}
+              importantForAccessibility="yes"
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -2442,7 +2544,15 @@ exports[`<Search /> should render search with left icon 1`] = `
           </View>
           <TextInput
             accessibility=""
+            accessibilityHint="Pesquise aqui"
             accessibilityLabel=""
+            accessibilityLiveRegion="polite"
+            accessibilityRole="text"
+            accessibilityState={
+              {
+                "disabled": false,
+              }
+            }
             allowFontScaling={false}
             autoCapitalize="none"
             autoComplete="off"
@@ -2624,7 +2734,15 @@ exports[`<Search /> should render search with padding 1`] = `
         >
           <TextInput
             accessibility=""
+            accessibilityHint="Pesquise aqui"
             accessibilityLabel=""
+            accessibilityLiveRegion="polite"
+            accessibilityRole="text"
+            accessibilityState={
+              {
+                "disabled": false,
+              }
+            }
             allowFontScaling={false}
             autoCapitalize="none"
             autoComplete="off"
@@ -2680,7 +2798,9 @@ exports[`<Search /> should render search with padding 1`] = `
             style={{}}
           >
             <View
-              accessibilityLabel="icon_"
+              accessibilityHint="Double tap to activate"
+              accessibilityLabel="search icon"
+              accessibilityRole="button"
               accessibilityState={
                 {
                   "busy": undefined,
@@ -2702,6 +2822,7 @@ exports[`<Search /> should render search with padding 1`] = `
               collapsable={false}
               focusable={true}
               hitSlop={{}}
+              importantForAccessibility="yes"
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -2875,7 +2996,15 @@ exports[`<Search /> should render search with right icon 1`] = `
         >
           <TextInput
             accessibility=""
+            accessibilityHint="Pesquise aqui"
             accessibilityLabel=""
+            accessibilityLiveRegion="polite"
+            accessibilityRole="text"
+            accessibilityState={
+              {
+                "disabled": false,
+              }
+            }
             allowFontScaling={false}
             autoCapitalize="none"
             autoComplete="off"
@@ -2931,7 +3060,9 @@ exports[`<Search /> should render search with right icon 1`] = `
             style={{}}
           >
             <View
-              accessibilityLabel="icon_"
+              accessibilityHint="Double tap to activate"
+              accessibilityLabel="parachute icon"
+              accessibilityRole="button"
               accessibilityState={
                 {
                   "busy": undefined,
@@ -2953,6 +3084,7 @@ exports[`<Search /> should render search with right icon 1`] = `
               collapsable={false}
               focusable={true}
               hitSlop={{}}
+              importantForAccessibility="yes"
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -3133,7 +3265,15 @@ exports[`<Search /> should render search with shadow 1`] = `
         >
           <TextInput
             accessibility=""
+            accessibilityHint="Pesquise aqui"
             accessibilityLabel=""
+            accessibilityLiveRegion="polite"
+            accessibilityRole="text"
+            accessibilityState={
+              {
+                "disabled": false,
+              }
+            }
             allowFontScaling={false}
             autoCapitalize="none"
             autoComplete="off"
@@ -3189,7 +3329,9 @@ exports[`<Search /> should render search with shadow 1`] = `
             style={{}}
           >
             <View
-              accessibilityLabel="icon_"
+              accessibilityHint="Double tap to activate"
+              accessibilityLabel="search icon"
+              accessibilityRole="button"
               accessibilityState={
                 {
                   "busy": undefined,
@@ -3211,6 +3353,7 @@ exports[`<Search /> should render search with shadow 1`] = `
               collapsable={false}
               focusable={true}
               hitSlop={{}}
+              importantForAccessibility="yes"
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
@@ -3385,7 +3528,15 @@ exports[`<Search /> should render search with wrapper height 1`] = `
         >
           <TextInput
             accessibility=""
+            accessibilityHint="Pesquise aqui"
             accessibilityLabel=""
+            accessibilityLiveRegion="polite"
+            accessibilityRole="text"
+            accessibilityState={
+              {
+                "disabled": false,
+              }
+            }
             allowFontScaling={false}
             autoCapitalize="none"
             autoComplete="off"
@@ -3441,7 +3592,9 @@ exports[`<Search /> should render search with wrapper height 1`] = `
             style={{}}
           >
             <View
-              accessibilityLabel="icon_"
+              accessibilityHint="Double tap to activate"
+              accessibilityLabel="search icon"
+              accessibilityRole="button"
               accessibilityState={
                 {
                   "busy": undefined,
@@ -3463,6 +3616,7 @@ exports[`<Search /> should render search with wrapper height 1`] = `
               collapsable={false}
               focusable={true}
               hitSlop={{}}
+              importantForAccessibility="yes"
               onClick={[Function]}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}

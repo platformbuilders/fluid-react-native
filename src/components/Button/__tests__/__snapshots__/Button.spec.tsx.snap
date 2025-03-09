@@ -2,10 +2,12 @@
 
 exports[`<Button /> should render button 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityHint="Activates when tapped"
+  accessibilityLabel="Button"
+  accessibilityRole="button"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -23,6 +25,14 @@ exports[`<Button /> should render button 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  hitSlop={
+    {
+      "bottom": 10,
+      "left": 10,
+      "right": 10,
+      "top": 10,
+    }
+  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -99,10 +109,12 @@ exports[`<Button /> should render button 1`] = `
 
 exports[`<Button /> should render button when rounded 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityHint="Activates when tapped"
+  accessibilityLabel="Button"
+  accessibilityRole="button"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -120,6 +132,14 @@ exports[`<Button /> should render button when rounded 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  hitSlop={
+    {
+      "bottom": 10,
+      "left": 10,
+      "right": 10,
+      "top": 10,
+    }
+  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -196,10 +216,12 @@ exports[`<Button /> should render button when rounded 1`] = `
 
 exports[`<Button /> should render button with children 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityHint="Activates when tapped"
+  accessibilityLabel="Button"
+  accessibilityRole="button"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -217,6 +239,14 @@ exports[`<Button /> should render button with children 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  hitSlop={
+    {
+      "bottom": 10,
+      "left": 10,
+      "right": 10,
+      "top": 10,
+    }
+  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -311,10 +341,12 @@ exports[`<Button /> should render button with children 1`] = `
 
 exports[`<Button /> should render button with contrast 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityHint="Activates when tapped"
+  accessibilityLabel="Button"
+  accessibilityRole="button"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -332,6 +364,14 @@ exports[`<Button /> should render button with contrast 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  hitSlop={
+    {
+      "bottom": 10,
+      "left": 10,
+      "right": 10,
+      "top": 10,
+    }
+  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -408,10 +448,12 @@ exports[`<Button /> should render button with contrast 1`] = `
 
 exports[`<Button /> should render button with custom accessibility label 1`] = `
 <View
+  accessibilityHint="Activates when tapped"
   accessibilityLabel="testing"
+  accessibilityRole="button"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -429,6 +471,14 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  hitSlop={
+    {
+      "bottom": 10,
+      "left": 10,
+      "right": 10,
+      "top": 10,
+    }
+  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -505,10 +555,12 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
 
 exports[`<Button /> should render button with custom style 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityHint="Activates when tapped"
+  accessibilityLabel="Button"
+  accessibilityRole="button"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -526,6 +578,14 @@ exports[`<Button /> should render button with custom style 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  hitSlop={
+    {
+      "bottom": 10,
+      "left": 10,
+      "right": 10,
+      "top": 10,
+    }
+  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -604,10 +664,12 @@ exports[`<Button /> should render button with custom style 1`] = `
 
 exports[`<Button /> should render button with custom text style 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityHint="Activates when tapped"
+  accessibilityLabel="Button"
+  accessibilityRole="button"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -625,6 +687,14 @@ exports[`<Button /> should render button with custom text style 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  hitSlop={
+    {
+      "bottom": 10,
+      "left": 10,
+      "right": 10,
+      "top": 10,
+    }
+  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -703,10 +773,12 @@ exports[`<Button /> should render button with custom text style 1`] = `
 
 exports[`<Button /> should render button with disabled 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityHint="Activates when tapped"
+  accessibilityLabel="Button"
+  accessibilityRole="button"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": true,
       "expanded": undefined,
@@ -724,6 +796,14 @@ exports[`<Button /> should render button with disabled 1`] = `
   accessible={true}
   collapsable={false}
   focusable={false}
+  hitSlop={
+    {
+      "bottom": 10,
+      "left": 10,
+      "right": 10,
+      "top": 10,
+    }
+  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -800,10 +880,12 @@ exports[`<Button /> should render button with disabled 1`] = `
 
 exports[`<Button /> should render button with loading 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityHint="Activates when tapped"
+  accessibilityLabel="Button"
+  accessibilityRole="button"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": true,
       "checked": undefined,
       "disabled": true,
       "expanded": undefined,
@@ -821,6 +903,14 @@ exports[`<Button /> should render button with loading 1`] = `
   accessible={true}
   collapsable={false}
   focusable={false}
+  hitSlop={
+    {
+      "bottom": 10,
+      "left": 10,
+      "right": 10,
+      "top": 10,
+    }
+  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -903,10 +993,12 @@ exports[`<Button /> should render button with loading 1`] = `
 
 exports[`<Button /> should render button with test id 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityHint="Activates when tapped"
+  accessibilityLabel="Button"
+  accessibilityRole="button"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -924,6 +1016,14 @@ exports[`<Button /> should render button with test id 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  hitSlop={
+    {
+      "bottom": 10,
+      "left": 10,
+      "right": 10,
+      "top": 10,
+    }
+  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -1000,10 +1100,12 @@ exports[`<Button /> should render button with test id 1`] = `
 
 exports[`<Button /> should render button with typography variant 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityHint="Activates when tapped"
+  accessibilityLabel="Button"
+  accessibilityRole="button"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -1021,6 +1123,14 @@ exports[`<Button /> should render button with typography variant 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  hitSlop={
+    {
+      "bottom": 10,
+      "left": 10,
+      "right": 10,
+      "top": 10,
+    }
+  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -1097,10 +1207,12 @@ exports[`<Button /> should render button with typography variant 1`] = `
 
 exports[`<Button /> should render button with variant 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityHint="Activates when tapped"
+  accessibilityLabel="Button"
+  accessibilityRole="button"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -1118,6 +1230,14 @@ exports[`<Button /> should render button with variant 1`] = `
   accessible={true}
   collapsable={false}
   focusable={true}
+  hitSlop={
+    {
+      "bottom": 10,
+      "left": 10,
+      "right": 10,
+      "top": 10,
+    }
+  }
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}

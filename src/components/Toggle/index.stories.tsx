@@ -37,3 +37,34 @@ const meta: Meta<typeof Toggle> = {
 export default meta;
 
 export const Default = {};
+
+export const AccessibleToggle = {
+  args: {
+    accessibility: 'Modo escuro',
+    accessibilityLabel: 'Botão para ativar o modo escuro',
+    accessibilityHint: 'Alterna o aplicativo entre o tema claro e escuro',
+  },
+  parameters: {
+    notes: `
+      ## Acessibilidade em Toggles
+
+      Toggles precisam comunicar claramente seu propósito e estado para usuários de tecnologias assistivas:
+
+      - **accessibilityLabel**: Descrição clara da função (ex: "Modo escuro")
+      - **accessibilityRole**: "switch" para identificação correta do elemento
+      - **accessibilityState**: Contém { checked: boolean } para indicar estado
+      - **accessibilityHint**: Explica o resultado da alteração
+
+      ### Exemplo de uso:
+
+      \`\`\`jsx
+      <Toggle
+        value={darkMode}
+        accessibilityLabel="Modo escuro"
+        accessibilityHint="Alterna o aplicativo entre o tema claro e escuro"
+        onValueChange={toggleDarkMode}
+      />
+      \`\`\`
+    `,
+  },
+};

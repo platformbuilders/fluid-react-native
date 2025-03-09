@@ -29,13 +29,21 @@ const ToggleButton: React.FC<ToggleProps> = ({
 }) => {
   return (
     <SwitchButton
-      accessibility={accessibility}
+      accessibilityLabel={
+        accessibility || `Toggle switch. Current state: ${value ? 'on' : 'off'}`
+      }
+      accessibilityRole="switch"
+      accessibilityState={{
+        checked: value,
+        disabled: isDisabled,
+      }}
+      accessibilityHint="Double tap to toggle the switch"
       value={value}
       onValueChange={onValueChange}
       disabled={isDisabled}
       thumbColorProps={thumbColor}
       trackColorProps={trackColor}
-      testID={id}
+      testID={id || `toggle_${accessibility || ''}`}
       {...rest}
     />
   );

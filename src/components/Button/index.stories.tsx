@@ -69,3 +69,71 @@ export const IconLeft = {
     leftIconName: 'user-times',
   },
 };
+
+export const AccessibleButton = {
+  args: {
+    ...meta.args,
+    children: 'Botão Acessível',
+    accessibilityLabel: 'Botão com recursos completos de acessibilidade',
+    accessibilityHint: 'Ativa a funcionalidade principal',
+    variant: 'filled',
+    colorVariant: 'primary',
+  },
+  parameters: {
+    notes: `
+      ## Acessibilidade
+      
+      Este botão implementa as seguintes características de acessibilidade:
+      
+      - **accessibilityLabel**: Descrição que será lida por leitores de tela
+      - **accessibilityRole**: Define o papel como "button" para leitores de tela
+      - **accessibilityState**: Informa estados como disabled e busy (quando loading)
+      - **accessibilityHint**: Explica o que acontecerá ao ativar o botão
+      - **hitSlop**: Área de toque aumentada para facilitar o uso
+      
+      ### Exemplo de uso:
+      
+      \`\`\`jsx
+      <Button
+        accessibilityLabel="Finalizar compra"
+        accessibilityHint="Conclui sua compra e vai para a página de pagamento"
+        onPress={handleCheckout}
+      >
+        Finalizar Compra
+      </Button>
+      \`\`\`
+    `,
+  },
+};
+
+export const DisabledWithAccessibility = {
+  args: {
+    ...meta.args,
+    children: 'Botão Desabilitado',
+    accessibilityLabel: 'Botão desabilitado até preencher o formulário',
+    disabled: true,
+  },
+  parameters: {
+    notes: `
+      É importante fornecer informações claras para usuários com deficiência sobre por que um botão 
+      está desabilitado e o que é necessário fazer para habilitá-lo.
+    `,
+  },
+};
+
+export const LoadingWithAccessibility = {
+  args: {
+    ...meta.args,
+    children: 'Carregando...',
+    loading: true,
+    accessibilityState: { busy: true },
+    accessibilityLabel: 'Botão em estado de carregamento',
+  },
+  parameters: {
+    notes: `
+      O estado de loading é informado aos leitores de tela através da propriedade
+      accessibilityState={{ busy: true }}, o que ajuda usuários com deficiência visual a 
+      entender que uma ação está em andamento.
+    `,
+  },
+};

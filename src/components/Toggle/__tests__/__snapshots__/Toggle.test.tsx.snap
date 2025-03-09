@@ -2,7 +2,15 @@
 
 exports[`<ToggleButton /> should render component with custom thumb color 1`] = `
 <RCTSwitch
+  accessibilityHint="Double tap to toggle the switch"
+  accessibilityLabel="Toggle switch. Current state: on"
   accessibilityRole="switch"
+  accessibilityState={
+    {
+      "checked": true,
+      "disabled": false,
+    }
+  }
   disabled={false}
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
@@ -25,6 +33,7 @@ exports[`<ToggleButton /> should render component with custom thumb color 1`] = 
       ],
     ]
   }
+  testID="toggle_"
   thumbColorProps={
     {
       "falseColor": "blue",
@@ -39,7 +48,15 @@ exports[`<ToggleButton /> should render component with custom thumb color 1`] = 
 
 exports[`<ToggleButton /> should render component with custom track color 1`] = `
 <RCTSwitch
+  accessibilityHint="Double tap to toggle the switch"
+  accessibilityLabel="Toggle switch. Current state: on"
   accessibilityRole="switch"
+  accessibilityState={
+    {
+      "checked": true,
+      "disabled": false,
+    }
+  }
   disabled={false}
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
@@ -62,6 +79,7 @@ exports[`<ToggleButton /> should render component with custom track color 1`] = 
       ],
     ]
   }
+  testID="toggle_"
   thumbTintColor="#4255EF"
   tintColor="blue"
   trackColorProps={
@@ -76,7 +94,15 @@ exports[`<ToggleButton /> should render component with custom track color 1`] = 
 
 exports[`<ToggleButton /> should render toggle component 1`] = `
 <RCTSwitch
+  accessibilityHint="Double tap to toggle the switch"
+  accessibilityLabel="Toggle switch. Current state: on"
   accessibilityRole="switch"
+  accessibilityState={
+    {
+      "checked": true,
+      "disabled": false,
+    }
+  }
   disabled={false}
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
@@ -99,6 +125,7 @@ exports[`<ToggleButton /> should render toggle component 1`] = `
       ],
     ]
   }
+  testID="toggle_"
   thumbTintColor="#4255EF"
   tintColor="#dddddd"
   value={true}

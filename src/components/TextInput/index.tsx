@@ -210,8 +210,26 @@ const TextInput: FC<TextInputType> = ({
       <MaskedTextInput
         {...textInputProps}
         maskType={maskType || 'no-mask'}
-        accessibilityLabel={accessibilityLabel || accessibility}
-        testID={testID || id || accessibility}
+        accessibilityLabel={
+          accessibilityLabel ||
+          label ||
+          accessibility ||
+          placeholder ||
+          'Text input'
+        }
+        accessibilityRole="text"
+        accessibilityHint={
+          hasError
+            ? typeof error === 'string'
+              ? error
+              : 'Error'
+            : placeholder || 'Enter text'
+        }
+        accessibilityState={{
+          disabled: rest.editable === false,
+        }}
+        accessibilityLiveRegion="polite"
+        testID={testID || id || `input_${accessibility || ''}`}
       />
     );
   };
@@ -245,14 +263,22 @@ const TextInput: FC<TextInputType> = ({
       testID={`icon_${iconProp || ''}`}
       type={iconType}
       id={`id_${iconProp}`}
-      accessibility={`icon_${accessibility}`}
+      accessibility={`${iconProp} icon`}
+      accessibilityLabel={`${iconProp} icon`}
+      accessibilityRole={iconTouchableEnabled ? 'button' : 'image'}
+      accessibilityHint={
+        iconTouchableEnabled ? 'Double tap to activate' : undefined
+      }
+      importantForAccessibility={
+        iconTouchableEnabled ? 'yes' : 'no-hide-descendants'
+      }
       size={iconSize}
       name={iconProp || ''}
       contrast={contrast}
       error={hasError}
       touchable={iconTouchableEnabled}
       onPress={!!rightIconName ? onRightIconPress : onPressIcon}
-      hitSlop={iconHitSlop}
+      hitSlop={iconHitSlop || { top: 10, bottom: 10, left: 10, right: 10 }}
       iconColor={isLeft ? leftIconColor : iconColor}
       showIconErrored={showIconErrored}
       iconSets={iconSets}
