@@ -181,6 +181,330 @@ exports[`<Badge /> should render Badge when rounded 1`] = `
 </View>
 `;
 
+exports[`<Badge /> should render Badge with border 1`] = `
+<View
+  accessibilityLabel=""
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "borderRadius": 20,
+      "opacity": 1,
+    }
+  }
+  testID="testing"
+>
+  <View
+    buttonVariant="primary"
+    disabled={false}
+    flat={false}
+    hasBorder={true}
+    style={
+      [
+        {
+          "//": 40,
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "#fafafa",
+          "borderColor": "#fafafa",
+          "borderRadius": 40,
+          "borderWidth": 2,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "overflow": "hidden",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        },
+        {},
+      ]
+    }
+  >
+    <Text
+      accessibilityLabel="undefined"
+      buttonVariant="primary"
+      disabled={false}
+      flat={false}
+      lineHeightVariant="min"
+      style={
+        [
+          {
+            "color": "#444444",
+            "fontSize": 15,
+            "lineHeight": 18,
+          },
+          {
+            "color": "#444444",
+            "fontWeight": "bold",
+            "letterSpacing": -0.41,
+          },
+          {},
+        ]
+      }
+      variant="md"
+    />
+  </View>
+</View>
+`;
+
+exports[`<Badge /> should render Badge with both left and right icons 1`] = `
+<View
+  accessibilityLabel=""
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "borderRadius": 20,
+      "opacity": 1,
+    }
+  }
+  testID="testing"
+>
+  <View
+    buttonVariant="primary"
+    disabled={false}
+    flat={false}
+    hasBorder={false}
+    style={
+      [
+        {
+          "//": 40,
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "#fafafa",
+          "borderColor": "#fafafa",
+          "borderRadius": 40,
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "overflow": "hidden",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        },
+        {},
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "marginLeft": 0,
+          "marginRight": 8,
+        }
+      }
+    >
+      <View
+        accessibilityLabel="Arrow-left"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": true,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+        testID="Arrow-left"
+      >
+        <View>
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              [
+                {
+                  "color": "#444444",
+                  "fontSize": 20,
+                },
+                undefined,
+                {
+                  "fontFamily": "FontAwesome5Free-Solid",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {
+                  "fontWeight": "900",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+    <Text
+      accessibilityLabel="undefined"
+      buttonVariant="primary"
+      disabled={false}
+      flat={false}
+      lineHeightVariant="min"
+      style={
+        [
+          {
+            "color": "#444444",
+            "fontSize": 15,
+            "lineHeight": 18,
+          },
+          {
+            "color": "#444444",
+            "fontWeight": "bold",
+            "letterSpacing": -0.41,
+          },
+          {},
+        ]
+      }
+      variant="md"
+    />
+    <View
+      collapsable={false}
+      style={
+        {
+          "marginLeft": 8,
+          "marginRight": 0,
+        }
+      }
+    >
+      <View
+        accessibilityLabel="Arrow-right"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": true,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+        testID="Arrow-right"
+      >
+        <View>
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              [
+                {
+                  "color": "#444444",
+                  "fontSize": 20,
+                },
+                undefined,
+                {
+                  "fontFamily": "FontAwesome5Free-Solid",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {
+                  "fontWeight": "900",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`<Badge /> should render Badge with children 1`] = `
 <View
   accessibilityLabel=""
@@ -469,6 +793,169 @@ exports[`<Badge /> should render Badge with custom accessibility label 1`] = `
 </View>
 `;
 
+exports[`<Badge /> should render Badge with custom icon style 1`] = `
+<View
+  accessibilityLabel=""
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "borderRadius": 20,
+      "opacity": 1,
+    }
+  }
+  testID="testing"
+>
+  <View
+    buttonVariant="primary"
+    disabled={false}
+    flat={false}
+    hasBorder={false}
+    style={
+      [
+        {
+          "//": 40,
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "#fafafa",
+          "borderColor": "#fafafa",
+          "borderRadius": 40,
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "overflow": "hidden",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        },
+        {},
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "color": "#e74c3c",
+          "marginLeft": 0,
+          "marginRight": 8,
+        }
+      }
+    >
+      <View
+        accessibilityLabel="Check"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": true,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+        testID="Check"
+      >
+        <View>
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              [
+                {
+                  "color": "#444444",
+                  "fontSize": 20,
+                },
+                undefined,
+                {
+                  "fontFamily": "FontAwesome5Free-Solid",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {
+                  "fontWeight": "900",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+    <Text
+      accessibilityLabel="undefined"
+      buttonVariant="primary"
+      disabled={false}
+      flat={false}
+      lineHeightVariant="min"
+      style={
+        [
+          {
+            "color": "#444444",
+            "fontSize": 15,
+            "lineHeight": 18,
+          },
+          {
+            "color": "#444444",
+            "fontWeight": "bold",
+            "letterSpacing": -0.41,
+          },
+          {},
+        ]
+      }
+      variant="md"
+    />
+  </View>
+</View>
+`;
+
 exports[`<Badge /> should render Badge with custom style 1`] = `
 <View
   accessibilityLabel=""
@@ -653,6 +1140,96 @@ exports[`<Badge /> should render Badge with custom text style 1`] = `
 </View>
 `;
 
+exports[`<Badge /> should render Badge with custom typography variant 1`] = `
+<View
+  accessibilityLabel=""
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "borderRadius": 20,
+      "opacity": 1,
+    }
+  }
+  testID="testing"
+>
+  <View
+    buttonVariant="primary"
+    disabled={false}
+    flat={false}
+    hasBorder={false}
+    style={
+      [
+        {
+          "//": 40,
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "#fafafa",
+          "borderColor": "#fafafa",
+          "borderRadius": 40,
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "overflow": "hidden",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        },
+        {},
+      ]
+    }
+  >
+    <Text
+      accessibilityLabel="undefined"
+      buttonVariant="primary"
+      disabled={false}
+      flat={false}
+      lineHeightVariant="min"
+      style={
+        [
+          {
+            "color": "#444444",
+            "fontSize": 14,
+            "lineHeight": 16.8,
+          },
+          {
+            "color": "#444444",
+            "fontWeight": "bold",
+            "letterSpacing": -0.41,
+          },
+          {},
+        ]
+      }
+      variant="sm"
+    />
+  </View>
+</View>
+`;
+
 exports[`<Badge /> should render Badge with disabled 1`] = `
 <View
   accessibilityLabel=""
@@ -731,6 +1308,412 @@ exports[`<Badge /> should render Badge with disabled 1`] = `
           },
           {
             "color": "#ffffff",
+            "fontWeight": "bold",
+            "letterSpacing": -0.41,
+          },
+          {},
+        ]
+      }
+      variant="md"
+    />
+  </View>
+</View>
+`;
+
+exports[`<Badge /> should render Badge with emoji icon 1`] = `
+<View
+  accessibilityLabel=""
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "borderRadius": 20,
+      "opacity": 1,
+    }
+  }
+  testID="testing"
+>
+  <View
+    buttonVariant="primary"
+    disabled={false}
+    flat={false}
+    hasBorder={false}
+    style={
+      [
+        {
+          "//": 40,
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "#fafafa",
+          "borderColor": "#fafafa",
+          "borderRadius": 40,
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "overflow": "hidden",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        },
+        {},
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "marginLeft": 0,
+          "marginRight": 8,
+        }
+      }
+    >
+      <View
+        accessibilityLabel="👍"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": true,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+        testID="👍"
+      >
+        <View>
+          <Text
+            collapsable={false}
+            style={
+              {
+                "backgroundColor": "transparent",
+                "borderColor": "transparent",
+                "color": "#444444",
+                "fontSize": 20,
+                "height": undefined,
+                "width": undefined,
+              }
+            }
+          >
+            👍
+          </Text>
+        </View>
+      </View>
+    </View>
+    <Text
+      accessibilityLabel="undefined"
+      buttonVariant="primary"
+      disabled={false}
+      flat={false}
+      lineHeightVariant="min"
+      style={
+        [
+          {
+            "color": "#444444",
+            "fontSize": 15,
+            "lineHeight": 18,
+          },
+          {
+            "color": "#444444",
+            "fontWeight": "bold",
+            "letterSpacing": -0.41,
+          },
+          {},
+        ]
+      }
+      variant="md"
+    />
+  </View>
+</View>
+`;
+
+exports[`<Badge /> should render Badge with flat style 1`] = `
+<View
+  accessibilityLabel=""
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "borderRadius": 20,
+      "opacity": 1,
+    }
+  }
+  testID="testing"
+>
+  <View
+    buttonVariant="primary"
+    disabled={false}
+    flat={true}
+    hasBorder={false}
+    style={
+      [
+        {
+          "//": 40,
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "transparent",
+          "borderColor": "#fafafa",
+          "borderRadius": 40,
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "overflow": "hidden",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        },
+        {},
+      ]
+    }
+  >
+    <Text
+      accessibilityLabel="undefined"
+      buttonVariant="primary"
+      disabled={false}
+      flat={true}
+      lineHeightVariant="min"
+      style={
+        [
+          {
+            "color": "#444444",
+            "fontSize": 15,
+            "lineHeight": 18,
+          },
+          {
+            "color": "#fafafa",
+            "fontWeight": "bold",
+            "letterSpacing": -0.41,
+          },
+          {},
+        ]
+      }
+      variant="md"
+    />
+  </View>
+</View>
+`;
+
+exports[`<Badge /> should render Badge with left icon 1`] = `
+<View
+  accessibilityLabel=""
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "borderRadius": 20,
+      "opacity": 1,
+    }
+  }
+  testID="testing"
+>
+  <View
+    buttonVariant="primary"
+    disabled={false}
+    flat={false}
+    hasBorder={false}
+    style={
+      [
+        {
+          "//": 40,
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "#fafafa",
+          "borderColor": "#fafafa",
+          "borderRadius": 40,
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "overflow": "hidden",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        },
+        {},
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "marginLeft": 0,
+          "marginRight": 8,
+        }
+      }
+    >
+      <View
+        accessibilityLabel="Check"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": true,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+        testID="Check"
+      >
+        <View>
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              [
+                {
+                  "color": "#444444",
+                  "fontSize": 20,
+                },
+                undefined,
+                {
+                  "fontFamily": "FontAwesome5Free-Solid",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {
+                  "fontWeight": "900",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+    <Text
+      accessibilityLabel="undefined"
+      buttonVariant="primary"
+      disabled={false}
+      flat={false}
+      lineHeightVariant="min"
+      style={
+        [
+          {
+            "color": "#444444",
+            "fontSize": 15,
+            "lineHeight": 18,
+          },
+          {
+            "color": "#444444",
             "fontWeight": "bold",
             "letterSpacing": -0.41,
           },
@@ -840,6 +1823,168 @@ exports[`<Badge /> should render Badge with loading 1`] = `
 </View>
 `;
 
+exports[`<Badge /> should render Badge with right icon 1`] = `
+<View
+  accessibilityLabel=""
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "borderRadius": 20,
+      "opacity": 1,
+    }
+  }
+  testID="testing"
+>
+  <View
+    buttonVariant="primary"
+    disabled={false}
+    flat={false}
+    hasBorder={false}
+    style={
+      [
+        {
+          "//": 40,
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "#fafafa",
+          "borderColor": "#fafafa",
+          "borderRadius": 40,
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "overflow": "hidden",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        },
+        {},
+      ]
+    }
+  >
+    <Text
+      accessibilityLabel="undefined"
+      buttonVariant="primary"
+      disabled={false}
+      flat={false}
+      lineHeightVariant="min"
+      style={
+        [
+          {
+            "color": "#444444",
+            "fontSize": 15,
+            "lineHeight": 18,
+          },
+          {
+            "color": "#444444",
+            "fontWeight": "bold",
+            "letterSpacing": -0.41,
+          },
+          {},
+        ]
+      }
+      variant="md"
+    />
+    <View
+      collapsable={false}
+      style={
+        {
+          "marginLeft": 8,
+          "marginRight": 0,
+        }
+      }
+    >
+      <View
+        accessibilityLabel="Check"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": true,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+        testID="Check"
+      >
+        <View>
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              [
+                {
+                  "color": "#444444",
+                  "fontSize": 20,
+                },
+                undefined,
+                {
+                  "fontFamily": "FontAwesome5Free-Solid",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {
+                  "fontWeight": "900",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`<Badge /> should render Badge with test id 1`] = `
 <View
   accessibilityLabel=""
@@ -903,6 +2048,168 @@ exports[`<Badge /> should render Badge with test id 1`] = `
       ]
     }
   >
+    <Text
+      accessibilityLabel="undefined"
+      buttonVariant="primary"
+      disabled={false}
+      flat={false}
+      lineHeightVariant="min"
+      style={
+        [
+          {
+            "color": "#444444",
+            "fontSize": 15,
+            "lineHeight": 18,
+          },
+          {
+            "color": "#444444",
+            "fontWeight": "bold",
+            "letterSpacing": -0.41,
+          },
+          {},
+        ]
+      }
+      variant="md"
+    />
+  </View>
+</View>
+`;
+
+exports[`<Badge /> should render Badge with touchable icon 1`] = `
+<View
+  accessibilityLabel=""
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "borderRadius": 20,
+      "opacity": 1,
+    }
+  }
+  testID="testing"
+>
+  <View
+    buttonVariant="primary"
+    disabled={false}
+    flat={false}
+    hasBorder={false}
+    style={
+      [
+        {
+          "//": 40,
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "#fafafa",
+          "borderColor": "#fafafa",
+          "borderRadius": 40,
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "overflow": "hidden",
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+        },
+        {},
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "marginLeft": 0,
+          "marginRight": 8,
+        }
+      }
+    >
+      <View
+        accessibilityLabel="Check"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": false,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+        testID="Check"
+      >
+        <View>
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              [
+                {
+                  "color": "#444444",
+                  "fontSize": 20,
+                },
+                undefined,
+                {
+                  "fontFamily": "FontAwesome5Free-Solid",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {
+                  "fontWeight": "900",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
     <Text
       accessibilityLabel="undefined"
       buttonVariant="primary"

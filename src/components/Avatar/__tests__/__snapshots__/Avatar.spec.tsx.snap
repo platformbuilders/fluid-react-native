@@ -1,5 +1,256 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Avatar /> should handle invalid URI correctly 1`] = `
+<View
+  accessibilityLabel=""
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "borderColor": "#4255EF",
+      "borderRadius": 25,
+      "borderWidth": 2,
+      "height": 50,
+      "opacity": 1,
+      "overflow": "hidden",
+      "position": "relative",
+      "width": 50,
+    }
+  }
+  testID="testing"
+>
+  <View
+    style={
+      [
+        {},
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`<Avatar /> should handle string image URI correctly 1`] = `
+<View
+  accessibilityLabel=""
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "borderColor": "#4255EF",
+      "borderRadius": 25,
+      "borderWidth": 2,
+      "height": 50,
+      "opacity": 1,
+      "overflow": "hidden",
+      "position": "relative",
+      "width": 50,
+    }
+  }
+  testID="testing"
+>
+  <View
+    style={
+      [
+        {},
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`<Avatar /> should not display monogram when displayMonogram is false 1`] = `
+<View
+  accessibilityLabel=""
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "borderColor": "#4255EF",
+      "borderRadius": 25,
+      "borderWidth": 2,
+      "height": 50,
+      "opacity": 1,
+      "overflow": "hidden",
+      "position": "relative",
+      "width": 50,
+    }
+  }
+  testID="testing"
+>
+  <View
+    style={
+      [
+        {},
+      ]
+    }
+  />
+  <View
+    size={50}
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#4255EF",
+          "borderRadius": 6.25,
+          "height": 12.5,
+          "justifyContent": "center",
+          "position": "absolute",
+          "width": 12.5,
+          "zIndex": 2,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "color": "#F49D19",
+        }
+      }
+    >
+      <View
+        accessibilityLabel="Camera"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": false,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+        testID="Camera"
+      >
+        <View>
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              [
+                {
+                  "color": undefined,
+                  "fontSize": 20,
+                },
+                undefined,
+                {
+                  "fontFamily": "FontAwesome5Free-Solid",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {
+                  "fontWeight": "900",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`<Avatar /> should render Avatar 1`] = `
 <View
   accessibilityLabel=""

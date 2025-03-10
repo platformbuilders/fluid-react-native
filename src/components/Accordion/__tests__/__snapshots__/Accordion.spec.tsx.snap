@@ -45,7 +45,7 @@ exports[`<Accordion /> should render Accordion 1`] = `
         <Text
           isActive={false}
         >
-          Mock
+          Mock Title 1
         </Text>
       </View>
     </View>
@@ -66,7 +66,77 @@ exports[`<Accordion /> should render Accordion 1`] = `
       >
         <View>
           <Text>
-            Mock Content
+            Mock Content 1
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={{}}
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        isActive={false}
+      >
+        <Text
+          isActive={false}
+        >
+          Mock Title 2
+        </Text>
+      </View>
+    </View>
+    <View
+      collapsable={false}
+      pointerEvents="none"
+      style={
+        {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        collapsable={false}
+        onLayout={[Function]}
+        style={{}}
+      >
+        <View>
+          <Text>
+            Mock Content 2
           </Text>
         </View>
       </View>
@@ -120,7 +190,91 @@ exports[`<Accordion /> should render Accordion with body custom 1`] = `
         <Text
           isActive={false}
         >
-          Mock
+          Mock Title 1
+        </Text>
+      </View>
+    </View>
+    <View
+      collapsable={false}
+      pointerEvents="none"
+      style={
+        {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        collapsable={false}
+        onLayout={[Function]}
+        style={{}}
+      >
+        <View>
+          <Text
+            accessibilityLabel="Unity Test"
+            lineHeightVariant="min"
+            style={
+              [
+                {
+                  "color": "#444444",
+                  "fontSize": 15,
+                  "lineHeight": 18,
+                },
+              ]
+            }
+            testID="Unity Test"
+            variant="md"
+          >
+            Unity Test
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={{}}
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        isActive={false}
+      >
+        <Text
+          isActive={false}
+        >
+          Mock Title 2
         </Text>
       </View>
     </View>
@@ -209,7 +363,82 @@ exports[`<Accordion /> should render Accordion with content custom 1`] = `
         <Text
           isActive={false}
         >
-          Mock
+          Mock Title 1
+        </Text>
+      </View>
+    </View>
+    <View
+      collapsable={false}
+      pointerEvents="none"
+      style={
+        {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        collapsable={false}
+        onLayout={[Function]}
+        style={{}}
+      >
+        <View
+          style={
+            [
+              {},
+              {
+                "backgroundColor": "#f1c40f",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    style={{}}
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        isActive={false}
+      >
+        <Text
+          isActive={false}
+        >
+          Mock Title 2
         </Text>
       </View>
     </View>
@@ -311,7 +540,78 @@ exports[`<Accordion /> should render Accordion with header custom 1`] = `
       >
         <View>
           <Text>
-            Mock Content
+            Mock Content 1
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={{}}
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {},
+            {
+              "backgroundColor": "#27ae60",
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      collapsable={false}
+      pointerEvents="none"
+      style={
+        {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        collapsable={false}
+        onLayout={[Function]}
+        style={{}}
+      >
+        <View>
+          <Text>
+            Mock Content 2
           </Text>
         </View>
       </View>
@@ -365,7 +665,7 @@ exports[`<Accordion /> should render Accordion with icon 1`] = `
         <Text
           isActive={false}
         >
-          Mock
+          Mock Title 1
         </Text>
         <View
           collapsable={false}
@@ -453,7 +753,144 @@ exports[`<Accordion /> should render Accordion with icon 1`] = `
       >
         <View>
           <Text>
-            Mock Content
+            Mock Content 1
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={{}}
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        isActive={false}
+      >
+        <Text
+          isActive={false}
+        >
+          Mock Title 2
+        </Text>
+        <View
+          collapsable={false}
+          style={{}}
+        >
+          <View
+            accessibilityLabel="Abrir"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": true,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+            testID="chevron-up"
+          >
+            <View>
+              <Text
+                allowFontScaling={false}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": undefined,
+                      "fontSize": 24,
+                    },
+                    undefined,
+                    {
+                      "fontFamily": "FontAwesome5Free-Solid",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    {
+                      "fontWeight": "900",
+                    },
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      collapsable={false}
+      pointerEvents="none"
+      style={
+        {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        collapsable={false}
+        onLayout={[Function]}
+        style={{}}
+      >
+        <View>
+          <Text>
+            Mock Content 2
           </Text>
         </View>
       </View>
@@ -507,7 +944,7 @@ exports[`<Accordion /> should render Accordion with icon color grey inactive 1`]
         <Text
           isActive={false}
         >
-          Mock
+          Mock Title 1
         </Text>
         <View
           collapsable={false}
@@ -595,7 +1032,144 @@ exports[`<Accordion /> should render Accordion with icon color grey inactive 1`]
       >
         <View>
           <Text>
-            Mock Content
+            Mock Content 1
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={{}}
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        isActive={false}
+      >
+        <Text
+          isActive={false}
+        >
+          Mock Title 2
+        </Text>
+        <View
+          collapsable={false}
+          style={{}}
+        >
+          <View
+            accessibilityLabel="Abrir"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": true,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+            testID="chevron-up"
+          >
+            <View>
+              <Text
+                allowFontScaling={false}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": "#95a5a6",
+                      "fontSize": 24,
+                    },
+                    undefined,
+                    {
+                      "fontFamily": "FontAwesome5Free-Solid",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    {
+                      "fontWeight": "900",
+                    },
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      collapsable={false}
+      pointerEvents="none"
+      style={
+        {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        collapsable={false}
+        onLayout={[Function]}
+        style={{}}
+      >
+        <View>
+          <Text>
+            Mock Content 2
           </Text>
         </View>
       </View>
@@ -649,7 +1223,7 @@ exports[`<Accordion /> should render Accordion with icon color red 1`] = `
         <Text
           isActive={false}
         >
-          Mock
+          Mock Title 1
         </Text>
         <View
           collapsable={false}
@@ -737,7 +1311,144 @@ exports[`<Accordion /> should render Accordion with icon color red 1`] = `
       >
         <View>
           <Text>
-            Mock Content
+            Mock Content 1
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={{}}
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        isActive={false}
+      >
+        <Text
+          isActive={false}
+        >
+          Mock Title 2
+        </Text>
+        <View
+          collapsable={false}
+          style={{}}
+        >
+          <View
+            accessibilityLabel="Abrir"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": true,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+            testID="chevron-up"
+          >
+            <View>
+              <Text
+                allowFontScaling={false}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": undefined,
+                      "fontSize": 24,
+                    },
+                    undefined,
+                    {
+                      "fontFamily": "FontAwesome5Free-Solid",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    {
+                      "fontWeight": "900",
+                    },
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      collapsable={false}
+      pointerEvents="none"
+      style={
+        {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        collapsable={false}
+        onLayout={[Function]}
+        style={{}}
+      >
+        <View>
+          <Text>
+            Mock Content 2
           </Text>
         </View>
       </View>
@@ -791,7 +1502,7 @@ exports[`<Accordion /> should render Accordion with icon down text custom 1`] = 
         <Text
           isActive={false}
         >
-          Mock
+          Mock Title 1
         </Text>
         <View
           collapsable={false}
@@ -879,7 +1590,144 @@ exports[`<Accordion /> should render Accordion with icon down text custom 1`] = 
       >
         <View>
           <Text>
-            Mock Content
+            Mock Content 1
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={{}}
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        isActive={false}
+      >
+        <Text
+          isActive={false}
+        >
+          Mock Title 2
+        </Text>
+        <View
+          collapsable={false}
+          style={{}}
+        >
+          <View
+            accessibilityLabel="Abrir"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": true,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+            testID="chevron-up"
+          >
+            <View>
+              <Text
+                allowFontScaling={false}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": undefined,
+                      "fontSize": 24,
+                    },
+                    undefined,
+                    {
+                      "fontFamily": "FontAwesome5Free-Solid",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    {
+                      "fontWeight": "900",
+                    },
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      collapsable={false}
+      pointerEvents="none"
+      style={
+        {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        collapsable={false}
+        onLayout={[Function]}
+        style={{}}
+      >
+        <View>
+          <Text>
+            Mock Content 2
           </Text>
         </View>
       </View>
@@ -933,7 +1781,7 @@ exports[`<Accordion /> should render Accordion with icon up text custom 1`] = `
         <Text
           isActive={false}
         >
-          Mock
+          Mock Title 1
         </Text>
         <View
           collapsable={false}
@@ -1021,7 +1869,144 @@ exports[`<Accordion /> should render Accordion with icon up text custom 1`] = `
       >
         <View>
           <Text>
-            Mock Content
+            Mock Content 1
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={{}}
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        isActive={false}
+      >
+        <Text
+          isActive={false}
+        >
+          Mock Title 2
+        </Text>
+        <View
+          collapsable={false}
+          style={{}}
+        >
+          <View
+            accessibilityLabel="Abrir"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": true,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+            testID="chevron-up"
+          >
+            <View>
+              <Text
+                allowFontScaling={false}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": undefined,
+                      "fontSize": 24,
+                    },
+                    undefined,
+                    {
+                      "fontFamily": "FontAwesome5Free-Solid",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    {
+                      "fontWeight": "900",
+                    },
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      collapsable={false}
+      pointerEvents="none"
+      style={
+        {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        collapsable={false}
+        onLayout={[Function]}
+        style={{}}
+      >
+        <View>
+          <Text>
+            Mock Content 2
           </Text>
         </View>
       </View>
@@ -1075,7 +2060,7 @@ exports[`<Accordion /> should render Accordion with markdown 1`] = `
         <Text
           isActive={false}
         >
-          Mock
+          Mock Title 1
         </Text>
       </View>
     </View>
@@ -1122,7 +2107,106 @@ exports[`<Accordion /> should render Accordion with markdown 1`] = `
                     ]
                   }
                 >
-                  Mock Content
+                  Mock Content 1
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={{}}
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        isActive={false}
+      >
+        <Text
+          isActive={false}
+        >
+          Mock Title 2
+        </Text>
+      </View>
+    </View>
+    <View
+      collapsable={false}
+      pointerEvents="none"
+      style={
+        {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        collapsable={false}
+        onLayout={[Function]}
+        style={{}}
+      >
+        <View>
+          <View
+            style={{}}
+          >
+            <View
+              style={
+                {
+                  "alignItems": "flex-start",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-start",
+                  "marginBottom": 10,
+                  "marginTop": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <Text
+                style={{}}
+              >
+                <Text
+                  style={
+                    [
+                      {},
+                      {},
+                    ]
+                  }
+                >
+                  Mock Content 2
                 </Text>
               </Text>
             </View>
@@ -1179,7 +2263,7 @@ exports[`<Accordion /> should render Accordion with onChange function 1`] = `
         <Text
           isActive={false}
         >
-          Mock
+          Mock Title 1
         </Text>
       </View>
     </View>
@@ -1200,7 +2284,77 @@ exports[`<Accordion /> should render Accordion with onChange function 1`] = `
       >
         <View>
           <Text>
-            Mock Content
+            Mock Content 1
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={{}}
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        isActive={false}
+      >
+        <Text
+          isActive={false}
+        >
+          Mock Title 2
+        </Text>
+      </View>
+    </View>
+    <View
+      collapsable={false}
+      pointerEvents="none"
+      style={
+        {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        collapsable={false}
+        onLayout={[Function]}
+        style={{}}
+      >
+        <View>
+          <Text>
+            Mock Content 2
           </Text>
         </View>
       </View>
@@ -1287,7 +2441,89 @@ exports[`<Accordion /> should render Accordion with title custom 1`] = `
       >
         <View>
           <Text>
-            Mock Content
+            Mock Content 1
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={{}}
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": false,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        isActive={false}
+      >
+        <Text
+          accessibilityLabel="Unity Test"
+          lineHeightVariant="min"
+          style={
+            [
+              {
+                "color": "#444444",
+                "fontSize": 15,
+                "lineHeight": 18,
+              },
+            ]
+          }
+          testID="Unity Test"
+          variant="md"
+        >
+          Unity Test
+        </Text>
+      </View>
+    </View>
+    <View
+      collapsable={false}
+      pointerEvents="none"
+      style={
+        {
+          "height": 0,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <View
+        collapsable={false}
+        onLayout={[Function]}
+        style={{}}
+      >
+        <View>
+          <Text>
+            Mock Content 2
           </Text>
         </View>
       </View>

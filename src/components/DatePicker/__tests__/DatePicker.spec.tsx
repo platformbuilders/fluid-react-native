@@ -1,12 +1,37 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { Animated } from 'react-native';
+import renderer, { act } from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import DatePicker from '..';
 import theme from '../../../theme';
 
 jest.useFakeTimers().setSystemTime(new Date('2020-01-01').getTime());
 
-describe.skip('<DatePicker />', () => {
+// Mock para Animated
+jest.mock('react-native', () => {
+  const reactNative = jest.requireActual('react-native');
+
+  return {
+    ...reactNative,
+    Animated: {
+      ...reactNative.Animated,
+      Value: jest.fn((x) => ({
+        x,
+        setValue: jest.fn(),
+        interpolate: jest.fn(),
+        _startingValue: x,
+      })),
+      timing: jest.fn(() => ({
+        start: jest.fn((callback) => callback && callback()),
+      })),
+      parallel: jest.fn((animations) => ({
+        start: jest.fn((callback) => callback && callback()),
+      })),
+    },
+  };
+});
+
+describe('<DatePicker />', () => {
   it('should render datepicker', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
@@ -155,5 +180,168 @@ describe.skip('<DatePicker />', () => {
     );
 
     expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should call onDateChange when date is changed', () => {
+    const onDateChangeMock = jest.fn();
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <DatePicker
+          id="testing"
+          accessibility=""
+          onDateChange={onDateChangeMock}
+        />
+      </ThemeProvider>,
+    );
+
+    const datePicker = wrapper.root.findByProps({ testID: 'testing' });
+    act(() => {
+      datePicker.props.onDateChange('2021-01-01');
+    });
+
+    expect(onDateChangeMock).toHaveBeenCalledWith('2021-01-01');
+  });
+
+  it('should animate label when date is changed', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <DatePicker id="testing" accessibility="" />
+      </ThemeProvider>,
+    );
+
+    const datePicker = wrapper.root.findByProps({ testID: 'testing' });
+    act(() => {
+      datePicker.props.onDateChange('2021-01-01');
+    });
+
+    // Avança os timers para completar a animação
+    act(() => {
+      jest.advanceTimersByTime(200);
+    });
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should animate label when value is provided', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <DatePicker id="testing" accessibility="" value="2021-01-01" />
+      </ThemeProvider>,
+    );
+
+    // Avança os timers para completar a animação
+    act(() => {
+      jest.advanceTimersByTime(200);
+    });
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render datepicker with dark mode and error', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <DatePicker id="testing" accessibility="" dark error="Error message" />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render datepicker with maxDate', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <DatePicker id="testing" accessibility="" maxDate="2021-12-31" />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should handle animation when date is changed', () => {
+    // Espiona o método Animated.parallel
+    const parallelSpy = jest.spyOn(Animated, 'parallel');
+
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <DatePicker id="testing" accessibility="" />
+      </ThemeProvider>,
+    );
+
+    const datePicker = wrapper.root.findByProps({ testID: 'testing' });
+
+    act(() => {
+      datePicker.props.onDateChange('2021-01-01');
+    });
+
+    expect(parallelSpy).toHaveBeenCalled();
+
+    // Restaura o spy
+    parallelSpy.mockRestore();
+  });
+
+  it('should handle time mode', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <DatePicker id="testing" accessibility="" mode="time" format="HH:mm" />
+      </ThemeProvider>,
+    );
+
+    const datePicker = wrapper.root.findByProps({ testID: 'testing' });
+
+    act(() => {
+      datePicker.props.onDateChange('14:30');
+    });
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should handle datetime mode', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <DatePicker
+          id="testing"
+          accessibility=""
+          mode="datetime"
+          format="YYYY-MM-DD HH:mm"
+        />
+      </ThemeProvider>,
+    );
+
+    const datePicker = wrapper.root.findByProps({ testID: 'testing' });
+
+    act(() => {
+      datePicker.props.onDateChange('2021-01-01 14:30');
+    });
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should not call onDateChange if not provided', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <DatePicker id="testing" accessibility="" />
+      </ThemeProvider>,
+    );
+
+    const datePicker = wrapper.root.findByProps({ testID: 'testing' });
+
+    // Não deve lançar erro mesmo sem onDateChange definido
+    act(() => {
+      datePicker.props.onDateChange('2021-01-01');
+    });
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should handle animation when already has value', () => {
+    // Espiona o método execAnimation
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <DatePicker id="testing" accessibility="" value="2021-01-01" />
+      </ThemeProvider>,
+    );
+
+    // Verifica se a animação foi executada durante a montagem
+    expect(Animated.parallel).toHaveBeenCalled();
   });
 });

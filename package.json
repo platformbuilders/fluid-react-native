@@ -36,6 +36,7 @@
     "storybook:generate": "sb-rn-get-stories -js",
     "test": "patch-package && jest --silent=false --passWithNoTests --collect-coverage",
     "test:coverage": "yarn test -- --coverage",
+    "test:coverage:95": "jest --coverage --coverageThreshold='{\"global\":{\"branches\":95,\"functions\":95,\"lines\":95,\"statements\":95}}'",
     "test:watch": "yarn test -- --watch",
     "preversion": "yarn test && yarn lint",
     "postversion": "git push && git push --tags",

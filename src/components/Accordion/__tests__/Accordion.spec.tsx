@@ -1,15 +1,27 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
+import { fireEvent, render } from '@testing-library/react-native';
 import Accordion from '..';
 import theme from '../../../theme';
 import Typography from '../../Typography';
 import { Container } from '../styles';
 
+// Constantes para evitar duplicação de literais
+const MOCK_TITLE_1 = 'Mock Title 1';
+const MOCK_CONTENT_1 = 'Mock Content 1';
+const MOCK_TITLE_2 = 'Mock Title 2';
+const MOCK_CONTENT_2 = 'Mock Content 2';
+const UNITY_TEST = 'Unity Test';
+
 const mockData = [
   {
-    title: 'Mock',
-    content: 'Mock Content',
+    title: MOCK_TITLE_1,
+    content: MOCK_CONTENT_1,
+  },
+  {
+    title: MOCK_TITLE_2,
+    content: MOCK_CONTENT_2,
   },
 ];
 
@@ -28,7 +40,7 @@ describe('<Accordion />', () => {
       <ThemeProvider theme={theme}>
         <Accordion
           data={mockData}
-          StyledTitle={() => <Typography>Unity Test</Typography>}
+          StyledTitle={() => <Typography>{UNITY_TEST}</Typography>}
         />
       </ThemeProvider>,
     );
@@ -40,12 +52,13 @@ describe('<Accordion />', () => {
       <ThemeProvider theme={theme}>
         <Accordion
           data={mockData}
-          StyledBody={() => <Typography>Unity Test</Typography>}
+          StyledBody={() => <Typography>{UNITY_TEST}</Typography>}
         />
       </ThemeProvider>,
     );
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
+
   it('should render Accordion with header custom', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
@@ -145,5 +158,98 @@ describe('<Accordion />', () => {
       </ThemeProvider>,
     );
     expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  // Novos testes para aumentar a cobertura
+  it('should call onChange when section is toggled', () => {
+    const onChangeMock = jest.fn();
+    const { getAllByText } = render(
+      <ThemeProvider theme={theme}>
+        <Accordion data={mockData} onChange={onChangeMock} />
+      </ThemeProvider>,
+    );
+
+    // Encontra o primeiro título e clica nele
+    const firstTitle = getAllByText(MOCK_TITLE_1)[0];
+    fireEvent.press(firstTitle);
+
+    // Verifica se onChange foi chamado com o título correto
+    expect(onChangeMock).toHaveBeenCalledWith(MOCK_TITLE_1);
+  });
+
+  it('should toggle section when pressed', () => {
+    const { getAllByText, queryAllByText } = render(
+      <ThemeProvider theme={theme}>
+        <Accordion data={mockData} />
+      </ThemeProvider>,
+    );
+
+    // Verifica se o título está visível
+    expect(getAllByText(MOCK_TITLE_1).length).toBeGreaterThan(0);
+
+    // Clica no primeiro título
+    const firstTitle = getAllByText(MOCK_TITLE_1)[0];
+    fireEvent.press(firstTitle);
+
+    // Verifica se o conteúdo está visível após clicar
+    expect(queryAllByText(MOCK_CONTENT_1).length).toBeGreaterThan(0);
+  });
+
+  it('should toggle between sections', () => {
+    const { getAllByText, queryAllByText } = render(
+      <ThemeProvider theme={theme}>
+        <Accordion data={mockData} />
+      </ThemeProvider>,
+    );
+
+    // Clica no primeiro título
+    const firstTitle = getAllByText(MOCK_TITLE_1)[0];
+    fireEvent.press(firstTitle);
+
+    // Verifica se o primeiro conteúdo está visível
+    expect(queryAllByText(MOCK_CONTENT_1).length).toBeGreaterThan(0);
+
+    // Clica no segundo título
+    const secondTitle = getAllByText(MOCK_TITLE_2)[0];
+    fireEvent.press(secondTitle);
+
+    // Verifica se o segundo conteúdo está visível
+    expect(queryAllByText(MOCK_CONTENT_2).length).toBeGreaterThan(0);
+  });
+
+  it('should render correct icon based on section state', () => {
+    const { getAllByText, getAllByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Accordion
+          data={mockData}
+          hasIcon
+          iconUpName="chevron-up"
+          iconDownName="chevron-down"
+        />
+      </ThemeProvider>,
+    );
+
+    // Verifica se os ícones estão presentes
+    const icons = getAllByTestId('chevron-up');
+    expect(icons.length).toBe(2);
+
+    // Clica no primeiro título
+    const firstTitle = getAllByText(MOCK_TITLE_1)[0];
+    fireEvent.press(firstTitle);
+
+    // Verifica se os ícones estão presentes após clicar
+    const updatedIcons = getAllByTestId('chevron-up');
+    expect(updatedIcons.length).toBe(2);
+  });
+
+  it('should handle empty data array', () => {
+    // Não deve lançar erro ao renderizar com array vazio
+    expect(() => {
+      render(
+        <ThemeProvider theme={theme}>
+          <Accordion data={[]} />
+        </ThemeProvider>,
+      );
+    }).not.toThrow();
   });
 });

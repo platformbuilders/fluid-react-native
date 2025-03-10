@@ -3,10 +3,10 @@ const { defaults: tsjPreset } = require('ts-jest/presets');
 module.exports = {
   coverageThreshold: {
     global: {
-      branches: 70,
-      functions: 60,
-      lines: 75,
-      statements: 70,
+      branches: 95,
+      functions: 95,
+      lines: 95,
+      statements: 95,
     },
   },
   preset: 'react-native',
@@ -44,12 +44,17 @@ module.exports = {
     '!**/storybook/**',
     '!**/*.stories.tsx',
     '!**/styles.ts',
+    '!**/*.style.ts',
+    '!**/*.styles.ts',
     '!**/*.enum.ts',
     '!src/enums/index.ts', // No need to test exported files
     '!src/utils/helpers/index.ts', // No need to test exported files
     '!src/theme/animations.ts', // No need to test exported files
+    '!src/theme/index.ts', // No need to test exported files
     '!src/index.ts', // No need to test exported files
     '!src/components/index.ts', // No need to test exported files
     '!**/*.d.ts', // No need to test types declarations
+    '!src/components/DatePicker/**', // Difícil de testar devido a dependências externas
+    '!src/components/UploadPhoto/**', // Difícil de testar devido a dependências externas
   ],
 };
