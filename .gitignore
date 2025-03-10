@@ -91,3 +91,15 @@ DevelopmentApp/ios/Pods/
 
 # Codewall
 .codewall
+
+# Docusaurus
+docs/website/.docusaurus
+docs/website/build
+docs/website/node_modules
+docs/website/.env.local
+docs/website/.env.development.local
+docs/website/.env.test.local
+docs/website/.env.production.local
+docs/website/npm-debug.log*
+docs/website/yarn-debug.log*
+docs/website/yarn-error.log*

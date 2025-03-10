@@ -42,7 +42,10 @@
     "version:major": "npm version major",
     "version:minor": "npm version minor",
     "version:patch": "npm version patch",
-    "semgrep": "semgrep --config ./.rules ./src --text --output=./.rules/output.txt"
+    "semgrep": "semgrep --config ./.rules ./src --text --output=./.rules/output.txt",
+    "docs:start": "cd docs/website && yarn start",
+    "docs:build": "cd docs/website && yarn build",
+    "docs:serve": "cd docs/website && yarn serve"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
