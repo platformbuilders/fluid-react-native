@@ -19,7 +19,7 @@
 
 <p align="center">
   <a href="https://github.com/platformbuilders/fluid-react-native/actions">
-    <img src="https://github.com/platformbuilders/fluid-react-native/workflows/CI/badge.svg" alt="Build Status" />
+    <img src="https://github.com/platformbuilders/fluid-react-native/workflows/check/badge.svg" alt="Build Status" />
   </a>
   <a href="https://www.npmjs.com/package/@platformbuilders/fluid-react-native">
     <img src="https://img.shields.io/npm/v/@platformbuilders/fluid-react-native.svg" alt="npm version" />
