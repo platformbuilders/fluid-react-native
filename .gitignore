@@ -103,3 +103,12 @@ docs/website/.env.production.local
 docs/website/npm-debug.log*
 docs/website/yarn-debug.log*
 docs/website/yarn-error.log*
+
+# Firebase
+.firebase/
+.firebaserc
+firebase-debug.log
+firebase-debug.*.log
+ui-debug.log
+database-debug.log
+pubsub-debug.log
