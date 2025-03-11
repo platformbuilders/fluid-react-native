@@ -12,95 +12,186 @@
 [check-badge]: https://github.com/platformbuilders/fluid-react-native/workflows/check/badge.svg
 
 # Fluid React Native
-A Fluid React Native é uma biblioteca de componentes UI pronta para uso, desenvolvida pela Platform Builders. Ela foi criada com o objetivo de acelerar o processo de desenvolvimento de aplicativos React Native, oferecendo uma ampla variedade de componentes prontos para serem utilizados.
 
+<p align="center">
+  <img src="src/assets/images/logo-full-black.png" alt="Fluid React Native" width="400"/>
+</p>
 
-**Instalação**
+<p align="center">
+  <a href="https://github.com/platformbuilders/fluid-react-native/actions">
+    <img src="https://github.com/platformbuilders/fluid-react-native/workflows/CI/badge.svg" alt="Build Status" />
+  </a>
+  <a href="https://www.npmjs.com/package/@platformbuilders/fluid-react-native">
+    <img src="https://img.shields.io/npm/v/@platformbuilders/fluid-react-native.svg" alt="npm version" />
+  </a>
+  <a href="https://www.npmjs.com/package/@platformbuilders/fluid-react-native">
+    <img src="https://img.shields.io/npm/dm/@platformbuilders/fluid-react-native.svg" alt="npm downloads" />
+  </a>
+  <a href="https://fluid-ds.web.app">
+    <img src="https://img.shields.io/badge/docs-website-green" alt="documentation" />
+  </a>
+  <a href="https://github.com/platformbuilders/fluid-react-native/blob/main/LICENSE.md">
+    <img src="https://img.shields.io/github/license/platformbuilders/fluid-react-native" alt="license" />
+  </a>
+</p>
 
-    npm install @platformbuilders/fluid-react-native
-	//ou
-    yarn add @platformbuilders/fluid-react-native
+## 📖 Sobre
 
-**Uso**
-Após a instalação, você pode importar e utilizar os componentes da Fluid React Native em seu aplicativo. Aqui está um exemplo básico de como utilizar um botão da Fluid:
+O Fluid React Native é uma biblioteca de componentes UI que implementa o Design System Fluid, desenvolvido pela Platform Builders. Projetada para acelerar o desenvolvimento de aplicações React Native, oferecendo componentes reutilizáveis, personalizáveis e consistentes.
 
-    import React from 'react';
-    import { Button } from '@platformbuilders/fluid-react-native';
-    
-    const App = () => {
-      return (
-        <Button title="Clique aqui" onPress={() => console.log('Botão clicado!')} />
-      );
-    }
-    export default App;
+### 🌟 Características
 
-## Como criar um componente na Fluid
+- 🎨 **Design System Consistente**: Implementação fiel do Fluid Design System
+- 🔧 **Altamente Personalizável**: Sistema de temas poderoso e flexível
+- 📱 **Multiplataforma**: Suporte nativo para iOS e Android
+- 🎯 **Tipagem Forte**: TypeScript por padrão
+- ♿ **Acessível**: Componentes projetados com acessibilidade em mente
+- 🧪 **Bem Testado**: Cobertura de testes abrangente
 
-Para criar um novo componente na Fluid React Native, você pode seguir os seguintes passos:
+## 🚀 Começando
 
-Crie um novo arquivo para o seu componente. Por exemplo, MeuComponente.js.
+### Instalação
 
-        import React from 'react';
-        import { Text } from 'react-native';
-        const MeuComponente = () => {
-	        return (
-		        <Text>Olá, Mundo!</Text>
-		     );
-	    }
-	    export default MeuComponente;
+```bash
+# Usando npm
+npm install @platformbuilders/fluid-react-native
 
-  
-  No arquivo src/components/index.ts exporte seu novo componente:
+# Usando yarn
+yarn add @platformbuilders/fluid-react-native
+```
 
-    export { default  as  MeuComponente } from  './MeuComponente';
+### Configuração Básica
 
-***Não esqueça de criar testes para seu novo componente**
-1.  Crie um arquivo de teste para o seu componente. Por exemplo, `MeuComponente.spec.js`. 
-2. Escreva um teste para verificar se o componente é renderizado corretamente:
+```tsx
+import React from 'react';
+import { ThemeProvider } from '@platformbuilders/fluid-react-native';
 
-    	import React from 'react';
-        import { render, getByText } from 'react-native-testing-library';
-        import MeuComponente from './MeuComponente';
-    	describe('MeuComponente', () => {
-   	      it('deve renderizar corretamente', () => {
-   	        const { getByText } = render(<MeuComponente />);
-   	        const textoElement = getByText('Olá, Mundo!');
-   	        expect(textElement).toBeDefined();
-   	      });
-   	    });
-    
-    Neste exemplo, estamos verificando se o texto "Olá, Mundo!" é renderizado corretamente no componente `MeuComponente`.
-    
-6.  Execute os testes para verificar se o componente está funcionando corretamente. No seu terminal, execute o seguinte comando:
+const App = () => {
+  return (
+    <ThemeProvider>
+      {/* Seu app aqui */}
+    </ThemeProvider>
+  );
+};
 
-        npm test
-        // ou
-        yarn test
+export default App;
+```
 
-## Como testar usando o Yalc
+## 🎨 Sistema de Temas
 
-Certifique-se de ter o Yalc instalado globalmente em sua máquina. Se ainda não o tiver, você pode instalá-lo executando o seguinte comando:
+O Fluid React Native utiliza um sistema de temas poderoso que permite personalização completa da aparência dos componentes.
 
-    npm install -g yalc
+### Diagrama de Injeção de Temas
 
-Navegue até o diretório raiz do projeto da Fluid React Native.
+```
+┌─────────────┐          ┌───────────────┐          ┌────────────────┐          ┌────────────┐
+│  theme.json │          │   theme/index │          │ ThemeProvider  │          │ Components │
+└──────┬──────┘          └───────┬───────┘          └────────┬───────┘          └─────┬──────┘
+       │                         │                           │                        │
+       │ Definição de tokens     │                           │                        │
+       ├────────────────────────►│                           │                        │
+       │                         │                           │                        │
+       │                         │ Processamento com         │                        │
+       │                         │ theme-toolkit             │                        │
+       │                         ├──────────────────────────►│                        │
+       │                         │                           │                        │
+       │                         │                           │ Injeção via            │
+       │                         │                           │ Context API            │
+       │                         │                           ├───────────────────────►│
+```
 
-Execute o comando yalc publish para publicar a biblioteca localmente:
+### Personalizando o Tema
 
-    yalc publish
+```tsx
+import { ThemeProvider, DefaultTheme } from '@platformbuilders/fluid-react-native';
 
-Isso fará com que a biblioteca Fluid React Native seja disponibilizada localmente por meio do Yalc.
+const customTheme: DefaultTheme = {
+  colors: {
+    primary: '#FF0000',
+    // ... outros tokens de cor
+  },
+  // ... outros tokens
+};
 
-No seu projeto React Native, navegue até o diretório raiz e execute o comando yalc add seguido do nome da biblioteca. Por exemplo:
+const App = () => (
+  <ThemeProvider theme={customTheme}>
+    {/* Seu app aqui */}
+  </ThemeProvider>
+);
+```
 
-    yalc add @platformbuilders/fluid-react-native
+## 📚 Documentação
 
-Isso adicionará a biblioteca Fluid React Native ao seu projeto localmente através do Yalc.
+Visite nossa [documentação completa](https://fluid-ds.web.app) para:
+- Guias detalhados
+- Catálogo de componentes
+- Exemplos de código
+- Melhores práticas
+- Storybook interativo
 
-Agora você pode importar e utilizar os componentes da Fluid React Native em seu aplicativo normalmente.
+## 🧪 Desenvolvimento Local
 
-Sempre que você fizer alterações na biblioteca Fluid React Native, execute o comando yalc push no diretório raiz do projeto para atualizar o pacote no seu projeto React Native:
+### Usando Yalc
 
-    yalc publish --push
+1. Instale o Yalc globalmente:
+```bash
+npm install -g yalc
+```
 
-Isso fará com que as alterações sejam refletidas automaticamente no seu projeto React Native.
+2. No diretório do Fluid:
+```bash
+yalc publish
+```
+
+3. No seu projeto:
+```bash
+yalc add @platformbuilders/fluid-react-native
+```
+
+4. Para atualizar após mudanças:
+```bash
+yalc publish --push
+```
+
+## 🤝 Contribuindo
+
+Contribuições são bem-vindas! Por favor, leia nosso [guia de contribuição](CONTRIBUTING.md) para detalhes sobre nosso código de conduta e processo de submissão de Pull Requests.
+
+### Criando um Novo Componente
+
+1. Crie o componente seguindo nossa estrutura padrão:
+```
+ComponentName/
+├── index.tsx           # Implementação principal
+├── styles.ts          # Estilos (styled-components)
+├── ComponentName.stories.tsx  # Documentação
+└── __tests__/         # Testes
+```
+
+2. Exporte o componente em `src/components/index.ts`:
+```typescript
+export { default as ComponentName } from './ComponentName';
+```
+
+3. Adicione testes:
+```typescript
+import { render } from '@testing-library/react-native';
+import ComponentName from '../index';
+
+describe('ComponentName', () => {
+  it('renders correctly', () => {
+    const { getByTestId } = render(<ComponentName />);
+    expect(getByTestId('component-name')).toBeTruthy();
+  });
+});
+```
+
+## 📄 Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
+
+## 🙏 Agradecimentos
+
+- Time Platform Builders
+- Contribuidores
+- Comunidade React Native
