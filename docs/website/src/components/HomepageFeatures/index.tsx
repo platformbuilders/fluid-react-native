@@ -12,34 +12,35 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Componentes Reutilizáveis',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Design System Consistente',
+    Svg: require('@site/static/img/undraw_design_system.svg').default,
     description: (
       <>
-        O Fluid React Native oferece uma ampla gama de componentes UI prontos
-        para uso, desde botões e inputs até componentes mais complexos como
-        datepickers e carrosséis.
+        Construído sobre o Fluid Design System, oferecendo uma experiência visual
+        consistente e moderna para suas aplicações React Native, com componentes
+        que seguem as melhores práticas de UI/UX.
       </>
     ),
   },
   {
-    title: 'Sistema de Temas Poderoso',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Desenvolvimento Ágil',
+    Svg: require('@site/static/img/undraw_development.svg').default,
     description: (
       <>
-        Personalize facilmente a aparência de toda a sua aplicação através do
-        poderoso sistema de temas baseado em tokens de design, garantindo
-        consistência visual.
+        Acelere o desenvolvimento com componentes prontos para uso, tipagem
+        TypeScript completa e documentação abrangente. Foque no que importa:
+        criar experiências incríveis para seus usuários.
       </>
     ),
   },
   {
-    title: 'Experiência de Desenvolvimento Superior',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Flexibilidade Total',
+    Svg: require('@site/static/img/undraw_customization.svg').default,
     description: (
       <>
-        Desfrute de uma experiência de desenvolvimento superior com tipagem
-        completa, documentação abrangente e componentes bem testados.
+        Personalize facilmente os componentes através do sistema de temas,
+        adaptando-os à identidade visual do seu produto enquanto mantém a
+        consistência e acessibilidade.
       </>
     ),
   },

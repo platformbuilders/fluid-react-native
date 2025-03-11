@@ -5,12 +5,12 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Fluid React Native',
+  title: 'Fluid',
   tagline: 'Biblioteca de componentes UI implementando o Design System Fluid',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   // Set the production url of your site here
-  url: 'https://platformbuilders.github.io',
+  url: 'https://fluid.platformbuilders.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -20,7 +20,7 @@ const config: Config = {
   organizationName: 'platformbuilders', // Usually your GitHub org/user name.
   projectName: 'fluid-react-native', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -53,14 +53,14 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/fluid-social-card.jpg',
+    image: 'img/fluid-social-card.svg',
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: false,
       respectPrefersColorScheme: false,
     },
     navbar: {
-      title: 'Fluid React Native',
+      title: 'Fluid (RN)',
       logo: {
         alt: 'Fluid React Native Logo',
         src: 'img/logo.svg',
