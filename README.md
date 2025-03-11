@@ -1,6 +1,7 @@
 # @platformbuilders/fluid-react-native
 
 [![Build Status][check-badge]][workflows]
+[![Coverage][coverage-badge]][codecov]
 [![npm][npm-badge]][npm]
 [![MIT][license-badge]][license]
 
@@ -10,6 +11,8 @@
 [license]: https://raw.githubusercontent.com/platformbuilders/fluid-react-native/master/LICENSE.md
 [workflows]: https://github.com/platformbuilders/fluid-react-native/actions
 [check-badge]: https://github.com/platformbuilders/fluid-react-native/workflows/check/badge.svg
+[coverage-badge]: https://codecov.io/gh/platformbuilders/fluid-react-native/branch/master/graph/badge.svg
+[codecov]: https://codecov.io/gh/platformbuilders/fluid-react-native
 
 # Fluid React Native
 
