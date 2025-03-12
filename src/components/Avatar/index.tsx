@@ -65,7 +65,7 @@ const Avatar: React.FC<AvatarProps> = React.forwardRef(
     };
 
     const getUploadImage = (): any => {
-      return visibleImage;
+      return uploadedImage;
     };
 
     const clearUploadImage = (): void => {

@@ -1,12 +1,20 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
+import { Animated, Text } from 'react-native';
 import Typography from '..';
 import theme from '../../../theme';
+
+jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');
 
 beforeEach(() => {
   React.useContext = jest.fn();
   React.useMemo = jest.fn();
+  jest
+    .spyOn(Animated, 'Text')
+    .mockImplementation(({ children, style }: any) => (
+      <Text style={style}>{children}</Text>
+    ));
 });
 
 describe('<Typography />', () => {
@@ -87,6 +95,40 @@ describe('<Typography />', () => {
     const render = renderer.create(
       <ThemeProvider theme={theme}>
         <Typography accessibility="" variant="xxs" />
+      </ThemeProvider>,
+    );
+
+    expect(render.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render and match snapshot for variant animated', () => {
+    const render = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Typography accessibility="" variant="animated">
+          Texto animado
+        </Typography>
+      </ThemeProvider>,
+    );
+
+    expect(render.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render with children', () => {
+    const render = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Typography accessibility="">Texto de exemplo</Typography>
+      </ThemeProvider>,
+    );
+
+    expect(render.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render with custom id', () => {
+    const render = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Typography id="custom-id" accessibility="">
+          Texto com ID personalizado
+        </Typography>
       </ThemeProvider>,
     );
 

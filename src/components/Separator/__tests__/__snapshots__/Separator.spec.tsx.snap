@@ -62,3 +62,322 @@ exports[`<Separator /> should render Separator 1`] = `
   />
 </View>
 `;
+
+exports[`<Separator /> should render with custom margins 1`] = `
+<View
+  marginBottom={10}
+  marginTop={20}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 10,
+        "marginTop": 20,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#99999990",
+          "height": 0.5,
+          "width": "33%",
+        },
+      ]
+    }
+  />
+  <Text
+    accessibilityLabel="ou"
+    lineHeightVariant="min"
+    style={
+      [
+        {
+          "color": "#444444",
+          "fontSize": 15,
+          "lineHeight": 18,
+        },
+        {
+          "color": "#99999990",
+          "fontWeight": "bold",
+          "paddingBottom": 4,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "paddingTop": 4,
+        },
+      ]
+    }
+    variant="md"
+  >
+    ou
+  </Text>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#99999990",
+          "height": 0.5,
+          "width": "33%",
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`<Separator /> should render with long text 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 0,
+        "marginTop": 0,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#99999990",
+          "height": 0.5,
+          "width": "33%",
+        },
+      ]
+    }
+  />
+  <Text
+    accessibilityLabel="texto longo para teste"
+    lineHeightVariant="min"
+    style={
+      [
+        {
+          "color": "#444444",
+          "fontSize": 15,
+          "lineHeight": 18,
+        },
+        {
+          "color": "#99999990",
+          "fontWeight": "bold",
+          "paddingBottom": 4,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "paddingTop": 4,
+        },
+      ]
+    }
+    variant="md"
+  >
+    texto longo para teste
+  </Text>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#99999990",
+          "height": 0.5,
+          "width": "33%",
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`<Separator /> should render with only marginBottom 1`] = `
+<View
+  marginBottom={10}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 10,
+        "marginTop": 0,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#99999990",
+          "height": 0.5,
+          "width": "33%",
+        },
+      ]
+    }
+  />
+  <Text
+    accessibilityLabel="ou"
+    lineHeightVariant="min"
+    style={
+      [
+        {
+          "color": "#444444",
+          "fontSize": 15,
+          "lineHeight": 18,
+        },
+        {
+          "color": "#99999990",
+          "fontWeight": "bold",
+          "paddingBottom": 4,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "paddingTop": 4,
+        },
+      ]
+    }
+    variant="md"
+  >
+    ou
+  </Text>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#99999990",
+          "height": 0.5,
+          "width": "33%",
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`<Separator /> should render with only marginTop 1`] = `
+<View
+  marginTop={20}
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 0,
+        "marginTop": 20,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#99999990",
+          "height": 0.5,
+          "width": "33%",
+        },
+      ]
+    }
+  />
+  <Text
+    accessibilityLabel="ou"
+    lineHeightVariant="min"
+    style={
+      [
+        {
+          "color": "#444444",
+          "fontSize": 15,
+          "lineHeight": 18,
+        },
+        {
+          "color": "#99999990",
+          "fontWeight": "bold",
+          "paddingBottom": 4,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "paddingTop": 4,
+        },
+      ]
+    }
+    variant="md"
+  >
+    ou
+  </Text>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#99999990",
+          "height": 0.5,
+          "width": "33%",
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`<Separator /> should render with required props 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginBottom": 0,
+        "marginTop": 0,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#99999990",
+          "height": 0.5,
+          "width": "33%",
+        },
+      ]
+    }
+  />
+  <Text
+    accessibilityLabel="ou"
+    lineHeightVariant="min"
+    style={
+      [
+        {
+          "color": "#444444",
+          "fontSize": 15,
+          "lineHeight": 18,
+        },
+        {
+          "color": "#99999990",
+          "fontWeight": "bold",
+          "paddingBottom": 4,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "paddingTop": 4,
+        },
+      ]
+    }
+    variant="md"
+  >
+    ou
+  </Text>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#99999990",
+          "height": 0.5,
+          "width": "33%",
+        },
+      ]
+    }
+  />
+</View>
+`;

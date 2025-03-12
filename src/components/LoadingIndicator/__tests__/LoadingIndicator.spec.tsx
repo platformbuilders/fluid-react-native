@@ -1,54 +1,69 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
-import Separator from '..';
+import Loading from '..';
 import theme from '../../../theme';
 
-describe('<Separator />', () => {
-  it('should render with required props', () => {
+describe('<LoadingIndicator />', () => {
+  it('should render with default props', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <Separator text="ou" />
+        <Loading />
       </ThemeProvider>,
     );
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
-  it('should render with custom margins', () => {
+  it('should render with large size', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <Separator text="ou" marginTop={20} marginBottom={10} />
+        <Loading large />
       </ThemeProvider>,
     );
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
-  it('should render with only marginTop', () => {
+  it('should render with contrast', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <Separator text="ou" marginTop={20} />
+        <Loading contrast />
       </ThemeProvider>,
     );
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
-  it('should render with only marginBottom', () => {
+  it('should render with custom accessibility label', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <Separator text="ou" marginBottom={10} />
+        <Loading accessibility="Carregando..." />
       </ThemeProvider>,
     );
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
-  it('should render with long text', () => {
+  it('should render with linear variant', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <Separator text="texto longo para teste" />
+        <Loading variant="linear" />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render with all props combined', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Loading
+          large
+          contrast
+          variant="linear"
+          accessibility="Carregando..."
+        />
       </ThemeProvider>,
     );
 

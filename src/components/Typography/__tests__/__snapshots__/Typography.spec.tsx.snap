@@ -161,3 +161,43 @@ exports[`<Typography /> should render and match snapshot for variant xxs 1`] = `
   variant="xxs"
 />
 `;
+
+exports[`<Typography /> should render with children 1`] = `
+<Text
+  accessibilityLabel="Texto de exemplo"
+  lineHeightVariant="min"
+  style={
+    [
+      {
+        "color": "",
+        "fontSize": 16,
+        "lineHeight": 0,
+      },
+    ]
+  }
+  testID="Texto de exemplo"
+  variant="md"
+>
+  Texto de exemplo
+</Text>
+`;
+
+exports[`<Typography /> should render with custom id 1`] = `
+<Text
+  accessibilityLabel="Texto com ID personalizado"
+  lineHeightVariant="min"
+  style={
+    [
+      {
+        "color": "",
+        "fontSize": 16,
+        "lineHeight": 0,
+      },
+    ]
+  }
+  testID="custom-id"
+  variant="md"
+>
+  Texto com ID personalizado
+</Text>
+`;

@@ -61,3 +61,390 @@ exports[`<Link /> should render link 1`] = `
   />
 </View>
 `;
+
+exports[`<Link /> should render with custom accessibility label 1`] = `
+<View
+  accessibilityLabel="Custom Label"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "opacity": 1,
+    }
+  }
+  testID="test-link"
+>
+  <Text
+    accessibilityLabel="Texto test-accessibility"
+    lineHeightVariant="min"
+    style={
+      [
+        {
+          "color": "#444444",
+          "fontSize": 15,
+          "lineHeight": 18,
+        },
+        {
+          "color": "#444444",
+          "fontWeight": "500",
+          "marginLeft": 8,
+          "textDecorationColor": "#4255EF",
+          "textDecorationLine": "underline",
+        },
+      ]
+    }
+    testID="text_test-link"
+    variant="md"
+  >
+    Test Link
+  </Text>
+</View>
+`;
+
+exports[`<Link /> should render with custom style 1`] = `
+<View
+  accessibilityLabel="test-accessibility"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "opacity": 1,
+    }
+  }
+  testID="test-link"
+>
+  <Text
+    accessibilityLabel="Texto test-accessibility"
+    lineHeightVariant="min"
+    style={
+      [
+        {
+          "color": "#444444",
+          "fontSize": 15,
+          "lineHeight": 18,
+        },
+        {
+          "color": "#444444",
+          "fontWeight": "500",
+          "marginLeft": 8,
+          "textDecorationColor": "#4255EF",
+          "textDecorationLine": "underline",
+        },
+        {
+          "marginTop": 10,
+        },
+      ]
+    }
+    testID="text_test-link"
+    variant="md"
+  >
+    Test Link
+  </Text>
+</View>
+`;
+
+exports[`<Link /> should render with custom test ID 1`] = `
+<View
+  accessibilityLabel="test-accessibility"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "opacity": 1,
+    }
+  }
+  testID="custom-test-id"
+>
+  <Text
+    accessibilityLabel="Texto test-accessibility"
+    lineHeightVariant="min"
+    style={
+      [
+        {
+          "color": "#444444",
+          "fontSize": 15,
+          "lineHeight": 18,
+        },
+        {
+          "color": "#444444",
+          "fontWeight": "500",
+          "marginLeft": 8,
+          "textDecorationColor": "#4255EF",
+          "textDecorationLine": "underline",
+        },
+      ]
+    }
+    testID="text_test-link"
+    variant="md"
+  >
+    Test Link
+  </Text>
+</View>
+`;
+
+exports[`<Link /> should render with custom variant 1`] = `
+<View
+  accessibilityLabel="test-accessibility"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "opacity": 1,
+    }
+  }
+  testID="test-link"
+>
+  <Text
+    accessibilityLabel="Texto test-accessibility"
+    lineHeightVariant="min"
+    style={
+      [
+        {
+          "color": "#444444",
+          "fontSize": 17,
+          "lineHeight": 20.4,
+        },
+        {
+          "color": "#444444",
+          "fontWeight": "500",
+          "marginLeft": 8,
+          "textDecorationColor": "#4255EF",
+          "textDecorationLine": "underline",
+        },
+      ]
+    }
+    testID="text_test-link"
+    variant="lg"
+  >
+    Test Link
+  </Text>
+</View>
+`;
+
+exports[`<Link /> should render with default props 1`] = `
+<View
+  accessibilityLabel="test-accessibility"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "opacity": 1,
+    }
+  }
+  testID="test-link"
+>
+  <Text
+    accessibilityLabel="Texto test-accessibility"
+    lineHeightVariant="min"
+    style={
+      [
+        {
+          "color": "#444444",
+          "fontSize": 15,
+          "lineHeight": 18,
+        },
+        {
+          "color": "#444444",
+          "fontWeight": "500",
+          "marginLeft": 8,
+          "textDecorationColor": "#4255EF",
+          "textDecorationLine": "underline",
+        },
+      ]
+    }
+    testID="text_test-link"
+    variant="md"
+  >
+    Test Link
+  </Text>
+</View>
+`;
+
+exports[`<Link /> should render without id but with accessibility 1`] = `
+<View
+  accessibilityLabel="test-accessibility"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "opacity": 1,
+    }
+  }
+  testID="test-accessibility"
+>
+  <Text
+    accessibilityLabel="Texto test-accessibility"
+    lineHeightVariant="min"
+    style={
+      [
+        {
+          "color": "#444444",
+          "fontSize": 15,
+          "lineHeight": 18,
+        },
+        {
+          "color": "#444444",
+          "fontWeight": "500",
+          "marginLeft": 8,
+          "textDecorationColor": "#4255EF",
+          "textDecorationLine": "underline",
+        },
+      ]
+    }
+    testID="text_undefined"
+    variant="md"
+  >
+    Test Link
+  </Text>
+</View>
+`;

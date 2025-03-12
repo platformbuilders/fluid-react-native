@@ -1,7 +1,9 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import renderer, { act } from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
+import { fireEvent, render } from '@testing-library/react-native';
 import Image from '..';
+import { ImagePlaceholder } from '../../../assets/images';
 import theme from '../../../theme';
 
 const uri =
@@ -57,6 +59,87 @@ describe('<Image />', () => {
           animationColor="red"
           animationContainerColor="blue"
           source={{ uri }}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(render.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render with number source (local image)', () => {
+    const render = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Image
+          id="testing"
+          accessibility="testing_image"
+          source={ImagePlaceholder}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(render.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render with string source', () => {
+    const render = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Image id="testing" accessibility="testing_image" source={{ uri }} />
+      </ThemeProvider>,
+    );
+
+    expect(render.toJSON()).toMatchSnapshot();
+  });
+
+  it('should handle image loading events', () => {
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Image
+          id="testing"
+          testID="image-test"
+          accessibility="testing_image"
+          source={{ uri }}
+        />
+      </ThemeProvider>,
+    );
+
+    const image = getByTestId('image-test');
+
+    // Simula o início do carregamento da imagem
+    act(() => {
+      fireEvent(image, 'loadStart');
+    });
+
+    // Simula o término do carregamento da imagem
+    act(() => {
+      fireEvent(image, 'load');
+    });
+
+    expect(image).toBeTruthy();
+  });
+
+  it('should render with custom container style', () => {
+    const render = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Image
+          id="testing"
+          accessibility="testing_image"
+          source={{ uri }}
+          containerStyle={{ padding: 10 }}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(render.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render with custom image style', () => {
+    const render = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Image
+          id="testing"
+          accessibility="testing_image"
+          source={{ uri }}
+          style={{ width: 100, height: 100, borderRadius: 50 }}
         />
       </ThemeProvider>,
     );
