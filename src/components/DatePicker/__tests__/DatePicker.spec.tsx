@@ -7,6 +7,7 @@ import theme from '../../../theme';
 
 jest.useFakeTimers().setSystemTime(new Date('2020-01-01').getTime());
 
+/* eslint-disable sonarjs/no-duplicate-string */
 // Mock para Animated
 jest.mock('react-native', () => {
   const reactNative = jest.requireActual('react-native');
@@ -22,20 +23,27 @@ jest.mock('react-native', () => {
         _startingValue: x,
       })),
       timing: jest.fn(() => ({
-        start: jest.fn((callback) => callback && callback()),
+        start: jest.fn(),
       })),
-      parallel: jest.fn((animations) => ({
-        start: jest.fn((callback) => callback && callback()),
+      parallel: jest.fn(() => ({
+        start: jest.fn(),
       })),
     },
   };
 });
 
 describe('<DatePicker />', () => {
+  // Definindo constantes para reutilização
+  const TEST_ID = 'testing';
+  const TEST_VALUE = 'test';
+  const TEST_LABEL = 'test';
+  const TEST_ERROR = 'test';
+  const TEST_BTN_TEXT = 'test';
+
   it('should render datepicker', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" />
+        <DatePicker id={TEST_ID} accessibility="" />
       </ThemeProvider>,
     );
 
@@ -45,7 +53,7 @@ describe('<DatePicker />', () => {
   it('should render datepicker with value', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" value="test" />
+        <DatePicker id={TEST_ID} accessibility="" value={TEST_VALUE} />
       </ThemeProvider>,
     );
 
@@ -55,7 +63,7 @@ describe('<DatePicker />', () => {
   it('should render datepicker with label', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" label="test" />
+        <DatePicker id={TEST_ID} accessibility="" label={TEST_LABEL} />
       </ThemeProvider>,
     );
 
@@ -65,7 +73,7 @@ describe('<DatePicker />', () => {
   it('should render datepicker with error', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" error="test" />
+        <DatePicker id={TEST_ID} accessibility="" error={TEST_ERROR} />
       </ThemeProvider>,
     );
 
@@ -75,7 +83,11 @@ describe('<DatePicker />', () => {
   it('should render datepicker with button cancel text', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" cancelBtnText="test" />
+        <DatePicker
+          id={TEST_ID}
+          accessibility=""
+          cancelBtnText={TEST_BTN_TEXT}
+        />
       </ThemeProvider>,
     );
 
@@ -85,7 +97,7 @@ describe('<DatePicker />', () => {
   it('should render datepicker with test id', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" testID="test" />
+        <DatePicker id={TEST_ID} accessibility="" testID={TEST_VALUE} />
       </ThemeProvider>,
     );
 
@@ -95,7 +107,7 @@ describe('<DatePicker />', () => {
   it('should render datepicker with accessibility label', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" accessibilityLabel="test" />
+        <DatePicker id={TEST_ID} accessibility="" accessibilityLabel="test" />
       </ThemeProvider>,
     );
 
@@ -105,7 +117,7 @@ describe('<DatePicker />', () => {
   it('should render datepicker with confirm button text', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" confirmBtnText="test" />
+        <DatePicker id={TEST_ID} accessibility="" confirmBtnText="test" />
       </ThemeProvider>,
     );
 
@@ -115,7 +127,7 @@ describe('<DatePicker />', () => {
   it('should render datepicker with custom mode', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" mode="date" />
+        <DatePicker id={TEST_ID} accessibility="" mode="date" />
       </ThemeProvider>,
     );
 
@@ -125,7 +137,7 @@ describe('<DatePicker />', () => {
   it('should render datepicker with custom mode android', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" androidMode="calendar" />
+        <DatePicker id={TEST_ID} accessibility="" androidMode="calendar" />
       </ThemeProvider>,
     );
 
@@ -135,7 +147,7 @@ describe('<DatePicker />', () => {
   it('should render datepicker with editable', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" editable={false} />
+        <DatePicker id={TEST_ID} accessibility="" editable={false} />
       </ThemeProvider>,
     );
 
@@ -145,7 +157,7 @@ describe('<DatePicker />', () => {
   it('should render datepicker with custom locale', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" locale="en" />
+        <DatePicker id={TEST_ID} accessibility="" locale="en" />
       </ThemeProvider>,
     );
 
@@ -155,7 +167,7 @@ describe('<DatePicker />', () => {
   it('should render datepicker with format', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" format="yyyy-MM-dd" />
+        <DatePicker id={TEST_ID} accessibility="" format="yyyy-MM-dd" />
       </ThemeProvider>,
     );
 
@@ -165,7 +177,7 @@ describe('<DatePicker />', () => {
   it('should render datepicker with no dark', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" dark={false} />
+        <DatePicker id={TEST_ID} accessibility="" dark={false} />
       </ThemeProvider>,
     );
 
@@ -175,7 +187,7 @@ describe('<DatePicker />', () => {
   it('should render datepicker with status', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" status="disabled" />
+        <DatePicker id={TEST_ID} accessibility="" status="disabled" />
       </ThemeProvider>,
     );
 
@@ -187,14 +199,14 @@ describe('<DatePicker />', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
         <DatePicker
-          id="testing"
+          id={TEST_ID}
           accessibility=""
           onDateChange={onDateChangeMock}
         />
       </ThemeProvider>,
     );
 
-    const datePicker = wrapper.root.findByProps({ testID: 'testing' });
+    const datePicker = wrapper.root.findByProps({ testID: TEST_ID });
     act(() => {
       datePicker.props.onDateChange('2021-01-01');
     });
@@ -205,11 +217,11 @@ describe('<DatePicker />', () => {
   it('should animate label when date is changed', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" />
+        <DatePicker id={TEST_ID} accessibility="" />
       </ThemeProvider>,
     );
 
-    const datePicker = wrapper.root.findByProps({ testID: 'testing' });
+    const datePicker = wrapper.root.findByProps({ testID: TEST_ID });
     act(() => {
       datePicker.props.onDateChange('2021-01-01');
     });
@@ -225,7 +237,7 @@ describe('<DatePicker />', () => {
   it('should animate label when value is provided', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" value="2021-01-01" />
+        <DatePicker id={TEST_ID} accessibility="" value="2021-01-01" />
       </ThemeProvider>,
     );
 
@@ -240,7 +252,7 @@ describe('<DatePicker />', () => {
   it('should render datepicker with dark mode and error', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" dark error="Error message" />
+        <DatePicker id={TEST_ID} accessibility="" dark error="Error message" />
       </ThemeProvider>,
     );
 
@@ -250,7 +262,7 @@ describe('<DatePicker />', () => {
   it('should render datepicker with maxDate', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" maxDate="2021-12-31" />
+        <DatePicker id={TEST_ID} accessibility="" maxDate="2021-12-31" />
       </ThemeProvider>,
     );
 
@@ -263,11 +275,11 @@ describe('<DatePicker />', () => {
 
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" />
+        <DatePicker id={TEST_ID} accessibility="" />
       </ThemeProvider>,
     );
 
-    const datePicker = wrapper.root.findByProps({ testID: 'testing' });
+    const datePicker = wrapper.root.findByProps({ testID: TEST_ID });
 
     act(() => {
       datePicker.props.onDateChange('2021-01-01');
@@ -282,11 +294,11 @@ describe('<DatePicker />', () => {
   it('should handle time mode', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" mode="time" format="HH:mm" />
+        <DatePicker id={TEST_ID} accessibility="" mode="time" format="HH:mm" />
       </ThemeProvider>,
     );
 
-    const datePicker = wrapper.root.findByProps({ testID: 'testing' });
+    const datePicker = wrapper.root.findByProps({ testID: TEST_ID });
 
     act(() => {
       datePicker.props.onDateChange('14:30');
@@ -299,7 +311,7 @@ describe('<DatePicker />', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
         <DatePicker
-          id="testing"
+          id={TEST_ID}
           accessibility=""
           mode="datetime"
           format="YYYY-MM-DD HH:mm"
@@ -307,7 +319,7 @@ describe('<DatePicker />', () => {
       </ThemeProvider>,
     );
 
-    const datePicker = wrapper.root.findByProps({ testID: 'testing' });
+    const datePicker = wrapper.root.findByProps({ testID: TEST_ID });
 
     act(() => {
       datePicker.props.onDateChange('2021-01-01 14:30');
@@ -319,11 +331,11 @@ describe('<DatePicker />', () => {
   it('should not call onDateChange if not provided', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" />
+        <DatePicker id={TEST_ID} accessibility="" />
       </ThemeProvider>,
     );
 
-    const datePicker = wrapper.root.findByProps({ testID: 'testing' });
+    const datePicker = wrapper.root.findByProps({ testID: TEST_ID });
 
     // Não deve lançar erro mesmo sem onDateChange definido
     act(() => {
@@ -334,10 +346,10 @@ describe('<DatePicker />', () => {
   });
 
   it('should handle animation when already has value', () => {
-    // Espiona o método execAnimation
-    const wrapper = renderer.create(
+    // Renderiza o componente e verifica se a animação foi executada
+    renderer.create(
       <ThemeProvider theme={theme}>
-        <DatePicker id="testing" accessibility="" value="2021-01-01" />
+        <DatePicker id={TEST_ID} accessibility="" value="2021-01-01" />
       </ThemeProvider>,
     );
 

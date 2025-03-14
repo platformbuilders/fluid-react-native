@@ -11,11 +11,11 @@ import Icon from '../../Icon';
 
 // Mock para react-native-image-picker
 jest.mock('react-native-image-picker', () => ({
-  launchImageLibrary: jest.fn((options, callback) => {
-    callback({
+  launchImageLibrary: jest.fn(async () => {
+    return {
       didCancel: false,
       assets: [{ uri: 'file://test/image.jpg' }],
-    });
+    };
   }),
 }));
 
@@ -269,7 +269,7 @@ describe('<Avatar />', () => {
         <Avatar
           id="testing"
           accessibility=""
-          image="https://example.com/image.jpg"
+          image={{ uri: 'https://example.com/image.jpg' }}
         />
       </ThemeProvider>,
     );
@@ -279,7 +279,7 @@ describe('<Avatar />', () => {
   it('should handle invalid URI correctly', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <Avatar id="testing" accessibility="" image="invalid-uri" />
+        <Avatar id="testing" accessibility="" image={{ uri: 'invalid-uri' }} />
       </ThemeProvider>,
     );
     expect(wrapper.toJSON()).toMatchSnapshot();
@@ -322,13 +322,11 @@ describe('<Avatar />', () => {
 
   it('should handle canceled image selection', async () => {
     // Alterando o mock para simular cancelamento
-    (launchImageLibrary as jest.Mock).mockImplementationOnce(
-      (options, callback) => {
-        callback({
-          didCancel: true,
-        });
-      },
-    );
+    (launchImageLibrary as jest.Mock).mockImplementationOnce(async () => {
+      return {
+        didCancel: true,
+      };
+    });
 
     const onUploadMock = jest.fn();
     const ref = createRef<any>();
@@ -404,7 +402,7 @@ describe('<Avatar />', () => {
         <Avatar
           id="testing"
           accessibility=""
-          image="https://example.com/initial-image.jpg"
+          image={{ uri: 'https://example.com/initial-image.jpg' }}
         />
       </ThemeProvider>,
     );
@@ -415,7 +413,7 @@ describe('<Avatar />', () => {
         <Avatar
           id="testing"
           accessibility=""
-          image="https://example.com/updated-image.jpg"
+          image={{ uri: 'https://example.com/updated-image.jpg' }}
         />
       </ThemeProvider>,
     );

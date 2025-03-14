@@ -1,7 +1,7 @@
 import React, { FC, useCallback, useEffect, useState } from 'react';
 import { isEmpty } from 'lodash';
 import { Animated } from 'react-native';
-import { IconFonts, InputStatus, TextVariant } from '../../enums';
+import { IconFonts, InputStatus } from '../../enums';
 import { TextInputType } from '../../types';
 import { useAutoFocus, usePrevious } from '../../utils/hooks';
 import FormError from '../FormError';
@@ -9,8 +9,6 @@ import MaskedTextInput from './MaskedTextInput';
 import {
   BorderedWrapper,
   BottomLine,
-  FONT_WEIGHT_LOWER,
-  FONT_WEIGHT_UPPER,
   FixedLabel,
   FixedLabelAboveBorder,
   Icon,
@@ -20,7 +18,6 @@ import {
   InputWrapper,
   LABEL_LOWER_STYLE,
   LABEL_UPPER_STYLE,
-  Label,
   RootWrapper,
 } from './styles';
 
@@ -38,11 +35,8 @@ const TextInput: FC<TextInputType> = ({
   allowFontScaling = false,
   keyboardType = 'default',
   iconSize,
-  iconTouchableEnabled = false,
   status = InputStatus.Default,
   maskType = null,
-  iconNameBordered = '',
-  iconName,
   label = '',
   value = '',
   placeholder = '',
@@ -77,7 +71,6 @@ const TextInput: FC<TextInputType> = ({
   suppressAnimation = true,
   borderedLabel = '',
   showBorderErrored = true,
-  showIconErrored = true,
   iconSets,
   hidePlaceholderOnFocus = false,
   isFloating,
@@ -107,9 +100,6 @@ const TextInput: FC<TextInputType> = ({
     fontSize: new Animated.Value(animationInitialValues.fontSize),
     opacity: new Animated.Value(animationInitialValues.opacity),
   });
-  const [labelAnimatedFinish, setLabelAnimatedFinish] = useState({
-    fontWeight: FONT_WEIGHT_LOWER,
-  });
 
   const [isPlaceholder, setIsPlaceHolder] = useState(
     suppressAnimation ? false : true,
@@ -118,9 +108,7 @@ const TextInput: FC<TextInputType> = ({
   const [focusBorderColor, setFocusBorderColor] = useState(borderedColor);
 
   const previousValue = usePrevious<string>(value || '');
-  const labelVariant = large ? 'md' : 'xs';
   const textVariant = large ? 'lg' : 'md';
-  const placeholderVariant = large ? 'lg' : 'md';
 
   const animateComponent = useCallback(
     (updatedLabelStyle: any): void => {
@@ -138,12 +126,10 @@ const TextInput: FC<TextInputType> = ({
 
   const animationUp = (): void => {
     animateComponent(animationValues.upper);
-    setLabelAnimatedFinish({ fontWeight: FONT_WEIGHT_UPPER });
   };
 
   const animationDown = (): void => {
     animateComponent(animationValues.lower);
-    setLabelAnimatedFinish({ fontWeight: FONT_WEIGHT_LOWER });
   };
 
   const handleOnFocus = (event: any): void => {
@@ -254,36 +240,8 @@ const TextInput: FC<TextInputType> = ({
   }, [value, previousValue]);
 
   const hasError = !isEmpty(error);
-  const icon = iconName;
-  const iconBordered = iconNameBordered;
   const renderStatus = hasError ? InputStatus.Danger : status;
 
-  const renderIcon = (iconProp: string, isLeft?: boolean) => (
-    <Icon
-      testID={`icon_${iconProp || ''}`}
-      type={iconType}
-      id={`id_${iconProp}`}
-      accessibility={`${iconProp} icon`}
-      accessibilityLabel={`${iconProp} icon`}
-      accessibilityRole={iconTouchableEnabled ? 'button' : 'image'}
-      accessibilityHint={
-        iconTouchableEnabled ? 'Double tap to activate' : undefined
-      }
-      importantForAccessibility={
-        iconTouchableEnabled ? 'yes' : 'no-hide-descendants'
-      }
-      size={iconSize}
-      name={iconProp || ''}
-      contrast={contrast}
-      error={hasError}
-      touchable={iconTouchableEnabled}
-      onPress={!!rightIconName ? onRightIconPress : onPressIcon}
-      hitSlop={iconHitSlop || { top: 10, bottom: 10, left: 10, right: 10 }}
-      iconColor={isLeft ? leftIconColor : iconColor}
-      showIconErrored={showIconErrored}
-      iconSets={iconSets}
-    />
-  );
   return (
     <RootWrapper style={[rootStyle]}>
       {label && !borderedHeight && (

@@ -28,7 +28,6 @@ exports[`<Search /> should render search 1`] = `
     }
   >
     <View
-      multiline={false}
       style={
         [
           {
@@ -48,215 +47,99 @@ exports[`<Search /> should render search 1`] = `
       }
     >
       <View
-        borderedRadius={0}
-        borderedWidth={1}
-        error={false}
-        showBorderErrored={true}
+        leftIcon={false}
+        rightIcon={false}
         style={
           [
             {
-              "borderColor": "black",
-              "borderStyle": "solid",
-              "borderWidth": 0,
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
             },
           ]
         }
       >
-        <Text
-          accessibilityLabel="Erro "
-          collapsable={false}
-          contrast={false}
-          lineHeightVariant="min"
-          status="default"
-          style={
-            [
-              {
-                "color": "#444444",
-                "fontSize": 13,
-                "lineHeight": 15.6,
-              },
-              {
-                "color": "#444444",
-                "position": "absolute",
-                "top": 8,
-              },
-              {
-                "fontSize": 12,
-                "opacity": 0.4,
-                "top": -12,
-              },
-            ]
+        <TextInput
+          accessibility=""
+          accessibilityHint="Pesquise aqui"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
           }
-          testID="error_test"
-          variant="xs"
-        />
-        <View
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoComplete="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          iconName="search"
+          iconTouchableEnabled={true}
+          id="test"
+          inputRef={
+            {
+              "current": null,
+            }
+          }
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
           multiline={false}
-          rightIcon={false}
-          style={
-            [
-              {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "paddingLeft": 4,
-                "paddingRight": 4,
-                "paddingTop": 4,
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
               },
-            ]
+              "validator": [Function],
+            }
           }
-        >
-          <TextInput
-            accessibility=""
-            accessibilityHint="Pesquise aqui"
-            accessibilityLabel=""
-            accessibilityLiveRegion="polite"
-            accessibilityRole="text"
-            accessibilityState={
-              {
-                "disabled": false,
-              }
-            }
-            allowFontScaling={false}
-            autoCapitalize="none"
-            autoComplete="off"
-            autoCorrect={false}
-            autoFocus={false}
-            centered={false}
-            contrast={false}
-            id="test"
-            inputRef={
-              {
-                "current": null,
-              }
-            }
-            isPlaceholder={false}
-            keyboardType="default"
-            large={false}
-            multiline={false}
-            onBlur={[Function]}
-            onChangeText={[Function]}
-            onFocus={[Function]}
-            onSubmitEditing={[Function]}
-            options={
-              {
-                "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-                "translation": {
-                  "*": [Function],
-                },
-                "validator": [Function],
-              }
-            }
-            placeholder="Pesquise aqui"
-            placeholderTextColor="#999999"
-            status="default"
-            style={
-              [
-                {
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                {},
-              ]
-            }
-            testID="test"
-            type="custom"
-            underlineColorAndroid="transparent"
-            value=""
-            variant="md"
-            withBottomline={true}
-          />
-          <View
-            collapsable={false}
-            style={{}}
-          >
-            <View
-              accessibilityHint="Double tap to activate"
-              accessibilityLabel="search icon"
-              accessibilityRole="button"
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              hitSlop={{}}
-              importantForAccessibility="yes"
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                {
-                  "opacity": 1,
-                }
-              }
-              testID="icon_search"
-            >
-              <View>
-                <Text
-                  allowFontScaling={false}
-                  selectable={false}
-                  style={
-                    [
-                      {
-                        "color": "function (_ref3) {
-    var theme = _ref3.theme;
-    return lodash_1(theme, themeProp) || null;
-  }",
-                        "fontSize": 26,
-                      },
-                      undefined,
-                      {
-                        "fontFamily": "FontAwesome5Free-Solid",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                      {
-                        "fontWeight": "900",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-        <View
-          contrast={false}
+          placeholder="Pesquise aqui"
+          placeholderTextColor="#999999"
           status="default"
           style={
             [
               {
-                "backgroundColor": "#444444",
-                "height": 0.5,
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
               },
+              {},
             ]
           }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
         />
       </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
     </View>
   </View>
 </View>
@@ -290,7 +173,6 @@ exports[`<Search /> should render search with auto focus 1`] = `
     }
   >
     <View
-      multiline={false}
       style={
         [
           {
@@ -310,215 +192,99 @@ exports[`<Search /> should render search with auto focus 1`] = `
       }
     >
       <View
-        borderedRadius={0}
-        borderedWidth={1}
-        error={false}
-        showBorderErrored={true}
+        leftIcon={false}
+        rightIcon={false}
         style={
           [
             {
-              "borderColor": "black",
-              "borderStyle": "solid",
-              "borderWidth": 0,
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
             },
           ]
         }
       >
-        <Text
-          accessibilityLabel="Erro "
-          collapsable={false}
-          contrast={false}
-          lineHeightVariant="min"
-          status="default"
-          style={
-            [
-              {
-                "color": "#444444",
-                "fontSize": 13,
-                "lineHeight": 15.6,
-              },
-              {
-                "color": "#444444",
-                "position": "absolute",
-                "top": 8,
-              },
-              {
-                "fontSize": 12,
-                "opacity": 0.4,
-                "top": -12,
-              },
-            ]
+        <TextInput
+          accessibility=""
+          accessibilityHint="Pesquise aqui"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
           }
-          testID="error_test"
-          variant="xs"
-        />
-        <View
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoComplete="off"
+          autoCorrect={false}
+          autoFocus={true}
+          centered={false}
+          contrast={false}
+          iconName="search"
+          iconTouchableEnabled={true}
+          id="test"
+          inputRef={
+            {
+              "current": null,
+            }
+          }
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
           multiline={false}
-          rightIcon={false}
-          style={
-            [
-              {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "paddingLeft": 4,
-                "paddingRight": 4,
-                "paddingTop": 4,
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
               },
-            ]
+              "validator": [Function],
+            }
           }
-        >
-          <TextInput
-            accessibility=""
-            accessibilityHint="Pesquise aqui"
-            accessibilityLabel=""
-            accessibilityLiveRegion="polite"
-            accessibilityRole="text"
-            accessibilityState={
-              {
-                "disabled": false,
-              }
-            }
-            allowFontScaling={false}
-            autoCapitalize="none"
-            autoComplete="off"
-            autoCorrect={false}
-            autoFocus={true}
-            centered={false}
-            contrast={false}
-            id="test"
-            inputRef={
-              {
-                "current": null,
-              }
-            }
-            isPlaceholder={false}
-            keyboardType="default"
-            large={false}
-            multiline={false}
-            onBlur={[Function]}
-            onChangeText={[Function]}
-            onFocus={[Function]}
-            onSubmitEditing={[Function]}
-            options={
-              {
-                "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-                "translation": {
-                  "*": [Function],
-                },
-                "validator": [Function],
-              }
-            }
-            placeholder="Pesquise aqui"
-            placeholderTextColor="#999999"
-            status="default"
-            style={
-              [
-                {
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                {},
-              ]
-            }
-            testID="test"
-            type="custom"
-            underlineColorAndroid="transparent"
-            value=""
-            variant="md"
-            withBottomline={true}
-          />
-          <View
-            collapsable={false}
-            style={{}}
-          >
-            <View
-              accessibilityHint="Double tap to activate"
-              accessibilityLabel="search icon"
-              accessibilityRole="button"
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              hitSlop={{}}
-              importantForAccessibility="yes"
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                {
-                  "opacity": 1,
-                }
-              }
-              testID="icon_search"
-            >
-              <View>
-                <Text
-                  allowFontScaling={false}
-                  selectable={false}
-                  style={
-                    [
-                      {
-                        "color": "function (_ref3) {
-    var theme = _ref3.theme;
-    return lodash_1(theme, themeProp) || null;
-  }",
-                        "fontSize": 26,
-                      },
-                      undefined,
-                      {
-                        "fontFamily": "FontAwesome5Free-Solid",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                      {
-                        "fontWeight": "900",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-        <View
-          contrast={false}
+          placeholder="Pesquise aqui"
+          placeholderTextColor="#999999"
           status="default"
           style={
             [
               {
-                "backgroundColor": "#444444",
-                "height": 0.5,
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
               },
+              {},
             ]
           }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
         />
       </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
     </View>
   </View>
 </View>
@@ -555,7 +321,6 @@ exports[`<Search /> should render search with custom container style 1`] = `
     }
   >
     <View
-      multiline={false}
       style={
         [
           {
@@ -575,215 +340,99 @@ exports[`<Search /> should render search with custom container style 1`] = `
       }
     >
       <View
-        borderedRadius={0}
-        borderedWidth={1}
-        error={false}
-        showBorderErrored={true}
+        leftIcon={false}
+        rightIcon={false}
         style={
           [
             {
-              "borderColor": "black",
-              "borderStyle": "solid",
-              "borderWidth": 0,
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
             },
           ]
         }
       >
-        <Text
-          accessibilityLabel="Erro "
-          collapsable={false}
-          contrast={false}
-          lineHeightVariant="min"
-          status="default"
-          style={
-            [
-              {
-                "color": "#444444",
-                "fontSize": 13,
-                "lineHeight": 15.6,
-              },
-              {
-                "color": "#444444",
-                "position": "absolute",
-                "top": 8,
-              },
-              {
-                "fontSize": 12,
-                "opacity": 0.4,
-                "top": -12,
-              },
-            ]
+        <TextInput
+          accessibility=""
+          accessibilityHint="Pesquise aqui"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
           }
-          testID="error_test"
-          variant="xs"
-        />
-        <View
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoComplete="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          iconName="search"
+          iconTouchableEnabled={true}
+          id="test"
+          inputRef={
+            {
+              "current": null,
+            }
+          }
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
           multiline={false}
-          rightIcon={false}
-          style={
-            [
-              {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "paddingLeft": 4,
-                "paddingRight": 4,
-                "paddingTop": 4,
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
               },
-            ]
+              "validator": [Function],
+            }
           }
-        >
-          <TextInput
-            accessibility=""
-            accessibilityHint="Pesquise aqui"
-            accessibilityLabel=""
-            accessibilityLiveRegion="polite"
-            accessibilityRole="text"
-            accessibilityState={
-              {
-                "disabled": false,
-              }
-            }
-            allowFontScaling={false}
-            autoCapitalize="none"
-            autoComplete="off"
-            autoCorrect={false}
-            autoFocus={false}
-            centered={false}
-            contrast={false}
-            id="test"
-            inputRef={
-              {
-                "current": null,
-              }
-            }
-            isPlaceholder={false}
-            keyboardType="default"
-            large={false}
-            multiline={false}
-            onBlur={[Function]}
-            onChangeText={[Function]}
-            onFocus={[Function]}
-            onSubmitEditing={[Function]}
-            options={
-              {
-                "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-                "translation": {
-                  "*": [Function],
-                },
-                "validator": [Function],
-              }
-            }
-            placeholder="Pesquise aqui"
-            placeholderTextColor="#999999"
-            status="default"
-            style={
-              [
-                {
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                {},
-              ]
-            }
-            testID="test"
-            type="custom"
-            underlineColorAndroid="transparent"
-            value=""
-            variant="md"
-            withBottomline={true}
-          />
-          <View
-            collapsable={false}
-            style={{}}
-          >
-            <View
-              accessibilityHint="Double tap to activate"
-              accessibilityLabel="search icon"
-              accessibilityRole="button"
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              hitSlop={{}}
-              importantForAccessibility="yes"
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                {
-                  "opacity": 1,
-                }
-              }
-              testID="icon_search"
-            >
-              <View>
-                <Text
-                  allowFontScaling={false}
-                  selectable={false}
-                  style={
-                    [
-                      {
-                        "color": "function (_ref3) {
-    var theme = _ref3.theme;
-    return lodash_1(theme, themeProp) || null;
-  }",
-                        "fontSize": 26,
-                      },
-                      undefined,
-                      {
-                        "fontFamily": "FontAwesome5Free-Solid",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                      {
-                        "fontWeight": "900",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-        <View
-          contrast={false}
+          placeholder="Pesquise aqui"
+          placeholderTextColor="#999999"
           status="default"
           style={
             [
               {
-                "backgroundColor": "#444444",
-                "height": 0.5,
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
               },
+              {},
             ]
           }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
         />
       </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
     </View>
   </View>
 </View>
@@ -817,7 +466,6 @@ exports[`<Search /> should render search with custom icon color 1`] = `
     }
   >
     <View
-      multiline={false}
       style={
         [
           {
@@ -837,212 +485,99 @@ exports[`<Search /> should render search with custom icon color 1`] = `
       }
     >
       <View
-        borderedRadius={0}
-        borderedWidth={1}
-        error={false}
-        showBorderErrored={true}
+        leftIcon={false}
+        rightIcon={false}
         style={
           [
             {
-              "borderColor": "black",
-              "borderStyle": "solid",
-              "borderWidth": 0,
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
             },
           ]
         }
       >
-        <Text
-          accessibilityLabel="Erro "
-          collapsable={false}
-          contrast={false}
-          lineHeightVariant="min"
-          status="default"
-          style={
-            [
-              {
-                "color": "#444444",
-                "fontSize": 13,
-                "lineHeight": 15.6,
-              },
-              {
-                "color": "#444444",
-                "position": "absolute",
-                "top": 8,
-              },
-              {
-                "fontSize": 12,
-                "opacity": 0.4,
-                "top": -12,
-              },
-            ]
+        <TextInput
+          accessibility=""
+          accessibilityHint="Pesquise aqui"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
           }
-          testID="error_test"
-          variant="xs"
-        />
-        <View
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoComplete="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          iconName="search"
+          iconTouchableEnabled={true}
+          id="test"
+          inputRef={
+            {
+              "current": null,
+            }
+          }
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
           multiline={false}
-          rightIcon={false}
-          style={
-            [
-              {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "paddingLeft": 4,
-                "paddingRight": 4,
-                "paddingTop": 4,
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
               },
-            ]
+              "validator": [Function],
+            }
           }
-        >
-          <TextInput
-            accessibility=""
-            accessibilityHint="Pesquise aqui"
-            accessibilityLabel=""
-            accessibilityLiveRegion="polite"
-            accessibilityRole="text"
-            accessibilityState={
-              {
-                "disabled": false,
-              }
-            }
-            allowFontScaling={false}
-            autoCapitalize="none"
-            autoComplete="off"
-            autoCorrect={false}
-            autoFocus={false}
-            centered={false}
-            contrast={false}
-            id="test"
-            inputRef={
-              {
-                "current": null,
-              }
-            }
-            isPlaceholder={false}
-            keyboardType="default"
-            large={false}
-            multiline={false}
-            onBlur={[Function]}
-            onChangeText={[Function]}
-            onFocus={[Function]}
-            onSubmitEditing={[Function]}
-            options={
-              {
-                "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-                "translation": {
-                  "*": [Function],
-                },
-                "validator": [Function],
-              }
-            }
-            placeholder="Pesquise aqui"
-            placeholderTextColor="#999999"
-            status="default"
-            style={
-              [
-                {
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                {},
-              ]
-            }
-            testID="test"
-            type="custom"
-            underlineColorAndroid="transparent"
-            value=""
-            variant="md"
-            withBottomline={true}
-          />
-          <View
-            collapsable={false}
-            style={{}}
-          >
-            <View
-              accessibilityHint="Double tap to activate"
-              accessibilityLabel="search icon"
-              accessibilityRole="button"
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              hitSlop={{}}
-              importantForAccessibility="yes"
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                {
-                  "opacity": 1,
-                }
-              }
-              testID="icon_search"
-            >
-              <View>
-                <Text
-                  allowFontScaling={false}
-                  selectable={false}
-                  style={
-                    [
-                      {
-                        "color": "#fff",
-                        "fontSize": 26,
-                      },
-                      undefined,
-                      {
-                        "fontFamily": "FontAwesome5Free-Solid",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                      {
-                        "fontWeight": "900",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-        <View
-          contrast={false}
+          placeholder="Pesquise aqui"
+          placeholderTextColor="#999999"
           status="default"
           style={
             [
               {
-                "backgroundColor": "#444444",
-                "height": 0.5,
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
               },
+              {},
             ]
           }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
         />
       </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
     </View>
   </View>
 </View>
@@ -1076,7 +611,6 @@ exports[`<Search /> should render search with custom input style 1`] = `
     }
   >
     <View
-      multiline={false}
       style={
         [
           {
@@ -1099,215 +633,99 @@ exports[`<Search /> should render search with custom input style 1`] = `
       }
     >
       <View
-        borderedRadius={0}
-        borderedWidth={1}
-        error={false}
-        showBorderErrored={true}
+        leftIcon={false}
+        rightIcon={false}
         style={
           [
             {
-              "borderColor": "black",
-              "borderStyle": "solid",
-              "borderWidth": 0,
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
             },
           ]
         }
       >
-        <Text
-          accessibilityLabel="Erro "
-          collapsable={false}
-          contrast={false}
-          lineHeightVariant="min"
-          status="default"
-          style={
-            [
-              {
-                "color": "#444444",
-                "fontSize": 13,
-                "lineHeight": 15.6,
-              },
-              {
-                "color": "#444444",
-                "position": "absolute",
-                "top": 8,
-              },
-              {
-                "fontSize": 12,
-                "opacity": 0.4,
-                "top": -12,
-              },
-            ]
+        <TextInput
+          accessibility=""
+          accessibilityHint="Pesquise aqui"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
           }
-          testID="error_test"
-          variant="xs"
-        />
-        <View
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoComplete="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          iconName="search"
+          iconTouchableEnabled={true}
+          id="test"
+          inputRef={
+            {
+              "current": null,
+            }
+          }
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
           multiline={false}
-          rightIcon={false}
-          style={
-            [
-              {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "paddingLeft": 4,
-                "paddingRight": 4,
-                "paddingTop": 4,
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
               },
-            ]
+              "validator": [Function],
+            }
           }
-        >
-          <TextInput
-            accessibility=""
-            accessibilityHint="Pesquise aqui"
-            accessibilityLabel=""
-            accessibilityLiveRegion="polite"
-            accessibilityRole="text"
-            accessibilityState={
-              {
-                "disabled": false,
-              }
-            }
-            allowFontScaling={false}
-            autoCapitalize="none"
-            autoComplete="off"
-            autoCorrect={false}
-            autoFocus={false}
-            centered={false}
-            contrast={false}
-            id="test"
-            inputRef={
-              {
-                "current": null,
-              }
-            }
-            isPlaceholder={false}
-            keyboardType="default"
-            large={false}
-            multiline={false}
-            onBlur={[Function]}
-            onChangeText={[Function]}
-            onFocus={[Function]}
-            onSubmitEditing={[Function]}
-            options={
-              {
-                "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-                "translation": {
-                  "*": [Function],
-                },
-                "validator": [Function],
-              }
-            }
-            placeholder="Pesquise aqui"
-            placeholderTextColor="#999999"
-            status="default"
-            style={
-              [
-                {
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                {},
-              ]
-            }
-            testID="test"
-            type="custom"
-            underlineColorAndroid="transparent"
-            value=""
-            variant="md"
-            withBottomline={true}
-          />
-          <View
-            collapsable={false}
-            style={{}}
-          >
-            <View
-              accessibilityHint="Double tap to activate"
-              accessibilityLabel="search icon"
-              accessibilityRole="button"
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              hitSlop={{}}
-              importantForAccessibility="yes"
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                {
-                  "opacity": 1,
-                }
-              }
-              testID="icon_search"
-            >
-              <View>
-                <Text
-                  allowFontScaling={false}
-                  selectable={false}
-                  style={
-                    [
-                      {
-                        "color": "function (_ref3) {
-    var theme = _ref3.theme;
-    return lodash_1(theme, themeProp) || null;
-  }",
-                        "fontSize": 26,
-                      },
-                      undefined,
-                      {
-                        "fontFamily": "FontAwesome5Free-Solid",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                      {
-                        "fontWeight": "900",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-        <View
-          contrast={false}
+          placeholder="Pesquise aqui"
+          placeholderTextColor="#999999"
           status="default"
           style={
             [
               {
-                "backgroundColor": "#444444",
-                "height": 0.5,
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
               },
+              {},
             ]
           }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
         />
       </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
     </View>
   </View>
 </View>
@@ -1341,7 +759,6 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
     }
   >
     <View
-      multiline={false}
       style={
         [
           {
@@ -1361,215 +778,99 @@ exports[`<Search /> should render search with custom placeholder 1`] = `
       }
     >
       <View
-        borderedRadius={0}
-        borderedWidth={1}
-        error={false}
-        showBorderErrored={true}
+        leftIcon={false}
+        rightIcon={false}
         style={
           [
             {
-              "borderColor": "black",
-              "borderStyle": "solid",
-              "borderWidth": 0,
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
             },
           ]
         }
       >
-        <Text
-          accessibilityLabel="Erro "
-          collapsable={false}
-          contrast={false}
-          lineHeightVariant="min"
-          status="default"
-          style={
-            [
-              {
-                "color": "#444444",
-                "fontSize": 13,
-                "lineHeight": 15.6,
-              },
-              {
-                "color": "#444444",
-                "position": "absolute",
-                "top": 8,
-              },
-              {
-                "fontSize": 12,
-                "opacity": 0.4,
-                "top": -12,
-              },
-            ]
+        <TextInput
+          accessibility=""
+          accessibilityHint="Test"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
           }
-          testID="error_test"
-          variant="xs"
-        />
-        <View
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoComplete="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          iconName="search"
+          iconTouchableEnabled={true}
+          id="test"
+          inputRef={
+            {
+              "current": null,
+            }
+          }
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
           multiline={false}
-          rightIcon={false}
-          style={
-            [
-              {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "paddingLeft": 4,
-                "paddingRight": 4,
-                "paddingTop": 4,
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
               },
-            ]
+              "validator": [Function],
+            }
           }
-        >
-          <TextInput
-            accessibility=""
-            accessibilityHint="Test"
-            accessibilityLabel=""
-            accessibilityLiveRegion="polite"
-            accessibilityRole="text"
-            accessibilityState={
-              {
-                "disabled": false,
-              }
-            }
-            allowFontScaling={false}
-            autoCapitalize="none"
-            autoComplete="off"
-            autoCorrect={false}
-            autoFocus={false}
-            centered={false}
-            contrast={false}
-            id="test"
-            inputRef={
-              {
-                "current": null,
-              }
-            }
-            isPlaceholder={false}
-            keyboardType="default"
-            large={false}
-            multiline={false}
-            onBlur={[Function]}
-            onChangeText={[Function]}
-            onFocus={[Function]}
-            onSubmitEditing={[Function]}
-            options={
-              {
-                "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-                "translation": {
-                  "*": [Function],
-                },
-                "validator": [Function],
-              }
-            }
-            placeholder="Test"
-            placeholderTextColor="#999999"
-            status="default"
-            style={
-              [
-                {
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                {},
-              ]
-            }
-            testID="test"
-            type="custom"
-            underlineColorAndroid="transparent"
-            value=""
-            variant="md"
-            withBottomline={true}
-          />
-          <View
-            collapsable={false}
-            style={{}}
-          >
-            <View
-              accessibilityHint="Double tap to activate"
-              accessibilityLabel="search icon"
-              accessibilityRole="button"
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              hitSlop={{}}
-              importantForAccessibility="yes"
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                {
-                  "opacity": 1,
-                }
-              }
-              testID="icon_search"
-            >
-              <View>
-                <Text
-                  allowFontScaling={false}
-                  selectable={false}
-                  style={
-                    [
-                      {
-                        "color": "function (_ref3) {
-    var theme = _ref3.theme;
-    return lodash_1(theme, themeProp) || null;
-  }",
-                        "fontSize": 26,
-                      },
-                      undefined,
-                      {
-                        "fontFamily": "FontAwesome5Free-Solid",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                      {
-                        "fontWeight": "900",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-        <View
-          contrast={false}
+          placeholder="Test"
+          placeholderTextColor="#999999"
           status="default"
           style={
             [
               {
-                "backgroundColor": "#444444",
-                "height": 0.5,
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
               },
+              {},
             ]
           }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
         />
       </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
     </View>
   </View>
 </View>
@@ -1603,7 +904,6 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
     }
   >
     <View
-      multiline={false}
       style={
         [
           {
@@ -1623,215 +923,99 @@ exports[`<Search /> should render search with custom placeholder color 1`] = `
       }
     >
       <View
-        borderedRadius={0}
-        borderedWidth={1}
-        error={false}
-        showBorderErrored={true}
+        leftIcon={false}
+        rightIcon={false}
         style={
           [
             {
-              "borderColor": "black",
-              "borderStyle": "solid",
-              "borderWidth": 0,
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
             },
           ]
         }
       >
-        <Text
-          accessibilityLabel="Erro "
-          collapsable={false}
-          contrast={false}
-          lineHeightVariant="min"
-          status="default"
-          style={
-            [
-              {
-                "color": "#444444",
-                "fontSize": 13,
-                "lineHeight": 15.6,
-              },
-              {
-                "color": "#444444",
-                "position": "absolute",
-                "top": 8,
-              },
-              {
-                "fontSize": 12,
-                "opacity": 0.4,
-                "top": -12,
-              },
-            ]
+        <TextInput
+          accessibility=""
+          accessibilityHint="Pesquise aqui"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
           }
-          testID="error_test"
-          variant="xs"
-        />
-        <View
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoComplete="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          iconName="search"
+          iconTouchableEnabled={true}
+          id="test"
+          inputRef={
+            {
+              "current": null,
+            }
+          }
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
           multiline={false}
-          rightIcon={false}
-          style={
-            [
-              {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "paddingLeft": 4,
-                "paddingRight": 4,
-                "paddingTop": 4,
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
               },
-            ]
+              "validator": [Function],
+            }
           }
-        >
-          <TextInput
-            accessibility=""
-            accessibilityHint="Pesquise aqui"
-            accessibilityLabel=""
-            accessibilityLiveRegion="polite"
-            accessibilityRole="text"
-            accessibilityState={
-              {
-                "disabled": false,
-              }
-            }
-            allowFontScaling={false}
-            autoCapitalize="none"
-            autoComplete="off"
-            autoCorrect={false}
-            autoFocus={false}
-            centered={false}
-            contrast={false}
-            id="test"
-            inputRef={
-              {
-                "current": null,
-              }
-            }
-            isPlaceholder={false}
-            keyboardType="default"
-            large={false}
-            multiline={false}
-            onBlur={[Function]}
-            onChangeText={[Function]}
-            onFocus={[Function]}
-            onSubmitEditing={[Function]}
-            options={
-              {
-                "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-                "translation": {
-                  "*": [Function],
-                },
-                "validator": [Function],
-              }
-            }
-            placeholder="Pesquise aqui"
-            placeholderTextColor="#123983"
-            status="default"
-            style={
-              [
-                {
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                {},
-              ]
-            }
-            testID="test"
-            type="custom"
-            underlineColorAndroid="transparent"
-            value=""
-            variant="md"
-            withBottomline={true}
-          />
-          <View
-            collapsable={false}
-            style={{}}
-          >
-            <View
-              accessibilityHint="Double tap to activate"
-              accessibilityLabel="search icon"
-              accessibilityRole="button"
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              hitSlop={{}}
-              importantForAccessibility="yes"
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                {
-                  "opacity": 1,
-                }
-              }
-              testID="icon_search"
-            >
-              <View>
-                <Text
-                  allowFontScaling={false}
-                  selectable={false}
-                  style={
-                    [
-                      {
-                        "color": "function (_ref3) {
-    var theme = _ref3.theme;
-    return lodash_1(theme, themeProp) || null;
-  }",
-                        "fontSize": 26,
-                      },
-                      undefined,
-                      {
-                        "fontFamily": "FontAwesome5Free-Solid",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                      {
-                        "fontWeight": "900",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-        <View
-          contrast={false}
+          placeholder="Pesquise aqui"
+          placeholderTextColor="#123983"
           status="default"
           style={
             [
               {
-                "backgroundColor": "#444444",
-                "height": 0.5,
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
               },
+              {},
             ]
           }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
         />
       </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
     </View>
   </View>
 </View>
@@ -1865,7 +1049,6 @@ exports[`<Search /> should render search with custom text style 1`] = `
     }
   >
     <View
-      multiline={false}
       style={
         [
           {
@@ -1885,217 +1068,101 @@ exports[`<Search /> should render search with custom text style 1`] = `
       }
     >
       <View
-        borderedRadius={0}
-        borderedWidth={1}
-        error={false}
-        showBorderErrored={true}
+        leftIcon={false}
+        rightIcon={false}
         style={
           [
             {
-              "borderColor": "black",
-              "borderStyle": "solid",
-              "borderWidth": 0,
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
             },
           ]
         }
       >
-        <Text
-          accessibilityLabel="Erro "
-          collapsable={false}
-          contrast={false}
-          lineHeightVariant="min"
-          status="default"
-          style={
-            [
-              {
-                "color": "#444444",
-                "fontSize": 13,
-                "lineHeight": 15.6,
-              },
-              {
-                "color": "#444444",
-                "position": "absolute",
-                "top": 8,
-              },
-              {
-                "fontSize": 12,
-                "opacity": 0.4,
-                "top": -12,
-              },
-            ]
+        <TextInput
+          accessibility=""
+          accessibilityHint="Pesquise aqui"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
           }
-          testID="error_test"
-          variant="xs"
-        />
-        <View
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoComplete="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          iconName="search"
+          iconTouchableEnabled={true}
+          id="test"
+          inputRef={
+            {
+              "current": null,
+            }
+          }
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
           multiline={false}
-          rightIcon={false}
-          style={
-            [
-              {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "paddingLeft": 4,
-                "paddingRight": 4,
-                "paddingTop": 4,
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
               },
-            ]
+              "validator": [Function],
+            }
           }
-        >
-          <TextInput
-            accessibility=""
-            accessibilityHint="Pesquise aqui"
-            accessibilityLabel=""
-            accessibilityLiveRegion="polite"
-            accessibilityRole="text"
-            accessibilityState={
-              {
-                "disabled": false,
-              }
-            }
-            allowFontScaling={false}
-            autoCapitalize="none"
-            autoComplete="off"
-            autoCorrect={false}
-            autoFocus={false}
-            centered={false}
-            contrast={false}
-            id="test"
-            inputRef={
-              {
-                "current": null,
-              }
-            }
-            isPlaceholder={false}
-            keyboardType="default"
-            large={false}
-            multiline={false}
-            onBlur={[Function]}
-            onChangeText={[Function]}
-            onFocus={[Function]}
-            onSubmitEditing={[Function]}
-            options={
-              {
-                "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-                "translation": {
-                  "*": [Function],
-                },
-                "validator": [Function],
-              }
-            }
-            placeholder="Pesquise aqui"
-            placeholderTextColor="#999999"
-            status="default"
-            style={
-              [
-                {
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                {
-                  "color": "#fff",
-                },
-              ]
-            }
-            testID="test"
-            type="custom"
-            underlineColorAndroid="transparent"
-            value=""
-            variant="md"
-            withBottomline={true}
-          />
-          <View
-            collapsable={false}
-            style={{}}
-          >
-            <View
-              accessibilityHint="Double tap to activate"
-              accessibilityLabel="search icon"
-              accessibilityRole="button"
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              hitSlop={{}}
-              importantForAccessibility="yes"
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                {
-                  "opacity": 1,
-                }
-              }
-              testID="icon_search"
-            >
-              <View>
-                <Text
-                  allowFontScaling={false}
-                  selectable={false}
-                  style={
-                    [
-                      {
-                        "color": "function (_ref3) {
-    var theme = _ref3.theme;
-    return lodash_1(theme, themeProp) || null;
-  }",
-                        "fontSize": 26,
-                      },
-                      undefined,
-                      {
-                        "fontFamily": "FontAwesome5Free-Solid",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                      {
-                        "fontWeight": "900",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-        <View
-          contrast={false}
+          placeholder="Pesquise aqui"
+          placeholderTextColor="#999999"
           status="default"
           style={
             [
               {
-                "backgroundColor": "#444444",
-                "height": 0.5,
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+              },
+              {
+                "color": "#fff",
               },
             ]
           }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
         />
       </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
     </View>
   </View>
 </View>
@@ -2129,7 +1196,6 @@ exports[`<Search /> should render search with icon size 1`] = `
     }
   >
     <View
-      multiline={false}
       style={
         [
           {
@@ -2149,215 +1215,99 @@ exports[`<Search /> should render search with icon size 1`] = `
       }
     >
       <View
-        borderedRadius={0}
-        borderedWidth={1}
-        error={false}
-        showBorderErrored={true}
+        leftIcon={false}
+        rightIcon={false}
         style={
           [
             {
-              "borderColor": "black",
-              "borderStyle": "solid",
-              "borderWidth": 0,
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
             },
           ]
         }
       >
-        <Text
-          accessibilityLabel="Erro "
-          collapsable={false}
-          contrast={false}
-          lineHeightVariant="min"
-          status="default"
-          style={
-            [
-              {
-                "color": "#444444",
-                "fontSize": 13,
-                "lineHeight": 15.6,
-              },
-              {
-                "color": "#444444",
-                "position": "absolute",
-                "top": 8,
-              },
-              {
-                "fontSize": 12,
-                "opacity": 0.4,
-                "top": -12,
-              },
-            ]
+        <TextInput
+          accessibility=""
+          accessibilityHint="Pesquise aqui"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
           }
-          testID="error_test"
-          variant="xs"
-        />
-        <View
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoComplete="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          iconName="search"
+          iconTouchableEnabled={true}
+          id="test"
+          inputRef={
+            {
+              "current": null,
+            }
+          }
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
           multiline={false}
-          rightIcon={false}
-          style={
-            [
-              {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "paddingLeft": 4,
-                "paddingRight": 4,
-                "paddingTop": 4,
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
               },
-            ]
+              "validator": [Function],
+            }
           }
-        >
-          <TextInput
-            accessibility=""
-            accessibilityHint="Pesquise aqui"
-            accessibilityLabel=""
-            accessibilityLiveRegion="polite"
-            accessibilityRole="text"
-            accessibilityState={
-              {
-                "disabled": false,
-              }
-            }
-            allowFontScaling={false}
-            autoCapitalize="none"
-            autoComplete="off"
-            autoCorrect={false}
-            autoFocus={false}
-            centered={false}
-            contrast={false}
-            id="test"
-            inputRef={
-              {
-                "current": null,
-              }
-            }
-            isPlaceholder={false}
-            keyboardType="default"
-            large={false}
-            multiline={false}
-            onBlur={[Function]}
-            onChangeText={[Function]}
-            onFocus={[Function]}
-            onSubmitEditing={[Function]}
-            options={
-              {
-                "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-                "translation": {
-                  "*": [Function],
-                },
-                "validator": [Function],
-              }
-            }
-            placeholder="Pesquise aqui"
-            placeholderTextColor="#999999"
-            status="default"
-            style={
-              [
-                {
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                {},
-              ]
-            }
-            testID="test"
-            type="custom"
-            underlineColorAndroid="transparent"
-            value=""
-            variant="md"
-            withBottomline={true}
-          />
-          <View
-            collapsable={false}
-            style={{}}
-          >
-            <View
-              accessibilityHint="Double tap to activate"
-              accessibilityLabel="search icon"
-              accessibilityRole="button"
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              hitSlop={{}}
-              importantForAccessibility="yes"
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                {
-                  "opacity": 1,
-                }
-              }
-              testID="icon_search"
-            >
-              <View>
-                <Text
-                  allowFontScaling={false}
-                  selectable={false}
-                  style={
-                    [
-                      {
-                        "color": "function (_ref3) {
-    var theme = _ref3.theme;
-    return lodash_1(theme, themeProp) || null;
-  }",
-                        "fontSize": 24,
-                      },
-                      undefined,
-                      {
-                        "fontFamily": "FontAwesome5Free-Solid",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                      {
-                        "fontWeight": "900",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-        <View
-          contrast={false}
+          placeholder="Pesquise aqui"
+          placeholderTextColor="#999999"
           status="default"
           style={
             [
               {
-                "backgroundColor": "#444444",
-                "height": 0.5,
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
               },
+              {},
             ]
           }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
         />
       </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
     </View>
   </View>
 </View>
@@ -2391,7 +1341,6 @@ exports[`<Search /> should render search with left icon 1`] = `
     }
   >
     <View
-      multiline={false}
       style={
         [
           {
@@ -2411,212 +1360,167 @@ exports[`<Search /> should render search with left icon 1`] = `
       }
     >
       <View
-        borderedRadius={0}
-        borderedWidth={1}
-        error={false}
-        showBorderErrored={true}
+        leftIcon={true}
+        rightIcon={false}
         style={
           [
             {
-              "borderColor": "black",
-              "borderStyle": "solid",
-              "borderWidth": 0,
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
             },
           ]
         }
       >
-        <Text
-          accessibilityLabel="Erro "
-          collapsable={false}
-          contrast={false}
-          lineHeightVariant="min"
-          status="default"
-          style={
-            [
-              {
-                "color": "#444444",
-                "fontSize": 13,
-                "lineHeight": 15.6,
-              },
-              {
-                "color": "#444444",
-                "position": "absolute",
-                "top": 8,
-              },
-              {
-                "fontSize": 12,
-                "opacity": 0.4,
-                "top": -12,
-              },
-            ]
-          }
-          testID="error_test"
-          variant="xs"
-        />
         <View
-          multiline={false}
-          rightIcon={false}
-          style={
-            [
-              {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "paddingLeft": 4,
-                "paddingRight": 4,
-                "paddingTop": 4,
-              },
-            ]
-          }
+          collapsable={false}
+          style={{}}
         >
           <View
-            collapsable={false}
-            style={{}}
-          >
-            <View
-              accessibilityHint="Double tap to activate"
-              accessibilityLabel="paperclip icon"
-              accessibilityRole="button"
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              hitSlop={{}}
-              importantForAccessibility="yes"
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                {
-                  "opacity": 1,
-                }
-              }
-              testID="icon_paperclip"
-            >
-              <View>
-                <Text
-                  allowFontScaling={false}
-                  selectable={false}
-                  style={
-                    [
-                      {
-                        "color": "#4255EF",
-                        "fontSize": 26,
-                      },
-                      undefined,
-                      {
-                        "fontFamily": "FontAwesome5Free-Solid",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                      {
-                        "fontWeight": "900",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
-            </View>
-          </View>
-          <TextInput
-            accessibility=""
-            accessibilityHint="Pesquise aqui"
-            accessibilityLabel=""
-            accessibilityLiveRegion="polite"
-            accessibilityRole="text"
+            accessibilityLabel="Paperclip"
             accessibilityState={
               {
+                "busy": undefined,
+                "checked": undefined,
                 "disabled": false,
+                "expanded": undefined,
+                "selected": undefined,
               }
             }
-            allowFontScaling={false}
-            autoCapitalize="none"
-            autoComplete="off"
-            autoCorrect={false}
-            autoFocus={false}
-            centered={false}
-            contrast={false}
-            id="test"
-            inputRef={
+            accessibilityValue={
               {
-                "current": null,
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
               }
             }
-            isPlaceholder={false}
-            keyboardType="default"
-            large={false}
-            multiline={false}
-            onBlur={[Function]}
-            onChangeText={[Function]}
-            onFocus={[Function]}
-            onSubmitEditing={[Function]}
-            options={
-              {
-                "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-                "translation": {
-                  "*": [Function],
-                },
-                "validator": [Function],
-              }
-            }
-            placeholder="Pesquise aqui"
-            placeholderTextColor="#999999"
-            status="default"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            hitSlop={{}}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
             style={
-              [
-                {
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                {},
-              ]
+              {
+                "opacity": 1,
+              }
             }
-            testID="test"
-            type="custom"
-            underlineColorAndroid="transparent"
-            value=""
-            variant="md"
-            withBottomline={true}
-          />
+            testID="icon_paperclip"
+          >
+            <View>
+              <Text
+                allowFontScaling={false}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": "#4255EF",
+                      "fontSize": 26,
+                    },
+                    undefined,
+                    {
+                      "fontFamily": "FontAwesome5Free-Solid",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    {
+                      "fontWeight": "900",
+                    },
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+          </View>
         </View>
-        <View
+        <TextInput
+          accessibility=""
+          accessibilityHint="Pesquise aqui"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
+          }
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoComplete="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
           contrast={false}
+          iconName="search"
+          iconTouchableEnabled={true}
+          id="test"
+          inputRef={
+            {
+              "current": null,
+            }
+          }
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
+              },
+              "validator": [Function],
+            }
+          }
+          placeholder="Pesquise aqui"
+          placeholderTextColor="#999999"
           status="default"
           style={
             [
               {
-                "backgroundColor": "#444444",
-                "height": 0.5,
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
               },
+              {},
             ]
           }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
         />
       </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
     </View>
   </View>
 </View>
@@ -2651,7 +1555,6 @@ exports[`<Search /> should render search with padding 1`] = `
     }
   >
     <View
-      multiline={false}
       style={
         [
           {
@@ -2671,216 +1574,100 @@ exports[`<Search /> should render search with padding 1`] = `
       }
     >
       <View
-        borderedRadius={0}
-        borderedWidth={1}
-        error={false}
-        showBorderErrored={true}
+        leftIcon={false}
+        padding={24}
+        rightIcon={false}
         style={
           [
             {
-              "borderColor": "black",
-              "borderStyle": "solid",
-              "borderWidth": 0,
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "paddingTop": 24,
             },
           ]
         }
       >
-        <Text
-          accessibilityLabel="Erro "
-          collapsable={false}
-          contrast={false}
-          lineHeightVariant="min"
-          status="default"
-          style={
-            [
-              {
-                "color": "#444444",
-                "fontSize": 13,
-                "lineHeight": 15.6,
-              },
-              {
-                "color": "#444444",
-                "position": "absolute",
-                "top": 8,
-              },
-              {
-                "fontSize": 12,
-                "opacity": 0.4,
-                "top": -12,
-              },
-            ]
+        <TextInput
+          accessibility=""
+          accessibilityHint="Pesquise aqui"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
           }
-          testID="error_test"
-          variant="xs"
-        />
-        <View
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoComplete="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          iconName="search"
+          iconTouchableEnabled={true}
+          id="test"
+          inputRef={
+            {
+              "current": null,
+            }
+          }
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
           multiline={false}
-          padding={24}
-          rightIcon={false}
-          style={
-            [
-              {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "paddingLeft": 24,
-                "paddingRight": 24,
-                "paddingTop": 24,
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
               },
-            ]
+              "validator": [Function],
+            }
           }
-        >
-          <TextInput
-            accessibility=""
-            accessibilityHint="Pesquise aqui"
-            accessibilityLabel=""
-            accessibilityLiveRegion="polite"
-            accessibilityRole="text"
-            accessibilityState={
-              {
-                "disabled": false,
-              }
-            }
-            allowFontScaling={false}
-            autoCapitalize="none"
-            autoComplete="off"
-            autoCorrect={false}
-            autoFocus={false}
-            centered={false}
-            contrast={false}
-            id="test"
-            inputRef={
-              {
-                "current": null,
-              }
-            }
-            isPlaceholder={false}
-            keyboardType="default"
-            large={false}
-            multiline={false}
-            onBlur={[Function]}
-            onChangeText={[Function]}
-            onFocus={[Function]}
-            onSubmitEditing={[Function]}
-            options={
-              {
-                "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-                "translation": {
-                  "*": [Function],
-                },
-                "validator": [Function],
-              }
-            }
-            placeholder="Pesquise aqui"
-            placeholderTextColor="#999999"
-            status="default"
-            style={
-              [
-                {
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                {},
-              ]
-            }
-            testID="test"
-            type="custom"
-            underlineColorAndroid="transparent"
-            value=""
-            variant="md"
-            withBottomline={true}
-          />
-          <View
-            collapsable={false}
-            style={{}}
-          >
-            <View
-              accessibilityHint="Double tap to activate"
-              accessibilityLabel="search icon"
-              accessibilityRole="button"
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              hitSlop={{}}
-              importantForAccessibility="yes"
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                {
-                  "opacity": 1,
-                }
-              }
-              testID="icon_search"
-            >
-              <View>
-                <Text
-                  allowFontScaling={false}
-                  selectable={false}
-                  style={
-                    [
-                      {
-                        "color": "function (_ref3) {
-    var theme = _ref3.theme;
-    return lodash_1(theme, themeProp) || null;
-  }",
-                        "fontSize": 26,
-                      },
-                      undefined,
-                      {
-                        "fontFamily": "FontAwesome5Free-Solid",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                      {
-                        "fontWeight": "900",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-        <View
-          contrast={false}
+          placeholder="Pesquise aqui"
+          placeholderTextColor="#999999"
           status="default"
           style={
             [
               {
-                "backgroundColor": "#444444",
-                "height": 0.5,
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
               },
+              {},
             ]
           }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
         />
       </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
     </View>
   </View>
 </View>
@@ -2914,7 +1701,6 @@ exports[`<Search /> should render search with right icon 1`] = `
     }
   >
     <View
-      multiline={false}
       style={
         [
           {
@@ -2934,215 +1720,167 @@ exports[`<Search /> should render search with right icon 1`] = `
       }
     >
       <View
-        borderedRadius={0}
-        borderedWidth={1}
-        error={false}
-        showBorderErrored={true}
+        leftIcon={false}
+        rightIcon={true}
         style={
           [
             {
-              "borderColor": "black",
-              "borderStyle": "solid",
-              "borderWidth": 0,
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
             },
           ]
         }
       >
-        <Text
-          accessibilityLabel="Erro "
-          collapsable={false}
+        <TextInput
+          accessibility=""
+          accessibilityHint="Pesquise aqui"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
+          }
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoComplete="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
           contrast={false}
-          lineHeightVariant="min"
+          iconName="search"
+          iconTouchableEnabled={true}
+          id="test"
+          inputRef={
+            {
+              "current": null,
+            }
+          }
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
+              },
+              "validator": [Function],
+            }
+          }
+          placeholder="Pesquise aqui"
+          placeholderTextColor="#999999"
           status="default"
           style={
             [
               {
-                "color": "#444444",
-                "fontSize": 13,
-                "lineHeight": 15.6,
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
               },
-              {
-                "color": "#444444",
-                "position": "absolute",
-                "top": 8,
-              },
-              {
-                "fontSize": 12,
-                "opacity": 0.4,
-                "top": -12,
-              },
+              {},
             ]
           }
-          testID="error_test"
-          variant="xs"
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
         />
         <View
-          multiline={false}
-          rightIcon={true}
-          style={
-            [
-              {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "paddingLeft": 4,
-                "paddingRight": 4,
-                "paddingTop": 4,
-              },
-            ]
-          }
+          collapsable={false}
+          style={{}}
         >
-          <TextInput
-            accessibility=""
-            accessibilityHint="Pesquise aqui"
-            accessibilityLabel=""
-            accessibilityLiveRegion="polite"
-            accessibilityRole="text"
+          <View
+            accessibilityLabel="Parachute"
             accessibilityState={
               {
+                "busy": undefined,
+                "checked": undefined,
                 "disabled": false,
+                "expanded": undefined,
+                "selected": undefined,
               }
             }
-            allowFontScaling={false}
-            autoCapitalize="none"
-            autoComplete="off"
-            autoCorrect={false}
-            autoFocus={false}
-            centered={false}
-            contrast={false}
-            id="test"
-            inputRef={
+            accessibilityValue={
               {
-                "current": null,
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
               }
             }
-            isPlaceholder={false}
-            keyboardType="default"
-            large={false}
-            multiline={false}
-            onBlur={[Function]}
-            onChangeText={[Function]}
-            onFocus={[Function]}
-            onSubmitEditing={[Function]}
-            options={
-              {
-                "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-                "translation": {
-                  "*": [Function],
-                },
-                "validator": [Function],
-              }
-            }
-            placeholder="Pesquise aqui"
-            placeholderTextColor="#999999"
-            status="default"
-            style={
-              [
-                {
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                {},
-              ]
-            }
-            testID="test"
-            type="custom"
-            underlineColorAndroid="transparent"
-            value=""
-            variant="md"
-            withBottomline={true}
-          />
-          <View
+            accessible={true}
             collapsable={false}
-            style={{}}
+            focusable={true}
+            hitSlop={{}}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+            testID="icon_parachute"
           >
-            <View
-              accessibilityHint="Double tap to activate"
-              accessibilityLabel="parachute icon"
-              accessibilityRole="button"
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
+            <View>
+              <Text
+                allowFontScaling={false}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": "#4255EF",
+                      "fontSize": 26,
+                    },
+                    undefined,
+                    {
+                      "fontFamily": "FontAwesome5Free-Regular",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    {
+                      "fontWeight": "400",
+                    },
+                  ]
                 }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              hitSlop={{}}
-              importantForAccessibility="yes"
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                {
-                  "opacity": 1,
-                }
-              }
-              testID="icon_parachute"
-            >
-              <View>
-                <Text
-                  allowFontScaling={false}
-                  selectable={false}
-                  style={
-                    [
-                      {
-                        "color": "function (_ref3) {
-    var theme = _ref3.theme;
-    return lodash_1(theme, themeProp) || null;
-  }",
-                        "fontSize": 26,
-                      },
-                      undefined,
-                      {
-                        "fontFamily": "FontAwesome5Free-Regular",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                      {
-                        "fontWeight": "400",
-                      },
-                    ]
-                  }
-                >
-                  ?
-                </Text>
-              </View>
+              >
+                ?
+              </Text>
             </View>
           </View>
         </View>
-        <View
-          contrast={false}
-          status="default"
-          style={
-            [
-              {
-                "backgroundColor": "#444444",
-                "height": 0.5,
-              },
-            ]
-          }
-        />
       </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
     </View>
   </View>
 </View>
@@ -3183,7 +1921,6 @@ exports[`<Search /> should render search with shadow 1`] = `
     }
   >
     <View
-      multiline={false}
       style={
         [
           {
@@ -3203,215 +1940,99 @@ exports[`<Search /> should render search with shadow 1`] = `
       }
     >
       <View
-        borderedRadius={0}
-        borderedWidth={1}
-        error={false}
-        showBorderErrored={true}
+        leftIcon={false}
+        rightIcon={false}
         style={
           [
             {
-              "borderColor": "black",
-              "borderStyle": "solid",
-              "borderWidth": 0,
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
             },
           ]
         }
       >
-        <Text
-          accessibilityLabel="Erro "
-          collapsable={false}
-          contrast={false}
-          lineHeightVariant="min"
-          status="default"
-          style={
-            [
-              {
-                "color": "#444444",
-                "fontSize": 13,
-                "lineHeight": 15.6,
-              },
-              {
-                "color": "#444444",
-                "position": "absolute",
-                "top": 8,
-              },
-              {
-                "fontSize": 12,
-                "opacity": 0.4,
-                "top": -12,
-              },
-            ]
+        <TextInput
+          accessibility=""
+          accessibilityHint="Pesquise aqui"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
           }
-          testID="error_test"
-          variant="xs"
-        />
-        <View
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoComplete="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          iconName="search"
+          iconTouchableEnabled={true}
+          id="test"
+          inputRef={
+            {
+              "current": null,
+            }
+          }
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
           multiline={false}
-          rightIcon={false}
-          style={
-            [
-              {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "paddingLeft": 4,
-                "paddingRight": 4,
-                "paddingTop": 4,
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
               },
-            ]
+              "validator": [Function],
+            }
           }
-        >
-          <TextInput
-            accessibility=""
-            accessibilityHint="Pesquise aqui"
-            accessibilityLabel=""
-            accessibilityLiveRegion="polite"
-            accessibilityRole="text"
-            accessibilityState={
-              {
-                "disabled": false,
-              }
-            }
-            allowFontScaling={false}
-            autoCapitalize="none"
-            autoComplete="off"
-            autoCorrect={false}
-            autoFocus={false}
-            centered={false}
-            contrast={false}
-            id="test"
-            inputRef={
-              {
-                "current": null,
-              }
-            }
-            isPlaceholder={false}
-            keyboardType="default"
-            large={false}
-            multiline={false}
-            onBlur={[Function]}
-            onChangeText={[Function]}
-            onFocus={[Function]}
-            onSubmitEditing={[Function]}
-            options={
-              {
-                "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-                "translation": {
-                  "*": [Function],
-                },
-                "validator": [Function],
-              }
-            }
-            placeholder="Pesquise aqui"
-            placeholderTextColor="#999999"
-            status="default"
-            style={
-              [
-                {
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                {},
-              ]
-            }
-            testID="test"
-            type="custom"
-            underlineColorAndroid="transparent"
-            value=""
-            variant="md"
-            withBottomline={true}
-          />
-          <View
-            collapsable={false}
-            style={{}}
-          >
-            <View
-              accessibilityHint="Double tap to activate"
-              accessibilityLabel="search icon"
-              accessibilityRole="button"
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              hitSlop={{}}
-              importantForAccessibility="yes"
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                {
-                  "opacity": 1,
-                }
-              }
-              testID="icon_search"
-            >
-              <View>
-                <Text
-                  allowFontScaling={false}
-                  selectable={false}
-                  style={
-                    [
-                      {
-                        "color": "function (_ref3) {
-    var theme = _ref3.theme;
-    return lodash_1(theme, themeProp) || null;
-  }",
-                        "fontSize": 26,
-                      },
-                      undefined,
-                      {
-                        "fontFamily": "FontAwesome5Free-Solid",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                      {
-                        "fontWeight": "900",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-        <View
-          contrast={false}
+          placeholder="Pesquise aqui"
+          placeholderTextColor="#999999"
           status="default"
           style={
             [
               {
-                "backgroundColor": "#444444",
-                "height": 0.5,
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
               },
+              {},
             ]
           }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
         />
       </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
     </View>
   </View>
 </View>
@@ -3446,7 +2067,6 @@ exports[`<Search /> should render search with wrapper height 1`] = `
     }
   >
     <View
-      multiline={false}
       style={
         [
           {
@@ -3466,215 +2086,99 @@ exports[`<Search /> should render search with wrapper height 1`] = `
       }
     >
       <View
-        borderedRadius={0}
-        borderedWidth={1}
-        error={false}
-        showBorderErrored={true}
+        leftIcon={false}
+        rightIcon={false}
         style={
           [
             {
-              "borderColor": "black",
-              "borderStyle": "solid",
-              "borderWidth": 0,
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
             },
           ]
         }
       >
-        <Text
-          accessibilityLabel="Erro "
-          collapsable={false}
-          contrast={false}
-          lineHeightVariant="min"
-          status="default"
-          style={
-            [
-              {
-                "color": "#444444",
-                "fontSize": 13,
-                "lineHeight": 15.6,
-              },
-              {
-                "color": "#444444",
-                "position": "absolute",
-                "top": 8,
-              },
-              {
-                "fontSize": 12,
-                "opacity": 0.4,
-                "top": -12,
-              },
-            ]
+        <TextInput
+          accessibility=""
+          accessibilityHint="Pesquise aqui"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
           }
-          testID="error_test"
-          variant="xs"
-        />
-        <View
+          allowFontScaling={false}
+          autoCapitalize="none"
+          autoComplete="off"
+          autoCorrect={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          iconName="search"
+          iconTouchableEnabled={true}
+          id="test"
+          inputRef={
+            {
+              "current": null,
+            }
+          }
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
           multiline={false}
-          rightIcon={false}
-          style={
-            [
-              {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "paddingLeft": 4,
-                "paddingRight": 4,
-                "paddingTop": 4,
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          onSubmitEditing={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
               },
-            ]
+              "validator": [Function],
+            }
           }
-        >
-          <TextInput
-            accessibility=""
-            accessibilityHint="Pesquise aqui"
-            accessibilityLabel=""
-            accessibilityLiveRegion="polite"
-            accessibilityRole="text"
-            accessibilityState={
-              {
-                "disabled": false,
-              }
-            }
-            allowFontScaling={false}
-            autoCapitalize="none"
-            autoComplete="off"
-            autoCorrect={false}
-            autoFocus={false}
-            centered={false}
-            contrast={false}
-            id="test"
-            inputRef={
-              {
-                "current": null,
-              }
-            }
-            isPlaceholder={false}
-            keyboardType="default"
-            large={false}
-            multiline={false}
-            onBlur={[Function]}
-            onChangeText={[Function]}
-            onFocus={[Function]}
-            onSubmitEditing={[Function]}
-            options={
-              {
-                "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
-                "translation": {
-                  "*": [Function],
-                },
-                "validator": [Function],
-              }
-            }
-            placeholder="Pesquise aqui"
-            placeholderTextColor="#999999"
-            status="default"
-            style={
-              [
-                {
-                  "flexBasis": 0,
-                  "flexGrow": 1,
-                  "flexShrink": 1,
-                },
-                {},
-              ]
-            }
-            testID="test"
-            type="custom"
-            underlineColorAndroid="transparent"
-            value=""
-            variant="md"
-            withBottomline={true}
-          />
-          <View
-            collapsable={false}
-            style={{}}
-          >
-            <View
-              accessibilityHint="Double tap to activate"
-              accessibilityLabel="search icon"
-              accessibilityRole="button"
-              accessibilityState={
-                {
-                  "busy": undefined,
-                  "checked": undefined,
-                  "disabled": false,
-                  "expanded": undefined,
-                  "selected": undefined,
-                }
-              }
-              accessibilityValue={
-                {
-                  "max": undefined,
-                  "min": undefined,
-                  "now": undefined,
-                  "text": undefined,
-                }
-              }
-              accessible={true}
-              collapsable={false}
-              focusable={true}
-              hitSlop={{}}
-              importantForAccessibility="yes"
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                {
-                  "opacity": 1,
-                }
-              }
-              testID="icon_search"
-            >
-              <View>
-                <Text
-                  allowFontScaling={false}
-                  selectable={false}
-                  style={
-                    [
-                      {
-                        "color": "function (_ref3) {
-    var theme = _ref3.theme;
-    return lodash_1(theme, themeProp) || null;
-  }",
-                        "fontSize": 26,
-                      },
-                      undefined,
-                      {
-                        "fontFamily": "FontAwesome5Free-Solid",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                      {
-                        "fontWeight": "900",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-        <View
-          contrast={false}
+          placeholder="Pesquise aqui"
+          placeholderTextColor="#999999"
           status="default"
           style={
             [
               {
-                "backgroundColor": "#444444",
-                "height": 0.5,
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
               },
+              {},
             ]
           }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
         />
       </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
     </View>
   </View>
 </View>
