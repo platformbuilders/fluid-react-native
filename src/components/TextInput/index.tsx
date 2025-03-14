@@ -285,104 +285,106 @@ const TextInput: FC<TextInputType> = ({
     />
   );
   return (
-    <RootWrapper style={rootStyle}>
-      <FormError
-        id={id || accessibility}
-        accessibility={accessibility}
-        centered={centered}
-        error={error}
-        large={large}
-        style={errorStyle}
-      >
-        <InputWrapper style={style} multiline={multiline}>
+    <RootWrapper style={[rootStyle]}>
+      {label && !borderedHeight && (
+        <FixedLabel
+          variant={fixedLabelVariant}
+          style={labelStyle}
+          hasLeftIcon={!!leftIconName}
+        >
+          {label}
+        </FixedLabel>
+      )}
+      <InputWrapper style={style}>
+        {borderedHeight ? (
           <BorderedWrapper
+            testID="bordered-wrapper"
             borderedBackgroundColor={borderedBackgroundColor}
-            borderedHeight={borderedHeight}
             borderedColor={focusBorderColor}
+            borderedHeight={borderedHeight}
             borderedRadius={borderedRadius}
             borderedWidth={borderedWidth}
-            error={hasError}
+            error={!!error}
             showBorderErrored={showBorderErrored}
             isFloating={isFloating}
           >
-            {!centered &&
-              !borderedHeight &&
-              !(hidePlaceholderOnFocus && !isPlaceholder) && (
-                <Label
-                  status={status}
-                  contrast={contrast}
-                  style={[labelAnimatedStyle, labelStyle]}
-                  variant={isPlaceholder ? placeholderVariant : labelVariant}
-                  testID={`error_${id || accessibility}`}
-                  accessibilityLabel={`Erro ${accessibility}`}
-                >
-                  {label}
-                </Label>
+            <InputBorderedAreaWrapper hasBottomLine={withBottomline}>
+              {leftIconName && (
+                <Icon
+                  name={leftIconName}
+                  size={iconSize}
+                  color={leftIconColor}
+                  type={iconType}
+                  iconSets={iconSets}
+                  onPress={onPressIcon}
+                  hitSlop={iconHitSlop}
+                  testID={`icon_${leftIconName}`}
+                />
               )}
-            {!isEmpty(borderedLabel) && isEmpty(label) && !!borderedHeight && (
-              <FixedLabelAboveBorder
-                style={labelStyle}
-                variant={fixedLabelVariant}
-              >
-                {borderedLabel}
-              </FixedLabelAboveBorder>
-            )}
-            {borderedHeight ? (
-              <InputBorderedAreaWrapper hasBottomLine={withBottomline}>
-                {!!leftIconName && renderIcon(leftIconName, true)}
-                {!isEmpty(iconBordered) && renderIcon(iconBordered, true)}
-                <InputBorderedColumnWrapper
-                  hasLeftIcon={!isEmpty(iconBordered)}
-                  multiline={multiline}
-                  padding={inputPadding}
-                  isFloating={isFloating}
-                >
-                  {!isEmpty(label) && isEmpty(borderedLabel) && (
-                    <FixedLabel
-                      hasLeftIcon={!isEmpty(iconBordered)}
-                      style={
-                        fixedLabelVariant === TextVariant.ANIMATED
-                          ? [
-                              labelAnimatedStyle,
-                              labelAnimatedFinish,
-                              labelStyle,
-                            ]
-                          : labelStyle
-                      }
-                      variant={fixedLabelVariant}
-                    >
-                      {label}
-                    </FixedLabel>
-                  )}
-                  {renderTextInput(renderStatus)}
-                </InputBorderedColumnWrapper>
-                {!!rightIconName && renderIcon(rightIconName)}
-                {!isEmpty(icon) && renderIcon(icon || '')}
-              </InputBorderedAreaWrapper>
-            ) : (
-              <InputAreaWrapper
-                multiline={multiline}
+              <InputBorderedColumnWrapper
+                hasLeftIcon={!!leftIconName}
+                isFloating={isFloating}
                 padding={inputPadding}
-                rightIcon={!!rightIconName}
-                inputLeftPadding={inputLeftPadding}
-                inputRightPadding={inputRightPadding}
               >
-                {borderedHeight && <FixedLabel>{label}</FixedLabel>}
-                {!!leftIconName && renderIcon(leftIconName, true)}
+                {borderedLabel && (
+                  <FixedLabelAboveBorder style={labelStyle}>
+                    {borderedLabel}
+                  </FixedLabelAboveBorder>
+                )}
                 {renderTextInput(renderStatus)}
-                {!!rightIconName && renderIcon(rightIconName)}
-                {!leftIconName &&
-                  !rightIconName &&
-                  !isEmpty(icon) &&
-                  renderIcon(icon as string)}
-              </InputAreaWrapper>
-            )}
-            {withBottomline && (
-              <BottomLine status={status} contrast={contrast} />
-            )}
+              </InputBorderedColumnWrapper>
+              {rightIconName && (
+                <Icon
+                  name={rightIconName}
+                  size={iconSize}
+                  color={iconColor}
+                  type={iconType}
+                  iconSets={iconSets}
+                  onPress={onRightIconPress}
+                  hitSlop={iconHitSlop}
+                  testID={`icon_${rightIconName}`}
+                />
+              )}
+            </InputBorderedAreaWrapper>
           </BorderedWrapper>
-        </InputWrapper>
-      </FormError>
+        ) : (
+          <InputAreaWrapper
+            padding={inputPadding}
+            inputRightPadding={inputRightPadding}
+            inputLeftPadding={inputLeftPadding}
+            rightIcon={!!rightIconName}
+            leftIcon={!!leftIconName}
+          >
+            {leftIconName && (
+              <Icon
+                name={leftIconName}
+                size={iconSize}
+                color={leftIconColor}
+                type={iconType}
+                iconSets={iconSets}
+                onPress={onPressIcon}
+                hitSlop={iconHitSlop}
+                testID={`icon_${leftIconName}`}
+              />
+            )}
+            {renderTextInput(renderStatus)}
+            {rightIconName && (
+              <Icon
+                name={rightIconName}
+                size={iconSize}
+                color={iconColor}
+                type={iconType}
+                iconSets={iconSets}
+                onPress={onRightIconPress}
+                hitSlop={iconHitSlop}
+                testID={`icon_${rightIconName}`}
+              />
+            )}
+          </InputAreaWrapper>
+        )}
+        {withBottomline && <BottomLine contrast={contrast} status={status} />}
+      </InputWrapper>
+      {error && <FormError error={error} style={errorStyle} />}
     </RootWrapper>
   );
 };

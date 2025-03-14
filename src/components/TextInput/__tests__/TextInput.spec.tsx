@@ -1,5 +1,5 @@
-import React, { FC, useState, useRef } from 'react';
-import { fireEvent, render, act } from 'react-native-testing-library';
+import React, { FC, useRef, useState } from 'react';
+import { act, fireEvent, render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import TextInput from '..';
@@ -439,6 +439,239 @@ describe('<TextInput />', () => {
           accessibility=""
           inputLeftPadding={15}
           inputRightPadding={15}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should handle animation when value changes with suppressAnimation', () => {
+    const Component: FC = (): JSX.Element => {
+      const [value, setValue] = useState('');
+
+      return (
+        <ThemeProvider theme={theme}>
+          <TextInput
+            id="test_animation"
+            accessibility=""
+            label="Label"
+            value={value}
+            onChangeText={setValue}
+            suppressAnimation={true}
+          />
+        </ThemeProvider>
+      );
+    };
+
+    const { getByTestId } = render(<Component />);
+    const input = getByTestId('test_animation');
+
+    act(() => {
+      fireEvent.changeText(input, 'New value');
+    });
+
+    expect(input.props.value).toBe('New value');
+  });
+
+  it('should handle animation with hidePlaceholderOnFocus', () => {
+    const Component: FC = (): JSX.Element => {
+      const [value, setValue] = useState('');
+
+      return (
+        <ThemeProvider theme={theme}>
+          <TextInput
+            id="test_animation"
+            accessibility=""
+            label="Label"
+            value={value}
+            onChangeText={setValue}
+            hidePlaceholderOnFocus={true}
+          />
+        </ThemeProvider>
+      );
+    };
+
+    const { getByTestId } = render(<Component />);
+    const input = getByTestId('test_animation');
+
+    act(() => {
+      fireEvent(input, 'focus');
+    });
+
+    expect(input.props.isPlaceholder).toBe(false);
+  });
+
+  it('should handle bordered style with focus', async () => {
+    const { getByTestId, findByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <TextInput
+          testID="test-input"
+          id="test"
+          accessibility=""
+          borderedColor="#ccc"
+          borderedHeight={40}
+          borderedRadius={4}
+          borderedWidth={1}
+          focusBorderedColor="#000"
+        />
+      </ThemeProvider>,
+    );
+
+    const textInput = getByTestId('test-input');
+    fireEvent(textInput, 'focus');
+
+    const borderedWrapper = await findByTestId('bordered-wrapper');
+    expect(borderedWrapper.props.style.borderColor).toBe('#000');
+  });
+
+  it('should handle error state with showBorderErrored', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <TextInput
+          id="test"
+          accessibility=""
+          error="Error message"
+          showBorderErrored={true}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should handle error state with showIconErrored', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <TextInput
+          id="test"
+          accessibility=""
+          error="Error message"
+          showIconErrored={true}
+          iconName="error"
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should handle custom icon sets', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <TextInput
+          id="test"
+          accessibility=""
+          iconName="custom"
+          iconSets={{
+            custom: {
+              name: 'custom-icon',
+              type: IconFonts.FontAwesome,
+            },
+          }}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should handle multiline with numberOfLines', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <TextInput
+          id="test"
+          accessibility=""
+          multiline={true}
+          numberOfLines={5}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should handle custom input padding', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <TextInput
+          id="test"
+          accessibility=""
+          inputPadding={20}
+          inputLeftPadding={10}
+          inputRightPadding={10}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should handle custom icon colors', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <TextInput
+          id="test"
+          accessibility=""
+          iconName="test"
+          iconColor="#ff0000"
+          leftIconColor="#00ff00"
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should handle custom icon hit slop', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <TextInput
+          id="test"
+          accessibility=""
+          iconName="test"
+          iconHitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should handle custom label variant', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <TextInput
+          id="test"
+          accessibility=""
+          label="Test Label"
+          fixedLabelVariant="lg"
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should handle custom animation values', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <TextInput
+          id="test"
+          accessibility=""
+          label="Test Label"
+          animationValues={{
+            upper: {
+              top: 0,
+              fontSize: 14,
+              opacity: 1,
+            },
+            lower: {
+              top: 20,
+              fontSize: 12,
+              opacity: 0.7,
+            },
+          }}
         />
       </ThemeProvider>,
     );

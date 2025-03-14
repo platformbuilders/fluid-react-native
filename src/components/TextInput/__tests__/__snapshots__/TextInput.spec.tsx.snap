@@ -1,5 +1,1727 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<TextInput /> should handle custom animation values 1`] = `
+<View
+  style={
+    [
+      {},
+      {},
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      [
+        {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        {},
+      ]
+    }
+  >
+    <View
+      borderedRadius={0}
+      borderedWidth={1}
+      error={false}
+      showBorderErrored={true}
+      style={
+        [
+          {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        collapsable={false}
+        contrast={false}
+        lineHeightVariant="min"
+        status="default"
+        style={
+          [
+            {
+              "color": "#444444",
+              "fontSize": 13,
+              "lineHeight": 15.6,
+            },
+            {
+              "color": "#444444",
+              "position": "absolute",
+              "top": 8,
+            },
+            {
+              "fontSize": 14,
+              "opacity": 1,
+              "top": 0,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="xs"
+      >
+        Test Label
+      </Text>
+      <View
+        multiline={false}
+        rightIcon={false}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityHint="Enter text"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
+          }
+          allowFontScaling={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
+              },
+              "validator": [Function],
+            }
+          }
+          placeholder=""
+          placeholderTextColor="#999999"
+          status="default"
+          style={
+            [
+              {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+              },
+              {},
+            ]
+          }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
+        />
+      </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<TextInput /> should handle custom icon colors 1`] = `
+<View
+  style={
+    [
+      {},
+      {},
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      [
+        {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        {},
+      ]
+    }
+  >
+    <View
+      borderedRadius={0}
+      borderedWidth={1}
+      error={false}
+      showBorderErrored={true}
+      style={
+        [
+          {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        collapsable={false}
+        contrast={false}
+        lineHeightVariant="min"
+        status="default"
+        style={
+          [
+            {
+              "color": "#444444",
+              "fontSize": 13,
+              "lineHeight": 15.6,
+            },
+            {
+              "color": "#444444",
+              "position": "absolute",
+              "top": 8,
+            },
+            {
+              "fontSize": 12,
+              "opacity": 0.4,
+              "top": -12,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="xs"
+      />
+      <View
+        multiline={false}
+        rightIcon={false}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityHint="Enter text"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
+          }
+          allowFontScaling={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
+              },
+              "validator": [Function],
+            }
+          }
+          placeholder=""
+          placeholderTextColor="#999999"
+          status="default"
+          style={
+            [
+              {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+              },
+              {},
+            ]
+          }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
+        />
+        <View
+          collapsable={false}
+          style={{}}
+        >
+          <View
+            accessibilityLabel="test icon"
+            accessibilityRole="image"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": true,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={false}
+            hitSlop={{}}
+            importantForAccessibility="no-hide-descendants"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+            testID="icon_test"
+          >
+            <View>
+              <Text
+                allowFontScaling={false}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": "#ff0000",
+                      "fontSize": 16,
+                    },
+                    undefined,
+                    {
+                      "fontFamily": "FontAwesome5Free-Regular",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    {
+                      "fontWeight": "400",
+                    },
+                  ]
+                }
+              >
+                ?
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<TextInput /> should handle custom icon hit slop 1`] = `
+<View
+  style={
+    [
+      {},
+      {},
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      [
+        {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        {},
+      ]
+    }
+  >
+    <View
+      borderedRadius={0}
+      borderedWidth={1}
+      error={false}
+      showBorderErrored={true}
+      style={
+        [
+          {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        collapsable={false}
+        contrast={false}
+        lineHeightVariant="min"
+        status="default"
+        style={
+          [
+            {
+              "color": "#444444",
+              "fontSize": 13,
+              "lineHeight": 15.6,
+            },
+            {
+              "color": "#444444",
+              "position": "absolute",
+              "top": 8,
+            },
+            {
+              "fontSize": 12,
+              "opacity": 0.4,
+              "top": -12,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="xs"
+      />
+      <View
+        multiline={false}
+        rightIcon={false}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityHint="Enter text"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
+          }
+          allowFontScaling={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
+              },
+              "validator": [Function],
+            }
+          }
+          placeholder=""
+          placeholderTextColor="#999999"
+          status="default"
+          style={
+            [
+              {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+              },
+              {},
+            ]
+          }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
+        />
+        <View
+          collapsable={false}
+          style={{}}
+        >
+          <View
+            accessibilityLabel="test icon"
+            accessibilityRole="image"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": true,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={false}
+            hitSlop={
+              {
+                "bottom": 10,
+                "left": 10,
+                "right": 10,
+                "top": 10,
+              }
+            }
+            importantForAccessibility="no-hide-descendants"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+            testID="icon_test"
+          >
+            <View>
+              <Text
+                allowFontScaling={false}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": "#4255EF",
+                      "fontSize": 16,
+                    },
+                    undefined,
+                    {
+                      "fontFamily": "FontAwesome5Free-Regular",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    {
+                      "fontWeight": "400",
+                    },
+                  ]
+                }
+              >
+                ?
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<TextInput /> should handle custom icon sets 1`] = `
+<View
+  style={
+    [
+      {},
+      {},
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      [
+        {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        {},
+      ]
+    }
+  >
+    <View
+      borderedRadius={0}
+      borderedWidth={1}
+      error={false}
+      showBorderErrored={true}
+      style={
+        [
+          {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        collapsable={false}
+        contrast={false}
+        lineHeightVariant="min"
+        status="default"
+        style={
+          [
+            {
+              "color": "#444444",
+              "fontSize": 13,
+              "lineHeight": 15.6,
+            },
+            {
+              "color": "#444444",
+              "position": "absolute",
+              "top": 8,
+            },
+            {
+              "fontSize": 12,
+              "opacity": 0.4,
+              "top": -12,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="xs"
+      />
+      <View
+        multiline={false}
+        rightIcon={false}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityHint="Enter text"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
+          }
+          allowFontScaling={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
+              },
+              "validator": [Function],
+            }
+          }
+          placeholder=""
+          placeholderTextColor="#999999"
+          status="default"
+          style={
+            [
+              {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+              },
+              {},
+            ]
+          }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
+        />
+        <View
+          collapsable={false}
+          style={{}}
+        >
+          <View
+            accessibilityLabel="custom icon"
+            accessibilityRole="image"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": true,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={false}
+            hitSlop={{}}
+            importantForAccessibility="no-hide-descendants"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+            testID="icon_custom"
+          >
+            <View>
+              <Text
+                allowFontScaling={false}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": "#4255EF",
+                      "fontSize": 16,
+                    },
+                    undefined,
+                    {
+                      "fontFamily": "FontAwesome5Free-Regular",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    {
+                      "fontWeight": "400",
+                    },
+                  ]
+                }
+              >
+                ?
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<TextInput /> should handle custom input padding 1`] = `
+<View
+  style={
+    [
+      {},
+      {},
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      [
+        {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        {},
+      ]
+    }
+  >
+    <View
+      borderedRadius={0}
+      borderedWidth={1}
+      error={false}
+      showBorderErrored={true}
+      style={
+        [
+          {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        collapsable={false}
+        contrast={false}
+        lineHeightVariant="min"
+        status="default"
+        style={
+          [
+            {
+              "color": "#444444",
+              "fontSize": 13,
+              "lineHeight": 15.6,
+            },
+            {
+              "color": "#444444",
+              "position": "absolute",
+              "top": 8,
+            },
+            {
+              "fontSize": 12,
+              "opacity": 0.4,
+              "top": -12,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="xs"
+      />
+      <View
+        inputLeftPadding={10}
+        inputRightPadding={10}
+        multiline={false}
+        padding={20}
+        rightIcon={false}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 20,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityHint="Enter text"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
+          }
+          allowFontScaling={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
+              },
+              "validator": [Function],
+            }
+          }
+          placeholder=""
+          placeholderTextColor="#999999"
+          status="default"
+          style={
+            [
+              {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+              },
+              {},
+            ]
+          }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
+        />
+      </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<TextInput /> should handle custom label variant 1`] = `
+<View
+  style={
+    [
+      {},
+      {},
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      [
+        {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        {},
+      ]
+    }
+  >
+    <View
+      borderedRadius={0}
+      borderedWidth={1}
+      error={false}
+      showBorderErrored={true}
+      style={
+        [
+          {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        collapsable={false}
+        contrast={false}
+        lineHeightVariant="min"
+        status="default"
+        style={
+          [
+            {
+              "color": "#444444",
+              "fontSize": 13,
+              "lineHeight": 15.6,
+            },
+            {
+              "color": "#444444",
+              "position": "absolute",
+              "top": 8,
+            },
+            {
+              "fontSize": 12,
+              "opacity": 0.4,
+              "top": -12,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="xs"
+      >
+        Test Label
+      </Text>
+      <View
+        multiline={false}
+        rightIcon={false}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityHint="Enter text"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
+          }
+          allowFontScaling={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
+              },
+              "validator": [Function],
+            }
+          }
+          placeholder=""
+          placeholderTextColor="#999999"
+          status="default"
+          style={
+            [
+              {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+              },
+              {},
+            ]
+          }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
+        />
+      </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<TextInput /> should handle error state with showBorderErrored 1`] = `
+<View
+  style={
+    [
+      {},
+      {},
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      [
+        {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        {},
+      ]
+    }
+  >
+    <View
+      borderedRadius={0}
+      borderedWidth={1}
+      error={true}
+      showBorderErrored={true}
+      style={
+        [
+          {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        collapsable={false}
+        contrast={false}
+        lineHeightVariant="min"
+        status="default"
+        style={
+          [
+            {
+              "color": "#444444",
+              "fontSize": 13,
+              "lineHeight": 15.6,
+            },
+            {
+              "color": "#444444",
+              "position": "absolute",
+              "top": 8,
+            },
+            {
+              "fontSize": 12,
+              "opacity": 0.4,
+              "top": -12,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="xs"
+      />
+      <View
+        multiline={false}
+        rightIcon={false}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityHint="Error message"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
+          }
+          allowFontScaling={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
+              },
+              "validator": [Function],
+            }
+          }
+          placeholder=""
+          placeholderTextColor="#999999"
+          status="danger"
+          style={
+            [
+              {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+              },
+              {},
+            ]
+          }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
+        />
+      </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+  <Text
+    accessibilityLabel="Erro Error message"
+    centered={false}
+    large={false}
+    lineHeightVariant="min"
+    style={
+      [
+        {
+          "color": "#444444",
+          "fontSize": 13,
+          "lineHeight": 15.6,
+        },
+        {
+          "color": "#FF4F3F",
+          "marginTop": 4,
+          "textAlign": "left",
+        },
+        {},
+      ]
+    }
+    testID="error_test"
+    variant="xs"
+  >
+    Error message
+  </Text>
+</View>
+`;
+
+exports[`<TextInput /> should handle error state with showIconErrored 1`] = `
+<View
+  style={
+    [
+      {},
+      {},
+    ]
+  }
+>
+  <View
+    multiline={false}
+    style={
+      [
+        {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        {},
+      ]
+    }
+  >
+    <View
+      borderedRadius={0}
+      borderedWidth={1}
+      error={true}
+      showBorderErrored={true}
+      style={
+        [
+          {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        collapsable={false}
+        contrast={false}
+        lineHeightVariant="min"
+        status="default"
+        style={
+          [
+            {
+              "color": "#444444",
+              "fontSize": 13,
+              "lineHeight": 15.6,
+            },
+            {
+              "color": "#444444",
+              "position": "absolute",
+              "top": 8,
+            },
+            {
+              "fontSize": 12,
+              "opacity": 0.4,
+              "top": -12,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="xs"
+      />
+      <View
+        multiline={false}
+        rightIcon={false}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityHint="Error message"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
+          }
+          allowFontScaling={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
+          multiline={false}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
+              },
+              "validator": [Function],
+            }
+          }
+          placeholder=""
+          placeholderTextColor="#999999"
+          status="danger"
+          style={
+            [
+              {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+              },
+              {},
+            ]
+          }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
+        />
+        <View
+          collapsable={false}
+          style={{}}
+        >
+          <View
+            accessibilityLabel="error icon"
+            accessibilityRole="image"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": true,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={false}
+            hitSlop={{}}
+            importantForAccessibility="no-hide-descendants"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+            testID="icon_error"
+          >
+            <View>
+              <Text
+                allowFontScaling={false}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": "#FF4F3F",
+                      "fontSize": 16,
+                    },
+                    undefined,
+                    {
+                      "fontFamily": "FontAwesome5Free-Regular",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    {
+                      "fontWeight": "400",
+                    },
+                  ]
+                }
+              >
+                ?
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+  <Text
+    accessibilityLabel="Erro Error message"
+    centered={false}
+    large={false}
+    lineHeightVariant="min"
+    style={
+      [
+        {
+          "color": "#444444",
+          "fontSize": 13,
+          "lineHeight": 15.6,
+        },
+        {
+          "color": "#FF4F3F",
+          "marginTop": 4,
+          "textAlign": "left",
+        },
+        {},
+      ]
+    }
+    testID="error_test"
+    variant="xs"
+  >
+    Error message
+  </Text>
+</View>
+`;
+
+exports[`<TextInput /> should handle multiline with numberOfLines 1`] = `
+<View
+  style={
+    [
+      {},
+      {},
+    ]
+  }
+>
+  <View
+    multiline={true}
+    style={
+      [
+        {
+          "justifyContent": "flex-start",
+          "paddingTop": 0,
+          "position": "relative",
+        },
+        {},
+      ]
+    }
+  >
+    <View
+      borderedRadius={0}
+      borderedWidth={1}
+      error={false}
+      showBorderErrored={true}
+      style={
+        [
+          {
+            "borderColor": "black",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessibilityLabel="Erro "
+        collapsable={false}
+        contrast={false}
+        lineHeightVariant="min"
+        status="default"
+        style={
+          [
+            {
+              "color": "#444444",
+              "fontSize": 13,
+              "lineHeight": 15.6,
+            },
+            {
+              "color": "#444444",
+              "position": "absolute",
+              "top": 8,
+            },
+            {
+              "fontSize": 12,
+              "opacity": 0.4,
+              "top": -12,
+            },
+          ]
+        }
+        testID="error_test"
+        variant="xs"
+      />
+      <View
+        multiline={true}
+        rightIcon={false}
+        style={
+          [
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "paddingLeft": 4,
+              "paddingRight": 4,
+              "paddingTop": 4,
+            },
+          ]
+        }
+      >
+        <TextInput
+          accessibility=""
+          accessibilityHint="Enter text"
+          accessibilityLabel=""
+          accessibilityLiveRegion="polite"
+          accessibilityRole="text"
+          accessibilityState={
+            {
+              "disabled": false,
+            }
+          }
+          allowFontScaling={false}
+          autoFocus={false}
+          centered={false}
+          contrast={false}
+          id="test"
+          isPlaceholder={false}
+          keyboardType="default"
+          large={false}
+          multiline={true}
+          numberOfLines={5}
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          onFocus={[Function]}
+          options={
+            {
+              "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
+              },
+              "validator": [Function],
+            }
+          }
+          placeholder=""
+          placeholderTextColor="#999999"
+          status="default"
+          style={
+            [
+              {
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+              },
+              {},
+            ]
+          }
+          testID="test"
+          type="custom"
+          underlineColorAndroid="transparent"
+          value=""
+          variant="md"
+          withBottomline={true}
+        />
+      </View>
+      <View
+        contrast={false}
+        status="default"
+        style={
+          [
+            {
+              "backgroundColor": "#444444",
+              "height": 0.5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
 exports[`<TextInput /> should render textinput 1`] = `
 <View
   style={
@@ -941,7 +2663,7 @@ exports[`<TextInput /> should render with custom icon type 1`] = `
           style={{}}
         >
           <View
-            accessibilityLabel="heart icon"
+            accessibilityLabel="book icon"
             accessibilityRole="image"
             accessibilityState={
               {
@@ -977,7 +2699,7 @@ exports[`<TextInput /> should render with custom icon type 1`] = `
                 "opacity": 1,
               }
             }
-            testID="icon_heart"
+            testID="icon_book"
           >
             <View>
               <Text
@@ -991,7 +2713,7 @@ exports[`<TextInput /> should render with custom icon type 1`] = `
                     },
                     undefined,
                     {
-                      "fontFamily": "fa-solid",
+                      "fontFamily": "Material Design Icons",
                       "fontStyle": "normal",
                       "fontWeight": "normal",
                     },
@@ -999,7 +2721,7 @@ exports[`<TextInput /> should render with custom icon type 1`] = `
                   ]
                 }
               >
-                
+                󰂺
               </Text>
             </View>
           </View>

@@ -1,11 +1,15 @@
 import React from 'react';
+import { Animated, Text } from 'react-native';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
-import { Animated, Text } from 'react-native';
 import Typography from '..';
+import { TextVariant } from '../../../enums';
 import theme from '../../../theme';
 
-jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');
+// Mock do NativeAnimatedHelper
+jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper', () => ({}), {
+  virtual: true,
+});
 
 beforeEach(() => {
   React.useContext = jest.fn();
@@ -104,7 +108,7 @@ describe('<Typography />', () => {
   it('should render and match snapshot for variant animated', () => {
     const render = renderer.create(
       <ThemeProvider theme={theme}>
-        <Typography accessibility="" variant="animated">
+        <Typography accessibility="" variant={TextVariant.ANIMATED}>
           Texto animado
         </Typography>
       </ThemeProvider>,
@@ -133,5 +137,54 @@ describe('<Typography />', () => {
     );
 
     expect(render.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render with custom lineHeightVariant', () => {
+    const render = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Typography lineHeightVariant="max" accessibility="">
+          Texto com linha personalizada
+        </Typography>
+      </ThemeProvider>,
+    );
+
+    expect(render.toJSON()).toMatchSnapshot();
+  });
+
+  it('should use children as testID when id and accessibility are not provided', () => {
+    const { root } = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Typography>Texto sem id</Typography>
+      </ThemeProvider>,
+    );
+
+    const textProps = root.findByProps({ children: 'Texto sem id' }).props;
+    expect(textProps.testID).toBe('Texto sem id');
+  });
+
+  it('should use id for testID when provided', () => {
+    const { root } = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Typography id="id-teste">Texto com id</Typography>
+      </ThemeProvider>,
+    );
+
+    const textProps = root.findByProps({ children: 'Texto com id' }).props;
+    expect(textProps.testID).toBe('id-teste');
+  });
+
+  it('should use accessibility for testID when id is not provided', () => {
+    const { root } = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Typography accessibility="accessibility-teste">
+          Texto com accessibility
+        </Typography>
+      </ThemeProvider>,
+    );
+
+    const textProps = root.findByProps({
+      children: 'Texto com accessibility',
+    }).props;
+    expect(textProps.testID).toBe('accessibility-teste');
   });
 });
