@@ -50,25 +50,21 @@ describe('<PasswordInput />', () => {
   });
 
   it('should toggle password visibility when icon is pressed', () => {
-    const { getByTestId, rerender } = render(
+    const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <PasswordInput id="eye" accessibility="eye" />
+        <PasswordInput id="password" accessibility="password-input" />
       </ThemeProvider>,
     );
 
-    let icon = getByTestId('icon_eye');
+    // Inicialmente o ícone é 'eye' quando a senha está escondida
+    const eyeIcon = getByTestId('icon_eye');
+    expect(eyeIcon.props.accessibilityLabel).toBe('Eye');
 
-    expect(icon.props.accessibilityLabel).toBe('eye icon');
-    fireEvent.press(icon);
+    // Pressiona o ícone para mostrar a senha
+    fireEvent.press(eyeIcon);
 
-    rerender(
-      <ThemeProvider theme={theme}>
-        <PasswordInput id="eye-slash" accessibility="eye-slash" />
-      </ThemeProvider>,
-    );
-
-    icon = getByTestId('eye-slash');
-
-    expect(icon.props.accessibilityLabel).toBe('eye-slash');
+    // Agora o ícone deve ser 'eye-slash'
+    const eyeSlashIcon = getByTestId('icon_eye-slash');
+    expect(eyeSlashIcon.props.accessibilityLabel).toBe('Eye-slash');
   });
 });

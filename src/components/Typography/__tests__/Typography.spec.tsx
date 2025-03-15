@@ -11,14 +11,21 @@ jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper', () => ({}), {
   virtual: true,
 });
 
+// Mock do Animated.createAnimatedComponent
+jest.mock('react-native', () => {
+  const reactNative = jest.requireActual('react-native');
+  return {
+    ...reactNative,
+    Animated: {
+      ...reactNative.Animated,
+      createAnimatedComponent: jest.fn((component) => component),
+    },
+  };
+});
+
 beforeEach(() => {
   React.useContext = jest.fn();
   React.useMemo = jest.fn();
-  jest
-    .spyOn(Animated, 'Text')
-    .mockImplementation(({ children, style }: any) => (
-      <Text style={style}>{children}</Text>
-    ));
 });
 
 describe('<Typography />', () => {

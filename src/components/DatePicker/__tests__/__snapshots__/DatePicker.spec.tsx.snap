@@ -29,253 +29,53 @@ exports[`<DatePicker /> should render datepicker 1`] = `
     }
     variant="md"
   />,
-  <View
-    accessibilityValue={
+  <DatePicker
+    androidMode="spinner"
+    cancelBtnText="Cancelar"
+    confirmBtnText="Confirmar"
+    customStyles={
       {
-        "max": undefined,
-        "min": undefined,
-        "now": undefined,
-        "text": undefined,
-      }
-    }
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      [
-        {
-          "width": 142,
+        "dateInput": {
+          "borderWidth": 0,
         },
-        [
-          {
-            "width": "100%",
-          },
-        ],
-      ]
-    }
-  >
-    <View
-      style={
-        [
-          {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "height": 40,
-            "justifyContent": "center",
-          },
-          {
-            "width": "100%",
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          [
-            {
-              "alignItems": "center",
-              "borderColor": "#aaa",
-              "borderWidth": 1,
-              "flex": 1,
-              "height": 40,
-              "justifyContent": "center",
-            },
-            {
-              "borderWidth": 0,
-            },
-            false,
-            false,
-          ]
-        }
-      >
-        <Text
-          allowFontScaling={true}
-          style={
-            [
-              {
-                "color": "#c9c9c9",
-              },
-              {
-                "color": "#fff",
-                "fontSize": 18,
-                "left": 0,
-                "position": "absolute",
-              },
-            ]
-          }
-        >
-           
-        </Text>
-      </View>
-      <Modal
-        animationType="none"
-        hardwareAccelerated={false}
-        onRequestClose={[Function]}
-        supportedOrientations={
-          [
-            "portrait",
-            "portrait-upside-down",
-            "landscape",
-            "landscape-left",
-            "landscape-right",
-          ]
-        }
-        transparent={true}
-        visible={false}
-      />
-    </View>
-  </View>,
-  <View
-    dark={false}
-    style={
-      [
-        {
-          "backgroundColor": "#ffffff",
-          "height": 0.5,
+        "dateText": {
+          "color": "#fff",
+          "fontSize": 14,
+          "fontWeight": "700",
+          "left": 0,
+          "position": "absolute",
         },
-      ]
-    }
-  />,
-]
-`;
-
-exports[`<DatePicker /> should render datepicker with accessibility label 1`] = `
-[
-  <Text
-    accessibilityLabel=""
-    collapsable={false}
-    dark={false}
-    error=""
-    isPlaceholder={true}
-    lineHeightVariant="min"
-    style={
-      [
-        {
-          "color": "#444444",
-          "fontSize": 15,
-          "lineHeight": 18,
+        "dateTouchBody": {
+          "width": "100%",
         },
-        {
-          "color": "#ffffff",
-          "lineHeight": 19,
-          "paddingBottom": 16,
+        "disabled": {
+          "backgroundColor": "transparent",
         },
-        {
+        "placeholderText": {
+          "color": "#fff",
           "fontSize": 18,
-          "top": 40,
+          "left": 0,
+          "position": "absolute",
         },
-      ]
-    }
-    variant="md"
-  />,
-  <View
-    accessibilityValue={
-      {
-        "max": undefined,
-        "min": undefined,
-        "now": undefined,
-        "text": undefined,
       }
     }
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
+    dark={false}
+    date=""
+    editable={false}
+    format="DD/MM/YYYY"
+    locale="pt-BR"
+    mode="date"
+    onDateChange={[Function]}
+    placeholder=" "
+    showIcon={false}
     style={
       [
         {
-          "width": 142,
+          "width": "100%",
         },
-        [
-          {
-            "width": "100%",
-          },
-        ],
       ]
     }
-  >
-    <View
-      style={
-        [
-          {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "height": 40,
-            "justifyContent": "center",
-          },
-          {
-            "width": "100%",
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          [
-            {
-              "alignItems": "center",
-              "borderColor": "#aaa",
-              "borderWidth": 1,
-              "flex": 1,
-              "height": 40,
-              "justifyContent": "center",
-            },
-            {
-              "borderWidth": 0,
-            },
-            false,
-            false,
-          ]
-        }
-      >
-        <Text
-          allowFontScaling={true}
-          style={
-            [
-              {
-                "color": "#c9c9c9",
-              },
-              {
-                "color": "#fff",
-                "fontSize": 18,
-                "left": 0,
-                "position": "absolute",
-              },
-            ]
-          }
-        >
-           
-        </Text>
-      </View>
-      <Modal
-        animationType="none"
-        hardwareAccelerated={false}
-        onRequestClose={[Function]}
-        supportedOrientations={
-          [
-            "portrait",
-            "portrait-upside-down",
-            "landscape",
-            "landscape-left",
-            "landscape-right",
-          ]
-        }
-        transparent={true}
-        visible={false}
-      />
-    </View>
-  </View>,
+  />,
   <View
     dark={false}
     style={
@@ -319,108 +119,53 @@ exports[`<DatePicker /> should render datepicker with button cancel text 1`] = `
     }
     variant="md"
   />,
-  <View
-    accessibilityValue={
+  <DatePicker
+    androidMode="spinner"
+    cancelBtnText="test"
+    confirmBtnText="Confirmar"
+    customStyles={
       {
-        "max": undefined,
-        "min": undefined,
-        "now": undefined,
-        "text": undefined,
+        "dateInput": {
+          "borderWidth": 0,
+        },
+        "dateText": {
+          "color": "#fff",
+          "fontSize": 14,
+          "fontWeight": "700",
+          "left": 0,
+          "position": "absolute",
+        },
+        "dateTouchBody": {
+          "width": "100%",
+        },
+        "disabled": {
+          "backgroundColor": "transparent",
+        },
+        "placeholderText": {
+          "color": "#fff",
+          "fontSize": 18,
+          "left": 0,
+          "position": "absolute",
+        },
       }
     }
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
+    dark={false}
+    date=""
+    editable={false}
+    format="DD/MM/YYYY"
+    locale="pt-BR"
+    mode="date"
+    onDateChange={[Function]}
+    placeholder=" "
+    showIcon={false}
     style={
       [
         {
-          "width": 142,
+          "width": "100%",
         },
-        [
-          {
-            "width": "100%",
-          },
-        ],
       ]
     }
-  >
-    <View
-      style={
-        [
-          {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "height": 40,
-            "justifyContent": "center",
-          },
-          {
-            "width": "100%",
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          [
-            {
-              "alignItems": "center",
-              "borderColor": "#aaa",
-              "borderWidth": 1,
-              "flex": 1,
-              "height": 40,
-              "justifyContent": "center",
-            },
-            {
-              "borderWidth": 0,
-            },
-            false,
-            false,
-          ]
-        }
-      >
-        <Text
-          allowFontScaling={true}
-          style={
-            [
-              {
-                "color": "#c9c9c9",
-              },
-              {
-                "color": "#fff",
-                "fontSize": 18,
-                "left": 0,
-                "position": "absolute",
-              },
-            ]
-          }
-        >
-           
-        </Text>
-      </View>
-      <Modal
-        animationType="none"
-        hardwareAccelerated={false}
-        onRequestClose={[Function]}
-        supportedOrientations={
-          [
-            "portrait",
-            "portrait-upside-down",
-            "landscape",
-            "landscape-left",
-            "landscape-right",
-          ]
-        }
-        transparent={true}
-        visible={false}
-      />
-    </View>
-  </View>,
+  />,
   <View
     dark={false}
     style={
@@ -435,7 +180,7 @@ exports[`<DatePicker /> should render datepicker with button cancel text 1`] = `
 ]
 `;
 
-exports[`<DatePicker /> should render datepicker with confirm button text 1`] = `
+exports[`<DatePicker /> should render datepicker with custom props 1`] = `
 [
   <Text
     accessibilityLabel=""
@@ -464,688 +209,55 @@ exports[`<DatePicker /> should render datepicker with confirm button text 1`] = 
     }
     variant="md"
   />,
-  <View
-    accessibilityValue={
+  <DatePicker
+    androidMode="calendar"
+    cancelBtnText="Cancelar"
+    confirmBtnText="test"
+    customStyles={
       {
-        "max": undefined,
-        "min": undefined,
-        "now": undefined,
-        "text": undefined,
-      }
-    }
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      [
-        {
-          "width": 142,
+        "dateInput": {
+          "borderWidth": 0,
         },
-        [
-          {
-            "width": "100%",
-          },
-        ],
-      ]
-    }
-  >
-    <View
-      style={
-        [
-          {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "height": 40,
-            "justifyContent": "center",
-          },
-          {
-            "width": "100%",
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          [
-            {
-              "alignItems": "center",
-              "borderColor": "#aaa",
-              "borderWidth": 1,
-              "flex": 1,
-              "height": 40,
-              "justifyContent": "center",
-            },
-            {
-              "borderWidth": 0,
-            },
-            false,
-            false,
-          ]
-        }
-      >
-        <Text
-          allowFontScaling={true}
-          style={
-            [
-              {
-                "color": "#c9c9c9",
-              },
-              {
-                "color": "#fff",
-                "fontSize": 18,
-                "left": 0,
-                "position": "absolute",
-              },
-            ]
-          }
-        >
-           
-        </Text>
-      </View>
-      <Modal
-        animationType="none"
-        hardwareAccelerated={false}
-        onRequestClose={[Function]}
-        supportedOrientations={
-          [
-            "portrait",
-            "portrait-upside-down",
-            "landscape",
-            "landscape-left",
-            "landscape-right",
-          ]
-        }
-        transparent={true}
-        visible={false}
-      />
-    </View>
-  </View>,
-  <View
-    dark={false}
-    style={
-      [
-        {
-          "backgroundColor": "#ffffff",
-          "height": 0.5,
+        "dateText": {
+          "color": "#fff",
+          "fontSize": 14,
+          "fontWeight": "700",
+          "left": 0,
+          "position": "absolute",
         },
-      ]
-    }
-  />,
-]
-`;
-
-exports[`<DatePicker /> should render datepicker with custom locale 1`] = `
-[
-  <Text
-    accessibilityLabel=""
-    collapsable={false}
-    dark={false}
-    error=""
-    isPlaceholder={true}
-    lineHeightVariant="min"
-    style={
-      [
-        {
-          "color": "#444444",
-          "fontSize": 15,
-          "lineHeight": 18,
+        "dateTouchBody": {
+          "width": "100%",
         },
-        {
-          "color": "#ffffff",
-          "lineHeight": 19,
-          "paddingBottom": 16,
+        "disabled": {
+          "backgroundColor": "transparent",
         },
-        {
+        "placeholderText": {
+          "color": "#fff",
           "fontSize": 18,
-          "top": 40,
+          "left": 0,
+          "position": "absolute",
         },
-      ]
-    }
-    variant="md"
-  />,
-  <View
-    accessibilityValue={
-      {
-        "max": undefined,
-        "min": undefined,
-        "now": undefined,
-        "text": undefined,
       }
     }
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      [
-        {
-          "width": 142,
-        },
-        [
-          {
-            "width": "100%",
-          },
-        ],
-      ]
-    }
-  >
-    <View
-      style={
-        [
-          {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "height": 40,
-            "justifyContent": "center",
-          },
-          {
-            "width": "100%",
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          [
-            {
-              "alignItems": "center",
-              "borderColor": "#aaa",
-              "borderWidth": 1,
-              "flex": 1,
-              "height": 40,
-              "justifyContent": "center",
-            },
-            {
-              "borderWidth": 0,
-            },
-            false,
-            false,
-          ]
-        }
-      >
-        <Text
-          allowFontScaling={true}
-          style={
-            [
-              {
-                "color": "#c9c9c9",
-              },
-              {
-                "color": "#fff",
-                "fontSize": 18,
-                "left": 0,
-                "position": "absolute",
-              },
-            ]
-          }
-        >
-           
-        </Text>
-      </View>
-      <Modal
-        animationType="none"
-        hardwareAccelerated={false}
-        onRequestClose={[Function]}
-        supportedOrientations={
-          [
-            "portrait",
-            "portrait-upside-down",
-            "landscape",
-            "landscape-left",
-            "landscape-right",
-          ]
-        }
-        transparent={true}
-        visible={false}
-      />
-    </View>
-  </View>,
-  <View
     dark={false}
+    date=""
+    editable={true}
+    format="yyyy-MM-dd"
+    locale="en"
+    maxDate="2021-12-31"
+    mode="date"
+    onDateChange={[Function]}
+    placeholder=" "
+    showIcon={false}
     style={
       [
         {
-          "backgroundColor": "#ffffff",
-          "height": 0.5,
+          "width": "100%",
         },
       ]
     }
+    testID="test"
   />,
-]
-`;
-
-exports[`<DatePicker /> should render datepicker with custom mode 1`] = `
-[
-  <Text
-    accessibilityLabel=""
-    collapsable={false}
-    dark={false}
-    error=""
-    isPlaceholder={true}
-    lineHeightVariant="min"
-    style={
-      [
-        {
-          "color": "#444444",
-          "fontSize": 15,
-          "lineHeight": 18,
-        },
-        {
-          "color": "#ffffff",
-          "lineHeight": 19,
-          "paddingBottom": 16,
-        },
-        {
-          "fontSize": 18,
-          "top": 40,
-        },
-      ]
-    }
-    variant="md"
-  />,
-  <View
-    accessibilityValue={
-      {
-        "max": undefined,
-        "min": undefined,
-        "now": undefined,
-        "text": undefined,
-      }
-    }
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      [
-        {
-          "width": 142,
-        },
-        [
-          {
-            "width": "100%",
-          },
-        ],
-      ]
-    }
-  >
-    <View
-      style={
-        [
-          {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "height": 40,
-            "justifyContent": "center",
-          },
-          {
-            "width": "100%",
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          [
-            {
-              "alignItems": "center",
-              "borderColor": "#aaa",
-              "borderWidth": 1,
-              "flex": 1,
-              "height": 40,
-              "justifyContent": "center",
-            },
-            {
-              "borderWidth": 0,
-            },
-            false,
-            false,
-          ]
-        }
-      >
-        <Text
-          allowFontScaling={true}
-          style={
-            [
-              {
-                "color": "#c9c9c9",
-              },
-              {
-                "color": "#fff",
-                "fontSize": 18,
-                "left": 0,
-                "position": "absolute",
-              },
-            ]
-          }
-        >
-           
-        </Text>
-      </View>
-      <Modal
-        animationType="none"
-        hardwareAccelerated={false}
-        onRequestClose={[Function]}
-        supportedOrientations={
-          [
-            "portrait",
-            "portrait-upside-down",
-            "landscape",
-            "landscape-left",
-            "landscape-right",
-          ]
-        }
-        transparent={true}
-        visible={false}
-      />
-    </View>
-  </View>,
-  <View
-    dark={false}
-    style={
-      [
-        {
-          "backgroundColor": "#ffffff",
-          "height": 0.5,
-        },
-      ]
-    }
-  />,
-]
-`;
-
-exports[`<DatePicker /> should render datepicker with custom mode android 1`] = `
-[
-  <Text
-    accessibilityLabel=""
-    collapsable={false}
-    dark={false}
-    error=""
-    isPlaceholder={true}
-    lineHeightVariant="min"
-    style={
-      [
-        {
-          "color": "#444444",
-          "fontSize": 15,
-          "lineHeight": 18,
-        },
-        {
-          "color": "#ffffff",
-          "lineHeight": 19,
-          "paddingBottom": 16,
-        },
-        {
-          "fontSize": 18,
-          "top": 40,
-        },
-      ]
-    }
-    variant="md"
-  />,
-  <View
-    accessibilityValue={
-      {
-        "max": undefined,
-        "min": undefined,
-        "now": undefined,
-        "text": undefined,
-      }
-    }
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      [
-        {
-          "width": 142,
-        },
-        [
-          {
-            "width": "100%",
-          },
-        ],
-      ]
-    }
-  >
-    <View
-      style={
-        [
-          {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "height": 40,
-            "justifyContent": "center",
-          },
-          {
-            "width": "100%",
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          [
-            {
-              "alignItems": "center",
-              "borderColor": "#aaa",
-              "borderWidth": 1,
-              "flex": 1,
-              "height": 40,
-              "justifyContent": "center",
-            },
-            {
-              "borderWidth": 0,
-            },
-            false,
-            false,
-          ]
-        }
-      >
-        <Text
-          allowFontScaling={true}
-          style={
-            [
-              {
-                "color": "#c9c9c9",
-              },
-              {
-                "color": "#fff",
-                "fontSize": 18,
-                "left": 0,
-                "position": "absolute",
-              },
-            ]
-          }
-        >
-           
-        </Text>
-      </View>
-      <Modal
-        animationType="none"
-        hardwareAccelerated={false}
-        onRequestClose={[Function]}
-        supportedOrientations={
-          [
-            "portrait",
-            "portrait-upside-down",
-            "landscape",
-            "landscape-left",
-            "landscape-right",
-          ]
-        }
-        transparent={true}
-        visible={false}
-      />
-    </View>
-  </View>,
-  <View
-    dark={false}
-    style={
-      [
-        {
-          "backgroundColor": "#ffffff",
-          "height": 0.5,
-        },
-      ]
-    }
-  />,
-]
-`;
-
-exports[`<DatePicker /> should render datepicker with editable 1`] = `
-[
-  <Text
-    accessibilityLabel=""
-    collapsable={false}
-    dark={false}
-    error=""
-    isPlaceholder={true}
-    lineHeightVariant="min"
-    style={
-      [
-        {
-          "color": "#444444",
-          "fontSize": 15,
-          "lineHeight": 18,
-        },
-        {
-          "color": "#ffffff",
-          "lineHeight": 19,
-          "paddingBottom": 16,
-        },
-        {
-          "fontSize": 18,
-          "top": 40,
-        },
-      ]
-    }
-    variant="md"
-  />,
-  <View
-    accessibilityValue={
-      {
-        "max": undefined,
-        "min": undefined,
-        "now": undefined,
-        "text": undefined,
-      }
-    }
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      [
-        {
-          "width": 142,
-        },
-        [
-          {
-            "width": "100%",
-          },
-        ],
-      ]
-    }
-  >
-    <View
-      style={
-        [
-          {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "height": 40,
-            "justifyContent": "center",
-          },
-          {
-            "width": "100%",
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          [
-            {
-              "alignItems": "center",
-              "borderColor": "#aaa",
-              "borderWidth": 1,
-              "flex": 1,
-              "height": 40,
-              "justifyContent": "center",
-            },
-            {
-              "borderWidth": 0,
-            },
-            false,
-            false,
-          ]
-        }
-      >
-        <Text
-          allowFontScaling={true}
-          style={
-            [
-              {
-                "color": "#c9c9c9",
-              },
-              {
-                "color": "#fff",
-                "fontSize": 18,
-                "left": 0,
-                "position": "absolute",
-              },
-            ]
-          }
-        >
-           
-        </Text>
-      </View>
-      <Modal
-        animationType="none"
-        hardwareAccelerated={false}
-        onRequestClose={[Function]}
-        supportedOrientations={
-          [
-            "portrait",
-            "portrait-upside-down",
-            "landscape",
-            "landscape-left",
-            "landscape-right",
-          ]
-        }
-        transparent={true}
-        visible={false}
-      />
-    </View>
-  </View>,
   <View
     dark={false}
     style={
@@ -1189,108 +301,53 @@ exports[`<DatePicker /> should render datepicker with error 1`] = `
     }
     variant="md"
   />,
-  <View
-    accessibilityValue={
+  <DatePicker
+    androidMode="spinner"
+    cancelBtnText="Cancelar"
+    confirmBtnText="Confirmar"
+    customStyles={
       {
-        "max": undefined,
-        "min": undefined,
-        "now": undefined,
-        "text": undefined,
+        "dateInput": {
+          "borderColor": "#cc0000",
+        },
+        "dateText": {
+          "color": "#fff",
+          "fontSize": 14,
+          "fontWeight": "700",
+          "left": 0,
+          "position": "absolute",
+        },
+        "dateTouchBody": {
+          "width": "100%",
+        },
+        "disabled": {
+          "backgroundColor": "transparent",
+        },
+        "placeholderText": {
+          "color": "#fff",
+          "fontSize": 18,
+          "left": 0,
+          "position": "absolute",
+        },
       }
     }
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
+    dark={false}
+    date=""
+    editable={false}
+    format="DD/MM/YYYY"
+    locale="pt-BR"
+    mode="date"
+    onDateChange={[Function]}
+    placeholder=" "
+    showIcon={false}
     style={
       [
         {
-          "width": 142,
+          "width": "100%",
         },
-        [
-          {
-            "width": "100%",
-          },
-        ],
       ]
     }
-  >
-    <View
-      style={
-        [
-          {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "height": 40,
-            "justifyContent": "center",
-          },
-          {
-            "width": "100%",
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          [
-            {
-              "alignItems": "center",
-              "borderColor": "#aaa",
-              "borderWidth": 1,
-              "flex": 1,
-              "height": 40,
-              "justifyContent": "center",
-            },
-            {
-              "borderColor": "#cc0000",
-            },
-            false,
-            false,
-          ]
-        }
-      >
-        <Text
-          allowFontScaling={true}
-          style={
-            [
-              {
-                "color": "#c9c9c9",
-              },
-              {
-                "color": "#fff",
-                "fontSize": 18,
-                "left": 0,
-                "position": "absolute",
-              },
-            ]
-          }
-        >
-           
-        </Text>
-      </View>
-      <Modal
-        animationType="none"
-        hardwareAccelerated={false}
-        onRequestClose={[Function]}
-        supportedOrientations={
-          [
-            "portrait",
-            "portrait-upside-down",
-            "landscape",
-            "landscape-left",
-            "landscape-right",
-          ]
-        }
-        transparent={true}
-        visible={false}
-      />
-    </View>
-  </View>,
+  />,
   <View
     dark={false}
     style={
@@ -1329,151 +386,6 @@ exports[`<DatePicker /> should render datepicker with error 1`] = `
 ]
 `;
 
-exports[`<DatePicker /> should render datepicker with format 1`] = `
-[
-  <Text
-    accessibilityLabel=""
-    collapsable={false}
-    dark={false}
-    error=""
-    isPlaceholder={true}
-    lineHeightVariant="min"
-    style={
-      [
-        {
-          "color": "#444444",
-          "fontSize": 15,
-          "lineHeight": 18,
-        },
-        {
-          "color": "#ffffff",
-          "lineHeight": 19,
-          "paddingBottom": 16,
-        },
-        {
-          "fontSize": 18,
-          "top": 40,
-        },
-      ]
-    }
-    variant="md"
-  />,
-  <View
-    accessibilityValue={
-      {
-        "max": undefined,
-        "min": undefined,
-        "now": undefined,
-        "text": undefined,
-      }
-    }
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      [
-        {
-          "width": 142,
-        },
-        [
-          {
-            "width": "100%",
-          },
-        ],
-      ]
-    }
-  >
-    <View
-      style={
-        [
-          {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "height": 40,
-            "justifyContent": "center",
-          },
-          {
-            "width": "100%",
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          [
-            {
-              "alignItems": "center",
-              "borderColor": "#aaa",
-              "borderWidth": 1,
-              "flex": 1,
-              "height": 40,
-              "justifyContent": "center",
-            },
-            {
-              "borderWidth": 0,
-            },
-            false,
-            false,
-          ]
-        }
-      >
-        <Text
-          allowFontScaling={true}
-          style={
-            [
-              {
-                "color": "#c9c9c9",
-              },
-              {
-                "color": "#fff",
-                "fontSize": 18,
-                "left": 0,
-                "position": "absolute",
-              },
-            ]
-          }
-        >
-           
-        </Text>
-      </View>
-      <Modal
-        animationType="none"
-        hardwareAccelerated={false}
-        onRequestClose={[Function]}
-        supportedOrientations={
-          [
-            "portrait",
-            "portrait-upside-down",
-            "landscape",
-            "landscape-left",
-            "landscape-right",
-          ]
-        }
-        transparent={true}
-        visible={false}
-      />
-    </View>
-  </View>,
-  <View
-    dark={false}
-    style={
-      [
-        {
-          "backgroundColor": "#ffffff",
-          "height": 0.5,
-        },
-      ]
-    }
-  />,
-]
-`;
-
 exports[`<DatePicker /> should render datepicker with label 1`] = `
 [
   <Text
@@ -1505,544 +417,53 @@ exports[`<DatePicker /> should render datepicker with label 1`] = `
   >
     test
   </Text>,
-  <View
-    accessibilityValue={
+  <DatePicker
+    androidMode="spinner"
+    cancelBtnText="Cancelar"
+    confirmBtnText="Confirmar"
+    customStyles={
       {
-        "max": undefined,
-        "min": undefined,
-        "now": undefined,
-        "text": undefined,
-      }
-    }
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      [
-        {
-          "width": 142,
+        "dateInput": {
+          "borderWidth": 0,
         },
-        [
-          {
-            "width": "100%",
-          },
-        ],
-      ]
-    }
-  >
-    <View
-      style={
-        [
-          {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "height": 40,
-            "justifyContent": "center",
-          },
-          {
-            "width": "100%",
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          [
-            {
-              "alignItems": "center",
-              "borderColor": "#aaa",
-              "borderWidth": 1,
-              "flex": 1,
-              "height": 40,
-              "justifyContent": "center",
-            },
-            {
-              "borderWidth": 0,
-            },
-            false,
-            false,
-          ]
-        }
-      >
-        <Text
-          allowFontScaling={true}
-          style={
-            [
-              {
-                "color": "#c9c9c9",
-              },
-              {
-                "color": "#fff",
-                "fontSize": 18,
-                "left": 0,
-                "position": "absolute",
-              },
-            ]
-          }
-        >
-           
-        </Text>
-      </View>
-      <Modal
-        animationType="none"
-        hardwareAccelerated={false}
-        onRequestClose={[Function]}
-        supportedOrientations={
-          [
-            "portrait",
-            "portrait-upside-down",
-            "landscape",
-            "landscape-left",
-            "landscape-right",
-          ]
-        }
-        transparent={true}
-        visible={false}
-      />
-    </View>
-  </View>,
-  <View
-    dark={false}
-    style={
-      [
-        {
-          "backgroundColor": "#ffffff",
-          "height": 0.5,
+        "dateText": {
+          "color": "#fff",
+          "fontSize": 14,
+          "fontWeight": "700",
+          "left": 0,
+          "position": "absolute",
         },
-      ]
-    }
-  />,
-]
-`;
-
-exports[`<DatePicker /> should render datepicker with no dark 1`] = `
-[
-  <Text
-    accessibilityLabel=""
-    collapsable={false}
-    dark={false}
-    error=""
-    isPlaceholder={true}
-    lineHeightVariant="min"
-    style={
-      [
-        {
-          "color": "#444444",
-          "fontSize": 15,
-          "lineHeight": 18,
+        "dateTouchBody": {
+          "width": "100%",
         },
-        {
-          "color": "#ffffff",
-          "lineHeight": 19,
-          "paddingBottom": 16,
+        "disabled": {
+          "backgroundColor": "transparent",
         },
-        {
+        "placeholderText": {
+          "color": "#fff",
           "fontSize": 18,
-          "top": 40,
+          "left": 0,
+          "position": "absolute",
         },
-      ]
-    }
-    variant="md"
-  />,
-  <View
-    accessibilityValue={
-      {
-        "max": undefined,
-        "min": undefined,
-        "now": undefined,
-        "text": undefined,
       }
     }
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      [
-        {
-          "width": 142,
-        },
-        [
-          {
-            "width": "100%",
-          },
-        ],
-      ]
-    }
-  >
-    <View
-      style={
-        [
-          {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "height": 40,
-            "justifyContent": "center",
-          },
-          {
-            "width": "100%",
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          [
-            {
-              "alignItems": "center",
-              "borderColor": "#aaa",
-              "borderWidth": 1,
-              "flex": 1,
-              "height": 40,
-              "justifyContent": "center",
-            },
-            {
-              "borderWidth": 0,
-            },
-            false,
-            false,
-          ]
-        }
-      >
-        <Text
-          allowFontScaling={true}
-          style={
-            [
-              {
-                "color": "#c9c9c9",
-              },
-              {
-                "color": "#fff",
-                "fontSize": 18,
-                "left": 0,
-                "position": "absolute",
-              },
-            ]
-          }
-        >
-           
-        </Text>
-      </View>
-      <Modal
-        animationType="none"
-        hardwareAccelerated={false}
-        onRequestClose={[Function]}
-        supportedOrientations={
-          [
-            "portrait",
-            "portrait-upside-down",
-            "landscape",
-            "landscape-left",
-            "landscape-right",
-          ]
-        }
-        transparent={true}
-        visible={false}
-      />
-    </View>
-  </View>,
-  <View
     dark={false}
+    date=""
+    editable={false}
+    format="DD/MM/YYYY"
+    locale="pt-BR"
+    mode="date"
+    onDateChange={[Function]}
+    placeholder=" "
+    showIcon={false}
     style={
       [
         {
-          "backgroundColor": "#ffffff",
-          "height": 0.5,
+          "width": "100%",
         },
       ]
     }
   />,
-]
-`;
-
-exports[`<DatePicker /> should render datepicker with status 1`] = `
-[
-  <Text
-    accessibilityLabel=""
-    collapsable={false}
-    dark={false}
-    error=""
-    isPlaceholder={true}
-    lineHeightVariant="min"
-    style={
-      [
-        {
-          "color": "#444444",
-          "fontSize": 15,
-          "lineHeight": 18,
-        },
-        {
-          "color": "#ffffff",
-          "lineHeight": 19,
-          "paddingBottom": 16,
-        },
-        {
-          "fontSize": 18,
-          "top": 40,
-        },
-      ]
-    }
-    variant="md"
-  />,
-  <View
-    accessibilityValue={
-      {
-        "max": undefined,
-        "min": undefined,
-        "now": undefined,
-        "text": undefined,
-      }
-    }
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      [
-        {
-          "width": 142,
-        },
-        [
-          {
-            "width": "100%",
-          },
-        ],
-      ]
-    }
-  >
-    <View
-      style={
-        [
-          {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "height": 40,
-            "justifyContent": "center",
-          },
-          {
-            "width": "100%",
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          [
-            {
-              "alignItems": "center",
-              "borderColor": "#aaa",
-              "borderWidth": 1,
-              "flex": 1,
-              "height": 40,
-              "justifyContent": "center",
-            },
-            {
-              "borderWidth": 0,
-            },
-            false,
-            false,
-          ]
-        }
-      >
-        <Text
-          allowFontScaling={true}
-          style={
-            [
-              {
-                "color": "#c9c9c9",
-              },
-              {
-                "color": "#fff",
-                "fontSize": 18,
-                "left": 0,
-                "position": "absolute",
-              },
-            ]
-          }
-        >
-           
-        </Text>
-      </View>
-      <Modal
-        animationType="none"
-        hardwareAccelerated={false}
-        onRequestClose={[Function]}
-        supportedOrientations={
-          [
-            "portrait",
-            "portrait-upside-down",
-            "landscape",
-            "landscape-left",
-            "landscape-right",
-          ]
-        }
-        transparent={true}
-        visible={false}
-      />
-    </View>
-  </View>,
-  <View
-    dark={false}
-    style={
-      [
-        {
-          "backgroundColor": "#ffffff",
-          "height": 0.5,
-        },
-      ]
-    }
-  />,
-]
-`;
-
-exports[`<DatePicker /> should render datepicker with test id 1`] = `
-[
-  <Text
-    accessibilityLabel=""
-    collapsable={false}
-    dark={false}
-    error=""
-    isPlaceholder={true}
-    lineHeightVariant="min"
-    style={
-      [
-        {
-          "color": "#444444",
-          "fontSize": 15,
-          "lineHeight": 18,
-        },
-        {
-          "color": "#ffffff",
-          "lineHeight": 19,
-          "paddingBottom": 16,
-        },
-        {
-          "fontSize": 18,
-          "top": 40,
-        },
-      ]
-    }
-    variant="md"
-  />,
-  <View
-    accessibilityValue={
-      {
-        "max": undefined,
-        "min": undefined,
-        "now": undefined,
-        "text": undefined,
-      }
-    }
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    style={
-      [
-        {
-          "width": 142,
-        },
-        [
-          {
-            "width": "100%",
-          },
-        ],
-      ]
-    }
-    testID="test"
-  >
-    <View
-      style={
-        [
-          {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "height": 40,
-            "justifyContent": "center",
-          },
-          {
-            "width": "100%",
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          [
-            {
-              "alignItems": "center",
-              "borderColor": "#aaa",
-              "borderWidth": 1,
-              "flex": 1,
-              "height": 40,
-              "justifyContent": "center",
-            },
-            {
-              "borderWidth": 0,
-            },
-            false,
-            false,
-          ]
-        }
-      >
-        <Text
-          allowFontScaling={true}
-          style={
-            [
-              {
-                "color": "#c9c9c9",
-              },
-              {
-                "color": "#fff",
-                "fontSize": 18,
-                "left": 0,
-                "position": "absolute",
-              },
-            ]
-          }
-        >
-           
-        </Text>
-      </View>
-      <Modal
-        animationType="none"
-        hardwareAccelerated={false}
-        onRequestClose={[Function]}
-        supportedOrientations={
-          [
-            "portrait",
-            "portrait-upside-down",
-            "landscape",
-            "landscape-left",
-            "landscape-right",
-          ]
-        }
-        transparent={true}
-        visible={false}
-      />
-    </View>
-  </View>,
   <View
     dark={false}
     style={
@@ -2086,108 +507,53 @@ exports[`<DatePicker /> should render datepicker with value 1`] = `
     }
     variant="md"
   />,
-  <View
-    accessibilityValue={
+  <DatePicker
+    androidMode="spinner"
+    cancelBtnText="Cancelar"
+    confirmBtnText="Confirmar"
+    customStyles={
       {
-        "max": undefined,
-        "min": undefined,
-        "now": undefined,
-        "text": undefined,
+        "dateInput": {
+          "borderWidth": 0,
+        },
+        "dateText": {
+          "color": "#fff",
+          "fontSize": 14,
+          "fontWeight": "700",
+          "left": 0,
+          "position": "absolute",
+        },
+        "dateTouchBody": {
+          "width": "100%",
+        },
+        "disabled": {
+          "backgroundColor": "transparent",
+        },
+        "placeholderText": {
+          "color": "#fff",
+          "fontSize": 18,
+          "left": 0,
+          "position": "absolute",
+        },
       }
     }
-    accessible={true}
-    focusable={true}
-    onClick={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
+    dark={false}
+    date=""
+    editable={false}
+    format="DD/MM/YYYY"
+    locale="pt-BR"
+    mode="date"
+    onDateChange={[Function]}
+    placeholder=" "
+    showIcon={false}
     style={
       [
         {
-          "width": 142,
+          "width": "100%",
         },
-        [
-          {
-            "width": "100%",
-          },
-        ],
       ]
     }
-  >
-    <View
-      style={
-        [
-          {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "height": 40,
-            "justifyContent": "center",
-          },
-          {
-            "width": "100%",
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          [
-            {
-              "alignItems": "center",
-              "borderColor": "#aaa",
-              "borderWidth": 1,
-              "flex": 1,
-              "height": 40,
-              "justifyContent": "center",
-            },
-            {
-              "borderWidth": 0,
-            },
-            false,
-            false,
-          ]
-        }
-      >
-        <Text
-          allowFontScaling={true}
-          style={
-            [
-              {
-                "color": "#c9c9c9",
-              },
-              {
-                "color": "#fff",
-                "fontSize": 18,
-                "left": 0,
-                "position": "absolute",
-              },
-            ]
-          }
-        >
-           
-        </Text>
-      </View>
-      <Modal
-        animationType="none"
-        hardwareAccelerated={false}
-        onRequestClose={[Function]}
-        supportedOrientations={
-          [
-            "portrait",
-            "portrait-upside-down",
-            "landscape",
-            "landscape-left",
-            "landscape-right",
-          ]
-        }
-        transparent={true}
-        visible={false}
-      />
-    </View>
-  </View>,
+  />,
   <View
     dark={false}
     style={
