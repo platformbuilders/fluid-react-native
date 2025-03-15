@@ -173,7 +173,7 @@ exports[`<UploadPhoto /> should render UploadPhoto with all custom props 1`] = `
   }
   accessible={true}
   collapsable={false}
-  focusable={true}
+  focusable={false}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -197,19 +197,26 @@ exports[`<UploadPhoto /> should render UploadPhoto with all custom props 1`] = `
   }
   testID="testId"
 >
-  <View
-    style={
+  <RNCamera
+    androidCameraPermissionOptions={
       {
-        "alignItems": "center",
-        "flex": 1,
-        "justifyContent": "center",
+        "buttonNegative": "Cancelar",
+        "buttonPositive": "Ok",
+        "message": "Precisamos da sua permissão para usar a câmera",
+        "title": "Câmera",
       }
     }
-  >
-    <ActivityIndicator
-      size="small"
-    />
-  </View>
+    flashMode="auto"
+    style={
+      [
+        {
+          "height": "100%",
+          "overflow": "hidden",
+        },
+      ]
+    }
+    type="front"
+  />
 </View>
 `;
 
@@ -235,7 +242,7 @@ exports[`<UploadPhoto /> should render UploadPhoto with camera 1`] = `
   }
   accessible={true}
   collapsable={false}
-  focusable={true}
+  focusable={false}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -259,19 +266,26 @@ exports[`<UploadPhoto /> should render UploadPhoto with camera 1`] = `
   }
   testID="testing"
 >
-  <View
-    style={
+  <RNCamera
+    androidCameraPermissionOptions={
       {
-        "alignItems": "center",
-        "flex": 1,
-        "justifyContent": "center",
+        "buttonNegative": "Cancelar",
+        "buttonPositive": "Ok",
+        "message": "Precisamos da sua permissão para usar a câmera",
+        "title": "Câmera",
       }
     }
-  >
-    <ActivityIndicator
-      size="small"
-    />
-  </View>
+    flashMode="auto"
+    style={
+      [
+        {
+          "height": "100%",
+          "overflow": "hidden",
+        },
+      ]
+    }
+    type="front"
+  />
 </View>
 `;
 
@@ -572,6 +586,308 @@ exports[`<UploadPhoto /> should render UploadPhoto with custom test id 1`] = `
       variant="md"
     >
       Adicionar Foto
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`<UploadPhoto /> should render with custom delete icon 1`] = `
+<View
+  accessibilityLabel=""
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "borderColor": "#f0f0f0",
+      "borderRadius": 6,
+      "borderStyle": "dashed",
+      "borderWidth": 2,
+      "justifyContent": "center",
+      "minHeight": 120,
+      "opacity": 1,
+      "overflow": "hidden",
+      "position": "relative",
+    }
+  }
+  testID="testing"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "marginBottom": 16,
+          "opacity": 0.6,
+        }
+      }
+    >
+      <View
+        accessibilityLabel="Image"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": true,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+        testID="Image"
+      >
+        <View>
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              [
+                {
+                  "color": "#444444",
+                  "fontSize": 36,
+                },
+                undefined,
+                {
+                  "fontFamily": "FontAwesome5Free-Regular",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {
+                  "fontWeight": "400",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+    <Text
+      accessibilityLabel="Adicionar Foto"
+      lineHeightVariant="min"
+      style={
+        [
+          {
+            "color": "#444444",
+            "fontSize": 15,
+            "lineHeight": 18,
+          },
+          {
+            "color": "#4255EF",
+          },
+        ]
+      }
+      variant="md"
+    >
+      Adicionar Foto
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`<UploadPhoto /> should render with custom upload text and icon 1`] = `
+<View
+  accessibilityLabel=""
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "borderColor": "#f0f0f0",
+      "borderRadius": 6,
+      "borderStyle": "dashed",
+      "borderWidth": 2,
+      "justifyContent": "center",
+      "minHeight": 120,
+      "opacity": 1,
+      "overflow": "hidden",
+      "position": "relative",
+    }
+  }
+  testID="testing"
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "marginBottom": 16,
+          "opacity": 0.6,
+        }
+      }
+    >
+      <View
+        accessibilityLabel="Camera"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": true,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+        testID="Camera"
+      >
+        <View>
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              [
+                {
+                  "color": "#444444",
+                  "fontSize": 48,
+                },
+                undefined,
+                {
+                  "fontFamily": "FontAwesome5Free-Solid",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {
+                  "fontWeight": "900",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+    <Text
+      accessibilityLabel="Custom Upload Text"
+      lineHeightVariant="min"
+      style={
+        [
+          {
+            "color": "#444444",
+            "fontSize": 15,
+            "lineHeight": 18,
+          },
+          {
+            "color": "#4255EF",
+          },
+        ]
+      }
+      variant="md"
+    >
+      Custom Upload Text
     </Text>
   </View>
 </View>
