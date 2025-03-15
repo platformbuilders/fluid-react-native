@@ -1894,7 +1894,6 @@ exports[`<Search /> should render search with shadow 1`] = `
       {
         "alignItems": "center",
         "borderRadius": 16,
-        "elevation": 3,
         "flexBasis": 0,
         "flexDirection": "row",
         "flexGrow": 1,
@@ -1902,12 +1901,6 @@ exports[`<Search /> should render search with shadow 1`] = `
         "height": 56,
         "justifyContent": "center",
         "paddingHorizontal": 32,
-        "shadowOffset": {
-          "height": 4,
-          "width": 0,
-        },
-        "shadowOpacity": 0.2,
-        "shadowRadius": 3,
       },
     ]
   }
