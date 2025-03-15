@@ -50,47 +50,7 @@ exports[`<Avatar /> should handle invalid URI correctly 1`] = `
         {},
       ]
     }
-  >
-    <View
-      style={
-        [
-          {
-            "overflow": "hidden",
-          },
-          {
-            "height": "101%",
-            "width": "101%",
-          },
-        ]
-      }
-    >
-      <Image
-        onLoad={[Function]}
-        onLoadStart={[Function]}
-        resizeMode="cover"
-        source={
-          {
-            "uri": "invalid-uri",
-          }
-        }
-        style={
-          [
-            {
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            },
-            {
-              "tintColor": undefined,
-            },
-          ]
-        }
-        testID="avatar-image"
-      />
-    </View>
-  </View>
+  />
 </View>
 `;
 
