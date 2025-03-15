@@ -1,6 +1,5 @@
 import styled from 'styled-components/native';
 import { getTheme } from '@platformbuilders/theme-toolkit';
-import { getShadow } from '../../utils/helpers';
 import TextInput from '../TextInput';
 
 const brandSecondary = getTheme('brand.secondary.main');
@@ -12,7 +11,6 @@ const wrapperHeight = 56;
 type WrapperProps = {
   height?: number;
   inputPadding?: number;
-  hasShadow?: boolean;
   style?: any;
 };
 
@@ -26,7 +24,6 @@ export const Wrapper = styled.View<WrapperProps>`
   padding-horizontal: ${({ inputPadding }: WrapperProps) =>
     (!!inputPadding && inputPadding) || largeSpacing}px;
   border-radius: ${largeRadius}px;
-  ${({ hasShadow }: WrapperProps) => (hasShadow ? getShadow() : {})}
 `;
 
 type InputProps = {
