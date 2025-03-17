@@ -1,0 +1,278 @@
+# RadioButton
+
+O componente `RadioButton` é utilizado para criar grupos de opções onde apenas uma pode ser selecionada por vez. É comumente usado em formulários, pesquisas e em configurações que requerem uma escolha entre múltiplas opções.
+
+## Importação
+
+```tsx
+import { RadioButton } from '@platformbuilders/fluid-react-native';
+```
+
+## Uso Básico
+
+```tsx
+import React, { useState } from 'react';
+import { RadioButton } from '@platformbuilders/fluid-react-native';
+
+const ExampleRadioButton = () => {
+  const [selected, setSelected] = useState(false);
+
+  return (
+    <RadioButton
+      accessibility="Opção de exemplo"
+      label="Selecione esta opção"
+      checked={selected}
+      onPress={() => setSelected(!selected)}
+    />
+  );
+};
+```
+
+## Grupo de RadioButtons
+
+Para criar um grupo de opções onde apenas uma pode ser selecionada:
+
+```tsx
+import React, { useState } from 'react';
+import { View } from 'react-native';
+import { RadioButton, Typography } from '@platformbuilders/fluid-react-native';
+
+const RadioGroupExample = () => {
+  const [selectedOption, setSelectedOption] = useState('option1');
+
+  const options = [
+    { id: 'option1', label: 'Opção 1' },
+    { id: 'option2', label: 'Opção 2' },
+    { id: 'option3', label: 'Opção 3' },
+  ];
+
+  return (
+    <View style={{ gap: 16 }}>
+      <Typography variant="md">Selecione uma opção:</Typography>
+
+      {options.map((option) => (
+        <RadioButton
+          key={option.id}
+          id={option.id}
+          accessibility={`Selecionar ${option.label}`}
+          label={option.label}
+          checked={selectedOption === option.id}
+          onPress={() => setSelectedOption(option.id)}
+        />
+      ))}
+    </View>
+  );
+};
+```
+
+## Personalização
+
+Você pode personalizar as cores e tamanhos dos RadioButtons:
+
+```tsx
+<RadioButton
+  accessibility="Opção personalizada"
+  label="Opção com cores personalizadas"
+  checked={selected}
+  onPress={() => setSelected(!selected)}
+  radioButtonColor="#5c6bc0" // Cor do botão não selecionado
+  checkedRadioButtonColor="#3f51b5" // Cor do botão selecionado
+  size={24} // Tamanho do círculo externo
+  internalSize={14} // Tamanho do círculo interno quando selecionado
+  labelStyle={{ color: '#3f51b5', fontWeight: 'bold' }}
+/>
+```
+
+## Acessibilidade
+
+O componente RadioButton implementa recursos de acessibilidade apropriados:
+
+```tsx
+<RadioButton
+  accessibility="Descrição para leitores de tela"
+  label="Opção acessível"
+  checked={selected}
+  onPress={() => setSelected(!selected)}
+  // O componente automaticamente configura:
+  // - accessibilityRole="radio"
+  // - accessibilityState={{ checked }}
+  // - accessibilityHint para informar que a opção pode ser selecionada
+  // - accessibilityLiveRegion="polite" para notificar mudanças de estado
+/>
+```
+
+## Propriedades
+
+| Propriedade               | Tipo     | Padrão    | Descrição                                                   |
+| ------------------------- | -------- | --------- | ----------------------------------------------------------- |
+| `id`                      | string   | -         | ID do componente (opcional)                                 |
+| `accessibility`           | string   | -         | Texto de acessibilidade para leitores de tela (obrigatório) |
+| `radioButtonColor`        | string   | textColor | Cor do círculo externo quando não selecionado               |
+| `checkedRadioButtonColor` | string   | primária  | Cor do círculo interno quando selecionado                   |
+| `size`                    | number   | 20        | Diâmetro do círculo externo                                 |
+| `internalSize`            | number   | 13        | Diâmetro do círculo interno quando selecionado              |
+| `checked`                 | boolean  | false     | Define se está selecionado ou não                           |
+| `onPress`                 | function | () => {}  | Função chamada quando o RadioButton é pressionado           |
+| `label`                   | string   | -         | Texto exibido ao lado do RadioButton                        |
+| `labelStyle`              | object   | {}        | Estilo adicional para o texto do label                      |
+
+## Exemplos
+
+### Formulário de Pesquisa
+
+```tsx
+import React, { useState } from 'react';
+import { ScrollView, View } from 'react-native';
+import {
+  Button,
+  RadioButton,
+  Typography,
+} from '@platformbuilders/fluid-react-native';
+
+const SurveyForm = () => {
+  const [selectedRating, setSelectedRating] = useState(null);
+  const [selectedFrequency, setSelectedFrequency] = useState(null);
+
+  const ratings = [
+    { id: '5', label: 'Excelente' },
+    { id: '4', label: 'Muito bom' },
+    { id: '3', label: 'Bom' },
+    { id: '2', label: 'Regular' },
+    { id: '1', label: 'Ruim' },
+  ];
+
+  const frequencies = [
+    { id: 'daily', label: 'Diariamente' },
+    { id: 'weekly', label: 'Semanalmente' },
+    { id: 'monthly', label: 'Mensalmente' },
+    { id: 'rarely', label: 'Raramente' },
+  ];
+
+  const handleSubmit = () => {
+    console.log('Survey submitted:', { selectedRating, selectedFrequency });
+    // Lógica para enviar os dados
+  };
+
+  return (
+    <ScrollView style={{ flex: 1 }}>
+      <View style={{ padding: 16, gap: 24 }}>
+        <Typography variant="lg">Pesquisa de Satisfação</Typography>
+
+        <View style={{ gap: 16 }}>
+          <Typography variant="md">Como você avalia nosso produto?</Typography>
+
+          {ratings.map((rating) => (
+            <RadioButton
+              key={rating.id}
+              id={rating.id}
+              accessibility={`Avaliar como ${rating.label}`}
+              label={rating.label}
+              checked={selectedRating === rating.id}
+              onPress={() => setSelectedRating(rating.id)}
+            />
+          ))}
+        </View>
+
+        <View style={{ gap: 16 }}>
+          <Typography variant="md">
+            Com que frequência você usa nosso produto?
+          </Typography>
+
+          {frequencies.map((frequency) => (
+            <RadioButton
+              key={frequency.id}
+              id={frequency.id}
+              accessibility={`Uso ${frequency.label}`}
+              label={frequency.label}
+              checked={selectedFrequency === frequency.id}
+              onPress={() => setSelectedFrequency(frequency.id)}
+            />
+          ))}
+        </View>
+
+        <Button
+          children="Enviar Pesquisa"
+          variant="filled"
+          colorVariant="primary"
+          onPress={handleSubmit}
+          disabled={!selectedRating || !selectedFrequency}
+        />
+      </View>
+    </ScrollView>
+  );
+};
+```
+
+### Seleção de Plano
+
+```tsx
+import React, { useState } from 'react';
+import { View } from 'react-native';
+import { RadioButton, Typography } from '@platformbuilders/fluid-react-native';
+
+const PlanSelection = () => {
+  const [selectedPlan, setSelectedPlan] = useState('basic');
+
+  const plans = [
+    {
+      id: 'basic',
+      label: 'Plano Básico',
+      description: 'Acesso a recursos essenciais - R$ 29,90/mês',
+    },
+    {
+      id: 'standard',
+      label: 'Plano Padrão',
+      description: 'Recursos essenciais + suporte prioritário - R$ 49,90/mês',
+    },
+    {
+      id: 'premium',
+      label: 'Plano Premium',
+      description: 'Acesso completo a todos os recursos - R$ 79,90/mês',
+    },
+  ];
+
+  return (
+    <View style={{ padding: 16 }}>
+      <Typography variant="lg" style={{ marginBottom: 16 }}>
+        Escolha seu plano
+      </Typography>
+
+      <View style={{ gap: 16 }}>
+        {plans.map((plan) => (
+          <View
+            key={plan.id}
+            style={{
+              padding: 16,
+              borderWidth: 1,
+              borderColor: selectedPlan === plan.id ? '#3f51b5' : '#e0e0e0',
+              borderRadius: 8,
+              backgroundColor: selectedPlan === plan.id ? '#f5f7ff' : 'white',
+            }}
+          >
+            <RadioButton
+              id={plan.id}
+              accessibility={`Selecionar ${plan.label}`}
+              label={plan.label}
+              checked={selectedPlan === plan.id}
+              onPress={() => setSelectedPlan(plan.id)}
+              checkedRadioButtonColor="#3f51b5"
+              labelStyle={{ fontWeight: 'bold' }}
+            />
+
+            <Typography
+              variant="xs"
+              style={{
+                marginLeft: 28,
+                marginTop: 4,
+                color: '#666666',
+              }}
+            >
+              {plan.description}
+            </Typography>
+          </View>
+        ))}
+      </View>
+    </View>
+  );
+};
+```

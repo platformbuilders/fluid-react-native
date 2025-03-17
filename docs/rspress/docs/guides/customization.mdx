@@ -1,0 +1,181 @@
+# Guia de Customização
+
+Este guia explica como personalizar os componentes do Fluid React Native para atender às necessidades específicas do seu projeto.
+
+## Customização via Props
+
+A maneira mais simples de customizar componentes é através das props que eles aceitam. A maioria dos componentes do Fluid suporta props de variante e cor:
+
+```tsx
+// Botão personalizado via props
+<Button
+  title="Enviar"
+  variant="filled"
+  colorVariant="primary"
+  size="large"
+  block={true}
+  icon="send"
+  iconPosition="right"
+  onPress={() => handleSubmit()}
+/>
+```
+
+## Customização com Styled Components
+
+Para customizações mais avançadas, você pode estender os componentes usando styled-components:
+
+```tsx
+import styled from 'styled-components/native';
+import { Button, getTheme } from '@platformbuilders/fluid-react-native';
+
+// Estendendo o componente Button
+const RoundedButton = styled(Button)`
+  border-radius: 50px;
+  elevation: 5;
+  margin: ${getTheme('spacing.md')};
+`;
+
+// Uso do componente personalizado
+<RoundedButton
+  title="Customizado"
+  variant="filled"
+  colorVariant="primary"
+  onPress={() => {}}
+/>;
+```
+
+## Customização Baseada em Temas
+
+Você pode criar componentes que se adaptem ao tema atual:
+
+```tsx
+import styled from 'styled-components/native';
+import { getTheme } from '@platformbuilders/fluid-react-native';
+
+const Card = styled.View`
+  background-color: ${({ theme }) => theme.colors.surface};
+  padding: ${getTheme('spacing.lg')};
+  border-radius: ${getTheme('borderRadius.md')};
+  border-width: 1px;
+  border-color: ${({ theme }) =>
+    theme.isDark ? theme.colors.gray[700] : theme.colors.gray[300]};
+  shadow-color: #000;
+  shadow-offset: 0px 2px;
+  shadow-opacity: 0.1;
+  shadow-radius: 3px;
+  elevation: 3;
+`;
+```
+
+## Componentes Compostos
+
+Você pode criar componentes personalizados combinando componentes básicos do Fluid:
+
+```tsx
+import React from 'react';
+import styled from 'styled-components/native';
+import { View } from 'react-native';
+import {
+  Typography,
+  Icon,
+  getTheme,
+} from '@platformbuilders/fluid-react-native';
+
+const InfoCard = styled.View`
+  background-color: ${getTheme('state.info.light')};
+  padding: ${getTheme('spacing.md')};
+  border-radius: ${getTheme('borderRadius.md')};
+  flex-direction: row;
+  align-items: center;
+`;
+
+const IconContainer = styled.View`
+  margin-right: ${getTheme('spacing.sm')};
+`;
+
+const InfoMessage = ({ message, title }) => (
+  <InfoCard>
+    <IconContainer>
+      <Icon name="info" size={24} color={getTheme('state.info.main')} />
+    </IconContainer>
+    <View>
+      {title && (
+        <Typography
+          variant="subtitle1"
+          color={getTheme('state.info.dark')}
+          bold
+        >
+          {title}
+        </Typography>
+      )}
+      <Typography variant="body2" color={getTheme('state.info.dark')}>
+        {message}
+      </Typography>
+    </View>
+  </InfoCard>
+);
+```
+
+## Adaptando para Diferentes Plataformas
+
+Você pode criar componentes específicos para cada plataforma:
+
+```tsx
+import React from 'react';
+import { Platform } from 'react-native';
+import { Button } from '@platformbuilders/fluid-react-native';
+
+// Componente adaptativo para plataforma
+const PlatformButton = (props) => {
+  // Diferentes props para iOS e Android
+  const platformProps = Platform.select({
+    ios: {
+      size: 'medium',
+      variant: 'outlined',
+    },
+    android: {
+      size: 'large',
+      variant: 'filled',
+    },
+  });
+
+  return <Button {...platformProps} {...props} />;
+};
+```
+
+## Criando Variantes Personalizadas
+
+Para projetos maiores, pode ser útil criar variantes de componentes reutilizáveis:
+
+```tsx
+import React from 'react';
+import { Button, ButtonProps } from '@platformbuilders/fluid-react-native';
+
+// Variante de sucesso
+export const SuccessButton: React.FC<Omit<ButtonProps, 'colorVariant'>> = (props) => (
+  <Button colorVariant="success" {...props} />
+);
+
+// Variante de ação destrutiva
+export const DangerButton: React.FC<Omit<ButtonProps, 'colorVariant'>> = (props) => (
+  <Button colorVariant="danger" {...props} />
+);
+
+// Variante de ação principal
+export const PrimaryButton: React.FC<Omit<ButtonProps, 'colorVariant' | 'variant'>> = (props) => (
+  <Button colorVariant="primary" variant="filled" {...props} />
+);
+
+// Uso
+<SuccessButton title="Confirmar" onPress={() => {}} />
+<DangerButton title="Excluir" onPress={() => {}} />
+<PrimaryButton title="Continuar" onPress={() => {}} />
+```
+
+## Boas Práticas
+
+1. **Mantenha a consistência** - Tente manter um estilo consistente em toda a aplicação
+2. **Reutilize componentes** - Crie componentes reutilizáveis para padrões recorrentes
+3. **Utilize o tema** - Sempre use tokens do tema em vez de valores fixos
+4. **Teste em dispositivos reais** - Teste suas customizações em diferentes dispositivos
+5. **Documente suas customizações** - Mantenha documentação das customizações para referência futura

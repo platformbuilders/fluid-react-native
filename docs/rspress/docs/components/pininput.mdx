@@ -1,0 +1,303 @@
+# PinInput
+
+O componente `PinInput` é utilizado para inserção de códigos de segurança, códigos de verificação, senhas numéricas ou qualquer entrada que necessite de formato de PIN. É especialmente útil para autenticação de dois fatores (2FA), confirmação de transações e processos de verificação.
+
+## Importação
+
+```tsx
+import { PinInput } from '@platformbuilders/fluid-react-native';
+```
+
+## Uso Básico
+
+```tsx
+import React, { useState } from 'react';
+import { PinInput } from '@platformbuilders/fluid-react-native';
+
+const ExamplePinInput = () => {
+  const [pin, setPin] = useState('');
+
+  return (
+    <PinInput
+      value={pin}
+      onChangeText={setPin}
+      codeLength={4}
+      onFulfill={(code) => console.log('PIN completo:', code)}
+    />
+  );
+};
+```
+
+## PIN com Senha
+
+O PinInput pode ser configurado para funcionar como campo de senha, com opção para mostrar/esconder os caracteres:
+
+```tsx
+<PinInput
+  value={pin}
+  onChangeText={setPin}
+  password={true}
+  codeLength={6}
+  mask="•" // Caractere usado para mascarar a senha
+  caption="Insira sua senha de 6 dígitos"
+/>
+```
+
+## Personalização
+
+Você pode personalizar o tamanho, espaçamento e aparência das células:
+
+```tsx
+<PinInput
+  value={pin}
+  onChangeText={setPin}
+  codeLength={4}
+  cellSize={64} // Tamanho de cada célula
+  cellSpacing={8} // Espaçamento entre células
+  cellStyle={{
+    borderRadius: 8,
+    borderColor: '#3f51b5',
+    borderWidth: 2,
+  }}
+  cellStyleFocused={{
+    borderColor: '#1a237e',
+    backgroundColor: '#f5f7ff',
+  }}
+  textStyle={{
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#3f51b5',
+  }}
+/>
+```
+
+## Com Label Fixo
+
+```tsx
+<PinInput
+  value={pin}
+  onChangeText={setPin}
+  borderedLabel="Código de Verificação"
+  fixedLabelVariant="sm"
+  caption="Enviamos um código para seu celular"
+/>
+```
+
+## Tratamento de Erro
+
+```tsx
+<PinInput
+  value={pin}
+  onChangeText={setPin}
+  error={pin.length < 4 && pin.length > 0 ? 'O código deve ter 4 dígitos' : ''}
+  codeLength={4}
+  caption="Verifique o código recebido por SMS"
+/>
+```
+
+## Acessibilidade
+
+O componente PinInput implementa recursos de acessibilidade apropriados para leitores de tela:
+
+```tsx
+<PinInput
+  value={pin}
+  onChangeText={setPin}
+  accessibility="Código de verificação"
+  useIndexedAccessibilityLabel="Digite o código de verificação posição"
+  // As células terão labels como "Digite o código de verificação posição 1", "... posição 2", etc.
+/>
+```
+
+## Propriedades
+
+| Propriedade                    | Tipo                   | Padrão    | Descrição                                                     |
+| ------------------------------ | ---------------------- | --------- | ------------------------------------------------------------- |
+| `value`                        | string                 | ''        | Valor atual do PIN                                            |
+| `onChangeText`                 | function               | -         | Função chamada quando o valor muda (obrigatória)              |
+| `codeLength`                   | number                 | 4         | Número de células/dígitos do código                           |
+| `onFulfill`                    | function               | () => {}  | Função chamada quando o código é preenchido completamente     |
+| `password`                     | boolean                | false     | Se verdadeiro, o PIN será tratado como senha com mascaramento |
+| `mask`                         | string \| ReactElement | '•'       | Caractere ou elemento usado para mascarar a senha             |
+| `cellSize`                     | number                 | 56        | Tamanho de cada célula em pixels                              |
+| `cellSpacing`                  | number                 | 6         | Espaçamento entre as células em pixels                        |
+| `autoFocus`                    | boolean                | false     | Foca automaticamente o input ao montar o componente           |
+| `animated`                     | boolean                | false     | Habilita animações                                            |
+| `restrictToNumbers`            | boolean                | false     | Restringe a entrada apenas para números                       |
+| `caption`                      | string                 | -         | Texto de legenda abaixo do input                              |
+| `error`                        | string \| boolean      | -         | Mensagem de erro ou estado de erro                            |
+| `keyboardType`                 | KeyboardTypeOptions    | 'numeric' | Tipo de teclado a ser mostrado                                |
+| `editable`                     | boolean                | true      | Se o input pode ser editado                                   |
+| `centered`                     | boolean                | false     | Centraliza o conteúdo                                         |
+| `contrast`                     | boolean                | false     | Aplica alto contraste para melhor visibilidade                |
+| `iconSize`                     | number                 | 24        | Tamanho do ícone (para senha)                                 |
+| `borderedLabel`                | string                 | -         | Texto do label fixo acima do input                            |
+| `fixedLabelVariant`            | TypographyVariants     | 'sm'      | Variante de tipografia do label fixo                          |
+| `cellStyle`                    | StyleProp\<ViewStyle\> | -         | Estilo das células                                            |
+| `cellStyleFocused`             | StyleProp\<ViewStyle\> | -         | Estilo das células quando focadas                             |
+| `textStyle`                    | StyleProp\<TextStyle\> | -         | Estilo do texto dentro das células                            |
+| `textStyleFocused`             | StyleProp\<TextStyle\> | -         | Estilo do texto quando focado                                 |
+| `wrapperStyle`                 | StyleProp\<ViewStyle\> | -         | Estilo do wrapper em volta do input                           |
+| `useIndexedAccessibilityLabel` | string                 | -         | Label de acessibilidade para cada célula                      |
+| `useIndexedTestID`             | string                 | -         | TestID para cada célula                                       |
+
+## Exemplos
+
+### Confirmação de Transação
+
+```tsx
+import React, { useState } from 'react';
+import { View } from 'react-native';
+import {
+  PinInput,
+  Typography,
+  Button,
+} from '@platformbuilders/fluid-react-native';
+
+const TransactionConfirmation = () => {
+  const [pin, setPin] = useState('');
+  const [error, setError] = useState('');
+
+  const handleConfirm = () => {
+    if (pin.length < 6) {
+      setError('Por favor, insira o código de 6 dígitos');
+      return;
+    }
+
+    // Simulando validação
+    if (pin !== '123456') {
+      setError('Código de transação inválido');
+      return;
+    }
+
+    setError('');
+    console.log('Transação confirmada!');
+    // Prosseguir com a transação
+  };
+
+  return (
+    <View style={{ padding: 16, gap: 24 }}>
+      <Typography variant="lg">Confirmação de Transação</Typography>
+
+      <Typography variant="sm">
+        Para confirmar sua transferência de R$ 500,00, insira o código de
+        segurança enviado para seu dispositivo.
+      </Typography>
+
+      <PinInput
+        value={pin}
+        onChangeText={(text) => {
+          setPin(text);
+          setError('');
+        }}
+        codeLength={6}
+        password={true}
+        error={error}
+        caption="Código de segurança de 6 dígitos"
+        useIndexedAccessibilityLabel="Digite o código de segurança posição"
+        centered={true}
+      />
+
+      <Button
+        children="Confirmar Transação"
+        variant="filled"
+        colorVariant="primary"
+        onPress={handleConfirm}
+        disabled={pin.length < 6}
+      />
+    </View>
+  );
+};
+```
+
+### Verificação de Dois Fatores (2FA)
+
+```tsx
+import React, { useState, useEffect } from 'react';
+import { View } from 'react-native';
+import {
+  PinInput,
+  Typography,
+  Button,
+} from '@platformbuilders/fluid-react-native';
+
+const TwoFactorAuth = () => {
+  const [code, setCode] = useState('');
+  const [timeLeft, setTimeLeft] = useState(30);
+  const [isResending, setIsResending] = useState(false);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft((prevTime) => (prevTime > 0 ? prevTime - 1 : 0));
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const handleResendCode = () => {
+    setIsResending(true);
+    // Simular envio de novo código
+    setTimeout(() => {
+      setTimeLeft(30);
+      setIsResending(false);
+      setCode('');
+    }, 1500);
+  };
+
+  const handleVerify = () => {
+    // Verificar o código
+    console.log('Verificando código:', code);
+    // Processar autenticação
+  };
+
+  return (
+    <View style={{ padding: 16, gap: 24 }}>
+      <Typography variant="lg">Verificação em Duas Etapas</Typography>
+
+      <Typography variant="sm">
+        Digite o código de verificação enviado para seu dispositivo. O código
+        expira em {timeLeft} segundos.
+      </Typography>
+
+      <PinInput
+        value={code}
+        onChangeText={setCode}
+        codeLength={6}
+        restrictToNumbers={true}
+        autoFocus={true}
+        cellSize={48}
+        cellSpacing={8}
+        cellStyle={{
+          borderWidth: 1,
+          borderColor: '#dddddd',
+          borderRadius: 8,
+        }}
+        cellStyleFocused={{
+          borderColor: '#3f51b5',
+          borderWidth: 2,
+        }}
+        caption="Não compartilhe este código com ninguém"
+        onFulfill={handleVerify}
+      />
+
+      <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+        <Button
+          children="Reenviar Código"
+          variant="outlined"
+          colorVariant="primary"
+          onPress={handleResendCode}
+          disabled={timeLeft > 0 || isResending}
+        />
+
+        <Button
+          children="Verificar"
+          variant="filled"
+          colorVariant="primary"
+          onPress={handleVerify}
+          disabled={code.length < 6}
+        />
+      </View>
+    </View>
+  );
+};
+```

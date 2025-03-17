@@ -1,0 +1,440 @@
+# UploadPhoto
+
+O componente `UploadPhoto` permite aos usuários fazer upload de imagens através da galeria de fotos do dispositivo ou tirar uma foto usando a câmera. Ele fornece uma interface visual para seleção, visualização e remoção de imagens.
+
+## Importação
+
+```tsx
+import { UploadPhoto } from '@platformbuilders/fluid-react-native';
+```
+
+## Uso Básico
+
+```tsx
+import React, { useRef } from 'react';
+import { View } from 'react-native';
+import { UploadPhoto } from '@platformbuilders/fluid-react-native';
+
+const UploadPhotoExample = () => {
+  const handleUpload = (response) => {
+    console.log('Imagem selecionada:', response);
+  };
+
+  return (
+    <View style={{ padding: 16 }}>
+      <UploadPhoto
+        accessibility="Upload de foto de perfil"
+        onUpload={handleUpload}
+        uploadText="Adicionar Foto"
+      />
+    </View>
+  );
+};
+```
+
+## Com Imagem Pré-carregada
+
+```tsx
+<UploadPhoto
+  accessibility="Foto de perfil"
+  onUpload={handleUpload}
+  onClearUpload={handleClear}
+  image="https://via.placeholder.com/200"
+/>
+```
+
+## Com Ref para Controle Programático
+
+```tsx
+import React, { useRef } from 'react';
+import { View, Button } from 'react-native';
+import {
+  UploadPhoto,
+  Button as FluidButton,
+} from '@platformbuilders/fluid-react-native';
+
+const UploadPhotoRefExample = () => {
+  const photoRef = useRef(null);
+
+  const handleUpload = (response) => {
+    console.log('Imagem selecionada:', response);
+  };
+
+  const triggerPhotoSelection = () => {
+    // Abre o seletor de fotos programaticamente
+    photoRef.current?.openPicker();
+  };
+
+  const takePictureNow = async () => {
+    // Tira uma foto usando a câmera programaticamente (quando displayCamera={true})
+    const photo = await photoRef.current?.takePicture();
+    console.log('Foto tirada:', photo);
+  };
+
+  const clearImage = () => {
+    // Limpa a imagem programaticamente
+    photoRef.current?.clearUploadImage();
+  };
+
+  return (
+    <View style={{ padding: 16 }}>
+      <UploadPhoto
+        ref={photoRef}
+        accessibility="Foto controlada por referência"
+        onUpload={handleUpload}
+        displayCamera={false}
+      />
+
+      <View
+        style={{
+          marginTop: 16,
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+        }}
+      >
+        <FluidButton
+          onPress={triggerPhotoSelection}
+          accessibility="Selecionar foto"
+          variant="outlined"
+        >
+          Selecionar Foto
+        </FluidButton>
+
+        <FluidButton
+          onPress={clearImage}
+          accessibility="Limpar foto"
+          variant="outlined"
+          colorVariant="danger"
+        >
+          Limpar
+        </FluidButton>
+      </View>
+    </View>
+  );
+};
+```
+
+## Com Câmera Ativada
+
+```tsx
+<UploadPhoto
+  accessibility="Tirar foto"
+  onUpload={handleUpload}
+  displayCamera={true}
+/>
+```
+
+## Com Ícones Personalizados
+
+```tsx
+<UploadPhoto
+  accessibility="Foto com ícones personalizados"
+  onUpload={handleUpload}
+  uploadIcon="camera" // Ícone para adicionar foto
+  deleteIcon="times" // Ícone para remover foto
+  uploadIconSize={48} // Tamanho do ícone de upload
+  iconType="Feather" // Tipo de fonte de ícones (FontAwesome, Feather, etc.)
+/>
+```
+
+## Propriedades
+
+| Propriedade          | Tipo      | Padrão           | Descrição                                         |
+| -------------------- | --------- | ---------------- | ------------------------------------------------- |
+| `id`                 | string    | -                | ID para testes                                    |
+| `accessibility`      | string    | -                | Rótulo de acessibilidade (obrigatório)            |
+| `accessibilityLabel` | string    | accessibility    | Rótulo adicional para acessibilidade              |
+| `testID`             | string    | id               | ID para testes automatizados                      |
+| `image`              | string    | -                | URL ou caminho da imagem pré-carregada            |
+| `uploadText`         | string    | 'Adicionar Foto' | Texto exibido no componente sem imagem            |
+| `uploadIcon`         | string    | 'image'          | Nome do ícone para adicionar foto                 |
+| `deleteIcon`         | string    | 'trash'          | Nome do ícone para remover foto                   |
+| `uploadIconSize`     | number    | 36               | Tamanho do ícone de upload                        |
+| `imageQuality`       | number    | 0.5              | Qualidade da imagem (0 a 1)                       |
+| `onPress`            | function  | -                | Função chamada ao pressionar o componente         |
+| `onUpload`           | function  | -                | Função chamada após selecionar uma imagem         |
+| `onClearUpload`      | function  | -                | Função chamada após remover uma imagem            |
+| `displayCamera`      | boolean   | false            | Se deve exibir a câmera diretamente no componente |
+| `iconType`           | IconFonts | 'FontAwesome'    | Tipo da fonte de ícones                           |
+
+## Métodos (via Ref)
+
+| Método               | Descrição                                                   |
+| -------------------- | ----------------------------------------------------------- |
+| `openPicker()`       | Abre o seletor de fotos programaticamente                   |
+| `takePicture()`      | Tira uma foto usando a câmera (quando displayCamera={true}) |
+| `getUploadImage()`   | Retorna a imagem atualmente carregada                       |
+| `clearUploadImage()` | Limpa a imagem atualmente carregada                         |
+
+## Exemplos
+
+### Formulário de Perfil com Upload de Foto
+
+```tsx
+import React, { useRef, useState } from 'react';
+import { StyleSheet, View, ScrollView } from 'react-native';
+import {
+  UploadPhoto,
+  TextInput,
+  Button,
+  Typography,
+} from '@platformbuilders/fluid-react-native';
+
+const ProfileFormScreen = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    bio: '',
+    profileImage: null,
+  });
+  const photoRef = useRef(null);
+
+  const handleInputChange = (field, value) => {
+    setFormData({
+      ...formData,
+      [field]: value,
+    });
+  };
+
+  const handlePhotoUpload = (response) => {
+    if (response?.assets && response.assets[0]) {
+      setFormData({
+        ...formData,
+        profileImage: response.assets[0],
+      });
+    }
+  };
+
+  const handleClearPhoto = () => {
+    setFormData({
+      ...formData,
+      profileImage: null,
+    });
+  };
+
+  const handleSubmit = () => {
+    // Enviar dados do formulário para API
+    console.log('Dados do formulário:', formData);
+  };
+
+  return (
+    <ScrollView style={styles.container}>
+      <Typography variant="lg" style={styles.title}>
+        Perfil de Usuário
+      </Typography>
+
+      <View style={styles.photoContainer}>
+        <UploadPhoto
+          ref={photoRef}
+          accessibility="Foto de perfil"
+          onUpload={handlePhotoUpload}
+          onClearUpload={handleClearPhoto}
+          image={formData.profileImage?.uri || null}
+          uploadText="Adicionar Foto de Perfil"
+          uploadIcon="user"
+          uploadIconSize={48}
+        />
+      </View>
+
+      <TextInput
+        id="name"
+        label="Nome Completo"
+        value={formData.name}
+        onChangeText={(value) => handleInputChange('name', value)}
+        accessibility="Nome completo"
+        style={styles.input}
+      />
+
+      <TextInput
+        id="email"
+        label="E-mail"
+        value={formData.email}
+        onChangeText={(value) => handleInputChange('email', value)}
+        accessibility="E-mail"
+        keyboardType="email-address"
+        style={styles.input}
+      />
+
+      <TextInput
+        id="bio"
+        label="Biografia"
+        value={formData.bio}
+        onChangeText={(value) => handleInputChange('bio', value)}
+        accessibility="Biografia"
+        multiline
+        numberOfLines={4}
+        style={styles.bioInput}
+      />
+
+      <Button
+        onPress={handleSubmit}
+        accessibility="Salvar perfil"
+        style={styles.submitButton}
+      >
+        Salvar Perfil
+      </Button>
+    </ScrollView>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 16,
+    backgroundColor: '#FFFFFF',
+  },
+  title: {
+    fontWeight: 'bold',
+    marginBottom: 24,
+    textAlign: 'center',
+  },
+  photoContainer: {
+    alignItems: 'center',
+    marginBottom: 24,
+  },
+  input: {
+    marginBottom: 16,
+  },
+  bioInput: {
+    marginBottom: 24,
+    height: 100,
+    textAlignVertical: 'top',
+  },
+  submitButton: {
+    marginBottom: 24,
+  },
+});
+```
+
+### Galeria de Fotos
+
+```tsx
+import React, { useState } from 'react';
+import {
+  StyleSheet,
+  View,
+  ScrollView,
+  FlatList,
+  Dimensions,
+} from 'react-native';
+import {
+  UploadPhoto,
+  Typography,
+  Icon,
+  Touchable,
+} from '@platformbuilders/fluid-react-native';
+
+const PhotoGalleryScreen = () => {
+  const [photos, setPhotos] = useState([]);
+  const windowWidth = Dimensions.get('window').width;
+  const photoSize = (windowWidth - 48) / 2; // 2 fotos por linha com padding
+
+  const handlePhotoUpload = (response) => {
+    if (response?.assets && response.assets[0]) {
+      setPhotos([
+        ...photos,
+        {
+          id: Date.now().toString(),
+          uri: response.assets[0].uri,
+        },
+      ]);
+    }
+  };
+
+  const handleDeletePhoto = (photoId) => {
+    setPhotos(photos.filter((photo) => photo.id !== photoId));
+  };
+
+  const renderPhotoItem = ({ item }) => (
+    <View style={[styles.photoItem, { width: photoSize, height: photoSize }]}>
+      <View style={styles.photoWrapper}>
+        <UploadPhoto
+          accessibility={`Foto ${item.id}`}
+          image={item.uri}
+          onClearUpload={() => handleDeletePhoto(item.id)}
+          displayCamera={false}
+        />
+      </View>
+    </View>
+  );
+
+  return (
+    <View style={styles.container}>
+      <Typography variant="lg" style={styles.title}>
+        Minha Galeria
+      </Typography>
+
+      <View style={styles.addPhotoContainer}>
+        <UploadPhoto
+          accessibility="Adicionar nova foto"
+          onUpload={handlePhotoUpload}
+          uploadText="Adicionar Foto"
+          uploadIcon="plus"
+          uploadIconSize={32}
+        />
+      </View>
+
+      {photos.length > 0 ? (
+        <FlatList
+          data={photos}
+          renderItem={renderPhotoItem}
+          keyExtractor={(item) => item.id}
+          numColumns={2}
+          contentContainerStyle={styles.galleryContainer}
+        />
+      ) : (
+        <View style={styles.emptyState}>
+          <Icon name="image" size={64} color="#CCCCCC" />
+          <Typography style={styles.emptyText}>
+            Nenhuma foto adicionada ainda
+          </Typography>
+          <Typography variant="sm" style={styles.emptySubtext}>
+            Use o botão acima para adicionar fotos à sua galeria
+          </Typography>
+        </View>
+      )}
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 16,
+    backgroundColor: '#FFFFFF',
+  },
+  title: {
+    fontWeight: 'bold',
+    marginBottom: 16,
+  },
+  addPhotoContainer: {
+    marginBottom: 24,
+  },
+  galleryContainer: {
+    paddingBottom: 16,
+  },
+  photoItem: {
+    padding: 8,
+  },
+  photoWrapper: {
+    flex: 1,
+    borderRadius: 8,
+    overflow: 'hidden',
+  },
+  emptyState: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 32,
+  },
+  emptyText: {
+    marginTop: 16,
+    fontWeight: 'bold',
+  },
+  emptySubtext: {
+    marginTop: 8,
+    textAlign: 'center',
+    color: '#666666',
+  },
+});
+```

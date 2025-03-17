@@ -1,0 +1,441 @@
+# DatePicker
+
+O componente `DatePicker` permite a seleção de datas e horários em um formato amigável ao usuário. Ele oferece diferentes modos de exibição e configurações para se adequar a diversos casos de uso, como seleção de data de nascimento, agendamentos, reservas, entre outros.
+
+## Importação
+
+```tsx
+import { DatePicker } from '@platformbuilders/fluid-react-native';
+```
+
+## Uso Básico
+
+```tsx
+import React, { useState } from 'react';
+import { DatePicker } from '@platformbuilders/fluid-react-native';
+
+const DatePickerExample = () => {
+  const [date, setDate] = useState('');
+
+  return (
+    <DatePicker
+      accessibility="Selecionar data"
+      label="Data"
+      value={date}
+      onDateChange={setDate}
+    />
+  );
+};
+```
+
+## Modos de Exibição
+
+O componente suporta diferentes modos de exibição:
+
+```tsx
+// Seleção apenas de data (padrão)
+<DatePicker
+  accessibility="Selecionar data"
+  label="Data"
+  mode="date"
+  value={date}
+  onDateChange={setDate}
+/>
+
+// Seleção apenas de hora
+<DatePicker
+  accessibility="Selecionar hora"
+  label="Hora"
+  mode="time"
+  format="HH:mm"
+  value={time}
+  onDateChange={setTime}
+/>
+
+// Seleção de data e hora
+<DatePicker
+  accessibility="Selecionar data e hora"
+  label="Data e Hora"
+  mode="datetime"
+  format="DD/MM/YYYY HH:mm"
+  value={datetime}
+  onDateChange={setDatetime}
+/>
+```
+
+## Formatos Personalizados
+
+É possível personalizar o formato de exibição da data:
+
+```tsx
+// Formato brasileiro (dia/mês/ano)
+<DatePicker
+  accessibility="Data de nascimento"
+  label="Data de Nascimento"
+  format="DD/MM/YYYY"
+  value={birthdate}
+  onDateChange={setBirthdate}
+/>
+
+// Formato americano (mês/dia/ano)
+<DatePicker
+  accessibility="Data de registro"
+  label="Data de Registro"
+  format="MM/DD/YYYY"
+  value={registerDate}
+  onDateChange={setRegisterDate}
+/>
+
+// Formato com nome do mês
+<DatePicker
+  accessibility="Data do evento"
+  label="Data do Evento"
+  format="DD de MMMM de YYYY"
+  locale="pt-BR"
+  value={eventDate}
+  onDateChange={setEventDate}
+/>
+```
+
+## Restrições de Data
+
+É possível definir uma data máxima para seleção:
+
+```tsx
+// Não permite selecionar datas futuras
+<DatePicker
+  accessibility="Data de nascimento"
+  label="Data de Nascimento"
+  maxDate={new Date().toISOString().split('T')[0]}
+  value={birthdate}
+  onDateChange={setBirthdate}
+/>
+```
+
+## Modo Escuro
+
+O componente suporta um tema escuro:
+
+```tsx
+<DatePicker
+  accessibility="Data do evento"
+  label="Data do Evento"
+  dark={true}
+  value={eventDate}
+  onDateChange={setEventDate}
+/>
+```
+
+## Com Validação
+
+É possível exibir mensagens de erro para o DatePicker:
+
+```tsx
+import React, { useState } from 'react';
+import { DatePicker } from '@platformbuilders/fluid-react-native';
+
+const DatePickerWithValidation = () => {
+  const [date, setDate] = useState('');
+  const [error, setError] = useState('');
+
+  const handleDateChange = (newDate) => {
+    setDate(newDate);
+
+    // Validação: data não pode ser anterior a hoje
+    const selectedDate = new Date(newDate.split('/').reverse().join('-'));
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    if (selectedDate < today) {
+      setError('A data não pode ser anterior a hoje');
+    } else {
+      setError('');
+    }
+  };
+
+  return (
+    <DatePicker
+      accessibility="Data de agendamento"
+      label="Data de Agendamento"
+      value={date}
+      onDateChange={handleDateChange}
+      error={error}
+    />
+  );
+};
+```
+
+## Desabilitado
+
+É possível desabilitar o DatePicker para impedir a interação:
+
+```tsx
+<DatePicker
+  accessibility="Data de nascimento"
+  label="Data de Nascimento"
+  value={birthdate}
+  onDateChange={setBirthdate}
+  editable={false}
+/>
+```
+
+## Propriedades
+
+| Propriedade      | Tipo     | Padrão       | Descrição                                                       |
+| ---------------- | -------- | ------------ | --------------------------------------------------------------- |
+| `accessibility`  | string   | -            | Descrição de acessibilidade (obrigatória)                       |
+| `value`          | string   | ''           | Valor atual da data selecionada                                 |
+| `label`          | string   | ''           | Texto do rótulo do campo                                        |
+| `error`          | string   | ''           | Mensagem de erro a ser exibida                                  |
+| `onDateChange`   | function | () => {}     | Função chamada quando a data é alterada                         |
+| `mode`           | string   | 'date'       | Modo de seleção: 'date', 'time' ou 'datetime'                   |
+| `androidMode`    | string   | 'spinner'    | Modo de exibição no Android: 'spinner', 'calendar' ou 'default' |
+| `format`         | string   | 'DD/MM/YYYY' | Formato de exibição da data                                     |
+| `maxDate`        | string   | -            | Data máxima que pode ser selecionada (YYYY-MM-DD)               |
+| `locale`         | string   | 'pt-BR'      | Localização para formatação da data                             |
+| `dark`           | boolean  | false        | Define se deve usar o tema escuro                               |
+| `editable`       | boolean  | true         | Define se o componente pode ser editado                         |
+| `cancelBtnText`  | string   | 'Cancelar'   | Texto do botão de cancelar                                      |
+| `confirmBtnText` | string   | 'Confirmar'  | Texto do botão de confirmar                                     |
+| `testID`         | string   | -            | ID para testes automatizados                                    |
+| `id`             | string   | -            | ID do componente                                                |
+
+## Exemplos
+
+### Formulário de Agendamento
+
+```tsx
+import React, { useState } from 'react';
+import { View } from 'react-native';
+import {
+  Button,
+  DatePicker,
+  TextInput,
+  Typography,
+} from '@platformbuilders/fluid-react-native';
+
+const AppointmentForm = () => {
+  const [date, setDate] = useState('');
+  const [time, setTime] = useState('');
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+
+  const handleSubmit = () => {
+    console.log('Agendamento:', { name, phone, date, time });
+    // Enviar dados para o servidor
+  };
+
+  return (
+    <View style={{ padding: 16, gap: 16 }}>
+      <Typography variant="lg">Agendar Consulta</Typography>
+
+      <TextInput label="Nome Completo" value={name} onChangeText={setName} />
+
+      <TextInput
+        label="Telefone"
+        value={phone}
+        onChangeText={setPhone}
+        keyboardType="phone-pad"
+      />
+
+      <DatePicker
+        accessibility="Data da consulta"
+        label="Data"
+        mode="date"
+        format="DD/MM/YYYY"
+        value={date}
+        onDateChange={setDate}
+        // Não permitir agendamentos no passado
+        maxDate={new Date().toISOString().split('T')[0]}
+      />
+
+      <DatePicker
+        accessibility="Horário da consulta"
+        label="Horário"
+        mode="time"
+        format="HH:mm"
+        value={time}
+        onDateChange={setTime}
+      />
+
+      <Button
+        children="Agendar Consulta"
+        variant="filled"
+        colorVariant="primary"
+        onPress={handleSubmit}
+        disabled={!name || !phone || !date || !time}
+      />
+    </View>
+  );
+};
+```
+
+### Formulário de Cadastro
+
+```tsx
+import React, { useState } from 'react';
+import { View } from 'react-native';
+import {
+  Button,
+  DatePicker,
+  TextInput,
+  Typography,
+} from '@platformbuilders/fluid-react-native';
+
+const RegistrationForm = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [birthdate, setBirthdate] = useState('');
+  const [birthdateError, setBirthdateError] = useState('');
+
+  const validateBirthdate = (date) => {
+    const birthDate = new Date(date.split('/').reverse().join('-'));
+    const today = new Date();
+    const minAge = 18;
+
+    // Calcular idade
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+
+    if (age < minAge) {
+      setBirthdateError(`Você precisa ter pelo menos ${minAge} anos`);
+    } else {
+      setBirthdateError('');
+    }
+  };
+
+  const handleBirthdateChange = (date) => {
+    setBirthdate(date);
+    validateBirthdate(date);
+  };
+
+  const handleSubmit = () => {
+    if (!birthdateError) {
+      console.log('Cadastro:', { name, email, birthdate });
+      // Enviar dados para o servidor
+    }
+  };
+
+  return (
+    <View style={{ padding: 16, gap: 16 }}>
+      <Typography variant="lg">Cadastro</Typography>
+
+      <TextInput label="Nome Completo" value={name} onChangeText={setName} />
+
+      <TextInput
+        label="Email"
+        value={email}
+        onChangeText={setEmail}
+        keyboardType="email-address"
+        autoCapitalize="none"
+      />
+
+      <DatePicker
+        accessibility="Data de nascimento"
+        label="Data de Nascimento"
+        format="DD/MM/YYYY"
+        value={birthdate}
+        onDateChange={handleBirthdateChange}
+        error={birthdateError}
+        // Limitar datas futuras
+        maxDate={new Date().toISOString().split('T')[0]}
+      />
+
+      <Button
+        children="Cadastrar"
+        variant="filled"
+        colorVariant="primary"
+        onPress={handleSubmit}
+        disabled={!name || !email || !birthdate || !!birthdateError}
+      />
+    </View>
+  );
+};
+```
+
+### Seleção de Período
+
+```tsx
+import React, { useState } from 'react';
+import { View } from 'react-native';
+import {
+  Button,
+  DatePicker,
+  Typography,
+} from '@platformbuilders/fluid-react-native';
+
+const DateRangeSelector = () => {
+  const [startDate, setStartDate] = useState('');
+  const [endDate, setEndDate] = useState('');
+  const [endDateError, setEndDateError] = useState('');
+
+  const handleEndDateChange = (date) => {
+    setEndDate(date);
+
+    if (startDate) {
+      const start = new Date(startDate.split('/').reverse().join('-'));
+      const end = new Date(date.split('/').reverse().join('-'));
+
+      if (end < start) {
+        setEndDateError('A data final deve ser posterior à data inicial');
+      } else {
+        setEndDateError('');
+      }
+    }
+  };
+
+  const handleStartDateChange = (date) => {
+    setStartDate(date);
+
+    if (endDate) {
+      const start = new Date(date.split('/').reverse().join('-'));
+      const end = new Date(endDate.split('/').reverse().join('-'));
+
+      if (end < start) {
+        setEndDateError('A data final deve ser posterior à data inicial');
+      } else {
+        setEndDateError('');
+      }
+    }
+  };
+
+  const handleSubmit = () => {
+    console.log('Período selecionado:', { startDate, endDate });
+    // Processar a seleção de período
+  };
+
+  return (
+    <View style={{ padding: 16, gap: 16 }}>
+      <Typography variant="lg">Selecione um Período</Typography>
+
+      <DatePicker
+        accessibility="Data inicial"
+        label="De"
+        format="DD/MM/YYYY"
+        value={startDate}
+        onDateChange={handleStartDateChange}
+      />
+
+      <DatePicker
+        accessibility="Data final"
+        label="Até"
+        format="DD/MM/YYYY"
+        value={endDate}
+        onDateChange={handleEndDateChange}
+        error={endDateError}
+      />
+
+      <Button
+        children="Confirmar"
+        variant="filled"
+        colorVariant="primary"
+        onPress={handleSubmit}
+        disabled={!startDate || !endDate || !!endDateError}
+      />
+    </View>
+  );
+};
+```

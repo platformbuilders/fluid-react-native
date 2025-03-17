@@ -1,0 +1,202 @@
+# Image
+
+O componente `Image` é utilizado para exibir imagens na aplicação. Ele encapsula o componente `FastImage` para imagens remotas (URLs) e o `Image` padrão do React Native para imagens locais, adicionando recursos como placeholder durante o carregamento.
+
+## Importação
+
+```tsx
+import { Image } from '@platformbuilders/fluid-react-native';
+```
+
+## Uso Básico
+
+### Com Imagens Remotas
+
+```tsx
+<Image
+  source={{ uri: 'https://exemplo.com/imagem.jpg' }}
+  style={{ width: 200, height: 200 }}
+/>
+```
+
+### Com Imagens Locais
+
+```tsx
+<Image
+  source={require('../../assets/images/logo.png')}
+  style={{ width: 200, height: 200 }}
+/>
+```
+
+## Placeholder de Carregamento
+
+O componente exibe automaticamente um placeholder com animação de brilho durante o carregamento da imagem:
+
+```tsx
+<Image
+  source={{ uri: 'https://exemplo.com/imagem-grande.jpg' }}
+  style={{ width: 300, height: 200 }}
+  displayPlaceholder={true} // padrão é true
+/>
+```
+
+## Personalização do Placeholder
+
+É possível personalizar as cores da animação do placeholder:
+
+```tsx
+<Image
+  source={{ uri: 'https://exemplo.com/imagem.jpg' }}
+  style={{ width: 200, height: 200 }}
+  animationColor="#FF5500" // cor da animação
+  animationContainerColor="#EEEEEE" // cor de fundo do placeholder
+/>
+```
+
+## Modos de Redimensionamento
+
+```tsx
+<Image
+  source={{ uri: 'https://exemplo.com/imagem.jpg' }}
+  style={{ width: 200, height: 200 }}
+  resizeMode="cover" // 'cover', 'contain', 'stretch', 'center'
+/>
+```
+
+## Estilo do Contêiner
+
+É possível adicionar estilos ao contêiner que envolve a imagem:
+
+```tsx
+<Image
+  source={{ uri: 'https://exemplo.com/imagem.jpg' }}
+  style={{ width: 200, height: 200 }}
+  containerStyle={{
+    padding: 8,
+    backgroundColor: '#FFFFFF',
+    borderRadius: 12,
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowRadius: 10,
+    elevation: 3,
+  }}
+/>
+```
+
+## Cache de Imagens
+
+O componente utiliza `FastImage` para imagens remotas, que oferece controle sobre o cache:
+
+```tsx
+<Image
+  source={{
+    uri: 'https://exemplo.com/imagem.jpg',
+    cache: 'immutable', // 'immutable', 'web', 'cacheOnly'
+  }}
+  style={{ width: 200, height: 200 }}
+/>
+```
+
+## Propriedades
+
+| Propriedade               | Tipo                                          | Padrão | Descrição                                           |
+| ------------------------- | --------------------------------------------- | ------ | --------------------------------------------------- |
+| `source`                  | ImageSourcePropType \| string                 | -      | Fonte da imagem (URI remota ou recurso local)       |
+| `style`                   | StyleProp\<ImageStyle\>                       | -      | Estilos para a imagem                               |
+| `containerStyle`          | StyleProp\<ViewStyle\>                        | -      | Estilos para o contêiner da imagem                  |
+| `displayPlaceholder`      | boolean                                       | true   | Se deve exibir o placeholder durante o carregamento |
+| `animationColor`          | string                                        | -      | Cor da animação de brilho do placeholder            |
+| `animationContainerColor` | string                                        | -      | Cor de fundo do placeholder                         |
+| `resizeMode`              | 'cover' \| 'contain' \| 'stretch' \| 'center' | -      | Modo de redimensionamento da imagem                 |
+| `accessibility`           | string                                        | -      | Rótulo de acessibilidade                            |
+| `testID`                  | string                                        | -      | ID para testes                                      |
+| `id`                      | string                                        | -      | ID do componente                                    |
+
+## Exemplos
+
+### Imagem de Perfil com Borda
+
+```tsx
+<Image
+  source={{ uri: 'https://exemplo.com/perfil.jpg' }}
+  style={{
+    width: 120,
+    height: 120,
+    borderRadius: 60,
+  }}
+  containerStyle={{
+    borderWidth: 3,
+    borderColor: '#3366FF',
+    borderRadius: 60,
+    padding: 2,
+  }}
+/>
+```
+
+### Card de Produto com Imagem
+
+```tsx
+<View
+  style={{
+    width: 180,
+    backgroundColor: '#FFFFFF',
+    borderRadius: 8,
+    overflow: 'hidden',
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
+    elevation: 2,
+  }}
+>
+  <Image
+    source={{ uri: 'https://exemplo.com/produto.jpg' }}
+    style={{ width: 180, height: 180 }}
+    resizeMode="cover"
+  />
+
+  <View style={{ padding: 12 }}>
+    <Typography variant="md" style={{ fontWeight: 'bold' }}>
+      Nome do Produto
+    </Typography>
+
+    <Typography variant="sm" style={{ color: '#4CAF50', marginTop: 4 }}>
+      R$ 99,90
+    </Typography>
+  </View>
+</View>
+```
+
+### Galeria de Imagens
+
+```tsx
+<ScrollView horizontal showsHorizontalScrollIndicator={false}>
+  <View style={{ flexDirection: 'row', gap: 8, padding: 16 }}>
+    {imagens.map((imagem, index) => (
+      <Image
+        key={index}
+        source={{ uri: imagem.url }}
+        style={{ width: 120, height: 120, borderRadius: 8 }}
+        containerStyle={{
+          backgroundColor: '#F5F5F5',
+          borderRadius: 8,
+        }}
+      />
+    ))}
+  </View>
+</ScrollView>
+```
+
+### Imagem de Fundo
+
+```tsx
+<Image
+  source={{ uri: 'https://exemplo.com/background.jpg' }}
+  style={{
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    opacity: 0.5,
+  }}
+  resizeMode="cover"
+/>
+```

@@ -1,0 +1,139 @@
+# Guia de Acessibilidade
+
+A acessibilidade é um aspecto fundamental no desenvolvimento de aplicações móveis. O Fluid React Native foi projetado com foco em acessibilidade, garantindo que seus componentes sejam utilizáveis por pessoas com diferentes habilidades.
+
+## Princípios de Acessibilidade
+
+O Fluid segue os princípios de acessibilidade do WCAG (Web Content Accessibility Guidelines) e as melhores práticas para React Native:
+
+1. **Perceptível** - Informações e componentes da interface devem ser apresentáveis aos usuários de maneira que possam perceber.
+2. **Operável** - Os componentes de interface e navegação devem ser operáveis.
+3. **Compreensível** - A informação e a operação da interface do usuário devem ser compreensíveis.
+4. **Robusto** - O conteúdo deve ser robusto o suficiente para ser interpretado por uma ampla variedade de agentes de usuário, incluindo tecnologias assistivas.
+
+## Recursos de Acessibilidade no React Native
+
+O React Native fornece várias propriedades e APIs para melhorar a acessibilidade:
+
+- `accessible`: Indica se um elemento deve ser tratado como um elemento de acessibilidade.
+- `accessibilityLabel`: Texto que será falado para usuários com deficiência visual.
+- `accessibilityHint`: Fornece dicas adicionais quando um elemento é focado.
+- `accessibilityRole`: Define o papel do elemento para leitores de tela.
+- `accessibilityState`: Descreve o estado atual do elemento (por exemplo, desabilitado).
+
+## Componentes Acessíveis no Fluid
+
+Os componentes do Fluid já vêm configurados com propriedades de acessibilidade:
+
+```tsx
+// Botão com acessibilidade configurada
+<Button
+  title="Enviar Formulário"
+  onPress={handleSubmit}
+  // Estas props são automaticamente configuradas pelo componente Button
+  // accessible={true}
+  // accessibilityRole="button"
+  // accessibilityState={{ disabled: false }}
+/>
+```
+
+Você pode personalizar essas propriedades se necessário:
+
+```tsx
+<Button
+  title="Enviar Formulário"
+  onPress={handleSubmit}
+  accessibilityLabel="Enviar formulário de contato"
+  accessibilityHint="Toque para enviar todas as informações do formulário"
+/>
+```
+
+## Cores e Contraste
+
+Os tokens de cores do Fluid foram projetados pensando em acessibilidade, com contrastes adequados entre os elementos. Cada cor possui uma cor de contraste correspondente:
+
+```tsx
+brand: {
+  primary: {
+    main: '#1E4AE9',
+    contrast: '#FFFFFF', // Garante contraste adequado quando usado sobre primary.main
+  }
+}
+```
+
+## Tamanho de Fontes e Elementos Interativos
+
+Os componentes do Fluid seguem estas diretrizes:
+
+- Tamanhos de fonte ajustáveis que respeitam as configurações de tamanho de fonte do dispositivo
+- Áreas de toque adequadas para elementos interativos (mínimo de 44x44 pontos)
+- Espaçamento adequado entre elementos interativos para evitar toques acidentais
+
+## Testando Acessibilidade
+
+### Ferramentas de Teste
+
+Para iOS:
+
+- Voice Over: O leitor de tela integrado do iOS.
+
+Para Android:
+
+- TalkBack: O leitor de tela integrado do Android.
+
+### Checklist de Testes
+
+1. **Navegação com leitor de tela**: Verifique se é possível navegar por todos os elementos interativos usando apenas o leitor de tela.
+2. **Descrições de elementos**: Certifique-se de que todos os elementos têm descrições claras e úteis.
+3. **Feedback de interações**: Verifique se o usuário recebe feedback adequado após interações.
+4. **Contraste de cores**: Utilize ferramentas de verificação de contraste para garantir legibilidade.
+5. **Tamanho do texto**: Teste sua aplicação com diferentes tamanhos de texto.
+
+## Melhorando a Acessibilidade
+
+### Formulários
+
+Para formulários acessíveis:
+
+```tsx
+import { TextInput, Typography } from '@platformbuilders/fluid-react-native';
+
+const AccessibleInput = () => (
+  <>
+    <Typography variant="label">Nome Completo</Typography>
+    <TextInput
+      placeholder="Digite seu nome completo"
+      accessibilityLabel="Campo de entrada para nome completo"
+      accessibilityHint="Digite seu nome completo neste campo"
+      returnKeyType="next"
+    />
+  </>
+);
+```
+
+### Imagens
+
+Para imagens acessíveis:
+
+```tsx
+import { Image } from '@platformbuilders/fluid-react-native';
+
+<Image
+  source={require('./logo.png')}
+  accessibilityLabel="Logo da empresa XYZ"
+  // Ignora a imagem se for puramente decorativa
+  // accessibilityIgnoresInvertColors={true}
+/>;
+```
+
+## Boas Práticas
+
+1. **Forneça alternativas textuais** para conteúdo não textual.
+2. **Não confie apenas na cor** para transmitir informações.
+3. **Torne o conteúdo navegável** de várias formas.
+4. **Forneça tempo suficiente** para interações do usuário.
+5. **Torne o texto legível e compreensível**.
+6. **Faça elementos focáveis** claramente visíveis quando em foco.
+7. **Teste com tecnologias assistivas reais** e com usuários reais, se possível.
+
+Seguindo essas diretrizes, você pode garantir que sua aplicação React Native seja acessível para o maior número possível de usuários.

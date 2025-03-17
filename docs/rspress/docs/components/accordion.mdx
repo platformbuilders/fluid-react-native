@@ -1,0 +1,443 @@
+# Accordion
+
+O componente `Accordion` permite criar seções de conteúdo retráteis, economizando espaço na tela e organizando informações de forma hierárquica. É bastante útil para FAQs, menus, listas de configurações e qualquer interface que precise dividir o conteúdo em seções expansíveis.
+
+## Importação
+
+```tsx
+import { Accordion } from '@platformbuilders/fluid-react-native';
+```
+
+## Uso Básico
+
+```tsx
+import React from 'react';
+import { Accordion } from '@platformbuilders/fluid-react-native';
+
+const AccordionExample = () => {
+  const data = [
+    {
+      title: 'O que é o Fluid React Native?',
+      content:
+        'O Fluid React Native é uma biblioteca de componentes UI que implementa o Design System Fluid para aplicações mobile.',
+    },
+    {
+      title: 'Como instalar?',
+      content:
+        'Você pode instalar via npm ou yarn com o comando: yarn add @platformbuilders/fluid-react-native',
+    },
+  ];
+
+  return <Accordion data={data} />;
+};
+```
+
+## Com Ícones
+
+É possível adicionar ícones para indicar visualmente o estado do accordion (expandido/retraído):
+
+```tsx
+<Accordion
+  data={data}
+  hasIcon={true}
+  iconUpName="chevron-up" // ícone quando expandido
+  iconDownName="chevron-down" // ícone quando retraído
+  activeIconColor="#3366FF" // cor do ícone quando expandido
+  inactiveIconColor="#999999" // cor do ícone quando retraído
+/>
+```
+
+## Com Markdown
+
+O componente suporta renderização de conteúdo em formato Markdown:
+
+```tsx
+const markdownData = [
+  {
+    title: 'Markdown Suportado',
+    content:
+      '**Texto em negrito**, *texto em itálico*, [link](https://exemplo.com)',
+  },
+  {
+    title: 'Listas',
+    content: '- Item 1\n- Item 2\n- Item 3',
+  },
+];
+
+<Accordion data={markdownData} isMarkdown={true} />;
+```
+
+## Componentes de Estilo Personalizado
+
+É possível personalizar completamente a aparência do Accordion usando componentes personalizados:
+
+```tsx
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { Accordion, Typography } from '@platformbuilders/fluid-react-native';
+
+const CustomTitle = ({ children, isActive }) => (
+  <Typography
+    variant="md"
+    style={[styles.title, isActive && styles.activeTitle]}
+  >
+    {children}
+  </Typography>
+);
+
+const CustomBody = ({ children }) => (
+  <Typography variant="sm" style={styles.body}>
+    {children}
+  </Typography>
+);
+
+const CustomHeader = ({ children, isActive }) => (
+  <View style={[styles.header, isActive && styles.activeHeader]}>
+    {children}
+  </View>
+);
+
+const CustomContent = ({ children }) => (
+  <View style={styles.content}>{children}</View>
+);
+
+const styles = StyleSheet.create({
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 16,
+    backgroundColor: '#f5f5f5',
+    borderRadius: 8,
+  },
+  activeHeader: {
+    backgroundColor: '#e6f0ff',
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+  },
+  title: {
+    fontWeight: 'bold',
+  },
+  activeTitle: {
+    color: '#3366FF',
+  },
+  content: {
+    padding: 16,
+    backgroundColor: '#f9f9f9',
+    borderBottomLeftRadius: 8,
+    borderBottomRightRadius: 8,
+    marginBottom: 8,
+  },
+  body: {
+    color: '#666666',
+  },
+});
+
+const CustomAccordionExample = () => {
+  const data = [
+    {
+      title: 'Seção 1',
+      content: 'Conteúdo da seção 1',
+    },
+    {
+      title: 'Seção 2',
+      content: 'Conteúdo da seção 2',
+    },
+  ];
+
+  return (
+    <Accordion
+      data={data}
+      StyledTitle={CustomTitle}
+      StyledBody={CustomBody}
+      StyledHeader={CustomHeader}
+      StyledContent={CustomContent}
+      hasIcon={true}
+      activeIconColor="#3366FF"
+      inactiveIconColor="#999999"
+    />
+  );
+};
+```
+
+## Capturando Mudanças
+
+É possível capturar quando um item é expandido ou retraído:
+
+```tsx
+<Accordion
+  data={data}
+  onChange={(title) => console.log(`Item "${title}" foi alterado`)}
+/>
+```
+
+## Propriedades
+
+| Propriedade         | Tipo            | Padrão         | Descrição                                                            |
+| ------------------- | --------------- | -------------- | -------------------------------------------------------------------- |
+| `data`              | AccordionType[] | -              | Array de objetos com título e conteúdo para cada seção (obrigatório) |
+| `StyledTitle`       | Component       | Text           | Componente personalizado para renderizar o título                    |
+| `StyledBody`        | Component       | Text           | Componente personalizado para renderizar o corpo                     |
+| `StyledHeader`      | Component       | View           | Componente personalizado para renderizar o cabeçalho                 |
+| `StyledContent`     | Component       | View           | Componente personalizado para renderizar o contêiner do conteúdo     |
+| `hasIcon`           | boolean         | false          | Define se os ícones de indicação serão exibidos                      |
+| `iconUpName`        | string          | 'chevron-up'   | Nome do ícone quando a seção está expandida                          |
+| `iconDownName`      | string          | 'chevron-down' | Nome do ícone quando a seção está retraída                           |
+| `activeIconColor`   | string          | -              | Cor do ícone quando a seção está expandida                           |
+| `inactiveIconColor` | string          | -              | Cor do ícone quando a seção está retraída                            |
+| `isMarkdown`        | boolean         | false          | Define se o conteúdo será renderizado como Markdown                  |
+| `onChange`          | function        | -              | Função chamada quando uma seção é expandida ou retraída              |
+
+## Tipo de Dados
+
+```tsx
+type AccordionType = {
+  title: string; // Título da seção
+  content: string; // Conteúdo da seção
+};
+```
+
+## Exemplos
+
+### FAQ (Perguntas Frequentes)
+
+```tsx
+import React from 'react';
+import { ScrollView, StyleSheet, View } from 'react-native';
+import { Accordion, Typography } from '@platformbuilders/fluid-react-native';
+
+const FAQScreen = () => {
+  const faqData = [
+    {
+      title: 'Como redefinir minha senha?',
+      content:
+        'Para redefinir sua senha, acesse a tela de login e clique em "Esqueci minha senha". Você receberá um email com instruções para criar uma nova senha.',
+    },
+    {
+      title: 'Como entrar em contato com o suporte?',
+      content:
+        'Você pode entrar em contato com o suporte através do email suporte@empresa.com ou pelo telefone (11) 1234-5678, de segunda a sexta, das 9h às 18h.',
+    },
+    {
+      title: 'Quais métodos de pagamento são aceitos?',
+      content:
+        'Aceitamos cartões de crédito (Visa, Mastercard, American Express), boleto bancário e PIX.',
+    },
+    {
+      title: 'Em quanto tempo receberei meu pedido?',
+      content:
+        'O prazo de entrega varia de acordo com sua localização. Após a confirmação do pagamento, o prazo médio é de 3 a 5 dias úteis para capitais e 5 a 10 dias úteis para demais localidades.',
+    },
+    {
+      title: 'Como cancelar um pedido?',
+      content:
+        'Para cancelar um pedido, acesse "Meus Pedidos" em seu perfil e selecione a opção de cancelamento. Pedidos só podem ser cancelados antes do status "Em separação".',
+    },
+  ];
+
+  return (
+    <ScrollView style={styles.container}>
+      <Typography variant="lg" style={styles.title}>
+        Perguntas Frequentes
+      </Typography>
+
+      <Typography variant="sm" style={styles.subtitle}>
+        Encontre respostas para as dúvidas mais comuns
+      </Typography>
+
+      <View style={styles.accordionContainer}>
+        <Accordion
+          data={faqData}
+          hasIcon={true}
+          activeIconColor="#3366FF"
+          inactiveIconColor="#999999"
+        />
+      </View>
+    </ScrollView>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 16,
+  },
+  title: {
+    fontWeight: 'bold',
+    marginBottom: 8,
+  },
+  subtitle: {
+    color: '#666666',
+    marginBottom: 24,
+  },
+  accordionContainer: {
+    marginBottom: 24,
+  },
+});
+```
+
+### Menu de Configurações
+
+```tsx
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import {
+  Accordion,
+  Typography,
+  Toggle,
+  Button,
+} from '@platformbuilders/fluid-react-native';
+
+const SettingsScreen = () => {
+  const [notificationsEnabled, setNotificationsEnabled] = React.useState(true);
+  const [darkModeEnabled, setDarkModeEnabled] = React.useState(false);
+  const [locationEnabled, setLocationEnabled] = React.useState(true);
+
+  // Conteúdo personalizado com componentes interativos
+  const renderNotificationsContent = () => (
+    <View style={styles.settingContent}>
+      <View style={styles.settingRow}>
+        <Typography variant="sm">Push Notifications</Typography>
+        <Toggle
+          value={notificationsEnabled}
+          onValueChange={setNotificationsEnabled}
+          accessibility="Ativar notificações push"
+        />
+      </View>
+    </View>
+  );
+
+  const renderAppearanceContent = () => (
+    <View style={styles.settingContent}>
+      <View style={styles.settingRow}>
+        <Typography variant="sm">Modo Escuro</Typography>
+        <Toggle
+          value={darkModeEnabled}
+          onValueChange={setDarkModeEnabled}
+          accessibility="Ativar modo escuro"
+        />
+      </View>
+    </View>
+  );
+
+  const renderPrivacyContent = () => (
+    <View style={styles.settingContent}>
+      <View style={styles.settingRow}>
+        <Typography variant="sm">Compartilhar Localização</Typography>
+        <Toggle
+          value={locationEnabled}
+          onValueChange={setLocationEnabled}
+          accessibility="Compartilhar localização"
+        />
+      </View>
+      <View style={styles.buttonContainer}>
+        <Button
+          children="Limpar Dados de Navegação"
+          variant="outlined"
+          colorVariant="danger"
+          onPress={() => console.log('Limpar dados')}
+        />
+      </View>
+    </View>
+  );
+
+  // Componentes personalizados
+  const CustomHeader = ({ children, isActive }) => (
+    <View style={[styles.header, isActive && styles.activeHeader]}>
+      {children}
+    </View>
+  );
+
+  const CustomTitle = ({ children }) => (
+    <Typography variant="md" style={styles.title}>
+      {children}
+    </Typography>
+  );
+
+  const CustomContent = ({ children }) => (
+    <View style={styles.content}>{children}</View>
+  );
+
+  // Dados configurados para usar renderizadores personalizados
+  const settingsData = [
+    {
+      title: 'Notificações',
+      content: renderNotificationsContent(),
+    },
+    {
+      title: 'Aparência',
+      content: renderAppearanceContent(),
+    },
+    {
+      title: 'Privacidade',
+      content: renderPrivacyContent(),
+    },
+  ];
+
+  return (
+    <View style={styles.container}>
+      <Typography variant="lg" style={styles.screenTitle}>
+        Configurações
+      </Typography>
+
+      <Accordion
+        data={settingsData}
+        StyledHeader={CustomHeader}
+        StyledTitle={CustomTitle}
+        StyledContent={CustomContent}
+        hasIcon={true}
+        iconUpName="chevron-up"
+        iconDownName="chevron-down"
+        activeIconColor="#3366FF"
+        inactiveIconColor="#999999"
+      />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 16,
+  },
+  screenTitle: {
+    fontWeight: 'bold',
+    marginBottom: 24,
+  },
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 16,
+    backgroundColor: '#f5f5f5',
+    borderRadius: 8,
+    marginBottom: 1,
+  },
+  activeHeader: {
+    backgroundColor: '#e6f0ff',
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+  },
+  title: {
+    fontWeight: 'bold',
+  },
+  content: {
+    backgroundColor: '#f9f9f9',
+    borderBottomLeftRadius: 8,
+    borderBottomRightRadius: 8,
+    marginBottom: 16,
+  },
+  settingContent: {
+    padding: 16,
+  },
+  settingRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 16,
+  },
+  buttonContainer: {
+    marginTop: 16,
+  },
+});
+```

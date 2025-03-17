@@ -1,0 +1,238 @@
+# Badge
+
+O componente `Badge` é utilizado para exibir etiquetas, indicadores de status ou contadores. É frequentemente usado para destacar informações importantes como notificações, status ou tags.
+
+## Importação
+
+```tsx
+import { Badge } from '@platformbuilders/fluid-react-native';
+```
+
+## Uso Básico
+
+```tsx
+<Badge>Novo</Badge>
+```
+
+## Variantes de Cor
+
+O Badge suporta diferentes variantes de cor para representar diferentes significados:
+
+```tsx
+<Badge variant="primary">Primário</Badge>
+<Badge variant="secondary">Secundário</Badge>
+<Badge variant="success">Sucesso</Badge>
+<Badge variant="danger">Erro</Badge>
+<Badge variant="warning">Aviso</Badge>
+<Badge variant="info">Informação</Badge>
+```
+
+## Com Ícones
+
+Você pode adicionar ícones à esquerda ou à direita do texto:
+
+```tsx
+<Badge leftIconName="star">Favorito</Badge>
+<Badge rightIconName="arrow-right">Ver mais</Badge>
+<Badge leftIconName="check" rightIconName="arrow-right">
+  Concluído
+</Badge>
+```
+
+## Com Bordas
+
+```tsx
+<Badge hasBorder>Com borda</Badge>
+```
+
+## Estado de Carregamento
+
+```tsx
+<Badge loading>Carregando</Badge>
+```
+
+## Estado Desabilitado
+
+```tsx
+<Badge disabled>Desabilitado</Badge>
+```
+
+## Estilo Flat
+
+```tsx
+<Badge flat>Estilo flat</Badge>
+```
+
+## Badge com Emoji
+
+```tsx
+<Badge leftIconName="👍" isEmoji>
+  Gostei
+</Badge>
+```
+
+## Badge Clicável
+
+O Badge pode ser clicável, comportando-se como um botão compacto:
+
+```tsx
+<Badge onPress={() => console.log('Badge clicado')}>Clique aqui</Badge>
+```
+
+## Propriedades
+
+| Propriedade          | Tipo                   | Padrão    | Descrição                                                                        |
+| -------------------- | ---------------------- | --------- | -------------------------------------------------------------------------------- |
+| `children`           | React.ReactNode        | -         | Conteúdo do badge (geralmente texto)                                             |
+| `variant`            | string                 | 'primary' | Variante de cor ('primary', 'secondary', 'success', 'danger', 'warning', 'info') |
+| `hasBorder`          | boolean                | false     | Se deve exibir borda                                                             |
+| `typographyVariant`  | string                 | 'md'      | Variante tipográfica do texto                                                    |
+| `leftIconName`       | string                 | -         | Nome do ícone à esquerda                                                         |
+| `rightIconName`      | string                 | -         | Nome do ícone à direita                                                          |
+| `isEmoji`            | boolean                | false     | Se o ícone é um emoji                                                            |
+| `iconTouchable`      | boolean                | false     | Se o ícone deve ser clicável                                                     |
+| `disabled`           | boolean                | false     | Se o badge está desabilitado                                                     |
+| `loading`            | boolean                | false     | Se o badge está em estado de carregamento                                        |
+| `flat`               | boolean                | false     | Se o badge deve ter aparência flat (sem elevação)                                |
+| `contrast`           | boolean                | false     | Se deve usar cores de contraste                                                  |
+| `onPress`            | function               | -         | Função chamada quando o badge é pressionado                                      |
+| `style`              | StyleProp\<ViewStyle\> | [{}]      | Estilo adicional para o badge                                                    |
+| `textStyle`          | StyleProp\<TextStyle\> | [{}]      | Estilo adicional para o texto                                                    |
+| `iconStyle`          | StyleProp\<ViewStyle\> | [{}]      | Estilo adicional para os ícones                                                  |
+| `accessibility`      | string                 | -         | Rótulo de acessibilidade                                                         |
+| `accessibilityLabel` | string                 | -         | Rótulo de acessibilidade alternativo                                             |
+| `testID`             | string                 | -         | ID para testes                                                                   |
+| `id`                 | string                 | -         | ID do componente                                                                 |
+
+## Exemplos
+
+### Contador de Notificações
+
+```tsx
+import React from 'react';
+import { View } from 'react-native';
+import { Badge, Icon } from '@platformbuilders/fluid-react-native';
+
+const NotificationIcon = () => {
+  return (
+    <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+      <Icon name="bell" size={24} />
+      <Badge
+        variant="danger"
+        style={{
+          marginLeft: -10,
+          marginTop: -10,
+          borderRadius: 10,
+          minWidth: 20,
+          height: 20,
+        }}
+        textStyle={{ fontSize: 10 }}
+      >
+        5
+      </Badge>
+    </View>
+  );
+};
+```
+
+### Tags de Categorias
+
+```tsx
+import React from 'react';
+import { View } from 'react-native';
+import { Badge } from '@platformbuilders/fluid-react-native';
+
+const Categories = () => {
+  return (
+    <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
+      <Badge variant="primary" hasBorder leftIconName="tag">
+        Tecnologia
+      </Badge>
+
+      <Badge variant="secondary" hasBorder leftIconName="tag">
+        Negócios
+      </Badge>
+
+      <Badge variant="info" hasBorder leftIconName="tag">
+        Design
+      </Badge>
+    </View>
+  );
+};
+```
+
+### Indicadores de Status
+
+```tsx
+import React from 'react';
+import { View } from 'react-native';
+import { Badge, Typography } from '@platformbuilders/fluid-react-native';
+
+const OrderStatus = () => {
+  return (
+    <View>
+      <Typography variant="lg">Status do Pedido</Typography>
+
+      <View style={{ marginTop: 8 }}>
+        <Badge variant="success" leftIconName="check-circle">
+          Aprovado
+        </Badge>
+      </View>
+
+      <View style={{ marginTop: 8 }}>
+        <Badge variant="warning" leftIconName="clock">
+          Em processamento
+        </Badge>
+      </View>
+
+      <View style={{ marginTop: 8 }}>
+        <Badge variant="danger" leftIconName="times-circle">
+          Cancelado
+        </Badge>
+      </View>
+    </View>
+  );
+};
+```
+
+### Badges Clicáveis
+
+```tsx
+import React from 'react';
+import { View } from 'react-native';
+import { Badge } from '@platformbuilders/fluid-react-native';
+
+const FilterTags = () => {
+  const [selected, setSelected] = React.useState('todos');
+
+  return (
+    <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
+      <Badge
+        variant={selected === 'todos' ? 'primary' : 'secondary'}
+        onPress={() => setSelected('todos')}
+        hasBorder={selected === 'todos'}
+      >
+        Todos
+      </Badge>
+
+      <Badge
+        variant={selected === 'favoritos' ? 'primary' : 'secondary'}
+        onPress={() => setSelected('favoritos')}
+        hasBorder={selected === 'favoritos'}
+        leftIconName="star"
+      >
+        Favoritos
+      </Badge>
+
+      <Badge
+        variant={selected === 'recentes' ? 'primary' : 'secondary'}
+        onPress={() => setSelected('recentes')}
+        hasBorder={selected === 'recentes'}
+        leftIconName="clock"
+      >
+        Recentes
+      </Badge>
+    </View>
+  );
+};
+```

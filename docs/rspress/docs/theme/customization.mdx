@@ -1,0 +1,237 @@
+# Customização do Tema
+
+O Fluid React Native foi projetado para ser facilmente customizável através do seu sistema de temas. Esta página explica como personalizar o tema para atender às necessidades do seu projeto.
+
+## Estendendo o Tema
+
+A maneira mais comum de personalizar o tema é estendendo o tema padrão:
+
+```tsx
+import { ThemeProvider } from 'styled-components/native';
+import { theme as fluidTheme } from '@platformbuilders/fluid-react-native';
+
+// Tema personalizado
+const customTheme = {
+  ...fluidTheme,
+  // Sobrescreva as propriedades que deseja personalizar
+};
+
+const App = () => (
+  <ThemeProvider theme={customTheme}>{/* Sua aplicação aqui */}</ThemeProvider>
+);
+```
+
+## Personalizando Cores
+
+A personalização mais comum é adaptar as cores para corresponder à sua marca:
+
+```tsx
+const customTheme = {
+  ...fluidTheme,
+  brand: {
+    ...fluidTheme.brand,
+    primary: {
+      main: '#0066CC', // Cor principal da sua marca
+      light: '#4D94DB', // Versão mais clara
+      dark: '#004C99', // Versão mais escura
+      contrast: '#FFFFFF', // Cor de texto sobre o fundo principal
+    },
+    secondary: {
+      main: '#FF6B00',
+      light: '#FFB380',
+      dark: '#CC5500',
+      contrast: '#FFFFFF',
+    },
+  },
+};
+```
+
+## Personalizando Tipografia
+
+Customize fontes, tamanhos e variantes tipográficas:
+
+```tsx
+const customTheme = {
+  ...fluidTheme,
+  typography: {
+    ...fluidTheme.typography,
+    fontFamily: {
+      regular: 'Montserrat-Regular',
+      medium: 'Montserrat-Medium',
+      bold: 'Montserrat-Bold',
+    },
+    fontSize: {
+      ...fluidTheme.typography.fontSize,
+      md: '18px', // Maior tamanho de fonte base
+    },
+    variants: {
+      ...fluidTheme.typography.variants,
+      h1: {
+        fontFamily: 'Montserrat-Bold',
+        fontSize: '36px',
+        lineHeight: '44px',
+      },
+    },
+  },
+};
+```
+
+## Personalizando Espaçamento
+
+Adapte o sistema de espaçamento:
+
+```tsx
+const customTheme = {
+  ...fluidTheme,
+  spacing: {
+    ...fluidTheme.spacing,
+    md: '20px', // Médio espaçamento maior
+    lg: '32px', // Grande espaçamento maior
+  },
+};
+```
+
+## Personalizando Bordas
+
+Customize os raios de borda:
+
+```tsx
+const customTheme = {
+  ...fluidTheme,
+  borderRadius: {
+    ...fluidTheme.borderRadius,
+    md: '12px', // Bordas mais arredondadas
+    lg: '20px',
+  },
+};
+```
+
+## Personalizando Sombras
+
+Adapte as sombras e elevações:
+
+```tsx
+const customTheme = {
+  ...fluidTheme,
+  shadow: {
+    ...fluidTheme.shadow,
+    md: '0px 6px 10px rgba(0, 0, 0, 0.15)', // Sombras mais pronunciadas
+    lg: '0px 12px 20px rgba(0, 0, 0, 0.2)',
+  },
+};
+```
+
+## Temas de Marca Completos
+
+Para projetos maiores, você pode criar um tema de marca completo:
+
+```tsx
+import { formatTheme } from '@platformbuilders/theme-toolkit';
+
+// Definição de cores e tokens básicos
+const brandTokens = {
+  colors: {
+    brand: {
+      primary: {
+        main: '#0066CC',
+        light: '#4D94DB',
+        dark: '#004C99',
+        contrast: '#FFFFFF',
+      },
+      secondary: {
+        main: '#FF6B00',
+        light: '#FFB380',
+        dark: '#CC5500',
+        contrast: '#FFFFFF',
+      },
+    },
+    // Outros tokens de cor...
+  },
+  typography: {
+    fontFamily: {
+      regular: 'Montserrat-Regular',
+      medium: 'Montserrat-Medium',
+      bold: 'Montserrat-Bold',
+    },
+    // Outros tokens de tipografia...
+  },
+  // Outros grupos de tokens...
+};
+
+// Use formatTheme para processar os tokens
+const brandTheme = formatTheme(brandTokens);
+
+// Exporte o tema completo
+export const theme = {
+  ...brandTheme,
+  // Adicione qualquer personalização adicional
+};
+```
+
+## Temas Condicionais
+
+Você pode criar lógica para alternar entre diferentes temas baseados em condições:
+
+```tsx
+import React, { useState, useEffect } from 'react';
+import { useColorScheme } from 'react-native';
+import { ThemeProvider } from 'styled-components/native';
+import { lightTheme, darkTheme } from '@platformbuilders/fluid-react-native';
+
+// Temas personalizados
+const customLightTheme = { ...lightTheme /* personalizações */ };
+const customDarkTheme = { ...darkTheme /* personalizações */ };
+
+const App = () => {
+  // Detecta o modo de cor do sistema
+  const colorScheme = useColorScheme();
+  const [theme, setTheme] = useState(
+    colorScheme === 'dark' ? customDarkTheme : customLightTheme,
+  );
+
+  // Atualiza o tema quando o modo de cor do sistema muda
+  useEffect(() => {
+    setTheme(colorScheme === 'dark' ? customDarkTheme : customLightTheme);
+  }, [colorScheme]);
+
+  // Função para alternar tema manualmente
+  const toggleTheme = () => {
+    setTheme(theme === customLightTheme ? customDarkTheme : customLightTheme);
+  };
+
+  return (
+    <ThemeProvider theme={theme}>{/* Sua aplicação aqui */}</ThemeProvider>
+  );
+};
+```
+
+## Componentes Específicos
+
+Você também pode personalizar a aparência de componentes específicos sem modificar o tema global:
+
+```tsx
+import { Button, Typography } from '@platformbuilders/fluid-react-native';
+import styled from 'styled-components/native';
+
+// Botão personalizado que estende o componente Button
+const SuperButton = styled(Button)`
+  border-radius: 30px;
+  padding: 12px 24px;
+`;
+
+// Uso do componente personalizado
+<SuperButton
+  title="Botão Especial"
+  variant="filled"
+  colorVariant="primary"
+  onPress={() => {}}
+/>;
+```
+
+## Práticas Recomendadas
+
+1. **Modifique apenas o necessário** - Estenda o tema base e sobrescreva apenas o que precisa mudar
+2. **Mantenha a consistência** - Siga o mesmo padrão de nomeação para manter a consistência
+3. **Use os tokens existentes** - Utilize os tokens existentes sempre que possível antes de criar novos
+4. **Documente suas personalizações** - Documente alterações de tema para referência futura
+5. **Teste em múltiplos dispositivos** - Certifique-se que suas personalizações funcionam bem em diferentes tamanhos de tela e densidades de pixel

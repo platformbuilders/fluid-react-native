@@ -1,0 +1,343 @@
+# FormError
+
+O componente `FormError` é utilizado para exibir mensagens de erro em formulários de maneira padronizada e acessível. Este componente simplifica a apresentação de feedbacks de validação e outros erros associados a campos de formulário.
+
+## Importação
+
+```tsx
+import { FormError } from '@platformbuilders/fluid-react-native';
+```
+
+## Uso Básico
+
+```tsx
+<FormError error="Este campo é obrigatório" />
+```
+
+## Com Conteúdo Filho
+
+O componente pode envolver outros elementos, exibindo a mensagem de erro abaixo deles:
+
+```tsx
+import React, { useState } from 'react';
+import { FormError, TextInput } from '@platformbuilders/fluid-react-native';
+
+const ExampleForm = () => {
+  const [name, setName] = useState('');
+  const [error, setError] = useState('');
+
+  const validateName = (value) => {
+    if (!value) {
+      setError('Este campo é obrigatório');
+    } else if (value.length < 3) {
+      setError('O nome deve ter pelo menos 3 caracteres');
+    } else {
+      setError('');
+    }
+  };
+
+  return (
+    <FormError error={error}>
+      <TextInput
+        label="Nome"
+        value={name}
+        onChangeText={(text) => {
+          setName(text);
+          validateName(text);
+        }}
+        onBlur={() => validateName(name)}
+      />
+    </FormError>
+  );
+};
+```
+
+## Texto Centralizado
+
+Você pode centralizar a mensagem de erro:
+
+```tsx
+<FormError error="Erro centralizado" centered />
+```
+
+## Tamanho da Fonte
+
+O componente suporta duas variações de tamanho de fonte:
+
+```tsx
+<FormError error="Erro com fonte normal" />
+<FormError error="Erro com fonte maior" large />
+```
+
+## Estilo Personalizado
+
+É possível personalizar o estilo do texto de erro:
+
+```tsx
+<FormError
+  error="Erro com estilo personalizado"
+  style={{
+    fontStyle: 'italic',
+    textDecorationLine: 'underline',
+  }}
+/>
+```
+
+## Acessibilidade
+
+O componente FormError implementa recursos de acessibilidade automaticamente:
+
+```tsx
+<FormError
+  error="Email inválido"
+  accessibility="Campo de email"
+  // O componente automaticamente configura:
+  // - accessibilityLabel="Erro Campo de email" ou "Erro Email inválido"
+/>
+```
+
+## Propriedades
+
+| Propriedade     | Tipo                          | Padrão       | Descrição                                             |
+| --------------- | ----------------------------- | ------------ | ----------------------------------------------------- |
+| `error`         | string \| string[] \| boolean | ''           | Mensagem de erro a ser exibida                        |
+| `centered`      | boolean                       | false        | Define se o texto será centralizado                   |
+| `large`         | boolean                       | false        | Define se o texto terá um tamanho maior               |
+| `accessibility` | string                        | -            | Texto de acessibilidade para leitores de tela         |
+| `id`            | string                        | 'form_error' | ID do componente                                      |
+| `style`         | StyleProp\<TextStyle\>        | -            | Estilos adicionais para o texto de erro               |
+| `children`      | ReactNode                     | -            | Elementos filhos que serão renderizados acima do erro |
+
+## Exemplos
+
+### Validação de Formulário Completo
+
+```tsx
+import React, { useState } from 'react';
+import { View } from 'react-native';
+import {
+  Button,
+  FormError,
+  TextInput,
+  Typography,
+} from '@platformbuilders/fluid-react-native';
+
+const RegistrationForm = () => {
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    password: '',
+    confirmPassword: '',
+  });
+
+  const [errors, setErrors] = useState({
+    name: '',
+    email: '',
+    password: '',
+    confirmPassword: '',
+    form: '',
+  });
+
+  const updateForm = (field, value) => {
+    setForm({ ...form, [field]: value });
+    // Limpar erro do campo ao digitar
+    if (errors[field]) {
+      setErrors({ ...errors, [field]: '' });
+    }
+    // Limpar erro geral do formulário
+    if (errors.form) {
+      setErrors({ ...errors, form: '' });
+    }
+  };
+
+  const validateForm = () => {
+    let isValid = true;
+    const newErrors = { ...errors };
+
+    // Validar nome
+    if (!form.name.trim()) {
+      newErrors.name = 'Nome é obrigatório';
+      isValid = false;
+    } else if (form.name.length < 3) {
+      newErrors.name = 'Nome deve ter pelo menos 3 caracteres';
+      isValid = false;
+    } else {
+      newErrors.name = '';
+    }
+
+    // Validar email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!form.email.trim()) {
+      newErrors.email = 'Email é obrigatório';
+      isValid = false;
+    } else if (!emailRegex.test(form.email)) {
+      newErrors.email = 'Email inválido';
+      isValid = false;
+    } else {
+      newErrors.email = '';
+    }
+
+    // Validar senha
+    if (!form.password) {
+      newErrors.password = 'Senha é obrigatória';
+      isValid = false;
+    } else if (form.password.length < 6) {
+      newErrors.password = 'Senha deve ter pelo menos 6 caracteres';
+      isValid = false;
+    } else {
+      newErrors.password = '';
+    }
+
+    // Validar confirmação de senha
+    if (form.password !== form.confirmPassword) {
+      newErrors.confirmPassword = 'As senhas não coincidem';
+      isValid = false;
+    } else {
+      newErrors.confirmPassword = '';
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
+
+  const handleSubmit = () => {
+    if (validateForm()) {
+      console.log('Formulário válido:', form);
+      // Enviar dados para o servidor
+    } else {
+      setErrors({
+        ...errors,
+        form: 'Por favor, corrija os erros acima antes de continuar',
+      });
+    }
+  };
+
+  return (
+    <View style={{ padding: 16, gap: 16 }}>
+      <Typography variant="lg">Cadastro</Typography>
+
+      <FormError error={errors.form} centered large />
+
+      <FormError error={errors.name}>
+        <TextInput
+          label="Nome"
+          value={form.name}
+          onChangeText={(text) => updateForm('name', text)}
+        />
+      </FormError>
+
+      <FormError error={errors.email}>
+        <TextInput
+          label="Email"
+          value={form.email}
+          onChangeText={(text) => updateForm('email', text)}
+          keyboardType="email-address"
+          autoCapitalize="none"
+        />
+      </FormError>
+
+      <FormError error={errors.password}>
+        <TextInput
+          label="Senha"
+          value={form.password}
+          onChangeText={(text) => updateForm('password', text)}
+          secureTextEntry
+        />
+      </FormError>
+
+      <FormError error={errors.confirmPassword}>
+        <TextInput
+          label="Confirmar Senha"
+          value={form.confirmPassword}
+          onChangeText={(text) => updateForm('confirmPassword', text)}
+          secureTextEntry
+        />
+      </FormError>
+
+      <Button
+        children="Cadastrar"
+        variant="filled"
+        colorVariant="primary"
+        onPress={handleSubmit}
+      />
+    </View>
+  );
+};
+```
+
+### Erro após Submissão
+
+```tsx
+import React, { useState } from 'react';
+import { View } from 'react-native';
+import {
+  Button,
+  FormError,
+  TextInput,
+  Typography,
+} from '@platformbuilders/fluid-react-native';
+
+const LoginForm = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+  const [loginError, setLoginError] = useState('');
+
+  const handleLogin = () => {
+    setSubmitted(true);
+
+    if (!email || !password) {
+      setLoginError('Preencha todos os campos');
+      return;
+    }
+
+    // Simulação de erro de autenticação
+    if (email !== 'usuario@exemplo.com' || password !== 'senha123') {
+      setLoginError('Email ou senha incorretos');
+      return;
+    }
+
+    // Login bem-sucedido
+    setLoginError('');
+    console.log('Login realizado com sucesso');
+  };
+
+  return (
+    <View style={{ padding: 16, gap: 16 }}>
+      <Typography variant="lg">Login</Typography>
+
+      <FormError error={loginError} centered large />
+
+      <TextInput
+        label="Email"
+        value={email}
+        onChangeText={(text) => {
+          setEmail(text);
+          if (submitted) setLoginError('');
+        }}
+        keyboardType="email-address"
+        autoCapitalize="none"
+        error={submitted && !email ? 'Email é obrigatório' : ''}
+      />
+
+      <TextInput
+        label="Senha"
+        value={password}
+        onChangeText={(text) => {
+          setPassword(text);
+          if (submitted) setLoginError('');
+        }}
+        secureTextEntry
+        error={submitted && !password ? 'Senha é obrigatória' : ''}
+      />
+
+      <Button
+        children="Entrar"
+        variant="filled"
+        colorVariant="primary"
+        onPress={handleLogin}
+      />
+    </View>
+  );
+};
+```

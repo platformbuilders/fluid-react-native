@@ -1,0 +1,189 @@
+# Guia de Instalação
+
+Este guia fornece instruções detalhadas para instalar e configurar o Fluid React Native em seu projeto.
+
+## Requisitos
+
+Antes de começar, certifique-se de que seu ambiente atende aos seguintes requisitos:
+
+- React Native (0.65.0 ou superior)
+- React (17.0.0 ou superior)
+- Node.js (14.0.0 ou superior)
+- npm (6.0.0 ou superior) ou yarn (1.22.0 ou superior)
+
+## Instalando o Pacote Principal
+
+Instale o pacote Fluid React Native usando npm ou yarn:
+
+```bash
+# Usando npm
+npm install @platformbuilders/fluid-react-native
+
+# Usando yarn
+yarn add @platformbuilders/fluid-react-native
+```
+
+## Instalando Dependências de Pares
+
+O Fluid React Native tem algumas dependências de pares que você precisará instalar:
+
+```bash
+# Usando npm
+npm install @platformbuilders/helpers@0.11.3 @platformbuilders/theme-toolkit@0.3.0 formik@2.4.6 lodash@4.17.21 lottie-react-native@7.1.0 react-native-camera@4.2.1 react-native-fast-image@8.6.3 react-native-svg@15.8.0 react-native-vector-icons@10.2.0 styled-components@5.3.11
+
+# Usando yarn
+yarn add @platformbuilders/helpers@0.11.3 @platformbuilders/theme-toolkit@0.3.0 formik@2.4.6 lodash@4.17.21 lottie-react-native@7.1.0 react-native-camera@4.2.1 react-native-fast-image@8.6.3 react-native-svg@15.8.0 react-native-vector-icons@10.2.0 styled-components@5.3.11
+```
+
+## Configuração por Plataforma
+
+### iOS
+
+Para iOS, siga estas etapas adicionais:
+
+#### 1. Adicionar Dependências ao Podfile
+
+Edite o arquivo `ios/Podfile` e adicione:
+
+```ruby
+pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+```
+
+#### 2. Instalar Pods
+
+Execute o comando:
+
+```bash
+cd ios && pod install && cd ..
+```
+
+#### 3. Configurar Fontes
+
+Abra o arquivo `Info.plist` em `ios/YourAppName/Info.plist` e adicione:
+
+```xml
+<key>UIAppFonts</key>
+<array>
+  <string>AntDesign.ttf</string>
+  <string>Entypo.ttf</string>
+  <string>EvilIcons.ttf</string>
+  <string>Feather.ttf</string>
+  <string>FontAwesome.ttf</string>
+  <string>FontAwesome5_Brands.ttf</string>
+  <string>FontAwesome5_Regular.ttf</string>
+  <string>FontAwesome5_Solid.ttf</string>
+  <string>Foundation.ttf</string>
+  <string>Ionicons.ttf</string>
+  <string>MaterialIcons.ttf</string>
+  <string>MaterialCommunityIcons.ttf</string>
+  <string>SimpleLineIcons.ttf</string>
+  <string>Octicons.ttf</string>
+  <string>Zocial.ttf</string>
+</array>
+```
+
+### Android
+
+Para Android, siga estas etapas adicionais:
+
+#### 1. Configurar Fontes
+
+Edite o arquivo `android/app/build.gradle` e adicione:
+
+```gradle
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+```
+
+#### 2. Adicionar Permissões (se necessário)
+
+Se seu projeto utiliza componentes como câmera, adicione as permissões necessárias ao arquivo `android/app/src/main/AndroidManifest.xml`:
+
+```xml
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+```
+
+## Configuração do ThemeProvider
+
+Depois de instalar as dependências, você precisa envolver sua aplicação com o `ThemeProvider` do styled-components:
+
+```tsx
+// App.tsx
+import React from 'react';
+import { ThemeProvider } from 'styled-components/native';
+import { theme } from '@platformbuilders/fluid-react-native';
+
+const App = () => (
+  <ThemeProvider theme={theme}>
+    {/* Componentes da sua aplicação aqui */}
+  </ThemeProvider>
+);
+
+export default App;
+```
+
+## Verificação da Instalação
+
+Para verificar se a instalação foi bem-sucedida, adicione um componente simples do Fluid em uma tela da sua aplicação:
+
+```tsx
+import React from 'react';
+import { SafeAreaView } from 'react-native';
+import { Button, Typography } from '@platformbuilders/fluid-react-native';
+
+const TestScreen = () => (
+  <SafeAreaView
+    style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}
+  >
+    <Typography variant="h1">Fluid React Native</Typography>
+    <Button
+      title="Teste de Botão"
+      variant="filled"
+      colorVariant="primary"
+      onPress={() => console.log('Instalação verificada!')}
+    />
+  </SafeAreaView>
+);
+
+export default TestScreen;
+```
+
+## Resolução de Problemas
+
+### Fontes não estão carregando
+
+- Verifique se você seguiu corretamente as etapas de configuração de fontes para iOS e Android
+- Execute `cd ios && pod install` novamente
+- Limpe a build do projeto e recompile:
+  ```bash
+  # iOS
+  cd ios && xcodebuild clean && cd ..
+  # Android
+  cd android && ./gradlew clean && cd ..
+  ```
+
+### Erros de dependência
+
+- Verifique se todas as dependências de pares foram instaladas nas versões corretas
+- Execute `yarn why [nome-do-pacote]` para verificar possíveis conflitos de versão
+- Se necessário, force a resolução de dependências no `package.json`:
+  ```json
+  "resolutions": {
+    "styled-components": "^5.3.11"
+  }
+  ```
+
+### Outros problemas
+
+Se você encontrar outros problemas, consulte:
+
+- A [documentação oficial](https://github.com/platformbuilders/fluid-react-native) no GitHub
+- Abra uma issue no [repositório do projeto](https://github.com/platformbuilders/fluid-react-native/issues)
+
+## Próximos Passos
+
+Depois de concluir a instalação, você pode:
+
+- Explorar o [guia de temas](/guides/theming) para aprender a personalizar a aparência dos componentes
+- Verificar a [documentação de componentes](/components) para começar a usar os componentes em sua aplicação
+- Aprender sobre [customização](/guides/customization) para adaptar os componentes às suas necessidades

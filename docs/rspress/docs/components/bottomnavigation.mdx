@@ -1,0 +1,320 @@
+# BottomNavigation
+
+O componente `BottomNavigation` implementa uma barra de navegação inferior, comumente utilizada em aplicações móveis para oferecer acesso rápido às principais funcionalidades do aplicativo.
+
+## Importação
+
+```tsx
+import { BottomNavigation } from '@platformbuilders/fluid-react-native';
+```
+
+## Uso Básico
+
+```tsx
+import React from 'react';
+import { BottomNavigation } from '@platformbuilders/fluid-react-native';
+
+const BottomNavigationExample = () => {
+  const [currentRoute, setCurrentRoute] = React.useState('Home');
+
+  const fields = [
+    {
+      routeName: 'Home',
+      onPress: () => setCurrentRoute('Home'),
+      iconName: 'home',
+      label: 'Início',
+    },
+    {
+      routeName: 'Search',
+      onPress: () => setCurrentRoute('Search'),
+      iconName: 'search',
+      label: 'Buscar',
+    },
+    {
+      routeName: 'Profile',
+      onPress: () => setCurrentRoute('Profile'),
+      iconName: 'user',
+      label: 'Perfil',
+    },
+  ];
+
+  return <BottomNavigation fields={fields} currentRoute={currentRoute} />;
+};
+```
+
+## Com Cor Personalizada
+
+Você pode personalizar a cor dos itens ativos:
+
+```tsx
+<BottomNavigation
+  fields={fields}
+  currentRoute={currentRoute}
+  activeFieldColor="#FF5722" // Cor laranja para itens ativos
+/>
+```
+
+## Integração com React Navigation
+
+O componente pode ser facilmente integrado ao React Navigation:
+
+```tsx
+import React from 'react';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { BottomNavigation } from '@platformbuilders/fluid-react-native';
+
+import HomeScreen from './screens/HomeScreen';
+import SearchScreen from './screens/SearchScreen';
+import ProfileScreen from './screens/ProfileScreen';
+
+const Tab = createBottomTabNavigator();
+
+const AppNavigator = () => {
+  return (
+    <Tab.Navigator
+      tabBar={(props) => {
+        const { state, navigation } = props;
+        const currentRoute = state.routes[state.index].name;
+
+        const fields = state.routes.map((route) => ({
+          routeName: route.name,
+          onPress: () => navigation.navigate(route.name),
+          iconName: getIconName(route.name), // Função auxiliar para definir ícones
+          label: getScreenLabel(route.name), // Função auxiliar para definir rótulos
+        }));
+
+        return <BottomNavigation fields={fields} currentRoute={currentRoute} />;
+      }}
+    >
+      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Search" component={SearchScreen} />
+      <Tab.Screen name="Profile" component={ProfileScreen} />
+    </Tab.Navigator>
+  );
+};
+
+// Funções auxiliares
+const getIconName = (routeName) => {
+  switch (routeName) {
+    case 'Home':
+      return 'home';
+    case 'Search':
+      return 'search';
+    case 'Profile':
+      return 'user';
+    default:
+      return 'circle';
+  }
+};
+
+const getScreenLabel = (routeName) => {
+  switch (routeName) {
+    case 'Home':
+      return 'Início';
+    case 'Search':
+      return 'Buscar';
+    case 'Profile':
+      return 'Perfil';
+    default:
+      return routeName;
+  }
+};
+
+export default AppNavigator;
+```
+
+## Propriedades
+
+| Propriedade        | Tipo         | Padrão          | Descrição                                  |
+| ------------------ | ------------ | --------------- | ------------------------------------------ |
+| `fields`           | Array<Field> | -               | Lista de campos de navegação (obrigatório) |
+| `currentRoute`     | string       | -               | Nome da rota atual (obrigatório)           |
+| `activeFieldColor` | string       | Primary do tema | Cor dos itens ativos (ícones e rótulos)    |
+
+## Tipo de Dados
+
+```tsx
+type Field = {
+  routeName: string; // Identificador único da rota
+  onPress(): void; // Função chamada ao clicar no item
+  iconName: string; // Nome do ícone (veja a documentação de ícones)
+  label: string; // Texto exibido abaixo do ícone
+};
+```
+
+## Acessibilidade
+
+O componente `BottomNavigation` já implementa recursos de acessibilidade, definindo automaticamente propriedades de acessibilidade para cada item de navegação. Cada botão terá um rótulo no formato "Ir para [nome do item]", facilitando o uso com leitores de tela.
+
+## Exemplos
+
+### App de E-commerce
+
+```tsx
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
+import { BottomNavigation } from '@platformbuilders/fluid-react-native';
+
+const ECommerceApp = () => {
+  const [currentScreen, setCurrentScreen] = React.useState('Home');
+
+  const navigationFields = [
+    {
+      routeName: 'Home',
+      onPress: () => setCurrentScreen('Home'),
+      iconName: 'home',
+      label: 'Início',
+    },
+    {
+      routeName: 'Categories',
+      onPress: () => setCurrentScreen('Categories'),
+      iconName: 'list',
+      label: 'Categorias',
+    },
+    {
+      routeName: 'Cart',
+      onPress: () => setCurrentScreen('Cart'),
+      iconName: 'shopping-cart',
+      label: 'Carrinho',
+    },
+    {
+      routeName: 'Favorites',
+      onPress: () => setCurrentScreen('Favorites'),
+      iconName: 'heart',
+      label: 'Favoritos',
+    },
+    {
+      routeName: 'Profile',
+      onPress: () => setCurrentScreen('Profile'),
+      iconName: 'user',
+      label: 'Perfil',
+    },
+  ];
+
+  // Renderizar o conteúdo da tela atual
+  const renderContent = () => {
+    switch (currentScreen) {
+      case 'Home':
+        return <View style={[styles.screen, { backgroundColor: '#E3F2FD' }]} />;
+      case 'Categories':
+        return <View style={[styles.screen, { backgroundColor: '#E0F2F1' }]} />;
+      case 'Cart':
+        return <View style={[styles.screen, { backgroundColor: '#F3E5F5' }]} />;
+      case 'Favorites':
+        return <View style={[styles.screen, { backgroundColor: '#FFEBEE' }]} />;
+      case 'Profile':
+        return <View style={[styles.screen, { backgroundColor: '#FFF3E0' }]} />;
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <View style={styles.container}>
+      {renderContent()}
+      <BottomNavigation
+        fields={navigationFields}
+        currentRoute={currentScreen}
+        activeFieldColor="#FF5722"
+      />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  screen: {
+    flex: 1,
+  },
+});
+```
+
+### App de Mídia Social
+
+```tsx
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
+import {
+  BottomNavigation,
+  Typography,
+} from '@platformbuilders/fluid-react-native';
+
+const SocialMediaApp = () => {
+  const [currentTab, setCurrentTab] = React.useState('Feed');
+
+  const tabs = [
+    {
+      routeName: 'Feed',
+      onPress: () => setCurrentTab('Feed'),
+      iconName: 'home',
+      label: 'Feed',
+    },
+    {
+      routeName: 'Explore',
+      onPress: () => setCurrentTab('Explore'),
+      iconName: 'search',
+      label: 'Explorar',
+    },
+    {
+      routeName: 'Create',
+      onPress: () => setCurrentTab('Create'),
+      iconName: 'plus-circle',
+      label: 'Criar',
+    },
+    {
+      routeName: 'Activity',
+      onPress: () => setCurrentTab('Activity'),
+      iconName: 'heart',
+      label: 'Atividade',
+    },
+    {
+      routeName: 'Profile',
+      onPress: () => setCurrentTab('Profile'),
+      iconName: 'user',
+      label: 'Perfil',
+    },
+  ];
+
+  // Simulação do conteúdo de cada aba
+  const renderTabContent = () => {
+    return (
+      <View style={styles.contentContainer}>
+        <Typography variant="lg" style={styles.title}>
+          {currentTab}
+        </Typography>
+        <Typography>Conteúdo da aba {currentTab}</Typography>
+      </View>
+    );
+  };
+
+  return (
+    <View style={styles.container}>
+      {renderTabContent()}
+      <BottomNavigation
+        fields={tabs}
+        currentRoute={currentTab}
+        activeFieldColor="#5851DB" // Cor do Instagram
+      />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#FAFAFA',
+  },
+  contentContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
+  },
+  title: {
+    marginBottom: 16,
+    fontWeight: 'bold',
+  },
+});
+```

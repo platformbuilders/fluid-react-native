@@ -1,0 +1,134 @@
+# Guia de Temas
+
+Este guia oferece instruções detalhadas sobre como utilizar e personalizar o sistema de temas do Fluid React Native para dar à sua aplicação uma aparência única e consistente.
+
+## Introdução ao Sistema de Temas
+
+O Fluid utiliza um poderoso sistema de tokens de design para definir a aparência visual de todos os componentes. Esses tokens são organizados de forma hierárquica, permitindo uma personalização granular e consistente.
+
+## Configuração Básica
+
+Para começar a usar o tema do Fluid, você precisa envolver sua aplicação com o `ThemeProvider` do styled-components:
+
+```tsx
+import React from 'react';
+import { ThemeProvider } from 'styled-components/native';
+import { theme } from '@platformbuilders/fluid-react-native';
+
+const App = () => (
+  <ThemeProvider theme={theme}>{/* Sua aplicação aqui */}</ThemeProvider>
+);
+
+export default App;
+```
+
+## Temas Claro e Escuro
+
+O Fluid suporta nativamente temas claros e escuros:
+
+```tsx
+import React, { useState, useEffect } from 'react';
+import { useColorScheme } from 'react-native';
+import { ThemeProvider } from 'styled-components/native';
+import { lightTheme, darkTheme } from '@platformbuilders/fluid-react-native';
+
+const App = () => {
+  // Detecta o modo de cor do sistema
+  const colorScheme = useColorScheme();
+
+  return (
+    <ThemeProvider theme={colorScheme === 'dark' ? darkTheme : lightTheme}>
+      {/* Sua aplicação aqui */}
+    </ThemeProvider>
+  );
+};
+```
+
+## Acessando Valores do Tema
+
+Para acessar valores do tema em seus componentes estilizados, utilize a função `getTheme`:
+
+```tsx
+import styled from 'styled-components/native';
+import { getTheme } from '@platformbuilders/fluid-react-native';
+
+const Container = styled.View`
+  background-color: ${getTheme('colors.background')};
+  padding: ${getTheme('spacing.md')};
+  border-radius: ${getTheme('borderRadius.md')};
+`;
+
+const Title = styled.Text`
+  font-family: ${getTheme('typography.fontFamily.bold')};
+  font-size: ${getTheme('typography.fontSize.lg')};
+  color: ${getTheme('text.primary')};
+  margin-bottom: ${getTheme('spacing.sm')};
+`;
+```
+
+## Criando um Tema Personalizado
+
+Para personalizar o tema de acordo com sua marca:
+
+```tsx
+import { ThemeProvider } from 'styled-components/native';
+import { theme as fluidTheme } from '@platformbuilders/fluid-react-native';
+
+// Tema personalizado
+const customTheme = {
+  ...fluidTheme,
+  brand: {
+    ...fluidTheme.brand,
+    primary: {
+      main: '#0066CC', // Azul da sua marca
+      light: '#4D94DB',
+      dark: '#004C99',
+      contrast: '#FFFFFF',
+    },
+    secondary: {
+      main: '#FF6B00', // Laranja da sua marca
+      light: '#FFB380',
+      dark: '#CC5500',
+      contrast: '#FFFFFF',
+    },
+  },
+};
+
+const App = () => (
+  <ThemeProvider theme={customTheme}>{/* Sua aplicação aqui */}</ThemeProvider>
+);
+```
+
+## Alterando Tipografia
+
+Para alterar as fontes usadas na aplicação:
+
+```tsx
+// Certifique-se de ter instalado e vinculado as fontes no seu projeto
+const customTheme = {
+  ...fluidTheme,
+  typography: {
+    ...fluidTheme.typography,
+    fontFamily: {
+      regular: 'Montserrat-Regular',
+      medium: 'Montserrat-Medium',
+      bold: 'Montserrat-Bold',
+    },
+  },
+};
+```
+
+## Boas Práticas
+
+1. **Mantenha a consistência** - Use apenas os tokens definidos no tema e evite valores codificados diretamente nos componentes
+2. **Defina tokens de marca** - Crie um conjunto de tokens para sua marca e reutilize-os em todo o tema
+3. **Teste em diferentes condições** - Garanta que seu tema funcione bem em ambos os modos claro e escuro
+4. **Utilize variantes de componentes** - Aproveite as variantes predefinidas dos componentes antes de criar novas personalizações
+
+## Próximos Passos
+
+Para uma compreensão mais profunda do sistema de temas, consulte:
+
+- [Tokens de Design](/theme/tokens) para ver todos os tokens disponíveis
+- [Customização do Tema](/theme/customization) para técnicas avançadas de personalização
+- [Exemplos de Customização](/guides/customization) para ver casos práticos

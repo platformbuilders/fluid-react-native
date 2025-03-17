@@ -1,0 +1,318 @@
+# Markdown
+
+O componente `Markdown` é uma forma simples de renderizar conteúdo formatado em Markdown dentro do seu aplicativo React Native. Ele usa a biblioteca `react-native-markdown-display` para transformar texto Markdown em componentes nativos.
+
+## Importação
+
+```tsx
+import { Markdown } from '@platformbuilders/fluid-react-native';
+```
+
+## Uso Básico
+
+```tsx
+import React from 'react';
+import { Markdown } from '@platformbuilders/fluid-react-native';
+
+const MarkdownExample = () => {
+  const markdownContent = `
+# Título Principal
+
+Este é um parágrafo com **texto em negrito** e *texto em itálico*.
+
+## Subtítulo
+
+### Lista não ordenada:
+- Item 1
+- Item 2
+- Item 3
+
+### Lista ordenada:
+1. Primeiro item
+2. Segundo item
+3. Terceiro item
+
+[Link para documentação](https://www.platformbuilders.com.br)
+
+> Citação de exemplo
+
+\`\`\`
+// Bloco de código
+const exemplo = "Olá Mundo";
+console.log(exemplo);
+\`\`\`
+  `;
+
+  return <Markdown>{markdownContent}</Markdown>;
+};
+```
+
+## Com Estilo Personalizado
+
+Você pode personalizar o estilo do texto renderizado:
+
+```tsx
+<Markdown
+  textStyle={{
+    color: '#333333',
+    fontSize: 16,
+    lineHeight: 24,
+    fontFamily: 'Roboto',
+  }}
+>
+  {markdownContent}
+</Markdown>
+```
+
+## Propriedades
+
+| Propriedade | Tipo      | Padrão | Descrição                                        |
+| ----------- | --------- | ------ | ------------------------------------------------ |
+| `children`  | string    | -      | Conteúdo Markdown a ser renderizado              |
+| `textStyle` | TextStyle | {}     | Estilo de texto aplicado ao conteúdo renderizado |
+
+## Elementos Suportados
+
+O componente Markdown suporta a maioria dos elementos padrão da sintaxe Markdown:
+
+- Cabeçalhos (# h1, ## h2, etc.)
+- Textos estilizados (**negrito**, _itálico_, ~~riscado~~)
+- Links
+- Listas ordenadas e não ordenadas
+- Citações
+- Blocos de código
+- Imagens
+- Tabelas
+- Linhas horizontais
+
+## Exemplos
+
+### Card de Artigo com Markdown
+
+```tsx
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { Markdown, Typography } from '@platformbuilders/fluid-react-native';
+
+const Article = () => {
+  const articleContent = `
+## O que é React Native?
+
+React Native é um framework desenvolvido pelo Facebook que permite **desenvolver aplicativos móveis nativos** usando JavaScript e React.
+
+### Vantagens:
+
+- Desenvolvimento multiplataforma (iOS e Android)
+- Reutilização de código
+- Hot Reloading
+- Grande comunidade e suporte
+
+### Exemplo de código:
+
+\`\`\`jsx
+import React from 'react';
+import { Text, View } from 'react-native';
+
+const HelloWorld = () => {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Hello, world!</Text>
+    </View>
+  );
+};
+
+export default HelloWorld;
+\`\`\`
+
+Saiba mais em [reactnative.dev](https://reactnative.dev).
+  `;
+
+  return (
+    <View style={styles.container}>
+      <Typography variant="lg" style={styles.title}>
+        Introdução ao React Native
+      </Typography>
+
+      <Typography variant="sm" style={styles.authorInfo}>
+        Por João Silva | 15 de Maio, 2023
+      </Typography>
+
+      <View style={styles.divider} />
+
+      <Markdown textStyle={styles.markdownText}>{articleContent}</Markdown>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    padding: 16,
+    backgroundColor: '#FFFFFF',
+    borderRadius: 8,
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    shadowOffset: { width: 0, height: 2 },
+    elevation: 2,
+    margin: 16,
+  },
+  title: {
+    fontWeight: 'bold',
+    marginBottom: 8,
+  },
+  authorInfo: {
+    color: '#666666',
+    marginBottom: 16,
+  },
+  divider: {
+    height: 1,
+    backgroundColor: '#EEEEEE',
+    marginBottom: 16,
+  },
+  markdownText: {
+    color: '#333333',
+    lineHeight: 24,
+  },
+});
+```
+
+### Documentação Interativa
+
+```tsx
+import React, { useState } from 'react';
+import { StyleSheet, View, ScrollView } from 'react-native';
+import {
+  Markdown,
+  Button,
+  TextInput,
+} from '@platformbuilders/fluid-react-native';
+
+const InteractiveDocumentation = () => {
+  const [markdownSource, setMarkdownSource] = useState(`
+# Guia do Markdown
+
+Markdown é uma linguagem de marcação leve que você pode usar para adicionar formatação a documentos de texto simples. Criada por John Gruber em 2004, Markdown é hoje uma das linguagens de marcação mais populares do mundo.
+
+## Sintaxe Básica
+
+### Cabeçalhos
+
+# H1
+## H2
+### H3
+
+### Ênfase
+
+*Itálico* ou _Itálico_
+**Negrito** ou __Negrito__
+~~Riscado~~
+
+### Listas
+
+- Item 1
+- Item 2
+  - Subitem 2.1
+  - Subitem 2.2
+
+1. Item 1
+2. Item 2
+3. Item 3
+
+### Links
+
+[Texto do Link](https://www.exemplo.com)
+
+### Imagens
+
+![Texto Alt](https://via.placeholder.com/150)
+
+### Citações
+
+> Esta é uma citação de exemplo.
+> Você pode ter múltiplas linhas.
+
+### Código
+
+\`\`\`javascript
+function exemplo() {
+  return "Olá Mundo";
+}
+\`\`\`
+
+\`Código em linha\`
+
+### Tabelas
+
+| Coluna 1 | Coluna 2 | Coluna 3 |
+|----------|----------|----------|
+| Linha 1  | Dado     | Dado     |
+| Linha 2  | Dado     | Dado     |
+
+### Linha Horizontal
+
+---
+
+`);
+
+  return (
+    <View style={styles.container}>
+      <ScrollView style={styles.preview}>
+        <Markdown textStyle={styles.markdownText}>{markdownSource}</Markdown>
+      </ScrollView>
+
+      <View style={styles.divider} />
+
+      <TextInput
+        label="Editar Markdown"
+        id="markdown-input"
+        multiline
+        value={markdownSource}
+        onChangeText={setMarkdownSource}
+        style={styles.textarea}
+        contrast={false}
+        accessibility="Editor de Markdown"
+      />
+
+      <Button
+        onPress={() => setMarkdownSource(markdownSource)}
+        accessibility="Atualizar visualização"
+        style={styles.button}
+      >
+        Atualizar Visualização
+      </Button>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 16,
+    backgroundColor: '#FFFFFF',
+  },
+  preview: {
+    flex: 1,
+    backgroundColor: '#F9F9F9',
+    padding: 16,
+    borderRadius: 8,
+    marginBottom: 16,
+  },
+  divider: {
+    height: 1,
+    backgroundColor: '#EEEEEE',
+    marginVertical: 16,
+  },
+  textarea: {
+    height: 200,
+    textAlignVertical: 'top',
+    marginBottom: 16,
+  },
+  button: {
+    marginTop: 8,
+  },
+  markdownText: {
+    color: '#333333',
+    lineHeight: 24,
+  },
+});
+```

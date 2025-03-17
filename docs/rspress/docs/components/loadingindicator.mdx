@@ -1,0 +1,353 @@
+# LoadingIndicator
+
+O componente `LoadingIndicator` é utilizado para indicar que uma operação está em andamento, como carregamento de dados ou processamento. Ele fornece feedback visual ao usuário para melhorar a experiência durante operações assíncronas.
+
+## Importação
+
+```tsx
+import { LoadingIndicator } from '@platformbuilders/fluid-react-native';
+```
+
+## Uso Básico
+
+```tsx
+<LoadingIndicator />
+```
+
+## Variantes
+
+O componente suporta diferentes variantes de animação:
+
+```tsx
+// Indicador circular (giratório)
+<LoadingIndicator variant="circular" />
+
+// Indicador linear (barra de progresso)
+<LoadingIndicator variant="linear" />
+
+// Indicador para botões
+<LoadingIndicator variant="button" />
+```
+
+## Tamanhos
+
+É possível alterar o tamanho do indicador:
+
+```tsx
+// Tamanho padrão (pequeno)
+<LoadingIndicator />
+
+// Tamanho grande
+<LoadingIndicator large />
+```
+
+## Contraste
+
+Para melhor visibilidade em fundos escuros:
+
+```tsx
+<LoadingIndicator contrast />
+```
+
+## Acessibilidade
+
+```tsx
+<LoadingIndicator accessibility="Carregando dados do usuário" />
+```
+
+## Em Containers
+
+O LoadingIndicator pode ser usado em diferentes contextos:
+
+```tsx
+// Tela de carregamento completa
+<View style={{
+  flex: 1,
+  justifyContent: 'center',
+  alignItems: 'center',
+  backgroundColor: 'rgba(0, 0, 0, 0.1)'
+}}>
+  <LoadingIndicator large />
+</View>
+
+// Em um card durante atualização de dados
+<View style={{
+  padding: 20,
+  alignItems: 'center'
+}}>
+  <Typography>Atualizando informações</Typography>
+  <LoadingIndicator />
+</View>
+```
+
+## Combinando Opções
+
+É possível combinar diferentes propriedades para customizar o indicador de carregamento:
+
+```tsx
+// Indicador grande, com contraste, para uso em fundos escuros
+<LoadingIndicator large contrast variant="circular" />
+
+// Indicador de botão com contraste, para uso em botões com fundo escuro
+<LoadingIndicator contrast variant="button" />
+
+// Indicador linear grande
+<LoadingIndicator large variant="linear" />
+```
+
+## Propriedades
+
+| Propriedade     | Tipo                               | Padrão     | Descrição                                          |
+| --------------- | ---------------------------------- | ---------- | -------------------------------------------------- |
+| `variant`       | 'circular' \| 'linear' \| 'button' | 'circular' | Variante da animação do indicador                  |
+| `large`         | boolean                            | false      | Define se o indicador deve ter tamanho grande      |
+| `contrast`      | boolean                            | false      | Define se o indicador deve usar cores de contraste |
+| `accessibility` | string                             | 'Aguarde'  | Rótulo de acessibilidade para leitores de tela     |
+
+## Exemplos
+
+### Tela de Carregamento
+
+```tsx
+import React from 'react';
+import { View } from 'react-native';
+import {
+  LoadingIndicator,
+  Typography,
+} from '@platformbuilders/fluid-react-native';
+
+const LoadingScreen = () => (
+  <View
+    style={{
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#FFFFFF',
+    }}
+  >
+    <LoadingIndicator large />
+    <Typography variant="lg" style={{ marginTop: 16 }}>
+      Carregando...
+    </Typography>
+  </View>
+);
+```
+
+### Carregamento de Lista
+
+```tsx
+import React from 'react';
+import { View, FlatList } from 'react-native';
+import {
+  LoadingIndicator,
+  Typography,
+} from '@platformbuilders/fluid-react-native';
+
+const ProductList = ({ isLoading, products }) => (
+  <View style={{ flex: 1 }}>
+    {isLoading ? (
+      <View style={{ padding: 20, alignItems: 'center' }}>
+        <LoadingIndicator variant="linear" />
+        <Typography style={{ marginTop: 8 }}>Carregando produtos...</Typography>
+      </View>
+    ) : (
+      <FlatList
+        data={products}
+        renderItem={({ item }) => <ProductItem product={item} />}
+        keyExtractor={(item) => item.id}
+      />
+    )}
+  </View>
+);
+```
+
+### Botão com Loading
+
+```tsx
+import React from 'react';
+import { TouchableOpacity, Text } from 'react-native';
+import { LoadingIndicator } from '@platformbuilders/fluid-react-native';
+
+const SubmitButton = ({ isSubmitting, onPress }) => (
+  <TouchableOpacity
+    style={{
+      backgroundColor: '#3366FF',
+      paddingVertical: 12,
+      paddingHorizontal: 24,
+      borderRadius: 6,
+      flexDirection: 'row',
+      justifyContent: 'center',
+      alignItems: 'center',
+    }}
+    disabled={isSubmitting}
+    onPress={onPress}
+  >
+    {isSubmitting ? (
+      <>
+        <LoadingIndicator
+          variant="button"
+          contrast
+          style={{ marginRight: 8 }}
+        />
+        <Text style={{ color: 'white' }}>Enviando...</Text>
+      </>
+    ) : (
+      <Text style={{ color: 'white' }}>Enviar</Text>
+    )}
+  </TouchableOpacity>
+);
+```
+
+### Loading com Fundo Escuro
+
+```tsx
+import React from 'react';
+import { View } from 'react-native';
+import {
+  LoadingIndicator,
+  Typography,
+} from '@platformbuilders/fluid-react-native';
+
+const OverlayLoading = () => (
+  <View
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundColor: 'rgba(0, 0, 0, 0.7)',
+      justifyContent: 'center',
+      alignItems: 'center',
+      zIndex: 999,
+    }}
+  >
+    <LoadingIndicator large contrast />
+    <Typography variant="lg" style={{ color: 'white', marginTop: 16 }}>
+      Processando...
+    </Typography>
+  </View>
+);
+```
+
+### Loading em Pull-to-Refresh
+
+```tsx
+import React, { useState, useCallback } from 'react';
+import { RefreshControl, ScrollView, View } from 'react-native';
+import {
+  LoadingIndicator,
+  Typography,
+} from '@platformbuilders/fluid-react-native';
+
+const NewsFeed = () => {
+  const [refreshing, setRefreshing] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [news, setNews] = useState([]);
+
+  const loadData = useCallback(async () => {
+    // Simular carga de dados
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+    setNews(['Notícia 1', 'Notícia 2', 'Notícia 3']);
+    setLoading(false);
+    setRefreshing(false);
+  }, []);
+
+  const onRefresh = useCallback(() => {
+    setRefreshing(true);
+    loadData();
+  }, [loadData]);
+
+  React.useEffect(() => {
+    loadData();
+  }, [loadData]);
+
+  if (loading) {
+    return (
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <LoadingIndicator />
+        <Typography variant="md" style={{ marginTop: 16 }}>
+          Carregando notícias...
+        </Typography>
+      </View>
+    );
+  }
+
+  return (
+    <ScrollView
+      refreshControl={
+        <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+      }
+      style={{ flex: 1 }}
+    >
+      {news.map((item, index) => (
+        <View
+          key={index}
+          style={{
+            padding: 16,
+            borderBottomWidth: 1,
+            borderBottomColor: '#eeeeee',
+          }}
+        >
+          <Typography variant="md">{item}</Typography>
+        </View>
+      ))}
+    </ScrollView>
+  );
+};
+```
+
+### Botão com Componente Button
+
+```tsx
+import React, { useState } from 'react';
+import { View } from 'react-native';
+import { Button, LoadingIndicator } from '@platformbuilders/fluid-react-native';
+
+const LoginForm = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleLogin = async () => {
+    setIsLoading(true);
+    // Simular processo de login
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+    setIsLoading(false);
+  };
+
+  return (
+    <View style={{ padding: 16, gap: 16 }}>
+      {/* Outros campos do formulário */}
+
+      <Button
+        children={isLoading ? 'Entrando...' : 'Entrar'}
+        variant="filled"
+        colorVariant="primary"
+        onPress={handleLogin}
+        loading={isLoading}
+        // O componente Button já gerencia o LoadingIndicator internamente
+        // quando a prop loading é true
+      />
+
+      {/* Alternativa manual */}
+      <Button
+        children={
+          <>
+            {isLoading && (
+              <LoadingIndicator
+                variant="button"
+                contrast
+                style={{ marginRight: 8 }}
+              />
+            )}
+            {isLoading ? 'Processando...' : 'Processar'}
+          </>
+        }
+        variant="outlined"
+        colorVariant="primary"
+        onPress={handleLogin}
+        disabled={isLoading}
+      />
+    </View>
+  );
+};
+```

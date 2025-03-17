@@ -1,0 +1,454 @@
+# TextInput
+
+O componente `TextInput` é usado para capturar texto digitado pelo usuário. Ele oferece diversas variantes e personalizações, incluindo suporte a máscaras, validação e diferentes estados visuais.
+
+## Importação
+
+```tsx
+import { TextInput } from '@platformbuilders/fluid-react-native';
+```
+
+## Uso Básico
+
+```tsx
+<TextInput
+  label="Nome"
+  placeholder="Digite seu nome"
+  onChangeText={(text) => console.log(text)}
+/>
+```
+
+## Estados
+
+O TextInput possui diferentes estados visuais para indicar seu status atual:
+
+```tsx
+// Estado padrão
+<TextInput
+  label="Email"
+  placeholder="Digite seu email"
+  status="default"
+/>
+
+// Estado de erro
+<TextInput
+  label="Email"
+  placeholder="Digite seu email"
+  status="error"
+  error="Email inválido"
+/>
+
+// Estado de sucesso
+<TextInput
+  label="Email"
+  placeholder="Digite seu email"
+  status="success"
+/>
+
+// Estado de foco
+<TextInput
+  label="Email"
+  placeholder="Digite seu email"
+  status="focus"
+/>
+```
+
+## Com Máscara
+
+O componente suporta máscaras para formatar automaticamente entradas como CPF, telefone, etc:
+
+```tsx
+// CPF
+<TextInput
+  label="CPF"
+  placeholder="Digite seu CPF"
+  maskType="cpf"
+  keyboardType="numeric"
+/>
+
+// CNPJ
+<TextInput
+  label="CNPJ"
+  placeholder="Digite seu CNPJ"
+  maskType="cnpj"
+  keyboardType="numeric"
+/>
+
+// Telefone
+<TextInput
+  label="Telefone"
+  placeholder="Digite seu telefone"
+  maskType="cel-phone"
+  keyboardType="numeric"
+/>
+
+// CEP
+<TextInput
+  label="CEP"
+  placeholder="Digite seu CEP"
+  maskType="zip-code"
+  keyboardType="numeric"
+/>
+
+// Apenas números
+<TextInput
+  label="Código"
+  placeholder="Digite o código"
+  maskType="only-numbers"
+  keyboardType="numeric"
+/>
+
+// Valor monetário
+<TextInput
+  label="Valor"
+  placeholder="Digite o valor"
+  maskType="money"
+  keyboardType="numeric"
+/>
+
+// Texto em maiúsculas
+<TextInput
+  label="Sigla"
+  placeholder="Digite a sigla"
+  maskType="uppercase"
+/>
+```
+
+## Com Ícones
+
+É possível adicionar ícones à esquerda e à direita do campo:
+
+```tsx
+// Com ícone à esquerda
+<TextInput
+  label="Pesquisar"
+  placeholder="Digite para pesquisar"
+  leftIconName="search"
+/>
+
+// Com ícone à direita
+<TextInput
+  label="Senha"
+  placeholder="Digite sua senha"
+  secureTextEntry
+  rightIconName="eye"
+  onRightIconPress={togglePasswordVisibility}
+/>
+
+// Com ícones em ambos os lados
+<TextInput
+  label="Pesquisar"
+  placeholder="Digite para pesquisar"
+  leftIconName="search"
+  rightIconName="times"
+  onRightIconPress={() => setSearchText('')}
+/>
+```
+
+## Variantes de Estilo
+
+### TextInput com Borda
+
+Além do estilo padrão com linha inferior, é possível usar o estilo com borda completa:
+
+```tsx
+<TextInput
+  label="Nome"
+  placeholder="Digite seu nome"
+  withBottomline={false}
+  borderedLabel="Nome"
+  borderedColor="#CCCCCC"
+  focusBorderedColor="#3366FF"
+  borderedHeight={50}
+  borderedRadius={8}
+/>
+```
+
+### TextInput Centralizado
+
+Para centralizar o texto dentro do campo:
+
+```tsx
+<TextInput
+  label="Código de Confirmação"
+  placeholder="Digite o código"
+  centered
+  keyboardType="numeric"
+/>
+```
+
+### TextInput Grande
+
+Para um campo maior que o padrão:
+
+```tsx
+<TextInput
+  label="Comentário"
+  placeholder="Digite seu comentário"
+  large
+  multiline
+/>
+```
+
+### TextInput Multiline
+
+Para permitir múltiplas linhas de texto:
+
+```tsx
+<TextInput
+  label="Descrição"
+  placeholder="Digite uma descrição detalhada"
+  multiline
+  numberOfLines={4}
+/>
+```
+
+## Propriedades
+
+| Propriedade               | Tipo                                                       | Padrão        | Descrição                                        |
+| ------------------------- | ---------------------------------------------------------- | ------------- | ------------------------------------------------ |
+| `label`                   | string                                                     | ''            | Rótulo do campo                                  |
+| `value`                   | string                                                     | ''            | Valor do campo                                   |
+| `placeholder`             | string                                                     | ''            | Texto de placeholder                             |
+| `error`                   | string                                                     | ''            | Mensagem de erro a ser exibida                   |
+| `status`                  | 'default' \| 'error' \| 'success' \| 'focus' \| 'selected' | 'default'     | Estado visual do campo                           |
+| `maskType`                | string                                                     | null          | Tipo de máscara a ser aplicada                   |
+| `keyboardType`            | KeyboardTypeOptions                                        | 'default'     | Tipo de teclado a ser exibido                    |
+| `multiline`               | boolean                                                    | false         | Se o campo deve aceitar múltiplas linhas         |
+| `autoFocus`               | boolean                                                    | false         | Se o campo deve receber foco automaticamente     |
+| `withBottomline`          | boolean                                                    | true          | Se deve exibir linha inferior                    |
+| `centered`                | boolean                                                    | false         | Se o texto deve ser centralizado                 |
+| `contrast`                | boolean                                                    | false         | Se deve usar cores de contraste                  |
+| `large`                   | boolean                                                    | false         | Se deve usar tamanho grande                      |
+| `leftIconName`            | string                                                     | -             | Nome do ícone à esquerda                         |
+| `rightIconName`           | string                                                     | -             | Nome do ícone à direita                          |
+| `iconType`                | IconFonts                                                  | 'FontAwesome' | Tipo de fonte de ícone                           |
+| `iconSize`                | number                                                     | -             | Tamanho personalizado para os ícones             |
+| `iconColor`               | string                                                     | -             | Cor personalizada para os ícones                 |
+| `leftIconColor`           | string                                                     | -             | Cor personalizada para o ícone esquerdo          |
+| `onChangeText`            | function                                                   | () => {}      | Função chamada quando o texto muda               |
+| `onBlur`                  | function                                                   | () => {}      | Função chamada quando o campo perde o foco       |
+| `onFocus`                 | function                                                   | () => {}      | Função chamada quando o campo ganha foco         |
+| `onPressIcon`             | function                                                   | () => {}      | Função chamada ao pressionar o ícone à esquerda  |
+| `onRightIconPress`        | function                                                   | () => {}      | Função chamada ao pressionar o ícone à direita   |
+| `inputRef`                | RefObject                                                  | -             | Referência para o elemento TextInput             |
+| `borderedLabel`           | string                                                     | ''            | Rótulo quando em modo bordered                   |
+| `borderedColor`           | string                                                     | -             | Cor da borda                                     |
+| `borderedBackgroundColor` | string                                                     | -             | Cor de fundo quando em modo bordered             |
+| `borderedHeight`          | number \| string                                           | -             | Altura personalizada quando em modo bordered     |
+| `borderedWidth`           | number                                                     | 1             | Largura da borda quando em modo bordered         |
+| `focusBorderedColor`      | string                                                     | -             | Cor da borda quando em foco                      |
+| `borderedRadius`          | number                                                     | 0             | Raio de borda quando em modo bordered            |
+| `inputPadding`            | number \| string                                           | -             | Padding interno personalizado                    |
+| `inputLeftPadding`        | number \| string                                           | -             | Padding esquerdo personalizado                   |
+| `inputRightPadding`       | number \| string                                           | -             | Padding direito personalizado                    |
+| `style`                   | StyleProp\<ViewStyle\>                                     | {}            | Estilos adicionais para o componente             |
+| `textStyle`               | StyleProp\<TextStyle\>                                     | {}            | Estilos adicionais para o texto                  |
+| `rootStyle`               | StyleProp\<ViewStyle\>                                     | {}            | Estilos adicionais para o componente raiz        |
+| `labelStyle`              | StyleProp\<TextStyle\>                                     | {}            | Estilos adicionais para o rótulo                 |
+| `errorStyle`              | StyleProp\<TextStyle\>                                     | {}            | Estilos adicionais para a mensagem de erro       |
+| `hidePlaceholderOnFocus`  | boolean                                                    | false         | Se deve esconder o placeholder quando em foco    |
+| `isFloating`              | boolean                                                    | false         | Se deve usar o modo de label flutuante           |
+| `showBorderErrored`       | boolean                                                    | true          | Se deve mostrar borda vermelha em estado de erro |
+| `accessibility`           | string                                                     | -             | Rótulo de acessibilidade                         |
+| `accessibilityLabel`      | string                                                     | -             | Rótulo de acessibilidade alternativo             |
+| `testID`                  | string                                                     | -             | ID para testes                                   |
+| `id`                      | string                                                     | -             | ID do componente                                 |
+
+## Exemplos
+
+### Formulário de Login
+
+```tsx
+import React, { useState } from 'react';
+import { View } from 'react-native';
+import { Button, TextInput } from '@platformbuilders/fluid-react-native';
+
+const LoginForm = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [emailError, setEmailError] = useState('');
+
+  const validateEmail = (text) => {
+    setEmail(text);
+    if (text && !text.includes('@')) {
+      setEmailError('Email inválido');
+    } else {
+      setEmailError('');
+    }
+  };
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
+  return (
+    <View style={{ padding: 16, gap: 16 }}>
+      <TextInput
+        label="Email"
+        placeholder="Digite seu email"
+        keyboardType="email-address"
+        leftIconName="envelope"
+        value={email}
+        onChangeText={validateEmail}
+        error={emailError}
+        status={emailError ? 'error' : 'default'}
+        autoCapitalize="none"
+      />
+
+      <TextInput
+        label="Senha"
+        placeholder="Digite sua senha"
+        secureTextEntry={!showPassword}
+        leftIconName="lock"
+        rightIconName={showPassword ? 'eye-slash' : 'eye'}
+        onRightIconPress={togglePasswordVisibility}
+        value={password}
+        onChangeText={setPassword}
+      />
+
+      <Button
+        children="Entrar"
+        variant="filled"
+        colorVariant="primary"
+        onPress={() => console.log('Login com:', email, password)}
+        disabled={!email || !password || !!emailError}
+      />
+    </View>
+  );
+};
+```
+
+### Formulário de Dados Pessoais com Máscaras
+
+```tsx
+import React, { useState } from 'react';
+import { View } from 'react-native';
+import {
+  Button,
+  TextInput,
+  Typography,
+} from '@platformbuilders/fluid-react-native';
+
+const PersonalDataForm = () => {
+  const [name, setName] = useState('');
+  const [cpf, setCpf] = useState('');
+  const [phone, setPhone] = useState('');
+  const [zipCode, setZipCode] = useState('');
+
+  const handleSubmit = () => {
+    console.log('Dados enviados:', { name, cpf, phone, zipCode });
+  };
+
+  return (
+    <View style={{ padding: 16 }}>
+      <Typography variant="lg" style={{ marginBottom: 16 }}>
+        Dados Pessoais
+      </Typography>
+
+      <View style={{ gap: 16 }}>
+        <TextInput
+          label="Nome Completo"
+          placeholder="Digite seu nome completo"
+          value={name}
+          onChangeText={setName}
+          borderedRadius={8}
+          borderedHeight={50}
+          borderedColor="#DDDDDD"
+          focusBorderedColor="#3366FF"
+        />
+
+        <TextInput
+          label="CPF"
+          placeholder="000.000.000-00"
+          maskType="cpf"
+          keyboardType="numeric"
+          value={cpf}
+          onChangeText={setCpf}
+          borderedRadius={8}
+          borderedHeight={50}
+          borderedColor="#DDDDDD"
+          focusBorderedColor="#3366FF"
+        />
+
+        <TextInput
+          label="Telefone"
+          placeholder="(00) 00000-0000"
+          maskType="cel-phone"
+          keyboardType="numeric"
+          value={phone}
+          onChangeText={setPhone}
+          borderedRadius={8}
+          borderedHeight={50}
+          borderedColor="#DDDDDD"
+          focusBorderedColor="#3366FF"
+        />
+
+        <TextInput
+          label="CEP"
+          placeholder="00000-000"
+          maskType="zip-code"
+          keyboardType="numeric"
+          value={zipCode}
+          onChangeText={setZipCode}
+          borderedRadius={8}
+          borderedHeight={50}
+          borderedColor="#DDDDDD"
+          focusBorderedColor="#3366FF"
+        />
+
+        <Button
+          children="Salvar Dados"
+          variant="filled"
+          colorVariant="primary"
+          onPress={handleSubmit}
+          disabled={!name || !cpf || !phone || !zipCode}
+          style={{ marginTop: 8 }}
+        />
+      </View>
+    </View>
+  );
+};
+```
+
+### Campo de Busca
+
+```tsx
+import React, { useState } from 'react';
+import { View } from 'react-native';
+import { TextInput } from '@platformbuilders/fluid-react-native';
+
+const SearchBar = ({ onSearch }) => {
+  const [searchText, setSearchText] = useState('');
+
+  const handleChangeText = (text) => {
+    setSearchText(text);
+    onSearch(text);
+  };
+
+  const handleClear = () => {
+    setSearchText('');
+    onSearch('');
+  };
+
+  return (
+    <View style={{ padding: 16 }}>
+      <TextInput
+        placeholder="Pesquisar..."
+        leftIconName="search"
+        rightIconName={searchText ? 'times' : undefined}
+        onRightIconPress={handleClear}
+        value={searchText}
+        onChangeText={handleChangeText}
+        withBottomline={false}
+        borderedRadius={20}
+        borderedHeight={44}
+        borderedColor="#EEEEEE"
+        focusBorderedColor="#3366FF"
+        borderedBackgroundColor="#F5F5F5"
+      />
+    </View>
+  );
+};
+```

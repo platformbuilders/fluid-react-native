@@ -1,0 +1,423 @@
+# SearchInput
+
+O componente `SearchInput` é especializado para campos de busca, oferecendo uma experiência de usuário otimizada para pesquisas com ícones integrados, limpeza de texto e eventos personalizados.
+
+## Importação
+
+```tsx
+import { SearchInput } from '@platformbuilders/fluid-react-native';
+```
+
+## Uso Básico
+
+```tsx
+import React, { useState } from 'react';
+import { View } from 'react-native';
+import { SearchInput } from '@platformbuilders/fluid-react-native';
+
+const SearchExample = () => {
+  const [searchValue, setSearchValue] = useState('');
+
+  const handleSearch = (value) => {
+    setSearchValue(value);
+    // Filtra resultados com base no valor
+  };
+
+  return (
+    <View style={{ padding: 16 }}>
+      <SearchInput
+        onChange={handleSearch}
+        accessibility="Campo de busca"
+        placeholder="Buscar produtos"
+      />
+    </View>
+  );
+};
+```
+
+## Com Ícones Personalizados
+
+É possível personalizar os ícones exibidos à esquerda e direita do campo:
+
+```tsx
+<SearchInput
+  onChange={handleSearch}
+  accessibility="Busca por localização"
+  placeholder="Buscar por endereço"
+  leftIconName="map-pin" // Ícone de localização à esquerda
+  rightIconName="sliders" // Ícone de filtros à direita
+  onRightIconPress={() => console.log('Abrir filtros')}
+/>
+```
+
+## Com Estilo Personalizado
+
+Você pode personalizar a aparência do campo de busca:
+
+```tsx
+<SearchInput
+  onChange={handleSearch}
+  accessibility="Busca personalizada"
+  placeholder="Pesquisar"
+  iconColor="#FF5722" // Cor do ícone
+  wrapperHeight={48} // Altura do wrapper
+  inputPadding={12} // Padding interno
+  iconSize={20} // Tamanho do ícone
+  hasShadow={true} // Adiciona sombra ao campo
+  placeholderTextColor="#AAA" // Cor do texto placeholder
+  containerStyle={{ borderWidth: 1, borderColor: '#DDD', borderRadius: 24 }}
+  inputStyle={{ fontWeight: 'bold' }}
+  textStyle={{ color: '#333' }}
+/>
+```
+
+## Eventos Personalizados
+
+O componente oferece vários eventos para controlar seu comportamento:
+
+```tsx
+<SearchInput
+  onChange={handleSearch}
+  onClear={() => console.log('Campo limpo')}
+  onFocus={() => console.log('Campo focado')}
+  onBlur={() => console.log('Campo perdeu foco')}
+  onSubmit={() => console.log('Busca enviada')}
+  onIconPress={() => console.log('Ícone pressionado')}
+  accessibility="Busca com eventos personalizados"
+/>
+```
+
+## Com Auto Foco
+
+Para ativar o foco automaticamente quando o componente é renderizado:
+
+```tsx
+<SearchInput
+  onChange={handleSearch}
+  accessibility="Auto foco"
+  autoFocus={true}
+/>
+```
+
+## Propriedades
+
+| Propriedade            | Tipo                 | Padrão           | Descrição                                                       |
+| ---------------------- | -------------------- | ---------------- | --------------------------------------------------------------- |
+| `onChange`             | function             | -                | Função chamada ao alterar o valor do campo (obrigatório)        |
+| `accessibility`        | string               | -                | Label de acessibilidade (obrigatório)                           |
+| `onClear`              | function             | () => null       | Função chamada ao limpar o campo                                |
+| `onFocus`              | function             | () => null       | Função chamada ao focar o campo                                 |
+| `onBlur`               | function             | () => null       | Função chamada ao remover o foco do campo                       |
+| `onSubmit`             | function             | () => null       | Função chamada ao submeter a busca                              |
+| `onIconPress`          | function             | -                | Função chamada ao pressionar o ícone                            |
+| `onRightIconPress`     | function             | -                | Função chamada ao pressionar o ícone direito                    |
+| `id`                   | string               | accessibility    | ID do campo, usado para testes                                  |
+| `iconColor`            | string               | theme.secondary  | Cor dos ícones                                                  |
+| `placeholder`          | string               | 'Pesquise aqui'  | Texto exibido quando o campo está vazio                         |
+| `wrapperHeight`        | number               | 56               | Altura do wrapper do campo                                      |
+| `inputPadding`         | number               | theme.spacing.xl | Padding interno do campo                                        |
+| `iconSize`             | number               | 26               | Tamanho dos ícones                                              |
+| `hasShadow`            | boolean              | false            | Se deve aplicar sombra ao campo                                 |
+| `textStyle`            | StyleProp<TextStyle> | -                | Estilo para o texto digitado                                    |
+| `inputStyle`           | StyleProp<TextStyle> | -                | Estilo para o input                                             |
+| `containerStyle`       | StyleProp<ViewStyle> | -                | Estilo para o container do campo                                |
+| `placeholderTextColor` | string               | -                | Cor do texto de placeholder                                     |
+| `autoFocus`            | boolean              | false            | Se o campo deve receber foco automaticamente ao ser renderizado |
+| `rightIconName`        | string               | -                | Nome do ícone exibido à direita                                 |
+| `leftIconName`         | string               | -                | Nome do ícone exibido à esquerda                                |
+| `inputRef`             | RefObject            | -                | Referência para o input                                         |
+
+## Exemplos
+
+### Barra de Pesquisa Fixa
+
+```tsx
+import React, { useState } from 'react';
+import { StyleSheet, View, FlatList, Text } from 'react-native';
+import { SearchInput, Typography } from '@platformbuilders/fluid-react-native';
+
+const ProductSearchScreen = () => {
+  const [searchValue, setSearchValue] = useState('');
+  const [products, setProducts] = useState([
+    { id: '1', name: 'Smartphone Galaxy A52', category: 'Eletrônicos' },
+    { id: '2', name: 'Notebook Dell Inspiron', category: 'Computadores' },
+    { id: '3', name: 'Smart TV 50" 4K', category: 'Eletrônicos' },
+    { id: '4', name: 'Fone de Ouvido Bluetooth', category: 'Acessórios' },
+    { id: '5', name: 'Teclado Mecânico', category: 'Periféricos' },
+    { id: '6', name: 'Mouse sem Fio', category: 'Periféricos' },
+  ]);
+
+  const filteredProducts = products.filter(
+    (product) =>
+      product.name.toLowerCase().includes(searchValue.toLowerCase()) ||
+      product.category.toLowerCase().includes(searchValue.toLowerCase()),
+  );
+
+  const renderItem = ({ item }) => (
+    <View style={styles.productItem}>
+      <Typography variant="md" style={styles.productName}>
+        {item.name}
+      </Typography>
+      <Typography variant="sm" style={styles.productCategory}>
+        {item.category}
+      </Typography>
+    </View>
+  );
+
+  return (
+    <View style={styles.container}>
+      <View style={styles.searchContainer}>
+        <SearchInput
+          onChange={setSearchValue}
+          accessibility="Buscar produtos"
+          placeholder="Buscar por nome ou categoria"
+          iconColor="#3366FF"
+          hasShadow={true}
+          leftIconName="search"
+          rightIconName="filter"
+          onRightIconPress={() => console.log('Abrir filtros')}
+          containerStyle={styles.searchInput}
+        />
+      </View>
+
+      {filteredProducts.length > 0 ? (
+        <FlatList
+          data={filteredProducts}
+          renderItem={renderItem}
+          keyExtractor={(item) => item.id}
+          contentContainerStyle={styles.listContent}
+        />
+      ) : (
+        <View style={styles.emptyState}>
+          <Typography variant="md">
+            Nenhum produto encontrado para "{searchValue}"
+          </Typography>
+        </View>
+      )}
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#F5F5F5',
+  },
+  searchContainer: {
+    padding: 16,
+    backgroundColor: '#FFFFFF',
+    borderBottomWidth: 1,
+    borderBottomColor: '#EEEEEE',
+  },
+  searchInput: {
+    borderRadius: 8,
+    backgroundColor: '#F9F9F9',
+  },
+  listContent: {
+    padding: 16,
+  },
+  productItem: {
+    padding: 16,
+    backgroundColor: '#FFFFFF',
+    borderRadius: 8,
+    marginBottom: 8,
+    borderLeftWidth: 4,
+    borderLeftColor: '#3366FF',
+  },
+  productName: {
+    fontWeight: 'bold',
+    marginBottom: 4,
+  },
+  productCategory: {
+    color: '#666666',
+  },
+  emptyState: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 16,
+  },
+});
+```
+
+### Pesquisa com Histórico
+
+```tsx
+import React, { useState, useEffect } from 'react';
+import { StyleSheet, View, TouchableOpacity, FlatList } from 'react-native';
+import {
+  SearchInput,
+  Typography,
+  Icon,
+} from '@platformbuilders/fluid-react-native';
+
+const SearchWithHistoryScreen = () => {
+  const [searchValue, setSearchValue] = useState('');
+  const [isSearching, setIsSearching] = useState(false);
+  const [searchHistory, setSearchHistory] = useState([
+    'smartphone',
+    'notebook',
+    'fone de ouvido',
+    'monitor',
+  ]);
+
+  // Limpa o valor de busca quando o componente é desmontado
+  useEffect(() => {
+    return () => setSearchValue('');
+  }, []);
+
+  const handleSearch = (value) => {
+    setSearchValue(value);
+    setIsSearching(!!value);
+  };
+
+  const handleSubmit = () => {
+    if (searchValue && !searchHistory.includes(searchValue.toLowerCase())) {
+      setSearchHistory(
+        [searchValue.toLowerCase(), ...searchHistory].slice(0, 10),
+      );
+    }
+    console.log('Pesquisando por:', searchValue);
+    // Aqui você faria a pesquisa real
+  };
+
+  const handleSelectHistory = (item) => {
+    setSearchValue(item);
+    setIsSearching(true);
+  };
+
+  const handleClearHistory = () => {
+    setSearchHistory([]);
+  };
+
+  const handleClearSearch = () => {
+    setSearchValue('');
+    setIsSearching(false);
+  };
+
+  const renderHistoryItem = ({ item }) => (
+    <TouchableOpacity
+      style={styles.historyItem}
+      onPress={() => handleSelectHistory(item)}
+    >
+      <Icon name="clock" size={16} color="#999" />
+      <Typography variant="sm" style={styles.historyText}>
+        {item}
+      </Typography>
+    </TouchableOpacity>
+  );
+
+  return (
+    <View style={styles.container}>
+      <View style={styles.searchContainer}>
+        <SearchInput
+          onChange={handleSearch}
+          onSubmit={handleSubmit}
+          onClear={handleClearSearch}
+          value={searchValue}
+          accessibility="Campo de pesquisa"
+          placeholder="O que você está procurando?"
+          iconColor="#3366FF"
+          autoFocus={true}
+          containerStyle={styles.searchInput}
+        />
+      </View>
+
+      {!isSearching && searchHistory.length > 0 && (
+        <View style={styles.historyContainer}>
+          <View style={styles.historyHeader}>
+            <Typography variant="sm" style={styles.historyTitle}>
+              Pesquisas recentes
+            </Typography>
+            <TouchableOpacity onPress={handleClearHistory}>
+              <Typography variant="sm" style={styles.clearButton}>
+                Limpar
+              </Typography>
+            </TouchableOpacity>
+          </View>
+
+          <FlatList
+            data={searchHistory}
+            renderItem={renderHistoryItem}
+            keyExtractor={(item) => item}
+            contentContainerStyle={styles.historyList}
+          />
+        </View>
+      )}
+
+      {isSearching && (
+        <View style={styles.resultsContainer}>
+          <Typography variant="md" style={styles.resultsTitle}>
+            {searchValue ? `Resultados para "${searchValue}"` : 'Resultados'}
+          </Typography>
+
+          {/* Aqui você exibiria os resultados da pesquisa */}
+          <View style={styles.emptyResults}>
+            <Typography>Digite e pressione Enter para pesquisar</Typography>
+          </View>
+        </View>
+      )}
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#FFFFFF',
+  },
+  searchContainer: {
+    padding: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: '#EEEEEE',
+  },
+  searchInput: {
+    borderRadius: 24,
+    backgroundColor: '#F5F5F5',
+  },
+  historyContainer: {
+    flex: 1,
+    padding: 16,
+  },
+  historyHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 16,
+  },
+  historyTitle: {
+    fontWeight: 'bold',
+    color: '#333333',
+  },
+  clearButton: {
+    color: '#3366FF',
+  },
+  historyList: {
+    paddingBottom: 16,
+  },
+  historyItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: '#F0F0F0',
+  },
+  historyText: {
+    marginLeft: 12,
+    color: '#333333',
+  },
+  resultsContainer: {
+    flex: 1,
+    padding: 16,
+  },
+  resultsTitle: {
+    fontWeight: 'bold',
+    marginBottom: 16,
+  },
+  emptyResults: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
+```
