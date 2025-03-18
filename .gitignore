@@ -92,7 +92,7 @@ DevelopmentApp/ios/Pods/
 # Codewall
 .codewall
 
-# Docusaurus
+# Documentation
 docs/website/.docusaurus
 docs/website/build
 docs/website/node_modules
@@ -113,6 +113,7 @@ ui-debug.log
 database-debug.log
 pubsub-debug.log
 
+<<<<<<< HEAD
 # Rspress
 docs/rspress/node_modules
 docs/rspress/dist
@@ -124,3 +125,7 @@ docs/rspress/*.log
 docs/rspress/.DS_Store
 docs/rspress/.env*
 !docs/rspress/.env.example
+=======
+# Lib only files
+yarn.lock
+>>>>>>> origin/chore/clauding
