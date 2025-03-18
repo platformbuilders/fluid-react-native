@@ -92,7 +92,7 @@ DevelopmentApp/ios/Pods/
 # Codewall
 .codewall
 
-# Docusaurus
+# Documentation
 docs/website/.docusaurus
 docs/website/build
 docs/website/node_modules
@@ -112,3 +112,6 @@ firebase-debug.*.log
 ui-debug.log
 database-debug.log
 pubsub-debug.log
+
+# Lib only files
+yarn.lock
