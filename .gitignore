@@ -112,3 +112,15 @@ firebase-debug.*.log
 ui-debug.log
 database-debug.log
 pubsub-debug.log
+
+# Rspress
+docs/rspress/node_modules
+docs/rspress/dist
+docs/rspress/doc_build
+docs/rspress/.temp
+docs/rspress/.cache
+docs/rspress/.rspress
+docs/rspress/*.log
+docs/rspress/.DS_Store
+docs/rspress/.env*
+!docs/rspress/.env.example
