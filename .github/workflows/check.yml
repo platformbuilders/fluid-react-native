@@ -4,7 +4,12 @@ on:
   pull_request:
     branches:
       - master
-        
+      - develop
+      - feature/*
+      - hotfix/*
+      - release/*
+      - main
+
 jobs:
   call-workflow:
     uses: platformbuilders/actions-workflows/.github/workflows/check-react-lib.yml@main
@@ -20,5 +25,3 @@ jobs:
         uses: codecov/codecov-action@v4
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-
-        
