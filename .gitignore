@@ -124,3 +124,6 @@ docs/rspress/*.log
 docs/rspress/.DS_Store
 docs/rspress/.env*
 !docs/rspress/.env.example
+
+# Arquivo de secrets para testes do Act
+.secrets

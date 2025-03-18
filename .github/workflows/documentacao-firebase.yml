@@ -1,0 +1,85 @@
+name: Gerar Documentação e Publicar no Firebase
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch: # Permite execução manual
+
+jobs:
+  check:
+    name: Verificação de Qualidade
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repositório
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          cache: 'yarn'
+
+      - name: Instalar Dependências
+        run: |
+          yarn install --frozen-lockfile
+
+      - name: Configurar Variáveis NPM (se necessário)
+        run: echo "$PACKAGES_NPMRC" > .npmrc
+        env:
+          PACKAGES_NPMRC: ${{ secrets.PACKAGES_NPMRC }}
+
+      - name: Executar Lint
+        run: yarn lint
+
+      - name: Executar Testes
+        run: yarn test
+
+      - name: Verificação de Segurança com Semgrep
+        run: yarn semgrep
+
+      - name: Upload de Relatórios de Cobertura (se configurado)
+        uses: codecov/codecov-action@v4
+        if: ${{ env.CODECOV_TOKEN != '' }}
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+
+  build_and_deploy:
+    name: Gerar Docs e Publicar
+    needs: check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repositório
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          cache: 'yarn'
+
+      - name: Instalar Dependências
+        run: |
+          yarn install --frozen-lockfile
+
+      # Gerar documentação
+      - name: Gerar Documentação
+        run: |
+          cd docs/website
+          yarn install --frozen-lockfile
+          yarn build
+
+      # Deploy para o Firebase Hosting
+      - name: Publicar no Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
+          channelId: live
+          projectId: '${{ secrets.FIREBASE_PROJECT_ID }}'
+          target: docs
