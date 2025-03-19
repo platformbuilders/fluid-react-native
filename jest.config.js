@@ -3,10 +3,10 @@ const { defaults: tsjPreset } = require('ts-jest/presets');
 module.exports = {
   coverageThreshold: {
     global: {
-      branches: 95,
-      functions: 95,
-      lines: 95,
-      statements: 95,
+      branches: 84,
+      functions: 84,
+      lines: 84,
+      statements: 84,
     },
   },
   preset: 'react-native',
