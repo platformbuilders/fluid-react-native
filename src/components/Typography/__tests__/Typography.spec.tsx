@@ -13,10 +13,12 @@ jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper', () => ({}), {
 // Mock completo para react-native
 jest.mock('react-native', () => {
   // Criamos um mock mais completo que substitui explicitamente os módulos problemáticos
+  const Text = 'Text'; // Definir componente Text explicitamente
+
   return {
     // Componentes básicos
     View: 'View',
-    Text: 'Text',
+    Text, // Exportar o componente Text
     TouchableOpacity: 'TouchableOpacity',
 
     // Animated API
@@ -55,6 +57,9 @@ jest.mock('react-native', () => {
     },
   };
 });
+
+// Obter o componente Text do mock
+const { Text } = jest.requireMock('react-native');
 
 // Configuração dos mocks para hooks React
 beforeEach(() => {
@@ -209,7 +214,7 @@ describe('<Typography />', () => {
     );
 
     // Encontre o Text interno (filho direto do Typography)
-    const textComponent = rendered.root.findByType('Text');
+    const textComponent = rendered.root.findByType(Text);
     expect(textComponent.props.testID).toBe('Texto sem id');
   });
 
@@ -221,7 +226,7 @@ describe('<Typography />', () => {
     );
 
     // Encontre o Text interno (filho direto do Typography)
-    const textComponent = rendered.root.findByType('Text');
+    const textComponent = rendered.root.findByType(Text);
     expect(textComponent.props.testID).toBe('id-teste');
   });
 
@@ -235,7 +240,7 @@ describe('<Typography />', () => {
     );
 
     // Encontre o Text interno (filho direto do Typography)
-    const textComponent = rendered.root.findByType('Text');
+    const textComponent = rendered.root.findByType(Text);
     expect(textComponent.props.testID).toBe('accessibility-teste');
   });
 });

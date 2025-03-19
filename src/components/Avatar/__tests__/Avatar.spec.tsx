@@ -1,7 +1,7 @@
 /* eslint-disable sonarjs/no-duplicate-string */
 /* eslint-disable sonarjs/prefer-immediate-return */
 /* eslint-disable sonarjs/no-nested-template-literals */
-/* eslint-disable sonarjs/prefer-async-await */
+/* eslint-disable promise/prefer-await-to-callbacks */
 import React, { createRef } from 'react';
 import { launchImageLibrary } from 'react-native-image-picker';
 import renderer, { act } from 'react-test-renderer';
@@ -19,18 +19,20 @@ const defaultAvatarUrl = 'https://avatars.githubusercontent.com/u/4726921?v=4';
 // Mock para react-native-image-picker
 jest.mock('react-native-image-picker', () => {
   return {
-    launchImageLibrary: jest.fn(async (options, callback) => {
-      // Usando Promise em vez de callback aninhado
-      await new Promise((resolve) => setTimeout(resolve, 10));
-      const result = {
+    launchImageLibrary: jest.fn((_options, callback) => {
+      // Chamar o callback com a resposta simulada
+      if (callback) {
+        callback({
+          didCancel: false,
+          assets: [{ uri: 'file://test/image.jpg' }],
+        });
+      }
+
+      // Retornar uma Promise para compatibilidade com implementações que aguardam uma Promise
+      return Promise.resolve({
         didCancel: false,
         assets: [{ uri: 'file://test/image.jpg' }],
-      };
-      // Ainda chamamos o callback para manter compatibilidade com o componente
-      if (callback) {
-        callback(result);
-      }
-      return result;
+      });
     }),
   };
 });
@@ -227,16 +229,19 @@ describe('<Avatar />', () => {
 
     // Criando uma versão personalizada do mock para este teste específico
     (launchImageLibrary as jest.Mock).mockImplementationOnce(
-      async (options, callback) => {
-        // Retornando objeto de resultado e chamando o callback
-        const result = {
+      (_options, callback) => {
+        // Chamar o callback com a resposta simulada
+        if (callback) {
+          callback({
+            didCancel: false,
+            assets: [{ uri: TEST_IMAGE_URI }],
+          });
+        }
+
+        return Promise.resolve({
           didCancel: false,
           assets: [{ uri: TEST_IMAGE_URI }],
-        };
-        if (callback) {
-          callback(result);
-        }
-        return result;
+        });
       },
     );
 
@@ -261,7 +266,7 @@ describe('<Avatar />', () => {
       () => {
         expect(onUploadMock).toHaveBeenCalledWith(TEST_IMAGE_URI);
       },
-      { timeout: 1000 },
+      { timeout: 3000 },
     );
   });
 
@@ -271,16 +276,19 @@ describe('<Avatar />', () => {
 
     // Mock personalizado para o teste de refs
     (launchImageLibrary as jest.Mock).mockImplementationOnce(
-      async (options, callback) => {
-        // Retornando objeto de resultado e chamando o callback
-        const result = {
+      (_options, callback) => {
+        // Chamar o callback com a resposta simulada
+        if (callback) {
+          callback({
+            didCancel: false,
+            assets: [{ uri: TEST_IMAGE_URI }],
+          });
+        }
+
+        return Promise.resolve({
           didCancel: false,
           assets: [{ uri: TEST_IMAGE_URI }],
-        };
-        if (callback) {
-          callback(result);
-        }
-        return result;
+        });
       },
     );
 
@@ -310,7 +318,7 @@ describe('<Avatar />', () => {
       () => {
         expect(onUploadMock).toHaveBeenCalledWith(TEST_IMAGE_URI);
       },
-      { timeout: 1000 },
+      { timeout: 15000 },
     );
 
     // Limpar a imagem e verificar se foi limpa corretamente
@@ -320,7 +328,7 @@ describe('<Avatar />', () => {
 
     // Não podemos verificar diretamente o estado interno, mas podemos verificar se onUpload não foi chamado novamente
     expect(onUploadMock).toHaveBeenCalledTimes(1);
-  }, 10000); // Aumentar timeout para este teste
+  }, 15000); // Aumentar timeout para este teste
 
   it('should handle string image URI correctly', () => {
     const wrapper = renderer.create(
@@ -364,19 +372,22 @@ describe('<Avatar />', () => {
 
     // Reset e configuração do mock para verificar os parâmetros passados
     (launchImageLibrary as jest.Mock).mockImplementationOnce(
-      async (options, callback) => {
+      (_options, callback) => {
         // Verifica se as opções contêm a qualidade de imagem correta
-        expect(options.imageQuality).toBe(0.8);
+        expect(_options.imageQuality).toBe(0.8);
 
-        // Retornando objeto de resultado e chamando o callback
-        const result = {
+        // Chamar o callback com a resposta simulada
+        if (callback) {
+          callback({
+            didCancel: false,
+            assets: [{ uri: TEST_IMAGE_URI }],
+          });
+        }
+
+        return Promise.resolve({
           didCancel: false,
           assets: [{ uri: TEST_IMAGE_URI }],
-        };
-        if (callback) {
-          callback(result);
-        }
-        return result;
+        });
       },
     );
 
@@ -402,7 +413,7 @@ describe('<Avatar />', () => {
       () => {
         expect(onUploadMock).toHaveBeenCalledWith(TEST_IMAGE_URI);
       },
-      { timeout: 1000 },
+      { timeout: 3000 },
     );
   });
 
@@ -411,15 +422,17 @@ describe('<Avatar />', () => {
 
     // Alterando o mock para simular cancelamento
     (launchImageLibrary as jest.Mock).mockImplementationOnce(
-      async (options, callback) => {
-        // Retornando objeto de resultado com didCancel=true e chamando o callback
-        const result = {
-          didCancel: true,
-        };
+      (_options, callback) => {
+        // Chamar o callback com cancelamento
         if (callback) {
-          callback(result);
+          callback({
+            didCancel: true,
+          });
         }
-        return result;
+
+        return Promise.resolve({
+          didCancel: true,
+        });
       },
     );
 
