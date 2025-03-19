@@ -1,0 +1,41 @@
+name: Documentação Rspress 📚
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'docs/**'
+  pull_request:
+    branches:
+      - main
+      - master
+    paths:
+      - 'docs/**'
+
+jobs:
+  build-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          cache: 'yarn'
+
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build Documentation
+        run: yarn docs:build
+
+      - name: Upload Documentation Artifacts
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v3
+        with:
+          name: rspress-docs
+          path: docs/rspress/dist
+          retention-days: 5 

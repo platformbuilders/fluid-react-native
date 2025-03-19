@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "rspress dev",
     "build": "rspress build",
-    "preview": "rspress preview"
+    "preview": "rspress preview",
+    "clean": "rm -rf dist"
   },
   "keywords": [
     "fluid",
@@ -17,6 +18,7 @@
   "license": "ISC",
   "devDependencies": {
     "rspress": "^1.0.0",
-    "@rspress/core": "^1.0.0"
+    "@rspress/core": "^1.0.0",
+    "@rspress/plugin-api-docgen": "^1.0.0"
   }
 }

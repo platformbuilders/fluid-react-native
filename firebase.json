@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "docs/website/build",
+    "public": "docs/rspress/dist",
     "ignore": [
       "firebase.json",
       "**/.*",
