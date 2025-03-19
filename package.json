@@ -44,9 +44,9 @@
     "version:minor": "npm version minor",
     "version:patch": "npm version patch",
     "semgrep": "semgrep --config ./.rules ./src --text --output=./.rules/output.txt",
-    "docs:start": "cd docs/website && yarn start",
-    "docs:build": "cd docs/website && yarn build",
-    "docs:serve": "cd docs/website && yarn serve"
+    "docs:dev": "rspress dev",
+    "docs:build": "rspress build",
+    "docs:preview": "rspress preview"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
@@ -126,7 +126,9 @@
     "react-test-renderer": "18.3.1",
     "styled-components": "5.3.11",
     "ts-jest": "29.2.5",
-    "typescript": "5.3.3"
+    "typescript": "5.3.3",
+    "rspress": "^0.1.0",
+    "@rspress/plugin-api-docgen": "^0.1.0"
   },
   "peerDependencies": {
     "@platformbuilders/helpers": "0.11.3",
