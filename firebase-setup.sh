@@ -1,14 +1,9 @@
 #!/bin/bash
 
-# Script para configurar os alvos do Firebase Hosting
-# Você precisa ter o Firebase CLI instalado e estar logado
+# Script para configurar o alvo de hosting no Firebase
 
-# Substitua 'fluid-ds' pelo ID do seu projeto Firebase
-PROJECT_ID="fluid-ds"
+echo "Configurando alvo 'fluid-ds' para o projeto Firebase..."
+firebase target:apply hosting fluid-ds fluid-ds
 
-# Configurar alvos de hosting
-firebase target:apply hosting docs $PROJECT_ID
-firebase target:apply hosting website $PROJECT_ID-website
-
-echo "Alvos configurados com sucesso!"
-echo "Importante: certifique-se de criar e configurar o site $PROJECT_ID-website no console do Firebase." 
+echo "Configuração de alvos concluída!"
+echo "Agora você pode executar './deploy.sh' para fazer o deploy do site." 

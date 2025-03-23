@@ -132,6 +132,41 @@ Visite nossa [documentação completa](https://fluid-ds.web.app) para:
 - Melhores práticas
 - Storybook interativo
 
+### 🚀 Deploy da Documentação
+
+Para fazer o deploy da documentação, siga estas etapas:
+
+1. Instale o Firebase CLI (se ainda não tiver):
+   ```bash
+   npm install -g firebase-tools
+   ```
+
+2. Faça login no Firebase:
+   ```bash
+   firebase login
+   ```
+
+3. Configure o alvo do Firebase Hosting:
+   ```bash
+   ./firebase-setup.sh
+   ```
+
+4. Para fazer o deploy:
+   ```bash
+   yarn deploy
+   ```
+   ou
+   ```bash
+   ./deploy.sh
+   ```
+
+5. Para testar o build sem fazer deploy:
+   ```bash
+   ./test-deploy.sh
+   ```
+
+A documentação estará disponível em [https://fluid-ds.web.app](https://fluid-ds.web.app).
+
 ## 🧪 Desenvolvimento Local
 
 ### Usando Yalc
