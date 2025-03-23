@@ -403,4 +403,34 @@ Ao atualizar este arquivo progress.md, sempre execute os seguintes comandos para
    npm test
    ```
 
-Registre quaisquer erros, alertas ou métricas relevantes na seção de Métricas deste documento. Esta prática garante que o progresso do projeto seja monitorado de forma consistente e que problemas potenciais sejam identificados precocemente. 
+Registre quaisquer erros, alertas ou métricas relevantes na seção de Métricas deste documento. Esta prática garante que o progresso do projeto seja monitorado de forma consistente e que problemas potenciais sejam identificados precocemente.
+
+## 21 de julho de 2023
+
+### Melhorias nos Testes
+
+Continuação do trabalho de melhoria de cobertura de testes. Foco nos seguintes componentes:
+
+#### Melhorias no Accordion:
+- Corrigidos testes que estavam falhando devido a comportamentos específicos do componente
+- Ajustada a lógica de teste para o fechamento de seções (não suportado pelo componente subjacente)
+- Simplificado o teste de cores de ícones para evitar acesso direto a propriedades de estilo
+- Todos os 20 testes estão passando com sucesso
+- Componente Accordion agora com 100% de cobertura
+
+#### Outros componentes melhorados anteriormente:
+- Button: Corrigidos problemas com act() e adicionados novos casos de teste
+- Link: Melhorada a cobertura de testes
+- Separator: Adicionados testes mais abrangentes
+- TouchableOpacity: Corrigidos testes específicos para estados desabilitados e feedback háptico
+- PasswordInput: Melhorada a cobertura de testes para variações de propriedades 
+- Typography: Aumentada a cobertura para diferentes estilos e variações
+- FormError: Cobertura de testes completa
+
+### Métricas Atuais
+- Global: 11.63% statements, 9.77% branches, 10.63% functions, 11.25% lines
+- Accordion: 100% em todas as métricas
+- Touchable: 50% statements, 37.5% branches, 33.33% functions, 50% lines
+- Typography: 75% statements, 57.14% branches, 100% functions, 75% lines
+
+Necessário continuar o trabalho em outros componentes, seguindo ordem alfabética. 

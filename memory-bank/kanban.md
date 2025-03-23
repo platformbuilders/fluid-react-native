@@ -18,6 +18,9 @@ kanban-plugin: basic
 - Adicionar suporte a toast notifications
 - Padronizar a documentação Storybook para todos os componentes
 - Adicionar suporte para variantes de tema (claro/escuro)
+- Melhorar documentação de API para novos componentes
+- Adicionar suporte para temas personalizáveis no Markdown
+- Adicionar suporte para renderização condicional no Avatar
 
 ## Trabalho Atual
 - Melhorar thresholds de cobertura de testes
@@ -25,6 +28,9 @@ kanban-plugin: basic
 - Aplicar a abordagem de correção de warnings de act() para outros componentes
 - Implementar testes de unidade para o componente TextInput para melhorar cobertura
 - Melhorar a cobertura de testes para o componente Toggle
+- Melhorar threshold de cobertura de testes de componentes individuais
+- Corrigir warnings relacionados a act() nos testes para React 18
+- Verificar e corrigir qualquer problema de acessibilidade pendente
 
 ## Próximos Passos
 - Analisar componentes com cobertura de testes abaixo de 95%
@@ -35,6 +41,13 @@ kanban-plugin: basic
 - Implementar testes para o componente Header
 - Implementar testes para o componente RadioButton
 - Implementar testes para o componente Image
+- Analisar componentes Avatar para melhorar cobertura
+- Analisar componentes Badge para melhorar cobertura
+- Analisar componentes BottomNavigation para melhorar cobertura
+- Revisar implementação de acessibilidade no TextInput
+- Adicionar testes para utils/accessibility.ts
+- Melhorar testes para cenários de erro em PinInput
+- Revisar teste de Image para garantir cobertura completa
 
 ## Concluído
 - Configuração inicial do Banco de Memória Obsidian
@@ -60,4 +73,19 @@ kanban-plugin: basic
 - Implementar testes para o componente Icon ✅ 2024-05-19
 - Melhorar a cobertura de testes do componente Button para atingir 100% ✅ 2024-05-20
 - Melhorar a cobertura de testes do componente Link para atingir 100% ✅ 2024-05-20
-- Melhorar a cobertura de testes do componente Separator para atingir 100% ✅ 2024-05-20 
+- Melhorar a cobertura de testes do componente Separator para atingir 100% ✅ 2024-05-20
+- Implementar testes para Touchable
+- Implementar testes para PasswordInput
+- Aumentar cobertura de testes do Typography para 75%+
+- Corrigir warnings do act() em SearchInput e Avatar
+- Implementar testes adicionais para FormError
+- Finalizar documentação de props para Touchable
+- Documentar uso de ThemeProvider
+- Refatorar testes para usar act() conforme recomendações do React 18
+- Corrigir snapshots do Typography
+- Resolver problemas de testes do SearchInput
+- Implementar testes para Button, Link e Separator
+- Melhorar cobertura de testes para Accordion (100%)
+- Corrigir testes com comportamentos específicos do Accordion
+- Ajustar testes para fechamento de seções no Accordion
+- Simplificar teste de cores de ícones no Accordion 
