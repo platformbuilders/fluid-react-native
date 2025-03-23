@@ -161,6 +161,12 @@ O projeto está em um estágio maduro, com 23 componentes já implementados e te
 - Documentação das estratégias de teste para o MaskedTextInput no arquivo docs/testing-maskedtextinput.md
 - Registrados aprendizados e técnicas para lidar com componentes de alta complexidade ciclomática
 
+**Data: 2024-05-14**
+- Correção dos testes do componente SearchInput usando a função act() para resolver warnings do React 18
+- Atualização dos snapshots do SearchInput para corrigir falhas nos testes
+- Documentação das estratégias de teste para o SearchInput e o uso correto de act() no React 18
+- Aumento da cobertura de testes para 96.42% em statements, 88.46% em branches e 88.88% em funções
+
 # Progresso do Projeto
 
 ## Visão Geral do Status
