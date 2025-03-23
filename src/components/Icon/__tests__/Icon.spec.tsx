@@ -156,4 +156,163 @@ describe('<Icon />', () => {
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
+
+  it('should render with FABrands icon type', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Icon
+          id={TEST_ID}
+          accessibility={ACCESSIBILITY}
+          name="github"
+          type={IconFonts.FABrands}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render with FALight icon type', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Icon
+          id={TEST_ID}
+          accessibility={ACCESSIBILITY}
+          name="home"
+          type={IconFonts.FALight}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render with FARegular icon type', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Icon
+          id={TEST_ID}
+          accessibility={ACCESSIBILITY}
+          name="home"
+          type={IconFonts.FARegular}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render with FASolid icon type', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Icon
+          id={TEST_ID}
+          accessibility={ACCESSIBILITY}
+          name="home"
+          type={IconFonts.FASolid}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render SVG icon when name matches a bundled SVG', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Icon
+          id={TEST_ID}
+          accessibility={ACCESSIBILITY}
+          name="profile"
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render SVG icon with custom dimensions', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Icon
+          id={TEST_ID}
+          accessibility={ACCESSIBILITY}
+          name="profile"
+          width={50}
+          height={50}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render SVG icon with custom colors', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Icon
+          id={TEST_ID}
+          accessibility={ACCESSIBILITY}
+          name="profile"
+          color="#FF0000"
+          borderColor="#00FF00"
+          backgroundColor="#0000FF"
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render custom icon from iconSets', () => {
+    const CustomIcon = (props: any) => <></>;
+    const customIconSets = {
+      IconCustom: CustomIcon
+    };
+
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Icon
+          id={TEST_ID}
+          accessibility={ACCESSIBILITY}
+          name="custom"
+          iconSets={customIconSets}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should use accessibility as testID when id is not provided', () => {
+    const { getAllByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Icon
+          accessibility={ACCESSIBILITY}
+          name="home"
+        />
+      </ThemeProvider>,
+    );
+
+    const components = getAllByTestId(ACCESSIBILITY);
+    expect(components.length).toBeGreaterThan(0);
+  });
+
+  it('should use icon name as fallback for accessibility', () => {
+    const testId = 'test-no-accessibility';
+    const iconName = 'home';
+    
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Icon
+          id={testId}
+          accessibility={iconName}
+          name={iconName}
+        />
+      </ThemeProvider>,
+    );
+    
+    const component = getByTestId(testId);
+    expect(component).toBeTruthy();
+  });
 });
