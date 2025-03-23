@@ -1,3 +1,147 @@
+# Progresso (Progress)
+
+Este documento registra o progresso atual do projeto Fluid React Native, incluindo os componentes já implementados, funcionalidades em desenvolvimento, e próximos passos.
+
+## O que está funcionando
+
+Temos uma biblioteca de componentes React Native robusta e em expansão, com os seguintes componentes implementados e testados:
+
+### Componentes Implementados
+
+#### 1. **Typography**
+- Typography (Text)
+- Markdown
+
+#### 2. **Interação**
+- Button
+- Link
+- Touchable
+- RadioButton (com tratamento correto para estado desabilitado)
+
+#### 3. **Formulários**
+- TextInput
+- MaskedTextInput
+- PasswordInput
+- SearchInput
+- PinInput
+- Checkbox
+- Toggle
+- FormError
+
+#### 4. **Feedback**
+- LoadingIndicator
+
+#### 5. **Layout**
+- Separator
+- Header
+- Accordion
+
+#### 6. **Visuais**
+- Badge
+- Icon
+- Avatar
+
+#### 7. **Conteúdo**
+- Image
+
+#### 8. **Navegação**
+- BottomNavigation
+
+#### 9. **Utilitários**
+- Accessibility Helpers (100% de cobertura)
+- Custom Hooks
+
+### Infraestrutura
+
+- Theme System (Sistema de temas)
+- Design Tokens
+- TypeScript Types
+- Testing Infrastructure (Jest + React Native Testing Library)
+- Storybook Documentation
+- ESLint + Prettier Configuration
+- CI/CD Setup
+
+## Ainda a ser implementado
+
+### Componentes Planejados
+
+1. **Feedback**
+   - Toast/Snackbar
+   - Modal/Dialog
+   - Alert
+   - ProgressBar
+
+2. **Layout**
+   - Card
+   - Carousel
+   - Tabs
+   - Grid System
+
+3. **Formulários**
+   - Select/Dropdown
+   - DatePicker
+   - TimePicker
+   - Slider
+
+4. **Navegação**
+   - TabBar
+   - Drawer
+   - NavigationBar
+
+## Status Atual
+
+O projeto está em um estágio maduro, com 23 componentes já implementados e testados. A cobertura de testes está em constante melhoria, com foco em atingir pelo menos 90% de cobertura em todos os componentes.
+
+### Métricas
+
+- **Componentes Implementados**: 23
+- **Cobertura de Testes**:
+  - **Statements**: 92.42%
+  - **Branches**: 90.29%
+  - **Functions**: 82.79%
+  - **Lines**: 92.25%
+  - **Componentes com menos de 90% de cobertura**: RadioButton (66.66% em funções, mas 100% em statements e lines), MaskedTextInput (71.42%)
+
+## Problemas Conhecidos
+
+- Inconsistência nos testIDs entre diferentes componentes
+- Alguns componentes precisam de melhorias na acessibilidade
+- Documentação insuficiente para alguns componentes complexos
+
+## Atualizações
+
+**Data: 2023-05-15**
+- Implementação inicial de 15 componentes
+- Configuração do sistema de testes
+
+**Data: 2023-08-20**
+- Adição de 5 novos componentes
+- Melhoria na documentação
+
+**Data: 2023-12-10**
+- Atualização para React Native 0.72
+- Adição de 3 novos componentes
+
+**Data: 2024-02-28**
+- Atualização para React Native 0.73
+- Melhoria na tipagem TypeScript
+
+**Data: 2024-04-15**
+- Atualização para React Native 0.76.1
+- Melhoria significativa na cobertura de testes
+
+**Data: 2024-04-20**
+- Aumento da cobertura de testes do SearchInput (de 62% para 96%)
+- Aumento da cobertura de testes do Icon (aumento na cobertura de branches de 78% para 93%)
+- Melhoria na cobertura global de testes para 95.26%
+
+**Data: 2024-04-22**
+- Aumento da cobertura de testes dos utilitários de acessibilidade para 100%
+
+**Data: 2024-04-23**
+- Correção do tratamento do estado desabilitado no RadioButton
+- Aumento da cobertura de testes do RadioButton (100% para statements, 90.9% para branches)
+
 # Progresso do Projeto
 
 ## O que já está funcionando

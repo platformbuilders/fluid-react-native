@@ -1,82 +1,66 @@
-# Contexto Ativo
+# Contexto Ativo (Active Context)
 
 ## Foco de Trabalho Atual
-O foco atual do projeto é a manutenção e expansão da biblioteca Fluid React Native. As principais áreas de atividade incluem:
 
-1. **Manutenção de componentes existentes** - Garantir que todos os componentes sejam compatíveis com as versões mais recentes do React Native
-2. **Desenvolvimento de novos componentes** - Expandir a biblioteca com componentes adicionais conforme necessidade
-3. **Melhorias de documentação** - Aprimorar a documentação existente e adicionar exemplos mais abrangentes
-4. **Correções de bugs** - Resolver problemas reportados pelos usuários da biblioteca
-5. **Melhorias na cobertura de testes** - Aumentar a cobertura de testes para garantir a qualidade e confiabilidade da biblioteca
+O foco atual é manter e expandir a biblioteca Fluid React Native, garantindo que ela continue a atender às necessidades dos desenvolvedores que a utilizam. Isso inclui:
+
+1. Melhorar a documentação de componentes
+2. Corrigir bugs reportados
+3. Adicionar novos componentes conforme necessário
+4. Melhorar a acessibilidade dos componentes existentes
+5. Expandir a cobertura de testes para componentes subutilizados
+6. Padronizar os testIDs para facilitar testes automatizados
 
 ## Mudanças Recentes
-- Atualização para React Native 0.76.1
-- Melhoria nos tipos TypeScript para melhor inferência
-- Correção de problemas de acessibilidade em vários componentes
-- Atualização da documentação com o novo sistema Rspress
-- Priorização das próximas tarefas por relevância e impacto
-- Correção de problemas nos testes do componente SearchInput relacionados a testIDs inconsistentes
-- Aumento significativo na cobertura de testes do componente SearchInput (de 62% para 96%)
-- Melhoria na cobertura de testes do componente Icon (aumento na cobertura de branches de 78% para 93%)
-- Melhoria na cobertura global de testes para 95.26%, superando o threshold de 84%
-- Aumento da cobertura de testes do módulo de utilitários de acessibilidade para 100% (stmts, branches, funcs, lines)
+
+1. **Melhoria na cobertura de testes do utilitário de acessibilidade**: Aumento da cobertura para 100%.
+2. **Melhoria na cobertura de testes do componente Icon**: Aumento de 78% para 93% na cobertura de branches.
+3. **Melhoria na cobertura de testes do componente SearchInput**: Aumento de 62% para 96%.
+4. **Melhoria no componente RadioButton**: Corrigido o tratamento do estado desabilitado e aumentada a cobertura de testes.
+   - Correção do comportamento do evento `onPress` para não ser disparado quando o componente está desabilitado
+   - Testes adicionados para validar a acessibilidade, estilos personalizados e comportamento quando desabilitado
+   - Cobertura de 100% para statements, 90.9% para branches, 66.66% para functions e 100% para lines
 
 ## Próximos Passos (Priorizados)
 
-### 1. Padronização e Refatoração dos TestIDs
-- Revisar e padronizar a geração de testIDs em todos os componentes
-- Implementar uma abordagem consistente para nomeação de testIDs
-- Corrigir os problemas identificados nos componentes TextInput e SearchInput
-- Melhorar a documentação sobre a estratégia de testIDs para facilitar testes futuros
+1. **Padronização de testIDs**: Garantir que todos os componentes sigam o mesmo padrão de testIDs.
+2. **Melhorias na cobertura de testes**: Focar nos componentes com menor cobertura, especialmente:
+   - MaskedTextInput (71.42% de cobertura)
+   - Outros componentes com menos de 90% de cobertura
+3. **Auditoria de acessibilidade**: Revisar todos os componentes para garantir que estejam seguindo as melhores práticas de acessibilidade.
+4. **Otimização de performance**: Identificar e corrigir possíveis gargalos de performance.
+5. **Expansão da documentação**: Melhorar a documentação existente e adicionar exemplos de uso.
 
-### 2. Melhorias na Cobertura de Testes
-- ✅ Atingido o threshold global de 84% para funções (atual: 87.09%)
-- Focar nos componentes com menor cobertura: RadioButton (50%), MaskedTextInput (71.42%)
-- ✅ Melhorar cobertura do SearchInput (aumentada de 62% para 96%)
-- ✅ Melhorar cobertura do Icon (aumento na cobertura de branches de 78% para 93%)
-- ✅ Melhorar testes de utils/accessibility.ts (aumentada de 33.33% para 100%)
-- Corrigir erros de ambiente relacionados a timers no Jest
-- Corrigir avisos de `act()` nos testes React
+## Decisões Técnicas em Andamento
 
-### 3. Auditoria de Acessibilidade
-- Realizar análise completa de acessibilidade nos componentes existentes
-- Implementar melhorias imediatas nos componentes com problemas identificados
-- Estabelecer diretrizes de acessibilidade para desenvolvimento futuro
+1. **Estratégia de Testes**: 
+   - Continuar utilizando a abordagem atual de testes unitários com Jest e react-native-testing-library
+   - Explorar ferramentas adicionais como Detox para testes E2E
+   - Aumentar a cobertura geral para mais de 90%
+   - Focar em componentes com menor cobertura
 
-### 4. Implementação de Componentes de Feedback Prioritários
-- Desenvolver Toast/Snackbar para notificações não-intrusivas
-- Implementar Modal/Dialog aprimorado para interações críticas
-- Criar componente de alerta com diferentes níveis de severidade
+2. **Gerenciamento de Estado**: 
+   - Manter o uso de hooks do React para gerenciamento de estado local
+   - Avaliar a integração com bibliotecas como Redux ou MobX para estados mais complexos
 
-### 5. Otimização de Performance
-- Reduzir o tamanho do pacote final
-- Otimizar renderização de componentes em listas longas
-- Implementar lazy loading para componentes complexos
+3. **Estilização**: 
+   - Continuar utilizando styled-components
+   - Explorar alternativas como StyleSheet para otimização de performance
 
-### 6. Expansão da Documentação
-- Criar exemplos práticos de uso para cada componente
-- Documentar padrões de composição recomendados
-- Elaborar guias de migração para novas versões
+## Considerações de Design
 
-### 7. Melhorias no Sistema de Temas
-- Refinar o sistema de design tokens para maior consistência
-- Aprimorar suporte a temas personalizados
-- Implementar transições suaves entre modos claro/escuro
+1. **Consistência**: Garantir que todos os componentes sigam o mesmo estilo e comportamento.
+2. **Flexibilidade**: Permitir customização suficiente para atender a diferentes casos de uso.
+3. **Acessibilidade**: Assegurar que todos os componentes sejam acessíveis.
+4. **Performance**: Otimizar componentes para melhor desempenho em dispositivos de menor capacidade.
 
-### 8. Testes em Dispositivos Reais
-- Testar componentes em diferentes dispositivos Android e iOS
-- Identificar e corrigir problemas específicos de plataforma
-- Documentar comportamentos esperados em cada plataforma
+## Desafios Atuais
 
-### 9. Componentes de Navegação Avançados
-- Desenvolver componentes de navegação solicitados pela equipe de design
-- Garantir integração suave com React Navigation
-- Implementar transições personalizadas
-
-### 10. Compatibilidade com React Native Web
-- Avaliar e implementar suporte a React Native Web
-- Testar componentes em ambiente web
-- Documentar limitações e diferenças entre plataformas
+1. **Compatibilidade**: Garantir que os componentes funcionem bem em diferentes versões do React Native.
+2. **Testes**: Aumentar a cobertura de testes para alcançar níveis aceitáveis (>90% global).
+3. **Documentação**: Melhorar a documentação para facilitar o uso da biblioteca.
+4. **Acessibilidade**: Melhorar a acessibilidade de todos os componentes.
+5. **Consistência de testIDs**: Garantir que todos os componentes sigam o mesmo padrão de testIDs.
 
 ## Decisões e Considerações em Andamento
 
