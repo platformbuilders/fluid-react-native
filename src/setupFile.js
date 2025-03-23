@@ -19,13 +19,13 @@ console.error = function(message) {
 };
 
 // Configuração de timers para evitar vazamentos
-beforeEach(() => {
+global.beforeEach(() => {
   // Usar timers falsos para maior controle
   jest.useFakeTimers();
 });
 
 // Limpar todos os timers pendentes após cada teste
-afterEach(() => {
+global.afterEach(() => {
   // Executar timers pendentes antes de limpá-los
   jest.runOnlyPendingTimers();
   jest.clearAllTimers();
@@ -35,7 +35,7 @@ afterEach(() => {
 });
 
 // Garantir que os timers sejam limpos após todos os testes
-afterAll(() => {
+global.afterAll(() => {
   jest.runOnlyPendingTimers();
   jest.clearAllTimers();
   

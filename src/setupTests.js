@@ -16,12 +16,12 @@ console.error = function(message) {
 };
 
 // Adiciona hooks globais para cada teste
-beforeEach(() => {
+global.beforeEach(() => {
   // Garantir que estamos usando timers falsos para testes mais previsíveis
   jest.useFakeTimers();
 });
 
-afterEach(() => {
+global.afterEach(() => {
   // Limpa todos os timers pendentes após cada teste
   jest.runOnlyPendingTimers();
   jest.clearAllTimers();
@@ -44,7 +44,7 @@ afterEach(() => {
 });
 
 // Limpa também quando um conjunto de testes é concluído
-afterAll(() => {
+global.afterAll(() => {
   // Limpa novamente todos os timers pendentes
   jest.runOnlyPendingTimers();
   jest.clearAllTimers();
