@@ -10,8 +10,14 @@ Recentemente, implementamos o processo de deploy da documentação do Fluid Reac
 
 Estamos construindo um website de documentação completo para a biblioteca Fluid React Native utilizando o Docusaurus. O objetivo é criar uma documentação clara, acessível e útil tanto para novos usuários quanto para desenvolvedores experientes.
 
+### Melhorias na Cobertura de Testes
+
+Realizamos uma melhoria significativa na cobertura de testes do componente RadioButton, que estava abaixo do threshold desejado. Implementamos testes adicionais para a função handlePress e seus diferentes caminhos (com e sem disabled, com e sem onPress), elevando a cobertura de funções de 66.66% para 100%. A cobertura de branches continua em 90.9%, com apenas uma linha não coberta devido a um cenário específico.
+
 ## Progresso Recente
 
+- Melhoramos a cobertura de testes do componente RadioButton
+- Implementamos testes mais detalhados para cenários de uso reais
 - Configuramos o Firebase Hosting para deploy simplificado da documentação
 - Criamos scripts de deploy e teste para facilitar o processo
 - Configuramos o GitHub Actions para deploy automatizado

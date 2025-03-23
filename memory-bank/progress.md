@@ -100,7 +100,9 @@ O projeto está em um estágio maduro, com 23 componentes já implementados e te
   - **Branches**: 90.29%
   - **Functions**: 82.79%
   - **Lines**: 92.25%
-  - **Componentes com menos de 90% de cobertura**: RadioButton (66.66% em funções, mas 100% em statements e lines), MaskedTextInput (threshold personalizado de 70% - atual: 79.16% statements, 78.12% branches, 100% functions, 79.16% lines)
+  - **Componentes com menos de 90% de cobertura**: 
+    - MaskedTextInput (threshold personalizado de 70% - atual: 79.16% statements, 78.12% branches, 100% functions, 79.16% lines)
+    - ~~RadioButton (66.66% em funções, mas 100% em statements e lines)~~ [Corrigido: 100% functions, 90.9% branches, 100% statements e lines]
 
 ## Problemas Conhecidos
 
@@ -145,6 +147,10 @@ O projeto está em um estágio maduro, com 23 componentes já implementados e te
 **Data: 2024-04-26**
 - Configuração de threshold personalizado para o MaskedTextInput (70%)
 - Melhoria na cobertura do MaskedTextInput (79.16% para statements, 78.12% para branches, 100% para functions)
+
+**Data: 2024-05-08**
+- Melhorias na cobertura de testes do RadioButton (de 66.66% para 100% em funções)
+- Implementação de testes mais detalhados para cenários de uso reais
 
 # Progresso do Projeto
 

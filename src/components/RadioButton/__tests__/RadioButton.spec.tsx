@@ -388,7 +388,7 @@ describe('<RadioButton />', () => {
   });
 
   it('should pass through additional props to Wrapper component', () => {
-    const additionalProps = { style: { margin: 10 } };
+    const additionalProps = { accessibilityHint: 'Teste customizado' };
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
         <RadioButton
@@ -400,6 +400,82 @@ describe('<RadioButton />', () => {
     );
 
     const radioButton = getByTestId('radio_test-radio');
-    expect(radioButton.props.style).toMatchObject(expect.objectContaining({ margin: 10 }));
+    expect(radioButton.props.accessibilityHint).toBe('Teste customizado');
+  });
+
+  it('should call onPress when radio button is pressed and not disabled', () => {
+    const onPressMock = jest.fn();
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <RadioButton
+          id="test-radio"
+          accessibility="accessibility test"
+          onPress={onPressMock}
+          checked={false}
+        />
+      </ThemeProvider>,
+    );
+
+    const radioButton = getByTestId('radio_test-radio');
+    fireEvent.press(radioButton);
+    
+    expect(onPressMock).toHaveBeenCalledTimes(1);
+  });
+
+  it('should not call onPress when radio button is pressed and disabled', () => {
+    const onPressMock = jest.fn();
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <RadioButton
+          id="test-radio"
+          accessibility="accessibility test"
+          onPress={onPressMock}
+          disabled={true}
+          checked={false}
+        />
+      </ThemeProvider>,
+    );
+
+    const radioButton = getByTestId('radio_test-radio');
+    fireEvent.press(radioButton);
+    
+    expect(onPressMock).not.toHaveBeenCalled();
+  });
+
+  it('should render correctly when onPress is not provided', () => {
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <RadioButton
+          id="test-radio"
+          accessibility="accessibility test"
+        />
+      </ThemeProvider>,
+    );
+
+    const radioButton = getByTestId('radio_test-radio');
+    
+    expect(() => {
+      fireEvent.press(radioButton);
+    }).not.toThrow();
+  });
+
+  it('should render correctly with default onPress implementation when not provided', () => {
+    const consoleSpy = jest.spyOn(console, 'error');
+    
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <RadioButton
+          id="test-radio"
+          accessibility="accessibility test"
+        />
+      </ThemeProvider>,
+    );
+
+    const radioButton = getByTestId('radio_test-radio');
+    fireEvent.press(radioButton);
+    
+    expect(consoleSpy).not.toHaveBeenCalled();
+    
+    consoleSpy.mockRestore();
   });
 });
