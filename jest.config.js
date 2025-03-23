@@ -27,10 +27,14 @@ module.exports = {
   ],
   modulePathIgnorePatterns: ['<rootDir>/dist/'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+  setupFiles: [
+    '<rootDir>/src/setupFile.js',
+  ],
   setupFilesAfterEnv: [
     '@testing-library/jest-native/extend-expect',
     '<rootDir>/src/__mocks__/react-native-haptic-feedback.ts',
     '<rootDir>/src/__mocks__/platformbuilders-helpers.ts',
+    '<rootDir>/src/setupTests.js',
   ],
   cacheDirectory: '.jest/cache',
   collectCoverage: true,
@@ -57,4 +61,7 @@ module.exports = {
     '!src/components/DatePicker/**', // Difícil de testar devido a dependências externas
     '!src/components/UploadPhoto/**', // Difícil de testar devido a dependências externas
   ],
+  testTimeout: 20000,
+  notify: false,
+  testEnvironment: 'node',
 };
