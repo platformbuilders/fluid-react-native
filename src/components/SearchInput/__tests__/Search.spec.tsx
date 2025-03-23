@@ -678,4 +678,22 @@ describe('SearchInput state and functions', () => {
     // Verifique se Keyboard.dismiss foi chamado
     expect(Keyboard.dismiss).toHaveBeenCalled();
   });
+
+  // Adicionando um teste para atualizar os snapshots
+  it('should update snapshots for search component', () => {
+    const onChange = jest.fn();
+    let wrapper;
+    
+    // Usando act para envolver a criação do componente
+    renderer.act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Search id="snapshot_test" accessibility="" onChange={onChange} />
+        </ThemeProvider>
+      );
+    });
+
+    const json = wrapper.toJSON();
+    expect(json).toMatchSnapshot();
+  });
 });
