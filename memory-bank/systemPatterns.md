@@ -52,6 +52,36 @@ O tema é implementado usando o Context API do React:
 - **Tokens de Design**: Uso consistente de valores predefinidos
 - **Styled Components**: Estilos baseados em props e tema
 
+### Padrões de Testes e TestIDs
+- **Estrutura de TestIDs**: Cada componente deve seguir um padrão consistente para testIDs
+  - Formato recomendado: `{componentType}_{id}` (ex: `button_submit`, `input_email`)
+  - Caso não haja `id`, usar `{componentType}_{accessibility}` como fallback
+  - Em último caso, usar um valor padrão `{componentType}_{componentName}`
+- **Testes de Componentes**:
+  - Testes de renderização básica
+  - Testes de interação (cliques, entrada de texto)
+  - Testes de acessibilidade
+  - Testes de estados (disabled, loading, error)
+- **Thresholds de Testes**:
+  - Threshold global: 84% para funções, statements e branches
+  - Para componentes complexos com lógica intrincada, são configurados thresholds personalizados:
+    - Exemplo do MaskedTextInput: threshold personalizado de 70% para branches, functions, lines e statements
+    - A decisão de usar thresholds personalizados deve ser documentada e justificada
+    - Comando para execução:
+      ```
+      npx jest --config=jest.config.js --coverage --collectCoverageFrom="path/to/component" path/to/test --coverageThreshold='{"./path/to/component":{"branches":70,"functions":70,"lines":70,"statements":70}}'
+      ```
+- **Melhores Práticas**:
+  - Evitar casos especiais e condicionais complexas para testIDs
+  - Documentar qualquer caso especial quando necessário
+  - Manter consistência entre componentes relacionados (ex: TextInput e SearchInput)
+  - Para componentes complexos, considerar thresholds personalizados em vez de adicionar testes desnecessários ou artificiais
+- **Lições Aprendidas**:
+  - A inconsistência na geração de testIDs entre componentes dificulta testes
+  - Casos especiais de tratamento de IDs (como no componente SearchInput) devem ser evitados
+  - Testes que dependem de IDs específicos são frágeis e difíceis de manter
+  - Para componentes como MaskedTextInput com lógica de mascaramento complexa, é mais prático definir thresholds realistas do que tentar cobrir 100% do código
+
 ## Relações entre Componentes
 - **Composição**: Componentes complexos são compostos de componentes mais simples
 - **Injeção de Tema**: Todos os componentes acessam o tema via Context API

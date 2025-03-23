@@ -46,6 +46,47 @@ Para desenvolvimento local e testes em projetos que utilizam a biblioteca:
 1. Utilize `yalc` para publicar localmente
 2. Link a biblioteca no projeto de teste
 
+## Testabilidade e Qualidade de Código
+
+### TestIDs e Seletores para Testes
+- Cada componente possui testIDs predefinidos seguindo o padrão `{componentType}_{id}`
+- Os testIDs são utilizados para seleção em testes e automação
+- Documentação específica para testIDs está disponível para facilitar a criação de testes
+
+### Ferramentas de Qualidade de Código
+- **TypeScript**: Verificação estática de tipos com `tsc`
+- **ESLint**: Análise de código e garantia de padrões
+- **Jest**: Testes unitários e cobertura de código
+- **Semgrep**: Análise estática de segurança e padrões de código
+- **React Testing Library**: Testes focados no comportamento do usuário
+
+### Thresholds de Qualidade
+- Cobertura geral de código: 90%+
+- Cobertura de funções: 84%+
+- Zero erros de linting
+- Zero erros de TypeScript
+- Todos os testes devem passar antes do merge
+- Thresholds personalizados para componentes complexos, configurados caso a caso
+
+### Validação Contínua
+As seguintes verificações devem ser executadas regularmente durante o desenvolvimento:
+```bash
+# Verificação de tipos
+npm run tsc
+
+# Verificação de linting
+npm run lint
+
+# Análise de segurança (quando disponível)
+npx semgrep --config=auto .
+
+# Testes unitários e cobertura
+npm test
+
+# Testes com thresholds personalizados (exemplo para MaskedTextInput)
+npx jest --config=jest.config.js --coverage --collectCoverageFrom="src/components/TextInput/MaskedTextInput/index.tsx" src/components/TextInput/__tests__/MaskedTextInput.spec.tsx --coverageThreshold='{"./src/components/TextInput/MaskedTextInput/index.tsx":{"branches":70,"functions":70,"lines":70,"statements":70}}'
+```
+
 ## Restrições Técnicas
 
 ### Compatibilidade
