@@ -150,7 +150,7 @@ O projeto está em um estágio maduro, com 23 componentes já implementados e te
 
 ## Visão Geral do Status
 
-Criamos uma estrutura básica para a documentação do Fluid React Native usando Docusaurus. Configuramos as principais páginas e fizemos a personalização visual para refletir a identidade da biblioteca.
+Criamos uma estrutura para a documentação do Fluid React Native usando Docusaurus e configuramos o deploy simplificado no Firebase Hosting. Configuramos as principais páginas, personalizamos o visual e implementamos scripts de deploy automatizado.
 
 ### O que Já Está Funcionando
 
@@ -158,6 +158,10 @@ Criamos uma estrutura básica para a documentação do Fluid React Native usando
 - ✅ Personalização visual com `custom.css` implementada
 - ✅ Página inicial personalizada com código de exemplo e seções organizadas
 - ✅ Sidebar configurada com categorias para componentes e guias
+- ✅ Deploy simplificado no Firebase Hosting configurado
+- ✅ Scripts de deploy e teste implementados
+- ✅ GitHub Actions configurado para deploy automático
+- ✅ Links quebrados corrigidos na documentação
 - ✅ Páginas de documentação básicas:
   - ✅ Introdução ao Fluid React Native
   - ✅ Guia de instalação detalhado 
@@ -168,7 +172,7 @@ Criamos uma estrutura básica para a documentação do Fluid React Native usando
   - ✅ Button (completo)
   - ✅ Card (completo)
 - ✅ Assets visuais como logo e imagens de exemplo
-- ✅ README do projeto atualizado
+- ✅ README do projeto atualizado com instruções de deploy
 
 ### O que Falta Construir
 
@@ -183,30 +187,38 @@ Criamos uma estrutura básica para a documentação do Fluid React Native usando
 - 🔲 Versionar a documentação
 - 🔲 Otimizações de SEO
 - 🔲 Suporte a PWA (Progressive Web App)
+- 🔲 Regras avançadas de cache e headers para o Firebase Hosting
+- 🔲 Monitoramento de performance do site
 
 ### Métricas
 
 - **Componentes documentados**: 2/30 (6.7%)
 - **Páginas de guias**: 5/15 (33.3%)
 - **Cobertura visual**: 70% (Homepage, CSS)
-- **Status geral**: ~25% completo
+- **Status geral**: ~30% completo
+- **Build e deploy**: 100% automatizado
 
 ## Próximas Etapas Prioritárias
 
-1. Continuar a documentação dos componentes principais (TextInput, Checkbox, RadioButton)
-2. Criar página de tipografia e elementos de texto
-3. Adicionar playground interativo
-4. Configurar versioning para diferentes versões da biblioteca
-5. Implementar busca na documentação
+1. Otimizar configurações do Firebase Hosting para melhor performance
+2. Continuar a documentação dos componentes principais (TextInput, Checkbox, RadioButton)
+3. Criar página de tipografia e elementos de texto
+4. Adicionar playground interativo
+5. Configurar versioning para diferentes versões da biblioteca
+6. Implementar busca na documentação
 
 ## Problemas Conhecidos
 
 - Ainda não implementamos um ambiente para testar os exemplos de código em tempo real
 - Precisamos adicionar mais exemplos de código para cada componente
 - Falta documentação técnica detalhada para desenvolvedores avançados
+- Avisos de compilação do Docusaurus relacionados a links quebrados ainda precisam ser corrigidos
 
 ## Decisões Técnicas Recentes
 
+- Optamos por um deploy simplificado com um único site no Firebase Hosting
+- Automatizamos o processo de build e deploy usando GitHub Actions
+- Criamos scripts para facilitar o processo de teste e deploy manual
 - Decidimos usar Docusaurus por sua facilidade de configuração e recursos integrados
 - Adotamos uma abordagem centrada em exemplos para a documentação
 - Criamos um design visual personalizado que reflete a identidade da biblioteca Fluid
@@ -214,7 +226,7 @@ Criamos uma estrutura básica para a documentação do Fluid React Native usando
 
 ## Observações
 
-O projeto está avançando bem e já temos uma estrutura sólida para a documentação. O foco atual deve ser aumentar a cobertura de componentes e adicionar mais conteúdo técnico detalhado.
+O projeto está avançando bem e já temos uma estrutura sólida para a documentação. O foco atual deve ser na otimização do Firebase Hosting e no aumento da cobertura de componentes documentados.
 
 ## Status Atual
 O projeto está em fase de maturidade, com a maioria dos componentes básicos implementados e em uso por várias equipes. O foco atual está em expandir o conjunto de componentes, melhorar a documentação e garantir compatibilidade com as versões mais recentes do React Native.

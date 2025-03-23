@@ -193,8 +193,8 @@ module.exports = {
   title: 'Fluid React Native',
   tagline: 'Biblioteca de componentes UI para React Native',
   // URL do site
-  url: 'https://platformbuilders.github.io',
-  baseUrl: '/fluid-react-native/',
+  url: 'https://fluid-ds.web.app',
+  baseUrl: '/',
   
   // Configurações de temas, plugins e customizações
   
@@ -221,6 +221,174 @@ module.exports = {
   ],
 };
 ```
+
+### Deploy e Hospedagem
+
+A documentação do Fluid React Native é hospedada no Firebase Hosting, utilizando uma configuração simplificada para deploy único do site Docusaurus.
+
+#### Configuração do Firebase
+
+1. **firebase.json**
+   ```json
+   {
+     "hosting": {
+       "public": "website/build",
+       "ignore": [
+         "firebase.json",
+         "**/.*",
+         "**/node_modules/**"
+       ],
+       "rewrites": [
+         {
+           "source": "**",
+           "destination": "/index.html"
+         }
+       ],
+       "target": "fluid-ds"
+     }
+   }
+   ```
+
+2. **.firebaserc**
+   ```json
+   {
+     "projects": {
+       "default": "fluid-ds"
+     }
+   }
+   ```
+
+#### Scripts de Deploy
+
+1. **firebase-setup.sh**: Configura o alvo de hospedagem no Firebase
+   ```bash
+   #!/bin/bash
+   
+   # Script para configurar o alvo de hosting no Firebase
+   
+   echo "Configurando alvo 'fluid-ds' para o projeto Firebase..."
+   firebase target:apply hosting fluid-ds fluid-ds
+   
+   echo "Configuração de alvos concluída!"
+   echo "Agora você pode executar './deploy.sh' para fazer o deploy do site."
+   ```
+
+2. **deploy.sh**: Script para fazer o deploy completo
+   ```bash
+   #!/bin/bash
+   
+   # Script para fazer deploy local do site para o Firebase Hosting
+   
+   echo "Instalando dependências..."
+   yarn install
+   yarn website:install
+   
+   echo "Construindo o site Docusaurus..."
+   yarn website:build
+   
+   echo "Fazendo deploy do site único..."
+   firebase deploy --only hosting
+   
+   echo "Deploy concluído!"
+   echo "Site disponível em: https://fluid-ds.web.app"
+   ```
+
+3. **test-deploy.sh**: Script para testar o processo de build sem deploy
+   ```bash
+   #!/bin/bash
+   
+   # Script para testar os estágios de build da pipeline sem fazer deploy
+   
+   set -e  # Sai do script se qualquer comando falhar
+   
+   echo "===== Simulando pipeline de build e deploy ====="
+   
+   echo ""
+   echo "1. Instalando dependências..."
+   # Instalando apenas as dependências necessárias para a documentação
+   echo "Pulando yarn install principal (apenas para teste)"
+   yarn website:install
+   
+   echo ""
+   echo "2. Construindo site Docusaurus..."
+   yarn website:build
+   
+   echo ""
+   echo "3. Verificando artefatos gerados..."
+   echo "Site Docusaurus:"
+   if [ -d "website/build" ]; then
+     echo "✅ Build do Docusaurus gerado com sucesso em website/build"
+     ls -la website/build | head -n 10
+     echo "(mostrando apenas 10 primeiros arquivos)"
+   else
+     echo "❌ ERRO: Diretório website/build não foi criado"
+     exit 1
+   fi
+   
+   echo ""
+   echo "===== Teste de pipeline concluído com sucesso! ====="
+   echo "Para fazer o deploy para o Firebase, execute ./deploy.sh"
+   ```
+
+#### GitHub Actions
+
+O projeto utiliza GitHub Actions para automatizar o deploy da documentação sempre que ocorrem alterações nas branches principais:
+
+```yaml
+name: Deploy to Firebase Hosting on merge
+'on':
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          cache: 'yarn'
+          
+      - name: Install Dependencies
+        run: |
+          yarn install --frozen-lockfile
+          yarn website:install
+          
+      - name: Build Documentation (Docusaurus)
+        run: |
+          yarn website:build
+          
+      - name: Deploy to Firebase
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
+          channelId: live
+          projectId: '${{ secrets.FIREBASE_PROJECT_ID }}'
+```
+
+#### Requisitos para Deploy
+
+1. **Conta Firebase**: Acesso a uma conta Firebase com o projeto configurado
+2. **Firebase CLI**: Instalado e autenticado localmente
+3. **Secrets configurados**:
+   - `FIREBASE_SERVICE_ACCOUNT`: Credenciais da conta de serviço do Firebase
+   - `FIREBASE_PROJECT_ID`: ID do projeto Firebase
+
+#### Fluxo de Trabalho para Deploy
+
+1. **Deploy Manual**:
+   - Executar `./firebase-setup.sh` para configuração inicial (apenas uma vez)
+   - Executar `yarn deploy` ou `./deploy.sh`
+   
+2. **Deploy Automático**:
+   - Qualquer push para as branches main ou master dispara o workflow do GitHub Actions
+   - O workflow constrói e implanta automaticamente a documentação
 
 #### Manutenção da Documentação
 
