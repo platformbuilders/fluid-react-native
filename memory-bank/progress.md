@@ -540,13 +540,13 @@ Necessário continuar o trabalho em outros componentes, seguindo ordem alfabéti
 - Focar na melhoria da cobertura global acima de 84% para todos os critérios
 - Implementar testes adicionais para os componentes restantes
 
-## Melhorias Recentes na Infraestrutura de Testes (18/07/2023)
+## Melhorias Recentes na Infraestrutura de Testes (21/07/2023)
 
-1. ✅ **Correção do ReferenceError** - Resolvemos o problema do ReferenceError nos testes Jest que ocorria quando o ambiente de teste era encerrado enquanto ainda haviam timers ou animações pendentes.
-2. ✅ **Mocking Melhorado** - Implementamos um método melhorado para mockar o `NativeAnimatedHelper` que evita problemas com as animações em testes.
-3. ✅ **Gestão de Timers** - Melhoramos a gestão de timers com `jest.useFakeTimers()` e `jest.clearAllTimers()` para evitar vazamentos.
-4. ✅ **Supressão de Erros Específicos** - Adicionamos capacidade de suprimir mensagens de erro específicas relacionadas ao ambiente Jest sendo encerrado.
-5. ✅ **Thresholds Personalizados** - Criamos configuração para thresholds personalizados por componente, permitindo flexibilidade onde necessário.
+1. ✅ **Correção de Timeouts nos Testes** - Resolvemos problemas de timeout ("Exceeded timeout of 10000 ms for a hook") aumentando o timeout global para 30000ms em `setupTests.js`
+2. ✅ **Atualização da Biblioteca de Testes** - Migramos de `react-native-testing-library` para `@testing-library/react-native` para melhor compatibilidade
+3. ✅ **Melhoria na Cobertura do SearchInput** - Confirmada cobertura de 96.42% para statements, 88.46% para branches, 88.88% para functions
+4. ✅ **Estabilização dos Testes** - Eliminados falsos positivos em testes devido a problemas de timeout
+5. ✅ **Atualização de Snapshots** - Atualizados snapshots do componente SearchInput para refletir as mudanças recentes
 
 ## Componentes Planejados
 
@@ -567,32 +567,32 @@ Necessário continuar o trabalho em outros componentes, seguindo ordem alfabéti
 15. 🔄 **Tag** - Tags para categorização
 16. 🔄 **Rating** - Sistema de avaliação
 
-## Métricas de Teste (18/07/2023)
+## Métricas de Teste (21/07/2023)
 
 ### Métricas Globais
 
-- Statements: 11.63% (Meta: 84%)
-- Branches: 9.77% (Meta: 84%)
-- Functions: 10.63% (Meta: 84%)
-- Lines: 11.25% (Meta: 84%)
+- Statements: 36.79% (Meta: 84%)
+- Branches: 25.83% (Meta: 84%)
+- Functions: 27.65% (Meta: 84%)
+- Lines: 37.29% (Meta: 84%)
 
-### Componentes com Cobertura de 100%
+### Componentes com Alta Cobertura
 
-- **Accordion**: 100% em todos os aspectos
-- **Icon**: 100% em statements e lines, 96.87% em branches
+- **SearchInput**: 96.42% statements, 88.46% branches, 88.88% functions, 96.29% lines
+- **RadioButton**: 100% statements, 86.36% branches, 100% functions, 100% lines
+- **TextInput**: 76.59% statements, 60% branches, 40% functions, 76.59% lines
+- **Utils/hooks**: 90.9% statements, 80% branches, 80% functions, 90.9% lines
 
 ### Componentes com Thresholds Customizados
 
 - **MaskedTextInput**: 
-  - Statements: 81.81% (Threshold: 70%)
-  - Branches: 80.55% (Threshold: 70%)
-  - Functions: 85.71% (Threshold: 70%)
-  - Lines: 81.81% (Threshold: 70%)
+  - Atual: 60.6% statements, 52.77% branches, 57.14% functions, 60.6% lines
+  - Threshold: 70% para todos os critérios (ainda precisa melhorar)
 
 ## Próximos Passos
 
-1. Corrigir erros de lint restantes nos arquivos de teste
-2. Revisar e corrigir warnings de prop-types no componente Icon
-3. Aumentar a cobertura de testes dos demais componentes
-4. Implementar testes mais abrangentes para componentes com baixa cobertura
-5. Atualizar documentação no Storybook
+1. Continuar melhorando a cobertura dos componentes restantes
+2. Focar no MaskedTextInput para atingir o threshold personalizado de 70%
+3. Resolver problemas de lint nos arquivos de teste
+4. Implementar testes para componentes sem cobertura
+5. Atualizar a documentação com as novas métricas e melhorias

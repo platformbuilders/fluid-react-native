@@ -21,15 +21,14 @@ kanban-plugin: basic
 - Adicionar mais exemplos de uso no Storybook
 
 ## Trabalho Atual
-- Investigar e corrigir ReferenceError causado pelo ambiente do Jest sendo encerrado
-- Corrigir erros de linting identificados em vários arquivos de teste
-- Corrigir erros de lint nos arquivos de teste
-- Revisar warnings de prop-types no componente Icon
+- Melhorar a cobertura de testes do MaskedTextInput para atingir o threshold de 70%
+- Melhorar cobertura de testes do Icon para aumentar a cobertura de funções
+- Resolver warnings relacionados aos props do PinInput
+- Implementar testes para componentes sem cobertura (Button, Link, Typography)
 
 ## Próximos Passos
 - Implementar testes para componentes com baixa cobertura
-- Analisar componentes com menor cobertura de testes (SearchInput)
-- Implementar testes para SearchInput
+- Analisar componentes com menor cobertura de testes (Avatar, Badge, LoadingIndicator)
 - Implementar testes para Avatar
 - Implementar testes para Loading
 - Criar página de documentação no Storybook
@@ -38,6 +37,7 @@ kanban-plugin: basic
 - Migrar completamente para React 18
 - Resolver warnings relacionados ao React 18
 - Configurar Firebase Hosting para Storybook
+- Corrigir erros de lint nos arquivos de teste
 
 ## Concluído
 - Configuração inicial do banco de memória para o projeto
@@ -76,3 +76,8 @@ kanban-plugin: basic
 - ✅ Resolver bugs de UI em componentes principais
 - ✅ Configurar estrutura inicial do projeto
 - ✅ Adicionar suporte ao tema 
+- ✅ Investigar e corrigir ReferenceError causado pelo ambiente do Jest sendo encerrado
+- ✅ Corrigir timeouts nos testes ("Exceeded timeout of 10000 ms for a hook")
+- ✅ Migrar de react-native-testing-library para @testing-library/react-native
+- ✅ Melhorar cobertura de testes do SearchInput (96.42% statements, 88.46% branches)
+- ✅ Aumentar cobertura global (statements: 36.79%, branches: 25.83%, functions: 27.65%) 

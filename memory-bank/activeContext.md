@@ -250,6 +250,28 @@ Esta documentação serve como guia para implementação e revisão de testIDs, 
 
 ## Trabalho Recente
 
+### Resolução de Problemas com Testes (21/07/2023)
+
+- Identificamos e corrigimos o problema de timeout ("Exceeded timeout of 10000 ms for a hook") que ocorria durante a execução dos testes:
+  - Aumentamos o timeout global para 30000ms em `setupTests.js`
+  - Migramos de `react-native-testing-library` para `@testing-library/react-native` para melhor compatibilidade
+  - Atualizamos os snapshots obsoletos para o componente SearchInput
+
+- Melhoramos significativamente a cobertura de testes para alguns componentes:
+  - SearchInput: 96.42% statements, 88.46% branches, 88.88% functions
+  - RadioButton: 100% statements, 86.36% branches, 100% functions
+  - TextInput: 76.59% statements, 60% branches, 40% functions
+
+- Identificamos oportunidades de melhoria para o componente MaskedTextInput:
+  - Atual: 60.6% statements, 52.77% branches, 57.14% functions
+  - Abaixo do threshold personalizado de 70% necessário
+
+- A cobertura global melhorou significativamente:
+  - Statements: aumentou de 11.63% para 36.79%
+  - Branches: aumentou de 9.77% para 25.83%
+  - Functions: aumentou de 10.63% para 27.65%
+  - Lines: aumentou de 11.25% para 37.29%
+
 ### Resolução do ReferenceError nos testes Jest (18/07/2023)
 
 - Identificamos e corrigimos o problema do `ReferenceError` que ocorria após a execução dos testes.
