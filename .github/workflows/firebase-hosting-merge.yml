@@ -20,15 +20,30 @@ jobs:
       - name: Install Dependencies
         run: |
           yarn install --frozen-lockfile
+          yarn website:install
 
-      - name: Build Documentation
+      - name: Build Documentation (RSPress)
         run: |
           yarn docs:build
 
-      - name: Deploy to Firebase
+      - name: Build Documentation (Docusaurus)
+        run: |
+          yarn website:build
+
+      - name: Deploy API Docs to Firebase
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
           channelId: live
-          projectId: '${{ secrets.FIREBASE_PROJECT_ID }}' 
+          projectId: '${{ secrets.FIREBASE_PROJECT_ID }}'
+          target: docs
+
+      - name: Deploy Website to Firebase
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
+          channelId: live
+          projectId: '${{ secrets.FIREBASE_PROJECT_ID }}'
+          target: website 
