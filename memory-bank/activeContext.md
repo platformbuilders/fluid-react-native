@@ -56,16 +56,21 @@ Também melhoramos a cobertura do componente MaskedTextInput, que apresentava de
    - Avatar
    - Icon
 
-2. **Página de tipografia**:
+2. **Continuar melhorando a cobertura de testes**:
+   - Abordar os warnings de React 18 nos testes (especialmente os erros de `act()`)
+   - Focar em componentes específicos com cobertura baixa
+   - Documentar novas estratégias implementadas
+
+3. **Página de tipografia**:
    - Documentar Text, Title, Subtitle
    - Explicar o sistema tipográfico
    - Mostrar a hierarquia visual
 
-3. **Playground interativo**:
+4. **Playground interativo**:
    - Implementar um ambiente para testar componentes
    - Permitir personalização de props em tempo real
 
-4. **Otimizações do Firebase Hosting**:
+5. **Otimizações do Firebase Hosting**:
    - Configurar cache e headers adequados
    - Configurar regras de redirecionamento para URLs antigas
    - Implementar monitoramento de performance
