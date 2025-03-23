@@ -12,7 +12,6 @@ kanban-plugin: basic
 - Documentar padrões de testID utilizados nos diversos componentes
 - Implementar verificação de acessibilidade em testes existentes
 - Adicionar validadores de acessibilidade automáticos aos testes
-- Melhorar cobertura de testes do componente Link
 - Melhorar cobertura de testes do componente Image
 - Adicionar suporte a maskedTextInput com modo flutuante
 - Melhorar a responsividade do componente Header
@@ -35,7 +34,6 @@ kanban-plugin: basic
 - Implementar testes para o componente Checkbox
 - Implementar testes para o componente Header
 - Implementar testes para o componente RadioButton
-- Implementar testes para o componente Link
 - Implementar testes para o componente Image
 - Implementar testes para o componente Separator
 
@@ -61,4 +59,5 @@ kanban-plugin: basic
 - Melhorar a cobertura de testes do componente FormError para atingir 100%
 - Implementar testes para o componente Badge ✅ 2024-05-18
 - Implementar testes para o componente Icon ✅ 2024-05-19
-- Melhorar a cobertura de testes do componente Button para atingir 100% ✅ 2024-05-20 
+- Melhorar a cobertura de testes do componente Button para atingir 100% ✅ 2024-05-20
+- Melhorar a cobertura de testes do componente Link para atingir 100% ✅ 2024-05-20 
