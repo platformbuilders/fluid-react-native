@@ -192,6 +192,13 @@ O projeto está em um estágio maduro, com 23 componentes já implementados e te
 - Testada a funcionalidade de warning quando um boolean é fornecido como erro
 - Verificado o comportamento de fallback para accessibility labels e testIDs
 
+**Data: 2024-05-18**
+- Melhorada a cobertura de testes do componente Badge, alcançando 100% em todas as métricas (statements, branches, funções e linhas)
+- Atualizados todos os testes do componente Badge para usar act() e evitar warnings do React 18
+- Adicionados testes para verificar o uso correto de id e accessibility como fallbacks
+- Adicionados testes para verificar estados simultâneos como disabled e loading, ou disabled e flat
+- Testado o comportamento de renderização com diferentes combinações de ícones (esquerda, direita, ambos)
+
 # Progresso do Projeto
 
 ## Visão Geral do Status

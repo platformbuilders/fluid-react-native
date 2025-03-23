@@ -28,7 +28,6 @@ kanban-plugin: basic
 - Atualizar documentação técnica com novos padrões
 - Adicionar documentação sobre padrões de testes para componentes com estado
 - Melhorar cobertura de testes do componente Icon para atingir pelo menos 90% em branches
-- Implementar testes para o componente Badge
 
 ## Concluído
 - Configuração inicial do Banco de Memória Obsidian
@@ -49,4 +48,5 @@ kanban-plugin: basic
 - Melhorar a cobertura de testes do componente Touchable para atingir pelo menos 80% em function coverage
 - Melhorar a cobertura de branches do componente PasswordInput (62.5%) para atingir pelo menos 80%
 - Adicionar testes para o componente Typography para melhorar cobertura
-- Melhorar a cobertura de testes do componente FormError para atingir 100% 
+- Melhorar a cobertura de testes do componente FormError para atingir 100%
+- Implementar testes para o componente Badge 

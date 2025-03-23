@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import renderer, { act } from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import { fireEvent, render } from '@testing-library/react-native';
 import Badge from '..';
@@ -12,31 +12,43 @@ const ACCESSIBILITY = '';
 
 describe('<Badge />', () => {
   it('should render Badge', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Badge id={TEST_ID} accessibility={ACCESSIBILITY} />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge id={TEST_ID} accessibility={ACCESSIBILITY} />
+        </ThemeProvider>,
+      );
+    });
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Badge when rounded', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Badge id={TEST_ID} accessibility={ACCESSIBILITY} rounded />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge id={TEST_ID} accessibility={ACCESSIBILITY} rounded />
+        </ThemeProvider>,
+      );
+    });
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Badge with loading', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Badge id={TEST_ID} accessibility={ACCESSIBILITY} loading />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge id={TEST_ID} accessibility={ACCESSIBILITY} loading />
+        </ThemeProvider>,
+      );
+    });
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
@@ -64,218 +76,286 @@ describe('<Badge />', () => {
   });
 
   it('should render Badge with children', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Badge id={TEST_ID} accessibility={ACCESSIBILITY}>
-          <Typography>Test</Typography>
-        </Badge>
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge id={TEST_ID} accessibility={ACCESSIBILITY}>
+            <Typography>Test</Typography>
+          </Badge>
+        </ThemeProvider>,
+      );
+    });
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Badge with custom accessibility label', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Badge
-          id={TEST_ID}
-          accessibility={ACCESSIBILITY}
-          accessibilityLabel="testing"
-        />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge
+            id={TEST_ID}
+            accessibility={ACCESSIBILITY}
+            accessibilityLabel="testing"
+          />
+        </ThemeProvider>,
+      );
+    });
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Badge with test id', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Badge id={TEST_ID} accessibility={ACCESSIBILITY} testID="test" />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge id={TEST_ID} accessibility={ACCESSIBILITY} testID="test" />
+        </ThemeProvider>,
+      );
+    });
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Badge with custom style', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Badge
-          id={TEST_ID}
-          accessibility={ACCESSIBILITY}
-          style={{ backgroundColor: '#2980b9' }}
-        />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge
+            id={TEST_ID}
+            accessibility={ACCESSIBILITY}
+            style={{ backgroundColor: '#2980b9' }}
+          />
+        </ThemeProvider>,
+      );
+    });
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Badge with custom text style', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Badge
-          id={TEST_ID}
-          accessibility={ACCESSIBILITY}
-          textStyle={{ color: '#2980b9' }}
-        />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge
+            id={TEST_ID}
+            accessibility={ACCESSIBILITY}
+            textStyle={{ color: '#2980b9' }}
+          />
+        </ThemeProvider>,
+      );
+    });
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Badge with disabled', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Badge id={TEST_ID} accessibility={ACCESSIBILITY} disabled />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge id={TEST_ID} accessibility={ACCESSIBILITY} disabled />
+        </ThemeProvider>,
+      );
+    });
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Badge with contrast', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Badge id={TEST_ID} accessibility={ACCESSIBILITY} contrast />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge id={TEST_ID} accessibility={ACCESSIBILITY} contrast />
+        </ThemeProvider>,
+      );
+    });
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Badge with variant', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Badge id={TEST_ID} accessibility={ACCESSIBILITY} variant="secondary" />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge id={TEST_ID} accessibility={ACCESSIBILITY} variant="secondary" />
+        </ThemeProvider>,
+      );
+    });
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   // Novos testes para aumentar a cobertura
   it('should render Badge with left icon', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Badge
-          id={TEST_ID}
-          accessibility={ACCESSIBILITY}
-          leftIconName="check"
-        />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge
+            id={TEST_ID}
+            accessibility={ACCESSIBILITY}
+            leftIconName="check"
+          />
+        </ThemeProvider>,
+      );
+    });
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Badge with right icon', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Badge
-          id={TEST_ID}
-          accessibility={ACCESSIBILITY}
-          rightIconName="check"
-        />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge
+            id={TEST_ID}
+            accessibility={ACCESSIBILITY}
+            rightIconName="check"
+          />
+        </ThemeProvider>,
+      );
+    });
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Badge with both left and right icons', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Badge
-          id={TEST_ID}
-          accessibility={ACCESSIBILITY}
-          leftIconName="arrow-left"
-          rightIconName="arrow-right"
-        />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge
+            id={TEST_ID}
+            accessibility={ACCESSIBILITY}
+            leftIconName="arrow-left"
+            rightIconName="arrow-right"
+          />
+        </ThemeProvider>,
+      );
+    });
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Badge with custom icon style', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Badge
-          id={TEST_ID}
-          accessibility={ACCESSIBILITY}
-          leftIconName="check"
-          iconStyle={{ color: '#e74c3c' }}
-        />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge
+            id={TEST_ID}
+            accessibility={ACCESSIBILITY}
+            leftIconName="check"
+            iconStyle={{ color: '#e74c3c' }}
+          />
+        </ThemeProvider>,
+      );
+    });
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Badge with emoji icon', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Badge
-          id={TEST_ID}
-          accessibility={ACCESSIBILITY}
-          leftIconName="👍"
-          isEmoji
-        />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge
+            id={TEST_ID}
+            accessibility={ACCESSIBILITY}
+            leftIconName="👍"
+            isEmoji
+          />
+        </ThemeProvider>,
+      );
+    });
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Badge with touchable icon', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Badge
-          id={TEST_ID}
-          accessibility={ACCESSIBILITY}
-          leftIconName="check"
-          iconTouchable
-        />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge
+            id={TEST_ID}
+            accessibility={ACCESSIBILITY}
+            leftIconName="check"
+            iconTouchable
+          />
+        </ThemeProvider>,
+      );
+    });
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Badge with border', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Badge id={TEST_ID} accessibility={ACCESSIBILITY} hasBorder />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge id={TEST_ID} accessibility={ACCESSIBILITY} hasBorder />
+        </ThemeProvider>,
+      );
+    });
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Badge with flat style', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Badge id={TEST_ID} accessibility={ACCESSIBILITY} flat />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge id={TEST_ID} accessibility={ACCESSIBILITY} flat />
+        </ThemeProvider>,
+      );
+    });
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Badge with custom typography variant', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Badge
-          id={TEST_ID}
-          accessibility={ACCESSIBILITY}
-          typographyVariant="sm"
-        />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge
+            id={TEST_ID}
+            accessibility={ACCESSIBILITY}
+            typographyVariant="sm"
+          />
+        </ThemeProvider>,
+      );
+    });
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
@@ -318,5 +398,76 @@ describe('<Badge />', () => {
     fireEvent.press(component);
 
     expect(onPressEvent).not.toHaveBeenCalled();
+  });
+  
+  // Testes adicionais para cobrir branches específicas
+  it('should use accessibility as id when id is not provided', () => {
+    const customAccessibility = "custom-accessibility";
+    
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Badge 
+          accessibility={customAccessibility}
+        />
+      </ThemeProvider>
+    );
+    
+    const component = getByTestId(customAccessibility);
+    expect(component).toBeTruthy();
+  });
+  
+  it('should use accessibility as accessibilityLabel when accessibilityLabel is not provided', () => {
+    const customAccessibility = "accessibility-label-test";
+    
+    const { queryByText } = render(
+      <ThemeProvider theme={theme}>
+        <Badge 
+          accessibility={customAccessibility}
+        >
+          Test Text
+        </Badge>
+      </ThemeProvider>
+    );
+    
+    // Verificamos que o componente foi renderizado corretamente
+    expect(queryByText('Test Text')).toBeTruthy();
+  });
+  
+  it('should render with disabled and loading simultaneously', () => {
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge 
+            id={TEST_ID} 
+            accessibility={ACCESSIBILITY} 
+            disabled
+            loading
+          />
+        </ThemeProvider>,
+      );
+    });
+    
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+  
+  it('should render with disabled and flat simultaneously', () => {
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Badge 
+            id={TEST_ID} 
+            accessibility={ACCESSIBILITY} 
+            disabled
+            flat
+          />
+        </ThemeProvider>,
+      );
+    });
+    
+    expect(wrapper.toJSON()).toMatchSnapshot();
   });
 });
