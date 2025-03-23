@@ -1,11 +1,9 @@
 import React from 'react';
-import { fireEvent, render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
+import { fireEvent, render } from '@testing-library/react-native';
 import theme from '../../../theme';
 import ToggleButton from '../index';
-
-const onPressEvent = jest.fn();
 
 describe('<ToggleButton />', () => {
   beforeEach(() => {
@@ -23,18 +21,23 @@ describe('<ToggleButton />', () => {
   });
 
   it('should trigger onValueChange function when toggle is pressed', () => {
+    const onValueChange = jest.fn();
     const testId = 'toggle_button';
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <ToggleButton id={testId} value={false} onValueChange={onPressEvent} />
+        <ToggleButton
+          testID={testId}
+          onValueChange={onValueChange}
+          value={false}
+        />
       </ThemeProvider>,
     );
 
-    const component = getByTestId(testId);
+    const component = getByTestId('toggle_' + testId);
 
     fireEvent(component, 'onValueChange', true);
 
-    expect(onPressEvent).toHaveBeenCalledTimes(1);
+    expect(onValueChange).toHaveBeenCalledWith(true);
   });
 
   it('should render component with custom thumb color', () => {
@@ -70,15 +73,15 @@ describe('<ToggleButton />', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
         <ToggleButton
-          id={testId}
-          value={true}
-          onValueChange={() => {}}
+          testID={testId}
           isDisabled
+          value={false}
+          onValueChange={() => {}}
         />
       </ThemeProvider>,
     );
 
-    const component = getByTestId(testId);
+    const component = getByTestId('toggle_' + testId);
 
     expect(component).toHaveProperty(
       ['_fiber', 'memoizedProps', 'disabled'],

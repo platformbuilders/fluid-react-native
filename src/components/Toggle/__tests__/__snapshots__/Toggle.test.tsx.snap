@@ -2,15 +2,17 @@
 
 exports[`<ToggleButton /> should render component with custom thumb color 1`] = `
 <RCTSwitch
-  accessibilityHint="Double tap to toggle the switch"
-  accessibilityLabel="Toggle switch. Current state: on"
+  accessibilityHint="Toque duas vezes para alternar"
+  accessibilityLabel="Alternar. Estado atual: ativado"
   accessibilityRole="switch"
   accessibilityState={
     {
+      "busy": undefined,
       "checked": true,
       "disabled": false,
     }
   }
+  accessible={true}
   disabled={false}
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
@@ -33,7 +35,7 @@ exports[`<ToggleButton /> should render component with custom thumb color 1`] = 
       ],
     ]
   }
-  testID="toggle_"
+  testID="toggle_toggle"
   thumbColorProps={
     {
       "falseColor": "blue",
@@ -48,15 +50,17 @@ exports[`<ToggleButton /> should render component with custom thumb color 1`] = 
 
 exports[`<ToggleButton /> should render component with custom track color 1`] = `
 <RCTSwitch
-  accessibilityHint="Double tap to toggle the switch"
-  accessibilityLabel="Toggle switch. Current state: on"
+  accessibilityHint="Toque duas vezes para alternar"
+  accessibilityLabel="Alternar. Estado atual: ativado"
   accessibilityRole="switch"
   accessibilityState={
     {
+      "busy": undefined,
       "checked": true,
       "disabled": false,
     }
   }
+  accessible={true}
   disabled={false}
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
@@ -79,7 +83,7 @@ exports[`<ToggleButton /> should render component with custom track color 1`] = 
       ],
     ]
   }
-  testID="toggle_"
+  testID="toggle_toggle"
   thumbTintColor="#4255EF"
   tintColor="blue"
   trackColorProps={
@@ -94,15 +98,17 @@ exports[`<ToggleButton /> should render component with custom track color 1`] = 
 
 exports[`<ToggleButton /> should render toggle component 1`] = `
 <RCTSwitch
-  accessibilityHint="Double tap to toggle the switch"
-  accessibilityLabel="Toggle switch. Current state: on"
+  accessibilityHint="Toque duas vezes para alternar"
+  accessibilityLabel="Alternar. Estado atual: ativado"
   accessibilityRole="switch"
   accessibilityState={
     {
+      "busy": undefined,
       "checked": true,
       "disabled": false,
     }
   }
+  accessible={true}
   disabled={false}
   onChange={[Function]}
   onResponderTerminationRequest={[Function]}
@@ -125,7 +131,7 @@ exports[`<ToggleButton /> should render toggle component 1`] = `
       ],
     ]
   }
-  testID="toggle_"
+  testID="toggle_toggle"
   thumbTintColor="#4255EF"
   tintColor="#dddddd"
   value={true}

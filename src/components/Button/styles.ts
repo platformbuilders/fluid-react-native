@@ -155,6 +155,13 @@ export const Touchable = styled(TouchableComponent)<TouchableProps>`
     props.rounded ? buttonSize / 2 : buttonRadius(props)}px;
 `;
 
+// Função segura para pegar o valor do spacing
+const getSafeSpacing = (props: ButtonWrapperProps): string => {
+  if (props.rounded) return '0';
+  const spacing = minimumSpacing(props);
+  return spacing ? `${spacing}px` : '8px'; // valor padrão caso minimumSpacing retorne null
+};
+
 export const ButtonWrapper = styled.View<ButtonWrapperProps>`
   height: ${buttonSize}px;
   flex-direction: row;
@@ -163,8 +170,7 @@ export const ButtonWrapper = styled.View<ButtonWrapperProps>`
     `${minWidth || '180px'}`};
   max-width: ${({ maxWidth }: ButtonWrapperProps) => maxWidth || '100%'};
   overflow: hidden;
-  padding: ${(props: ButtonWrapperProps): string =>
-    props.rounded ? '0' : `${minimumSpacing(props)}px`};
+  padding: ${getSafeSpacing};
   border-radius: ${(props: ButtonWrapperProps): any =>
     props.rounded ? buttonSize / 2 : buttonRadius(props)}px;
   justify-content: center;

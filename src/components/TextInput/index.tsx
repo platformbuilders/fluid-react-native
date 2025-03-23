@@ -3,6 +3,7 @@ import { isEmpty } from 'lodash';
 import { Animated } from 'react-native';
 import { IconFonts, InputStatus } from '../../enums';
 import { TextInputType } from '../../types';
+import { generateTestID } from '../../utils/accessibility';
 import { useAutoFocus, usePrevious } from '../../utils/hooks';
 import FormError from '../FormError';
 import MaskedTextInput from './MaskedTextInput';
@@ -215,7 +216,7 @@ const TextInput: FC<TextInputType> = ({
           disabled: rest.editable === false,
         }}
         accessibilityLiveRegion="polite"
-        testID={testID || id || `input_${accessibility || ''}`}
+        testID={generateTestID('input', id || accessibility || 'input')}
       />
     );
   };
@@ -276,7 +277,7 @@ const TextInput: FC<TextInputType> = ({
                   iconSets={iconSets}
                   onPress={onPressIcon}
                   hitSlop={iconHitSlop}
-                  testID={`icon_${leftIconName}`}
+                  testID={generateTestID('icon', leftIconName)}
                 />
               )}
               <InputBorderedColumnWrapper
@@ -300,7 +301,7 @@ const TextInput: FC<TextInputType> = ({
                   iconSets={iconSets}
                   onPress={onRightIconPress}
                   hitSlop={iconHitSlop}
-                  testID={`icon_${rightIconName}`}
+                  testID={generateTestID('icon', rightIconName)}
                 />
               )}
             </InputBorderedAreaWrapper>
@@ -322,7 +323,7 @@ const TextInput: FC<TextInputType> = ({
                 iconSets={iconSets}
                 onPress={onPressIcon}
                 hitSlop={iconHitSlop}
-                testID={`icon_${leftIconName}`}
+                testID={generateTestID('icon', leftIconName)}
               />
             )}
             {renderTextInput(renderStatus)}
@@ -335,7 +336,7 @@ const TextInput: FC<TextInputType> = ({
                 iconSets={iconSets}
                 onPress={onRightIconPress}
                 hitSlop={iconHitSlop}
-                testID={`icon_${rightIconName}`}
+                testID={generateTestID('icon', rightIconName)}
               />
             )}
           </InputAreaWrapper>

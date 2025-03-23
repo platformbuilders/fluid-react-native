@@ -1,6 +1,6 @@
-import React, { FC, ReactElement } from 'react';
+import React, { FC } from 'react';
 import { CheckBoxType } from '../../types';
-import { generateAccessibilityProps, generateTestID } from '../../utils';
+import { generateAccessibilityProps } from '../../utils';
 import FormError from '../FormError';
 import { CheckBox, Label, Wrapper, containerStyle } from './styles';
 
@@ -17,25 +17,44 @@ const CheckboxComponent: FC<CheckBoxType> = ({
   disabled,
   ...rest
 }) => {
+  // Define o label padrão baseado no conteúdo do label
+  const defaultLabel =
+    typeof label === 'string' && label ? `checbox de ${label}` : 'checbox de ';
+
   // Gera propriedades de acessibilidade padronizadas
   const accessibilityProps = generateAccessibilityProps(
-    { 
-      id, 
-      accessibility, 
-      accessibilityLabel, 
+    {
+      id,
+      accessibility,
+      accessibilityLabel: accessibilityLabel || defaultLabel,
       checked,
-      disabled
+      disabled,
     },
     'checkbox',
-    typeof label === 'string' ? label : 'Caixa de seleção',
-    typeof label === 'string' ? `Marcar ou desmarcar ${label}` : 'Marcar ou desmarcar'
+    defaultLabel,
+    typeof label === 'string'
+      ? `Marcar ou desmarcar ${label}`
+      : 'Marcar ou desmarcar',
   );
 
   // Gera ID de teste padronizado
-  const checkboxTestID = generateTestID(
-    { id, accessibility, testID },
-    'checkbox'
-  );
+  const prefix = 'checkbox';
+  let checkboxTestID;
+
+  // Se tiver ID, formata como "prefix_id"
+  if (id) {
+    checkboxTestID = `${prefix}_${id}`;
+  }
+  // Se não tiver ID mas tiver accessibility, formata como "prefix_accessibility"
+  else if (accessibility) {
+    checkboxTestID = `${prefix}_${accessibility}`;
+  }
+  // Fallback para o testID fornecido com prefixo
+  else if (testID) {
+    checkboxTestID = `${prefix}_${testID}`;
+  } else {
+    checkboxTestID = `${prefix}_checkbox`;
+  }
 
   return (
     <FormError
@@ -43,9 +62,9 @@ const CheckboxComponent: FC<CheckBoxType> = ({
       accessibility={accessibility}
       error={error}
     >
-      <Wrapper 
+      <Wrapper
         {...accessibilityProps}
-        onPress={onPress} 
+        onPress={onPress}
         testID={checkboxTestID}
         {...rest}
       >
@@ -55,10 +74,12 @@ const CheckboxComponent: FC<CheckBoxType> = ({
           onClick={onPress}
           importantForAccessibility="no"
         />
-        <Label style={labelStyle}>{label}</Label>
+        <Label style={labelStyle} accessibilityLabel="">
+          {label}
+        </Label>
       </Wrapper>
     </FormError>
   );
-}
+};
 
 export default CheckboxComponent;

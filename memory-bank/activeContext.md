@@ -1,94 +1,77 @@
-# Contexto Ativo (Active Context)
+# Contexto Ativo
 
-## Foco de Trabalho Atual
+## Foco Atual
 
-O foco atual é manter e expandir a biblioteca Fluid React Native, garantindo que ela continue a atender às necessidades dos desenvolvedores que a utilizam. Isso inclui:
+### Website de Documentação para Fluid React Native
 
-1. Melhorar a documentação de componentes
-2. Corrigir bugs reportados
-3. Adicionar novos componentes conforme necessário
-4. Melhorar a acessibilidade dos componentes existentes
-5. Expandir a cobertura de testes para componentes subutilizados
-6. Padronizar os testIDs para facilitar testes automatizados
+Estamos construindo um website de documentação completo para a biblioteca Fluid React Native utilizando o Docusaurus. O objetivo é criar uma documentação clara, acessível e útil tanto para novos usuários quanto para desenvolvedores experientes.
 
-## Mudanças Recentes
+## Progresso Recente
 
-1. **Melhoria na cobertura de testes do utilitário de acessibilidade**: Aumento da cobertura para 100%.
-2. **Melhoria na cobertura de testes do componente Icon**: Aumento de 78% para 93% na cobertura de branches.
-3. **Melhoria na cobertura de testes do componente SearchInput**: Aumento de 62% para 96%.
-4. **Melhoria no componente RadioButton**: Corrigido o tratamento do estado desabilitado e aumentada a cobertura de testes.
-   - Correção do comportamento do evento `onPress` para não ser disparado quando o componente está desabilitado
-   - Testes adicionados para validar a acessibilidade, estilos personalizados e comportamento quando desabilitado
-   - Cobertura de 100% para statements, 90.9% para branches, 66.66% para functions e 100% para lines
-5. **Configuração de threshold personalizado para MaskedTextInput**: 
-   - Identificada dificuldade em alcançar 84% de cobertura para o componente devido à complexidade da lógica de máscaras
-   - Configurado threshold personalizado de 70% para statements, branches, functions e lines
-   - Cobertura atual: 79.16% statements, 78.12% branches, 100% functions, 79.16% lines
-   - Documentado no arquivo .cursorrules a abordagem para uso de thresholds personalizados em casos semelhantes
+- Configuramos a estrutura básica do Docusaurus
+- Personalizamos o visual com CSS customizado
+- Criamos uma homepage atraente com:
+  - Seção de hero com logo e chamada para ação
+  - Exemplo de código
+  - Showcase de componentes
+  - Seção de destaques
+- Configuramos a sidebar com categorias lógicas
+- Criamos documentação inicial:
+  - Página de introdução
+  - Guia de instalação
+  - Documentação de temas
+  - Guia de acessibilidade
+  - Melhores práticas
+- Documentamos os componentes Button e Card
+- Criamos assets visuais (logo, imagens)
+- Atualizamos o README do projeto
 
-## Próximos Passos (Priorizados)
+## Próximas Tarefas
 
-1. **Padronização de testIDs**: Garantir que todos os componentes sigam o mesmo padrão de testIDs.
-2. **Melhorias na cobertura de testes**: Focar nos componentes com menor cobertura, especialmente:
-   - ✅ MaskedTextInput: Configurado threshold personalizado de 70% (atual: 79.16% statements, 78.12% branches, 100% functions, 79.16% lines)
-   - Outros componentes com menos de 90% de cobertura
-3. **Auditoria de acessibilidade**: Revisar todos os componentes para garantir que estejam seguindo as melhores práticas de acessibilidade.
-4. **Otimização de performance**: Identificar e corrigir possíveis gargalos de performance.
-5. **Expansão da documentação**: Melhorar a documentação existente e adicionar exemplos de uso.
+### Prioridades Imediatas
 
-## Decisões Técnicas em Andamento
+1. **Documentação de mais componentes**:
+   - TextInput (incluindo MaskedTextInput)
+   - Checkbox
+   - RadioButton
+   - Avatar
+   - Icon
 
-1. **Estratégia de Testes**: 
-   - Continuar utilizando a abordagem atual de testes unitários com Jest e react-native-testing-library
-   - Explorar ferramentas adicionais como Detox para testes E2E
-   - Aumentar a cobertura geral para mais de 90%
-   - Focar em componentes com menor cobertura
-   - Nova abordagem para componentes complexos: configurar thresholds personalizados quando 84% de cobertura é difícil de alcançar devido à complexidade do componente
-   - Comando de exemplo para thresholds personalizados:
-     ```
-     npx jest --config=jest.config.js --coverage --collectCoverageFrom="src/components/TextInput/MaskedTextInput/index.tsx" src/components/TextInput/__tests__/MaskedTextInput.spec.tsx --coverageThreshold='{"./src/components/TextInput/MaskedTextInput/index.tsx":{"branches":70,"functions":70,"lines":70,"statements":70}}'
-     ```
+2. **Página de tipografia**:
+   - Documentar Text, Title, Subtitle
+   - Explicar o sistema tipográfico
+   - Mostrar a hierarquia visual
 
-2. **Gerenciamento de Estado**: 
-   - Manter o uso de hooks do React para gerenciamento de estado local
-   - Avaliar a integração com bibliotecas como Redux ou MobX para estados mais complexos
+3. **Playground interativo**:
+   - Implementar um ambiente para testar componentes
+   - Permitir personalização de props em tempo real
 
-3. **Estilização**: 
-   - Continuar utilizando styled-components
-   - Explorar alternativas como StyleSheet para otimização de performance
+### Médio Prazo
 
-## Considerações de Design
+- Configurar versioning para a documentação
+- Implementar busca
+- Adicionar mais exemplos práticos
+- Criar guias avançados de integração
 
-1. **Consistência**: Garantir que todos os componentes sigam o mesmo estilo e comportamento.
-2. **Flexibilidade**: Permitir customização suficiente para atender a diferentes casos de uso.
-3. **Acessibilidade**: Assegurar que todos os componentes sejam acessíveis.
-4. **Performance**: Otimizar componentes para melhor desempenho em dispositivos de menor capacidade.
+## Considerações Importantes
 
-## Desafios Atuais
+- **Foco em exemplos**: Priorizar exemplos práticos e de uso real
+- **Acessibilidade**: Garantir que a documentação e exemplos promovam boas práticas de acessibilidade
+- **Consistência**: Manter uma estrutura consistente em todas as páginas de documentação de componentes
+- **Simplicidade**: Começar com exemplos simples e progressivamente mostrar usos mais complexos
 
-1. **Compatibilidade**: Garantir que os componentes funcionem bem em diferentes versões do React Native.
-2. **Testes**: Aumentar a cobertura de testes para alcançar níveis aceitáveis (>90% global).
-   - Para componentes complexos como MaskedTextInput, adotar thresholds personalizados quando necessário
-   - Focar em melhorar a qualidade dos testes existentes além da simples cobertura
-3. **Documentação**: Melhorar a documentação para facilitar o uso da biblioteca.
-4. **Acessibilidade**: Melhorar a acessibilidade de todos os componentes.
-5. **Consistência de testIDs**: Garantir que todos os componentes sigam o mesmo padrão de testIDs.
+## Ferramentas e Tecnologias
 
-## Decisões e Considerações em Andamento
+- **Docusaurus**: Framework de documentação
+- **React**: Para componentes personalizados no site
+- **MDX**: Para páginas de documentação interativas
+- **CSS Modules**: Para estilização de componentes do site
 
-### Decisões Técnicas Pendentes
-- Avaliação da migração para o novo sistema de arquitetura do React Native
-- Consideração sobre adoção de React Native Web para suporte multiplataforma
-- Análise da implementação de um sistema de design tokens mais robusto
-- Definição de uma estratégia mais robusta para geração e gerenciamento de testIDs
+## Recursos
 
-### Considerações de Design
-- Revisão da paleta de cores para melhor contraste e acessibilidade
-- Padronização das animações em todos os componentes
-- Refinamento da tipografia para melhor legibilidade em diferentes dispositivos
-
-### Desafios Atuais
-- Manter compatibilidade com versões anteriores do React Native
-- Equilibrar personalização e consistência visual
-- Garantir performance adequada em dispositivos de baixo desempenho
-- Resolver inconsistências na implementação de testIDs entre componentes 
+- Fluid React Native (código-fonte): https://github.com/platformbuilders/fluid-react-native
+- Documentação do Docusaurus: https://docusaurus.io/docs
+- Exemplos de documentação bem estruturada:
+  - MUI: https://mui.com/material-ui/
+  - Chakra UI: https://chakra-ui.com/docs/
+  - React Native Paper: https://callstack.github.io/react-native-paper/ 

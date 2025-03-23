@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Keyboard, StyleProp, TextStyle, ViewStyle } from 'react-native';
+import { generateTestID } from '../../utils/accessibility';
 import { Input, Wrapper } from './styles';
 
 type Props = {
@@ -70,6 +71,7 @@ const SearchInput: React.FC<Props> = ({
   };
 
   // @TODO: AutocompleteType de acordo com o tipo de máscara
+  const testID = generateTestID('search', id || accessibility);
 
   return (
     <Wrapper
@@ -77,6 +79,7 @@ const SearchInput: React.FC<Props> = ({
       inputPadding={inputPadding}
       hasShadow={hasShadow}
       style={containerStyle}
+      testID={testID}
     >
       <Input
         textStyle={textStyle}
@@ -86,6 +89,7 @@ const SearchInput: React.FC<Props> = ({
         large={false}
         id={id || accessibility}
         accessibility={accessibility}
+        testID={testID}
         autoFocus={autoFocus}
         autoCapitalize="none"
         autoCorrect={false}

@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { ButtonVariant } from '../../enums';
 import { ButtonProps } from '../../types';
-import { generateAccessibilityProps, generateTestID } from '../../utils';
+import { generateAccessibilityProps } from '../../utils';
 import { ButtonWrapper, Icon, Loading, TextButton, Touchable } from './styles';
 
 const Button: FC<ButtonProps> = ({
@@ -28,31 +28,49 @@ const Button: FC<ButtonProps> = ({
   leftIconTouchable = true,
   rightIconTouchable = true,
 }) => {
+  // Define o label padrão para o botão
+  const defaultLabel = children?.toString() || 'Button';
+
   // Gera propriedades de acessibilidade padronizadas
   const accessibilityProps = generateAccessibilityProps(
-    { 
-      id, 
-      accessibility, 
-      accessibilityLabel, 
-      disabled: loading || disabled, 
-      busy: loading 
+    {
+      id,
+      accessibility,
+      accessibilityLabel: accessibilityLabel || defaultLabel,
+      disabled: loading || disabled,
+      busy: loading,
     },
     'button',
-    children?.toString() || 'Botão',
-    'Ativa ao pressionar'
+    defaultLabel,
+    'Ativa ao pressionar',
   );
 
-  // Gera ID de teste padronizado
-  const buttonTestID = generateTestID(
-    { id, accessibility, testID },
-    'button'
-  );
+  // Prefixo para ID de teste
+  const prefix = 'button';
+
+  // ID de teste final
+  let finalTestID;
+
+  // Se tiver ID, formata como "prefix_id"
+  if (id) {
+    finalTestID = `${prefix}_${id}`;
+  }
+  // Se não tiver ID mas tiver accessibility, formata como "prefix_accessibility"
+  else if (accessibility) {
+    finalTestID = `${prefix}_${accessibility}`;
+  }
+  // Fallback para o testID fornecido com prefixo
+  else if (testID) {
+    finalTestID = `${prefix}_${testID}`;
+  } else {
+    finalTestID = `${prefix}_button`;
+  }
 
   return (
     <Touchable
       id={id || accessibility}
       {...accessibilityProps}
-      testID={buttonTestID}
+      testID={finalTestID}
       disabled={loading || disabled}
       onPress={onPress}
       hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}

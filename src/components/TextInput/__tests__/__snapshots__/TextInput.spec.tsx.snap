@@ -62,20 +62,23 @@ exports[`<TextInput /> should handle custom animation values 1`] = `
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Enter text"
-        accessibilityLabel=""
+        accessibilityHint="Digite o texto"
+        accessibilityLabel="Test Label"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={false}
         centered={false}
         contrast={false}
+        editable={true}
         id="test"
         isPlaceholder={false}
         keyboardType="default"
@@ -93,7 +96,6 @@ exports[`<TextInput /> should handle custom animation values 1`] = `
             "validator": [Function],
           }
         }
-        placeholder=""
         placeholderTextColor="#999999"
         status="default"
         style={
@@ -170,20 +172,23 @@ exports[`<TextInput /> should handle custom icon colors 1`] = `
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Enter text"
-        accessibilityLabel=""
+        accessibilityHint="Digite o texto"
+        accessibilityLabel="Text input"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={false}
         centered={false}
         contrast={false}
+        editable={true}
         iconName="test"
         id="test"
         isPlaceholder={false}
@@ -202,7 +207,6 @@ exports[`<TextInput /> should handle custom icon colors 1`] = `
             "validator": [Function],
           }
         }
-        placeholder=""
         placeholderTextColor="#999999"
         status="default"
         style={
@@ -279,20 +283,23 @@ exports[`<TextInput /> should handle custom icon hit slop 1`] = `
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Enter text"
-        accessibilityLabel=""
+        accessibilityHint="Digite o texto"
+        accessibilityLabel="Text input"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={false}
         centered={false}
         contrast={false}
+        editable={true}
         iconName="test"
         id="test"
         isPlaceholder={false}
@@ -311,7 +318,6 @@ exports[`<TextInput /> should handle custom icon hit slop 1`] = `
             "validator": [Function],
           }
         }
-        placeholder=""
         placeholderTextColor="#999999"
         status="default"
         style={
@@ -388,20 +394,23 @@ exports[`<TextInput /> should handle custom icon sets 1`] = `
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Enter text"
-        accessibilityLabel=""
+        accessibilityHint="Digite o texto"
+        accessibilityLabel="Text input"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={false}
         centered={false}
         contrast={false}
+        editable={true}
         iconName="custom"
         id="test"
         isPlaceholder={false}
@@ -420,7 +429,6 @@ exports[`<TextInput /> should handle custom icon sets 1`] = `
             "validator": [Function],
           }
         }
-        placeholder=""
         placeholderTextColor="#999999"
         status="default"
         style={
@@ -500,20 +508,23 @@ exports[`<TextInput /> should handle custom input padding 1`] = `
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Enter text"
-        accessibilityLabel=""
+        accessibilityHint="Digite o texto"
+        accessibilityLabel="Text input"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={false}
         centered={false}
         contrast={false}
+        editable={true}
         id="test"
         isPlaceholder={false}
         keyboardType="default"
@@ -531,7 +542,6 @@ exports[`<TextInput /> should handle custom input padding 1`] = `
             "validator": [Function],
           }
         }
-        placeholder=""
         placeholderTextColor="#999999"
         status="default"
         style={
@@ -630,20 +640,23 @@ exports[`<TextInput /> should handle custom label variant 1`] = `
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Enter text"
-        accessibilityLabel=""
+        accessibilityHint="Digite o texto"
+        accessibilityLabel="Test Label"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={false}
         centered={false}
         contrast={false}
+        editable={true}
         id="test"
         isPlaceholder={false}
         keyboardType="default"
@@ -661,7 +674,6 @@ exports[`<TextInput /> should handle custom label variant 1`] = `
             "validator": [Function],
           }
         }
-        placeholder=""
         placeholderTextColor="#999999"
         status="default"
         style={
@@ -738,20 +750,23 @@ exports[`<TextInput /> should handle error state with showBorderErrored 1`] = `
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Error message"
-        accessibilityLabel=""
+        accessibilityHint="Digite o texto"
+        accessibilityLabel="Text input"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={false}
         centered={false}
         contrast={false}
+        editable={true}
         id="test"
         isPlaceholder={false}
         keyboardType="default"
@@ -769,7 +784,6 @@ exports[`<TextInput /> should handle error state with showBorderErrored 1`] = `
             "validator": [Function],
           }
         }
-        placeholder=""
         placeholderTextColor="#999999"
         status="danger"
         style={
@@ -871,20 +885,23 @@ exports[`<TextInput /> should handle error state with showIconErrored 1`] = `
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Error message"
-        accessibilityLabel=""
+        accessibilityHint="Digite o texto"
+        accessibilityLabel="Text input"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={false}
         centered={false}
         contrast={false}
+        editable={true}
         iconName="error"
         id="test"
         isPlaceholder={false}
@@ -903,7 +920,6 @@ exports[`<TextInput /> should handle error state with showIconErrored 1`] = `
             "validator": [Function],
           }
         }
-        placeholder=""
         placeholderTextColor="#999999"
         showIconErrored={true}
         status="danger"
@@ -1006,20 +1022,23 @@ exports[`<TextInput /> should handle multiline with numberOfLines 1`] = `
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Enter text"
-        accessibilityLabel=""
+        accessibilityHint="Digite o texto"
+        accessibilityLabel="Text input"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={false}
         centered={false}
         contrast={false}
+        editable={true}
         id="test"
         isPlaceholder={false}
         keyboardType="default"
@@ -1038,7 +1057,6 @@ exports[`<TextInput /> should handle multiline with numberOfLines 1`] = `
             "validator": [Function],
           }
         }
-        placeholder=""
         placeholderTextColor="#999999"
         status="default"
         style={
@@ -1115,20 +1133,23 @@ exports[`<TextInput /> should render textinput 1`] = `
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Enter text"
-        accessibilityLabel=""
+        accessibilityHint="Digite o texto"
+        accessibilityLabel="Text input"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={false}
         centered={false}
         contrast={false}
+        editable={true}
         id="test"
         isPlaceholder={false}
         keyboardType="default"
@@ -1146,7 +1167,6 @@ exports[`<TextInput /> should render textinput 1`] = `
             "validator": [Function],
           }
         }
-        placeholder=""
         placeholderTextColor="#999999"
         status="default"
         style={
@@ -1223,20 +1243,23 @@ exports[`<TextInput /> should render textinput with error 1`] = `
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Some error occurred"
-        accessibilityLabel=""
+        accessibilityHint="Digite o texto"
+        accessibilityLabel="Text input"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={false}
         centered={false}
         contrast={false}
+        editable={true}
         id="test"
         isPlaceholder={false}
         keyboardType="default"
@@ -1254,7 +1277,6 @@ exports[`<TextInput /> should render textinput with error 1`] = `
             "validator": [Function],
           }
         }
-        placeholder=""
         placeholderTextColor="#999999"
         status="danger"
         style={
@@ -1416,20 +1438,23 @@ exports[`<TextInput /> should render with bordered style 1`] = `
             Label
           </Text>
           <TextInput
-            accessibility=""
-            accessibilityHint="Enter text"
-            accessibilityLabel=""
+            accessibilityHint="Digite o texto"
+            accessibilityLabel="Text input"
             accessibilityLiveRegion="polite"
             accessibilityRole="text"
             accessibilityState={
               {
+                "busy": undefined,
+                "checked": undefined,
                 "disabled": false,
               }
             }
+            accessible={true}
             allowFontScaling={false}
             autoFocus={false}
             centered={false}
             contrast={false}
+            editable={true}
             id="test"
             isPlaceholder={false}
             keyboardType="default"
@@ -1447,7 +1472,6 @@ exports[`<TextInput /> should render with bordered style 1`] = `
                 "validator": [Function],
               }
             }
-            placeholder=""
             placeholderTextColor="#999999"
             status="default"
             style={
@@ -1584,20 +1608,23 @@ exports[`<TextInput /> should render with both label and borderedLabel 1`] = `
             Bordered Label
           </Text>
           <TextInput
-            accessibility=""
-            accessibilityHint="Enter text"
-            accessibilityLabel=""
+            accessibilityHint="Digite o texto"
+            accessibilityLabel="Label"
             accessibilityLiveRegion="polite"
             accessibilityRole="text"
             accessibilityState={
               {
+                "busy": undefined,
+                "checked": undefined,
                 "disabled": false,
               }
             }
+            accessible={true}
             allowFontScaling={false}
             autoFocus={false}
             centered={false}
             contrast={false}
+            editable={true}
             id="test"
             isPlaceholder={false}
             keyboardType="default"
@@ -1615,7 +1642,6 @@ exports[`<TextInput /> should render with both label and borderedLabel 1`] = `
                 "validator": [Function],
               }
             }
-            placeholder=""
             placeholderTextColor="#999999"
             status="default"
             style={
@@ -1694,20 +1720,23 @@ exports[`<TextInput /> should render with bottom line 1`] = `
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Enter text"
-        accessibilityLabel=""
+        accessibilityHint="Digite o texto"
+        accessibilityLabel="Text input"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={false}
         centered={false}
         contrast={false}
+        editable={true}
         id="test"
         isPlaceholder={false}
         keyboardType="default"
@@ -1725,7 +1754,6 @@ exports[`<TextInput /> should render with bottom line 1`] = `
             "validator": [Function],
           }
         }
-        placeholder=""
         placeholderTextColor="#999999"
         status="default"
         style={
@@ -1802,20 +1830,23 @@ exports[`<TextInput /> should render with custom icon type 1`] = `
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Enter text"
-        accessibilityLabel=""
+        accessibilityHint="Digite o texto"
+        accessibilityLabel="Text input"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={false}
         centered={false}
         contrast={false}
+        editable={true}
         iconName="book"
         id="test"
         isPlaceholder={false}
@@ -1834,7 +1865,6 @@ exports[`<TextInput /> should render with custom icon type 1`] = `
             "validator": [Function],
           }
         }
-        placeholder=""
         placeholderTextColor="#999999"
         status="default"
         style={
@@ -1913,20 +1943,23 @@ exports[`<TextInput /> should render with custom inputLeftPadding and inputRight
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Enter text"
-        accessibilityLabel=""
+        accessibilityHint="Digite o texto"
+        accessibilityLabel="Text input"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={false}
         centered={false}
         contrast={false}
+        editable={true}
         id="test"
         isPlaceholder={false}
         keyboardType="default"
@@ -1944,7 +1977,6 @@ exports[`<TextInput /> should render with custom inputLeftPadding and inputRight
             "validator": [Function],
           }
         }
-        placeholder=""
         placeholderTextColor="#999999"
         status="default"
         style={
@@ -2022,20 +2054,23 @@ exports[`<TextInput /> should render with custom inputPadding 1`] = `
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Enter text"
-        accessibilityLabel=""
+        accessibilityHint="Digite o texto"
+        accessibilityLabel="Text input"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={false}
         centered={false}
         contrast={false}
+        editable={true}
         id="test"
         isPlaceholder={false}
         keyboardType="default"
@@ -2053,7 +2088,6 @@ exports[`<TextInput /> should render with custom inputPadding 1`] = `
             "validator": [Function],
           }
         }
-        placeholder=""
         placeholderTextColor="#999999"
         status="default"
         style={
@@ -2130,20 +2164,23 @@ exports[`<TextInput /> should render with different status 1`] = `
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Enter text"
-        accessibilityLabel=""
+        accessibilityHint="Digite o texto"
+        accessibilityLabel="Text input"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={false}
         centered={false}
         contrast={false}
+        editable={true}
         id="test"
         isPlaceholder={false}
         keyboardType="default"
@@ -2161,7 +2198,6 @@ exports[`<TextInput /> should render with different status 1`] = `
             "validator": [Function],
           }
         }
-        placeholder=""
         placeholderTextColor="#999999"
         status="success"
         style={
@@ -2238,20 +2274,23 @@ exports[`<TextInput /> should render with error state 1`] = `
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Este campo é obrigatório"
-        accessibilityLabel=""
+        accessibilityHint="Digite o texto"
+        accessibilityLabel="Text input"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={false}
         centered={false}
         contrast={false}
+        editable={true}
         id="test"
         isPlaceholder={false}
         keyboardType="default"
@@ -2269,7 +2308,6 @@ exports[`<TextInput /> should render with error state 1`] = `
             "validator": [Function],
           }
         }
-        placeholder=""
         placeholderTextColor="#999999"
         status="danger"
         style={
@@ -2393,20 +2431,23 @@ exports[`<TextInput /> should render with fixed label 1`] = `
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Enter text"
-        accessibilityLabel=""
+        accessibilityHint="Digite o texto"
+        accessibilityLabel="Nome"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={false}
         centered={false}
         contrast={false}
+        editable={true}
         id="test"
         isPlaceholder={false}
         keyboardType="default"
@@ -2424,7 +2465,6 @@ exports[`<TextInput /> should render with fixed label 1`] = `
             "validator": [Function],
           }
         }
-        placeholder=""
         placeholderTextColor="#999999"
         status="default"
         style={
@@ -2523,20 +2563,23 @@ exports[`<TextInput /> should render with floating label 1`] = `
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Enter text"
-        accessibilityLabel=""
+        accessibilityHint="Digite o texto"
+        accessibilityLabel="Nome"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={false}
         centered={false}
         contrast={false}
+        editable={true}
         id="test"
         isPlaceholder={false}
         keyboardType="default"
@@ -2554,7 +2597,6 @@ exports[`<TextInput /> should render with floating label 1`] = `
             "validator": [Function],
           }
         }
-        placeholder=""
         placeholderTextColor="#999999"
         status="default"
         style={
@@ -2666,20 +2708,23 @@ exports[`<TextInput /> should render with iconNameBordered 1`] = `
           }
         >
           <TextInput
-            accessibility=""
-            accessibilityHint="Enter text"
-            accessibilityLabel=""
+            accessibilityHint="Digite o texto"
+            accessibilityLabel="Text input"
             accessibilityLiveRegion="polite"
             accessibilityRole="text"
             accessibilityState={
               {
+                "busy": undefined,
+                "checked": undefined,
                 "disabled": false,
               }
             }
+            accessible={true}
             allowFontScaling={false}
             autoFocus={false}
             centered={false}
             contrast={false}
+            editable={true}
             iconNameBordered="search"
             id="test"
             isPlaceholder={false}
@@ -2698,7 +2743,6 @@ exports[`<TextInput /> should render with iconNameBordered 1`] = `
                 "validator": [Function],
               }
             }
-            placeholder=""
             placeholderTextColor="#999999"
             status="default"
             style={
@@ -2777,20 +2821,23 @@ exports[`<TextInput /> should render with multiline 1`] = `
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Enter text"
-        accessibilityLabel=""
+        accessibilityHint="Digite o texto"
+        accessibilityLabel="Text input"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={false}
         centered={false}
         contrast={false}
+        editable={true}
         id="test"
         isPlaceholder={false}
         keyboardType="default"
@@ -2809,7 +2856,6 @@ exports[`<TextInput /> should render with multiline 1`] = `
             "validator": [Function],
           }
         }
-        placeholder=""
         placeholderTextColor="#999999"
         status="default"
         style={
@@ -2908,20 +2954,23 @@ exports[`<TextInput /> should render with props 1`] = `
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Enter your name"
-        accessibilityLabel=""
+        accessibilityHint="Digite Enter your name"
+        accessibilityLabel="Name"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={true}
         centered={true}
         contrast={true}
+        editable={true}
         id="test"
         isPlaceholder={false}
         keyboardType="default"
@@ -2939,7 +2988,6 @@ exports[`<TextInput /> should render with props 1`] = `
             "validator": [Function],
           }
         }
-        placeholder="Enter your name"
         placeholderTextColor="#999999"
         status="default"
         style={
@@ -3016,20 +3064,23 @@ exports[`<TextInput /> should render without bottom line 1`] = `
       }
     >
       <TextInput
-        accessibility=""
-        accessibilityHint="Enter text"
-        accessibilityLabel=""
+        accessibilityHint="Digite o texto"
+        accessibilityLabel="Text input"
         accessibilityLiveRegion="polite"
         accessibilityRole="text"
         accessibilityState={
           {
+            "busy": undefined,
+            "checked": undefined,
             "disabled": false,
           }
         }
+        accessible={true}
         allowFontScaling={false}
         autoFocus={false}
         centered={false}
         contrast={false}
+        editable={true}
         id="test"
         isPlaceholder={false}
         keyboardType="default"
@@ -3047,7 +3098,6 @@ exports[`<TextInput /> should render without bottom line 1`] = `
             "validator": [Function],
           }
         }
-        placeholder=""
         placeholderTextColor="#999999"
         status="default"
         style={

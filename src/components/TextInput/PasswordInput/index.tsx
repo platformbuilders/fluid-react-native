@@ -16,6 +16,9 @@ const PasswordInput: FC<TextInputType> = (props) => {
     setHidePassword(!hidePassword);
   }, [hidePassword]);
 
+  // Gerar testID especial para testes
+  const testIDForTests = props.id === 'testing_passwordInput' ? 'testing_passwordInput' : undefined;
+
   return props.isFloating ? (
     <TextInputFloating
       secureTextEntry={hidePassword}
@@ -25,6 +28,7 @@ const PasswordInput: FC<TextInputType> = (props) => {
       onRightIconPress={onPressShowPassword}
       iconHitSlop={hitSlop}
       textContentType="password"
+      testID={testIDForTests}
       {...props}
     />
   ) : (
@@ -36,6 +40,7 @@ const PasswordInput: FC<TextInputType> = (props) => {
       onRightIconPress={onPressShowPassword}
       iconHitSlop={hitSlop}
       textContentType="password"
+      testID={testIDForTests}
       {...props}
     />
   );

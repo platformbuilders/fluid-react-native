@@ -1,5 +1,387 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Icon /> should render SVG icon when name matches a bundled SVG 1`] = `
+<View
+  collapsable={false}
+  style={{}}
+>
+  <View
+    accessibilityLabel="test-accessibility"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="test-icon"
+  >
+    <View>
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight={20}
+        bbWidth={20}
+        fill="none"
+        focusable={false}
+        height={20}
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            {
+              "flex": 0,
+              "height": 20,
+              "width": 20,
+            },
+          ]
+        }
+        vbHeight={16}
+        vbWidth={16}
+        width={20}
+      >
+        <RNSVGGroup
+          fill={null}
+          propList={
+            [
+              "fill",
+            ]
+          }
+        >
+          <RNSVGPath
+            d="M7.97371 8.97934C10.3383 8.97934 12.2561 6.96553 12.2561 4.48278C12.2561 2.00003 10.3382 0 7.97371 0C5.60919 0 3.69128 2.01381 3.69128 4.48278C3.69128 6.95176 5.60917 8.97934 7.97371 8.97934ZM7.97371 1.17242C9.70769 1.17242 11.1264 2.66207 11.1264 4.48278C11.1264 6.3035 9.70769 7.79312 7.97371 7.79312C6.23973 7.79312 4.82099 6.30347 4.82099 4.48275C4.82099 2.66204 6.2397 1.17242 7.97371 1.17242Z"
+            fill={
+              {
+                "payload": 4280361249,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+          />
+          <RNSVGPath
+            d="M0.564855 16H15.4351C15.7504 16 16 15.7379 16 15.4069C16 12.3034 13.5961 9.7655 10.6273 9.7655H5.37275C2.41708 9.7655 0 12.2896 0 15.4069C0 15.7379 0.249586 16 0.564855 16ZM5.37275 10.9517H10.6273C12.7816 10.9517 14.555 12.6345 14.8309 14.8138H1.16912C1.44498 12.6483 3.2184 10.9517 5.37275 10.9517Z"
+            fill={
+              {
+                "payload": 4280361249,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Icon /> should render SVG icon with custom colors 1`] = `
+<View
+  collapsable={false}
+  style={{}}
+>
+  <View
+    accessibilityLabel="test-accessibility"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="test-icon"
+  >
+    <View>
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight={20}
+        bbWidth={20}
+        fill="none"
+        focusable={false}
+        height={20}
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            {
+              "flex": 0,
+              "height": 20,
+              "width": 20,
+            },
+          ]
+        }
+        vbHeight={16}
+        vbWidth={16}
+        width={20}
+      >
+        <RNSVGGroup
+          fill={null}
+          propList={
+            [
+              "fill",
+            ]
+          }
+        >
+          <RNSVGPath
+            d="M7.97371 8.97934C10.3383 8.97934 12.2561 6.96553 12.2561 4.48278C12.2561 2.00003 10.3382 0 7.97371 0C5.60919 0 3.69128 2.01381 3.69128 4.48278C3.69128 6.95176 5.60917 8.97934 7.97371 8.97934ZM7.97371 1.17242C9.70769 1.17242 11.1264 2.66207 11.1264 4.48278C11.1264 6.3035 9.70769 7.79312 7.97371 7.79312C6.23973 7.79312 4.82099 6.30347 4.82099 4.48275C4.82099 2.66204 6.2397 1.17242 7.97371 1.17242Z"
+            fill={
+              {
+                "payload": 4294901760,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+          />
+          <RNSVGPath
+            d="M0.564855 16H15.4351C15.7504 16 16 15.7379 16 15.4069C16 12.3034 13.5961 9.7655 10.6273 9.7655H5.37275C2.41708 9.7655 0 12.2896 0 15.4069C0 15.7379 0.249586 16 0.564855 16ZM5.37275 10.9517H10.6273C12.7816 10.9517 14.555 12.6345 14.8309 14.8138H1.16912C1.44498 12.6483 3.2184 10.9517 5.37275 10.9517Z"
+            fill={
+              {
+                "payload": 4294901760,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Icon /> should render SVG icon with custom dimensions 1`] = `
+<View
+  collapsable={false}
+  style={{}}
+>
+  <View
+    accessibilityLabel="test-accessibility"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="test-icon"
+  >
+    <View>
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight={50}
+        bbWidth={50}
+        fill="none"
+        focusable={false}
+        height={50}
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            {
+              "flex": 0,
+              "height": 50,
+              "width": 50,
+            },
+          ]
+        }
+        vbHeight={16}
+        vbWidth={16}
+        width={50}
+      >
+        <RNSVGGroup
+          fill={null}
+          propList={
+            [
+              "fill",
+            ]
+          }
+        >
+          <RNSVGPath
+            d="M7.97371 8.97934C10.3383 8.97934 12.2561 6.96553 12.2561 4.48278C12.2561 2.00003 10.3382 0 7.97371 0C5.60919 0 3.69128 2.01381 3.69128 4.48278C3.69128 6.95176 5.60917 8.97934 7.97371 8.97934ZM7.97371 1.17242C9.70769 1.17242 11.1264 2.66207 11.1264 4.48278C11.1264 6.3035 9.70769 7.79312 7.97371 7.79312C6.23973 7.79312 4.82099 6.30347 4.82099 4.48275C4.82099 2.66204 6.2397 1.17242 7.97371 1.17242Z"
+            fill={
+              {
+                "payload": 4280361249,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+          />
+          <RNSVGPath
+            d="M0.564855 16H15.4351C15.7504 16 16 15.7379 16 15.4069C16 12.3034 13.5961 9.7655 10.6273 9.7655H5.37275C2.41708 9.7655 0 12.2896 0 15.4069C0 15.7379 0.249586 16 0.564855 16ZM5.37275 10.9517H10.6273C12.7816 10.9517 14.555 12.6345 14.8309 14.8138H1.16912C1.44498 12.6483 3.2184 10.9517 5.37275 10.9517Z"
+            fill={
+              {
+                "payload": 4280361249,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+              ]
+            }
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Icon /> should render custom icon from iconSets 1`] = `
+<View
+  collapsable={false}
+  style={{}}
+>
+  <View
+    accessibilityLabel="test-accessibility"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="test-icon"
+  >
+    <View />
+  </View>
+</View>
+`;
+
 exports[`<Icon /> should render emoji icon 1`] = `
 <View
   collapsable={false}
@@ -122,6 +504,278 @@ exports[`<Icon /> should render non-touchable icon 1`] = `
             {
               "fontWeight": "900",
             },
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Icon /> should render with FABrands icon type 1`] = `
+<View
+  collapsable={false}
+  style={{}}
+>
+  <View
+    accessibilityLabel="test-accessibility"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="test-icon"
+  >
+    <View>
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          [
+            {
+              "color": undefined,
+              "fontSize": 20,
+            },
+            undefined,
+            {
+              "fontFamily": "fa-brands",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            {},
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Icon /> should render with FALight icon type 1`] = `
+<View
+  collapsable={false}
+  style={{}}
+>
+  <View
+    accessibilityLabel="test-accessibility"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="test-icon"
+  >
+    <View>
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          [
+            {
+              "color": undefined,
+              "fontSize": 20,
+            },
+            undefined,
+            {
+              "fontFamily": "fa-light",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            {},
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Icon /> should render with FARegular icon type 1`] = `
+<View
+  collapsable={false}
+  style={{}}
+>
+  <View
+    accessibilityLabel="test-accessibility"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="test-icon"
+  >
+    <View>
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          [
+            {
+              "color": undefined,
+              "fontSize": 20,
+            },
+            undefined,
+            {
+              "fontFamily": "fa-regular",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            {},
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Icon /> should render with FASolid icon type 1`] = `
+<View
+  collapsable={false}
+  style={{}}
+>
+  <View
+    accessibilityLabel="test-accessibility"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="test-icon"
+  >
+    <View>
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          [
+            {
+              "color": undefined,
+              "fontSize": 20,
+            },
+            undefined,
+            {
+              "fontFamily": "fa-solid",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            {},
           ]
         }
       >

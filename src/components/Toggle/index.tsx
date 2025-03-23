@@ -1,5 +1,5 @@
 import React from 'react';
-import { generateAccessibilityProps, generateTestID } from '../../utils';
+import { generateAccessibilityProps } from '../../utils';
 import { SwitchButton } from './styles';
 
 type ToggleProps = {
@@ -32,25 +32,43 @@ const ToggleButton: React.FC<ToggleProps> = ({
   testID,
   ...rest
 }) => {
+  // Define o label padrão de acessibilidade baseado no estado
+  const defaultLabel = `Alternar. Estado atual: ${value ? 'ativado' : 'desativado'}`;
+
   // Gera propriedades de acessibilidade padronizadas
   const accessibilityProps = generateAccessibilityProps(
-    { 
-      id, 
-      accessibility, 
-      accessibilityLabel, 
-      disabled: isDisabled, 
-      checked: value 
+    {
+      id,
+      accessibility,
+      accessibilityLabel: accessibilityLabel || defaultLabel,
+      disabled: isDisabled,
+      checked: value,
     },
     'switch',
-    `Alternar. Estado atual: ${value ? 'ativado' : 'desativado'}`,
-    'Toque duas vezes para alternar'
+    defaultLabel,
+    'Toque duas vezes para alternar',
   );
 
-  // Gera ID de teste padronizado
-  const toggleTestID = generateTestID(
-    { id, accessibility, testID },
-    'toggle'
-  );
+  // Prefixo para ID de teste
+  const prefix = 'toggle';
+
+  // ID de teste final
+  let finalTestID;
+
+  // Se tiver ID, formata como "prefix_id"
+  if (id) {
+    finalTestID = `${prefix}_${id}`;
+  }
+  // Se não tiver ID mas tiver accessibility, formata como "prefix_accessibility"
+  else if (accessibility) {
+    finalTestID = `${prefix}_${accessibility}`;
+  }
+  // Fallback para o testID fornecido com prefixo
+  else if (testID) {
+    finalTestID = `${prefix}_${testID}`;
+  } else {
+    finalTestID = `${prefix}_toggle`;
+  }
 
   return (
     <SwitchButton
@@ -60,7 +78,7 @@ const ToggleButton: React.FC<ToggleProps> = ({
       disabled={isDisabled}
       thumbColorProps={thumbColor}
       trackColorProps={trackColor}
-      testID={toggleTestID}
+      testID={finalTestID}
       {...rest}
     />
   );

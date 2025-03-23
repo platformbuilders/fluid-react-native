@@ -40,7 +40,7 @@ describe('<TextInput />', () => {
 
     const { getByTestId } = render(<Component />);
 
-    const component = getByTestId('testing_textInput');
+    const component = getByTestId('input_testing_textInput');
 
     fireEvent.changeText(component, 'Value changed');
     fireEvent(component, 'blur');
@@ -180,11 +180,7 @@ describe('<TextInput />', () => {
   it('should render with error state', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <TextInput
-          id="test"
-          accessibility=""
-          error="Este campo é obrigatório"
-        />
+        <TextInput id="test" accessibility="" error="Este campo é obrigatório" />
       </ThemeProvider>,
     );
 
@@ -245,7 +241,7 @@ describe('<TextInput />', () => {
     };
 
     const { getByTestId } = render(<Component />);
-    const input = getByTestId('test_animation');
+    const input = getByTestId('input_test_animation');
 
     act(() => {
       fireEvent.changeText(input, 'Novo valor');
@@ -288,7 +284,7 @@ describe('<TextInput />', () => {
     };
 
     const { getByTestId } = render(<Component />);
-    const input = getByTestId('test_placeholder');
+    const input = getByTestId('input_test_placeholder');
 
     act(() => {
       fireEvent(input, 'focus');
@@ -319,7 +315,7 @@ describe('<TextInput />', () => {
     };
 
     const { getByTestId } = render(<Component />);
-    const input = getByTestId('test_bordered');
+    const input = getByTestId('input_test_bordered');
 
     act(() => {
       fireEvent(input, 'focus');
@@ -417,7 +413,7 @@ describe('<TextInput />', () => {
     );
 
     // Em vez de tentar pressionar o ícone, vamos apenas verificar se o componente foi renderizado
-    expect(wrapper.getByTestId('test_icon_touchable')).toBeTruthy();
+    expect(wrapper.getByTestId('input_test_icon_touchable')).toBeTruthy();
 
     // Em vez de tentar disparar evento, simplesmente chamamos a função diretamente
     onPressIcon();
@@ -468,7 +464,7 @@ describe('<TextInput />', () => {
     };
 
     const { getByTestId } = render(<Component />);
-    const input = getByTestId('test_animation');
+    const input = getByTestId('input_test_animation');
 
     act(() => {
       fireEvent.changeText(input, 'New value');
@@ -496,7 +492,7 @@ describe('<TextInput />', () => {
     };
 
     const { getByTestId } = render(<Component />);
-    const input = getByTestId('test_animation');
+    const input = getByTestId('input_test_animation');
 
     act(() => {
       fireEvent(input, 'focus');
@@ -521,7 +517,7 @@ describe('<TextInput />', () => {
       </ThemeProvider>,
     );
 
-    const textInput = getByTestId('test-bordered-input');
+    const textInput = getByTestId('input_test-bordered-input');
     // Apenas disparamos o evento de foco, mas não validamos o estilo
     fireEvent(textInput, 'focus');
 

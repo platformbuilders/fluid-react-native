@@ -2,9 +2,8 @@
 
 exports[`<RadioButton /> should render checked radio button component with label 1`] = `
 <View
-  accessibilityHint="Select information can be selected by tapping"
+  accessibilityHint="Select information pode ser selecionado com um toque"
   accessibilityLabel="Select information"
-  accessibilityLiveRegion="polite"
   accessibilityRole="radio"
   accessibilityState={
     {
@@ -48,7 +47,7 @@ exports[`<RadioButton /> should render checked radio button component with label
       "opacity": 1,
     }
   }
-  testID="testing_radio_btn"
+  testID="radio_testing_radio_btn"
 >
   <View
     style={
@@ -116,93 +115,10 @@ exports[`<RadioButton /> should render checked radio button component with label
 </View>
 `;
 
-exports[`<RadioButton /> should render radio button component 1`] = `
+exports[`<RadioButton /> should render correctly with both custom radio color and checked radio color 1`] = `
 <View
-  accessibilityHint="This option can be selected by tapping"
-  accessibilityLabel="Select information"
-  accessibilityLiveRegion="polite"
-  accessibilityRole="radio"
-  accessibilityState={
-    {
-      "busy": undefined,
-      "checked": false,
-      "disabled": false,
-      "expanded": undefined,
-      "selected": undefined,
-    }
-  }
-  accessibilityValue={
-    {
-      "max": undefined,
-      "min": undefined,
-      "now": undefined,
-      "text": undefined,
-    }
-  }
-  accessible={true}
-  collapsable={false}
-  focusable={true}
-  hitSlop={
-    {
-      "bottom": 10,
-      "left": 10,
-      "right": 10,
-      "top": 10,
-    }
-  }
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    {
-      "alignItems": "center",
-      "flexDirection": "row",
-      "opacity": 1,
-    }
-  }
-  testID="testing_radio_btn"
->
-  <View
-    style={
-      {
-        "alignItems": "center",
-        "justifyContent": "center",
-        "minHeight": 44,
-        "minWidth": 44,
-      }
-    }
-  >
-    <View
-      importantForAccessibility="no"
-      size={20}
-      style={
-        [
-          {
-            "alignItems": "center",
-            "borderColor": "#4444444D",
-            "borderRadius": 10,
-            "borderStyle": "solid",
-            "borderWidth": 2,
-            "height": 20,
-            "justifyContent": "center",
-            "width": 20,
-          },
-        ]
-      }
-    />
-  </View>
-</View>
-`;
-
-exports[`<RadioButton /> should render radio button component with custom checked 1`] = `
-<View
-  accessibilityHint="This option can be selected by tapping"
-  accessibilityLabel="Select information"
-  accessibilityLiveRegion="polite"
+  accessibilityHint="Esta opção pode ser selecionada com um toque"
+  accessibilityLabel="Botão de opção"
   accessibilityRole="radio"
   accessibilityState={
     {
@@ -246,7 +162,280 @@ exports[`<RadioButton /> should render radio button component with custom checke
       "opacity": 1,
     }
   }
-  testID="testing_radio_btn"
+  testID="radio_testing_radio_btn"
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "minHeight": 44,
+        "minWidth": 44,
+      }
+    }
+  >
+    <View
+      importantForAccessibility="no"
+      radioButtonColor="#3498db"
+      size={20}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderColor": "#3498db",
+            "borderRadius": 10,
+            "borderStyle": "solid",
+            "borderWidth": 2,
+            "height": 20,
+            "justifyContent": "center",
+            "width": 20,
+          },
+        ]
+      }
+    >
+      <View
+        checkedRadioButtonColor="#e74c3c"
+        internalSize={13}
+        style={
+          [
+            {
+              "backgroundColor": "#e74c3c",
+              "borderRadius": 6.5,
+              "height": 13,
+              "width": 13,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<RadioButton /> should render radio button component 1`] = `
+<View
+  accessibilityHint="Esta opção pode ser selecionada com um toque"
+  accessibilityLabel="Botão de opção"
+  accessibilityRole="radio"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": false,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  hitSlop={
+    {
+      "bottom": 10,
+      "left": 10,
+      "right": 10,
+      "top": 10,
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "opacity": 1,
+    }
+  }
+  testID="radio_testing_radio_btn"
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "minHeight": 44,
+        "minWidth": 44,
+      }
+    }
+  >
+    <View
+      importantForAccessibility="no"
+      size={20}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderColor": "#4444444D",
+            "borderRadius": 10,
+            "borderStyle": "solid",
+            "borderWidth": 2,
+            "height": 20,
+            "justifyContent": "center",
+            "width": 20,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`<RadioButton /> should render radio button component with both custom size and internal size 1`] = `
+<View
+  accessibilityHint="Esta opção pode ser selecionada com um toque"
+  accessibilityLabel="Botão de opção"
+  accessibilityRole="radio"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": true,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  hitSlop={
+    {
+      "bottom": 10,
+      "left": 10,
+      "right": 10,
+      "top": 10,
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "opacity": 1,
+    }
+  }
+  testID="radio_testing_radio_btn"
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "minHeight": 44,
+        "minWidth": 44,
+      }
+    }
+  >
+    <View
+      importantForAccessibility="no"
+      size={30}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderColor": "#4444444D",
+            "borderRadius": 15,
+            "borderStyle": "solid",
+            "borderWidth": 2,
+            "height": 30,
+            "justifyContent": "center",
+            "width": 30,
+          },
+        ]
+      }
+    >
+      <View
+        internalSize={15}
+        style={
+          [
+            {
+              "backgroundColor": "#4255EF",
+              "borderRadius": 7.5,
+              "height": 15,
+              "width": 15,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<RadioButton /> should render radio button component with custom checked 1`] = `
+<View
+  accessibilityHint="Esta opção pode ser selecionada com um toque"
+  accessibilityLabel="Botão de opção"
+  accessibilityRole="radio"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": true,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  hitSlop={
+    {
+      "bottom": 10,
+      "left": 10,
+      "right": 10,
+      "top": 10,
+    }
+  }
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "opacity": 1,
+    }
+  }
+  testID="radio_testing_radio_btn"
 >
   <View
     style={
@@ -296,9 +485,8 @@ exports[`<RadioButton /> should render radio button component with custom checke
 
 exports[`<RadioButton /> should render radio button component with custom checked radio button color 1`] = `
 <View
-  accessibilityHint="This option can be selected by tapping"
-  accessibilityLabel="Select information"
-  accessibilityLiveRegion="polite"
+  accessibilityHint="Esta opção pode ser selecionada com um toque"
+  accessibilityLabel="Botão de opção"
   accessibilityRole="radio"
   accessibilityState={
     {
@@ -342,7 +530,7 @@ exports[`<RadioButton /> should render radio button component with custom checke
       "opacity": 1,
     }
   }
-  testID="testing_radio_btn"
+  testID="radio_testing_radio_btn"
 >
   <View
     style={
@@ -378,9 +566,8 @@ exports[`<RadioButton /> should render radio button component with custom checke
 
 exports[`<RadioButton /> should render radio button component with custom internal size 1`] = `
 <View
-  accessibilityHint="This option can be selected by tapping"
-  accessibilityLabel="Select information"
-  accessibilityLiveRegion="polite"
+  accessibilityHint="Esta opção pode ser selecionada com um toque"
+  accessibilityLabel="Botão de opção"
   accessibilityRole="radio"
   accessibilityState={
     {
@@ -424,7 +611,7 @@ exports[`<RadioButton /> should render radio button component with custom intern
       "opacity": 1,
     }
   }
-  testID="testing_radio_btn"
+  testID="radio_testing_radio_btn"
 >
   <View
     style={
@@ -460,9 +647,8 @@ exports[`<RadioButton /> should render radio button component with custom intern
 
 exports[`<RadioButton /> should render radio button component with custom radio button color 1`] = `
 <View
-  accessibilityHint="This option can be selected by tapping"
-  accessibilityLabel="Select information"
-  accessibilityLiveRegion="polite"
+  accessibilityHint="Esta opção pode ser selecionada com um toque"
+  accessibilityLabel="Botão de opção"
   accessibilityRole="radio"
   accessibilityState={
     {
@@ -506,7 +692,7 @@ exports[`<RadioButton /> should render radio button component with custom radio 
       "opacity": 1,
     }
   }
-  testID="testing_radio_btn"
+  testID="radio_testing_radio_btn"
 >
   <View
     style={
@@ -543,9 +729,8 @@ exports[`<RadioButton /> should render radio button component with custom radio 
 
 exports[`<RadioButton /> should render radio button component with custom size 1`] = `
 <View
-  accessibilityHint="This option can be selected by tapping"
-  accessibilityLabel="Select information"
-  accessibilityLiveRegion="polite"
+  accessibilityHint="Esta opção pode ser selecionada com um toque"
+  accessibilityLabel="Botão de opção"
   accessibilityRole="radio"
   accessibilityState={
     {
@@ -589,7 +774,7 @@ exports[`<RadioButton /> should render radio button component with custom size 1
       "opacity": 1,
     }
   }
-  testID="testing_radio_btn"
+  testID="radio_testing_radio_btn"
 >
   <View
     style={
@@ -625,9 +810,8 @@ exports[`<RadioButton /> should render radio button component with custom size 1
 
 exports[`<RadioButton /> should render unchecked radio button component with label 1`] = `
 <View
-  accessibilityHint="Select information can be selected by tapping"
+  accessibilityHint="Select information pode ser selecionado com um toque"
   accessibilityLabel="Select information"
-  accessibilityLiveRegion="polite"
   accessibilityRole="radio"
   accessibilityState={
     {
@@ -671,7 +855,7 @@ exports[`<RadioButton /> should render unchecked radio button component with lab
       "opacity": 1,
     }
   }
-  testID="testing_radio_btn"
+  testID="radio_testing_radio_btn"
 >
   <View
     style={

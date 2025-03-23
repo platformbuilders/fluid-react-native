@@ -2,11 +2,13 @@
 
 exports[`<CheckBox /> should render checkbox component 1`] = `
 <View
+  accessibilityHint="Marcar ou desmarcar "
   accessibilityLabel="checbox de "
+  accessibilityRole="checkbox"
   accessibilityState={
     {
       "busy": undefined,
-      "checked": undefined,
+      "checked": false,
       "disabled": false,
       "expanded": undefined,
       "selected": undefined,
@@ -37,7 +39,7 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
       "opacity": 1,
     }
   }
-  testID="checbox de "
+  testID="checkbox_testing"
 >
   <View
     accessibilityValue={
@@ -113,11 +115,13 @@ exports[`<CheckBox /> should render checkbox component 1`] = `
 
 exports[`<CheckBox /> should render checkbox in checked state 1`] = `
 <View
+  accessibilityHint="Marcar ou desmarcar "
   accessibilityLabel="checbox de "
+  accessibilityRole="checkbox"
   accessibilityState={
     {
       "busy": undefined,
-      "checked": undefined,
+      "checked": true,
       "disabled": false,
       "expanded": undefined,
       "selected": undefined,
@@ -148,7 +152,7 @@ exports[`<CheckBox /> should render checkbox in checked state 1`] = `
       "opacity": 1,
     }
   }
-  testID="checbox de "
+  testID="checkbox_testing"
 >
   <View
     accessibilityValue={
@@ -224,11 +228,13 @@ exports[`<CheckBox /> should render checkbox in checked state 1`] = `
 
 exports[`<CheckBox /> should render checkbox with custom label style 1`] = `
 <View
+  accessibilityHint="Marcar ou desmarcar Jest Checkbox"
   accessibilityLabel="checbox de Jest Checkbox"
+  accessibilityRole="checkbox"
   accessibilityState={
     {
       "busy": undefined,
-      "checked": undefined,
+      "checked": false,
       "disabled": false,
       "expanded": undefined,
       "selected": undefined,
@@ -259,7 +265,7 @@ exports[`<CheckBox /> should render checkbox with custom label style 1`] = `
       "opacity": 1,
     }
   }
-  testID="checbox de Jest Checkbox"
+  testID="checkbox_testing"
 >
   <View
     accessibilityValue={
@@ -311,7 +317,7 @@ exports[`<CheckBox /> should render checkbox with custom label style 1`] = `
     </View>
   </View>
   <Text
-    accessibilityLabel="Jest Checkbox"
+    accessibilityLabel=""
     lineHeightVariant="min"
     style={
       [
@@ -341,11 +347,13 @@ exports[`<CheckBox /> should render checkbox with custom label style 1`] = `
 exports[`<CheckBox /> should render checkbox with error message 1`] = `
 [
   <View
+    accessibilityHint="Marcar ou desmarcar "
     accessibilityLabel="checbox de "
+    accessibilityRole="checkbox"
     accessibilityState={
       {
         "busy": undefined,
-        "checked": undefined,
+        "checked": false,
         "disabled": false,
         "expanded": undefined,
         "selected": undefined,
@@ -376,7 +384,7 @@ exports[`<CheckBox /> should render checkbox with error message 1`] = `
         "opacity": 1,
       }
     }
-    testID="checbox de "
+    testID="checkbox_testing"
   >
     <View
       accessibilityValue={
@@ -477,11 +485,13 @@ exports[`<CheckBox /> should render checkbox with error message 1`] = `
 
 exports[`<CheckBox /> should render checkbox with label 1`] = `
 <View
+  accessibilityHint="Marcar ou desmarcar Jest Checkbox"
   accessibilityLabel="checbox de Jest Checkbox"
+  accessibilityRole="checkbox"
   accessibilityState={
     {
       "busy": undefined,
-      "checked": undefined,
+      "checked": false,
       "disabled": false,
       "expanded": undefined,
       "selected": undefined,
@@ -512,7 +522,7 @@ exports[`<CheckBox /> should render checkbox with label 1`] = `
       "opacity": 1,
     }
   }
-  testID="checbox de Jest Checkbox"
+  testID="checkbox_testing"
 >
   <View
     accessibilityValue={
@@ -564,7 +574,7 @@ exports[`<CheckBox /> should render checkbox with label 1`] = `
     </View>
   </View>
   <Text
-    accessibilityLabel="Jest Checkbox"
+    accessibilityLabel=""
     lineHeightVariant="min"
     style={
       [

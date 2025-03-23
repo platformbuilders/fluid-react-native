@@ -43,24 +43,21 @@ describe('<Button />', () => {
 
   it('should fire onPress from Button', () => {
     const onPressEvent = jest.fn();
-
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
         <Button
-          id={TEST_ID}
+          testID={TEST_ID}
           accessibility={ACCESSIBILITY}
           onPress={onPressEvent}
         />
       </ThemeProvider>,
     );
 
-    const component = getByTestId(TEST_ID);
+    const component = getByTestId('button_' + TEST_ID);
 
     expect(component).not.toBe(null);
-
     fireEvent.press(component);
-
-    expect(onPressEvent).toHaveBeenCalled();
+    expect(onPressEvent).toHaveBeenCalledTimes(1);
   });
 
   it('should render button with children', () => {
@@ -128,13 +125,22 @@ describe('<Button />', () => {
   });
 
   it('should render button with disabled', () => {
-    const wrapper = renderer.create(
+    const onPressEvent = jest.fn();
+    const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <Button id={TEST_ID} accessibility={ACCESSIBILITY} disabled />
+        <Button
+          testID={TEST_ID}
+          accessibility={ACCESSIBILITY}
+          onPress={onPressEvent}
+          disabled
+        />
       </ThemeProvider>,
     );
 
-    expect(wrapper.toJSON()).toMatchSnapshot();
+    const component = getByTestId('button_' + TEST_ID);
+    fireEvent.press(component);
+
+    expect(onPressEvent).not.toHaveBeenCalled();
   });
 
   it('should render button with contrast', () => {
@@ -306,11 +312,10 @@ describe('<Button />', () => {
 
   it('should not fire onPress when disabled', () => {
     const onPressEvent = jest.fn();
-
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
         <Button
-          id={TEST_ID}
+          testID={TEST_ID}
           accessibility={ACCESSIBILITY}
           onPress={onPressEvent}
           disabled
@@ -318,7 +323,7 @@ describe('<Button />', () => {
       </ThemeProvider>,
     );
 
-    const component = getByTestId(TEST_ID);
+    const component = getByTestId('button_' + TEST_ID);
     fireEvent.press(component);
 
     expect(onPressEvent).not.toHaveBeenCalled();
@@ -326,11 +331,10 @@ describe('<Button />', () => {
 
   it('should not fire onPress when loading', () => {
     const onPressEvent = jest.fn();
-
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
         <Button
-          id={TEST_ID}
+          testID={TEST_ID}
           accessibility={ACCESSIBILITY}
           onPress={onPressEvent}
           loading
@@ -338,7 +342,7 @@ describe('<Button />', () => {
       </ThemeProvider>,
     );
 
-    const component = getByTestId(TEST_ID);
+    const component = getByTestId('button_' + TEST_ID);
     fireEvent.press(component);
 
     expect(onPressEvent).not.toHaveBeenCalled();

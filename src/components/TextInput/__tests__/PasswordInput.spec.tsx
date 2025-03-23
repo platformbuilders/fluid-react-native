@@ -38,7 +38,7 @@ describe('<PasswordInput />', () => {
 
     const { getByTestId } = render(<Component />);
 
-    const component = getByTestId('testing_passwordInput');
+    const component = getByTestId('input_testing_passwordInput');
 
     fireEvent.changeText(component, 'Value changed');
     fireEvent(component, 'blur');

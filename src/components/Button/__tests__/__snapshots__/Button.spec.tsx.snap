@@ -2,7 +2,7 @@
 
 exports[`<Button /> should render button 1`] = `
 <View
-  accessibilityHint="Activates when tapped"
+  accessibilityHint="Ativa ao pressionar"
   accessibilityLabel="Button"
   accessibilityRole="button"
   accessibilityState={
@@ -46,7 +46,7 @@ exports[`<Button /> should render button 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="button_testing"
 >
   <View
     buttonVariant="filled"
@@ -109,7 +109,7 @@ exports[`<Button /> should render button 1`] = `
 
 exports[`<Button /> should render button when rounded 1`] = `
 <View
-  accessibilityHint="Activates when tapped"
+  accessibilityHint="Ativa ao pressionar"
   accessibilityLabel="Button"
   accessibilityRole="button"
   accessibilityState={
@@ -153,7 +153,7 @@ exports[`<Button /> should render button when rounded 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="button_testing"
 >
   <View
     buttonVariant="filled"
@@ -216,7 +216,7 @@ exports[`<Button /> should render button when rounded 1`] = `
 
 exports[`<Button /> should render button with both left and right icons 1`] = `
 <View
-  accessibilityHint="Activates when tapped"
+  accessibilityHint="Ativa ao pressionar"
   accessibilityLabel="Button"
   accessibilityRole="button"
   accessibilityState={
@@ -260,7 +260,7 @@ exports[`<Button /> should render button with both left and right icons 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="button_testing"
 >
   <View
     buttonVariant="filled"
@@ -303,7 +303,8 @@ exports[`<Button /> should render button with both left and right icons 1`] = `
       }
     >
       <View
-        accessibilityLabel="Arrow-left"
+        accessibilityLabel="Ícone arrow-left"
+        accessibilityRole="image"
         accessibilityState={
           {
             "busy": undefined,
@@ -399,7 +400,8 @@ exports[`<Button /> should render button with both left and right icons 1`] = `
       }
     >
       <View
-        accessibilityLabel="Arrow-right"
+        accessibilityLabel="Ícone arrow-right"
+        accessibilityRole="image"
         accessibilityState={
           {
             "busy": undefined,
@@ -467,8 +469,8 @@ exports[`<Button /> should render button with both left and right icons 1`] = `
 
 exports[`<Button /> should render button with children 1`] = `
 <View
-  accessibilityHint="Activates when tapped"
-  accessibilityLabel="Button"
+  accessibilityHint="Ativa ao pressionar"
+  accessibilityLabel="[object Object]"
   accessibilityRole="button"
   accessibilityState={
     {
@@ -511,7 +513,7 @@ exports[`<Button /> should render button with children 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="button_testing"
 >
   <View
     buttonVariant="filled"
@@ -592,7 +594,7 @@ exports[`<Button /> should render button with children 1`] = `
 
 exports[`<Button /> should render button with contrast 1`] = `
 <View
-  accessibilityHint="Activates when tapped"
+  accessibilityHint="Ativa ao pressionar"
   accessibilityLabel="Button"
   accessibilityRole="button"
   accessibilityState={
@@ -636,7 +638,7 @@ exports[`<Button /> should render button with contrast 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="button_testing"
 >
   <View
     buttonVariant="filled"
@@ -699,7 +701,7 @@ exports[`<Button /> should render button with contrast 1`] = `
 
 exports[`<Button /> should render button with custom accessibility label 1`] = `
 <View
-  accessibilityHint="Activates when tapped"
+  accessibilityHint="Ativa ao pressionar"
   accessibilityLabel="testing"
   accessibilityRole="button"
   accessibilityState={
@@ -743,7 +745,7 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="button_testing"
 >
   <View
     buttonVariant="filled"
@@ -806,7 +808,7 @@ exports[`<Button /> should render button with custom accessibility label 1`] = `
 
 exports[`<Button /> should render button with custom style 1`] = `
 <View
-  accessibilityHint="Activates when tapped"
+  accessibilityHint="Ativa ao pressionar"
   accessibilityLabel="Button"
   accessibilityRole="button"
   accessibilityState={
@@ -850,7 +852,7 @@ exports[`<Button /> should render button with custom style 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="button_testing"
 >
   <View
     buttonVariant="filled"
@@ -915,7 +917,7 @@ exports[`<Button /> should render button with custom style 1`] = `
 
 exports[`<Button /> should render button with custom text style 1`] = `
 <View
-  accessibilityHint="Activates when tapped"
+  accessibilityHint="Ativa ao pressionar"
   accessibilityLabel="Button"
   accessibilityRole="button"
   accessibilityState={
@@ -959,7 +961,7 @@ exports[`<Button /> should render button with custom text style 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="button_testing"
 >
   <View
     buttonVariant="filled"
@@ -1022,116 +1024,9 @@ exports[`<Button /> should render button with custom text style 1`] = `
 </View>
 `;
 
-exports[`<Button /> should render button with disabled 1`] = `
-<View
-  accessibilityHint="Activates when tapped"
-  accessibilityLabel="Button"
-  accessibilityRole="button"
-  accessibilityState={
-    {
-      "busy": false,
-      "checked": undefined,
-      "disabled": true,
-      "expanded": undefined,
-      "selected": undefined,
-    }
-  }
-  accessibilityValue={
-    {
-      "max": undefined,
-      "min": undefined,
-      "now": undefined,
-      "text": undefined,
-    }
-  }
-  accessible={true}
-  collapsable={false}
-  focusable={false}
-  hitSlop={
-    {
-      "bottom": 10,
-      "left": 10,
-      "right": 10,
-      "top": 10,
-    }
-  }
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    {
-      "borderRadius": 4,
-      "opacity": 1,
-    }
-  }
-  testID="testing"
->
-  <View
-    buttonVariant="filled"
-    colorVariant="primary"
-    disabled={true}
-    flat={false}
-    hasBorder={false}
-    rounded={false}
-    style={
-      [
-        {
-          "alignItems": "center",
-          "backgroundColor": "#4255EF",
-          "borderColor": "#ffffff",
-          "borderRadius": 4,
-          "borderWidth": 0,
-          "flexDirection": "row",
-          "height": 45,
-          "justifyContent": "center",
-          "maxWidth": "100%",
-          "minWidth": 180,
-          "opacity": 0.3,
-          "overflow": "hidden",
-          "paddingBottom": 4,
-          "paddingLeft": 4,
-          "paddingRight": 4,
-          "paddingTop": 4,
-        },
-        {},
-      ]
-    }
-  >
-    <Text
-      accessibilityLabel="undefined"
-      buttonVariant="filled"
-      colorVariant="primary"
-      disabled={true}
-      flat={false}
-      lineHeightVariant="min"
-      style={
-        [
-          {
-            "color": "#444444",
-            "fontSize": 15,
-            "lineHeight": 18,
-          },
-          {
-            "color": "#ffffff",
-            "fontWeight": "bold",
-            "letterSpacing": 0.4,
-          },
-          {},
-        ]
-      }
-      variant="md"
-    />
-  </View>
-</View>
-`;
-
 exports[`<Button /> should render button with flat style 1`] = `
 <View
-  accessibilityHint="Activates when tapped"
+  accessibilityHint="Ativa ao pressionar"
   accessibilityLabel="Button"
   accessibilityRole="button"
   accessibilityState={
@@ -1175,7 +1070,7 @@ exports[`<Button /> should render button with flat style 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="button_testing"
 >
   <View
     buttonVariant="filled"
@@ -1238,7 +1133,7 @@ exports[`<Button /> should render button with flat style 1`] = `
 
 exports[`<Button /> should render button with left icon 1`] = `
 <View
-  accessibilityHint="Activates when tapped"
+  accessibilityHint="Ativa ao pressionar"
   accessibilityLabel="Button"
   accessibilityRole="button"
   accessibilityState={
@@ -1282,7 +1177,7 @@ exports[`<Button /> should render button with left icon 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="button_testing"
 >
   <View
     buttonVariant="filled"
@@ -1325,7 +1220,8 @@ exports[`<Button /> should render button with left icon 1`] = `
       }
     >
       <View
-        accessibilityLabel="Check"
+        accessibilityLabel="Ícone check"
+        accessibilityRole="image"
         accessibilityState={
           {
             "busy": undefined,
@@ -1417,7 +1313,7 @@ exports[`<Button /> should render button with left icon 1`] = `
 
 exports[`<Button /> should render button with left icon not touchable 1`] = `
 <View
-  accessibilityHint="Activates when tapped"
+  accessibilityHint="Ativa ao pressionar"
   accessibilityLabel="Button"
   accessibilityRole="button"
   accessibilityState={
@@ -1461,7 +1357,7 @@ exports[`<Button /> should render button with left icon not touchable 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="button_testing"
 >
   <View
     buttonVariant="filled"
@@ -1504,7 +1400,8 @@ exports[`<Button /> should render button with left icon not touchable 1`] = `
       }
     >
       <View
-        accessibilityLabel="Check"
+        accessibilityLabel="Ícone check"
+        accessibilityRole="image"
         accessibilityState={
           {
             "busy": undefined,
@@ -1596,7 +1493,7 @@ exports[`<Button /> should render button with left icon not touchable 1`] = `
 
 exports[`<Button /> should render button with loading 1`] = `
 <View
-  accessibilityHint="Activates when tapped"
+  accessibilityHint="Ativa ao pressionar"
   accessibilityLabel="Button"
   accessibilityRole="button"
   accessibilityState={
@@ -1640,7 +1537,7 @@ exports[`<Button /> should render button with loading 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="button_testing"
 >
   <View
     buttonVariant="filled"
@@ -1709,7 +1606,7 @@ exports[`<Button /> should render button with loading 1`] = `
 
 exports[`<Button /> should render button with max width 1`] = `
 <View
-  accessibilityHint="Activates when tapped"
+  accessibilityHint="Ativa ao pressionar"
   accessibilityLabel="Button"
   accessibilityRole="button"
   accessibilityState={
@@ -1753,7 +1650,7 @@ exports[`<Button /> should render button with max width 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="button_testing"
 >
   <View
     buttonVariant="filled"
@@ -1817,7 +1714,7 @@ exports[`<Button /> should render button with max width 1`] = `
 
 exports[`<Button /> should render button with min width 1`] = `
 <View
-  accessibilityHint="Activates when tapped"
+  accessibilityHint="Ativa ao pressionar"
   accessibilityLabel="Button"
   accessibilityRole="button"
   accessibilityState={
@@ -1861,7 +1758,7 @@ exports[`<Button /> should render button with min width 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="button_testing"
 >
   <View
     buttonVariant="filled"
@@ -1925,7 +1822,7 @@ exports[`<Button /> should render button with min width 1`] = `
 
 exports[`<Button /> should render button with outline variant 1`] = `
 <View
-  accessibilityHint="Activates when tapped"
+  accessibilityHint="Ativa ao pressionar"
   accessibilityLabel="Button"
   accessibilityRole="button"
   accessibilityState={
@@ -1969,7 +1866,7 @@ exports[`<Button /> should render button with outline variant 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="button_testing"
 >
   <View
     buttonVariant="outline"
@@ -2032,7 +1929,7 @@ exports[`<Button /> should render button with outline variant 1`] = `
 
 exports[`<Button /> should render button with right icon 1`] = `
 <View
-  accessibilityHint="Activates when tapped"
+  accessibilityHint="Ativa ao pressionar"
   accessibilityLabel="Button"
   accessibilityRole="button"
   accessibilityState={
@@ -2076,7 +1973,7 @@ exports[`<Button /> should render button with right icon 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="button_testing"
 >
   <View
     buttonVariant="filled"
@@ -2143,7 +2040,8 @@ exports[`<Button /> should render button with right icon 1`] = `
       }
     >
       <View
-        accessibilityLabel="Check"
+        accessibilityLabel="Ícone check"
+        accessibilityRole="image"
         accessibilityState={
           {
             "busy": undefined,
@@ -2211,7 +2109,7 @@ exports[`<Button /> should render button with right icon 1`] = `
 
 exports[`<Button /> should render button with right icon not touchable 1`] = `
 <View
-  accessibilityHint="Activates when tapped"
+  accessibilityHint="Ativa ao pressionar"
   accessibilityLabel="Button"
   accessibilityRole="button"
   accessibilityState={
@@ -2255,7 +2153,7 @@ exports[`<Button /> should render button with right icon not touchable 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="button_testing"
 >
   <View
     buttonVariant="filled"
@@ -2322,7 +2220,8 @@ exports[`<Button /> should render button with right icon not touchable 1`] = `
       }
     >
       <View
-        accessibilityLabel="Check"
+        accessibilityLabel="Ícone check"
+        accessibilityRole="image"
         accessibilityState={
           {
             "busy": undefined,
@@ -2390,7 +2289,7 @@ exports[`<Button /> should render button with right icon not touchable 1`] = `
 
 exports[`<Button /> should render button with secondary color variant 1`] = `
 <View
-  accessibilityHint="Activates when tapped"
+  accessibilityHint="Ativa ao pressionar"
   accessibilityLabel="Button"
   accessibilityRole="button"
   accessibilityState={
@@ -2434,7 +2333,7 @@ exports[`<Button /> should render button with secondary color variant 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="button_testing"
 >
   <View
     buttonVariant="filled"
@@ -2497,7 +2396,7 @@ exports[`<Button /> should render button with secondary color variant 1`] = `
 
 exports[`<Button /> should render button with test id 1`] = `
 <View
-  accessibilityHint="Activates when tapped"
+  accessibilityHint="Ativa ao pressionar"
   accessibilityLabel="Button"
   accessibilityRole="button"
   accessibilityState={
@@ -2541,7 +2440,7 @@ exports[`<Button /> should render button with test id 1`] = `
       "opacity": 1,
     }
   }
-  testID="test"
+  testID="button_testing"
 >
   <View
     buttonVariant="filled"
@@ -2604,7 +2503,7 @@ exports[`<Button /> should render button with test id 1`] = `
 
 exports[`<Button /> should render button with typography variant 1`] = `
 <View
-  accessibilityHint="Activates when tapped"
+  accessibilityHint="Ativa ao pressionar"
   accessibilityLabel="Button"
   accessibilityRole="button"
   accessibilityState={
@@ -2648,7 +2547,7 @@ exports[`<Button /> should render button with typography variant 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="button_testing"
 >
   <View
     buttonVariant="filled"
@@ -2711,7 +2610,7 @@ exports[`<Button /> should render button with typography variant 1`] = `
 
 exports[`<Button /> should render button with variant 1`] = `
 <View
-  accessibilityHint="Activates when tapped"
+  accessibilityHint="Ativa ao pressionar"
   accessibilityLabel="Button"
   accessibilityRole="button"
   accessibilityState={
@@ -2755,7 +2654,7 @@ exports[`<Button /> should render button with variant 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="button_testing"
 >
   <View
     buttonVariant="filled"
