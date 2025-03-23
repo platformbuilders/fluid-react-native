@@ -19,6 +19,7 @@ O foco atual do projeto é a manutenção e expansão da biblioteca Fluid React 
 - Aumento significativo na cobertura de testes do componente SearchInput (de 62% para 96%)
 - Melhoria na cobertura de testes do componente Icon (aumento na cobertura de branches de 78% para 93%)
 - Melhoria na cobertura global de testes para 95.26%, superando o threshold de 84%
+- Aumento da cobertura de testes do módulo de utilitários de acessibilidade para 100% (stmts, branches, funcs, lines)
 
 ## Próximos Passos (Priorizados)
 
@@ -33,7 +34,7 @@ O foco atual do projeto é a manutenção e expansão da biblioteca Fluid React 
 - Focar nos componentes com menor cobertura: RadioButton (50%), MaskedTextInput (71.42%)
 - ✅ Melhorar cobertura do SearchInput (aumentada de 62% para 96%)
 - ✅ Melhorar cobertura do Icon (aumento na cobertura de branches de 78% para 93%)
-- Melhorar testes de utils/accessibility.ts que possui apenas 33.33% de cobertura
+- ✅ Melhorar testes de utils/accessibility.ts (aumentada de 33.33% para 100%)
 - Corrigir erros de ambiente relacionados a timers no Jest
 - Corrigir avisos de `act()` nos testes React
 
