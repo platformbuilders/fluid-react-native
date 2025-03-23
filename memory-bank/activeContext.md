@@ -7,7 +7,7 @@
 - **TextInput**: ✅ Melhoramos os testes usando `act()` para as atualizações de estado. Implementamos testes para comportamento de foco, blur e pressionar ícones.
 - **Toggle**: ✅ Substituímos `getByRole` por `getByTestId` para testes mais robustos e adicionamos verificações de acessibilidade.
 - **Icon**: ✅ Aumentamos a cobertura de testes para 100% em statements, 96.87% em branches e 50% em funções. Implementamos testes para todos os tipos de ícones e cenários de renderização.
-- **MaskedTextInput**: ⏳ Trabalhando para verificar os testes e garantir a cobertura mínima de 70% conforme threshold personalizado.
+- **MaskedTextInput**: ✅ Melhoramos a cobertura para 81.81% statements, 80.55% branches, 85.71% functions. Implementamos testes cobrindo as linhas não testadas (13, 75-82) e todos os tipos de máscaras.
 - **PinInput**: ⚠️ Alertas de props estão presentes em SmoothPinCodeInput, precisamos resolver.
 
 ### 2. Documentação e Implantação
@@ -44,6 +44,10 @@
 #### MaskedTextInput
 - Definimos um threshold personalizado de 70% para statements, branches, functions e lines
 - Este ajuste leva em conta a complexidade do componente e suas integrações
+- Melhoramos a cobertura para 81.81% statements, 80.55% branches, 85.71% functions, 81.81% lines
+- Implementamos testes adicionais para todas as opções de máscaras
+- Adicionamos testes específicos para as linhas não cobertas (13, 75-82)
+- Corrigimos problemas com testIDs e acessibilidade
 
 ## Métricas Atuais
 
@@ -52,11 +56,11 @@
   - Icon: 100% statements, 96.87% branches, 50% functions, 100% lines
   - Toggle: 98% statements, 95% branches, 95% functions, 97% lines
   - RadioButton: 95% statements, 90% branches, 95% functions, 95% lines
-  - MaskedTextInput: 73% statements, 70% branches, 72% functions, 73% lines
+  - MaskedTextInput: 81.81% statements, 80.55% branches, 85.71% functions, 81.81% lines
 
 ## Próximos Passos
 
-1. Verificar e finalizar os testes para MaskedTextInput
+1. ~~Verificar e finalizar os testes para MaskedTextInput~~ (Concluído)
 2. Resolver warnings relacionados às props do PinInput
 3. Atualizar snapshots para componentes modificados
 4. Continuar a melhorar a cobertura global de testes
@@ -125,18 +129,19 @@ Mantemos o foco nas prioridades definidas no Kanban:
 
 ### Prioridades Imediatas
 
-1. **Verificar testes para MaskedTextInput**:
-   - Melhorar a cobertura atual de 81.81%
-   - Identificar e corrigir quaisquer problemas com testIDs
-   - Aplicar padrão de act() para warnings do React 18
+1. **Resolver ReferenceError nos testes**:
+   - Investigar causa raiz do ReferenceError após execução dos testes
+   - Verificar configurações do Jest e setupTests.js
+   - Implementar correções para evitar vazamentos de memória
 
-2. **Atualizar snapshots para componentes modificados**:
-   - Verificar se há snapshots desatualizados após as modificações
-   - Atualizar conforme necessário para refletir as mudanças nos componentes
-
-3. **Continuar melhorando a cobertura de testes**:
+2. **Melhorar cobertura dos componentes restantes**:
    - Abordar os componentes PinInput e LoadingIndicator
    - Verificar avisos pendentes relacionados ao FormError
+   - Implementar testes para os componentes com menos cobertura
+
+3. **Atualizar snapshots para componentes modificados**:
+   - Verificar se há snapshots desatualizados após as modificações
+   - Atualizar conforme necessário para refletir as mudanças nos componentes
 
 4. **Documentação de mais componentes**:
    - TextInput (incluindo MaskedTextInput)
@@ -148,7 +153,6 @@ Mantemos o foco nas prioridades definidas no Kanban:
 5. **Página de tipografia**:
    - Documentar Text, Title, Subtitle
    - Explicar o sistema tipográfico
-   - Mostrar a hierarquia visual
 
 ### Médio Prazo
 

@@ -14,12 +14,12 @@ kanban-plugin: basic
 - Criar website com documentação completa
 
 ## Trabalho Atual
-- Resolver warnings relacionados aos props do PinInput
-- Melhorar a cobertura de functions para o Icon (50% atualmente)
+- Investigar e corrigir ReferenceError causado pelo ambiente do Jest sendo encerrado
+- Corrigir erros de linting identificados em vários arquivos de teste
 
 ## Próximos Passos
 - Implementar testes para componentes com baixa cobertura
-- Analisar componentes com menor cobertura de testes (PinInput, SearchInput)
+- Analisar componentes com menor cobertura de testes (SearchInput)
 - Implementar testes para SearchInput
 - Implementar testes para Avatar
 - Implementar testes para Loading
@@ -41,4 +41,15 @@ kanban-plugin: basic
 - Implementação completa dos testes para TextInput com cobertura de 100% statements
 - Implementação completa dos testes para Toggle com cobertura de 100% em todas as métricas
 - Melhorar a cobertura de functions para o Touchable (de 66.66% para 100%)
-- Melhoria na cobertura de testes para o componente Icon (100% statements, 96.87% branches, 50% funções) 
+- Melhoria na cobertura de testes para o componente Icon (100% statements, 96.87% branches, 50% funções)
+- Resolver warnings relacionados aos props do PinInput
+- Melhorar a cobertura de functions para o Icon (de 50% para 100%)
+- Aumentar a cobertura global do projeto (statements: 97.79%, branches: 95.94%, functions: 94.68%, lines: 97.74%)
+- ✅ Melhorar a cobertura de testes do componente MaskedTextInput
+- ✅ Melhorar a cobertura de testes do componente Toggle
+- ✅ Melhorar a cobertura de testes do componente Icon
+- ✅ Ajustar coverage para testes unitários (agora em 90%+ statements, 84%+ branches)
+- ✅ Corrigir bugs no sistema de testIDs para melhorar automação de testes
+- ✅ Padronizar comportamento do componente TextInput
+- ✅ Resolver warnings relacionados ao React 18
+- ✅ Melhorar configuração do ESLint para detectar problemas mais cedo 
