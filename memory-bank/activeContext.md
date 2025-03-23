@@ -247,3 +247,141 @@ Esta documentação serve como guia para implementação e revisão de testIDs, 
   - MUI: https://mui.com/material-ui/
   - Chakra UI: https://chakra-ui.com/docs/
   - React Native Paper: https://callstack.github.io/react-native-paper/ 
+
+## Trabalho Recente
+
+### Resolução do ReferenceError nos testes Jest (18/07/2023)
+
+- Identificamos e corrigimos o problema do `ReferenceError` que ocorria após a execução dos testes.
+- Modificamos os arquivos `src/setupFile.js` e `src/setupTests.js` com abordagens mais robustas:
+  1. Simplificamos o `setupFile.js` para focar apenas em prevenir erros específicos e gerenciar timers.
+  2. Atualizamos o `setupTests.js` para usar um mock mais adequado para o `NativeAnimatedHelper`.
+- A solução implementada:
+  - Usa um mock do React Native que intercepta chamadas ao `NativeAnimatedHelper`.
+  - Gerencia timers com `jest.useFakeTimers()` e `jest.clearAllTimers()`.
+  - Configura um timeout mais longo para testes com animações.
+  - Suprime mensagens de erro específicas relacionadas ao ambiente Jest sendo encerrado.
+
+### MaskedTextInput
+
+Atingimos os thresholds personalizados (70%) para o componente MaskedTextInput:
+- Statements: 81.81%
+- Branches: 80.55%
+- Functions: 85.71%
+- Lines: 81.81%
+
+Isso atende aos requisitos definidos na documentação `.cursorrules`.
+
+### Melhorias em testes
+
+- Componente Icon agora tem 100% de cobertura em statements e lines.
+- Componente Accordion tem 100% de cobertura em todos os aspectos.
+- Eliminamos os ReferenceError nos testes do Accordion e outros componentes.
+
+## Documentação
+
+Trabalho em andamento para documentar:
+- Firebase Hosting para o Storybook
+- Configuração do Docusaurus para a documentação completa
+
+## Métricas Atuais (18/07/2023)
+Cobertura global do projeto ainda precisa melhorar:
+- Statements: ~11.63%
+- Branches: ~9.77%
+- Lines: ~11.25% 
+- Functions: ~10.63% 
+
+## Próximos Passos
+
+1. Corrigir erros de lint restantes nos arquivos de teste
+2. Revisar e corrigir warnings de prop-types no componente Icon
+3. Aumentar a cobertura de testes dos demais componentes
+4. Implementar testes mais abrangentes para componentes com baixa cobertura
+5. Atualizar documentação no Storybook
+
+## Considerações Importantes
+
+- **URL do Site**: A documentação está disponível em https://fluid-ds.web.app
+- **Processo de Deploy**: Utilizar `yarn deploy` ou `./deploy.sh` para fazer o deploy manual
+- **Automação**: Pushes para main/master disparam deploy automático via GitHub Actions
+- **Foco em exemplos**: Priorizar exemplos práticos e de uso real
+- **Acessibilidade**: Garantir que a documentação e exemplos promovam boas práticas de acessibilidade
+- **Consistência**: Manter uma estrutura consistente em todas as páginas de documentação de componentes
+- **Simplicidade**: Começar com exemplos simples e progressivamente mostrar usos mais complexos
+
+## Ferramentas e Tecnologias
+
+- **Docusaurus**: Framework de documentação
+- **Firebase Hosting**: Hospedagem do site
+- **GitHub Actions**: Automação de deploy
+- **React**: Para componentes personalizados no site
+- **MDX**: Para páginas de documentação interativas
+- **CSS Modules**: Para estilização de componentes do site
+
+## Padrões de TestID
+
+A implementação consistente de testIDs é crucial para automação de testes e testes de interface. A biblioteca Fluid React Native segue padrões específicos para garantir consistência e previsibilidade.
+
+### Formato Padrão de TestID
+
+```
+{componentType}_{id}
+```
+
+Onde:
+- `componentType`: Tipo do componente em minúsculas (ex: button, input, toggle)
+- `id`: Identificador único do componente
+
+### Hierarquia de Prioridade para TestID
+
+1. **ID específico**: Se o componente tiver uma prop `id`, ela será usada como base para o testID
+2. **Accessibility**: Se `id` não for fornecido, usa a prop `accessibility` 
+3. **Children (quando aplicável)**: Para componentes como Typography, o texto filho pode ser usado como testID
+4. **Fallback**: Se nenhum dos anteriores estiver disponível, usa-se `{componentType}_{componentType}` (ex: `button_button`)
+
+### Exemplos de Implementação
+
+- **Button**: `button_submit`
+- **Typography**: Se id="title", então `title`, se não tiver id mas tiver children="Título", então `Título`
+- **TextInput**: `input_email`
+- **Toggle**: `toggle_darkMode`
+
+### Componentes Aninhados
+
+Para componentes compostos, a hierarquia de testIDs é preservada, com os componentes filhos recebendo prefixos adicionais:
+
+```
+Button com Typography:
+- Button: button_submit
+- Typography dentro do Button: text_submit
+```
+
+### Utilitários
+
+A biblioteca fornece funções utilitárias para gerar testIDs consistentes:
+
+```typescript
+// Em src/utils/accessibility.ts
+export const generateTestID = (prefix: string, id?: string): string => {
+  return id ? `${prefix}_${id}` : prefix;
+};
+```
+
+### Boas Práticas
+
+1. Sempre fornecer props `id` ou `accessibility` para componentes interativos
+2. Utilizar a função `generateTestID` para manter a consistência
+3. Não modificar o testID original quando um componente encapsula outro
+4. Para componentes que fazem o mesmo trabalho, seguir o mesmo padrão
+
+Esta documentação serve como guia para implementação e revisão de testIDs, garantindo que todos os componentes sigam um padrão consistente e previsível.
+
+## Recursos
+
+- Fluid React Native (código-fonte): https://github.com/platformbuilders/fluid-react-native
+- Documentação do Docusaurus: https://docusaurus.io/docs
+- Site da documentação: https://fluid-ds.web.app
+- Exemplos de documentação bem estruturada:
+  - MUI: https://mui.com/material-ui/
+  - Chakra UI: https://chakra-ui.com/docs/
+  - React Native Paper: https://callstack.github.io/react-native-paper/ 

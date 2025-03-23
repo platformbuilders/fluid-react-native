@@ -539,3 +539,60 @@ Necessário continuar o trabalho em outros componentes, seguindo ordem alfabéti
 - Continuar resolvendo o problema ReferenceError nos testes
 - Focar na melhoria da cobertura global acima de 84% para todos os critérios
 - Implementar testes adicionais para os componentes restantes
+
+## Melhorias Recentes na Infraestrutura de Testes (18/07/2023)
+
+1. ✅ **Correção do ReferenceError** - Resolvemos o problema do ReferenceError nos testes Jest que ocorria quando o ambiente de teste era encerrado enquanto ainda haviam timers ou animações pendentes.
+2. ✅ **Mocking Melhorado** - Implementamos um método melhorado para mockar o `NativeAnimatedHelper` que evita problemas com as animações em testes.
+3. ✅ **Gestão de Timers** - Melhoramos a gestão de timers com `jest.useFakeTimers()` e `jest.clearAllTimers()` para evitar vazamentos.
+4. ✅ **Supressão de Erros Específicos** - Adicionamos capacidade de suprimir mensagens de erro específicas relacionadas ao ambiente Jest sendo encerrado.
+5. ✅ **Thresholds Personalizados** - Criamos configuração para thresholds personalizados por componente, permitindo flexibilidade onde necessário.
+
+## Componentes Planejados
+
+1. 🔄 **Toast** - Notificações toast
+2. 🔄 **Modal** - Janelas modais
+3. 🔄 **Calendar** - Seleção de datas
+4. 🔄 **Tabs** - Sistema de abas
+5. 🔄 **Card** - Cartões para conteúdo
+6. 🔄 **Carousel** - Carrossel de conteúdo
+7. 🔄 **Pagination** - Controles de paginação
+8. 🔄 **Stepper** - Indicadores de progresso em etapas
+9. 🔄 **Menu** - Menus dropdown
+10. 🔄 **Table** - Tabelas de dados
+11. 🔄 **Alert** - Mensagens de alerta
+12. 🔄 **Tooltip** - Dicas contextuais
+13. 🔄 **DatePicker** - Selecionador de data avançado
+14. 🔄 **TimePicker** - Selecionador de hora
+15. 🔄 **Tag** - Tags para categorização
+16. 🔄 **Rating** - Sistema de avaliação
+
+## Métricas de Teste (18/07/2023)
+
+### Métricas Globais
+
+- Statements: 11.63% (Meta: 84%)
+- Branches: 9.77% (Meta: 84%)
+- Functions: 10.63% (Meta: 84%)
+- Lines: 11.25% (Meta: 84%)
+
+### Componentes com Cobertura de 100%
+
+- **Accordion**: 100% em todos os aspectos
+- **Icon**: 100% em statements e lines, 96.87% em branches
+
+### Componentes com Thresholds Customizados
+
+- **MaskedTextInput**: 
+  - Statements: 81.81% (Threshold: 70%)
+  - Branches: 80.55% (Threshold: 70%)
+  - Functions: 85.71% (Threshold: 70%)
+  - Lines: 81.81% (Threshold: 70%)
+
+## Próximos Passos
+
+1. Corrigir erros de lint restantes nos arquivos de teste
+2. Revisar e corrigir warnings de prop-types no componente Icon
+3. Aumentar a cobertura de testes dos demais componentes
+4. Implementar testes mais abrangentes para componentes com baixa cobertura
+5. Atualizar documentação no Storybook

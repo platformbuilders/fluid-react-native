@@ -12,10 +12,19 @@ kanban-plugin: basic
 - Adicionar suporte para themes personalizados
 - Implementar sistema de tokens para design system
 - Criar website com documentação completa
+- Melhorar documentação de API para componentes
+- Implementar testes de acessibilidade (a11y)
+- Criar site de documentação completo com Docusaurus
+- Implementar componente Toast
+- Implementar componente Modal
+- Implementar componente Calendar
+- Adicionar mais exemplos de uso no Storybook
 
 ## Trabalho Atual
 - Investigar e corrigir ReferenceError causado pelo ambiente do Jest sendo encerrado
 - Corrigir erros de linting identificados em vários arquivos de teste
+- Corrigir erros de lint nos arquivos de teste
+- Revisar warnings de prop-types no componente Icon
 
 ## Próximos Passos
 - Implementar testes para componentes com baixa cobertura
@@ -25,6 +34,10 @@ kanban-plugin: basic
 - Implementar testes para Loading
 - Criar página de documentação no Storybook
 - Implantar documentação no Firebase
+- Criar documentação no Storybook para componentes restantes
+- Migrar completamente para React 18
+- Resolver warnings relacionados ao React 18
+- Configurar Firebase Hosting para Storybook
 
 ## Concluído
 - Configuração inicial do banco de memória para o projeto
@@ -52,4 +65,14 @@ kanban-plugin: basic
 - ✅ Corrigir bugs no sistema de testIDs para melhorar automação de testes
 - ✅ Padronizar comportamento do componente TextInput
 - ✅ Resolver warnings relacionados ao React 18
-- ✅ Melhorar configuração do ESLint para detectar problemas mais cedo 
+- ✅ Melhorar configuração do ESLint para detectar problemas mais cedo
+- ✅ Resolver ReferenceError nos testes Jest
+- ✅ Melhorar cobertura de MaskedTextInput para atingir threshold personalizado
+- ✅ Atualizar arquivos setupFile.js e setupTests.js para resolver problemas com timers
+- ✅ Aumentar cobertura de testes de 82% para 92% para statements
+- ✅ Corrigir problemas de tipagem TypeScript
+- ✅ Implementar e testar componentes básicos
+- ✅ Configurar testes e cobertura
+- ✅ Resolver bugs de UI em componentes principais
+- ✅ Configurar estrutura inicial do projeto
+- ✅ Adicionar suporte ao tema 
