@@ -6,9 +6,6 @@ kanban-plugin: basic
 - Revisar e melhorar documentação API do Storybook
 - Implementar testes para cenários de acessibilidade
 - Verificar compatibilidade com as versões mais recentes do React Native
-- Melhorar a cobertura de funções do componente Touchable (66.66%)
-- Melhorar a cobertura de branches do componente PasswordInput (62.5%)
-- Implementar testes para PasswordInput para atingir pelo menos 80% de cobertura de branches
 - Implementar testes de unidade para o componente TextInput para melhorar cobertura
 - Implementar testes para PinInput
 - Implementar testes para LoadingIndicator
@@ -21,14 +18,12 @@ kanban-plugin: basic
 - Melhorar thresholds de cobertura de testes
 - Documentar padrões de testIDs
 - Aplicar a abordagem de correção de warnings de act() para outros componentes
-- Corrigir warnings relacionados ao uso de act() em testes React 18 nos componentes restantes
 
 ## Próximos Passos
 - Analisar componentes com cobertura de testes abaixo de 95%
 - Revisar e implementar melhores práticas de acessibilidade
 - Atualizar documentação técnica com novos padrões
 - Adicionar documentação sobre padrões de testes para componentes com estado
-- Melhorar cobertura de testes do componente Touchable para atingir pelo menos 80% em function coverage
 - Adicionar testes para o componente Typography para melhorar cobertura
 
 ## Concluído
@@ -46,4 +41,6 @@ kanban-plugin: basic
 - Criar documentação sobre tratamento de erros de act() no React 18
 - Criar testes para o componente Avatar com correção para warnings de act()
 - Documentar abordagem para criar testes que envolvam operações assíncronas
-- Atualizar os snapshots dos componentes após as correções 
+- Atualizar os snapshots dos componentes após as correções
+- Melhorar a cobertura de testes do componente Touchable para atingir pelo menos 80% em function coverage
+- Melhorar a cobertura de branches do componente PasswordInput (62.5%) para atingir pelo menos 80% 

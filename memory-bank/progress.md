@@ -176,6 +176,14 @@ O projeto está em um estágio maduro, com 23 componentes já implementados e te
 - Identificados componentes que precisam de melhor cobertura de testes: Touchable (66,66% function coverage) e PasswordInput (62,5% branch coverage)
 - Atualizado o quadro Kanban com novas tarefas relacionadas à cobertura de testes e warnings de act()
 
+**Data: 2024-05-16**
+- Melhorada a cobertura de testes do componente Touchable, com foco em aumentar a cobertura de funções de 66,66% para 100%
+- Adicionados testes para cenários como falha do haptic feedback, uso de custom haptic feedback e verificação correta de acessibilidade
+- Melhorada a cobertura de testes do componente PasswordInput, aumentando a cobertura de branches de 62,5% para 100%
+- Adicionados testes para o modo floating do PasswordInput e para diversos cenários de interação e customização
+- Adicionado suporte adequado ao uso de act() em todos os testes novos para evitar warnings do React 18
+- Atualizados os snapshots do componente PasswordInput para refletir as mudanças na estrutura de testes
+
 # Progresso do Projeto
 
 ## Visão Geral do Status
