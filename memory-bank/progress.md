@@ -157,6 +157,10 @@ O projeto está em um estágio maduro, com 23 componentes já implementados e te
 - Refatoração do componente MaskedTextInput para aumentar testabilidade
 - Simplificação da estrutura condicional do maskTypeControll para reduzir complexidade ciclomática
 
+**Data: 2024-05-13**
+- Documentação das estratégias de teste para o MaskedTextInput no arquivo docs/testing-maskedtextinput.md
+- Registrados aprendizados e técnicas para lidar com componentes de alta complexidade ciclomática
+
 # Progresso do Projeto
 
 ## Visão Geral do Status
