@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { ButtonVariant } from '../../enums';
 import { ButtonProps } from '../../types';
+import { generateAccessibilityProps, generateTestID } from '../../utils';
 import { ButtonWrapper, Icon, Loading, TextButton, Touchable } from './styles';
 
 const Button: FC<ButtonProps> = ({
@@ -27,17 +28,31 @@ const Button: FC<ButtonProps> = ({
   leftIconTouchable = true,
   rightIconTouchable = true,
 }) => {
+  // Gera propriedades de acessibilidade padronizadas
+  const accessibilityProps = generateAccessibilityProps(
+    { 
+      id, 
+      accessibility, 
+      accessibilityLabel, 
+      disabled: loading || disabled, 
+      busy: loading 
+    },
+    'button',
+    children?.toString() || 'Botão',
+    'Ativa ao pressionar'
+  );
+
+  // Gera ID de teste padronizado
+  const buttonTestID = generateTestID(
+    { id, accessibility, testID },
+    'button'
+  );
+
   return (
     <Touchable
       id={id || accessibility}
-      accessibilityLabel={accessibilityLabel || accessibility || 'Button'}
-      accessibilityRole="button"
-      accessibilityState={{
-        disabled: loading || disabled,
-        busy: loading,
-      }}
-      accessibilityHint="Activates when tapped"
-      testID={testID || id || `button_${accessibility || ''}`}
+      {...accessibilityProps}
+      testID={buttonTestID}
       disabled={loading || disabled}
       onPress={onPress}
       hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
@@ -66,6 +81,8 @@ const Button: FC<ButtonProps> = ({
                 style={style}
                 touchable={leftIconTouchable}
                 leftIcon
+                accessibilityRole="image"
+                accessibilityLabel={`Ícone ${leftIconName}`}
               />
             )}
             <TextButton
@@ -87,6 +104,8 @@ const Button: FC<ButtonProps> = ({
                 style={style}
                 touchable={rightIconTouchable}
                 rightIcon
+                accessibilityRole="image"
+                accessibilityLabel={`Ícone ${rightIconName}`}
               />
             )}
           </>

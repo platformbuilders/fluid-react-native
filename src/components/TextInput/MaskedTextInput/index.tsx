@@ -5,6 +5,7 @@ import {
 } from 'react-native-masked-input/src/types';
 import { InputStatus } from '../../../enums';
 import { MaskedTextInputType } from '../../../types';
+import { generateAccessibilityProps, generateTestID } from '../../../utils';
 import { TextInput } from './styles';
 
 const optionDefault = {
@@ -26,12 +27,16 @@ const MaskedTextInput = forwardRef<any, MaskedTextInputType>(
       maskType = 'no-mask',
       id,
       accessibility,
+      accessibilityLabel,
+      testID,
       contrast = false,
       multiline = false,
       status = InputStatus.Default,
       value = '',
       onChangeText,
       options = optionDefault,
+      placeholder = '',
+      editable = true,
       ...rest
     },
     inputRef,
@@ -40,6 +45,25 @@ const MaskedTextInput = forwardRef<any, MaskedTextInputType>(
       typeMask: 'custom',
       options: options,
     });
+
+    // Gera propriedades de acessibilidade padronizadas
+    const accessibilityProps = generateAccessibilityProps(
+      { 
+        id, 
+        accessibility, 
+        accessibilityLabel, 
+        disabled: !editable 
+      },
+      'text',
+      placeholder || 'Campo de texto',
+      placeholder ? `Digite ${placeholder}` : 'Digite o texto'
+    );
+
+    // Gera ID de teste padronizado
+    const inputTestID = generateTestID(
+      { id, accessibility, testID },
+      'input'
+    );
 
     // Função para controlar o tipo de máscara
     const maskTypeControll = () => {
@@ -106,14 +130,14 @@ const MaskedTextInput = forwardRef<any, MaskedTextInputType>(
         value={value}
         id={id || accessibility}
         status={status}
-        accessibility={accessibility}
-        testID={id || accessibility}
-        accessibilityLabel={accessibility}
+        {...accessibilityProps}
+        testID={inputTestID}
         contrast={contrast}
         multiline={multiline}
         type={maskSelected.typeMask}
         options={maskSelected.options}
         underlineColorAndroid="transparent"
+        editable={editable}
       />
     );
   },
