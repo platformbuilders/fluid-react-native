@@ -29,22 +29,59 @@
 
 ## O que ainda falta construir
 
-### Componentes Planejados
+### Próximas Tarefas Priorizadas
+1. **Auditoria de Acessibilidade**
+   - Análise completa de acessibilidade nos componentes existentes
+   - Melhorias em componentes com problemas identificados
+   - Diretrizes de acessibilidade para desenvolvimento futuro
+
+2. **Componentes de Feedback Prioritários**
+   - Toast/Snackbar para notificações não-intrusivas
+   - Modal/Dialog aprimorado para interações críticas
+   - Componente de alerta com diferentes níveis de severidade
+
+3. **Otimização de Performance**
+   - Redução do tamanho do pacote final
+   - Otimização de renderização para listas longas
+   - Lazy loading para componentes complexos
+
+4. **Expansão da Documentação**
+   - Exemplos práticos de uso para cada componente
+   - Documentação de padrões de composição
+   - Guias de migração para novas versões
+
+5. **Melhorias no Sistema de Temas**
+   - Refinamento do sistema de design tokens
+   - Suporte aprimorado a temas personalizados
+   - Transições suaves entre modos claro/escuro
+
+6. **Testes em Dispositivos Reais**
+   - Testes em diferentes dispositivos Android e iOS
+   - Correção de problemas específicos de plataforma
+   - Documentação de comportamentos por plataforma
+
+7. **Componentes de Navegação Avançados**
+   - Novos componentes de navegação
+   - Integração com React Navigation
+   - Transições personalizadas
+
+8. **Compatibilidade com React Native Web**
+   - Suporte a React Native Web
+   - Testes em ambiente web
+   - Documentação de diferenças entre plataformas
+
+### Componentes Planejados (Backlog)
 - Gráficos e visualizações de dados
 - Calendário avançado
 - Mapas
 - Componentes de mídia avançados (player de vídeo, áudio)
-- Modal/Dialog aprimorados
-- Toast/Snackbar
 - Componentes de arrastar e soltar
 - Carrossel/Slider
 - Menu contextual
 
-### Funcionalidades Planejadas
-- Melhorias de acessibilidade
-- Suporte aprimorado para React Native Web
-- Animações padronizadas para todos os componentes
+### Funcionalidades Planejadas (Backlog)
 - Sistema de ícones próprio
+- Animações padronizadas para todos os componentes
 
 ## Status Atual
 O projeto está em fase de maturidade, com a maioria dos componentes básicos implementados e em uso por várias equipes. O foco atual está em expandir o conjunto de componentes, melhorar a documentação e garantir compatibilidade com as versões mais recentes do React Native.

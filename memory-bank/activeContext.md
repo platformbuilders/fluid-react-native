@@ -13,25 +13,49 @@ O foco atual do projeto é a manutenção e expansão da biblioteca Fluid React 
 - Melhoria nos tipos TypeScript para melhor inferência
 - Correção de problemas de acessibilidade em vários componentes
 - Atualização da documentação com o novo sistema Rspress
+- Priorização das próximas tarefas por relevância e impacto
 
-## Próximos Passos
-1. **Implementar novos componentes solicitados pela equipe de design**
-   - Charts e gráficos
-   - Componentes de navegação avançados
-   - Componentes de feedback aprimorados
+## Próximos Passos (Priorizados)
 
-2. **Melhorias de performance**
-   - Otimização de renderização para listas longas
-   - Redução do tamanho do pacote final
+### 1. Auditoria de Acessibilidade
+- Realizar análise completa de acessibilidade nos componentes existentes
+- Implementar melhorias imediatas nos componentes com problemas identificados
+- Estabelecer diretrizes de acessibilidade para desenvolvimento futuro
 
-3. **Aprimoramentos de acessibilidade**
-   - Auditoria completa de acessibilidade
-   - Implementação de melhorias baseadas nos resultados da auditoria
+### 2. Implementação de Componentes de Feedback Prioritários
+- Desenvolver Toast/Snackbar para notificações não-intrusivas
+- Implementar Modal/Dialog aprimorado para interações críticas
+- Criar componente de alerta com diferentes níveis de severidade
 
-4. **Expansão da documentação**
-   - Mais exemplos de uso
-   - Guias de migração para novas versões
-   - Seção de melhores práticas
+### 3. Otimização de Performance
+- Reduzir o tamanho do pacote final
+- Otimizar renderização de componentes em listas longas
+- Implementar lazy loading para componentes complexos
+
+### 4. Expansão da Documentação
+- Criar exemplos práticos de uso para cada componente
+- Documentar padrões de composição recomendados
+- Elaborar guias de migração para novas versões
+
+### 5. Melhorias no Sistema de Temas
+- Refinar o sistema de design tokens para maior consistência
+- Aprimorar suporte a temas personalizados
+- Implementar transições suaves entre modos claro/escuro
+
+### 6. Testes em Dispositivos Reais
+- Testar componentes em diferentes dispositivos Android e iOS
+- Identificar e corrigir problemas específicos de plataforma
+- Documentar comportamentos esperados em cada plataforma
+
+### 7. Componentes de Navegação Avançados
+- Desenvolver componentes de navegação solicitados pela equipe de design
+- Garantir integração suave com React Navigation
+- Implementar transições personalizadas
+
+### 8. Compatibilidade com React Native Web
+- Avaliar e implementar suporte a React Native Web
+- Testar componentes em ambiente web
+- Documentar limitações e diferenças entre plataformas
 
 ## Decisões e Considerações em Andamento
 
