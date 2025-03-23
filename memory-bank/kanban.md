@@ -40,4 +40,5 @@ kanban-plugin: basic
 - Atualizar snapshots para componentes modificados
 - Implementação completa dos testes para TextInput com cobertura de 100% statements
 - Implementação completa dos testes para Toggle com cobertura de 100% em todas as métricas
-- Melhorar a cobertura de functions para o Touchable (de 66.66% para 100%) 
+- Melhorar a cobertura de functions para o Touchable (de 66.66% para 100%)
+- Melhoria na cobertura de testes para o componente Icon (100% statements, 96.87% branches, 50% funções) 
