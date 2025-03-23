@@ -472,4 +472,6 @@ Necessário continuar o trabalho em outros componentes, seguindo ordem alfabéti
 - Melhorada a documentação sobre thresholds personalizados, explicando os motivos para cada componente:
   - MaskedTextInput: threshold reduzido devido à alta complexidade ciclomática
   - Accordion: threshold elevado para 100% pois o componente está completamente testado
-- Os thresholds personalizados ajudam a manter um equilíbrio entre exigência de qualidade e praticidade nos testes 
+- Os thresholds personalizados ajudam a manter um equilíbrio entre exigência de qualidade e praticidade nos testes
+- Confirmada a cobertura de 100% para o componente Accordion em todas as métricas (statements, branches, functions e lines)
+- Observado erro relacionado ao ambiente Jest sendo acessado após ser finalizado ("ReferenceError: You are trying to access a property or method of the Jest environment after it has been torn down"), mas sem impacto nos resultados dos testes 
