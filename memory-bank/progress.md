@@ -185,19 +185,55 @@ O projeto está em um estágio maduro, com 23 componentes já implementados e te
 - Atualizados os snapshots do componente PasswordInput para refletir as mudanças na estrutura de testes
 
 **Data: 2024-05-17**
-- Melhorada a cobertura de testes do componente Typography, atualizando os testes para usar act() e evitar warnings do React 18
-- Adicionados testes para verificar o comportamento do Typography com diferentes props, children e ref forwarding
-- Melhorada a cobertura de testes do componente FormError, atingindo 100% em todas as métricas (statements, branches, funções e linhas)
-- Adicionados testes para verificar o comportamento do FormError com diferentes tipos de erro (string, boolean)
-- Testada a funcionalidade de warning quando um boolean é fornecido como erro
-- Verificado o comportamento de fallback para accessibility labels e testIDs
+- Melhorada a cobertura de testes do componente Typography
+  - Atualizado para usar `act()` para evitar avisos do React 18
+  - Adicionados testes para verificação de props diversas (align, color, etc)
+  - Adicionados testes para verificar se os children são passados corretamente
+  - Adicionados testes para verificar se a ref é encaminhada corretamente
+- Alcançado 100% de cobertura para o componente FormError
+  - Adicionados testes para diferentes tipos de erros
+  - Verificação adequada de labels de acessibilidade
+  - Testes para diferentes modos de exibição de erro
 
 **Data: 2024-05-18**
-- Melhorada a cobertura de testes do componente Badge, alcançando 100% em todas as métricas (statements, branches, funções e linhas)
-- Atualizados todos os testes do componente Badge para usar act() e evitar warnings do React 18
-- Adicionados testes para verificar o uso correto de id e accessibility como fallbacks
-- Adicionados testes para verificar estados simultâneos como disabled e loading, ou disabled e flat
-- Testado o comportamento de renderização com diferentes combinações de ícones (esquerda, direita, ambos)
+- Alcançado 100% de cobertura para o componente Badge
+  - Atualizado para usar `act()` para evitar avisos do React 18
+  - Adicionados testes para acessibilidade
+  - Adicionados testes para estados simultâneos (disabled, loading)
+  - Incluídos testes para renderização com diferentes combinações de ícones
+
+**Data: 2024-05-19**
+- Melhorada a cobertura de testes do componente Icon
+  - Aumentada a cobertura de branches para 93.75% (antes era 65.62%)
+  - Atualizado para usar `act()` para evitar avisos do React 18
+  - Adicionados testes para:
+    - Renderização com diferentes tipos de ícones (Material, FABrands, FALight, etc.)
+    - Verificação de comportamento com nome vazio ou undefined
+    - Personalização de dimensões e cores
+    - Renderização de ícones SVG
+    - Uso correto de testID e labels de acessibilidade
+    - Comportamento com conjuntos personalizados de ícones (iconSets)
+    - Verificação de comportamento touchable e não-touchable
+  - Linhas restantes não cobertas são edge cases raros
+
+## Métricas Atuais
+
+**Cobertura de testes:** 
+- Global: ainda abaixo do threshold exigido de 84% 
+- Componentes com 100% de cobertura:
+  - Badge
+  - FormError
+  - Icon (93.75% de branches)
+  - Touchable (100% de linhas, 66.66% funções, 37.5% branches)
+  - Typography
+
+**Warnings:**
+- Alguns warnings relacionados a valores inválidos para nomes de ícones em testes
+
+**Próximos passos:**
+- Melhorar cobertura de testes dos componentes restantes
+- Focar nos componentes mais complexos como TextInput
+- Resolver warnings de testes
 
 # Progresso do Projeto
 

@@ -15,12 +15,18 @@ kanban-plugin: basic
 - Melhorar cobertura de testes do componente Button
 - Melhorar cobertura de testes do componente Link
 - Melhorar cobertura de testes do componente Image
+- Adicionar suporte a maskedTextInput com modo flutuante
+- Melhorar a responsividade do componente Header
+- Adicionar suporte a toast notifications
+- Padronizar a documentação Storybook para todos os componentes
+- Adicionar suporte para variantes de tema (claro/escuro)
 
 ## Trabalho Atual
 - Melhorar thresholds de cobertura de testes
 - Documentar padrões de testIDs
 - Aplicar a abordagem de correção de warnings de act() para outros componentes
 - Implementar testes de unidade para o componente TextInput para melhorar cobertura
+- Melhorar a cobertura de testes para o componente Button
 
 ## Próximos Passos
 - Analisar componentes com cobertura de testes abaixo de 95%
@@ -28,6 +34,10 @@ kanban-plugin: basic
 - Atualizar documentação técnica com novos padrões
 - Adicionar documentação sobre padrões de testes para componentes com estado
 - Melhorar cobertura de testes do componente Icon para atingir pelo menos 90% em branches
+- Implementar testes para o componente Toggle
+- Implementar testes para o componente Checkbox
+- Implementar testes para o componente Header
+- Implementar testes para o componente RadioButton
 
 ## Concluído
 - Configuração inicial do Banco de Memória Obsidian
@@ -49,4 +59,5 @@ kanban-plugin: basic
 - Melhorar a cobertura de branches do componente PasswordInput (62.5%) para atingir pelo menos 80%
 - Adicionar testes para o componente Typography para melhorar cobertura
 - Melhorar a cobertura de testes do componente FormError para atingir 100%
-- Implementar testes para o componente Badge 
+- Implementar testes para o componente Badge ✅ 2024-05-18
+- Implementar testes para o componente Icon ✅ 2024-05-19 
