@@ -1,0 +1,60 @@
+# Regras do Cursor para Fluid React Native
+
+## Padrões de Componentes
+
+- Cada componente deve estar em seu próprio diretório em `src/components/`
+- A estrutura de arquivos deve seguir o padrão:
+  ```
+  ComponentName/
+  ├── index.tsx           # Implementação principal
+  ├── styles.ts           # Estilos com styled-components
+  ├── ComponentName.stories.tsx  # Documentação Storybook
+  └── __tests__/          # Testes unitários
+  ```
+- Todos os componentes devem ser exportados em `src/components/index.ts`
+- Props devem ser tipadas com interfaces específicas
+- Estilização deve usar styled-components e o tema
+
+## Convenções de Código
+
+- Funções de componentes devem usar arrow functions
+- Hooks customizados devem começar com "use"
+- Testes devem usar o padrão AAA (Arrange, Act, Assert)
+- Acessibilidade deve ser considerada em todos os componentes
+- Prefira composição em vez de herança para reutilização
+
+## Padrões de Estilo
+
+- Todos os valores de cores, espaçamentos, etc. devem vir do tema
+- Não utilizar valores hardcoded para estilos
+- Propriedades CSS devem seguir a ordem alfabética em styled-components
+- Estilização responsiva deve usar as funções de media queries do tema
+
+## Testes
+
+- Cada componente deve ter pelo menos 95% de cobertura de testes
+- Testar comportamentos interativos, não apenas renderização
+- Usar mocks para dependências externas
+- Incluir testes de acessibilidade quando apropriado
+
+## Workflow de Desenvolvimento
+
+- Desenvolver usando TDD quando possível
+- Documentar novas props e comportamentos
+- Atualizar Storybook ao adicionar novos recursos
+- Testar em iOS e Android
+
+## Preferências do Projeto
+
+- Prefira componentes funcionais e hooks
+- Evite estado global quando possível
+- Documente APIs públicas de maneira clara
+- Mantenha componentes focados em uma única responsabilidade
+- Considere a experiência do desenvolvedor ao criar APIs
+
+## Observações Importantes
+
+- A biblioteca tem dependência no styled-components
+- O sistema de temas é central para toda a biblioteca
+- Compatibilidade com diferentes versões de React Native é essencial
+- Teste em dispositivos reais, não apenas em simuladores 
