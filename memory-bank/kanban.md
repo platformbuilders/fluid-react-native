@@ -12,16 +12,17 @@ kanban-plugin: basic
 - Corrigir warnings relacionados ao React 18 nos testes
 - Documentar padrões de testIDs
 - Documentar a abordagem de testes para o componente RadioButton
-- Implementar melhores testes para MaskedTextInput (foco nas linhas 76-83)
 
 ## Próximos Passos
 - Analisar componentes com cobertura de testes abaixo de 95%
 - Revisar e implementar melhores práticas de acessibilidade
 - Atualizar documentação técnica com novos padrões
+- Documentar abordagem de testes para o MaskedTextInput
 
 ## Concluído
 - Configuração inicial do Banco de Memória Obsidian
 - Documentação dos padrões de componentes
 - Documentação das convenções de código
 - Definição de thresholds personalizados para componentes complexos
-- Aumentar cobertura de testes do componente RadioButton 
+- Aumentar cobertura de testes do componente RadioButton
+- Implementar melhores testes para MaskedTextInput (foco nas linhas 76-83) 

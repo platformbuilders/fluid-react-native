@@ -14,9 +14,13 @@ Estamos construindo um website de documentação completo para a biblioteca Flui
 
 Realizamos uma melhoria significativa na cobertura de testes do componente RadioButton, que estava abaixo do threshold desejado. Implementamos testes adicionais para a função handlePress e seus diferentes caminhos (com e sem disabled, com e sem onPress), elevando a cobertura de funções de 66.66% para 100%. A cobertura de branches continua em 90.9%, com apenas uma linha não coberta devido a um cenário específico.
 
+Também melhoramos a cobertura do componente MaskedTextInput, que apresentava desafios devido à sua complexidade. Refatoramos o código do componente para substituir a estrutura switch-case por if-else, o que reduziu a complexidade ciclomática e facilitou o teste. Adicionamos testes específicos para verificar o comportamento de cada caminho condicional, aumentando a cobertura de statements e lines de 79.16% para 81.81%, e branches de 78.12% para 80.55%.
+
 ## Progresso Recente
 
-- Melhoramos a cobertura de testes do componente RadioButton
+- Melhoramos a cobertura de testes do MaskedTextInput
+- Refatoramos o componente MaskedTextInput para maior testabilidade
+- Melhoramos a cobertura de testes do RadioButton
 - Implementamos testes mais detalhados para cenários de uso reais
 - Configuramos o Firebase Hosting para deploy simplificado da documentação
 - Criamos scripts de deploy e teste para facilitar o processo

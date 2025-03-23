@@ -8,7 +8,6 @@ import { MaskedTextInputType } from '../../../types';
 import { generateAccessibilityProps } from '../../../utils';
 import { TextInput } from './styles';
 
-/* istanbul ignore next */
 const optionDefault = {
   mask: '*'.repeat(400),
   validator: () => true,
@@ -83,50 +82,40 @@ const MaskedTextInput = forwardRef<any, MaskedTextInputType>(
       inputTestID = `${prefix}_input`;
     }
 
-    // Função para controlar o tipo de máscara
+    // Função para controlar o tipo de máscara - simplificada para melhorar cobertura
     const maskTypeControll = () => {
-      switch (maskType) {
-        case 'cpf':
-        case 'document':
-          /* istanbul ignore next */
-          setMaskSelected({
-            typeMask: 'cpf',
-            options: { mask: '' },
-          });
-          break;
-        case 'cnpj':
-          /* istanbul ignore next */
-          setMaskSelected({
-            typeMask: 'cnpj',
-            options: { mask: '' },
-          });
-          break;
-        case 'no-mask':
-          /* istanbul ignore next */
-          handleSetMask({
-            typeMask: 'custom',
-            options: {
-              mask: '*'.repeat(400),
-            },
-          });
-          break;
-        case 'uppercase':
-          /* istanbul ignore next */
-          handleSetMask({
-            typeMask: 'custom',
-            options: {
-              ...optionDefault,
-              getRawValue: (val) => val.toUpperCase(),
-            },
-          });
-          break;
-        default:
-          /* istanbul ignore next */
-          handleSetMask({
-            typeMask: maskType,
-            options: options,
-          });
-          break;
+      // Casos especiais tratados diretamente
+      if (maskType === 'cpf' || maskType === 'document') {
+        setMaskSelected({
+          typeMask: 'cpf',
+          options: { mask: '' },
+        });
+      } else if (maskType === 'cnpj') {
+        setMaskSelected({
+          typeMask: 'cnpj',
+          options: { mask: '' },
+        });
+      } else if (maskType === 'no-mask') {
+        handleSetMask({
+          typeMask: 'custom',
+          options: {
+            mask: '*'.repeat(400),
+          },
+        });
+      } else if (maskType === 'uppercase') {
+        handleSetMask({
+          typeMask: 'custom',
+          options: {
+            ...optionDefault,
+            getRawValue: (val) => val.toUpperCase(),
+          },
+        });
+      } else {
+        // Caso padrão para outros tipos de máscara
+        handleSetMask({
+          typeMask: maskType,
+          options: options,
+        });
       }
     };
 
@@ -141,7 +130,6 @@ const MaskedTextInput = forwardRef<any, MaskedTextInputType>(
     };
 
     // Atualiza a máscara quando o valor ou as opções mudam
-    /* istanbul ignore next */
     useEffect(() => {
       maskTypeControll();
     }, [value, options]);
