@@ -216,6 +216,19 @@ O projeto está em um estágio maduro, com 23 componentes já implementados e te
     - Verificação de comportamento touchable e não-touchable
   - Linhas restantes não cobertas são edge cases raros
 
+**Data: 2024-05-20**
+- Melhorada a cobertura de testes do componente Button
+  - Atualizado para usar `act()` para evitar avisos do React 18
+  - Alcançado 100% de cobertura para statements, branches, functions e lines
+  - Adicionados testes para:
+    - Verificação de comportamento com ícones (left e right)
+    - Verificação de comportamento com diferentes variantes
+    - Verificação da acessibilidade (estados, labels, etc.)
+    - Verificação de comportamento com valores default quando propriedades não são fornecidas
+    - Comportamento dos estados de disabled e loading
+    - Comportamento com diferentes estilos e variantes de tipografia
+  - Testes ajustados para utilizar práticas recomendadas com o React 18
+
 ## Métricas Atuais
 
 **Cobertura de testes:** 

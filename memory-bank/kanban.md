@@ -12,7 +12,6 @@ kanban-plugin: basic
 - Documentar padrões de testID utilizados nos diversos componentes
 - Implementar verificação de acessibilidade em testes existentes
 - Adicionar validadores de acessibilidade automáticos aos testes
-- Melhorar cobertura de testes do componente Button
 - Melhorar cobertura de testes do componente Link
 - Melhorar cobertura de testes do componente Image
 - Adicionar suporte a maskedTextInput com modo flutuante
@@ -26,18 +25,19 @@ kanban-plugin: basic
 - Documentar padrões de testIDs
 - Aplicar a abordagem de correção de warnings de act() para outros componentes
 - Implementar testes de unidade para o componente TextInput para melhorar cobertura
-- Melhorar a cobertura de testes para o componente Button
+- Melhorar a cobertura de testes para o componente Toggle
 
 ## Próximos Passos
 - Analisar componentes com cobertura de testes abaixo de 95%
 - Revisar e implementar melhores práticas de acessibilidade
 - Atualizar documentação técnica com novos padrões
 - Adicionar documentação sobre padrões de testes para componentes com estado
-- Melhorar cobertura de testes do componente Icon para atingir pelo menos 90% em branches
-- Implementar testes para o componente Toggle
 - Implementar testes para o componente Checkbox
 - Implementar testes para o componente Header
 - Implementar testes para o componente RadioButton
+- Implementar testes para o componente Link
+- Implementar testes para o componente Image
+- Implementar testes para o componente Separator
 
 ## Concluído
 - Configuração inicial do Banco de Memória Obsidian
@@ -60,4 +60,5 @@ kanban-plugin: basic
 - Adicionar testes para o componente Typography para melhorar cobertura
 - Melhorar a cobertura de testes do componente FormError para atingir 100%
 - Implementar testes para o componente Badge ✅ 2024-05-18
-- Implementar testes para o componente Icon ✅ 2024-05-19 
+- Implementar testes para o componente Icon ✅ 2024-05-19
+- Melhorar a cobertura de testes do componente Button para atingir 100% ✅ 2024-05-20 
