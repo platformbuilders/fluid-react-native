@@ -9,7 +9,6 @@ kanban-plugin: basic
 - Implementar testes para PinInput
 - Implementar testes para LoadingIndicator
 - Implementar testes para Markdown
-- Documentar padrões de testID utilizados nos diversos componentes
 - Implementar verificação de acessibilidade em testes existentes
 - Adicionar validadores de acessibilidade automáticos aos testes
 - Melhorar cobertura de testes do componente Image
@@ -24,12 +23,9 @@ kanban-plugin: basic
 
 ## Trabalho Atual
 - Melhorar thresholds de cobertura de testes
-- Documentar padrões de testIDs
 - Aplicar a abordagem de correção de warnings de act() para outros componentes
 - Implementar testes de unidade para o componente TextInput para melhorar cobertura
 - Melhorar a cobertura de testes para o componente Toggle
-- Melhorar threshold de cobertura de testes de componentes individuais
-- Corrigir warnings relacionados a act() nos testes para React 18
 - Verificar e corrigir qualquer problema de acessibilidade pendente
 
 ## Próximos Passos
@@ -48,6 +44,7 @@ kanban-plugin: basic
 - Adicionar testes para utils/accessibility.ts
 - Melhorar testes para cenários de erro em PinInput
 - Revisar teste de Image para garantir cobertura completa
+- Atualizar componentes para usar consistentemente a função utilitária generateTestID
 
 ## Concluído
 - Configuração inicial do Banco de Memória Obsidian
@@ -77,7 +74,6 @@ kanban-plugin: basic
 - Implementar testes para Touchable
 - Implementar testes para PasswordInput
 - Aumentar cobertura de testes do Typography para 75%+
-- Corrigir warnings do act() em SearchInput e Avatar
 - Implementar testes adicionais para FormError
 - Finalizar documentação de props para Touchable
 - Documentar uso de ThemeProvider
@@ -89,3 +85,6 @@ kanban-plugin: basic
 - Corrigir testes com comportamentos específicos do Accordion
 - Ajustar testes para fechamento de seções no Accordion
 - Simplificar teste de cores de ícones no Accordion 
+- Documentar padrões de testID utilizados nos diversos componentes ✅ 2023-05-23
+- Corrigir warnings do act() em SearchInput e Avatar ✅ 2023-05-23
+- Configurar thresholds personalizados para Accordion e atualizar documentação ✅ 2024-05-24 

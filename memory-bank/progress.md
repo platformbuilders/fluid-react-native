@@ -245,6 +245,29 @@ O projeto está em um estágio maduro, com 23 componentes já implementados e te
     - Aplicação correta de margens customizadas
   - Testes ajustados para utilizar práticas recomendadas com o React 18
 
+**Data: 2023-05-23**
+- Criada documentação abrangente sobre padrões de testID
+  - Documentado o formato padrão `{componentType}_{id}`
+  - Documentada a hierarquia de prioridade para geração de testIDs
+  - Criados exemplos de implementação para diferentes componentes
+  - Documentação sobre componentes aninhados e compostos
+  - Adicionadas melhores práticas para implementação de testIDs
+  - Casos especiais e soluções para componentes compostos
+  - Exemplos de uso em testes unitários e e2e
+  - Atualizada a seção de padrões de testID no activeContext.md
+  - Criado arquivo docs/testing-testid-patterns.md com documentação detalhada
+- Melhorada a integração entre testIDs e acessibilidade
+  - Adicionada seção sobre testIDs no documento de acessibilidade
+  - Explicada a relação entre testIDs e testes de acessibilidade
+  - Atualizada a documentação geral de testes com seção de testIDs
+  - Adicionados exemplos de implementação da função generateTestID
+- Verificada a cobertura de testes do componente Avatar
+  - Confirmada a cobertura de 92.59% para statements, 87.8% para branches, 80% para functions e 92.3% para lines
+  - Eliminados todos os warnings relacionados ao uso de act() nos testes
+  - Testada a geração correta de testIDs e a hierarquia de fallback
+  - Adicionados testes para verificação de mudança de props e estados
+  - Todos os 29 testes passando com sucesso
+
 ## Métricas Atuais
 
 **Cobertura de testes:** 
@@ -411,6 +434,12 @@ Registre quaisquer erros, alertas ou métricas relevantes na seção de Métrica
 
 Continuação do trabalho de melhoria de cobertura de testes. Foco nos seguintes componentes:
 
+#### Melhorias no Avatar:
+- Corrigidos avisos do React 18 relacionados ao uso de act() em todos os testes de renderização
+- Adicionados testes para verificar fluxos alternativos, como atualização de imagem via props
+- Adicionados testes para comportamento de fallback usando id e accessibility
+- Agora com 92.59% de cobertura de statements, 87.8% de branches e 92.3% de linhas
+
 #### Melhorias no Accordion:
 - Corrigidos testes que estavam falhando devido a comportamentos específicos do componente
 - Ajustada a lógica de teste para o fechamento de seções (não suportado pelo componente subjacente)
@@ -428,9 +457,19 @@ Continuação do trabalho de melhoria de cobertura de testes. Foco nos seguintes
 - FormError: Cobertura de testes completa
 
 ### Métricas Atuais
-- Global: 11.63% statements, 9.77% branches, 10.63% functions, 11.25% lines
+- Global: 16.66% statements, 14.76% branches, 13.82% functions, 16.72% lines
 - Accordion: 100% em todas as métricas
-- Touchable: 50% statements, 37.5% branches, 33.33% functions, 50% lines
+- Avatar: 92.59% statements, 87.8% branches, 80% functions, 92.3% lines
+- Touchable: 100% statements, 87.5% branches, 66.66% functions, 100% lines
 - Typography: 75% statements, 57.14% branches, 100% functions, 75% lines
 
 Necessário continuar o trabalho em outros componentes, seguindo ordem alfabética. 
+
+**Data: 2024-05-24**
+- Configurado threshold personalizado para o componente Accordion (100% para branches, functions, statements e lines)
+- Atualizado o arquivo jest.threshold.json para incluir ambos os componentes com thresholds personalizados (MaskedTextInput e Accordion)
+- Atualizada a documentação de testes para refletir os novos thresholds
+- Melhorada a documentação sobre thresholds personalizados, explicando os motivos para cada componente:
+  - MaskedTextInput: threshold reduzido devido à alta complexidade ciclomática
+  - Accordion: threshold elevado para 100% pois o componente está completamente testado
+- Os thresholds personalizados ajudam a manter um equilíbrio entre exigência de qualidade e praticidade nos testes 

@@ -20,6 +20,13 @@ Realizamos uma melhoria significativa na cobertura de testes do componente Radio
 
 Também melhoramos a cobertura do componente MaskedTextInput, que apresentava desafios devido à sua complexidade. Refatoramos o código do componente para substituir a estrutura switch-case por if-else, o que reduziu a complexidade ciclomática e facilitou o teste. Adicionamos testes específicos para verificar o comportamento de cada caminho condicional, aumentando a cobertura de statements e lines de 79.16% para 81.81%, e branches de 78.12% para 80.55%.
 
+Adicionalmente, estabelecemos thresholds personalizados no arquivo jest.threshold.json para gerenciar adequadamente expectativas de cobertura para componentes específicos:
+
+- **MaskedTextInput**: Threshold reduzido para 70% devido à alta complexidade ciclomática e lógica condicional intricada
+- **Accordion**: Threshold elevado para 100% em todas as métricas, refletindo o fato de que o componente está completamente testado
+
+Esses thresholds personalizados permitem um equilíbrio entre a qualidade do código e a praticidade dos testes, reconhecendo que diferentes componentes possuem características distintas de testabilidade.
+
 ## Progresso Recente
 
 - Corrigimos os warnings de act() no React 18 para o componente SearchInput
@@ -107,6 +114,64 @@ Também melhoramos a cobertura do componente MaskedTextInput, que apresentava de
 - **React**: Para componentes personalizados no site
 - **MDX**: Para páginas de documentação interativas
 - **CSS Modules**: Para estilização de componentes do site
+
+## Padrões de TestID
+
+A implementação consistente de testIDs é crucial para automação de testes e testes de interface. A biblioteca Fluid React Native segue padrões específicos para garantir consistência e previsibilidade.
+
+### Formato Padrão de TestID
+
+```
+{componentType}_{id}
+```
+
+Onde:
+- `componentType`: Tipo do componente em minúsculas (ex: button, input, toggle)
+- `id`: Identificador único do componente
+
+### Hierarquia de Prioridade para TestID
+
+1. **ID específico**: Se o componente tiver uma prop `id`, ela será usada como base para o testID
+2. **Accessibility**: Se `id` não for fornecido, usa a prop `accessibility` 
+3. **Children (quando aplicável)**: Para componentes como Typography, o texto filho pode ser usado como testID
+4. **Fallback**: Se nenhum dos anteriores estiver disponível, usa-se `{componentType}_{componentType}` (ex: `button_button`)
+
+### Exemplos de Implementação
+
+- **Button**: `button_submit`
+- **Typography**: Se id="title", então `title`, se não tiver id mas tiver children="Título", então `Título`
+- **TextInput**: `input_email`
+- **Toggle**: `toggle_darkMode`
+
+### Componentes Aninhados
+
+Para componentes compostos, a hierarquia de testIDs é preservada, com os componentes filhos recebendo prefixos adicionais:
+
+```
+Button com Typography:
+- Button: button_submit
+- Typography dentro do Button: text_submit
+```
+
+### Utilitários
+
+A biblioteca fornece funções utilitárias para gerar testIDs consistentes:
+
+```typescript
+// Em src/utils/accessibility.ts
+export const generateTestID = (prefix: string, id?: string): string => {
+  return id ? `${prefix}_${id}` : prefix;
+};
+```
+
+### Boas Práticas
+
+1. Sempre fornecer props `id` ou `accessibility` para componentes interativos
+2. Utilizar a função `generateTestID` para manter a consistência
+3. Não modificar o testID original quando um componente encapsula outro
+4. Para componentes que fazem o mesmo trabalho, seguir o mesmo padrão
+
+Esta documentação serve como guia para implementação e revisão de testIDs, garantindo que todos os componentes sigam um padrão consistente e previsível.
 
 ## Recursos
 

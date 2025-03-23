@@ -1,1 +1,4 @@
-{"coverageThreshold": {"./src/components/TextInput/MaskedTextInput/index.tsx": {"branches": 70,"functions": 70,"lines": 70,"statements": 70}}}
+{"coverageThreshold": {
+  "./src/components/TextInput/MaskedTextInput/index.tsx": {"branches": 70, "functions": 70, "lines": 70, "statements": 70},
+  "./src/components/Accordion/index.tsx": {"branches": 100, "functions": 100, "lines": 100, "statements": 100}
+}}

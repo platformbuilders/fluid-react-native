@@ -20,7 +20,12 @@ Estabelecemos os seguintes thresholds mínimos de cobertura:
 - **Functions**: 84%
 - **Lines**: 90%
 
-Para componentes com lógica particularmente complexa, definimos thresholds personalizados, como é o caso do `MaskedTextInput` (70% para branches, functions, statements e lines).
+Para componentes com lógica particularmente complexa ou simples, definimos thresholds personalizados:
+
+- **MaskedTextInput**: 70% para branches, functions, statements e lines (devido à complexidade ciclomática)
+- **Accordion**: 100% para branches, functions, statements e lines (componente totalmente testado)
+
+Esses thresholds personalizados são configurados no arquivo `jest.threshold.json` e aplicados durante a execução dos testes.
 
 ## Abordagem de Testagem
 
@@ -146,4 +151,69 @@ yarn test src/components/RadioButton/__tests__/RadioButton.spec.tsx --coverage
 
 # Testar com thresholds personalizados
 npx jest --config=jest.config.js --coverage --collectCoverageFrom="path/to/component" path/to/test --coverageThreshold='{"./path/to/component":{"branches":70,"functions":70,"lines":70,"statements":70}}'
-``` 
+```
+
+## Utilizando Mock Providers
+
+Para testar componentes que dependem de contextos ou providers, forneça mocks para esses providers:
+
+```jsx
+import { ThemeProvider } from 'styled-components/native';
+import theme from '../../theme';
+
+const { getByTestId } = render(
+  <ThemeProvider theme={theme}>
+    <YourComponent />
+  </ThemeProvider>
+);
+```
+
+## Padrões de TestID
+
+### Identificação Consistente de Componentes
+
+Todos os componentes no Fluid React Native seguem um padrão consistente para testIDs, o que facilita sua seleção durante os testes. O formato padrão é:
+
+```
+{componentType}_{id}
+```
+
+Por exemplo: `button_submit`, `input_email`.
+
+### Como Usar em Testes
+
+Ao escrever testes, sempre utilize os testIDs para selecionar elementos:
+
+```jsx
+// Exemplo correto - busca pelo testID padronizado
+const submitButton = getByTestId('button_submit');
+
+// Não faça isso - busca por texto é frágil e pode quebrar com mudanças de UI
+// const submitButton = getByText('Enviar');
+```
+
+### Utilitário para TestIDs
+
+Para garantir consistência com o código de produção, utilize a mesma função utilitária em seus testes:
+
+```jsx
+import { generateTestID } from '../../utils/accessibility';
+
+const buttonTestID = generateTestID('button', 'submit');
+const button = getByTestId(buttonTestID); // Seleciona 'button_submit'
+```
+
+### Padrões para Componentes Compostos
+
+Para testar componentes compostos (como um Button que contém um Icon), use o padrão:
+
+```jsx
+// Testar o componente principal
+const button = getByTestId('button_submit');
+
+// Testar componentes filhos
+const buttonText = getByTestId('text_submit');
+const buttonIcon = getByTestId('icon_submit');
+```
+
+Para uma documentação mais detalhada sobre padrões de testID, consulte o [guia específico sobre testIDs](./testing-testid-patterns.md). 
