@@ -733,7 +733,47 @@ exports[`<Avatar /> should render Avatar with external image 1`] = `
         {},
       ]
     }
-  />
+  >
+    <View
+      style={
+        [
+          {
+            "overflow": "hidden",
+          },
+          {
+            "height": "101%",
+            "width": "101%",
+          },
+        ]
+      }
+    >
+      <Image
+        onLoad={[Function]}
+        onLoadStart={[Function]}
+        resizeMode="cover"
+        source={
+          {
+            "uri": "https://avatars.githubusercontent.com/u/4726921?v=4",
+          }
+        }
+        style={
+          [
+            {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+            {
+              "tintColor": undefined,
+            },
+          ]
+        }
+        testID="avatar-image"
+      />
+    </View>
+  </View>
 </View>
 `;
 
