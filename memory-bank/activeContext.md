@@ -39,26 +39,26 @@ Estamos construindo um website de documentação completo para a biblioteca Flui
 
 ### Prioridades Imediatas
 
-1. **Otimizações do Firebase Hosting**:
-   - Configurar cache e headers adequados
-   - Configurar regras de redirecionamento para URLs antigas
-   - Implementar monitoramento de performance
-
-2. **Documentação de mais componentes**:
+1. **Documentação de mais componentes**:
    - TextInput (incluindo MaskedTextInput)
    - Checkbox
    - RadioButton
    - Avatar
    - Icon
 
-3. **Página de tipografia**:
+2. **Página de tipografia**:
    - Documentar Text, Title, Subtitle
    - Explicar o sistema tipográfico
    - Mostrar a hierarquia visual
 
-4. **Playground interativo**:
+3. **Playground interativo**:
    - Implementar um ambiente para testar componentes
    - Permitir personalização de props em tempo real
+
+4. **Otimizações do Firebase Hosting**:
+   - Configurar cache e headers adequados
+   - Configurar regras de redirecionamento para URLs antigas
+   - Implementar monitoramento de performance
 
 ### Médio Prazo
 

@@ -200,12 +200,12 @@ Criamos uma estrutura para a documentação do Fluid React Native usando Docusau
 
 ## Próximas Etapas Prioritárias
 
-1. Otimizar configurações do Firebase Hosting para melhor performance
-2. Continuar a documentação dos componentes principais (TextInput, Checkbox, RadioButton)
-3. Criar página de tipografia e elementos de texto
-4. Adicionar playground interativo
-5. Configurar versioning para diferentes versões da biblioteca
-6. Implementar busca na documentação
+1. Continuar a documentação dos componentes principais (TextInput, Checkbox, RadioButton)
+2. Criar página de tipografia e elementos de texto
+3. Adicionar playground interativo
+4. Configurar versioning para diferentes versões da biblioteca
+5. Implementar busca na documentação
+6. Otimizar configurações do Firebase Hosting para melhor performance
 
 ## Problemas Conhecidos
 
