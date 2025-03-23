@@ -152,9 +152,13 @@ export default App;
 
 Agora que você configurou o Fluid em seu projeto, você pode:
 
-1. Explorar a [documentação de componentes](/docs/components/overview) para ver todos os componentes disponíveis.
-2. Aprender mais sobre o [sistema de temas](/docs/guides/theming) para personalizar a aparência de seus componentes.
-3. Verificar o [guia de acessibilidade](/docs/guides/accessibility) para garantir que seu aplicativo seja acessível a todos os usuários.
+1. Explorar a documentação de componentes disponíveis:
+   - [Button](/docs/components/button)
+   - [Card](/docs/components/card)
+   - [TextInput](/docs/components/text-input)
+   - [Checkbox](/docs/components/checkbox)
+2. Aprender como [personalizar o tema](/docs/theming) para atender às necessidades do seu projeto
+3. Verificar as [melhores práticas](/docs/guides/best-practices) para desenvolver com o Fluid
 
 ---
 

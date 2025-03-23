@@ -48,7 +48,7 @@ function HomepageHeader() {
             <div className={clsx(styles.buttons, 'animate-fadeIn delay-3')}>
               <Link
                 className="button button--primary button--lg"
-                to="/docs/guides/getting-started">
+                to="/docs/getting-started">
                 Começar agora →
               </Link>
               <Link

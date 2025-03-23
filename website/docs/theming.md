@@ -478,6 +478,6 @@ const App = () => {
 export default App;
 ```
 
-## Referência do Tema
+## Referência Completa do Tema
 
-Para referência completa de todas as propriedades disponíveis no tema, consulte a [documentação da API](/api/theme). 
+Consulte a [Documentação de Componentes](/docs/components/button) para obter informações detalhadas sobre como cada componente utiliza o tema. 

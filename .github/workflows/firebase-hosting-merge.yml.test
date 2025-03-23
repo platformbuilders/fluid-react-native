@@ -1,0 +1,43 @@
+name: Deploy to Firebase Hosting on merge
+'on':
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          cache: 'yarn'
+
+      - name: Install Dependencies
+        run: |
+          yarn install --frozen-lockfile
+          yarn website:install
+
+      - name: Build Documentation (RSPress)
+        run: |
+          yarn docs:build
+
+      - name: Build Documentation (Docusaurus)
+        run: |
+          yarn website:build
+
+      - name: Simulate Deploy to Firebase (API Docs)
+        run: |
+          echo "Simulando deploy para o target 'docs'"
+          echo "Projeto: ${{ secrets.FIREBASE_PROJECT_ID }}"
+          ls -la docs/rspress/dist
+
+      - name: Simulate Deploy to Firebase (Website)
+        run: |
+          echo "Simulando deploy para o target 'website'"
+          echo "Projeto: ${{ secrets.FIREBASE_PROJECT_ID }}"
+          ls -la website/build 
