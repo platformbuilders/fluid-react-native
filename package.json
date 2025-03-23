@@ -52,8 +52,7 @@
     "website:build": "cd website && npm run build",
     "website:serve": "cd website && npm run serve",
     "website:install": "cd website && npm install",
-    "deploy:docs": "yarn docs:build",
-    "deploy:website": "yarn website:build"
+    "deploy": "yarn website:build && firebase deploy --only hosting"
   },
   "lint-staged": {
     "*.{ts,tsx}": [

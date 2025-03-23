@@ -14,31 +14,13 @@ echo "Pulando yarn install principal (apenas para teste)"
 yarn website:install
 
 echo ""
-echo "2. Construindo documentação da API (RSPress)..."
-echo "----------------------------------------------"
-# Simulando build da documentação API
-mkdir -p docs/rspress/dist
-echo "Simulando build da API (apenas para teste)"
-# yarn docs:build
-
-echo ""
-echo "3. Construindo site Docusaurus..."
+echo "2. Construindo site Docusaurus..."
 echo "-------------------------------"
 yarn website:build
 
 echo ""
-echo "4. Verificando artefatos gerados..."
+echo "3. Verificando artefatos gerados..."
 echo "--------------------------------"
-echo "Documentação API (RSPress):"
-if [ -d "docs/rspress/dist" ]; then
-  echo "✅ Build da documentação API simulado com sucesso em docs/rspress/dist"
-  ls -la docs/rspress/dist | head -n 10 || echo "Diretório vazio (simulação)"
-else
-  echo "❌ ERRO: Diretório docs/rspress/dist não foi criado"
-  exit 1
-fi
-
-echo ""
 echo "Site Docusaurus:"
 if [ -d "website/build" ]; then
   echo "✅ Build do Docusaurus gerado com sucesso em website/build"

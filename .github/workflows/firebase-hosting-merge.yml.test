@@ -22,22 +22,12 @@ jobs:
           yarn install --frozen-lockfile
           yarn website:install
 
-      - name: Build Documentation (RSPress)
-        run: |
-          yarn docs:build
-
       - name: Build Documentation (Docusaurus)
         run: |
           yarn website:build
 
-      - name: Simulate Deploy to Firebase (API Docs)
+      - name: Simulate Deploy to Firebase
         run: |
-          echo "Simulando deploy para o target 'docs'"
-          echo "Projeto: ${{ secrets.FIREBASE_PROJECT_ID }}"
-          ls -la docs/rspress/dist
-
-      - name: Simulate Deploy to Firebase (Website)
-        run: |
-          echo "Simulando deploy para o target 'website'"
+          echo "Simulando deploy para o Firebase Hosting"
           echo "Projeto: ${{ secrets.FIREBASE_PROJECT_ID }}"
           ls -la website/build 
