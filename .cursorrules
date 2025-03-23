@@ -30,12 +30,32 @@
 - Propriedades CSS devem seguir a ordem alfabética em styled-components
 - Estilização responsiva deve usar as funções de media queries do tema
 
+## Padrões de TestIDs
+
+- Seguir formato padronizado: `{componentType}_{id}` (ex: `button_submit`, `input_email`)
+- Quando não houver `id`, usar `{componentType}_{accessibility}` como fallback
+- Para casos restantes, usar `{componentType}_{componentType}` (ex: `button_button`)
+- Evitar condicionais complexas ou casos especiais para geração de testIDs
+- Componentes compostos devem preservar a hierarquia de testIDs
+- Evitar modificar o testID original quando um componente encapsula outro
+- Exceções e casos especiais devem ser explicitamente documentados no código
+- Componentes que fazem o mesmo tipo de trabalho devem seguir o mesmo padrão de testID
+
 ## Testes
 
 - Cada componente deve ter pelo menos 95% de cobertura de testes
 - Testar comportamentos interativos, não apenas renderização
 - Usar mocks para dependências externas
 - Incluir testes de acessibilidade quando apropriado
+- Verificar testIDs adequados para interação e automação de testes
+- Ao modificar ou refatorar componentes, sempre verificar os testes existentes
+- Ao criar snapshots, garantir que são atualizados quando o componente é modificado
+- Prestar atenção especial a issues de renderização condicional (branches)
+- Para aumentar cobertura de branches, certificar-se de testar todas as condições e caminhos alternativos
+- Usar `data-testid` nos componentes para facilitar a seleção nos testes
+- O threshold global para funções deve ser mantido acima de 84%
+- Componentes com menor cobertura (RadioButton, MaskedTextInput) devem receber atenção prioritária
+- Usar ferramentas como `--collectCoverageFrom` para focar em arquivos específicos durante o desenvolvimento
 
 ## Workflow de Desenvolvimento
 
@@ -43,6 +63,16 @@
 - Documentar novas props e comportamentos
 - Atualizar Storybook ao adicionar novos recursos
 - Testar em iOS e Android
+- Ao atualizar o arquivo progress.md, sempre executar:
+  ```
+  npm run tsc
+  npm run lint
+  npx semgrep --config=auto . (se disponível)
+  npm test
+  ```
+- Registrar métricas atualizadas após essas verificações
+- Para executar testes de cobertura completa, usar: `yarn test --coverage`
+- Para testar componentes específicos, usar: `yarn test <ComponentName>`
 
 ## Preferências do Projeto
 
@@ -56,5 +86,6 @@
 
 - A biblioteca tem dependência no styled-components
 - O sistema de temas é central para toda a biblioteca
-- Compatibilidade com diferentes versões de React Native é essencial
-- Teste em dispositivos reais, não apenas em simuladores 
+- Compatibilidade com diferentes versões do React Native é essencial
+- Teste em dispositivos reais, não apenas em simuladores
+- Warnings nos testes relacionados a React 18 devem ser corrigidos conforme surgem 
