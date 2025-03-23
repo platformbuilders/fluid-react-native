@@ -1,5 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<FormError /> should apply custom style when provided 1`] = `
+<Text
+  accessibilityLabel="Erro Styled error"
+  centered={false}
+  large={false}
+  lineHeightVariant="min"
+  style={
+    [
+      {
+        "color": "#444444",
+        "fontSize": 13,
+        "lineHeight": 15.6,
+      },
+      {
+        "color": "#FF4F3F",
+        "marginTop": 4,
+        "textAlign": "left",
+      },
+      {
+        "marginTop": 20,
+      },
+    ]
+  }
+  testID="error_form_error"
+  variant="xs"
+>
+  Styled error
+</Text>
+`;
+
+exports[`<FormError /> should render children when provided 1`] = `
+<div>
+  Child element
+</div>
+`;
+
 exports[`<FormError /> should render the form error component 1`] = `
 <Text
   accessibilityLabel="Erro testing error"
