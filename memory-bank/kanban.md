@@ -8,17 +8,28 @@ kanban-plugin: basic
 - Verificar compatibilidade com as versões mais recentes do React Native
 - Melhorar a cobertura de funções do componente Touchable (66.66%)
 - Melhorar a cobertura de branches do componente PasswordInput (62.5%)
+- Implementar testes para PasswordInput para atingir pelo menos 80% de cobertura de branches
+- Implementar testes de unidade para o componente TextInput para melhorar cobertura
+- Implementar testes para PinInput
+- Implementar testes para LoadingIndicator
+- Implementar testes para Markdown
+- Documentar padrões de testID utilizados nos diversos componentes
+- Implementar verificação de acessibilidade em testes existentes
+- Adicionar validadores de acessibilidade automáticos aos testes
 
 ## Trabalho Atual
 - Melhorar thresholds de cobertura de testes
 - Documentar padrões de testIDs
 - Aplicar a abordagem de correção de warnings de act() para outros componentes
+- Corrigir warnings relacionados ao uso de act() em testes React 18 nos componentes restantes
 
 ## Próximos Passos
 - Analisar componentes com cobertura de testes abaixo de 95%
 - Revisar e implementar melhores práticas de acessibilidade
 - Atualizar documentação técnica com novos padrões
 - Adicionar documentação sobre padrões de testes para componentes com estado
+- Melhorar cobertura de testes do componente Touchable para atingir pelo menos 80% em function coverage
+- Adicionar testes para o componente Typography para melhorar cobertura
 
 ## Concluído
 - Configuração inicial do Banco de Memória Obsidian
@@ -33,4 +44,6 @@ kanban-plugin: basic
 - Documentar abordagem de testes para o SearchInput
 - Corrigir warnings relacionados ao React 18 nos testes do SearchInput
 - Criar documentação sobre tratamento de erros de act() no React 18
-- Criar testes para o componente Avatar com correção para warnings de act() 
+- Criar testes para o componente Avatar com correção para warnings de act()
+- Documentar abordagem para criar testes que envolvam operações assíncronas
+- Atualizar os snapshots dos componentes após as correções 

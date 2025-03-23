@@ -168,11 +168,13 @@ O projeto está em um estágio maduro, com 23 componentes já implementados e te
 - Aumento da cobertura de testes para 96.42% em statements, 88.46% em branches e 88.88% em funções
 
 **Data: 2024-05-15**
-- Criação de documentação abrangente sobre como lidar com warnings de act() no React 18
-- Refatoração dos testes do SearchInput para uso adequado de act() com mudanças de estado
-- Correção dos testes do componente Avatar para envolver adequadamente as mudanças de estado com act()
-- Identificação de componentes que precisam de melhorias na cobertura de testes: Touchable (66.66% em funções) e PasswordInput (62.5% em branches)
-- Atualização do quadro Kanban para incluir novas tarefas relacionadas à cobertura de testes e warnings de act()
+- Criada documentação abrangente sobre como lidar com warnings de act() no React 18
+- Refatorados os testes do componente SearchInput para usar act() corretamente com mudanças de estado
+- Corrigidos os testes do componente Avatar para usar act() apropriadamente com mudanças de estado
+- Corrigida a abordagem para envolver os testes com act() de forma adequada ao React Testing Library
+- Avatar atingiu 92,59% de cobertura em statements e 80% em functions!
+- Identificados componentes que precisam de melhor cobertura de testes: Touchable (66,66% function coverage) e PasswordInput (62,5% branch coverage)
+- Atualizado o quadro Kanban com novas tarefas relacionadas à cobertura de testes e warnings de act()
 
 # Progresso do Projeto
 
