@@ -2,6 +2,10 @@
 
 ## Foco Atual
 
+### Correção de Warnings do React 18 nos Testes
+
+Implementamos uma solução abrangente para os warnings de act() no React 18 que apareciam durante a execução dos testes. Começamos pelo componente SearchInput, que tinha vários warnings devido às suas múltiplas atualizações de estado. Aplicamos o uso adequado de act() para envolver as operações que atualizam o estado e criamos uma documentação detalhada sobre como abordar esses problemas em outros componentes.
+
 ### Deploy da Documentação no Firebase Hosting
 
 Recentemente, implementamos o processo de deploy da documentação do Fluid React Native no Firebase Hosting. Alteramos a abordagem de multi-site para um deploy único e simplificado, consolidando toda a documentação em um único site.
@@ -18,6 +22,9 @@ Também melhoramos a cobertura do componente MaskedTextInput, que apresentava de
 
 ## Progresso Recente
 
+- Corrigimos os warnings de act() no React 18 para o componente SearchInput
+- Criamos documentação detalhada sobre como lidar com warnings de act() no React 18
+- Atualizamos os testes para usar act() adequadamente com mudanças de estado
 - Melhoramos a cobertura de testes do MaskedTextInput
 - Refatoramos o componente MaskedTextInput para maior testabilidade
 - Melhoramos a cobertura de testes do RadioButton

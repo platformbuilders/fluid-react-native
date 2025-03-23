@@ -6,17 +6,19 @@ kanban-plugin: basic
 - Revisar e melhorar documentação API do Storybook
 - Implementar testes para cenários de acessibilidade
 - Verificar compatibilidade com as versões mais recentes do React Native
+- Melhorar a cobertura de funções do componente Touchable (66.66%)
+- Melhorar a cobertura de branches do componente PasswordInput (62.5%)
 
 ## Trabalho Atual
 - Melhorar thresholds de cobertura de testes
-- Corrigir warnings relacionados ao React 18 nos testes
 - Documentar padrões de testIDs
-- Criar documentação sobre tratamento de erros de act() no React 18
+- Aplicar a abordagem de correção de warnings de act() para outros componentes
 
 ## Próximos Passos
 - Analisar componentes com cobertura de testes abaixo de 95%
 - Revisar e implementar melhores práticas de acessibilidade
 - Atualizar documentação técnica com novos padrões
+- Adicionar documentação sobre padrões de testes para componentes com estado
 
 ## Concluído
 - Configuração inicial do Banco de Memória Obsidian
@@ -28,4 +30,7 @@ kanban-plugin: basic
 - Documentar abordagem de testes para o MaskedTextInput
 - Documentar a abordagem de testes para o componente RadioButton
 - Resolver falhas nos testes de snapshot do SearchInput
-- Documentar abordagem de testes para o SearchInput 
+- Documentar abordagem de testes para o SearchInput
+- Corrigir warnings relacionados ao React 18 nos testes do SearchInput
+- Criar documentação sobre tratamento de erros de act() no React 18
+- Criar testes para o componente Avatar com correção para warnings de act() 

@@ -167,6 +167,13 @@ O projeto está em um estágio maduro, com 23 componentes já implementados e te
 - Documentação das estratégias de teste para o SearchInput e o uso correto de act() no React 18
 - Aumento da cobertura de testes para 96.42% em statements, 88.46% em branches e 88.88% em funções
 
+**Data: 2024-05-15**
+- Criação de documentação abrangente sobre como lidar com warnings de act() no React 18
+- Refatoração dos testes do SearchInput para uso adequado de act() com mudanças de estado
+- Correção dos testes do componente Avatar para envolver adequadamente as mudanças de estado com act()
+- Identificação de componentes que precisam de melhorias na cobertura de testes: Touchable (66.66% em funções) e PasswordInput (62.5% em branches)
+- Atualização do quadro Kanban para incluir novas tarefas relacionadas à cobertura de testes e warnings de act()
+
 # Progresso do Projeto
 
 ## Visão Geral do Status

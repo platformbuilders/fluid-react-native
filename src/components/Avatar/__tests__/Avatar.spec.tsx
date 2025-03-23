@@ -58,24 +58,34 @@ describe('<Avatar />', () => {
   });
 
   it('should render Avatar', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Avatar id="testing" accessibility="" />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Avatar id="testing" accessibility="" />
+        </ThemeProvider>,
+      );
+    });
+    
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Avatar with external image', () => {
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Avatar
-          id="testing"
-          accessibility=""
-          image={{ uri: defaultAvatarUrl }}
-        />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Avatar
+            id="testing"
+            accessibility=""
+            image={{ uri: defaultAvatarUrl }}
+          />
+        </ThemeProvider>,
+      );
+    });
+    
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
@@ -292,17 +302,20 @@ describe('<Avatar />', () => {
       },
     );
 
-    render(
-      <ThemeProvider theme={theme}>
-        <Avatar
-          id="testing"
-          testID="avatar-test"
-          accessibility=""
-          ref={ref}
-          onUpload={onUploadMock}
-        />
-      </ThemeProvider>,
-    );
+    // Usando act para renderização inicial
+    await act(async () => {
+      render(
+        <ThemeProvider theme={theme}>
+          <Avatar
+            id="testing"
+            testID="avatar-test"
+            accessibility=""
+            ref={ref}
+            onUpload={onUploadMock}
+          />
+        </ThemeProvider>,
+      );
+    });
 
     // Garantir que o ref foi configurado corretamente
     expect(ref.current).toBeTruthy();
@@ -310,8 +323,10 @@ describe('<Avatar />', () => {
     expect(typeof ref.current.clearUploadImage).toBe('function');
     expect(typeof ref.current.getUploadImage).toBe('function');
 
-    // Testar o método openPicker
-    await ref.current.openPicker();
+    // Testar o método openPicker com act
+    await act(async () => {
+      await ref.current.openPicker();
+    });
 
     // Aguardar que o onUpload seja chamado
     await waitFor(
@@ -322,7 +337,7 @@ describe('<Avatar />', () => {
     );
 
     // Limpar a imagem e verificar se foi limpa corretamente
-    act(() => {
+    await act(async () => {
       ref.current.clearUploadImage();
     });
 
@@ -529,5 +544,35 @@ describe('<Avatar />', () => {
 
     // Neste ponto o componente deveria ter atualizado a imagem visível
     // devido ao useEffect que observa mudanças na prop 'image'
+  });
+
+  it('should open image picker when pressed', async () => {
+    const onUploadMock = jest.fn();
+
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Avatar
+          id="testing"
+          testID="avatar-test"
+          accessibility=""
+          onUpload={onUploadMock}
+        />
+      </ThemeProvider>,
+    );
+
+    const component = getByTestId('avatar-test');
+
+    // Usando act para envolver a operação que causa mudança de estado
+    await act(async () => {
+      fireEvent.press(component);
+    });
+
+    // Aguardar que o onUpload seja chamado
+    await waitFor(
+      () => {
+        expect(onUploadMock).toHaveBeenCalledWith(TEST_IMAGE_URI);
+      },
+      { timeout: 3000 },
+    );
   });
 });

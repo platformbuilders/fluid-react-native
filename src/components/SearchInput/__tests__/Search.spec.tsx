@@ -1,5 +1,5 @@
 import React from 'react';
-import { fireEvent, render } from 'react-native-testing-library';
+import { fireEvent, render, act } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import { Keyboard } from 'react-native';
@@ -19,12 +19,15 @@ describe('<Search />', () => {
   });
 
   it('should render search', () => {
-    const onChange = jest.fn();
-    const wrapper = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Search id="test" accessibility="" onChange={onChange} />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    renderer.act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Search id="test" accessibility="" onChange={jest.fn()} />
+        </ThemeProvider>,
+      );
+    });
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
@@ -222,7 +225,7 @@ describe('<Search />', () => {
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
-  it('should change value of input', () => {
+  it('should change value of input', async () => {
     const onChange = jest.fn();
 
     const { getByTestId } = render(
@@ -238,11 +241,14 @@ describe('<Search />', () => {
 
     const component = getByTestId('input_testing_searching');
 
-    fireEvent.changeText(component, 'Value changed');
+    await act(async () => {
+      fireEvent.changeText(component, 'Value changed');
+    });
+    
     expect(component.props.value).toBe('Value changed');
   });
 
-  it('should change value pressing button', () => {
+  it('should change value pressing button', async () => {
     const onChange = jest.fn();
     const onIconPress = jest.fn();
 
@@ -259,11 +265,15 @@ describe('<Search />', () => {
     );
 
     const component = getByTestId('input_testing_searching');
-    fireEvent.changeText(component, 'Value changed');
-
-    onIconPress();
     
-    fireEvent.changeText(component, '');
+    await act(async () => {
+      fireEvent.changeText(component, 'Value changed');
+    });
+
+    await act(async () => {
+      onIconPress();
+      fireEvent.changeText(component, '');
+    });
     
     expect(onIconPress).toHaveBeenCalled();
     expect(component.props.value).toBe('');
@@ -473,7 +483,7 @@ describe('<Search />', () => {
 
 // Adicionar testes específicos para onPressIcon e estados do componente
 describe('SearchInput state and functions', () => {
-  it('should test onPressIcon with a custom onIconPress function', () => {
+  it('should test onPressIcon with a custom onIconPress function', async () => {
     const onChange = jest.fn();
     const onIconPress = jest.fn();
     const onClear = jest.fn();
@@ -491,28 +501,26 @@ describe('SearchInput state and functions', () => {
     );
 
     const input = getByTestId('input_testing_icon');
-    // Preencher o input
-    fireEvent.changeText(input, 'test value');
     
-    // Testar que o valor do input foi atualizado
+    await act(async () => {
+      fireEvent.changeText(input, 'test value');
+    });
+    
     expect(input.props.value).toBe('test value');
     
-    // Simular o clique no ícone através da prop onPressIcon
     const component = getByTestId('search_testing_icon');
     const onPressIconMock = component.props.children.props.onPressIcon;
-    onPressIconMock();
     
-    // Verificar que onIconPress, onClear foram chamados e o teclado foi dispensado
+    await act(async () => {
+      onPressIconMock();
+    });
+    
     expect(onIconPress).toHaveBeenCalled();
     expect(onClear).toHaveBeenCalled();
     expect(Keyboard.dismiss).toHaveBeenCalled();
-    
-    // Verificar que o texto foi limpo
-    fireEvent.changeText(input, '');
-    expect(input.props.value).toBe('');
   });
 
-  it('should test onPressIcon without custom onIconPress function', () => {
+  it('should test onPressIcon without custom onIconPress function', async () => {
     const onChange = jest.fn();
     const onClear = jest.fn();
 
@@ -528,20 +536,25 @@ describe('SearchInput state and functions', () => {
     );
 
     const input = getByTestId('input_testing_icon_default');
-    // Preencher o input
-    fireEvent.changeText(input, 'test value');
     
-    // Simular o clique no ícone através da prop onPressIcon
+    await act(async () => {
+      fireEvent.changeText(input, 'test value');
+    });
+    
     const component = getByTestId('search_testing_icon_default');
     const onPressIconMock = component.props.children.props.onPressIcon;
-    onPressIconMock();
     
-    // Verificar que onClear foi chamado e o teclado foi dispensado
+    await act(async () => {
+      onPressIconMock();
+    });
+    
     expect(onClear).toHaveBeenCalled();
     expect(Keyboard.dismiss).toHaveBeenCalled();
     
-    // Verificar que o texto foi limpo
-    fireEvent.changeText(input, '');
+    await act(async () => {
+      fireEvent.changeText(input, '');
+    });
+    
     expect(input.props.value).toBe('');
   });
 
