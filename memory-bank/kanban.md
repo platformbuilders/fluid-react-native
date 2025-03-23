@@ -35,7 +35,6 @@ kanban-plugin: basic
 - Implementar testes para o componente Header
 - Implementar testes para o componente RadioButton
 - Implementar testes para o componente Image
-- Implementar testes para o componente Separator
 
 ## Concluído
 - Configuração inicial do Banco de Memória Obsidian
@@ -60,4 +59,5 @@ kanban-plugin: basic
 - Implementar testes para o componente Badge ✅ 2024-05-18
 - Implementar testes para o componente Icon ✅ 2024-05-19
 - Melhorar a cobertura de testes do componente Button para atingir 100% ✅ 2024-05-20
-- Melhorar a cobertura de testes do componente Link para atingir 100% ✅ 2024-05-20 
+- Melhorar a cobertura de testes do componente Link para atingir 100% ✅ 2024-05-20
+- Melhorar a cobertura de testes do componente Separator para atingir 100% ✅ 2024-05-20 
