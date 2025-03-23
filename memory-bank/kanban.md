@@ -11,7 +11,7 @@ kanban-plugin: basic
 - Melhorar thresholds de cobertura de testes
 - Corrigir warnings relacionados ao React 18 nos testes
 - Documentar padrões de testIDs
-- Documentar a abordagem de testes para o componente RadioButton
+- Resolver falhas nos testes de snapshot do SearchInput
 
 ## Próximos Passos
 - Analisar componentes com cobertura de testes abaixo de 95%
@@ -25,4 +25,5 @@ kanban-plugin: basic
 - Definição de thresholds personalizados para componentes complexos
 - Aumentar cobertura de testes do componente RadioButton
 - Implementar melhores testes para MaskedTextInput (foco nas linhas 76-83)
-- Documentar abordagem de testes para o MaskedTextInput 
+- Documentar abordagem de testes para o MaskedTextInput
+- Documentar a abordagem de testes para o componente RadioButton 
