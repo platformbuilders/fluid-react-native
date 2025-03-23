@@ -5,7 +5,9 @@ export type CheckBoxType = {
   id?: string;
   testID?: string;
   accessibility?: string;
+  accessibilityLabel?: string;
   checked?: boolean;
+  disabled?: boolean;
   label?: ReactElement | string;
   error?: string;
   onPress?(): void;

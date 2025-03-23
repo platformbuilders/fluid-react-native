@@ -1,9 +1,12 @@
 import React from 'react';
+import { generateAccessibilityProps, generateTestID } from '../../utils';
 import { SwitchButton } from './styles';
 
 type ToggleProps = {
   id?: string;
   accessibility?: string;
+  accessibilityLabel?: string;
+  testID?: string;
   value: boolean;
   isDisabled?: boolean;
   thumbColor?: {
@@ -25,25 +28,39 @@ const ToggleButton: React.FC<ToggleProps> = ({
   trackColor,
   onValueChange,
   accessibility,
+  accessibilityLabel,
+  testID,
   ...rest
 }) => {
+  // Gera propriedades de acessibilidade padronizadas
+  const accessibilityProps = generateAccessibilityProps(
+    { 
+      id, 
+      accessibility, 
+      accessibilityLabel, 
+      disabled: isDisabled, 
+      checked: value 
+    },
+    'switch',
+    `Alternar. Estado atual: ${value ? 'ativado' : 'desativado'}`,
+    'Toque duas vezes para alternar'
+  );
+
+  // Gera ID de teste padronizado
+  const toggleTestID = generateTestID(
+    { id, accessibility, testID },
+    'toggle'
+  );
+
   return (
     <SwitchButton
-      accessibilityLabel={
-        accessibility || `Toggle switch. Current state: ${value ? 'on' : 'off'}`
-      }
-      accessibilityRole="switch"
-      accessibilityState={{
-        checked: value,
-        disabled: isDisabled,
-      }}
-      accessibilityHint="Double tap to toggle the switch"
+      {...accessibilityProps}
       value={value}
       onValueChange={onValueChange}
       disabled={isDisabled}
       thumbColorProps={thumbColor}
       trackColorProps={trackColor}
-      testID={id || `toggle_${accessibility || ''}`}
+      testID={toggleTestID}
       {...rest}
     />
   );
