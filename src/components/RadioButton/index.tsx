@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { RadioButtonType } from '../../types';
-import { generateAccessibilityProps, generateTestID } from '../../utils';
+import { generateAccessibilityProps, generateTestID } from '../../utils/accessibility';
 import { CheckedRadio, Label, Radio, Wrapper } from './styles';
 
 const defaultSize = 20;
@@ -19,36 +19,43 @@ const RadioButton: React.FC<RadioButtonType> = ({
   onPress = () => {},
   label,
   labelStyle = {},
-  disabled,
+  disabled = false,
   ...rest
 }) => {
   // Gera propriedades de acessibilidade padronizadas
   const accessibilityProps = generateAccessibilityProps(
-    { 
-      id, 
-      accessibility, 
-      accessibilityLabel, 
+    {
+      id,
+      accessibility,
+      accessibilityLabel,
       checked,
-      disabled
+      disabled,
     },
     'radio',
     label || 'Botão de opção',
-    label ? `${label} pode ser selecionado com um toque` : 'Esta opção pode ser selecionada com um toque'
+    label
+      ? `${label} pode ser selecionado com um toque`
+      : 'Esta opção pode ser selecionada com um toque',
   );
 
   // Gera ID de teste padronizado
-  const radioTestID = generateTestID(
-    { id, accessibility, testID },
-    'radio'
-  );
+  const radioTestID = generateTestID('radio', id || accessibility || testID || 'radio');
+
+  // Função para lidar com o onPress apenas quando não estiver desabilitado
+  const handlePress = () => {
+    if (!disabled) {
+      onPress();
+    }
+  };
 
   return (
     <Wrapper
       id={id || accessibility}
       testID={radioTestID}
       {...accessibilityProps}
-      onPress={onPress}
+      onPress={handlePress}
       hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
+      disabled={disabled}
       {...rest}
     >
       <View
