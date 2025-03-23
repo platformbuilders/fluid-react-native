@@ -3,25 +3,13 @@
 // Mock para propriedades nativas do React Native que podem causar problemas
 jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');
 
-// Hack para "capturar" erros de ReferenceError após teardown
-const originalConsoleError = console.error;
-console.error = function(message) {
-  if (message && typeof message === 'string' && 
-      (message.includes('You are trying to access a property or method of the Jest environment after it has been torn down') ||
-       message.includes('ReferenceError') && message.includes('torn down'))) {
-    // Ignorar erros específicos relacionados ao ambiente Jest
-    return;
-  }
-  originalConsoleError.apply(this, arguments);
-};
-
-// Adiciona hooks globais para cada teste
-global.beforeEach(() => {
+// Configuração de eventos para cada teste
+beforeEach(() => {
   // Garantir que estamos usando timers falsos para testes mais previsíveis
   jest.useFakeTimers();
 });
 
-global.afterEach(() => {
+afterEach(() => {
   // Limpa todos os timers pendentes após cada teste
   jest.runOnlyPendingTimers();
   jest.clearAllTimers();
@@ -43,14 +31,10 @@ global.afterEach(() => {
   }
 });
 
-// Limpa também quando um conjunto de testes é concluído
-global.afterAll(() => {
+afterAll(() => {
   // Limpa novamente todos os timers pendentes
   jest.runOnlyPendingTimers();
   jest.clearAllTimers();
-  
-  // Restaurar o console original
-  console.error = originalConsoleError;
   
   // Certificar que estamos usando timers reais ao final dos testes
   jest.useRealTimers();
@@ -61,12 +45,3 @@ jest.setTimeout(15000);
 
 // Limpa qualquer processamento assíncrono que possa estar pendente
 global.XMLHttpRequest = undefined;
-
-// Implementar polyfills necessários
-global.requestAnimationFrame = callback => {
-  return setTimeout(callback, 0);
-};
-
-global.cancelAnimationFrame = timerId => {
-  clearTimeout(timerId);
-}; 
