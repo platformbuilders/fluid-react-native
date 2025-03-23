@@ -144,3 +144,36 @@ rules:
     metadata:
       description: "Para garantir consistência tipográfica e centralizar a lógica de estilos de fonte, utilize a prop 'variant' no componente Typography em vez de definir 'font-size' manualmente."
       tags: ['styles', 'typography', 'variant', 'font-size']
+
+  - id: ensure-text-contrast-ratio
+    languages: [javascript, typescript]
+    message: 'Garanta o contraste adequado para texto usando a propriedade contrast=true para fundos escuros ou use cores com uma razão de contraste de pelo menos 4.5:1.'
+    severity: WARNING
+    patterns:
+      - pattern-either:
+          - pattern-regex: "<Typography[^>]*(?!.*contrast=\\{true\\}).*>.*<\\/Typography>"
+          - pattern-regex: "<Text[^>]*(?!.*contrast=\\{true\\}).*>.*<\\/Text>"
+    paths:
+      exclude:
+        - '*.json'
+        - '*.spec.*'
+        - '*.test.*'
+    metadata:
+      description: 'Para garantir acessibilidade adequada, textos devem ter um contraste suficiente com o fundo. Use a propriedade contrast para elementos de texto em fundos escuros ou coloridos, ou certifique-se de que a razão de contraste atende às diretrizes WCAG.'
+      tags: ['acessibilidade', 'contraste', 'texto', 'legibilidade']
+
+  - id: ensure-proper-font-size-for-accessibility
+    languages: [javascript, typescript]
+    message: 'Evite tamanhos de fonte muito pequenos. Prefira usar variant="md" ou maior para texto principal.'
+    severity: WARNING
+    patterns:
+      - pattern-regex: "variant=\"xs\""
+    paths:
+      exclude:
+        - '*.json'
+        - '*.spec.*'
+        - '*.test.*'
+        - '**/Caption/**'
+    metadata:
+      description: 'Fontes muito pequenas podem comprometer a legibilidade para usuários com deficiência visual. Use tamanhos de fonte adequados (preferência para md ou maior) para conteúdo principal.'
+      tags: ['acessibilidade', 'tipografia', 'legibilidade', 'tamanho de fonte']

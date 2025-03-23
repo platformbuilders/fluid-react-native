@@ -29,3 +29,33 @@
           159┆ const isMaskText = typeof mask === 'string';
             ⋮┆----------------------------------------
           175┆ const isCellText = typeof cellText === 'string';
+
+
+┌────────────────────────────────────────────────────────┐
+│ Novas Regras de Acessibilidade Adicionadas (18/03/2024)│
+└────────────────────────────────────────────────────────┘
+
+As seguintes regras de acessibilidade foram adicionadas para garantir que todos os componentes 
+sejam acessíveis e sigam as melhores práticas:
+
+1. Arquivo .rules/accessibility.yml (novo):
+   - ensure-accessibility-props: Verifica se componentes interativos usam os utilitários de acessibilidade
+   - avoid-direct-accessibility-props: Evita definir propriedades de acessibilidade diretamente
+   - ensure-minimum-touchable-area: Garante área mínima de toque de 44x44dp
+   - ensure-importantForAccessibility: Verifica uso correto de importantForAccessibility
+   - ensure-accessibility-id: Verifica se componentes interativos têm identificação única
+   - avoid-exclusive-color-information: Evita transmitir informações apenas por cores
+   - ensure-text-contrast: Verifica contraste adequado para texto
+   - ensure-tests-use-testid: Garante uso de testID em vez de texto em testes
+   - use-accessibility-utils: Incentiva uso dos utilitários de acessibilidade
+
+2. Atualizações em .rules/structure.yml:
+   - ensure-accessibility-utils-import: Verifica importação dos utilitários de acessibilidade em componentes
+
+3. Atualizações em .rules/theme.yml:
+   - ensure-text-contrast-ratio: Garante razão de contraste adequada para texto
+   - ensure-proper-font-size-for-accessibility: Evita tamanhos de fonte muito pequenos
+
+Estas regras são baseadas nas diretrizes de acessibilidade WCAG e nas melhores práticas
+para desenvolvimento mobile acessível, garantindo que a biblioteca seja utilizável por
+pessoas com diferentes necessidades.

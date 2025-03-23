@@ -183,3 +183,21 @@ rules:
     metadata:
       description: 'Nomes de variáveis de uma única letra reduzem a legibilidade. Use nomes mais descritivos, exceto em loops simples.'
       tags: ['variables', 'naming', 'readability']
+
+  - id: ensure-accessibility-utils-import
+    languages: [javascript, typescript]
+    message: 'Componentes interativos devem importar e utilizar os utilitários de acessibilidade.'
+    severity: WARNING
+    patterns:
+      - pattern-regex: "(import\\s+React).*(?!(import\\s+{.*generateAccessibilityProps.*}\\s+from\\s+['\"].*utils['\"]))"
+    paths:
+      include:
+        - 'src/components/**/index.tsx'
+      exclude:
+        - '*.json'
+        - 'src/components/Typography/**'
+        - 'src/components/Icon/**'
+        - 'src/components/Separator/**'
+    metadata:
+      description: 'Componentes interativos devem importar e utilizar os utilitários de acessibilidade para garantir uma implementação consistente das propriedades de acessibilidade.'
+      tags: ['acessibilidade', 'componentes', 'utilitários', 'importação']
