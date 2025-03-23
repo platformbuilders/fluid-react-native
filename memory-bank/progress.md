@@ -184,6 +184,14 @@ O projeto está em um estágio maduro, com 23 componentes já implementados e te
 - Adicionado suporte adequado ao uso de act() em todos os testes novos para evitar warnings do React 18
 - Atualizados os snapshots do componente PasswordInput para refletir as mudanças na estrutura de testes
 
+**Data: 2024-05-17**
+- Melhorada a cobertura de testes do componente Typography, atualizando os testes para usar act() e evitar warnings do React 18
+- Adicionados testes para verificar o comportamento do Typography com diferentes props, children e ref forwarding
+- Melhorada a cobertura de testes do componente FormError, atingindo 100% em todas as métricas (statements, branches, funções e linhas)
+- Adicionados testes para verificar o comportamento do FormError com diferentes tipos de erro (string, boolean)
+- Testada a funcionalidade de warning quando um boolean é fornecido como erro
+- Verificado o comportamento de fallback para accessibility labels e testIDs
+
 # Progresso do Projeto
 
 ## Visão Geral do Status

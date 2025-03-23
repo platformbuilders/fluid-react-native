@@ -6,25 +6,29 @@ kanban-plugin: basic
 - Revisar e melhorar documentação API do Storybook
 - Implementar testes para cenários de acessibilidade
 - Verificar compatibilidade com as versões mais recentes do React Native
-- Implementar testes de unidade para o componente TextInput para melhorar cobertura
 - Implementar testes para PinInput
 - Implementar testes para LoadingIndicator
 - Implementar testes para Markdown
 - Documentar padrões de testID utilizados nos diversos componentes
 - Implementar verificação de acessibilidade em testes existentes
 - Adicionar validadores de acessibilidade automáticos aos testes
+- Melhorar cobertura de testes do componente Button
+- Melhorar cobertura de testes do componente Link
+- Melhorar cobertura de testes do componente Image
 
 ## Trabalho Atual
 - Melhorar thresholds de cobertura de testes
 - Documentar padrões de testIDs
 - Aplicar a abordagem de correção de warnings de act() para outros componentes
+- Implementar testes de unidade para o componente TextInput para melhorar cobertura
 
 ## Próximos Passos
 - Analisar componentes com cobertura de testes abaixo de 95%
 - Revisar e implementar melhores práticas de acessibilidade
 - Atualizar documentação técnica com novos padrões
 - Adicionar documentação sobre padrões de testes para componentes com estado
-- Adicionar testes para o componente Typography para melhorar cobertura
+- Melhorar cobertura de testes do componente Icon para atingir pelo menos 90% em branches
+- Implementar testes para o componente Badge
 
 ## Concluído
 - Configuração inicial do Banco de Memória Obsidian
@@ -43,4 +47,6 @@ kanban-plugin: basic
 - Documentar abordagem para criar testes que envolvam operações assíncronas
 - Atualizar os snapshots dos componentes após as correções
 - Melhorar a cobertura de testes do componente Touchable para atingir pelo menos 80% em function coverage
-- Melhorar a cobertura de branches do componente PasswordInput (62.5%) para atingir pelo menos 80% 
+- Melhorar a cobertura de branches do componente PasswordInput (62.5%) para atingir pelo menos 80%
+- Adicionar testes para o componente Typography para melhorar cobertura
+- Melhorar a cobertura de testes do componente FormError para atingir 100% 

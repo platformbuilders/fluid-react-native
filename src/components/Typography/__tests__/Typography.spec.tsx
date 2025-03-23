@@ -1,5 +1,6 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import renderer, { act } from 'react-test-renderer';
+import { render } from 'react-native-testing-library';
 import { ThemeProvider } from 'styled-components/native';
 import Typography from '..';
 import { TextVariant } from '../../../enums';
@@ -78,140 +79,203 @@ beforeEach(() => {
 
 describe('<Typography />', () => {
   it('should render and match snapshot for default props', () => {
-    const render = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Typography accessibility="" />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Typography accessibility="" />
+        </ThemeProvider>,
+      );
+    });
 
-    expect(render.toJSON()).toMatchSnapshot();
+    expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render and match snapshot for variant max', () => {
-    const render = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Typography accessibility="" variant="max" />
-      </ThemeProvider>,
-    );
-    expect(render.toJSON()).toMatchSnapshot();
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Typography accessibility="" variant="max" />
+        </ThemeProvider>,
+      );
+    });
+    
+    expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render and match snapshot for variant xxl', () => {
-    const render = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Typography accessibility="" variant="xxl" />
-      </ThemeProvider>,
-    );
-    expect(render.toJSON()).toMatchSnapshot();
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Typography accessibility="" variant="xxl" />
+        </ThemeProvider>,
+      );
+    });
+    
+    expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render and match snapshot for variant xl', () => {
-    const render = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Typography accessibility="" variant="xl" />
-      </ThemeProvider>,
-    );
-    expect(render.toJSON()).toMatchSnapshot();
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Typography accessibility="" variant="xl" />
+        </ThemeProvider>,
+      );
+    });
+    
+    expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render and match snapshot for variant lg', () => {
-    const render = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Typography accessibility="" variant="lg" />
-      </ThemeProvider>,
-    );
-    expect(render.toJSON()).toMatchSnapshot();
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Typography accessibility="" variant="lg" />
+        </ThemeProvider>,
+      );
+    });
+    
+    expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render and match snapshot for variant md', () => {
-    const render = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Typography accessibility="" variant="md" />
-      </ThemeProvider>,
-    );
-    expect(render.toJSON()).toMatchSnapshot();
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Typography accessibility="" variant="md" />
+        </ThemeProvider>,
+      );
+    });
+    
+    expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render and match snapshot for variant min', () => {
-    const render = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Typography accessibility="" variant="min" />
-      </ThemeProvider>,
-    );
-    expect(render.toJSON()).toMatchSnapshot();
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Typography accessibility="" variant="min" />
+        </ThemeProvider>,
+      );
+    });
+    
+    expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render and match snapshot for variant xs', () => {
-    const render = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Typography accessibility="" variant="xs" />
-      </ThemeProvider>,
-    );
-    expect(render.toJSON()).toMatchSnapshot();
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Typography accessibility="" variant="xs" />
+        </ThemeProvider>,
+      );
+    });
+    
+    expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render and match snapshot for variant xxs', () => {
-    const render = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Typography accessibility="" variant="xxs" />
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Typography accessibility="" variant="xxs" />
+        </ThemeProvider>,
+      );
+    });
 
-    expect(render.toJSON()).toMatchSnapshot();
+    expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render and match snapshot for variant animated', () => {
-    const render = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Typography accessibility="" variant={TextVariant.ANIMATED}>
-          Texto animado
-        </Typography>
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Typography accessibility="" variant={TextVariant.ANIMATED}>
+            Texto animado
+          </Typography>
+        </ThemeProvider>,
+      );
+    });
 
-    expect(render.toJSON()).toMatchSnapshot();
+    expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render with children', () => {
-    const render = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Typography accessibility="">Texto de exemplo</Typography>
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Typography accessibility="">Texto de exemplo</Typography>
+        </ThemeProvider>,
+      );
+    });
 
-    expect(render.toJSON()).toMatchSnapshot();
+    expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render with custom id', () => {
-    const render = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Typography id="custom-id" accessibility="">
-          Texto com ID personalizado
-        </Typography>
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Typography id="custom-id" accessibility="">
+            Texto com ID personalizado
+          </Typography>
+        </ThemeProvider>,
+      );
+    });
 
-    expect(render.toJSON()).toMatchSnapshot();
+    expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render with custom lineHeightVariant', () => {
-    const render = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Typography lineHeightVariant="max" accessibility="">
-          Texto com linha personalizada
-        </Typography>
-      </ThemeProvider>,
-    );
+    let wrapper;
+    
+    act(() => {
+      wrapper = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Typography lineHeightVariant="max" accessibility="">
+            Texto com linha personalizada
+          </Typography>
+        </ThemeProvider>,
+      );
+    });
 
-    expect(render.toJSON()).toMatchSnapshot();
+    expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should use children as testID when id and accessibility are not provided', () => {
-    const rendered = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Typography>Texto sem id</Typography>
-      </ThemeProvider>,
-    );
+    let rendered;
+    
+    act(() => {
+      rendered = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Typography>Texto sem id</Typography>
+        </ThemeProvider>,
+      );
+    });
 
     // Encontre o Text interno (filho direto do Typography)
     const textComponent = rendered.root.findByType(Text);
@@ -219,11 +283,15 @@ describe('<Typography />', () => {
   });
 
   it('should use id for testID when provided', () => {
-    const rendered = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Typography id="id-teste">Texto com id</Typography>
-      </ThemeProvider>,
-    );
+    let rendered;
+    
+    act(() => {
+      rendered = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Typography id="id-teste">Texto com id</Typography>
+        </ThemeProvider>,
+      );
+    });
 
     // Encontre o Text interno (filho direto do Typography)
     const textComponent = rendered.root.findByType(Text);
@@ -231,16 +299,102 @@ describe('<Typography />', () => {
   });
 
   it('should use accessibility for testID when id is not provided', () => {
-    const rendered = renderer.create(
-      <ThemeProvider theme={theme}>
-        <Typography accessibility="accessibility-teste">
-          Texto com accessibility
-        </Typography>
-      </ThemeProvider>,
-    );
+    let rendered;
+    
+    act(() => {
+      rendered = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Typography accessibility="accessibility-teste">
+            Texto com accessibility
+          </Typography>
+        </ThemeProvider>,
+      );
+    });
 
     // Encontre o Text interno (filho direto do Typography)
     const textComponent = rendered.root.findByType(Text);
     expect(textComponent.props.testID).toBe('accessibility-teste');
+  });
+  
+  it('should pass custom props to Text component', () => {
+    let rendered;
+    
+    act(() => {
+      rendered = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Typography 
+            accessibility="texto-personalizado"
+            numberOfLines={2}
+          >
+            Texto com props customizadas
+          </Typography>
+        </ThemeProvider>,
+      );
+    });
+
+    // Encontre o Text interno
+    const textComponent = rendered.root.findByType(Text);
+    expect(textComponent.props.numberOfLines).toBe(2);
+  });
+  
+  it('should pass custom props to AnimatedText component', () => {
+    let rendered;
+    
+    act(() => {
+      rendered = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Typography 
+            accessibility="texto-animado"
+            variant={TextVariant.ANIMATED}
+            numberOfLines={3}
+          >
+            Texto animado com props customizadas
+          </Typography>
+        </ThemeProvider>,
+      );
+    });
+
+    // Encontre o Text interno (que é um AnimatedText neste caso)
+    const textComponent = rendered.root.findByType(Text);
+    expect(textComponent.props.numberOfLines).toBe(3);
+  });
+  
+  it('should correctly use React Native Testing Library', () => {
+    const { getByText, getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Typography 
+          id="test-typography"
+          accessibility="texto-de-teste"
+        >
+          Texto de teste
+        </Typography>
+      </ThemeProvider>
+    );
+    
+    // Verificar se o texto aparece no componente
+    expect(getByText('Texto de teste')).toBeTruthy();
+    
+    // Verificar testID
+    expect(getByTestId('test-typography')).toBeTruthy();
+  });
+  
+  it('should work with ref forwarding', () => {
+    const ref = React.createRef();
+    
+    act(() => {
+      renderer.create(
+        <ThemeProvider theme={theme}>
+          <Typography 
+            ref={ref}
+            accessibility="texto-com-ref"
+          >
+            Texto com ref
+          </Typography>
+        </ThemeProvider>,
+      );
+    });
+    
+    // Verificar se o ref foi atribuído
+    expect(ref.current).toBeDefined();
   });
 });
