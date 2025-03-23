@@ -16,7 +16,6 @@ kanban-plugin: basic
 ## Trabalho Atual
 - Resolver warnings relacionados aos props do PinInput
 - Melhorar a cobertura de functions para o Icon (50% atualmente)
-- Melhorar a cobertura de functions para o Touchable (66.66% atualmente)
 
 ## Próximos Passos
 - Implementar testes para componentes com baixa cobertura
@@ -40,4 +39,5 @@ kanban-plugin: basic
 - Verificar testes para MaskedTextInput para melhorar cobertura atual
 - Atualizar snapshots para componentes modificados
 - Implementação completa dos testes para TextInput com cobertura de 100% statements
-- Implementação completa dos testes para Toggle com cobertura de 100% em todas as métricas 
+- Implementação completa dos testes para Toggle com cobertura de 100% em todas as métricas
+- Melhorar a cobertura de functions para o Touchable (de 66.66% para 100%) 

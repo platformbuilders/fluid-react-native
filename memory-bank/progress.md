@@ -302,7 +302,7 @@ O projeto está em um estágio maduro, com 23 componentes já implementados e te
   - **TextInput:** 100% statements, 96.52% branches, 80% functions, 100% lines
   - **Toggle:** 100% statements, 100% branches, 100% functions, 100% lines
   - **MaskedTextInput:** 81.81% statements, 80.55% branches, 85.71% functions, 81.81% lines
-  - **Touchable:** 100% statements, 100% branches, 66.66% functions, 100% lines
+  - **Touchable:** 100% statements, 100% branches, 100% functions, 100% lines
   - **Typography:** 100% statements, 100% branches, 100% functions, 100% lines
   - **FormError:** 100% statements, 100% branches, 100% functions, 100% lines
   - **Icon:** 100% statements, 96.87% branches, 50% functions, 100% lines
@@ -325,6 +325,11 @@ O projeto está em um estágio maduro, com 23 componentes já implementados e te
   - Substituído `getByRole` por `getByTestId` para maior robustez
   - Reescrito o teste de comportamento interativo para usar `rerender`
   - Todos os testes passando (9 testes)
+- ✅ Melhorada a cobertura de funções do Touchable
+  - Implementados testes para todos os cenários de uso
+  - Adicionados testes para tratamento de erros e haptic feedback
+  - Aumentada a cobertura de functions de 66.66% para 100%
+  - Todos os testes passando (16 testes)
 - ✅ Verificação completa dos testes
   - 29 suites de testes totalmente passando
   - 457 testes passando e apenas 1 teste omitido
@@ -338,9 +343,8 @@ O projeto está em um estágio maduro, com 23 componentes já implementados e te
 
 ### Próximas Tarefas:
 1. Resolver warnings relacionados aos props do PinInput
-2. Atualizar snapshots para componentes modificados
-3. Melhorar a cobertura de functions para o Icon (50% atualmente)
-4. Melhorar a cobertura de functions para o Touchable (66.66% atualmente)
+2. Melhorar a cobertura de functions para o Icon (50% atualmente)
+3. Atualizar snapshots para componentes modificados
 
 ### Metas para Próximo Sprint:
 - Melhorar cobertura de functions para todos os componentes chegar a 90%+

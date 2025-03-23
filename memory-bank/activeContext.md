@@ -56,7 +56,7 @@ Alcançamos um marco importante na qualidade do código, superando todas as meta
   - Functions: 89.36% (meta: 84%) ✅
   - Lines: 95.81% (meta: 84%) ✅
 
-Os componentes TextInput e Toggle, que eram pontos problemáticos, foram completamente corrigidos:
+Os componentes TextInput, Toggle e Touchable, que eram pontos problemáticos, foram completamente corrigidos:
 
 - **TextInput**
   - 100% statements, 96.52% branches, 80% functions, 100% lines
@@ -67,6 +67,14 @@ Os componentes TextInput e Toggle, que eram pontos problemáticos, foram complet
   - 100% statements, 100% branches, 100% functions, 100% lines
   - Testes de acessibilidade mais robustos usando `getByTestId`
   - Implementação de verificação de estado via `rerender` em vez de eventos
+
+- **Touchable**
+  - 100% statements, 100% branches, 100% functions, 100% lines
+  - Testes implementados para todos os cenários de uso, incluindo:
+    - Comportamento do Haptic Feedback
+    - Tratamento de erros
+    - Manipulação de propriedades avançadas
+    - Verificação de children e propriedades aninhadas
 
 ### Aprendizados e Abordagens Refinadas
 
