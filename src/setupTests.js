@@ -1,47 +1,41 @@
-// Arquivo de configuração para resolver problemas com timers e animações do React Native nos testes
+/**
+ * Configurações para resolver problemas com timers e animações em testes React Native
+ */
 
-// Mock para propriedades nativas do React Native que podem causar problemas
-jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');
+// Ao invés de mockar NativeAnimatedHelper, vamos interceptar possíveis erros
+jest.mock('react-native', () => {
+  const RN = jest.requireActual('react-native');
+  
+  // Se existir, mockamos o NativeAnimatedHelper
+  if (RN.NativeAnimatedHelper) {
+    RN.NativeAnimatedHelper.shouldUseNativeDriver = () => false;
+  }
+  
+  return RN;
+});
 
 // Configuração de eventos para cada teste
 beforeEach(() => {
-  // Garantir que estamos usando timers falsos para testes mais previsíveis
+  // Usar fake timers para testes mais previsíveis
   jest.useFakeTimers();
 });
 
 afterEach(() => {
-  // Limpa todos os timers pendentes após cada teste
-  jest.runOnlyPendingTimers();
+  // Limpar timers pendentes
   jest.clearAllTimers();
-
-  // Certifica-se de que não há animações pendentes
-  if (global.AnimatedImplementation) {
-    global.AnimatedImplementation.stopAnimations();
-  }
-
-  // Restaura os mocks
+  // Restaurar mocks
   jest.clearAllMocks();
-  
-  // Verifica e limpa event listeners que possam ter vazado
-  if (global.addEventListener) {
-    jest.spyOn(global, 'addEventListener').mockClear();
-  }
-  if (global.removeEventListener) {
-    jest.spyOn(global, 'removeEventListener').mockClear();
-  }
+  // Limpar event listeners
+  jest.restoreAllMocks();
 });
 
 afterAll(() => {
-  // Limpa novamente todos os timers pendentes
-  jest.runOnlyPendingTimers();
-  jest.clearAllTimers();
-  
-  // Certificar que estamos usando timers reais ao final dos testes
+  // Garantir que timers reais sejam usados após os testes
   jest.useRealTimers();
 });
 
-// Define um timeout mais longo para testes com animações
-jest.setTimeout(15000);
+// Configurar timeout mais longo para testes com animações
+jest.setTimeout(10000);
 
-// Limpa qualquer processamento assíncrono que possa estar pendente
+// Limpar qualquer processamento assíncrono pendente
 global.XMLHttpRequest = undefined;
