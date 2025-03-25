@@ -432,23 +432,52 @@ describe('<Avatar />', () => {
     );
   });
 
-  it.skip('should handle canceled image selection', async () => {
-    // Mockando launchImageLibrary para simular cancelamento
-    (launchImageLibrary as jest.Mock).mockImplementationOnce(() => Promise.resolve({ didCancel: true }));
+  it('should handle undefined value in isValidURI correctly', () => {
+    // Testar com image como undefined para acionar a validação isValidURI com undefined
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Avatar id="testing" accessibility="" image={undefined} />
+      </ThemeProvider>,
+    );
+    
+    // Não deve lançar exceção e deve renderizar corretamente
+    expect(wrapper.toJSON()).toBeTruthy();
+  });
+
+  it('should handle canceled image selection', async () => {
+    const onUploadMock = jest.fn();
+    
+    // Configurar mock para simular cancelamento
+    (launchImageLibrary as jest.Mock).mockImplementationOnce(
+      (_options, callback) => {
+        if (callback) {
+          callback({ didCancel: true });
+        }
+        return Promise.resolve({ didCancel: true });
+      }
+    );
     
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <Avatar testID="test-avatar" accessibility="" />
+        <Avatar
+          id="testing"
+          testID="avatar-test"
+          accessibility=""
+          onUpload={onUploadMock}
+        />
       </ThemeProvider>
     );
     
-    const avatarComponent = getByTestId('test-avatar');
-    fireEvent.press(avatarComponent);
+    const component = getByTestId('avatar-test');
     
-    // Aguardar operações assíncronas do launchImageLibrary
+    // Disparar evento de press para abrir o seletor
+    act(() => {
+      fireEvent.press(component);
+    });
+    
+    // Verificar que onUpload não foi chamado já que a seleção foi cancelada
     await waitFor(() => {
-      // Verificar que o estado não mudou após cancelamento
-      expect(avatarComponent).toBeTruthy();
+      expect(onUploadMock).not.toHaveBeenCalled();
     });
   });
 

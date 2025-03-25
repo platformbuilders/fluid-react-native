@@ -136,4 +136,73 @@ describe('<CheckBox />', () => {
     const checkbox = getByLabelText(`checbox de `);
     expect(checkbox).toBeDefined();
   });
+
+  // Testes adicionais para cobrir as linhas 53-56
+  it('should use testID when id and accessibility are not provided', () => {
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <CheckBox testID="custom-test-id" />
+      </ThemeProvider>,
+    );
+
+    // Verifica se o componente está sendo renderizado com o prefixo 'checkbox_' + testID
+    const checkbox = getByTestId('checkbox_custom-test-id');
+    expect(checkbox).toBeDefined();
+  });
+
+  it('should use fallback testID when no id, accessibility, or testID is provided', () => {
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <CheckBox />
+      </ThemeProvider>,
+    );
+
+    // Verifica se o componente está sendo renderizado com o testID padrão
+    const checkbox = getByTestId('checkbox_checkbox');
+    expect(checkbox).toBeDefined();
+  });
+
+  it('should handle disabled state correctly', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <CheckBox
+          id={TEST_ID}
+          accessibility={ACCESSIBILITY}
+          disabled
+        />
+      </ThemeProvider>,
+    );
+    
+    expect(wrapper.toJSON()).toMatchSnapshot();
+    
+    // Verifica que o checkbox foi renderizado
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <CheckBox
+          id={TEST_ID}
+          accessibility={ACCESSIBILITY}
+          disabled
+        />
+      </ThemeProvider>,
+    );
+    
+    const checkbox = getByTestId(`checkbox_${TEST_ID}`);
+    expect(checkbox).toBeDefined();
+  });
+
+  it('should handle non-string label correctly', () => {
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <CheckBox
+          id={TEST_ID}
+          accessibility={ACCESSIBILITY}
+          // @ts-ignore - Usando número como label para testar comportamento com tipos não-string
+          label={123}
+        />
+      </ThemeProvider>,
+    );
+
+    const checkbox = getByTestId(`checkbox_${TEST_ID}`);
+    expect(checkbox).toBeDefined();
+  });
 });
