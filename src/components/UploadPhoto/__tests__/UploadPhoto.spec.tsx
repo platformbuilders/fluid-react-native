@@ -1,6 +1,6 @@
 import React from 'react';
 import { launchImageLibrary } from 'react-native-image-picker';
-import { fireEvent, render } from 'react-native-testing-library';
+import { fireEvent, render } from '@testing-library/react-native';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
 import UploadPhoto from '..';
@@ -249,27 +249,21 @@ describe('<UploadPhoto />', () => {
 
   it('should call onClearUpload when delete icon is pressed', () => {
     const onClearUpload = jest.fn();
-    const { getByA11yLabel, getByTestId } = render(
+    const { getByTestId, UNSAFE_getByProps } = render(
       <ThemeProvider theme={theme}>
         <UploadPhoto
           id="testing"
-          accessibility=""
-          onClearUpload={onClearUpload}
-          image="https://example.com/image.jpg"
           testID="testing"
+          accessibility=""
+          image="file://test/image.jpg"
+          onClearUpload={onClearUpload}
         />
       </ThemeProvider>,
     );
 
-    // Tenta encontrar pelo accessibilityLabel primeiro
-    try {
-      const deleteButton = getByA11yLabel('Remover imagem');
-      fireEvent.press(deleteButton);
-    } catch (error) {
-      // Se não encontrar pelo label, tenta simular o evento diretamente no componente
-      const component = getByTestId('testing');
-      fireEvent(component, 'onClearUpload');
-    }
+    // Buscar pelo DeleteIconWrapper que contém o accessibility "Remover imagem"
+    const deleteButton = UNSAFE_getByProps({ accessibility: "Remover imagem" });
+    fireEvent.press(deleteButton);
 
     expect(onClearUpload).toHaveBeenCalled();
   });

@@ -1,12 +1,17 @@
 const { defaults: tsjPreset } = require('ts-jest/presets');
 
 module.exports = {
+  // Atualizado para refletir a cobertura atual e não permitir diminuição dos níveis de cobertura
+  // Branches: 92.98% arredondado para 92%
+  // Functions: 89.36% arredondado para 89%
+  // Lines: 95.49% arredondado para 95%
+  // Statements: 95.59% arredondado para 95%
   coverageThreshold: {
     global: {
-      branches: 84,
-      functions: 84,
-      lines: 84,
-      statements: 84,
+      branches: 92,
+      functions: 89,
+      lines: 95,
+      statements: 95,
     },
   },
   preset: 'react-native',
