@@ -115,3 +115,48 @@ Para componentes com estruturas complexas que dificultam atingir os thresholds g
 - Teste em dispositivos reais, não apenas em simuladores
 - Warnings nos testes relacionados a React 18 devem ser corrigidos conforme surgem
 - Os erros `ReferenceError` após execução dos testes devem ser investigados 
+
+## Padrões de TestIDs
+
+- Seguir formato padronizado: `{componentType}_{id}` (ex: `button_submit`, `input_email`)
+- Quando não houver `id`, usar `{componentType}_{accessibility}` como fallback
+- Para casos restantes, usar `{componentType}_{componentType}` (ex: `button_button`)
+- Evitar condicionais complexas ou casos especiais para geração de testIDs
+- Componentes compostos devem preservar a hierarquia de testIDs
+- Evitar modificar o testID original quando um componente encapsula outro
+- Exceções e casos especiais devem ser explicitamente documentados no código
+- Componentes que fazem o mesmo tipo de trabalho devem seguir o mesmo padrão de testID
+
+## Correção de Warnings comuns
+
+### PropTypes para estilos
+- Ao definir PropTypes para props de estilo (como `style`, `containerStyle`, etc.), usar `PropTypes.oneOfType([PropTypes.object, PropTypes.array])` em vez de `PropTypes.style`
+- Aplicar isto para todos os componentes que usam props de estilo, especialmente componentes de terceiros
+- Exemplos de props que devem seguir este padrão: `containerStyle`, `cellStyle`, `textStyle`, e variações como `cellStyleFocused`, etc.
+
+### Componente Icon
+- Função de cobertura: garantir testes para todos os caminhos lógicos do componente
+- Incluir testes para:
+  - Manipulação de valores undefined/vazios para o prop `name`
+  - Diferentes formas de definir testIDs (via `id`, `accessibility`, `testID`)
+  - Comportamento com diferentes tipos de ícones
+  - Transformações de nomes de ícones
+- Cuidado com erros de linting relacionados a variáveis não utilizadas em testes (TS6133)
+
+## Erros Comuns e Soluções
+
+### ReferenceError após execução dos testes
+- Erro relacionado ao ambiente do Jest sendo encerrado enquanto ainda há operações pendentes
+- Ocorre principalmente em componentes com animações ou timers (Accordion, TextInput)
+- Potencial solução: garantir limpeza adequada de timers e animações nos testes
+- Verificar uso correto de `act()` para envolver operações assíncronas
+
+### Warnings de PropTypes
+- Utilizar tipos corretos para as props, especialmente para estilos
+- Para componentes de terceiros, pode ser necessário criar wrappers com tipagem correta
+- Manter documentação de props atualizada para evitar uso incorreto
+
+### Erros de Linting
+- TS6133 (variável declarada mas não utilizada) - comum em arquivos de teste
+- Garantir que todas as importações são utilizadas
+- Remover variáveis temporárias não utilizadas após refatoração 
