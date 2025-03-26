@@ -1,13 +1,14 @@
 import React from 'react';
-import { fireEvent, render } from '@testing-library/react-native';
+import { TextInput } from 'react-native';
 import { ThemeProvider } from 'styled-components/native';
-import theme from '../../../../theme';
+import { fireEvent, render } from '@testing-library/react-native';
 import MaskedTextInput from '..';
+import theme from '../../../../theme';
 
 // Mock do componente TextInputMask para facilitar os testes
 jest.mock('react-native-masked-input', () => {
-  const { TextInput } = require('react-native');
-  return TextInput;
+  const mockTextInput = require('react-native').TextInput;
+  return mockTextInput;
 });
 
 describe('<MaskedTextInput />', () => {
@@ -19,7 +20,7 @@ describe('<MaskedTextInput />', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
         <MaskedTextInput id="test" accessibility="test" maskType="no-mask" />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     expect(getByTestId('test')).toBeTruthy();
@@ -35,7 +36,7 @@ describe('<MaskedTextInput />', () => {
           maskType="cpf"
           onChangeText={onChangeText}
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     const component = getByTestId('test');
@@ -53,7 +54,7 @@ describe('<MaskedTextInput />', () => {
           maskType="cnpj"
           onChangeText={onChangeText}
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     const component = getByTestId('test');
@@ -71,7 +72,7 @@ describe('<MaskedTextInput />', () => {
           maskType="no-mask"
           onChangeText={onChangeText}
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     const component = getByTestId('test');
@@ -89,7 +90,7 @@ describe('<MaskedTextInput />', () => {
           maskType="cel-phone"
           onChangeText={onChangeText}
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     const component = getByTestId('test');
@@ -107,7 +108,7 @@ describe('<MaskedTextInput />', () => {
           maskType="zip-code"
           onChangeText={onChangeText}
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     const component = getByTestId('test');
@@ -125,7 +126,7 @@ describe('<MaskedTextInput />', () => {
           maskType="money"
           onChangeText={onChangeText}
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     const component = getByTestId('test');
@@ -143,7 +144,7 @@ describe('<MaskedTextInput />', () => {
           maskType="credit-card"
           onChangeText={onChangeText}
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     const component = getByTestId('test');
@@ -161,7 +162,7 @@ describe('<MaskedTextInput />', () => {
           maskType="datetime"
           onChangeText={onChangeText}
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     const component = getByTestId('test');
@@ -179,7 +180,7 @@ describe('<MaskedTextInput />', () => {
           maskType="uppercase"
           onChangeText={onChangeText}
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     const component = getByTestId('test');
@@ -197,7 +198,7 @@ describe('<MaskedTextInput />', () => {
           maskType="only-numbers"
           onChangeText={onChangeText}
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     const component = getByTestId('test');
@@ -214,11 +215,11 @@ describe('<MaskedTextInput />', () => {
           accessibility="test"
           maskType="custom"
           options={{
-            mask: '999.999.999-99'
+            mask: '999.999.999-99',
           }}
           onChangeText={onChangeText}
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     const component = getByTestId('test');
@@ -234,7 +235,7 @@ describe('<MaskedTextInput />', () => {
           accessibility="test-id"
           maskType="no-mask"
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     expect(getByTestId('input_test-id')).toBeTruthy();
@@ -248,7 +249,7 @@ describe('<MaskedTextInput />', () => {
           accessibility="test-accessibility"
           maskType="no-mask"
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     expect(getByTestId('input_test-accessibility')).toBeTruthy();
@@ -263,7 +264,7 @@ describe('<MaskedTextInput />', () => {
           testID="custom-test-id"
           maskType="no-mask"
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     expect(getByTestId('test')).toBeTruthy();
@@ -279,7 +280,7 @@ describe('<MaskedTextInput />', () => {
           maskType="no-mask"
           onBlur={onBlur}
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     const input = getByTestId('test');
@@ -297,7 +298,7 @@ describe('<MaskedTextInput />', () => {
           maskType="no-mask"
           onFocus={onFocus}
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     const input = getByTestId('test');
@@ -315,7 +316,7 @@ describe('<MaskedTextInput />', () => {
           maskType="cpf"
           onChangeText={onChangeText}
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     // Rerenderiza com novas props
@@ -327,7 +328,7 @@ describe('<MaskedTextInput />', () => {
           maskType="cnpj"
           onChangeText={onChangeText}
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     const component = getByTestId('test');
@@ -344,7 +345,7 @@ describe('<MaskedTextInput />', () => {
           maskType="no-mask"
           editable={false}
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     expect(getByTestId('test').props.editable).toBe(false);
@@ -359,7 +360,7 @@ describe('<MaskedTextInput />', () => {
           maskType="no-mask"
           placeholder="Placeholder de teste"
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     expect(getByTestId('test')).toBeTruthy();
@@ -374,7 +375,7 @@ describe('<MaskedTextInput />', () => {
           maskType="no-mask"
           multiline={true}
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     expect(getByTestId('test').props.multiline).toBe(true);
@@ -389,9 +390,9 @@ describe('<MaskedTextInput />', () => {
           maskType="no-mask"
           contrast={true}
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     expect(getByTestId('test')).toBeTruthy();
   });
-}); 
+});

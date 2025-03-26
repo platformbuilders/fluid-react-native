@@ -165,27 +165,19 @@ describe('<CheckBox />', () => {
   it('should handle disabled state correctly', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <CheckBox
-          id={TEST_ID}
-          accessibility={ACCESSIBILITY}
-          disabled
-        />
+        <CheckBox id={TEST_ID} accessibility={ACCESSIBILITY} disabled />
       </ThemeProvider>,
     );
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
-    
+
     // Verifica que o checkbox foi renderizado
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <CheckBox
-          id={TEST_ID}
-          accessibility={ACCESSIBILITY}
-          disabled
-        />
+        <CheckBox id={TEST_ID} accessibility={ACCESSIBILITY} disabled />
       </ThemeProvider>,
     );
-    
+
     const checkbox = getByTestId(`checkbox_${TEST_ID}`);
     expect(checkbox).toBeDefined();
   });

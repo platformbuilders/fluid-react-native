@@ -1,10 +1,9 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, TouchableOpacityProps } from 'react-native';
 import Haptic from 'react-native-haptic-feedback';
-import { fireEvent, render } from 'react-native-testing-library';
 import renderer, { act } from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
-import { TouchableOpacityProps } from 'react-native';
+import { fireEvent, render } from '@testing-library/react-native';
 
 import Touchable from '..';
 import theme from '../../../theme';
@@ -22,7 +21,7 @@ describe('<Touchable />', () => {
 
   it('should render Touchable', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -80,11 +79,11 @@ describe('<Touchable />', () => {
 
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <Touchable 
-          id="testing" 
-          accessibility="" 
+        <Touchable
+          id="testing"
+          accessibility=""
           onPress={onPressEvent}
-          haptic={customHaptic} 
+          haptic={customHaptic}
         />
       </ThemeProvider>,
     );
@@ -101,9 +100,9 @@ describe('<Touchable />', () => {
 
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <Touchable 
-          id="testing" 
-          accessibility="" 
+        <Touchable
+          id="testing"
+          accessibility=""
           onPress={onPressEvent}
           disabled={true}
         />
@@ -111,10 +110,10 @@ describe('<Touchable />', () => {
     );
 
     const component = getByTestId('testing');
-    
+
     // Verificar que o estado é desabilitado
     expect(component.props.accessibilityState.disabled).toBe(true);
-    
+
     // Quando o componente está desabilitado, o React Native TouchableOpacity
     // evita automaticamente a execução de onPress, mas nos testes isso não
     // é simulado automaticamente. Verificamos apenas se a prop está correta.
@@ -123,11 +122,7 @@ describe('<Touchable />', () => {
   it('should use testID if provided', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <Touchable 
-          id="testing" 
-          accessibility=""
-          testID="custom-test-id" 
-        />
+        <Touchable id="testing" accessibility="" testID="custom-test-id" />
       </ThemeProvider>,
     );
 
@@ -149,27 +144,28 @@ describe('<Touchable />', () => {
   });
 
   it('should use accessibilityLabel if provided', () => {
-    const { getByA11yLabel } = render(
+    const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <Touchable 
-          id="testing" 
+        <Touchable
+          id="with-a11y-label"
           accessibility=""
-          accessibilityLabel="custom-a11y-label" 
+          accessibilityLabel="custom-a11y-label"
+          testID="with-a11y-label"
         />
       </ThemeProvider>,
     );
 
-    // Deve encontrar o componente pelo accessibilityLabel personalizado
-    const component = getByA11yLabel('custom-a11y-label');
-    expect(component).toBeTruthy();
+    // Verificar pelo testID em vez de acessibilidade
+    const component = getByTestId('with-a11y-label');
+    expect(component.props.accessibilityLabel).toBe('custom-a11y-label');
   });
 
   it('should apply style props correctly', () => {
     const customStyle = { backgroundColor: 'red', padding: 10 };
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <Touchable 
-          id="testing" 
+        <Touchable
+          id="testing"
           accessibility=""
           {...({ style: customStyle } as TouchableOpacityProps)}
         />
@@ -181,7 +177,7 @@ describe('<Touchable />', () => {
       expect.objectContaining({
         backgroundColor: 'red',
         padding: 10,
-      })
+      }),
     );
   });
 
@@ -209,12 +205,12 @@ describe('<Touchable />', () => {
     );
 
     const component = getByTestId('testing');
-    
+
     // Não deve lançar erro ao pressionar sem handler
     expect(() => {
       fireEvent.press(component);
     }).not.toThrow();
-    
+
     // Haptic ainda deve ser chamado
     expect(Haptic.trigger).toHaveBeenCalled();
   });
@@ -227,13 +223,13 @@ describe('<Touchable />', () => {
     );
 
     const component = getByTestId('default-test');
-    
+
     // Verificar as props padrão
     expect(component.props.accessibilityState.disabled).toBe(false);
-    
+
     // Pressionar para verificar o comportamento padrão
     fireEvent.press(component);
-    
+
     // Haptic deve ser chamado com o valor padrão
     expect(Haptic.trigger).toHaveBeenCalledWith('impactLight');
   });
@@ -250,7 +246,7 @@ describe('<Touchable />', () => {
     // Verificar se o componente pai foi renderizado
     const component = getByTestId('with-children');
     expect(component).toBeTruthy();
-    
+
     // Verificar se o filho foi renderizado
     const childComponent = getByTestId('child-text');
     expect(childComponent).toBeTruthy();
@@ -284,8 +280,8 @@ describe('<Touchable />', () => {
 
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <Touchable 
-          id="complex-test" 
+        <Touchable
+          id="complex-test"
           accessibility="complex-a11y"
           accessibilityLabel="Complex Test"
           onPress={onPressEvent}
@@ -298,7 +294,7 @@ describe('<Touchable />', () => {
 
     const component = getByTestId('custom-complex-id');
     expect(component.props.accessibilityLabel).toBe('Complex Test');
-    
+
     fireEvent.press(component);
     expect(onPressEvent).toHaveBeenCalled();
     expect(Haptic.trigger).toHaveBeenCalledWith(customHaptic);
@@ -308,13 +304,13 @@ describe('<Touchable />', () => {
   it('should pass additional props correctly', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <Touchable 
-          id="rest-props-test" 
+        <Touchable
+          id="rest-props-test"
           accessibility="rest-props"
           testID="rest-props-test"
-          {...({ 
+          {...({
             activeOpacity: 0.8,
-            hitSlop: { top: 10, bottom: 10, left: 10, right: 10 }
+            hitSlop: { top: 10, bottom: 10, left: 10, right: 10 },
           } as TouchableOpacityProps)}
         />
       </ThemeProvider>,
@@ -323,7 +319,7 @@ describe('<Touchable />', () => {
     // Verificar que o componente foi renderizado com sucesso
     const component = getByTestId('rest-props-test');
     expect(component).toBeTruthy();
-    
+
     // Não podemos acessar activeOpacity ou hitSlop diretamente nos testes
     // do react-native-testing-library, então apenas verificamos se foi renderizado
   });

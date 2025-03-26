@@ -59,7 +59,7 @@ describe('<Avatar />', () => {
 
   it('should render Avatar', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -67,13 +67,13 @@ describe('<Avatar />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Avatar with external image', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -85,7 +85,7 @@ describe('<Avatar />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
@@ -439,14 +439,14 @@ describe('<Avatar />', () => {
         <Avatar id="testing" accessibility="" image={undefined} />
       </ThemeProvider>,
     );
-    
+
     // Não deve lançar exceção e deve renderizar corretamente
     expect(wrapper.toJSON()).toBeTruthy();
   });
 
   it('should handle canceled image selection', async () => {
     const onUploadMock = jest.fn();
-    
+
     // Configurar mock para simular cancelamento
     (launchImageLibrary as jest.Mock).mockImplementationOnce(
       (_options, callback) => {
@@ -454,9 +454,9 @@ describe('<Avatar />', () => {
           callback({ didCancel: true });
         }
         return Promise.resolve({ didCancel: true });
-      }
+      },
     );
-    
+
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
         <Avatar
@@ -465,16 +465,16 @@ describe('<Avatar />', () => {
           accessibility=""
           onUpload={onUploadMock}
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
-    
+
     const component = getByTestId('avatar-test');
-    
+
     // Disparar evento de press para abrir o seletor
     act(() => {
       fireEvent.press(component);
     });
-    
+
     // Verificar que onUpload não foi chamado já que a seleção foi cancelada
     await waitFor(() => {
       expect(onUploadMock).not.toHaveBeenCalled();
