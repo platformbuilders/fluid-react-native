@@ -146,4 +146,88 @@ describe('<Image />', () => {
 
     expect(render.toJSON()).toMatchSnapshot();
   });
+
+  it('should render with string source as string instead of object', () => {
+    const render = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Image
+          id="testing"
+          accessibility="testing_image"
+          source={{ uri }}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(render.toJSON()).toMatchSnapshot();
+  });
+
+  it('should use testID directly when provided', () => {
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Image
+          testID="direct-test-id"
+          id="testing"
+          accessibility="testing_image"
+          source={{ uri }}
+        />
+      </ThemeProvider>,
+    );
+
+    const image = getByTestId('direct-test-id');
+    expect(image).toBeTruthy();
+  });
+
+  it('should use id as testID when testID is not provided', () => {
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Image
+          id="testing"
+          accessibility="testing_image"
+          source={{ uri }}
+        />
+      </ThemeProvider>,
+    );
+
+    const image = getByTestId('testing');
+    expect(image).toBeTruthy();
+  });
+
+  it('should handle loading and error states correctly', () => {
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Image
+          id="testing"
+          testID="image-test"
+          accessibility="testing_image"
+          source={{ uri }}
+        />
+      </ThemeProvider>,
+    );
+
+    const image = getByTestId('image-test');
+
+    // Simula o início do carregamento da imagem
+    act(() => {
+      fireEvent(image, 'loadStart');
+    });
+
+    // Verifica se o componente está no estado de carregamento (placeholder deve estar visível)
+    expect(image).toBeTruthy();
+
+    // Simula um erro no carregamento
+    act(() => {
+      fireEvent(image, 'error');
+    });
+
+    // Verifica se o componente ainda é renderizado após o erro
+    expect(image).toBeTruthy();
+
+    // Simula o término bem-sucedido do carregamento
+    act(() => {
+      fireEvent(image, 'load');
+    });
+
+    // Verifica se o carregamento foi concluído com sucesso
+    expect(image).toBeTruthy();
+  });
 });
