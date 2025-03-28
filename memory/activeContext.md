@@ -49,6 +49,9 @@
 - Adicionamos testes específicos para as linhas não cobertas (13, 75-82)
 - Corrigimos problemas com testIDs e acessibilidade
 
+#### Image
+- Excelente cobertura alcançada para o componente Image, com 100% em statements, functions e lines, e 94.11% em branches, testando todos os tipos de fontes de imagem e estados de carregamento.
+
 ## Métricas Atuais
 
 - Cobertura global: 36.47%
@@ -97,6 +100,7 @@ Mantemos o foco nas prioridades definidas no Kanban:
 - Melhoria expressiva na cobertura de testes do Avatar, com 100% de cobertura em statements, functions e lines, e 92.68% em branches.
 - Implementados diversos testes para garantir o correto funcionamento do componente Avatar em diferentes cenários de uso.
 - Otimização dos testes do PinInput, atingindo 100% de cobertura em statements, functions e lines, e 95.83% em branches, resolvendo problemas relacionados à verificação da função changeText.
+- Excelente cobertura alcançada para o componente Image, com 100% em statements, functions e lines, e 94.11% em branches, testando todos os tipos de fontes de imagem e estados de carregamento.
 
 ### Documentação
 - Atualização da documentação com novos padrões identificados

@@ -29,7 +29,6 @@ kanban-plugin: basic
 - Melhorar cobertura de testes do Icon para aumentar a cobertura de funções
 - Resolver warnings relacionados aos props do PinInput
 - Implementar testes para componentes sem cobertura (Button, Link, Typography)
-- Implementar testes para o Image
 - Melhorar UX do DatePicker
 
 ## Próximos Passos
@@ -110,4 +109,5 @@ kanban-plugin: basic
 - Corrigir warnings de PropTypes no TextInput
 - ✅ Melhorar a cobertura de testes do Typography para atingir 100% em todos os critérios
 - ✅ Remover tipo de máscara "document" do MaskedTextInput
-- ✅ Melhorar a cobertura de testes do Avatar para atingir pelo menos 95% em branches e functions 
+- ✅ Melhorar a cobertura de testes do Avatar para atingir pelo menos 95% em branches e functions
+- ✅ Melhorar a cobertura de testes do Image para atingir 100% em statements, functions, lines e 94% em branches 

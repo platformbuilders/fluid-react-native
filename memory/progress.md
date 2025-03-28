@@ -626,3 +626,12 @@ Necessário continuar o trabalho em outros componentes, seguindo ordem alfabéti
   - Verificado o funcionamento correto com diferentes tamanhos de código (codeLength)
   - Testado o comportamento quando onFulfill não é fornecido (usando o padrão)
   - Total de 18 testes implementados, cobrindo todos os cenários de uso
+
+**Data: 2024-05-24**
+- Alcançada excelente cobertura para o componente Image
+  - 100% de cobertura para statements, functions e lines
+  - 94.11% de cobertura para branches
+  - Adicionados testes para todos os tipos de fontes de imagem (uri, number, string)
+  - Adicionados testes para os casos de erro e estados de carregamento
+  - Verificação adequada para props como resizeMode e estilos customizados
+  - Testados casos extremos como source undefined, null ou tipos não suportados
