@@ -90,6 +90,12 @@ Mantemos o foco nas prioridades definidas no Kanban:
 
 ## Progresso Recente
 
+- Melhoramos a cobertura de testes do componente SearchInput
+- Adicionamos testes para verificar que onRightIconPress é passado corretamente e funciona
+- Incluímos testes para cobrir diferentes cenários de inputRef
+- Verificamos o comportamento correto quando o input mantém texto após perder o foco
+- Corrigimos os testes para não esperar por props indefinidas
+- Atingimos 96.42% de cobertura em statements, 88.46% em branches e 88.88% em functions para o SearchInput
 - Corrigimos os warnings de act() no React 18 para o componente TextInput
 - Melhoramos a cobertura de testes do componente TextInput
 - Corrigimos e melhoramos os testes de acessibilidade do Toggle

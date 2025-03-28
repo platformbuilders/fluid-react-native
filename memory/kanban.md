@@ -81,4 +81,8 @@ kanban-plugin: basic
 - ✅ Corrigir timeouts nos testes ("Exceeded timeout of 10000 ms for a hook")
 - ✅ Migrar de react-native-testing-library para @testing-library/react-native
 - ✅ Melhorar cobertura de testes do SearchInput (96.42% statements, 88.46% branches)
-- ✅ Aumentar cobertura global (statements: 36.79%, branches: 25.83%, functions: 27.65%) 
+- ✅ Aumentar cobertura global (statements: 36.79%, branches: 25.83%, functions: 27.65%)
+- Melhorar a cobertura de testes do componente SearchInput
+- Corrigir testes que falham ao acessar props indefinidas
+- Implementar testes adicionais para cobrir todas as funcionalidades do SearchInput
+- Usar act() corretamente para lidar com atualizações de estado 

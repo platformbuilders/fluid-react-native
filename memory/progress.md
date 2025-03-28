@@ -604,3 +604,20 @@ Necessário continuar o trabalho em outros componentes, seguindo ordem alfabéti
 - Correção de todos os testes para utilizar "cpf" em vez de "document"
 - Atualização dos comentários nos testes para manter consistência com a implementação
 - Execução bem-sucedida de todos os testes com threshold personalizado de 70%
+
+## Histórico de Implementação
+
+### 2024-05-24: Melhoria na cobertura de testes do SearchInput
+
+- Aumentamos a cobertura de testes do componente SearchInput para:
+  - 96.42% statements
+  - 88.46% branches
+  - 88.88% functions
+  - 96.29% lines
+- Adicionamos testes específicos para:
+  - Verificação do comportamento de `onRightIconPress`
+  - Uso correto de `inputRef` customizado
+  - Manutenção do estado de texto após perda de foco
+  - Tratamento seguro de propriedades indefinidas
+- Corrigimos os testes para utilizar corretamente o `act()` do React Testing Library
+- Padronizamos o uso das funções de teste para seguir as práticas recomendadas
