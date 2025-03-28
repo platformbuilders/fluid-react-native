@@ -35,7 +35,7 @@ describe('<MaskedTextInput />', () => {
     expect(getByTestId(TEST_ID)).toBeTruthy();
   });
 
-  it('should apply document mask for CPF', () => {
+  it('should apply cpf mask', () => {
     const onChangeText = jest.fn();
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
