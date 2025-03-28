@@ -104,6 +104,7 @@ Mantemos o foco nas prioridades definidas no Kanban:
 
 ### Melhorias no Código
 - Refinamento da tipagem do componente Typography, substituindo o uso de `any` por tipagem específica para props de estilo, melhorando a segurança de tipos e reduzindo warnings de TypeScript.
+- Tipagem precisa da propriedade `variant` do Typography, utilizando a união de tipos `TypographyVariants | TextVariant | 'normal' | 'animated'` para garantir consistência com o sistema de tema e suporte completo a autocomplete.
 
 ### Documentação
 - Atualização da documentação com novos padrões identificados

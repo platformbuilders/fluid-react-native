@@ -4,14 +4,17 @@ import {
   getFontSize,
   getLineHeight,
   getTheme,
+  TypographyVariants,
 } from '@platformbuilders/theme-toolkit';
+import { TextVariant } from '../../enums';
 
 export interface StyledTextProps extends TextProps {
-  variant?: string;
+  variant?: TypographyVariants | TextVariant | 'normal' | 'animated';
   weight?: string;
   align?: string;
   color?: string;
   style?: TextStyle | TextStyle[];
+  lineHeightVariant?: TypographyVariants;
 }
 
 export const Text = styled.Text<StyledTextProps>`

@@ -643,3 +643,13 @@ Necessário continuar o trabalho em outros componentes, seguindo ordem alfabéti
   - Redução de warnings de TypeScript relacionados a tipos genéricos
   - Manutenção da retrocompatibilidade com código existente
   - Melhor documentação de propriedades esperadas no componente
+
+**Data: 2024-05-25 (atualização)**
+- Refinamento adicional na tipagem do componente Typography
+  - Substituição do tipo `string` para a propriedade `variant` por um tipo mais específico
+  - Integração com o sistema de tipos do theme-toolkit via TypographyVariants
+  - Suporte adequado a todas as variantes disponíveis: 'min', 'xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'max'
+  - Compatibilidade com o enum TextVariant do projeto
+  - Adição da propriedade lineHeightVariant com tipagem correta
+  - Melhoria no autocomplete do editor para variantes disponíveis
+  - Redução de erros potenciais por uso de variantes incorretas

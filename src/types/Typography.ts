@@ -1,7 +1,8 @@
 import { TypographyVariants } from '@platformbuilders/theme-toolkit';
+import { TextVariant } from '../enums';
 
 export type TypographyType = {
-  variant?: any;
+  variant?: TypographyVariants | TextVariant | 'normal' | 'animated';
   lineHeightVariant?: TypographyVariants;
   children?: string | string[] | any;
   id?: string;
