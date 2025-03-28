@@ -653,3 +653,11 @@ Necessário continuar o trabalho em outros componentes, seguindo ordem alfabéti
   - Adição da propriedade lineHeightVariant com tipagem correta
   - Melhoria no autocomplete do editor para variantes disponíveis
   - Redução de erros potenciais por uso de variantes incorretas
+
+**Data: 2024-05-26**
+- Melhorias na configuração do projeto para lidar com arquivos de teste
+  - Atualização do `tsconfig.json` para excluir corretamente todos os arquivos de teste
+  - Remoção da opção obsoleta `suppressImplicitAnyIndexErrors` do tsconfig
+  - Configuração do ESLint para ignorar arquivos de teste (`.eslintrc.js`)
+  - Padronização dos padrões de exclusão entre TypeScript e ESLint
+  - Resolução do problema de erros de validação nos testes

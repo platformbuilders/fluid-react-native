@@ -112,4 +112,5 @@ kanban-plugin: basic
 - ✅ Melhorar a cobertura de testes do Avatar para atingir pelo menos 95% em branches e functions
 - ✅ Melhorar a cobertura de testes do Image para atingir 100% em statements, functions, lines e 94% em branches
 - ✅ Refinar a tipagem do Typography para eliminar o uso de `any` e reduzir warnings de TypeScript
-- ✅ Melhorar a tipagem da propriedade `variant` do Typography para usar tipos específicos em vez de string 
+- ✅ Melhorar a tipagem da propriedade `variant` do Typography para usar tipos específicos em vez de string
+- ✅ Configurar TypeScript e ESLint para ignorar corretamente arquivos de teste 
