@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer, { act } from 'react-test-renderer';
-import { render } from '@testing-library/react-native';
 import { ThemeProvider } from 'styled-components/native';
+import { render } from '@testing-library/react-native';
 import FormError from '..';
 import theme from '../../../theme';
 
@@ -11,14 +11,14 @@ describe('<FormError />', () => {
   beforeEach(() => {
     console.warn = jest.fn();
   });
-  
+
   afterEach(() => {
     console.warn = originalWarn;
   });
-  
+
   it('should render the form error component', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -32,7 +32,7 @@ describe('<FormError />', () => {
 
   it('should render the form error component with centered', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -52,7 +52,7 @@ describe('<FormError />', () => {
 
   it('should render the form error component with error', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -63,10 +63,10 @@ describe('<FormError />', () => {
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
-  
+
   it('should render children when provided', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -79,7 +79,7 @@ describe('<FormError />', () => {
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
-  
+
   it('should call warnBoolean when error is a truthy boolean', () => {
     act(() => {
       renderer.create(
@@ -94,12 +94,16 @@ describe('<FormError />', () => {
       "@platformbuilders/fluid-react-native: received a truthy boolean error instead of string, which won't be rendered.",
     );
   });
-  
+
   it('should not call warnBoolean when error is a string', () => {
     act(() => {
       renderer.create(
         <ThemeProvider theme={theme}>
-          <FormError id="string_error" accessibility="form" error="Error message" />
+          <FormError
+            id="string_error"
+            accessibility="form"
+            error="Error message"
+          />
         </ThemeProvider>,
       );
     });
@@ -107,7 +111,7 @@ describe('<FormError />', () => {
     // Verificar que console.warn não foi chamado
     expect(console.warn).not.toHaveBeenCalled();
   });
-  
+
   it('should not call warnBoolean when error is false', () => {
     act(() => {
       renderer.create(
@@ -120,7 +124,7 @@ describe('<FormError />', () => {
     // Verificar que console.warn não foi chamado
     expect(console.warn).not.toHaveBeenCalled();
   });
-  
+
   it('should not render error text when error is a boolean', () => {
     const { queryByTestId } = render(
       <ThemeProvider theme={theme}>
@@ -131,7 +135,7 @@ describe('<FormError />', () => {
     // Verificar que o texto de erro não foi renderizado
     expect(queryByTestId('error_no_text')).toBeNull();
   });
-  
+
   it('should use default id when not provided', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
@@ -142,9 +146,9 @@ describe('<FormError />', () => {
     // Verificar que o id padrão 'form_error' foi usado
     expect(getByTestId('error_form_error')).toBeTruthy();
   });
-  
+
   it('should use error text as accessibility label when accessibility is not provided', () => {
-    const errorText = "Accessibility from error";
+    const errorText = 'Accessibility from error';
     const { getByText } = render(
       <ThemeProvider theme={theme}>
         <FormError error={errorText} />
@@ -154,17 +158,14 @@ describe('<FormError />', () => {
     // Verificar que o texto de erro está presente
     expect(getByText(errorText)).toBeTruthy();
   });
-  
+
   it('should apply custom style when provided', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
-          <FormError 
-            error="Styled error" 
-            style={{ marginTop: 20 }}
-          />
+          <FormError error="Styled error" style={{ marginTop: 20 }} />
         </ThemeProvider>,
       );
     });

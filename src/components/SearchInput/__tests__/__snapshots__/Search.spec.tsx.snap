@@ -2233,7 +2233,7 @@ exports[`SearchInput state and functions should update snapshots for search comp
       },
     ]
   }
-  testID="search_snapshot_test"
+  testID="search_test"
 >
   <View
     style={
@@ -2303,7 +2303,7 @@ exports[`SearchInput state and functions should update snapshots for search comp
           editable={true}
           iconName="search"
           iconTouchableEnabled={true}
-          id="snapshot_test"
+          id="test"
           inputRef={
             {
               "current": null,
@@ -2320,6 +2320,10 @@ exports[`SearchInput state and functions should update snapshots for search comp
           options={
             {
               "mask": "****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+              "translation": {
+                "*": [Function],
+              },
+              "validator": [Function],
             }
           }
           placeholderTextColor="#999999"
@@ -2334,7 +2338,7 @@ exports[`SearchInput state and functions should update snapshots for search comp
               {},
             ]
           }
-          testID="input_snapshot_test"
+          testID="test"
           type="custom"
           underlineColorAndroid="transparent"
           value=""

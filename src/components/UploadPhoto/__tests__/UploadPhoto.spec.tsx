@@ -1,8 +1,8 @@
 import React from 'react';
 import { launchImageLibrary } from 'react-native-image-picker';
-import { fireEvent, render } from '@testing-library/react-native';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
+import { fireEvent, render } from '@testing-library/react-native';
 import UploadPhoto from '..';
 import theme from '../../../theme';
 
@@ -249,7 +249,7 @@ describe('<UploadPhoto />', () => {
 
   it('should call onClearUpload when delete icon is pressed', () => {
     const onClearUpload = jest.fn();
-    const { getByTestId, UNSAFE_getByProps } = render(
+    const { UNSAFE_getByProps } = render(
       <ThemeProvider theme={theme}>
         <UploadPhoto
           id="testing"
@@ -262,7 +262,7 @@ describe('<UploadPhoto />', () => {
     );
 
     // Buscar pelo DeleteIconWrapper que contém o accessibility "Remover imagem"
-    const deleteButton = UNSAFE_getByProps({ accessibility: "Remover imagem" });
+    const deleteButton = UNSAFE_getByProps({ accessibility: 'Remover imagem' });
     fireEvent.press(deleteButton);
 
     expect(onClearUpload).toHaveBeenCalled();

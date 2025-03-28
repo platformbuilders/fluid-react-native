@@ -28,7 +28,7 @@ const mockData = [
 describe('<Accordion />', () => {
   it('should render Accordion', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -36,13 +36,13 @@ describe('<Accordion />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Accordion with title custom', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -53,13 +53,13 @@ describe('<Accordion />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Accordion with body custom', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -70,13 +70,13 @@ describe('<Accordion />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Accordion with header custom', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -89,13 +89,13 @@ describe('<Accordion />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Accordion with content custom', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -108,13 +108,13 @@ describe('<Accordion />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Accordion with icon', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -122,13 +122,13 @@ describe('<Accordion />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Accordion with icon up text custom', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -136,13 +136,13 @@ describe('<Accordion />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Accordion with icon down text custom', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -150,13 +150,13 @@ describe('<Accordion />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Accordion with icon color red', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -169,13 +169,13 @@ describe('<Accordion />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Accordion with icon color grey inactive', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -188,13 +188,13 @@ describe('<Accordion />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Accordion with markdown', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -202,13 +202,13 @@ describe('<Accordion />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render Accordion with onChange function', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -216,7 +216,7 @@ describe('<Accordion />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
@@ -231,7 +231,7 @@ describe('<Accordion />', () => {
 
     // Encontra o primeiro título e clica nele
     const firstTitle = getAllByText(MOCK_TITLE_1)[0];
-    
+
     act(() => {
       fireEvent.press(firstTitle);
     });
@@ -252,7 +252,7 @@ describe('<Accordion />', () => {
 
     // Clica no primeiro título
     const firstTitle = getAllByText(MOCK_TITLE_1)[0];
-    
+
     act(() => {
       fireEvent.press(firstTitle);
     });
@@ -270,7 +270,7 @@ describe('<Accordion />', () => {
 
     // Clica no primeiro título
     const firstTitle = getAllByText(MOCK_TITLE_1)[0];
-    
+
     act(() => {
       fireEvent.press(firstTitle);
     });
@@ -280,7 +280,7 @@ describe('<Accordion />', () => {
 
     // Clica no segundo título
     const secondTitle = getAllByText(MOCK_TITLE_2)[0];
-    
+
     act(() => {
       fireEvent.press(secondTitle);
     });
@@ -307,7 +307,7 @@ describe('<Accordion />', () => {
 
     // Clica no primeiro título
     const firstTitle = getAllByText(MOCK_TITLE_1)[0];
-    
+
     act(() => {
       fireEvent.press(firstTitle);
     });
@@ -327,7 +327,7 @@ describe('<Accordion />', () => {
       );
     }).not.toThrow();
   });
-  
+
   // Testes adicionais para aumentar cobertura
   it('should open and close the same section when clicked twice', async () => {
     const { getAllByText, queryAllByText } = render(
@@ -338,23 +338,23 @@ describe('<Accordion />', () => {
 
     // Clica no primeiro título para abrir
     const firstTitle = getAllByText(MOCK_TITLE_1)[0];
-    
+
     act(() => {
       fireEvent.press(firstTitle);
     });
 
     // Verifica se o conteúdo está visível
     expect(queryAllByText(MOCK_CONTENT_1).length).toBeGreaterThan(0);
-    
+
     // Nota: O comportamento padrão do componente Accordion do react-native-collapsible
     // não permite fechar a seção clicando novamente, então esse teste verifica apenas
     // a abertura da seção
   });
-  
+
   it('should check icon colors based on active/inactive state', () => {
     const activeColor = '#ff0000';
     const inactiveColor = '#0000ff';
-    
+
     const { getAllByText } = render(
       <ThemeProvider theme={theme}>
         <Accordion
@@ -365,18 +365,18 @@ describe('<Accordion />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // Clica no primeiro título para ativar
     const firstTitle = getAllByText(MOCK_TITLE_1)[0];
-    
+
     act(() => {
       fireEvent.press(firstTitle);
     });
-    
+
     // Verificação simplificada - verificamos apenas se a renderização foi bem-sucedida
     expect(firstTitle).toBeTruthy();
   });
-  
+
   it('should render markdown content when isMarkdown is true', () => {
     const markdownData = [
       {
@@ -384,20 +384,20 @@ describe('<Accordion />', () => {
         content: '**Bold Text**',
       },
     ];
-    
+
     const { getAllByText } = render(
       <ThemeProvider theme={theme}>
         <Accordion data={markdownData} isMarkdown />
       </ThemeProvider>,
     );
-    
+
     // Clica no título
     const title = getAllByText('Markdown Title')[0];
-    
+
     act(() => {
       fireEvent.press(title);
     });
-    
+
     // Verifica a presença do componente Markdown (verificado indiretamente)
     // Como o conteúdo real do Markdown é renderizado por uma biblioteca externa,
     // podemos apenas verificar se o comportamento geral está correto

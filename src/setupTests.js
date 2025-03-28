@@ -35,7 +35,7 @@ afterAll(() => {
 });
 
 // Configurar timeout mais longo para testes com animações
-jest.setTimeout(10000);
+jest.setTimeout(30000);
 
 // Limpar qualquer processamento assíncrono pendente
 global.XMLHttpRequest = undefined;

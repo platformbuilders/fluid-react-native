@@ -1,14 +1,14 @@
 import React, { FC, useState } from 'react';
-import { fireEvent, render } from 'react-native-testing-library';
 import renderer, { act } from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
+import { fireEvent, render } from '@testing-library/react-native';
 import theme from '../../../theme';
 import PasswordInput from '../PasswordInput';
 
 describe('<PasswordInput />', () => {
   it('should render PasswordInput', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -47,11 +47,11 @@ describe('<PasswordInput />', () => {
     await act(async () => {
       fireEvent.changeText(component, 'Value changed');
     });
-    
+
     await act(async () => {
       fireEvent(component, 'blur');
     });
-    
+
     await act(async () => {
       fireEvent(component, 'focus');
     });
@@ -80,25 +80,25 @@ describe('<PasswordInput />', () => {
     // Agora o ícone deve ser 'eye-slash'
     const eyeSlashIcon = getByTestId('icon_eye-slash');
     expect(eyeSlashIcon.props.accessibilityLabel).toBe('Eye-slash');
-    
+
     // Pressionar novamente para esconder a senha
     await act(async () => {
       fireEvent.press(eyeSlashIcon);
     });
-    
+
     // Ícone deve voltar para 'eye'
     const eyeIconAgain = getByTestId('icon_eye');
     expect(eyeIconAgain.props.accessibilityLabel).toBe('Eye');
   });
-  
+
   it('should render floating password input', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
-          <PasswordInput 
-            id="test-floating" 
+          <PasswordInput
+            id="test-floating"
             accessibility="floating-password"
             isFloating={true}
             label="Senha"
@@ -109,12 +109,12 @@ describe('<PasswordInput />', () => {
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
-  
+
   it('should toggle password visibility in floating input', async () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <PasswordInput 
-          id="floating-password" 
+        <PasswordInput
+          id="floating-password"
           accessibility="floating-password"
           isFloating={true}
           label="Senha"
@@ -135,14 +135,14 @@ describe('<PasswordInput />', () => {
     const eyeSlashIcon = getByTestId('icon_eye-slash');
     expect(eyeSlashIcon.props.accessibilityLabel).toBe('Eye-slash');
   });
-  
+
   it('should call onRightIconPress when provided', async () => {
     const onRightIconPress = jest.fn();
-    
+
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <PasswordInput 
-          id="password-with-custom-icon-press" 
+        <PasswordInput
+          id="password-with-custom-icon-press"
           accessibility="password-input"
           onRightIconPress={onRightIconPress}
         />
@@ -150,19 +150,19 @@ describe('<PasswordInput />', () => {
     );
 
     const eyeIcon = getByTestId('icon_eye');
-    
+
     await act(async () => {
       fireEvent.press(eyeIcon);
     });
-    
+
     // O PasswordInput usa tanto onPressIcon quanto onRightIconPress,
     // então precisamos verificar se ambos estão funcionando
     expect(onRightIconPress).toHaveBeenCalled();
-    
+
     // Verificar apenas que a função foi chamada, sem verificar a mudança de ícone
     // que pode ser instável nos testes
   });
-  
+
   it('should handle different custom icon hit slop values', async () => {
     const customHitSlop = {
       top: 30,
@@ -170,11 +170,11 @@ describe('<PasswordInput />', () => {
       bottom: 30,
       left: 30,
     };
-    
+
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <PasswordInput 
-          id="password-custom-hitslop" 
+        <PasswordInput
+          id="password-custom-hitslop"
           accessibility="password-input"
           iconHitSlop={customHitSlop}
         />
@@ -182,15 +182,15 @@ describe('<PasswordInput />', () => {
     );
 
     const eyeIcon = getByTestId('icon_eye');
-    
+
     // Verificar se o hitSlop foi passado corretamente
     expect(eyeIcon.parent?.props.hitSlop).toEqual(customHitSlop);
-    
+
     // Também testar funcionalidade
     await act(async () => {
       fireEvent.press(eyeIcon);
     });
-    
+
     const eyeSlashIcon = getByTestId('icon_eye-slash');
     expect(eyeSlashIcon).toBeTruthy();
   });

@@ -1,19 +1,21 @@
 import React from 'react';
-import { fireEvent, render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
+import { fireEvent, render } from '@testing-library/react-native';
 import RadioButton from '..';
-import { generateTestID } from '../../../utils/accessibility';
 import theme from '../../../theme';
+import { generateTestID } from '../../../utils/accessibility';
+
+const TEST_RADIO_ID = 'testing_radio_btn';
+const SELECT_INFO = 'Select information';
+const RADIO_PREFIX = 'radio';
+const TEST_ACCESSIBILITY = 'test';
 
 describe('<RadioButton />', () => {
   it('should render radio button component', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <RadioButton
-          id="testing_radio_btn"
-          accessibility="Select information"
-        />
+        <RadioButton id={TEST_RADIO_ID} accessibility={SELECT_INFO} />
       </ThemeProvider>,
     );
 
@@ -26,14 +28,14 @@ describe('<RadioButton />', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
         <RadioButton
-          id="testing_radio_btn"
+          id={TEST_RADIO_ID}
           accessibility="checkbox"
           onPress={onPressEvent}
         />
       </ThemeProvider>,
     );
 
-    const component = getByTestId('radio_testing_radio_btn');
+    const component = getByTestId(`${RADIO_PREFIX}_${TEST_RADIO_ID}`);
 
     fireEvent.press(component);
 
@@ -44,8 +46,8 @@ describe('<RadioButton />', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
         <RadioButton
-          id="testing_radio_btn"
-          accessibility="Select information"
+          id={TEST_RADIO_ID}
+          accessibility={SELECT_INFO}
           radioButtonColor="#3498db"
         />
       </ThemeProvider>,
@@ -58,8 +60,8 @@ describe('<RadioButton />', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
         <RadioButton
-          id="testing_radio_btn"
-          accessibility="Select information"
+          id={TEST_RADIO_ID}
+          accessibility={SELECT_INFO}
           checkedRadioButtonColor="#2ecc71"
         />
       </ThemeProvider>,
@@ -71,11 +73,7 @@ describe('<RadioButton />', () => {
   it('should render radio button component with custom size', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <RadioButton
-          id="testing_radio_btn"
-          accessibility="Select information"
-          size={24}
-        />
+        <RadioButton id={TEST_RADIO_ID} accessibility={SELECT_INFO} size={24} />
       </ThemeProvider>,
     );
 
@@ -86,8 +84,8 @@ describe('<RadioButton />', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
         <RadioButton
-          id="testing_radio_btn"
-          accessibility="Select information"
+          id={TEST_RADIO_ID}
+          accessibility={SELECT_INFO}
           internalSize={24}
         />
       </ThemeProvider>,
@@ -99,11 +97,7 @@ describe('<RadioButton />', () => {
   it('should render radio button component with custom checked', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <RadioButton
-          id="testing_radio_btn"
-          accessibility="Select information"
-          checked
-        />
+        <RadioButton id={TEST_RADIO_ID} accessibility={SELECT_INFO} checked />
       </ThemeProvider>,
     );
 
@@ -114,9 +108,9 @@ describe('<RadioButton />', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
         <RadioButton
-          id="testing_radio_btn"
-          accessibility="Select information"
-          label="Select information"
+          id={TEST_RADIO_ID}
+          accessibility={SELECT_INFO}
+          label={SELECT_INFO}
           checked
         />
       </ThemeProvider>,
@@ -129,9 +123,9 @@ describe('<RadioButton />', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
         <RadioButton
-          id="testing_radio_btn"
-          accessibility="Select information"
-          label="Select information"
+          id={TEST_RADIO_ID}
+          accessibility={SELECT_INFO}
+          label={SELECT_INFO}
         />
       </ThemeProvider>,
     );
@@ -142,49 +136,47 @@ describe('<RadioButton />', () => {
   it('should render radio button component with proper testID when ID is provided', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <RadioButton
-          id="custom-radio"
-          accessibility="Select information"
-        />
+        <RadioButton id="custom-radio" accessibility={SELECT_INFO} />
       </ThemeProvider>,
     );
 
-    expect(getByTestId(generateTestID('radio', 'custom-radio'))).toBeTruthy();
+    expect(
+      getByTestId(generateTestID(RADIO_PREFIX, 'custom-radio')),
+    ).toBeTruthy();
   });
 
   it('should render radio button component with proper testID when only accessibility is provided', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <RadioButton
-          accessibility="accessibility-radio"
-        />
+        <RadioButton accessibility="accessibility-radio" />
       </ThemeProvider>,
     );
 
-    expect(getByTestId(generateTestID('radio', 'accessibility-radio'))).toBeTruthy();
+    expect(
+      getByTestId(generateTestID(RADIO_PREFIX, 'accessibility-radio')),
+    ).toBeTruthy();
   });
 
   it('should render radio button component with proper testID when only testID is provided', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <RadioButton
-          testID="test-radio"
-          accessibility="test"
-        />
+        <RadioButton testID="test-radio" accessibility={TEST_ACCESSIBILITY} />
       </ThemeProvider>,
     );
 
-    expect(getByTestId('radio_test')).toBeTruthy();
+    expect(getByTestId(`${RADIO_PREFIX}_${TEST_ACCESSIBILITY}`)).toBeTruthy();
   });
 
   it('should render radio button component with default testID when no id is provided', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <RadioButton accessibility="test" />
+        <RadioButton accessibility={TEST_ACCESSIBILITY} />
       </ThemeProvider>,
     );
 
-    expect(getByTestId(generateTestID('radio', 'test'))).toBeTruthy();
+    expect(
+      getByTestId(generateTestID(RADIO_PREFIX, TEST_ACCESSIBILITY)),
+    ).toBeTruthy();
   });
 
   it('should handle accessibility correctly when checked is true', () => {
@@ -246,7 +238,7 @@ describe('<RadioButton />', () => {
       </ThemeProvider>,
     );
 
-    const component = getByTestId('radio_testing_radio_btn');
+    const component = getByTestId(`${RADIO_PREFIX}_${TEST_RADIO_ID}`);
     fireEvent.press(component);
 
     expect(onPressEvent).not.toHaveBeenCalled();
@@ -254,7 +246,7 @@ describe('<RadioButton />', () => {
 
   it('should render correctly with custom labelStyle', () => {
     const customLabelStyle = { color: 'red', fontSize: 18 };
-    
+
     const { getByText } = render(
       <ThemeProvider theme={theme}>
         <RadioButton
@@ -282,21 +274,22 @@ describe('<RadioButton />', () => {
     );
 
     const radioButton = getByTestId('radio_test-radio');
-    expect(radioButton.props.accessibilityHint).toBe('Test Label pode ser selecionado com um toque');
+    expect(radioButton.props.accessibilityHint).toBe(
+      'Test Label pode ser selecionado com um toque',
+    );
   });
 
   it('should apply default accessibilityHint when label is not provided', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <RadioButton
-          id="test-radio"
-          accessibility="accessibility test"
-        />
+        <RadioButton id="test-radio" accessibility="accessibility test" />
       </ThemeProvider>,
     );
 
     const radioButton = getByTestId('radio_test-radio');
-    expect(radioButton.props.accessibilityHint).toBe('Esta opção pode ser selecionada com um toque');
+    expect(radioButton.props.accessibilityHint).toBe(
+      'Esta opção pode ser selecionada com um toque',
+    );
   });
 
   it('should use label as default accessibilityLabel when accessibilityLabel is not provided', () => {
@@ -317,10 +310,7 @@ describe('<RadioButton />', () => {
   it('should use "Botão de opção" as default accessibilityLabel when neither label nor accessibilityLabel are provided', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <RadioButton
-          id="test-radio"
-          accessibility="accessibility test"
-        />
+        <RadioButton id="test-radio" accessibility="accessibility test" />
       </ThemeProvider>,
     );
 
@@ -331,15 +321,17 @@ describe('<RadioButton />', () => {
   it('should apply hitSlop for better touch area', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <RadioButton
-          id="test-radio"
-          accessibility="accessibility test"
-        />
+        <RadioButton id="test-radio" accessibility="accessibility test" />
       </ThemeProvider>,
     );
 
     const radioButton = getByTestId('radio_test-radio');
-    expect(radioButton.props.hitSlop).toEqual({ top: 10, bottom: 10, left: 10, right: 10 });
+    expect(radioButton.props.hitSlop).toEqual({
+      top: 10,
+      bottom: 10,
+      left: 10,
+      right: 10,
+    });
   });
 
   it('should render radio button component with both custom size and internal size', () => {
@@ -418,7 +410,7 @@ describe('<RadioButton />', () => {
 
     const radioButton = getByTestId('radio_test-radio');
     fireEvent.press(radioButton);
-    
+
     expect(onPressMock).toHaveBeenCalledTimes(1);
   });
 
@@ -438,22 +430,19 @@ describe('<RadioButton />', () => {
 
     const radioButton = getByTestId('radio_test-radio');
     fireEvent.press(radioButton);
-    
+
     expect(onPressMock).not.toHaveBeenCalled();
   });
 
   it('should render correctly when onPress is not provided', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <RadioButton
-          id="test-radio"
-          accessibility="accessibility test"
-        />
+        <RadioButton id="test-radio" accessibility="accessibility test" />
       </ThemeProvider>,
     );
 
     const radioButton = getByTestId('radio_test-radio');
-    
+
     expect(() => {
       fireEvent.press(radioButton);
     }).not.toThrow();
@@ -461,21 +450,18 @@ describe('<RadioButton />', () => {
 
   it('should render correctly with default onPress implementation when not provided', () => {
     const consoleSpy = jest.spyOn(console, 'error');
-    
+
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <RadioButton
-          id="test-radio"
-          accessibility="accessibility test"
-        />
+        <RadioButton id="test-radio" accessibility="accessibility test" />
       </ThemeProvider>,
     );
 
     const radioButton = getByTestId('radio_test-radio');
     fireEvent.press(radioButton);
-    
+
     expect(consoleSpy).not.toHaveBeenCalled();
-    
+
     consoleSpy.mockRestore();
   });
 });

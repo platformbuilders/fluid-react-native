@@ -5,8 +5,8 @@ import { useAutoFocus, usePrevious } from '../hooks';
 // Mock do InteractionManager
 jest.mock('react-native', () => ({
   InteractionManager: {
-    runAfterInteractions: jest.fn((callback) => {
-      if (callback) callback();
+    runAfterInteractions: jest.fn().mockImplementation(async (callback) => {
+      if (callback) await callback();
       return { cancel: jest.fn() };
     }),
   },

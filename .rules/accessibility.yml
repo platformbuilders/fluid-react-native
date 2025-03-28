@@ -88,7 +88,7 @@ rules:
     message: 'Não transmita informações exclusivamente por cores. Inclua texto ou ícones para reforçar o significado.'
     severity: WARNING
     patterns:
-      - pattern-regex: "colorVariant=\\{(\"|\')warning(\"|\')\\}[^>]*(?!.*leftIconName|.*rightIconName).*>"
+      - pattern-regex: "colorVariant=\\{([\"'])warning([\"'])\\}[^>]*(?!.*leftIconName|.*rightIconName).*>"
     paths:
       exclude:
         - '*.json'
@@ -103,7 +103,7 @@ rules:
     message: 'Prefira usar a propriedade contrast=true quando texto for exibido sobre fundos escuros ou coloridos.'
     severity: WARNING
     patterns:
-      - pattern-regex: "(backgroundColor:\\s?(\\${getTheme\\('primary|secondary|tertiary|dark|black'\\)})|(background-color:\\s?(\\${getTheme\\('primary|secondary|tertiary|dark|black'\\)}))"
+      - pattern-regex: "(backgroundColor:\\s?(\\${getTheme\\('primary|secondary|tertiary|dark|black'\\)}))|(background-color:\\s?(\\${getTheme\\('primary|secondary|tertiary|dark|black'\\)}))"
     paths:
       exclude:
         - '*.json'

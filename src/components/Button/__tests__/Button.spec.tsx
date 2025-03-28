@@ -13,7 +13,7 @@ const ACCESSIBILITY = '';
 describe('<Button />', () => {
   it('should render button', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -27,7 +27,7 @@ describe('<Button />', () => {
 
   it('should render button when rounded', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -41,7 +41,7 @@ describe('<Button />', () => {
 
   it('should render button with loading', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -74,7 +74,7 @@ describe('<Button />', () => {
 
   it('should render button with children', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -90,7 +90,7 @@ describe('<Button />', () => {
 
   it('should render button with custom accessibility label', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -108,7 +108,7 @@ describe('<Button />', () => {
 
   it('should render button with test id', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -122,7 +122,7 @@ describe('<Button />', () => {
 
   it('should render button with custom style', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -140,7 +140,7 @@ describe('<Button />', () => {
 
   it('should render button with custom text style', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -177,7 +177,7 @@ describe('<Button />', () => {
 
   it('should render button with contrast', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -191,7 +191,7 @@ describe('<Button />', () => {
 
   it('should render button with variant', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -210,7 +210,7 @@ describe('<Button />', () => {
 
   it('should render button with typography variant', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -229,7 +229,7 @@ describe('<Button />', () => {
   // Novos testes para aumentar a cobertura
   it('should render button with left icon', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -247,7 +247,7 @@ describe('<Button />', () => {
 
   it('should render button with right icon', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -265,7 +265,7 @@ describe('<Button />', () => {
 
   it('should render button with both left and right icons', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -284,7 +284,7 @@ describe('<Button />', () => {
 
   it('should render button with left icon not touchable', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -303,7 +303,7 @@ describe('<Button />', () => {
 
   it('should render button with right icon not touchable', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -322,7 +322,7 @@ describe('<Button />', () => {
 
   it('should render button with flat style', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -336,11 +336,15 @@ describe('<Button />', () => {
 
   it('should render button with outline variant', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
-          <Button id={TEST_ID} accessibility={ACCESSIBILITY} variant="outline" />
+          <Button
+            id={TEST_ID}
+            accessibility={ACCESSIBILITY}
+            variant="outline"
+          />
         </ThemeProvider>,
       );
     });
@@ -350,7 +354,7 @@ describe('<Button />', () => {
 
   it('should render button with secondary color variant', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -368,7 +372,7 @@ describe('<Button />', () => {
 
   it('should render button with min width', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -382,7 +386,7 @@ describe('<Button />', () => {
 
   it('should render button with max width', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -453,52 +457,50 @@ describe('<Button />', () => {
     const button = getByTestId('button_test-button');
     expect(button).toBeDefined();
   });
-  
+
   // Testes adicionais para melhorar a cobertura
   it('should use testID as fallback when id and accessibility are not provided', () => {
-    const customTestId = "custom-test-id";
-    
+    const customTestId = 'custom-test-id';
+
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
         <Button testID={customTestId} accessibility="" />
       </ThemeProvider>,
     );
-    
+
     const button = getByTestId('button_' + customTestId);
     expect(button).toBeDefined();
   });
-  
+
   it('should use default testID pattern when id, accessibility and testID are not provided', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
         <Button accessibility="" />
       </ThemeProvider>,
     );
-    
+
     const button = getByTestId('button_button');
     expect(button).toBeDefined();
   });
-  
+
   it('should use children text as accessibility label when provided as string', () => {
-    const buttonText = "Submit Form";
-    
+    const buttonText = 'Submit Form';
+
     const { getByText, getByRole } = render(
       <ThemeProvider theme={theme}>
-        <Button accessibility="">
-          {buttonText}
-        </Button>
+        <Button accessibility="">{buttonText}</Button>
       </ThemeProvider>,
     );
-    
+
     expect(getByText(buttonText)).toBeDefined();
     const button = getByRole('button');
     expect(button.props.accessibilityLabel).toBe(buttonText);
   });
-  
+
   it('should use accessibilityLabel over children when both are provided', () => {
-    const buttonText = "Submit";
-    const accessibilityLabel = "Submit Form";
-    
+    const buttonText = 'Submit';
+    const accessibilityLabel = 'Submit Form';
+
     const { getByText, getByRole } = render(
       <ThemeProvider theme={theme}>
         <Button accessibility="" accessibilityLabel={accessibilityLabel}>
@@ -506,31 +508,26 @@ describe('<Button />', () => {
         </Button>
       </ThemeProvider>,
     );
-    
+
     expect(getByText(buttonText)).toBeDefined();
     const button = getByRole('button');
     expect(button.props.accessibilityLabel).toBe(accessibilityLabel);
   });
-  
+
   it('should render with contrast and loading simultaneously', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
-          <Button 
-            id={TEST_ID} 
-            accessibility={ACCESSIBILITY} 
-            contrast
-            loading
-          />
+          <Button id={TEST_ID} accessibility={ACCESSIBILITY} contrast loading />
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
-  
+
   it('should set correct accessibilityStates for disabled and loading buttons', () => {
     const { getByRole: getDisabledButton } = render(
       <ThemeProvider theme={theme}>
@@ -539,7 +536,7 @@ describe('<Button />', () => {
         </Button>
       </ThemeProvider>,
     );
-    
+
     const { getByRole: getLoadingButton } = render(
       <ThemeProvider theme={theme}>
         <Button loading accessibility="">
@@ -547,10 +544,10 @@ describe('<Button />', () => {
         </Button>
       </ThemeProvider>,
     );
-    
+
     const disabledButton = getDisabledButton('button');
     const loadingButton = getLoadingButton('button');
-    
+
     expect(disabledButton.props.accessibilityState.disabled).toBe(true);
     expect(loadingButton.props.accessibilityState.disabled).toBe(true);
     expect(loadingButton.props.accessibilityState.busy).toBe(true);

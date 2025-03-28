@@ -12,7 +12,7 @@ const ACCESSIBILITY = 'test-accessibility';
 describe('<Link />', () => {
   it('should render with default props', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -28,7 +28,7 @@ describe('<Link />', () => {
 
   it('should render with custom variant', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -44,7 +44,7 @@ describe('<Link />', () => {
 
   it('should render with custom accessibility label', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -64,7 +64,7 @@ describe('<Link />', () => {
 
   it('should render with custom test ID', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -94,7 +94,7 @@ describe('<Link />', () => {
     );
 
     const component = getByTestId(TEST_ID);
-    
+
     act(() => {
       fireEvent.press(component);
     });
@@ -104,7 +104,7 @@ describe('<Link />', () => {
 
   it('should render with custom style', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -124,7 +124,7 @@ describe('<Link />', () => {
 
   it('should render without id but with accessibility', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -137,18 +137,18 @@ describe('<Link />', () => {
   });
 
   // Testes adicionais para aumentar a cobertura
-  
+
   it('should render with accessibility as testID when neither id nor testID are provided', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
         <Link accessibility={ACCESSIBILITY}>Test Link</Link>
       </ThemeProvider>,
     );
-    
+
     const link = getByTestId(ACCESSIBILITY);
     expect(link).toBeTruthy();
   });
-  
+
   it('should render text with proper testID derived from id', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
@@ -157,12 +157,12 @@ describe('<Link />', () => {
         </Link>
       </ThemeProvider>,
     );
-    
+
     const text = getByTestId(`text_${TEST_ID}`);
     expect(text).toBeTruthy();
     expect(text.props.children).toBe('Test Link');
   });
-  
+
   it('should use accessibility as accessibilityLabel when not provided', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
@@ -171,19 +171,19 @@ describe('<Link />', () => {
         </Link>
       </ThemeProvider>,
     );
-    
+
     const link = getByTestId(TEST_ID);
     expect(link.props.accessibilityLabel).toBe(ACCESSIBILITY);
   });
-  
+
   it('should pass additional props to Touchable component', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
-          <Link 
-            id={TEST_ID} 
+          <Link
+            id={TEST_ID}
             accessibility={ACCESSIBILITY}
             disabled={true}
             haptic="impactLight"
@@ -193,19 +193,17 @@ describe('<Link />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
-  
+
   it('should handle undefined id gracefully', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <Link accessibility={ACCESSIBILITY}>
-          Test Link
-        </Link>
+        <Link accessibility={ACCESSIBILITY}>Test Link</Link>
       </ThemeProvider>,
     );
-    
+
     const link = getByTestId(ACCESSIBILITY);
     expect(link).toBeTruthy();
   });

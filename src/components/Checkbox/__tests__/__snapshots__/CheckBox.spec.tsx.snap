@@ -1,5 +1,118 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<CheckBox /> should handle disabled state correctly 1`] = `
+<View
+  accessibilityHint="Marcar ou desmarcar "
+  accessibilityLabel="checbox de "
+  accessibilityRole="checkbox"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": false,
+      "disabled": false,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "opacity": 1,
+    }
+  }
+  testID="checkbox_testing"
+>
+  <View
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {},
+        {
+          "marginBottom": 0,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Image
+        source={
+          {
+            "testUri": "../../react-native-check-box/img/ic_check_box_outline_blank.png",
+          }
+        }
+        style={
+          {
+            "tintColor": "#42CCD4",
+          }
+        }
+      />
+    </View>
+  </View>
+  <Text
+    accessibilityLabel=""
+    lineHeightVariant="min"
+    style={
+      [
+        {
+          "color": "#444444",
+          "fontSize": 15,
+          "lineHeight": 18,
+        },
+        {
+          "color": "#444444",
+          "flexDirection": "row",
+          "marginLeft": 8,
+          "opacity": 0.8,
+        },
+      ]
+    }
+    variant="md"
+  />
+</View>
+`;
+
 exports[`<CheckBox /> should render checkbox component 1`] = `
 <View
   accessibilityHint="Marcar ou desmarcar "

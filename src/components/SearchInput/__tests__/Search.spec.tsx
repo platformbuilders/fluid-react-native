@@ -555,8 +555,7 @@ describe('<Search />', () => {
       </ThemeProvider>,
     );
 
-    const input = getByTestId(TEST_ID);
-    const searchComponent = getByTestId(`${SEARCH_PREFIX}_${TEST_ID}`);
+    const searchComponent = getByTestId(TEST_ID);
     
     // Acessar o Input dentro do Search
     const inputComponent = searchComponent.props.children;
@@ -638,8 +637,7 @@ describe('<Search />', () => {
       </ThemeProvider>,
     );
 
-    const input = getByTestId(TEST_ID);
-    const searchComponent = getByTestId(`${SEARCH_PREFIX}_${TEST_ID}`);
+    const searchComponent = getByTestId(TEST_ID);
     
     // Acessar o Input dentro do Search
     const inputComponent = searchComponent.props.children;
@@ -677,7 +675,7 @@ describe('<Search />', () => {
     );
     
     // Verificar que o componente renderizou corretamente
-    const searchComponent = getByTestId(`${SEARCH_PREFIX}_${TEST_ID}`);
+    const searchComponent = getByTestId(TEST_ID);
     expect(searchComponent).toBeDefined();
     
     // Verificar que o onRightIconPress está sendo passado para o Input

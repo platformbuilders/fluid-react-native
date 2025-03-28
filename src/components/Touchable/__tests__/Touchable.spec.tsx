@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, TouchableOpacityProps } from 'react-native';
+import { Text, TouchableOpacityProps, View } from 'react-native';
 import Haptic from 'react-native-haptic-feedback';
 import renderer, { act } from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';

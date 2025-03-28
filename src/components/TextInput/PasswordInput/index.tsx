@@ -17,7 +17,8 @@ const PasswordInput: FC<TextInputType> = (props) => {
   }, [hidePassword]);
 
   // Gerar testID especial para testes
-  const testIDForTests = props.id === 'testing_passwordInput' ? 'testing_passwordInput' : undefined;
+  const testIDForTests =
+    props.id === 'testing_passwordInput' ? 'testing_passwordInput' : undefined;
 
   return props.isFloating ? (
     <TextInputFloating

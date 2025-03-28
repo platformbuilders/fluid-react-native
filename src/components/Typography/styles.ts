@@ -1,15 +1,15 @@
 import { Animated, TextProps, TextStyle } from 'react-native';
 import styled from 'styled-components/native';
 import {
+  TypographyVariants,
   getFontSize,
   getLineHeight,
   getTheme,
-  TypographyVariants,
 } from '@platformbuilders/theme-toolkit';
 import { TextVariant } from '../../enums';
 
 export interface StyledTextProps extends TextProps {
-  variant?: TypographyVariants | TextVariant | 'normal' | 'animated';
+  variant?: TypographyVariants | TextVariant;
   weight?: string;
   align?: string;
   color?: string;

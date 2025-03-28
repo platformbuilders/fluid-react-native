@@ -1,96 +1,107 @@
-import { 
-  generateAccessibilityProps, 
-  generateTestID, 
-  generateAccessibleHitSlop 
+import {
+  generateAccessibilityProps,
+  generateAccessibleHitSlop,
+  generateTestID,
 } from '../accessibility';
+
+const TEST_ID = 'test-id';
+const TEST_ACCESSIBILITY = 'test-accessibility';
+const BUTTON_TYPE = 'button';
+const DEFAULT_LABEL = 'Default Label';
+const BUTTON_PREFIX = 'button';
+const SUBMIT_ID = 'submit';
 
 describe('Accessibility Utils', () => {
   describe('generateTestID', () => {
     it('should generate testID with prefix and id', () => {
-      expect(generateTestID('button', 'submit')).toBe('button_submit');
+      expect(generateTestID(BUTTON_PREFIX, SUBMIT_ID)).toBe(
+        `${BUTTON_PREFIX}_${SUBMIT_ID}`,
+      );
     });
 
     it('should generate testID with only prefix when id is not provided', () => {
-      expect(generateTestID('button')).toBe('button');
+      expect(generateTestID(BUTTON_PREFIX)).toBe(BUTTON_PREFIX);
     });
 
     it('should handle empty prefix correctly', () => {
-      expect(generateTestID('', 'submit')).toBe('_submit');
+      expect(generateTestID('', SUBMIT_ID)).toBe(`_${SUBMIT_ID}`);
     });
 
     it('should handle empty id correctly', () => {
-      expect(generateTestID('button', '')).toBe('button');
+      expect(generateTestID(BUTTON_PREFIX, '')).toBe(BUTTON_PREFIX);
     });
 
     it('should handle undefined id correctly', () => {
-      expect(generateTestID('button', undefined)).toBe('button');
+      expect(generateTestID(BUTTON_PREFIX, undefined)).toBe(BUTTON_PREFIX);
     });
 
     it('should handle numeric id correctly', () => {
-      expect(generateTestID('button', '123')).toBe('button_123');
+      expect(generateTestID(BUTTON_PREFIX, '123')).toBe(`${BUTTON_PREFIX}_123`);
     });
 
     it('should handle special characters in id correctly', () => {
-      expect(generateTestID('button', 'special@#$')).toBe('button_special@#$');
+      expect(generateTestID(BUTTON_PREFIX, 'special@#$')).toBe(
+        `${BUTTON_PREFIX}_special@#$`,
+      );
     });
   });
 
   describe('generateAccessibilityProps', () => {
     it('should generate accessibility props with all parameters', () => {
       const props = {
-        id: 'test-id',
-        accessibility: 'test-accessibility',
+        id: TEST_ID,
+        accessibility: TEST_ACCESSIBILITY,
         accessibilityLabel: 'Custom Label',
         checked: true,
         disabled: true,
-        busy: true
+        busy: true,
       };
-      
+
       const result = generateAccessibilityProps(
         props,
-        'button',
-        'Default Label',
-        'This is a hint'
+        BUTTON_TYPE,
+        DEFAULT_LABEL,
+        'This is a hint',
       );
 
       expect(result).toEqual({
         accessible: true,
         accessibilityLabel: 'Custom Label',
-        accessibilityRole: 'button',
+        accessibilityRole: BUTTON_TYPE,
         accessibilityState: {
           checked: true,
           disabled: true,
-          busy: true
+          busy: true,
         },
-        accessibilityHint: 'This is a hint'
+        accessibilityHint: 'This is a hint',
       });
     });
 
     it('should use default label when accessibilityLabel is not provided', () => {
       const props = {
-        id: 'test-id',
-        accessibility: 'test-accessibility',
+        id: TEST_ID,
+        accessibility: TEST_ACCESSIBILITY,
       };
-      
+
       const result = generateAccessibilityProps(
         props,
-        'button',
-        'Default Label'
+        BUTTON_TYPE,
+        DEFAULT_LABEL,
       );
 
-      expect(result.accessibilityLabel).toBe('Default Label');
+      expect(result.accessibilityLabel).toBe(DEFAULT_LABEL);
     });
 
     it('should not include accessibilityHint when hint is not provided', () => {
       const props = {
-        id: 'test-id',
-        accessibility: 'test-accessibility',
+        id: TEST_ID,
+        accessibility: TEST_ACCESSIBILITY,
       };
-      
+
       const result = generateAccessibilityProps(
         props,
-        'button',
-        'Default Label'
+        BUTTON_TYPE,
+        DEFAULT_LABEL,
       );
 
       expect(result.accessibilityHint).toBeUndefined();
@@ -98,15 +109,15 @@ describe('Accessibility Utils', () => {
 
     it('should handle undefined checked value correctly', () => {
       const props = {
-        id: 'test-id',
-        accessibility: 'test-accessibility',
+        id: TEST_ID,
+        accessibility: TEST_ACCESSIBILITY,
         checked: undefined,
       };
-      
+
       const result = generateAccessibilityProps(
         props,
-        'checkbox',
-        'Default Label'
+        BUTTON_TYPE,
+        DEFAULT_LABEL,
       );
 
       expect(result.accessibilityState.checked).toBeUndefined();
@@ -114,50 +125,50 @@ describe('Accessibility Utils', () => {
 
     it('should handle undefined state values correctly', () => {
       const props = {
-        id: 'test-id',
-        accessibility: 'test-accessibility',
+        id: TEST_ID,
+        accessibility: TEST_ACCESSIBILITY,
       };
-      
+
       const result = generateAccessibilityProps(
         props,
-        'button',
-        'Default Label'
+        BUTTON_TYPE,
+        DEFAULT_LABEL,
       );
 
       expect(result.accessibilityState).toEqual({
         checked: undefined,
         disabled: undefined,
-        busy: undefined
+        busy: undefined,
       });
     });
 
     it('should handle empty accessibilityLabel correctly', () => {
       const props = {
-        id: 'test-id',
-        accessibility: 'test-accessibility',
+        id: TEST_ID,
+        accessibility: TEST_ACCESSIBILITY,
         accessibilityLabel: '',
       };
-      
+
       const result = generateAccessibilityProps(
         props,
-        'button',
-        'Default Label'
+        BUTTON_TYPE,
+        DEFAULT_LABEL,
       );
 
-      expect(result.accessibilityLabel).toBe('Default Label');
+      expect(result.accessibilityLabel).toBe(DEFAULT_LABEL);
     });
 
     it('should handle empty hint correctly', () => {
       const props = {
-        id: 'test-id',
-        accessibility: 'test-accessibility',
+        id: TEST_ID,
+        accessibility: TEST_ACCESSIBILITY,
       };
-      
+
       const result = generateAccessibilityProps(
         props,
-        'button',
-        'Default Label',
-        ''
+        BUTTON_TYPE,
+        DEFAULT_LABEL,
+        '',
       );
 
       expect(result.accessibilityHint).toBeUndefined();
@@ -165,14 +176,36 @@ describe('Accessibility Utils', () => {
 
     it('should work with all possible accessibility roles', () => {
       const roles: Array<Parameters<typeof generateAccessibilityProps>[1]> = [
-        'adjustable', 'button', 'checkbox', 'combobox', 'header', 'image', 
-        'imagebutton', 'keyboardkey', 'link', 'menu', 'menubar', 'menuitem', 
-        'none', 'progressbar', 'radio', 'radiogroup', 'scrollbar', 'search', 
-        'spinbutton', 'summary', 'switch', 'tab', 'tabbar', 'tablist', 'text', 
-        'timer', 'toolbar'
+        'adjustable',
+        'button',
+        'checkbox',
+        'combobox',
+        'header',
+        'image',
+        'imagebutton',
+        'keyboardkey',
+        'link',
+        'menu',
+        'menubar',
+        'menuitem',
+        'none',
+        'progressbar',
+        'radio',
+        'radiogroup',
+        'scrollbar',
+        'search',
+        'spinbutton',
+        'summary',
+        'switch',
+        'tab',
+        'tabbar',
+        'tablist',
+        'text',
+        'timer',
+        'toolbar',
       ];
-      
-      roles.forEach(role => {
+
+      roles.forEach((role) => {
         const result = generateAccessibilityProps({}, role);
         expect(result.accessibilityRole).toBe(role);
       });
@@ -186,7 +219,7 @@ describe('Accessibility Utils', () => {
         top: 0,
         bottom: 0,
         left: 0,
-        right: 0
+        right: 0,
       });
     });
 
@@ -196,7 +229,7 @@ describe('Accessibility Utils', () => {
         top: 10,
         bottom: 10,
         left: 10,
-        right: 10
+        right: 10,
       });
     });
 
@@ -206,7 +239,7 @@ describe('Accessibility Utils', () => {
         top: 10,
         bottom: 10,
         left: 10,
-        right: 10
+        right: 10,
       });
     });
 
@@ -216,7 +249,7 @@ describe('Accessibility Utils', () => {
         top: 22,
         bottom: 22,
         left: 22,
-        right: 22
+        right: 22,
       });
     });
 
@@ -226,7 +259,7 @@ describe('Accessibility Utils', () => {
         top: 0,
         bottom: 0,
         left: 0,
-        right: 0
+        right: 0,
       });
     });
 
@@ -236,7 +269,7 @@ describe('Accessibility Utils', () => {
         top: 27,
         bottom: 27,
         left: 27,
-        right: 27
+        right: 27,
       });
     });
 
@@ -246,7 +279,7 @@ describe('Accessibility Utils', () => {
         top: 10,
         bottom: 10,
         left: 10,
-        right: 10
+        right: 10,
       });
     });
 
@@ -256,8 +289,8 @@ describe('Accessibility Utils', () => {
         top: 6,
         bottom: 6,
         left: 6,
-        right: 6
+        right: 6,
       });
     });
   });
-}); 
+});

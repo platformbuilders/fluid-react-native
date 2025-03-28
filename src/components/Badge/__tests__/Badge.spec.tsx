@@ -13,7 +13,7 @@ const ACCESSIBILITY = '';
 describe('<Badge />', () => {
   it('should render Badge', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -27,7 +27,7 @@ describe('<Badge />', () => {
 
   it('should render Badge when rounded', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -41,7 +41,7 @@ describe('<Badge />', () => {
 
   it('should render Badge with loading', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -77,7 +77,7 @@ describe('<Badge />', () => {
 
   it('should render Badge with children', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -93,7 +93,7 @@ describe('<Badge />', () => {
 
   it('should render Badge with custom accessibility label', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -111,7 +111,7 @@ describe('<Badge />', () => {
 
   it('should render Badge with test id', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -125,7 +125,7 @@ describe('<Badge />', () => {
 
   it('should render Badge with custom style', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -143,7 +143,7 @@ describe('<Badge />', () => {
 
   it('should render Badge with custom text style', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -161,7 +161,7 @@ describe('<Badge />', () => {
 
   it('should render Badge with disabled', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -175,7 +175,7 @@ describe('<Badge />', () => {
 
   it('should render Badge with contrast', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -189,11 +189,15 @@ describe('<Badge />', () => {
 
   it('should render Badge with variant', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
-          <Badge id={TEST_ID} accessibility={ACCESSIBILITY} variant="secondary" />
+          <Badge
+            id={TEST_ID}
+            accessibility={ACCESSIBILITY}
+            variant="secondary"
+          />
         </ThemeProvider>,
       );
     });
@@ -204,7 +208,7 @@ describe('<Badge />', () => {
   // Novos testes para aumentar a cobertura
   it('should render Badge with left icon', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -222,7 +226,7 @@ describe('<Badge />', () => {
 
   it('should render Badge with right icon', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -240,7 +244,7 @@ describe('<Badge />', () => {
 
   it('should render Badge with both left and right icons', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -259,7 +263,7 @@ describe('<Badge />', () => {
 
   it('should render Badge with custom icon style', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -278,7 +282,7 @@ describe('<Badge />', () => {
 
   it('should render Badge with emoji icon', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -297,7 +301,7 @@ describe('<Badge />', () => {
 
   it('should render Badge with touchable icon', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -316,7 +320,7 @@ describe('<Badge />', () => {
 
   it('should render Badge with border', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -330,7 +334,7 @@ describe('<Badge />', () => {
 
   it('should render Badge with flat style', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -344,7 +348,7 @@ describe('<Badge />', () => {
 
   it('should render Badge with custom typography variant', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -399,75 +403,59 @@ describe('<Badge />', () => {
 
     expect(onPressEvent).not.toHaveBeenCalled();
   });
-  
+
   // Testes adicionais para cobrir branches específicas
   it('should use accessibility as id when id is not provided', () => {
-    const customAccessibility = "custom-accessibility";
-    
+    const customAccessibility = 'custom-accessibility';
+
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <Badge 
-          accessibility={customAccessibility}
-        />
-      </ThemeProvider>
+        <Badge accessibility={customAccessibility} />
+      </ThemeProvider>,
     );
-    
+
     const component = getByTestId(customAccessibility);
     expect(component).toBeTruthy();
   });
-  
+
   it('should use accessibility as accessibilityLabel when accessibilityLabel is not provided', () => {
-    const customAccessibility = "accessibility-label-test";
-    
+    const customAccessibility = 'accessibility-label-test';
+
     const { queryByText } = render(
       <ThemeProvider theme={theme}>
-        <Badge 
-          accessibility={customAccessibility}
-        >
-          Test Text
-        </Badge>
-      </ThemeProvider>
+        <Badge accessibility={customAccessibility}>Test Text</Badge>
+      </ThemeProvider>,
     );
-    
+
     // Verificamos que o componente foi renderizado corretamente
     expect(queryByText('Test Text')).toBeTruthy();
   });
-  
+
   it('should render with disabled and loading simultaneously', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
-          <Badge 
-            id={TEST_ID} 
-            accessibility={ACCESSIBILITY} 
-            disabled
-            loading
-          />
+          <Badge id={TEST_ID} accessibility={ACCESSIBILITY} disabled loading />
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
-  
+
   it('should render with disabled and flat simultaneously', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
-          <Badge 
-            id={TEST_ID} 
-            accessibility={ACCESSIBILITY} 
-            disabled
-            flat
-          />
+          <Badge id={TEST_ID} accessibility={ACCESSIBILITY} disabled flat />
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 });

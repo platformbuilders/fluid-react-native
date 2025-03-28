@@ -1,7 +1,7 @@
 import React, { FC, useRef, useState } from 'react';
-import { act, fireEvent, render } from 'react-native-testing-library';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
+import { act, fireEvent, render } from '@testing-library/react-native';
 import TextInput from '..';
 import { IconFonts, InputStatus } from '../../../enums';
 import theme from '../../../theme';
@@ -180,7 +180,11 @@ describe('<TextInput />', () => {
   it('should render with error state', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <TextInput id="test" accessibility="" error="Este campo é obrigatório" />
+        <TextInput
+          id="test"
+          accessibility=""
+          error="Este campo é obrigatório"
+        />
       </ThemeProvider>,
     );
 

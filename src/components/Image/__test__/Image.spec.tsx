@@ -156,7 +156,7 @@ describe('<Image />', () => {
           id="testing"
           testID="test-string-source"
           accessibility="testing_image"
-          // @ts-ignore: Ignorando tipo para testar source como string
+          // @ts-expect-error: Intencionalmente testando source como string direta
           source={uri}
         />
       </ThemeProvider>,
@@ -239,7 +239,7 @@ describe('<Image />', () => {
   // Novos testes para melhorar a cobertura de branches
 
   it('should render without source', () => {
-    // @ts-ignore - Testando propositalmente sem source, que é obrigatória
+    // @ts-expect-error: Testando propositalmente sem source, que é obrigatória
     const result = render(
       <ThemeProvider theme={theme}>
         <Image
@@ -256,7 +256,7 @@ describe('<Image />', () => {
   });
 
   it('should render with undefined source', () => {
-    // @ts-ignore - Testando propositalmente com source undefined
+    // @ts-expect-error: Testando propositalmente com source undefined
     const result = render(
       <ThemeProvider theme={theme}>
         <Image
@@ -273,7 +273,7 @@ describe('<Image />', () => {
   });
 
   it('should render with null source', () => {
-    // @ts-ignore - Testando propositalmente com source null
+    // @ts-expect-error: Testando propositalmente com source null
     const result = render(
       <ThemeProvider theme={theme}>
         <Image
@@ -290,7 +290,7 @@ describe('<Image />', () => {
   });
 
   it('should render with boolean source (unsupported type)', () => {
-    // @ts-ignore - Testando propositalmente tipo não suportado
+    // @ts-expect-error: Testando propositalmente tipo não suportado
     const result = render(
       <ThemeProvider theme={theme}>
         <Image
@@ -307,7 +307,7 @@ describe('<Image />', () => {
   });
 
   it('should render with array source (unsupported type)', () => {
-    // @ts-ignore - Testando propositalmente tipo não suportado
+    // @ts-expect-error: Testando propositalmente tipo não suportado
     const result = render(
       <ThemeProvider theme={theme}>
         <Image
@@ -351,7 +351,7 @@ describe('<Image />', () => {
   });
 
   it('should handle direct number source assignment for local images', () => {
-    // @ts-ignore - Testando propositalmente um número direto como source
+    // @ts-expect-error: Testando propositalmente um número direto como source
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
         <Image

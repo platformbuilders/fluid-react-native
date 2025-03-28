@@ -1,7 +1,10 @@
 import React from 'react';
 import { View } from 'react-native';
 import { RadioButtonType } from '../../types';
-import { generateAccessibilityProps, generateTestID } from '../../utils/accessibility';
+import {
+  generateAccessibilityProps,
+  generateTestID,
+} from '../../utils/accessibility';
 import { CheckedRadio, Label, Radio, Wrapper } from './styles';
 
 const defaultSize = 20;
@@ -39,7 +42,10 @@ const RadioButton: React.FC<RadioButtonType> = ({
   );
 
   // Gera ID de teste padronizado
-  const radioTestID = generateTestID('radio', id || accessibility || testID || 'radio');
+  const radioTestID = generateTestID(
+    'radio',
+    id || accessibility || testID || 'radio',
+  );
 
   // Função para lidar com o onPress apenas quando não estiver desabilitado
   const handlePress = () => {
