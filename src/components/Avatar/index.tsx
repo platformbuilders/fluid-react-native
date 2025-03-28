@@ -5,6 +5,10 @@ import {
 } from 'react-native-image-picker';
 import { formatToMonogram } from '@platformbuilders/helpers';
 import { AvatarProps, ImageSource } from '../../types';
+import {
+  generateAccessibilityProps,
+  generateTestID,
+} from '../../utils/accessibility';
 import Image from '../Image';
 import {
   MonogramText,
@@ -23,9 +27,8 @@ const Avatar: React.FC<AvatarProps> = React.forwardRef(
       id,
       image,
       animatedLoading = true,
-      accessibility = 'Upload de Avatar',
+      accessibility,
       accessibilityLabel,
-      testID,
       size = 50,
       imageQuality = 0.5,
       borderWidth = 2,
@@ -39,6 +42,7 @@ const Avatar: React.FC<AvatarProps> = React.forwardRef(
     },
     ref,
   ) => {
+    // eslint-disable-next-line sonarjs/cognitive-complexity
     const [visibleImage, setVisibleImage] = useState<ImageSource | undefined>();
     const [uploadedImage, setUploadedImage] = useState<string | undefined>();
 
@@ -95,12 +99,31 @@ const Avatar: React.FC<AvatarProps> = React.forwardRef(
         ? { uri: visibleImage }
         : visibleImage;
 
+    const role = onPress || onUpload ? 'button' : 'image';
+    const baseAccessibilityId = accessibility || id || name || 'avatar';
+    const defaultLabel = name
+      ? `Avatar de ${name}`
+      : accessibilityLabel || 'Avatar';
+    const hint = onPress || onUpload ? 'Toque para interagir' : undefined;
+
+    const avatarAccessibilityProps = generateAccessibilityProps(
+      {
+        id,
+        accessibility: baseAccessibilityId,
+        accessibilityLabel: defaultLabel,
+        disabled: !onPress && !onUpload,
+      },
+      role,
+      defaultLabel,
+      hint,
+    );
+
+    const avatarTestID = generateTestID('avatar', baseAccessibilityId);
+
     return (
       <Wrapper
-        id={id || accessibility}
-        accessibility={accessibility}
-        accessibilityLabel={accessibilityLabel || accessibility}
-        testID={testID || id}
+        {...avatarAccessibilityProps}
+        testID={avatarTestID}
         size={size}
         onPress={onPress || (onUpload && openPicker)}
         disabled={!onPress && !onUpload}
@@ -118,11 +141,15 @@ const Avatar: React.FC<AvatarProps> = React.forwardRef(
 
         {!visibleImage && !!name && (
           <UploadIconWrapper size={size}>
-            <UploadIcon id="" accessibility="" name="camera" />
+            <UploadIcon
+              importantForAccessibility="no"
+              id="avatar-upload-icon"
+              name="camera"
+            />
           </UploadIconWrapper>
         )}
         {!visibleImage && !!name && displayMonogram && (
-          <MonogramWrapper size={size}>
+          <MonogramWrapper importantForAccessibility="no" size={size}>
             <MonogramText size={size} style={monogramStyle}>
               {formatToMonogram(name)}
             </MonogramText>

@@ -4,6 +4,10 @@ import { Text, TouchableOpacity, View } from 'react-native';
 import Accordion from 'react-native-collapsible/Accordion';
 import Markdown from 'react-native-markdown-display';
 import { AccordionType } from '../../types';
+import {
+  generateAccessibilityProps,
+  generateTestID,
+} from '../../utils/accessibility';
 import { Icon } from './styles';
 
 type Props = {
@@ -51,16 +55,38 @@ const AccordionContainer: React.FC<Props> = ({
     content: string;
   };
 
-  const renderHeader = (section: SectionType) => {
+  const renderHeader = (section: SectionType, _: number, isActive: boolean) => {
+    const baseAccessibilityId = section.title;
+
+    const headerAccessibilityProps = generateAccessibilityProps(
+      {
+        accessibility: baseAccessibilityId,
+        accessibilityLabel: section.title,
+        disabled: false,
+      },
+      'button',
+      section.title,
+      `Toque para ${isActive ? 'recolher' : 'expandir'} conteúdo`,
+    );
+
+    const headerTestID = generateTestID(
+      'accordion_header',
+      baseAccessibilityId,
+    );
+
     return (
-      <StyledHeader isActive={isActive(section)}>
-        <StyledTitle isActive={isActive(section)}>{section.title}</StyledTitle>
+      <StyledHeader
+        isActive={isActive}
+        {...headerAccessibilityProps}
+        testID={headerTestID}
+      >
+        <StyledTitle isActive={isActive}>{section.title}</StyledTitle>
         {hasIcon && (
           <Icon
+            importantForAccessibility="no"
             name={getIconName(section)}
-            color={isActive(section) ? activeIconColor : inactiveIconColor}
+            color={isActive ? activeIconColor : inactiveIconColor}
             id={iconUpName}
-            accessibility={isActive(section) ? 'Fechar' : 'Abrir'}
           />
         )}
       </StyledHeader>

@@ -1,7 +1,7 @@
                      
                      
 ┌───────────────────┐
-│ 417 Code Findings │
+│ 411 Code Findings │
 └───────────────────┘
                                                      
   [36m[22m[24m  src/components/Accordion/index.tsx[0m
@@ -11,24 +11,43 @@
                                                                           
             1┆ import React, { useState } from 'react';
    
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+            8┆ import { generateAccessibilityProps, generateTestID }
+               from '../../utils/accessibility';                    
+            ⋮┆----------------------------------------
+           24┆ accessibility?: string;
+            ⋮┆----------------------------------------
+           25┆ accessibilityLabel?: string;
+            ⋮┆----------------------------------------
+           42┆ accessibility,
+            ⋮┆----------------------------------------
+           43┆ accessibilityLabel,
+            ⋮┆----------------------------------------
+           66┆ accessibility: baseAccessibilityId,
+            ⋮┆----------------------------------------
+           67┆ accessibilityLabel: section.title,
+   
     ❯❱ [1mrules.ensure-importantForAccessibility[0m
           Elementos decorativos ou duplicados para leitores de tela devem
           usar importantForAccessibility="no".                           
                                                                          
-           59┆ <Icon
-           60┆   name={getIconName(section)}
-           61┆   color={isActive(section) ? activeIconColor :
-               inactiveIconColor}                            
-           62┆   id={iconUpName}
-           63┆   accessibility={isActive(section) ? 'Fechar' :
-               'Abrir'}                                       
-           64┆ />
+           85┆ <Icon
+           86┆   importantForAccessibility="no"
+           87┆   name={getIconName(section)}
+           88┆   color={isActive ? activeIconColor :
+               inactiveIconColor}                   
+           89┆   id={iconUpName}
+           90┆ />
    
     ❯❱ [1mrules.use-accessibility-utils[0m
           Utilize os utilitários do pacote utils/accessibility.ts para
           implementar propriedades de acessibilidade.                 
                                                                       
-           63┆ accessibility={isActive(section) ? 'Fechar' : 'Abrir'}
+          111┆ const accordionTestID =                               
+               generateTestID('accordion_list', id || accessibility);
                                                            
   [36m[22m[24m  src/components/Avatar/Avatar.stories.tsx[0m
     ❯❱ [1mrules.use-accessibility-utils[0m
@@ -74,64 +93,45 @@
           Utilize os utilitários do pacote utils/accessibility.ts para
           implementar propriedades de acessibilidade.                 
                                                                       
-           26┆ accessibility = 'Upload de Avatar',
+           16┆ import { generateAccessibilityProps, generateTestID }
+               from '../../utils/accessibility';                    
             ⋮┆----------------------------------------
-           27┆ accessibilityLabel,
+           27┆ accessibility,
+            ⋮┆----------------------------------------
+           28┆ accessibilityLabel,
    
     ❯❱ [1mrules.ensure-importantForAccessibility[0m
           Elementos decorativos ou duplicados para leitores de tela devem
           usar importantForAccessibility="no".                           
                                                                          
-           42┆ const [visibleImage, setVisibleImage] =
+           43┆ const [visibleImage, setVisibleImage] =
                useState<ImageSource | undefined>();   
    
     ❯❱ [1mrules.use-accessibility-utils[0m
           Utilize os utilitários do pacote utils/accessibility.ts para
           implementar propriedades de acessibilidade.                 
                                                                       
-          100┆ id={id || accessibility}
+          100┆ const baseAccessibilityId = accessibility || id || name
+               || 'avatar';                                           
             ⋮┆----------------------------------------
-          101┆ accessibility={accessibility}
+          101┆ const defaultLabel = name ? `Avatar de ${name}` :
+               accessibilityLabel || 'Avatar';                  
             ⋮┆----------------------------------------
-          101┆ accessibility={accessibility}
+          107┆ accessibility: baseAccessibilityId,
             ⋮┆----------------------------------------
-          102┆ accessibilityLabel={accessibilityLabel ||
-               accessibility}                           
-   
-    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
-          Evite definir propriedades de acessibilidade diretamente nos 
-          componentes. Use os utilitários generateAccessibilityProps().
-                                                                       
-          102┆ accessibilityLabel={accessibilityLabel ||
-               accessibility}                           
-   
-    ❯❱ [1mrules.use-accessibility-utils[0m
-          Utilize os utilitários do pacote utils/accessibility.ts para
-          implementar propriedades de acessibilidade.                 
-                                                                      
-          102┆ accessibilityLabel={accessibilityLabel ||
-               accessibility}                           
-            ⋮┆----------------------------------------
-          102┆ accessibilityLabel={accessibilityLabel ||
-               accessibility}                           
+          108┆ accessibilityLabel: defaultLabel,
    
     ❯❱ [1mrules.ensure-importantForAccessibility[0m
           Elementos decorativos ou duplicados para leitores de tela devem
           usar importantForAccessibility="no".                           
                                                                          
-          111┆ <Image
-          112┆   testID="avatar-image"
-          113┆   displayPlaceholder={animatedLoading}
-          114┆   source={source}
-          115┆   resizeMode="cover"
-          116┆   style={{ width: '101%', height: '101%' }}
-          117┆ />
-   
-    ❯❱ [1mrules.use-accessibility-utils[0m
-          Utilize os utilitários do pacote utils/accessibility.ts para
-          implementar propriedades de acessibilidade.                 
-                                                                      
-          121┆ <UploadIcon id="" accessibility="" name="camera" />
+          129┆ <Image
+          130┆   testID="avatar-image"
+          131┆   displayPlaceholder={animatedLoading}
+          132┆   source={source}
+          133┆   resizeMode="cover"
+          134┆   style={{ width: '101%', height: '101%' }}
+          135┆ />
                                                   
   [36m[22m[24m  src/components/Avatar/styles.ts[0m
     ❯❱ [1mrules.ensure-importantForAccessibility[0m
@@ -162,135 +162,118 @@
           Utilize os utilitários do pacote utils/accessibility.ts para
           implementar propriedades de acessibilidade.                 
                                                                       
-           16┆ accessibility,
+            3┆ import { generateAccessibilityProps, generateTestID }
+               from '../../utils/accessibility';                    
             ⋮┆----------------------------------------
-           17┆ accessibilityLabel,
+           17┆ accessibility,
+            ⋮┆----------------------------------------
+           18┆ accessibilityLabel,
+            ⋮┆----------------------------------------
+           37┆ const baseAccessibilityId = accessibility || id ||  
+               (typeof children === 'string' ? children : 'badge');
+   
+    ❯❱ [1mrules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings 
+          diretamente torna o código menos escalável e mais suscetível a
+          erros.                                                        
+                                                                        
+           37┆ const baseAccessibilityId = accessibility || id ||  
+               (typeof children === 'string' ? children : 'badge');
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           38┆ const defaultLabel = accessibilityLabel || (typeof
+               children === 'string' ? children : 'Badge');      
+   
+    ❯❱ [1mrules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings 
+          diretamente torna o código menos escalável e mais suscetível a
+          erros.                                                        
+                                                                        
+           38┆ const defaultLabel = accessibilityLabel || (typeof
+               children === 'string' ? children : 'Badge');      
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           44┆ accessibility: baseAccessibilityId,
+            ⋮┆----------------------------------------
+           45┆ accessibilityLabel: defaultLabel,
    
     ❯❱ [1mrules.ensure-accessibility-id[0m
           Componentes interativos devem ter uma propriedade accessibility
           ou id definida para identificação única.                       
                                                                          
-           36┆ <Touchable
-           37┆   id={id || accessibility}
-           38┆   accessibility={accessibility}
-           39┆   accessibilityLabel={accessibilityLabel ||
-               accessibility}                             
-           40┆   testID={testID || id || accessibility}
-           41┆   disabled={loading || disabled}
-           42┆   onPress={onPress}
-           43┆ >
+           57┆ <Touchable
+           58┆   {...badgeAccessibilityProps}
+           59┆   testID={badgeTestID}
+           60┆   disabled={loading || disabled}
+           61┆   onPress={onPress}
+           62┆ >
    
     ❯❱ [1mrules.ensure-accessibility-props[0m
           Componentes interativos devem ter propriedades de acessibilidade
           adequadas. Use os utilitários generateAccessibilityProps().     
                                                                           
-           36┆ <Touchable
-           37┆   id={id || accessibility}
-           38┆   accessibility={accessibility}
-           39┆   accessibilityLabel={accessibilityLabel ||
-               accessibility}                             
-           40┆   testID={testID || id || accessibility}
-           41┆   disabled={loading || disabled}
-           42┆   onPress={onPress}
-           43┆ >
-   
-    ❯❱ [1mrules.use-accessibility-utils[0m
-          Utilize os utilitários do pacote utils/accessibility.ts para
-          implementar propriedades de acessibilidade.                 
-                                                                      
-           37┆ id={id || accessibility}
-            ⋮┆----------------------------------------
-           38┆ accessibility={accessibility}
-            ⋮┆----------------------------------------
-           38┆ accessibility={accessibility}
-            ⋮┆----------------------------------------
-           39┆ accessibilityLabel={accessibilityLabel ||
-               accessibility}                           
-   
-    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
-          Evite definir propriedades de acessibilidade diretamente nos 
-          componentes. Use os utilitários generateAccessibilityProps().
-                                                                       
-           39┆ accessibilityLabel={accessibilityLabel ||
-               accessibility}                           
-   
-    ❯❱ [1mrules.use-accessibility-utils[0m
-          Utilize os utilitários do pacote utils/accessibility.ts para
-          implementar propriedades de acessibilidade.                 
-                                                                      
-           39┆ accessibilityLabel={accessibilityLabel ||
-               accessibility}                           
-            ⋮┆----------------------------------------
-           39┆ accessibilityLabel={accessibilityLabel ||
-               accessibility}                           
-            ⋮┆----------------------------------------
-           40┆ testID={testID || id || accessibility}
+           57┆ <Touchable
+           58┆   {...badgeAccessibilityProps}
+           59┆   testID={badgeTestID}
+           60┆   disabled={loading || disabled}
+           61┆   onPress={onPress}
+           62┆ >
    
     ❯❱ [1mrules.ensure-accessibility-id[0m
           Componentes interativos devem ter uma propriedade accessibility
           ou id definida para identificação única.                       
                                                                          
-           44┆ <ButtonWrapper
-           45┆   hasBorder={hasBorder}
-           46┆   buttonVariant={variant}
-           47┆   disabled={disabled}
-           48┆   flat={flat}
-           49┆   style={style}
-           50┆   {...rest}
-           51┆ >
+           63┆ <ButtonWrapper
+           64┆   hasBorder={hasBorder}
+           65┆   buttonVariant={variant}
+           66┆   disabled={disabled}
+           67┆   flat={flat}
+           68┆   style={style}
+           69┆   {...rest}
+           70┆ >
    
     ❯❱ [1mrules.ensure-accessibility-props[0m
           Componentes interativos devem ter propriedades de acessibilidade
           adequadas. Use os utilitários generateAccessibilityProps().     
                                                                           
-           44┆ <ButtonWrapper
-           45┆   hasBorder={hasBorder}
-           46┆   buttonVariant={variant}
-           47┆   disabled={disabled}
-           48┆   flat={flat}
-           49┆   style={style}
-           50┆   {...rest}
-           51┆ >
+           63┆ <ButtonWrapper
+           64┆   hasBorder={hasBorder}
+           65┆   buttonVariant={variant}
+           66┆   disabled={disabled}
+           67┆   flat={flat}
+           68┆   style={style}
+           69┆   {...rest}
+           70┆ >
    
     ❯❱ [1mrules.ensure-importantForAccessibility[0m
           Elementos decorativos ou duplicados para leitores de tela devem
           usar importantForAccessibility="no".                           
                                                                          
-           56┆ <Icon
-           57┆   accessibility=""
-           58┆   name={leftIconName as string}
-           59┆   buttonVariant={variant}
-           60┆   style={iconStyle}
-           61┆   leftIcon
-           62┆   touchable={iconTouchable}
-           63┆   isEmoji={isEmoji}
-           64┆ />
-   
-    ❯❱ [1mrules.use-accessibility-utils[0m
-          Utilize os utilitários do pacote utils/accessibility.ts para
-          implementar propriedades de acessibilidade.                 
-                                                                      
-           57┆ accessibility=""
-   
-    ❯❱ [1mrules.ensure-importantForAccessibility[0m
-          Elementos decorativos ou duplicados para leitores de tela devem
-          usar importantForAccessibility="no".                           
-                                                                         
-           76┆ <Icon
-           77┆   accessibility=""
-           78┆   name={rightIconName as string}
-           79┆   buttonVariant={variant}
-           80┆   style={iconStyle}
-           81┆   rightIcon
-           82┆   touchable={iconTouchable}
-           83┆   isEmoji={isEmoji}
-           84┆ />
-   
-    ❯❱ [1mrules.use-accessibility-utils[0m
-          Utilize os utilitários do pacote utils/accessibility.ts para
-          implementar propriedades de acessibilidade.                 
-                                                                      
-           77┆ accessibility=""
+           75┆ <Icon
+           76┆   importantForAccessibility="no"
+           77┆   name={leftIconName as string}
+           78┆   buttonVariant={variant}
+           79┆   style={iconStyle}
+           80┆   leftIcon
+           81┆   touchable={iconTouchable}
+           82┆   isEmoji={isEmoji}
+           83┆ />
+            ⋮┆----------------------------------------
+           95┆ <Icon
+           96┆   importantForAccessibility="no"
+           97┆   name={rightIconName as string}
+           98┆   buttonVariant={variant}
+           99┆   style={iconStyle}
+          100┆   rightIcon
+          101┆   touchable={iconTouchable}
+          102┆   isEmoji={isEmoji}
+          103┆ />
                                                  
   [36m[22m[24m  src/components/Badge/styles.ts[0m
     ❯❱ [1mrules.ensure-importantForAccessibility[0m
@@ -310,9 +293,12 @@
           Utilize os utilitários do pacote utils/accessibility.ts para
           implementar propriedades de acessibilidade.                 
                                                                       
-           27┆ accessibility={`Ir para ${navField.label}`}
+            3┆ import { generateAccessibilityProps, generateTestID }
+               from '../../utils/accessibility';                    
             ⋮┆----------------------------------------
-           32┆ accessibility={navField.iconName}
+           34┆ accessibility: baseAccessibilityId,
+            ⋮┆----------------------------------------
+           35┆ accessibilityLabel: defaultLabel,
                                                                   
   [36m[22m[24m  src/components/Button/__tests__/Button.spec.tsx[0m
     ❯❱ [1mrules.ensure-tests-use-testid[0m
@@ -519,64 +505,24 @@
           usar importantForAccessibility="no".                           
                                                                          
            94┆ <Icon
-           95┆   accessibility=""
+           95┆   importantForAccessibility="no"
            96┆   name={leftIconName as string}
            97┆   buttonVariant={variant}
            98┆   colorVariant={colorVariant}
            99┆   style={style}
           100┆   touchable={leftIconTouchable}
           101┆   leftIcon
-          102┆   accessibilityRole="image"
-          103┆   accessibilityLabel={`Ícone ${leftIconName}`}
-             [hid 1 additional lines, adjust with --max-lines-per-finding] 
-   
-    ❯❱ [1mrules.use-accessibility-utils[0m
-          Utilize os utilitários do pacote utils/accessibility.ts para
-          implementar propriedades de acessibilidade.                 
-                                                                      
-           95┆ accessibility=""
+          102┆ />
             ⋮┆----------------------------------------
-          102┆ accessibilityRole="image"
-            ⋮┆----------------------------------------
-          103┆ accessibilityLabel={`Ícone ${leftIconName}`}
-   
-    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
-          Evite definir propriedades de acessibilidade diretamente nos 
-          componentes. Use os utilitários generateAccessibilityProps().
-                                                                       
-          103┆ accessibilityLabel={`Ícone ${leftIconName}`}
-   
-    ❯❱ [1mrules.ensure-importantForAccessibility[0m
-          Elementos decorativos ou duplicados para leitores de tela devem
-          usar importantForAccessibility="no".                           
-                                                                         
-          117┆ <Icon
-          118┆   accessibility=""
-          119┆   name={rightIconName as string}
-          120┆   colorVariant={colorVariant}
-          121┆   buttonVariant={variant}
-          122┆   style={style}
-          123┆   touchable={rightIconTouchable}
-          124┆   rightIcon
-          125┆   accessibilityRole="image"
-          126┆   accessibilityLabel={`Ícone ${rightIconName}`}
-             [hid 1 additional lines, adjust with --max-lines-per-finding] 
-   
-    ❯❱ [1mrules.use-accessibility-utils[0m
-          Utilize os utilitários do pacote utils/accessibility.ts para
-          implementar propriedades de acessibilidade.                 
-                                                                      
-          118┆ accessibility=""
-            ⋮┆----------------------------------------
-          125┆ accessibilityRole="image"
-            ⋮┆----------------------------------------
-          126┆ accessibilityLabel={`Ícone ${rightIconName}`}
-   
-    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
-          Evite definir propriedades de acessibilidade diretamente nos 
-          componentes. Use os utilitários generateAccessibilityProps().
-                                                                       
-          126┆ accessibilityLabel={`Ícone ${rightIconName}`}
+          115┆ <Icon
+          116┆   importantForAccessibility="no"
+          117┆   name={rightIconName as string}
+          118┆   colorVariant={colorVariant}
+          119┆   buttonVariant={variant}
+          120┆   style={style}
+          121┆   touchable={rightIconTouchable}
+          122┆   rightIcon
+          123┆ />
                                                   
   [36m[22m[24m  src/components/Button/styles.ts[0m
     ❯❱ [1mrules.ensure-importantForAccessibility[0m

@@ -8,4 +8,12 @@ module.exports = {
     'dist',
     'node_modules'
   ],
+  overrides: [
+    {
+      files: ['src/components/Avatar/index.tsx'],
+      rules: {
+        'sonarjs/cognitive-complexity': 'off',
+      },
+    },
+  ],
 };

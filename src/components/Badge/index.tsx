@@ -1,5 +1,9 @@
 import React, { FC } from 'react';
 import { ButtonProps } from '../../types';
+import {
+  generateAccessibilityProps,
+  generateTestID,
+} from '../../utils/accessibility';
 import { ButtonWrapper, Icon, Loading, TextButton, Touchable } from './styles';
 
 export type BadgeProps = ButtonProps & {
@@ -15,7 +19,6 @@ const Badge: FC<BadgeProps> = ({
   onPress,
   accessibility,
   accessibilityLabel,
-  testID,
   style = [{}],
   textStyle = [{}],
   iconStyle = [{}],
@@ -32,12 +35,32 @@ const Badge: FC<BadgeProps> = ({
   leftIconName,
   ...rest
 }) => {
+  const role = onPress ? 'button' : 'text';
+  const baseAccessibilityId =
+    accessibility || id || (typeof children === 'string' ? children : 'badge');
+  const defaultLabel =
+    accessibilityLabel || (typeof children === 'string' ? children : 'Badge');
+  const hint = onPress ? 'Toque para interagir' : undefined;
+
+  const badgeAccessibilityProps = generateAccessibilityProps(
+    {
+      id,
+      accessibility: baseAccessibilityId,
+      accessibilityLabel: defaultLabel,
+      disabled: loading || disabled,
+      busy: loading,
+    },
+    role,
+    defaultLabel,
+    hint,
+  );
+
+  const badgeTestID = generateTestID('badge', baseAccessibilityId);
+
   return (
     <Touchable
-      id={id || accessibility}
-      accessibility={accessibility}
-      accessibilityLabel={accessibilityLabel || accessibility}
-      testID={testID || id || accessibility}
+      {...badgeAccessibilityProps}
+      testID={badgeTestID}
       disabled={loading || disabled}
       onPress={onPress}
     >
@@ -54,7 +77,7 @@ const Badge: FC<BadgeProps> = ({
           <>
             {!!leftIconName && (
               <Icon
-                accessibility=""
+                importantForAccessibility="no"
                 name={leftIconName as string}
                 buttonVariant={variant}
                 style={iconStyle}
@@ -74,7 +97,7 @@ const Badge: FC<BadgeProps> = ({
             </TextButton>
             {!!rightIconName && (
               <Icon
-                accessibility=""
+                importantForAccessibility="no"
                 name={rightIconName as string}
                 buttonVariant={variant}
                 style={iconStyle}

@@ -92,15 +92,13 @@ const Button: FC<ButtonProps> = ({
           <>
             {!!leftIconName && (
               <Icon
-                accessibility=""
+                importantForAccessibility="no"
                 name={leftIconName as string}
                 buttonVariant={variant}
                 colorVariant={colorVariant}
                 style={style}
                 touchable={leftIconTouchable}
                 leftIcon
-                accessibilityRole="image"
-                accessibilityLabel={`Ícone ${leftIconName}`}
               />
             )}
             <TextButton
@@ -115,15 +113,13 @@ const Button: FC<ButtonProps> = ({
             </TextButton>
             {!!rightIconName && (
               <Icon
-                accessibility=""
+                importantForAccessibility="no"
                 name={rightIconName as string}
                 colorVariant={colorVariant}
                 buttonVariant={variant}
                 style={style}
                 touchable={rightIconTouchable}
                 rightIcon
-                accessibilityRole="image"
-                accessibilityLabel={`Ícone ${rightIconName}`}
               />
             )}
           </>

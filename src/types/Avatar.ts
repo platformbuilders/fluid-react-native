@@ -19,6 +19,5 @@ export type AvatarProps = {
   id?: string;
   accessibility: string;
   accessibilityLabel?: string;
-  testID?: string;
   style?: any;
 };
