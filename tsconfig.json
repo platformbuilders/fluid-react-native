@@ -21,7 +21,6 @@
     "strictPropertyInitialization": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
-    "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
@@ -35,5 +34,11 @@
   },
   "compileOnSave": true,
   "include": ["images.d.ts", "src", "index.js"],
-  "exclude": ["src/**/*.spec.{ts,tsx}", "node_modules", "dist"]
+  "exclude": [
+    "src/**/*.spec.{ts,tsx}",
+    "src/**/__tests__/**/*",
+    "src/**/__test__/**/*",
+    "node_modules",
+    "dist"
+  ]
 }
