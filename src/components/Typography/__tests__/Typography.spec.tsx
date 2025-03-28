@@ -1,6 +1,5 @@
 import React from 'react';
 import renderer, { act } from 'react-test-renderer';
-import { render } from '@testing-library/react-native';
 import { ThemeProvider } from 'styled-components/native';
 import Typography from '..';
 import { TextVariant } from '../../../enums';
@@ -80,7 +79,7 @@ beforeEach(() => {
 describe('<Typography />', () => {
   it('should render and match snapshot for default props', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -94,7 +93,7 @@ describe('<Typography />', () => {
 
   it('should render and match snapshot for variant max', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -102,13 +101,13 @@ describe('<Typography />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render and match snapshot for variant xxl', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -116,13 +115,13 @@ describe('<Typography />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render and match snapshot for variant xl', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -130,13 +129,13 @@ describe('<Typography />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render and match snapshot for variant lg', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -144,13 +143,13 @@ describe('<Typography />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render and match snapshot for variant md', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -158,13 +157,13 @@ describe('<Typography />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render and match snapshot for variant min', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -172,13 +171,13 @@ describe('<Typography />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render and match snapshot for variant xs', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -186,13 +185,13 @@ describe('<Typography />', () => {
         </ThemeProvider>,
       );
     });
-    
+
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
   it('should render and match snapshot for variant xxs', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -206,7 +205,7 @@ describe('<Typography />', () => {
 
   it('should render and match snapshot for variant animated', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -222,7 +221,7 @@ describe('<Typography />', () => {
 
   it('should render with children', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -236,7 +235,7 @@ describe('<Typography />', () => {
 
   it('should render with custom id', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -252,7 +251,7 @@ describe('<Typography />', () => {
 
   it('should render with custom lineHeightVariant', () => {
     let wrapper;
-    
+
     act(() => {
       wrapper = renderer.create(
         <ThemeProvider theme={theme}>
@@ -268,7 +267,7 @@ describe('<Typography />', () => {
 
   it('should use children as testID when id and accessibility are not provided', () => {
     let rendered;
-    
+
     act(() => {
       rendered = renderer.create(
         <ThemeProvider theme={theme}>
@@ -284,7 +283,7 @@ describe('<Typography />', () => {
 
   it('should use id for testID when provided', () => {
     let rendered;
-    
+
     act(() => {
       rendered = renderer.create(
         <ThemeProvider theme={theme}>
@@ -300,7 +299,7 @@ describe('<Typography />', () => {
 
   it('should use accessibility for testID when id is not provided', () => {
     let rendered;
-    
+
     act(() => {
       rendered = renderer.create(
         <ThemeProvider theme={theme}>
@@ -315,17 +314,14 @@ describe('<Typography />', () => {
     const textComponent = rendered.root.findByType(Text);
     expect(textComponent.props.testID).toBe('accessibility-teste');
   });
-  
+
   it('should pass custom props to Text component', () => {
     let rendered;
-    
+
     act(() => {
       rendered = renderer.create(
         <ThemeProvider theme={theme}>
-          <Typography 
-            accessibility="texto-personalizado"
-            numberOfLines={2}
-          >
+          <Typography accessibility="texto-personalizado" numberOfLines={2}>
             Texto com props customizadas
           </Typography>
         </ThemeProvider>,
@@ -336,14 +332,14 @@ describe('<Typography />', () => {
     const textComponent = rendered.root.findByType(Text);
     expect(textComponent.props.numberOfLines).toBe(2);
   });
-  
+
   it('should pass custom props to AnimatedText component', () => {
     let rendered;
-    
+
     act(() => {
       rendered = renderer.create(
         <ThemeProvider theme={theme}>
-          <Typography 
+          <Typography
             accessibility="texto-animado"
             variant={TextVariant.ANIMATED}
             numberOfLines={3}
@@ -358,7 +354,7 @@ describe('<Typography />', () => {
     const textComponent = rendered.root.findByType(Text);
     expect(textComponent.props.numberOfLines).toBe(3);
   });
-  
+
   it.skip('should correctly use React Native Testing Library', () => {
     /* const { getByText, getByTestId } = render(
       <ThemeProvider theme={theme}>
@@ -377,24 +373,67 @@ describe('<Typography />', () => {
     // Verificar testID
     expect(getByTestId('test-typography')).toBeTruthy(); */
   });
-  
+
   it('should work with ref forwarding', () => {
     const ref = React.createRef();
-    
+
     act(() => {
       renderer.create(
         <ThemeProvider theme={theme}>
-          <Typography 
-            ref={ref}
-            accessibility="texto-com-ref"
-          >
+          <Typography ref={ref} accessibility="texto-com-ref">
             Texto com ref
           </Typography>
         </ThemeProvider>,
       );
     });
-    
+
     // Verificar se o ref foi atribuído
     expect(ref.current).toBeDefined();
+  });
+
+  it('should check branch conditions for AnimatedText rendering', () => {
+    // Testando o branch que não está coberto com mock de null
+    let renderedWithNullVariant;
+    const variantMock = null;
+
+    act(() => {
+      renderedWithNullVariant = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Typography 
+            accessibility="texto-animado" 
+            // @ts-ignore - forçando null para testar branches
+            variant={variantMock}
+          >
+            Texto para testar branches
+          </Typography>
+        </ThemeProvider>,
+      );
+    });
+
+    // Verifica se renderizou como um Text normal quando variant é null
+    const textComponent = renderedWithNullVariant.root.findByType(Text);
+    expect(textComponent).toBeDefined();
+    expect(textComponent.props.children).toBe('Texto para testar branches');
+    
+    // Testando outro branch explicitamente com TextVariant.ANIMATED
+    let renderedWithAnimated;
+    
+    act(() => {
+      renderedWithAnimated = renderer.create(
+        <ThemeProvider theme={theme}>
+          <Typography 
+            accessibility="texto-animado" 
+            variant={TextVariant.ANIMATED}
+          >
+            Texto animado
+          </Typography>
+        </ThemeProvider>,
+      );
+    });
+    
+    // Verifica que renderizou como AnimatedText
+    const animatedComponent = renderedWithAnimated.root.findByType(Text);
+    expect(animatedComponent).toBeDefined();
+    expect(animatedComponent.props.variant).toBe(TextVariant.ANIMATED);
   });
 });
