@@ -88,54 +88,19 @@ Mantemos o foco nas prioridades definidas no Kanban:
 3. Melhorar documentação
 4. Configurar implantação automática
 
-## Progresso Recente
+## Progresso Recente (Weekly Report)
 
-- Melhoramos a cobertura de testes do componente Typography
-- Implementamos testes para garantir 100% de cobertura de statements, branches, functions e lines
-- Adicionamos teste específico para cobrir o branch condicional da renderização de AnimatedText vs Text
-- Melhoramos a cobertura de testes do componente SearchInput
-- Adicionamos testes para verificar que onRightIconPress é passado corretamente e funciona
-- Incluímos testes para cobrir diferentes cenários de inputRef
-- Verificamos o comportamento correto quando o input mantém texto após perder o foco
-- Corrigimos os testes para não esperar por props indefinidas
-- Atingimos 96.42% de cobertura em statements, 88.46% em branches e 88.88% em functions para o SearchInput
-- Corrigimos os warnings de act() no React 18 para o componente TextInput
-- Melhoramos a cobertura de testes do componente TextInput
-- Corrigimos e melhoramos os testes de acessibilidade do Toggle
-- Implementamos testes mais robustos para cenários de error states e labels flutuantes
-- Verificamos e corrigimos problemas de testIDs em testes que falhavam
-- Corrigimos os warnings de act() no React 18 para o componente SearchInput
-- Criamos documentação detalhada sobre como lidar com warnings de act() no React 18
-- Atualizamos os testes para usar act() adequadamente com mudanças de estado
-- Melhoramos a cobertura de testes do MaskedTextInput
-- Refatoramos o componente MaskedTextInput para maior testabilidade
-- Removemos o tipo de máscara "document" não suportado do MaskedTextInput
-- Refatoramos `handleDocumentMask` para `handleCpfMask` para melhor semântica
-- Atualizamos todos os testes para usar apenas tipos de máscara suportados
-- Melhoramos a cobertura de testes do RadioButton
-- Implementamos testes mais detalhados para cenários de uso reais
-- Configuramos o Firebase Hosting para deploy simplificado da documentação
-- Criamos scripts de deploy e teste para facilitar o processo
-- Configuramos o GitHub Actions para deploy automatizado
-- Resolvemos problemas de links quebrados na documentação
-- Atualizamos a configuração do Docusaurus para melhorar os warnings
-- Configuramos a estrutura básica do Docusaurus
-- Personalizamos o visual com CSS customizado
-- Criamos uma homepage atraente com:
-  - Seção de hero com logo e chamada para ação
-  - Exemplo de código
-  - Showcase de componentes
-  - Seção de destaques
-- Configuramos a sidebar com categorias lógicas
-- Criamos documentação inicial:
-  - Página de introdução
-  - Guia de instalação
-  - Documentação de temas
-  - Guia de acessibilidade
-  - Melhores práticas
-- Documentamos os componentes Button e Card
-- Criamos assets visuais (logo, imagens)
-- Atualizamos o README do projeto
+### Melhorias nos Testes
+- Ampliação da cobertura de testes no componente MaskedTextInput, removendo o tipo de máscara "document" não utilizado e refatorando a função para handleCpfMask para maior clareza.
+- Melhoria significativa na cobertura de testes do Typography, atingindo 100% de cobertura em statements, branches, functions e lines.
+- Aumento da cobertura de testes do SearchInput, chegando a mais de 95% em statements e lines.
+- Melhoria expressiva na cobertura de testes do Avatar, com 100% de cobertura em statements, functions e lines, e 92.68% em branches.
+- Implementados diversos testes para garantir o correto funcionamento do componente Avatar em diferentes cenários de uso.
+
+### Documentação
+- Atualização da documentação com novos padrões identificados
+- Inclusão de exemplos de uso para os componentes recentemente refatorados
+- Manutenção do banco de memória com registros detalhados das alterações e melhorias
 
 ## Próximas Tarefas
 

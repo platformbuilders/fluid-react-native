@@ -19,11 +19,18 @@ kanban-plugin: basic
 - Implementar componente Modal
 - Implementar componente Calendar
 - Adicionar mais exemplos de uso no Storybook
+- Melhorar testes do Icon para aumentar cobertura
+- Continuar melhorias na documentação
+- Implementar testes para o BottomSheet
+- Corrigir warnings do Storybook
+- Melhorar documentação do Checkbox
 
 ## Trabalho Atual
 - Melhorar cobertura de testes do Icon para aumentar a cobertura de funções
 - Resolver warnings relacionados aos props do PinInput
 - Implementar testes para componentes sem cobertura (Button, Link, Typography)
+- Implementar testes para o Image
+- Melhorar UX do DatePicker
 
 ## Próximos Passos
 - Implementar testes para componentes com baixa cobertura
@@ -37,6 +44,11 @@ kanban-plugin: basic
 - Resolver warnings relacionados ao React 18
 - Configurar Firebase Hosting para Storybook
 - Corrigir erros de lint nos arquivos de teste
+- Implementar testes para o ModalPicker
+- Melhorar testes do Accordion
+- Adicionar documentação para o Button
+- Refatorar o componente Switch para maior testabilidade
+- Revisar componente Tooltip para compatibilidade em iOS e Android
 
 ## Concluído
 - Configuração inicial do banco de memória para o projeto
@@ -89,3 +101,6 @@ kanban-plugin: basic
 - Melhorar a cobertura do componente Typography para 100% em todos os critérios
 - Implementar teste específico para cobrir o branch condicional da renderização de AnimatedText
 - Verificar comportamento correto com valores null para variant 
+- ✅ Melhorar a cobertura de testes do Typography para atingir 100% em todos os critérios
+- ✅ Remover tipo de máscara "document" do MaskedTextInput
+- ✅ Melhorar a cobertura de testes do Avatar para atingir pelo menos 95% em branches e functions 

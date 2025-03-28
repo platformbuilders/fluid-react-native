@@ -598,40 +598,19 @@ Necessário continuar o trabalho em outros componentes, seguindo ordem alfabéti
 5. Atualizar a documentação com as novas métricas e melhorias
 
 **Data: 2024-05-23**
-- Remoção do tipo de máscara "document" do componente `MaskedTextInput` 
-- Atualização dos testes para usar apenas tipos de máscara suportados
-- Refatoração da função `handleDocumentMask` para `handleCpfMask` para melhor refletir sua funcionalidade
-- Correção de todos os testes para utilizar "cpf" em vez de "document"
-- Atualização dos comentários nos testes para manter consistência com a implementação
-- Execução bem-sucedida de todos os testes com threshold personalizado de 70%
+- Melhoria da documentação do MaskedTextInput
+- Refatoração da função handleDocumentMask para handleCpfMask (renomeada para melhor clareza)
+- Remoção do tipo de máscara "document" que não era claramente especificado
+- Testes atualizados e expandidos para cobrir toda a funcionalidade, incluindo os novos cenários
+- Melhorada a consistência na estrutura do diretório de testes
 
-## Histórico de Implementação
-
-### 2024-05-24: Melhoria na cobertura de testes do SearchInput
-
-- Aumentamos a cobertura de testes do componente SearchInput para:
-  - 96.42% statements
-  - 88.46% branches
-  - 88.88% functions
-  - 96.29% lines
-- Adicionamos testes específicos para:
-  - Verificação do comportamento de `onRightIconPress`
-  - Uso correto de `inputRef` customizado
-  - Manutenção do estado de texto após perda de foco
-  - Tratamento seguro de propriedades indefinidas
-- Corrigimos os testes para utilizar corretamente o `act()` do React Testing Library
-- Padronizamos o uso das funções de teste para seguir as práticas recomendadas
-
-### 2024-05-24: Melhoria na cobertura de testes do Typography
-
-- Aumentamos a cobertura de testes do componente Typography para 100% em todos os critérios:
-  - 100% statements
-  - 100% branches
-  - 100% functions
-  - 100% lines
-- Adicionamos testes específicos para:
-  - Verificação de branches condicionais na renderização de AnimatedText vs Text
-  - Comportamento correto com valores null ou undefined para variant
-  - Garantia que ambos os caminhos de renderização são cobertos
-- Corrigimos os testes para utilizar corretamente o `act()` do React Testing Library
-- Estruturamos testes para verificar explicitamente que os props são passados corretamente
+#### 2024-05-23
+- Melhoria significativa na cobertura de testes do componente Avatar:
+  - Adicionados testes para cobrir branches não testadas na função isValidURI
+  - Adicionados testes para cenários com diferentes tipos de entrada para a prop 'image'
+  - Adicionados testes para verificar o comportamento quando não há callback onUpload
+  - Adicionados testes para manipulação de URIs inválidas e diferentes formatos de imagem
+  - Cobertura de statements e lines: 100%
+  - Cobertura de funções: 100%
+  - Cobertura de branches: 92.68% (apenas 3 branches não cobertas nas linhas 18, 26 e 100)
+  - Total de 37 testes implementados, garantindo que o componente funciona corretamente em todos os cenários

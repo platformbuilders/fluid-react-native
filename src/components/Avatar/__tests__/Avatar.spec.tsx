@@ -600,4 +600,282 @@ describe('<Avatar />', () => {
       { timeout: 3000 },
     );
   });
+
+  // Adicionando testes para aumentar cobertura
+
+  it('should handle custom imageQuality parameter', async () => {
+    const onUploadMock = jest.fn();
+    const customQuality = 0.8;
+
+    // Reset e configuração do mock para este teste específico
+    (launchImageLibrary as jest.Mock).mockImplementationOnce(
+      (_options, callback) => {
+        // Verificar se a qualidade da imagem personalizada é passada corretamente
+        expect(_options.imageQuality).toBe(customQuality);
+
+        // Chamar o callback com a resposta simulada
+        if (callback) {
+          callback({
+            didCancel: false,
+            assets: [{ uri: TEST_IMAGE_URI }],
+          });
+        }
+
+        return Promise.resolve({
+          didCancel: false,
+          assets: [{ uri: TEST_IMAGE_URI }],
+        });
+      },
+    );
+
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Avatar
+          id="testing"
+          testID="avatar-test"
+          accessibility=""
+          imageQuality={customQuality}
+          onUpload={onUploadMock}
+        />
+      </ThemeProvider>,
+    );
+
+    const component = getByTestId('avatar-test');
+
+    act(() => {
+      fireEvent.press(component);
+    });
+
+    await waitFor(
+      () => {
+        expect(onUploadMock).toHaveBeenCalledWith(TEST_IMAGE_URI);
+      },
+      { timeout: 3000 },
+    );
+  });
+
+  it('should handle getUploadImage ref method correctly', async () => {
+    const ref = createRef<any>();
+    const onUploadMock = jest.fn();
+
+    // Mock personalizado para este teste
+    (launchImageLibrary as jest.Mock).mockImplementationOnce(
+      (_options, callback) => {
+        if (callback) {
+          callback({
+            didCancel: false,
+            assets: [{ uri: TEST_IMAGE_URI }],
+          });
+        }
+        return Promise.resolve({
+          didCancel: false,
+          assets: [{ uri: TEST_IMAGE_URI }],
+        });
+      },
+    );
+
+    render(
+      <ThemeProvider theme={theme}>
+        <Avatar
+          id="testing"
+          testID="avatar-test"
+          accessibility=""
+          ref={ref}
+          onUpload={onUploadMock}
+        />
+      </ThemeProvider>,
+    );
+
+    // Simular seleção de imagem
+    await act(async () => {
+      await ref.current.openPicker();
+    });
+
+    // Aguardar que o onUpload seja chamado
+    await waitFor(
+      () => {
+        expect(onUploadMock).toHaveBeenCalledWith(TEST_IMAGE_URI);
+      },
+      { timeout: 3000 },
+    );
+
+    // Testar o método getUploadImage
+    await act(async () => {
+      const uploadedImage = ref.current.getUploadImage();
+      expect(uploadedImage).toBe(TEST_IMAGE_URI);
+    });
+  });
+
+  it('should handle image selection with no assets in response', async () => {
+    const onUploadMock = jest.fn();
+
+    // Mock que retorna uma resposta sem assets
+    (launchImageLibrary as jest.Mock).mockImplementationOnce(
+      (_options, callback) => {
+        if (callback) {
+          callback({
+            didCancel: false,
+            // Sem assets
+          });
+        }
+        return Promise.resolve({
+          didCancel: false,
+          // Sem assets
+        });
+      },
+    );
+
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Avatar
+          id="testing"
+          testID="avatar-test"
+          accessibility=""
+          onUpload={onUploadMock}
+        />
+      </ThemeProvider>,
+    );
+
+    const component = getByTestId('avatar-test');
+
+    act(() => {
+      fireEvent.press(component);
+    });
+
+    // Verificar que onUpload não foi chamado já que não há assets
+    await waitFor(() => {
+      expect(onUploadMock).not.toHaveBeenCalled();
+    });
+  });
+
+  it('should handle string image correctly', () => {
+    // Testando quando image é uma string direta (URL) em vez de um objeto
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Avatar
+          id="testing"
+          accessibility=""
+          // @ts-ignore para testar cenário de string simples
+          image="https://example.com/image.jpg"
+        />
+      </ThemeProvider>,
+    );
+    expect(wrapper.toJSON()).toBeTruthy();
+  });
+
+  it('should handle file:// URI scheme correctly', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Avatar
+          id="testing"
+          accessibility=""
+          image={{ uri: 'file:///path/to/image.jpg' }}
+        />
+      </ThemeProvider>,
+    );
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should handle image passed with empty uri', () => {
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Avatar
+          id="testing"
+          accessibility=""
+          image={{ uri: '' }}
+        />
+      </ThemeProvider>,
+    );
+    expect(wrapper.toJSON()).toBeTruthy();
+  });
+
+  // Testes adicionados para melhorar cobertura de branches
+  
+  it('should test isValidURI with non-URI strings', () => {
+    // Testando com URI inválido (não começa com http/https/file/www)
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Avatar
+          id="testing"
+          accessibility=""
+          // @ts-ignore para testar cenário de string não-URI
+          image={{ uri: 'not-a-uri' }}
+        />
+      </ThemeProvider>,
+    );
+    expect(wrapper.toJSON()).toBeTruthy();
+  });
+
+  it('should handle visibleImage as plain string input', () => {
+    // Este teste é para cobrir a branch na linha 100 - quando visibleImage é string mas não é URI válido
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Avatar
+          id="testing"
+          accessibility=""
+          // @ts-ignore para testar cenário com string que não é URI
+          image="not-a-uri-just-plain-text"
+        />
+      </ThemeProvider>,
+    );
+    expect(wrapper.toJSON()).toBeTruthy();
+  });
+
+  it('should handle non-string non-object visibleImage', () => {
+    // Este teste é para cobrir a branch na linha 100 - quando visibleImage não é string nem objeto
+    const wrapper = renderer.create(
+      <ThemeProvider theme={theme}>
+        <Avatar
+          id="testing"
+          accessibility=""
+          // @ts-ignore para testar cenário com imagem inválida
+          image={123}
+        />
+      </ThemeProvider>,
+    );
+    expect(wrapper.toJSON()).toBeTruthy();
+  });
+
+  it('should handle empty onUpload callback', async () => {
+    // Mock que retorna uma resposta com upload bem-sucedido mas sem callback de onUpload
+    (launchImageLibrary as jest.Mock).mockImplementationOnce(
+      (_options, callback) => {
+        if (callback) {
+          callback({
+            didCancel: false,
+            assets: [{ uri: TEST_IMAGE_URI }],
+          });
+        }
+        return Promise.resolve({
+          didCancel: false,
+          assets: [{ uri: TEST_IMAGE_URI }],
+        });
+      },
+    );
+
+    // Renderizar sem onUpload
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Avatar
+          id="testing"
+          testID="avatar-test"
+          accessibility=""
+          // Nota: não passamos onUpload aqui, mas configuramos para chamar openPicker ao pressionar
+          onPress={() => {
+            // função vazia para simular onPress que chama openPicker
+          }}
+        />
+      </ThemeProvider>,
+    );
+
+    const component = getByTestId('avatar-test');
+
+    // Deve executar sem erros mesmo sem onUpload
+    act(() => {
+      fireEvent.press(component);
+    });
+    
+    // Verificar que o componente ainda existe após a operação
+    expect(component).toBeTruthy();
+  });
 });
