@@ -1,15 +1,19 @@
 import React from 'react';
-import { TextInput } from 'react-native';
 import { ThemeProvider } from 'styled-components/native';
 import { fireEvent, render } from '@testing-library/react-native';
+
+// Mock do componente TextInputMask antes das importações do componente
+jest.mock('react-native-masked-input', () => {
+  const mockComponent = require('react-native').TextInput;
+  return mockComponent;
+});
+
 import MaskedTextInput from '..';
 import theme from '../../../../theme';
 
-// Mock do componente TextInputMask para facilitar os testes
-jest.mock('react-native-masked-input', () => {
-  const mockTextInput = require('react-native').TextInput;
-  return mockTextInput;
-});
+const TEST_ID = 'test';
+const TEST_ACCESSIBILITY = 'test';
+const NO_MASK = 'no-mask';
 
 describe('<MaskedTextInput />', () => {
   beforeEach(() => {
@@ -19,11 +23,15 @@ describe('<MaskedTextInput />', () => {
   it('should render masked text input with default props', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <MaskedTextInput id="test" accessibility="test" maskType="no-mask" />
+        <MaskedTextInput
+          id={TEST_ID}
+          accessibility={TEST_ACCESSIBILITY}
+          maskType={NO_MASK}
+        />
       </ThemeProvider>,
     );
 
-    expect(getByTestId('test')).toBeTruthy();
+    expect(getByTestId(TEST_ID)).toBeTruthy();
   });
 
   it('should apply document mask for CPF', () => {
@@ -231,14 +239,14 @@ describe('<MaskedTextInput />', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
         <MaskedTextInput
-          id="test-id"
-          accessibility="test-id"
-          maskType="no-mask"
+          id={TEST_ID}
+          accessibility={TEST_ACCESSIBILITY}
+          maskType={NO_MASK}
         />
       </ThemeProvider>,
     );
 
-    expect(getByTestId('input_test-id')).toBeTruthy();
+    expect(getByTestId(TEST_ID)).toBeTruthy();
   });
 
   it('should apply correct testID when only accessibility is provided', () => {
