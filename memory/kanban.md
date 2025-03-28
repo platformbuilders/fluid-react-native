@@ -103,4 +103,11 @@ kanban-plugin: basic
 - Verificar comportamento correto com valores null para variant 
 - ✅ Melhorar a cobertura de testes do Typography para atingir 100% em todos os critérios
 - ✅ Remover tipo de máscara "document" do MaskedTextInput
+- ✅ Melhorar a cobertura de testes do Avatar para atingir pelo menos 95% em branches e functions
+- ✅ Resolver warnings relacionados aos props do PinInput
+- ✅ Melhorar a cobertura de testes do PinInput para atingir 100% em funções
+- Melhorar a cobertura de testes do SearchInput
+- Corrigir warnings de PropTypes no TextInput
+- ✅ Melhorar a cobertura de testes do Typography para atingir 100% em todos os critérios
+- ✅ Remover tipo de máscara "document" do MaskedTextInput
 - ✅ Melhorar a cobertura de testes do Avatar para atingir pelo menos 95% em branches e functions 

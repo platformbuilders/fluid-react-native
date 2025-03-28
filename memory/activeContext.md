@@ -96,6 +96,7 @@ Mantemos o foco nas prioridades definidas no Kanban:
 - Aumento da cobertura de testes do SearchInput, chegando a mais de 95% em statements e lines.
 - Melhoria expressiva na cobertura de testes do Avatar, com 100% de cobertura em statements, functions e lines, e 92.68% em branches.
 - Implementados diversos testes para garantir o correto funcionamento do componente Avatar em diferentes cenários de uso.
+- Otimização dos testes do PinInput, atingindo 100% de cobertura em statements, functions e lines, e 95.83% em branches, resolvendo problemas relacionados à verificação da função changeText.
 
 ### Documentação
 - Atualização da documentação com novos padrões identificados
