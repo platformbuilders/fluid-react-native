@@ -1,10 +1,10 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components/native';
-import { fireEvent, render, act } from '@testing-library/react-native';
-import theme from '../../../theme';
-import MaskedTextInput from '../MaskedTextInput';
+import { fireEvent, render } from '@testing-library/react-native';
 import { InputStatus } from '../../../enums';
+import theme from '../../../theme';
 import { MaskedTextInputType } from '../../../types';
+import MaskedTextInput from '../MaskedTextInput';
 
 // Mock do useEffect para testar mudanças nas dependências
 jest.mock('react', () => {
@@ -23,7 +23,7 @@ describe('<MaskedTextInput />', () => {
     jest.clearAllMocks();
   });
 
-  it('should apply document mask for CPF', () => {
+  it('should apply cpf mask', () => {
     const onChangeText = jest.fn();
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
@@ -43,7 +43,7 @@ describe('<MaskedTextInput />', () => {
     expect(onChangeText).toHaveBeenCalledWith('222.222.222-22', '22222222222');
   });
 
-  it('should apply document mask for CNPJ', () => {
+  it('should apply cnpj mask', () => {
     const onChangeText = jest.fn();
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
@@ -130,7 +130,7 @@ describe('<MaskedTextInput />', () => {
 
     const component = getByTestId('test');
     fireEvent.changeText(component, '12345678900');
-    
+
     // O componente passará o valor para o maskType
     expect(component).toBeDefined();
   });
@@ -239,7 +239,7 @@ describe('<MaskedTextInput />', () => {
 
     const component = getByTestId('test');
     fireEvent.changeText(component, 'test');
-    
+
     // O componente deve usar "custom" como fallback
     expect(component).toBeDefined();
   });
@@ -355,25 +355,25 @@ describe('<MaskedTextInput />', () => {
     expect(component.props.status).toBe(InputStatus.Danger);
   });
 
-  it('should handle document mask with same options for cpf and document types', () => {
+  it('should handle cpf and custom mask types', () => {
     const onChangeText = jest.fn();
-    
-    // Renderizando com maskType="document"
+
+    // Renderizando com maskType="cpf"
     const { getByTestId, rerender } = render(
       <ThemeProvider theme={theme}>
         <MaskedTextInput
           id="test"
           accessibility="test"
-          maskType="document"
+          maskType="cpf"
           onChangeText={onChangeText}
         />
       </ThemeProvider>,
     );
 
-    const componentDocument = getByTestId('test');
-    fireEvent.changeText(componentDocument, '22222222222');
-    
-    // Re-renderizando com maskType="cpf"
+    const componentCpf = getByTestId('test');
+    fireEvent.changeText(componentCpf, '22222222222');
+
+    // Re-renderizando com maskType="cpf" novamente para testar consistência
     rerender(
       <ThemeProvider theme={theme}>
         <MaskedTextInput
@@ -384,10 +384,10 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
-    const componentCpf = getByTestId('test');
-    fireEvent.changeText(componentCpf, '22222222222');
-    
+
+    const componentCpf2 = getByTestId('test');
+    fireEvent.changeText(componentCpf2, '22222222222');
+
     // Ambos devem usar a mesma máscara (CPF)
     expect(onChangeText).toHaveBeenCalledWith('222.222.222-22', '22222222222');
   });
@@ -397,7 +397,7 @@ describe('<MaskedTextInput />', () => {
     const initialOptions = {
       mask: '999.999.999-99',
     };
-    
+
     const { getByTestId, rerender } = render(
       <ThemeProvider theme={theme}>
         <MaskedTextInput
@@ -409,12 +409,12 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // Alterando as opções
     const newOptions = {
       mask: '99/99/9999',
     };
-    
+
     rerender(
       <ThemeProvider theme={theme}>
         <MaskedTextInput
@@ -426,10 +426,10 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     const component = getByTestId('test');
     fireEvent.changeText(component, '10102020');
-    
+
     // Verificando se a máscara foi atualizada corretamente
     expect(component).toBeDefined();
   });
@@ -439,7 +439,7 @@ describe('<MaskedTextInput />', () => {
     const options = {
       mask: '999.999.999-99',
     };
-    
+
     const { getByTestId, rerender } = render(
       <ThemeProvider theme={theme}>
         <MaskedTextInput
@@ -451,7 +451,7 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // Re-renderizando com as mesmas opções
     rerender(
       <ThemeProvider theme={theme}>
@@ -464,7 +464,7 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     const component = getByTestId('test');
     expect(component).toBeDefined();
   });
@@ -484,7 +484,7 @@ describe('<MaskedTextInput />', () => {
 
     const component = getByTestId('test');
     fireEvent.changeText(component, '11999887766');
-    
+
     expect(component).toBeDefined();
   });
 
@@ -503,7 +503,7 @@ describe('<MaskedTextInput />', () => {
 
     const component = getByTestId('test');
     fireEvent.changeText(component, '12345678');
-    
+
     expect(component).toBeDefined();
   });
 
@@ -522,7 +522,7 @@ describe('<MaskedTextInput />', () => {
 
     const component = getByTestId('test');
     fireEvent.changeText(component, '12345');
-    
+
     expect(component).toBeDefined();
   });
 
@@ -541,7 +541,7 @@ describe('<MaskedTextInput />', () => {
 
     const component = getByTestId('test');
     fireEvent.changeText(component, '4111111111111111');
-    
+
     expect(component).toBeDefined();
   });
 
@@ -560,7 +560,7 @@ describe('<MaskedTextInput />', () => {
 
     const component = getByTestId('test');
     fireEvent.changeText(component, '12345abc');
-    
+
     expect(component).toBeDefined();
   });
 
@@ -579,7 +579,7 @@ describe('<MaskedTextInput />', () => {
 
     const component = getByTestId('test');
     fireEvent.changeText(component, '01012020');
-    
+
     expect(component).toBeDefined();
   });
 
@@ -595,11 +595,11 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     const component = getByTestId('test');
-    
+
     fireEvent.changeText(component, '98765432100');
-    
+
     expect(onChangeText).toHaveBeenCalledWith('987.654.321-00', '98765432100');
   });
 
@@ -620,16 +620,16 @@ describe('<MaskedTextInput />', () => {
 
     // Verificar se o input foi renderizado corretamente
     const input = getByTestId('test');
-    
+
     // Disparar evento de texto
     fireEvent.changeText(input, '123ABC');
-    
+
     // Verificar se o callback foi chamado com qualquer valor
     expect(onChangeText1).toHaveBeenCalled();
-    
+
     // Limpar mock antes do segundo caso
     onChangeText1.mockClear();
-    
+
     // Caso 2: testando com outro tipo válido
     rerender(
       <ThemeProvider theme={theme}>
@@ -641,49 +641,41 @@ describe('<MaskedTextInput />', () => {
             mask: '999-AAA',
             validator: (value: string) => value.length <= 7,
             translation: {
-              '9': (val: string) => /\d/.test(val) ? val : '',
-              'A': (val: string) => /[a-zA-Z]/.test(val) ? val : '',
+              '9': (val: string) => (/\d/.test(val) ? val : ''),
+              A: (val: string) => (/[a-zA-Z]/.test(val) ? val : ''),
             },
           }}
           onChangeText={onChangeText1}
         />
       </ThemeProvider>,
     );
-    
+
     // Disparar evento de texto para testar o caso default
     fireEvent.changeText(input, '123ABC');
-    
+
     // Verificar se o callback foi chamado com qualquer valor
     expect(onChangeText1).toHaveBeenCalled();
   });
-  
+
   it('should call maskTypeControll when maskType changes', () => {
     // Renderizar com maskType cpf
     const { rerender } = render(
       <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="cpf"
-        />
+        <MaskedTextInput id="test" accessibility="test" maskType="cpf" />
       </ThemeProvider>,
     );
-    
+
     // Mudar o maskType para cnpj para forçar o chamado do useEffect
     rerender(
       <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="cnpj"
-        />
+        <MaskedTextInput id="test" accessibility="test" maskType="cnpj" />
       </ThemeProvider>,
     );
-    
+
     // Simplesmente verificar que não houve erros na re-renderização
     expect(true).toBe(true);
   });
-  
+
   it('should handle no-mask and uppercase cases', () => {
     const onChangeText = jest.fn();
     const { getByTestId, rerender } = render(
@@ -697,11 +689,11 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // Verificar se o componente foi renderizado
     const input = getByTestId('test');
     expect(input).toBeTruthy();
-    
+
     // Testar maskType uppercase
     rerender(
       <ThemeProvider theme={theme}>
@@ -714,106 +706,78 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // Disparar evento de texto para testar
     fireEvent.changeText(input, 'abc');
-    
+
     // Verificar chamada do callback
     expect(onChangeText).toHaveBeenCalled();
   });
-  
+
   it('should ensure optionDefault is defined', () => {
     // Este teste verifica se o optionDefault está definido (linha 13)
     // Para isso, vamos testar um componente que usa as opções padrão
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="custom"
-        />
+        <MaskedTextInput id="test" accessibility="test" maskType="custom" />
       </ThemeProvider>,
     );
-    
+
     // Verificar se o componente foi renderizado com sucesso
     expect(getByTestId('test')).toBeTruthy();
   });
 
   it('should test every branch of maskTypeControll switch', () => {
     // Teste para verificar cada branch do switch na função maskTypeControll
-    
+
     // Renderizar com diferentes tipos de máscara para forçar diferentes ramos
-    
+
     // CPF - já testado anteriormente, mas vamos testar novamente para certificar
     const { rerender } = render(
       <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="cpf"
-        />
+        <MaskedTextInput id="test" accessibility="test" maskType="cpf" />
       </ThemeProvider>,
     );
-    
+
     // CNPJ
     rerender(
       <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="cnpj"
-        />
+        <MaskedTextInput id="test" accessibility="test" maskType="cnpj" />
       </ThemeProvider>,
     );
-    
-    // Document (deve cair no mesmo caso que CPF)
+
+    // CPF (antigo caso document, que caía no mesmo caso)
     rerender(
       <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="document"
-        />
+        <MaskedTextInput id="test" accessibility="test" maskType="cpf" />
       </ThemeProvider>,
     );
-    
+
     // No-mask
     rerender(
       <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="no-mask"
-        />
+        <MaskedTextInput id="test" accessibility="test" maskType="no-mask" />
       </ThemeProvider>,
     );
-    
+
     // Uppercase
     rerender(
       <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="uppercase"
-        />
+        <MaskedTextInput id="test" accessibility="test" maskType="uppercase" />
       </ThemeProvider>,
     );
-    
+
     // Default (para testar o case default do switch)
     rerender(
       <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="cel-phone"
-        />
+        <MaskedTextInput id="test" accessibility="test" maskType="cel-phone" />
       </ThemeProvider>,
     );
-    
+
     // Verificar que não houve erros na renderização
     expect(true).toBe(true);
   });
-  
+
   it('should force useEffect to call maskTypeControll', () => {
     // Teste específico para verificar a execução do useEffect na linha 114
     const { rerender } = render(
@@ -826,7 +790,7 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // Mudar o valor para forçar o useEffect a ser chamado novamente
     rerender(
       <ThemeProvider theme={theme}>
@@ -838,7 +802,7 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // Mudar as opções para forçar o useEffect a ser chamado novamente
     rerender(
       <ThemeProvider theme={theme}>
@@ -854,10 +818,10 @@ describe('<MaskedTextInput />', () => {
       </ThemeProvider>,
     );
   });
-  
+
   it('should test handleSetMask with updated and not updated scenarios', () => {
     // Testar handleSetMask quando as opções mudam
-    
+
     // 1. Renderizar com opções iniciais
     const { rerender } = render(
       <ThemeProvider theme={theme}>
@@ -871,7 +835,7 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // 2. Re-renderizar com as mesmas opções (não deve atualizar maskSelected)
     rerender(
       <ThemeProvider theme={theme}>
@@ -885,7 +849,7 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // 3. Re-renderizar com opções diferentes (deve atualizar maskSelected)
     rerender(
       <ThemeProvider theme={theme}>
@@ -903,7 +867,7 @@ describe('<MaskedTextInput />', () => {
 
   it('should use instrumentation to force coverage of specific lines', () => {
     // Testar especificamente a cobertura da linha 13, 75-82 e 114
-    
+
     // Criar o componente com o tipo 'uppercase' para forçar o uso de optionDefault
     const { rerender } = render(
       <ThemeProvider theme={theme}>
@@ -915,9 +879,9 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // Re-renderizar com diferentes tipos de máscara para forçar chamadas de maskTypeControll
-    
+
     // Forçar o caso CPF
     rerender(
       <ThemeProvider theme={theme}>
@@ -929,7 +893,7 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // Forçar o caso CNPJ
     rerender(
       <ThemeProvider theme={theme}>
@@ -941,7 +905,7 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // Forçar o caso no-mask
     rerender(
       <ThemeProvider theme={theme}>
@@ -953,20 +917,20 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
-    // Forçar o caso document (tratado como CPF)
+
+    // Forçar o caso CPF (anteriormente tratado como document)
     rerender(
       <ThemeProvider theme={theme}>
         <MaskedTextInput
           id="test"
           accessibility="test"
-          maskType="document"
+          maskType="cpf"
           value="12345678900"
         />
       </ThemeProvider>,
     );
-    
-    // Forçar o caso default com tipo personalizado  
+
+    // Forçar o caso default com tipo personalizado
     rerender(
       <ThemeProvider theme={theme}>
         <MaskedTextInput
@@ -980,7 +944,7 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // Mudar value para forçar reexecução do useEffect (linha 114)
     rerender(
       <ThemeProvider theme={theme}>
@@ -995,14 +959,14 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // Verificar que o componente completa todas as renderizações sem erros
     expect(true).toBe(true);
   });
 
   it('should directly instrument specific maskTypeControll branches', () => {
     // Este teste verifica cada caso do maskTypeControll de forma mais direta
-    
+
     // Testar CPF
     const { getByTestId, rerender } = render(
       <ThemeProvider theme={theme}>
@@ -1014,11 +978,11 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     const input = getByTestId('test');
     // Verificar se o componente usa o type 'cpf' internamente
     expect(input.props.type).toBe('cpf');
-    
+
     // Testar CNPJ
     rerender(
       <ThemeProvider theme={theme}>
@@ -1030,10 +994,10 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // Verificar se o componente usa o type 'cnpj' internamente
     expect(input.props.type).toBe('cnpj');
-    
+
     // Testar no-mask
     rerender(
       <ThemeProvider theme={theme}>
@@ -1045,10 +1009,10 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // Verificar se o componente usa o type 'custom' para no-mask
     expect(input.props.type).toBe('custom');
-    
+
     // Testar uppercase
     rerender(
       <ThemeProvider theme={theme}>
@@ -1060,25 +1024,25 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // Para uppercase também usa o tipo custom
     expect(input.props.type).toBe('custom');
-    
-    // Testar tipo personalizado (document)
+
+    // Testar tipo personalizado (cpf)
     rerender(
       <ThemeProvider theme={theme}>
         <MaskedTextInput
           id="test"
           accessibility="test"
-          maskType="document"
+          maskType="cpf"
           value="12345678900"
         />
       </ThemeProvider>,
     );
-    
-    // Para document, deve usar o tipo cpf
+
+    // Para CPF, deve usar o tipo cpf
     expect(input.props.type).toBe('cpf');
-    
+
     // Testar outro tipo (caso default)
     rerender(
       <ThemeProvider theme={theme}>
@@ -1090,14 +1054,14 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // No caso default, o tipo deve ser igual ao maskType
     expect(input.props.type).toBe('cel-phone');
   });
 
   it('should test the handleSetMask logic through component behavior', () => {
     // Este teste verifica a lógica do handleSetMask observando o comportamento do componente
-    
+
     // Renderizar com um tipo específico e depois mudar para testar a atualização
     const { getByTestId, rerender } = render(
       <ThemeProvider theme={theme}>
@@ -1109,10 +1073,10 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     const input = getByTestId('test');
     expect(input.props.type).toBe('cpf');
-    
+
     // Mudar o tipo de máscara para verificar se o handleSetMask atualiza corretamente
     rerender(
       <ThemeProvider theme={theme}>
@@ -1124,10 +1088,10 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // Verificar se o tipo foi atualizado
     expect(input.props.type).toBe('cnpj');
-    
+
     // Testar se o mesmo tipo e opções não causa atualização
     // (verificamos indiretamente se o componente não quebra, já que não podemos acessar diretamente o handleSetMask)
     rerender(
@@ -1140,10 +1104,10 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // Verificar que o tipo permanece o mesmo
     expect(input.props.type).toBe('cnpj');
-    
+
     // Finalmente, testar uma opção custom com opções personalizadas
     rerender(
       <ThemeProvider theme={theme}>
@@ -1152,24 +1116,26 @@ describe('<MaskedTextInput />', () => {
           accessibility="test"
           maskType="custom"
           options={{
-            mask: '999.999.999-99'
+            mask: '999.999.999-99',
           }}
           value="12345678900"
         />
       </ThemeProvider>,
     );
-    
+
     // Verificar que o tipo foi atualizado para custom
     expect(input.props.type).toBe('custom');
-    expect(input.props.options).toEqual(expect.objectContaining({
-      mask: '999.999.999-99'
-    }));
+    expect(input.props.options).toEqual(
+      expect.objectContaining({
+        mask: '999.999.999-99',
+      }),
+    );
   });
 
   // Teste específico para validar a função validator do optionDefault (linha 13)
   it('should use validator function from optionDefault', () => {
     const onChangeText = jest.fn();
-    
+
     // Acessar o componente interno e testar diretamente o validator
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
@@ -1182,308 +1148,34 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // Validar se o componente renderizou corretamente com o validator padrão
     const input = getByTestId('test');
     fireEvent.changeText(input, 'qualquer-valor-deve-passar');
-    
+
     // O validator padrão sempre retorna true, então o valor deve ser aceito
     expect(onChangeText).toHaveBeenCalled();
-    
+
     // Verificando se o componente possui as configurações aplicadas
     expect(input.props.type).toBe('custom');
   });
 
-  // Teste específico para cada caso do maskTypeControll (linhas 75-82)
-  it('should handle document maskType correctly', () => {
+  // Teste para verificar o caso especial CPF - linha 75
+  it('should handle cpf maskType correctly', () => {
     const onChangeText = jest.fn();
     const { getByTestId } = render(
-      <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="document"  // Especificando 'document' que é tratado como 'cpf'
-          onChangeText={onChangeText}
-        />
-      </ThemeProvider>,
-    );
-
-    const input = getByTestId('test');
-    fireEvent.changeText(input, '12345678900');
-    
-    // Verifica se o valor foi formatado como CPF
-    expect(onChangeText).toHaveBeenCalledWith('123.456.789-00', '12345678900');
-  });
-
-  // Testando o caso específico do maskTypeControll para uppercase (linha 82)
-  it('should handle uppercase maskType correctly', () => {
-    const onChangeText = jest.fn();
-    const { getByTestId } = render(
-      <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="uppercase"
-          onChangeText={onChangeText}
-        />
-      </ThemeProvider>,
-    );
-
-    const input = getByTestId('test');
-    fireEvent.changeText(input, 'texto em minúsculo');
-    
-    // O componente não transforma diretamente para maiúsculas no evento, apenas verifica que a função foi chamada
-    expect(onChangeText).toHaveBeenCalled();
-  });
-
-  // Testando a cobertura de todas as opções de maskTypeControll em sequência
-  it('should handle all maskType cases in sequence', () => {
-    const onChangeText = jest.fn();
-    
-    // Renderizar inicialmente com um tipo
-    const { getByTestId, rerender } = render(
       <ThemeProvider theme={theme}>
         <MaskedTextInput
           id="test"
           accessibility="test"
           maskType="cpf"
-          onChangeText={onChangeText}
-        />
-      </ThemeProvider>,
-    );
-    
-    const input = getByTestId('test');
-    
-    // Teste para CPF
-    fireEvent.changeText(input, '12345678900');
-    expect(onChangeText).toHaveBeenCalledWith('123.456.789-00', '12345678900');
-    onChangeText.mockClear();
-    
-    // Mudar para CNPJ
-    rerender(
-      <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="cnpj"
-          onChangeText={onChangeText}
-        />
-      </ThemeProvider>,
-    );
-    
-    // Testar com um número exato para CNPJ (alguns componentes têm limitações de comprimento)
-    fireEvent.changeText(input, '12345678901');
-    expect(onChangeText).toHaveBeenCalled();
-    onChangeText.mockClear();
-    
-    // Mudar para no-mask
-    rerender(
-      <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="no-mask"
-          onChangeText={onChangeText}
-        />
-      </ThemeProvider>,
-    );
-    
-    fireEvent.changeText(input, 'texto sem máscara');
-    // Verificar apenas que a função foi chamada, sem verificar valores específicos
-    expect(onChangeText).toHaveBeenCalled();
-    onChangeText.mockClear();
-    
-    // Mudar para uppercase
-    rerender(
-      <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="uppercase"
-          onChangeText={onChangeText}
-        />
-      </ThemeProvider>,
-    );
-    
-    fireEvent.changeText(input, 'texto em minúsculo');
-    expect(onChangeText).toHaveBeenCalled();
-  });
-
-  // Teste adicional para cobrir todas as ramificações do maskTypeControll com múltiplas renderizações
-  it('should fully cover maskTypeControll branches with multiple renderings', () => {
-    // Uma função onChangeText para usar em todos os testes
-    const onChangeText = jest.fn();
-
-    // Testes para maskType='cpf'
-    const { getByTestId, rerender } = render(
-      <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="cpf"
-          onChangeText={onChangeText}
-        />
-      </ThemeProvider>
-    );
-
-    // Obter o input e interagir com ele para testar o comportamento do maskType 'cpf'
-    const input = getByTestId('test');
-    fireEvent.changeText(input, '12345678900');
-    expect(onChangeText).toHaveBeenCalledWith('123.456.789-00', '12345678900');
-    onChangeText.mockClear();
-
-    // Teste para maskType='document' (que é tratado como cpf)
-    rerender(
-      <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="document"
-          onChangeText={onChangeText}
-        />
-      </ThemeProvider>
-    );
-
-    fireEvent.changeText(input, '12345678900');
-    expect(onChangeText).toHaveBeenCalledWith('123.456.789-00', '12345678900');
-    onChangeText.mockClear();
-
-    // Teste para maskType='cnpj'
-    rerender(
-      <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="cnpj"
-          onChangeText={onChangeText}
-        />
-      </ThemeProvider>
-    );
-
-    fireEvent.changeText(input, '12345678000190');
-    expect(onChangeText).toHaveBeenCalled();
-    onChangeText.mockClear();
-
-    // Teste para maskType='no-mask'
-    rerender(
-      <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="no-mask"
-          onChangeText={onChangeText}
-        />
-      </ThemeProvider>
-    );
-
-    fireEvent.changeText(input, 'texto');
-    expect(onChangeText).toHaveBeenCalled();
-    onChangeText.mockClear();
-
-    // Teste para maskType='uppercase'
-    rerender(
-      <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="uppercase"
-          onChangeText={onChangeText}
-        />
-      </ThemeProvider>
-    );
-
-    fireEvent.changeText(input, 'texto');
-    expect(onChangeText).toHaveBeenCalled();
-    onChangeText.mockClear();
-
-    // Teste para o caso default (qualquer outro maskType)
-    rerender(
-      <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="custom"
-          options={{
-            mask: '999',
-            validator: (value: string) => value.length <= 3,
-            translation: {
-              '9': (val: string) => /\d/.test(val) ? val : '',
-            }
-          }}
-          onChangeText={onChangeText}
-        />
-      </ThemeProvider>
-    );
-
-    fireEvent.changeText(input, '123');
-    expect(onChangeText).toHaveBeenCalled();
-    onChangeText.mockClear();
-
-    // Para melhorar a cobertura, testamos a atualização com o mesmo tipo mas diferentes opções
-    rerender(
-      <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="custom"
-          options={{
-            mask: '999-999',
-            validator: (value: string) => value.length <= 7,
-            translation: {
-              '9': (val: string) => /\d/.test(val) ? val : '',
-            }
-          }}
-          onChangeText={onChangeText}
-        />
-      </ThemeProvider>
-    );
-
-    fireEvent.changeText(input, '123456');
-    expect(onChangeText).toHaveBeenCalled();
-  });
-
-  // Testes adicionais específicos para aumentar a cobertura
-
-  // Teste para cobrir a constante optionDefault (linha 13)
-  it('should use optionDefault when no options are provided', () => {
-    const onChangeText = jest.fn();
-    const { getByTestId } = render(
-      <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test-default-options"
-          accessibility="test"
-          maskType="custom" // Usando tipo que utiliza optionDefault
-          onChangeText={onChangeText}
-        />
-      </ThemeProvider>,
-    );
-
-    const component = getByTestId('input_test-default-options');
-    
-    // Verificamos os props do componente para confirmar que estamos usando as opções padrão
-    expect(component.props.options).toBeDefined();
-    
-    // Testamos o comportamento
-    fireEvent.changeText(component, 'teste de máscara padrão');
-    expect(onChangeText).toHaveBeenCalled();
-  });
-
-  // Teste para verificar o caso especial 'document' (equivalente a 'cpf') - linha 75
-  it('should treat document maskType same as cpf', () => {
-    const onChangeText = jest.fn();
-    const { getByTestId } = render(
-      <ThemeProvider theme={theme}>
-        <MaskedTextInput
-          id="test"
-          accessibility="test"
-          maskType="document" // Usando documento em vez de CPF
           onChangeText={onChangeText}
         />
       </ThemeProvider>,
     );
 
     const component = getByTestId('test');
-    
+
     // A entrada deve ser formatada como CPF
     fireEvent.changeText(component, '12345678900');
     expect(onChangeText).toHaveBeenCalledWith('123.456.789-00', '12345678900');
@@ -1492,7 +1184,7 @@ describe('<MaskedTextInput />', () => {
   // Teste para verificar a atualização da máscara durante o ciclo de vida do componente
   it('should update mask when maskType changes', () => {
     const onChangeText = jest.fn();
-    
+
     // Primeiro render com mask type CPF
     const { unmount } = render(
       <ThemeProvider theme={theme}>
@@ -1505,13 +1197,13 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // Desmontar o componente
     unmount();
-    
+
     // Limpar o mock entre os renders
     onChangeText.mockClear();
-    
+
     // Agora renderizamos com maskType CNPJ
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
@@ -1524,19 +1216,22 @@ describe('<MaskedTextInput />', () => {
         />
       </ThemeProvider>,
     );
-    
+
     // Pegar o componente e testar com valor CNPJ
     const component = getByTestId('test');
     fireEvent.changeText(component, '12345678000195');
-    
+
     // Verificar que o formato CNPJ foi aplicado
-    expect(onChangeText).toHaveBeenCalledWith('12.345.678/0001-95', '12345678000195');
+    expect(onChangeText).toHaveBeenCalledWith(
+      '12.345.678/0001-95',
+      '12345678000195',
+    );
   });
 
   // Teste para verificar o uso do mesmo tipo de máscara, mas com opções diferentes
   it('should update mask when options change but maskType remains the same', () => {
     const onChangeText = jest.fn();
-    
+
     // Primeiro com opções padrão
     const { getByTestId, rerender } = render(
       <ThemeProvider theme={theme}>
@@ -1556,7 +1251,7 @@ describe('<MaskedTextInput />', () => {
       validator: (value: string) => value.length <= 6,
       getRawValue: (value: string) => value.replace(/\D/g, ''),
     };
-    
+
     rerender(
       <ThemeProvider theme={theme}>
         <MaskedTextInput
@@ -1572,7 +1267,7 @@ describe('<MaskedTextInput />', () => {
 
     const component = getByTestId('test');
     fireEvent.changeText(component, '123456');
-    
+
     // Verifica que o componente foi atualizado corretamente
     expect(component).toBeDefined();
     expect(onChangeText).toHaveBeenCalled();
@@ -1593,10 +1288,13 @@ describe('<MaskedTextInput />', () => {
     );
 
     const component = getByTestId('test');
-    
+
     // Verifica que o texto não é formatado
     fireEvent.changeText(component, 'texto sem máscara 12345');
-    expect(onChangeText).toHaveBeenCalledWith('texto sem máscara 12345', 'texto sem máscara 12345');
+    expect(onChangeText).toHaveBeenCalledWith(
+      'texto sem máscara 12345',
+      'texto sem máscara 12345',
+    );
   });
 
   // Teste para cobrir o caso especial 'uppercase' (linha 89-95)
@@ -1614,10 +1312,10 @@ describe('<MaskedTextInput />', () => {
     );
 
     const component = getByTestId('test');
-    
+
     // O texto deve ser convertido para maiúsculas
     fireEvent.changeText(component, 'texto em maiúsculas');
-    
+
     // Verificamos apenas que o componente foi renderizado corretamente
     // A conversão para maiúsculas é feita pela biblioteca de máscara
     expect(component).toBeDefined();
@@ -1634,7 +1332,7 @@ describe('<MaskedTextInput />', () => {
       delimiter: '.',
       unit: 'R$ ',
     };
-    
+
     const onChangeText = jest.fn();
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
@@ -1649,10 +1347,10 @@ describe('<MaskedTextInput />', () => {
     );
 
     const component = getByTestId('test');
-    
+
     // Testamos o componente com um tipo personalizado
     fireEvent.changeText(component, '12345');
-    
+
     // Verificamos que o componente foi renderizado corretamente
     expect(component).toBeDefined();
     expect(onChangeText).toHaveBeenCalled();
@@ -1663,9 +1361,9 @@ describe('<MaskedTextInput />', () => {
     const customOptions = {
       mask: '999.999.999-99',
     };
-    
+
     const onChangeText = jest.fn();
-    
+
     // Renderiza uma primeira vez
     const { getByTestId, rerender } = render(
       <ThemeProvider theme={theme}>

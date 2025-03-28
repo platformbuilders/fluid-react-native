@@ -53,7 +53,7 @@ describe('<MaskedTextInput />', () => {
     expect(onChangeText).toHaveBeenCalled();
   });
 
-  it('should apply document mask for CNPJ', () => {
+  it('should apply cnpj mask', () => {
     const onChangeText = jest.fn();
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>

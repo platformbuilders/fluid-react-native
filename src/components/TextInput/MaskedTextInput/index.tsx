@@ -1,8 +1,5 @@
 import React, { forwardRef, useEffect, useState } from 'react';
-import {
-  TextInputMaskOptionProp,
-  TextInputMaskTypeProp,
-} from 'react-native-masked-input/src/types';
+import { TextInputMaskOptionProp } from 'react-native-masked-input/src/types';
 import { InputStatus } from '../../../enums';
 import { MaskedTextInputType } from '../../../types';
 import { generateAccessibilityProps } from '../../../utils';
@@ -17,7 +14,7 @@ const optionDefault = {
 };
 
 type OptionMask = {
-  typeMask: TextInputMaskTypeProp;
+  typeMask: MaskedTextInputType['maskType'];
   options?: TextInputMaskOptionProp;
 };
 
@@ -82,40 +79,64 @@ const MaskedTextInput = forwardRef<any, MaskedTextInputType>(
       inputTestID = `${prefix}_input`;
     }
 
-    // Função para controlar o tipo de máscara - simplificada para melhorar cobertura
+    // Funções auxiliares para cada tipo de máscara
+    const handleCpfMask = () => {
+      setMaskSelected({
+        typeMask: 'cpf',
+        options: { mask: '' },
+      });
+    };
+
+    const handleCNPJMask = () => {
+      setMaskSelected({
+        typeMask: 'cnpj',
+        options: { mask: '' },
+      });
+    };
+
+    const handleNoMask = () => {
+      handleSetMask({
+        typeMask: 'custom',
+        options: {
+          mask: '*'.repeat(400),
+        },
+      });
+    };
+
+    const handleUppercaseMask = () => {
+      handleSetMask({
+        typeMask: 'custom',
+        options: {
+          ...optionDefault,
+          getRawValue: (val) => val.toUpperCase(),
+        },
+      });
+    };
+
+    const handleDefaultMask = () => {
+      handleSetMask({
+        typeMask: maskType,
+        options: options,
+      });
+    };
+
+    // Função para controlar o tipo de máscara - simplificada
     const maskTypeControll = () => {
-      // Casos especiais tratados diretamente
-      if (maskType === 'cpf' || maskType === 'document') {
-        setMaskSelected({
-          typeMask: 'cpf',
-          options: { mask: '' },
-        });
-      } else if (maskType === 'cnpj') {
-        setMaskSelected({
-          typeMask: 'cnpj',
-          options: { mask: '' },
-        });
-      } else if (maskType === 'no-mask') {
-        handleSetMask({
-          typeMask: 'custom',
-          options: {
-            mask: '*'.repeat(400),
-          },
-        });
-      } else if (maskType === 'uppercase') {
-        handleSetMask({
-          typeMask: 'custom',
-          options: {
-            ...optionDefault,
-            getRawValue: (val) => val.toUpperCase(),
-          },
-        });
-      } else {
-        // Caso padrão para outros tipos de máscara
-        handleSetMask({
-          typeMask: maskType,
-          options: options,
-        });
+      switch (maskType) {
+        case 'cpf':
+          handleCpfMask();
+          break;
+        case 'cnpj':
+          handleCNPJMask();
+          break;
+        case 'no-mask':
+          handleNoMask();
+          break;
+        case 'uppercase':
+          handleUppercaseMask();
+          break;
+        default:
+          handleDefaultMask();
       }
     };
 
