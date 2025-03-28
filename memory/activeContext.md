@@ -78,6 +78,23 @@
 - Header: 86.36% em branches
 - RadioButton: 86.36% em branches
 
+## Ferramentas de Análise e Qualidade
+
+### Semgrep para Verificação de Acessibilidade (28/05/2024)
+- Corrigidas expressões de regex no arquivo de regras `.rules/accessibility.yml`
+- Implementadas 39 regras para verificação automatizada de problemas de acessibilidade
+- Identificadas 417 ocorrências em 147 arquivos que precisam de atenção para melhorias de acessibilidade
+- Regras implementadas verificam:
+  - Componentes interativos com propriedades de acessibilidade adequadas
+  - Uso correto de generateAccessibilityProps()
+  - Área mínima de toque (44x44dp) para interação
+  - Configuração correta de importantForAccessibility para elementos decorativos
+  - Uso adequado de IDs para testes e identificação de componentes
+  - Transmissão de informações não apenas por cores 
+  - Contraste adequado para texto em fundos coloridos
+  - Uso de testID em testes em vez de texto ou labels
+  - Uso correto de utilitários de acessibilidade
+
 ## Próximos Passos
 
 1. Corrigir os testes do SearchInput que estão falhando
@@ -86,6 +103,7 @@
 4. Melhorar a cobertura de branches do Header e RadioButton
 5. Atualizar snapshots dos componentes modificados
 6. Resolver warnings pendentes relacionados ao PinInput e Icon
+7. Analisar e resolver as ocorrências de acessibilidade identificadas pelo Semgrep
 
 ## Documentação
 

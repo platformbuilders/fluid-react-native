@@ -677,3 +677,15 @@ Necessário continuar o trabalho em outros componentes, seguindo ordem alfabéti
   - Corrigir os testes falhos do SearchInput
   - Aumentar a cobertura de funções do Icon
   - Melhorar a cobertura de branches do MaskedTextInput, Header e RadioButton
+
+**Data: 2024-05-28**
+- Correção do arquivo de regras de acessibilidade (.rules/accessibility.yml)
+  - Conserto da expressão regular na regra `avoid-exclusive-color-information`
+    - Substituição de `(\"|\')` por `([\"'])` para evitar problemas de escape de caracteres
+  - Correção da expressão regular na regra `ensure-text-contrast`
+    - Ajuste dos parênteses para garantir o fechamento adequado de todas as expressões
+  - Verificação completa com execução do semgrep sem erros
+  - Eliminação de erros de análise estática que impediam a execução do semgrep
+  - Melhor rastreamento de problemas de acessibilidade no código, especialmente relacionados a:
+    - Uso de cores sem informações textuais ou icônicas
+    - Contraste inadequado para textos sobre fundos coloridos

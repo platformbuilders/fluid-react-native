@@ -29,6 +29,7 @@ kanban-plugin: basic
 - Aumentar a cobertura de funções do componente Icon para pelo menos 90%
 - Melhorar a cobertura de branches do MaskedTextInput para pelo menos 85%
 - Melhorar a cobertura de branches do Header e RadioButton para pelo menos 90%
+- Analisar e resolver ocorrências de acessibilidade identificadas pelo Semgrep
 
 ## Próximos Passos
 - Implementar testes para componentes com baixa cobertura
@@ -44,6 +45,7 @@ kanban-plugin: basic
 - Adicionar documentação para o Button
 - Refatorar o componente Switch para maior testabilidade
 - Revisar componente Tooltip para compatibilidade em iOS e Android
+- Implementar melhorias de acessibilidade nos componentes Button, Icon e TextInput
 
 ## Concluído
 - Configuração inicial do banco de memória para o projeto
@@ -111,3 +113,4 @@ kanban-plugin: basic
 - ✅ Melhorar a tipagem da propriedade `variant` do Typography para usar tipos específicos em vez de string
 - ✅ Configurar TypeScript e ESLint para ignorar corretamente arquivos de teste 
 - ✅ Analisar métricas atuais de cobertura de testes e identificar componentes que precisam de melhorias 
+- ✅ Corrigir expressões regex no arquivo de regras de acessibilidade 
