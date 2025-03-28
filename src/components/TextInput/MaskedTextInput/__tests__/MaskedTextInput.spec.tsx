@@ -4,8 +4,8 @@ import { fireEvent, render } from '@testing-library/react-native';
 
 // Mock do componente TextInputMask antes das importações do componente
 jest.mock('react-native-masked-input', () => {
-  const mockComponent = require('react-native').TextInput;
-  return mockComponent;
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  return require('react-native').TextInput;
 });
 
 import MaskedTextInput from '..';
