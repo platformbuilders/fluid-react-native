@@ -7,7 +7,6 @@ import { HitSlopType } from './Common';
 import { IconFonts } from './IconType';
 
 type TextInputMaskTypeProp =
-  | 'document'
   | 'credit-card'
   | 'cpf'
   | 'cnpj'
