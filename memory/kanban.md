@@ -19,23 +19,20 @@ kanban-plugin: basic
 - Implementar componente Modal
 - Implementar componente Calendar
 - Adicionar mais exemplos de uso no Storybook
-- Melhorar testes do Icon para aumentar cobertura
 - Continuar melhorias na documentação
 - Implementar testes para o BottomSheet
 - Corrigir warnings do Storybook
 - Melhorar documentação do Checkbox
 
 ## Trabalho Atual
-- Melhorar cobertura de testes do Icon para aumentar a cobertura de funções
-- Resolver warnings relacionados aos props do PinInput
-- Implementar testes para componentes sem cobertura (Button, Link, Typography)
-- Melhorar UX do DatePicker
+- Corrigir os testes falhos do SearchInput relacionados ao acesso de props
+- Aumentar a cobertura de funções do componente Icon para pelo menos 90%
+- Melhorar a cobertura de branches do MaskedTextInput para pelo menos 85%
+- Melhorar a cobertura de branches do Header e RadioButton para pelo menos 90%
 
 ## Próximos Passos
 - Implementar testes para componentes com baixa cobertura
 - Analisar componentes com menor cobertura de testes (Avatar, Badge, LoadingIndicator)
-- Implementar testes para Avatar
-- Implementar testes para Loading
 - Criar página de documentação no Storybook
 - Implantar documentação no Firebase
 - Criar documentação no Storybook para componentes restantes
@@ -44,7 +41,6 @@ kanban-plugin: basic
 - Configurar Firebase Hosting para Storybook
 - Corrigir erros de lint nos arquivos de teste
 - Implementar testes para o ModalPicker
-- Melhorar testes do Accordion
 - Adicionar documentação para o Button
 - Refatorar o componente Switch para maior testabilidade
 - Revisar componente Tooltip para compatibilidade em iOS e Android
@@ -114,3 +110,4 @@ kanban-plugin: basic
 - ✅ Refinar a tipagem do Typography para eliminar o uso de `any` e reduzir warnings de TypeScript
 - ✅ Melhorar a tipagem da propriedade `variant` do Typography para usar tipos específicos em vez de string
 - ✅ Configurar TypeScript e ESLint para ignorar corretamente arquivos de teste 
+- ✅ Analisar métricas atuais de cobertura de testes e identificar componentes que precisam de melhorias 

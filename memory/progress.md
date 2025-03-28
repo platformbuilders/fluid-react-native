@@ -661,3 +661,19 @@ Necessário continuar o trabalho em outros componentes, seguindo ordem alfabéti
   - Configuração do ESLint para ignorar arquivos de teste (`.eslintrc.js`)
   - Padronização dos padrões de exclusão entre TypeScript e ESLint
   - Resolução do problema de erros de validação nos testes
+
+**Data: 2024-05-27**
+- Análise da cobertura de testes atual do projeto
+  - Verificação de métricas por componente
+  - Statements: 97.87% (acima do threshold global de 84%)
+  - Branches: 95.15% (acima do threshold global de 84%)
+  - Functions: 93.93% (acima do threshold global de 84%)
+  - Lines: 97.82% (acima do threshold global de 84%)
+- Identificação de componentes que ainda precisam de melhorias:
+  - Icon: apenas 50% de cobertura em funções, apesar de 100% em statements, branches e lines
+  - SearchInput: falhas em 3 testes relacionados ao acesso da propriedade 'props'
+  - MaskedTextInput: 86.36% de statements e lines, 77.41% de branches e 91.66% de funções
+- Próximos passos para alcançar 95%+ de cobertura em todos os componentes:
+  - Corrigir os testes falhos do SearchInput
+  - Aumentar a cobertura de funções do Icon
+  - Melhorar a cobertura de branches do MaskedTextInput, Header e RadioButton
