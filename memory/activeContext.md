@@ -90,6 +90,9 @@ Mantemos o foco nas prioridades definidas no Kanban:
 
 ## Progresso Recente
 
+- Melhoramos a cobertura de testes do componente Typography
+- Implementamos testes para garantir 100% de cobertura de statements, branches, functions e lines
+- Adicionamos teste específico para cobrir o branch condicional da renderização de AnimatedText vs Text
 - Melhoramos a cobertura de testes do componente SearchInput
 - Adicionamos testes para verificar que onRightIconPress é passado corretamente e funciona
 - Incluímos testes para cobrir diferentes cenários de inputRef

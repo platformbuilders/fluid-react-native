@@ -621,3 +621,17 @@ Necessário continuar o trabalho em outros componentes, seguindo ordem alfabéti
   - Tratamento seguro de propriedades indefinidas
 - Corrigimos os testes para utilizar corretamente o `act()` do React Testing Library
 - Padronizamos o uso das funções de teste para seguir as práticas recomendadas
+
+### 2024-05-24: Melhoria na cobertura de testes do Typography
+
+- Aumentamos a cobertura de testes do componente Typography para 100% em todos os critérios:
+  - 100% statements
+  - 100% branches
+  - 100% functions
+  - 100% lines
+- Adicionamos testes específicos para:
+  - Verificação de branches condicionais na renderização de AnimatedText vs Text
+  - Comportamento correto com valores null ou undefined para variant
+  - Garantia que ambos os caminhos de renderização são cobertos
+- Corrigimos os testes para utilizar corretamente o `act()` do React Testing Library
+- Estruturamos testes para verificar explicitamente que os props são passados corretamente

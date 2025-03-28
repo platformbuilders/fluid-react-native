@@ -85,4 +85,7 @@ kanban-plugin: basic
 - Melhorar a cobertura de testes do componente SearchInput
 - Corrigir testes que falham ao acessar props indefinidas
 - Implementar testes adicionais para cobrir todas as funcionalidades do SearchInput
-- Usar act() corretamente para lidar com atualizações de estado 
+- Usar act() corretamente para lidar com atualizações de estado
+- Melhorar a cobertura do componente Typography para 100% em todos os critérios
+- Implementar teste específico para cobrir o branch condicional da renderização de AnimatedText
+- Verificar comportamento correto com valores null para variant 
