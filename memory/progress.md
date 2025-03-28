@@ -635,3 +635,11 @@ Necessário continuar o trabalho em outros componentes, seguindo ordem alfabéti
   - Adicionados testes para os casos de erro e estados de carregamento
   - Verificação adequada para props como resizeMode e estilos customizados
   - Testados casos extremos como source undefined, null ou tipos não suportados
+
+**Data: 2024-05-25**
+- Melhoria na tipagem do componente Typography
+  - Substituição do tipo `any` por tipagem mais específica para as props de estilo
+  - Melhoria na segurança de tipos do componente Text
+  - Redução de warnings de TypeScript relacionados a tipos genéricos
+  - Manutenção da retrocompatibilidade com código existente
+  - Melhor documentação de propriedades esperadas no componente

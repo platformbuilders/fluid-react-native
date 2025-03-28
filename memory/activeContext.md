@@ -102,6 +102,9 @@ Mantemos o foco nas prioridades definidas no Kanban:
 - Otimização dos testes do PinInput, atingindo 100% de cobertura em statements, functions e lines, e 95.83% em branches, resolvendo problemas relacionados à verificação da função changeText.
 - Excelente cobertura alcançada para o componente Image, com 100% em statements, functions e lines, e 94.11% em branches, testando todos os tipos de fontes de imagem e estados de carregamento.
 
+### Melhorias no Código
+- Refinamento da tipagem do componente Typography, substituindo o uso de `any` por tipagem específica para props de estilo, melhorando a segurança de tipos e reduzindo warnings de TypeScript.
+
 ### Documentação
 - Atualização da documentação com novos padrões identificados
 - Inclusão de exemplos de uso para os componentes recentemente refatorados

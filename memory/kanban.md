@@ -110,4 +110,5 @@ kanban-plugin: basic
 - ✅ Melhorar a cobertura de testes do Typography para atingir 100% em todos os critérios
 - ✅ Remover tipo de máscara "document" do MaskedTextInput
 - ✅ Melhorar a cobertura de testes do Avatar para atingir pelo menos 95% em branches e functions
-- ✅ Melhorar a cobertura de testes do Image para atingir 100% em statements, functions, lines e 94% em branches 
+- ✅ Melhorar a cobertura de testes do Image para atingir 100% em statements, functions, lines e 94% em branches
+- ✅ Refinar a tipagem do Typography para eliminar o uso de `any` e reduzir warnings de TypeScript 
