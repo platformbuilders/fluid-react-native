@@ -1,16 +1,17 @@
-import React, { useEffect, useImperativeHandle, useState } from 'react';
+import React, { useEffect, useImperativeHandle, useRef, useState } from 'react';
+import { isEmpty } from 'lodash';
+import { RNCamera } from 'react-native-camera';
+import { Source } from 'react-native-fast-image';
 import {
   ImageLibraryOptions,
   launchImageLibrary,
 } from 'react-native-image-picker';
 import { formatToMonogram } from '@platformbuilders/helpers';
-import { AvatarProps, ImageSource } from '../../types';
-import {
-  generateAccessibilityProps,
-  generateTestID,
-} from '../../utils/accessibility';
+import { ImageAvatarPlaceholder as defaultAvatar } from '../../assets/images';
+import { AvatarType } from '../../types';
 import Image from '../Image';
 import {
+  CameraView,
   MonogramText,
   MonogramWrapper,
   UploadIcon,
@@ -18,33 +19,33 @@ import {
   Wrapper,
 } from './styles';
 
-const isValidURI = (value?: string): boolean =>
-  value ? /(?:https?|file):\/\/|www\.[^\s]+/.test(value) : false;
-
-const Avatar: React.FC<AvatarProps> = React.forwardRef(
+const Avatar: React.FC<AvatarType> = React.forwardRef(
   (
     {
       id,
       image,
       animatedLoading = true,
-      accessibility,
+      accessibility = 'Upload de Avatar',
       accessibilityLabel,
+      testID,
       size = 50,
       imageQuality = 0.5,
       borderWidth = 2,
       onPress,
       onUpload,
       showBorder = true,
+      displayCamera = false,
       displayMonogram = true,
       name,
       monogramStyle,
       ...rest
     },
     ref,
-  ) => {
     // eslint-disable-next-line sonarjs/cognitive-complexity
-    const [visibleImage, setVisibleImage] = useState<ImageSource | undefined>();
+  ) => {
+    const [visibleImage, setVisibleImage] = useState<string | undefined>();
     const [uploadedImage, setUploadedImage] = useState<string | undefined>();
+    const cameraRef = useRef<any>();
 
     const openPicker = (): Promise<void> => {
       const options: any | ImageLibraryOptions = {
@@ -68,17 +69,37 @@ const Avatar: React.FC<AvatarProps> = React.forwardRef(
       });
     };
 
+    const takePicture = async (): Promise<void> => {
+      if (cameraRef.current) {
+        const options = { quality: 0.5, base64: true };
+        const data = await cameraRef.current.takePictureAsync(options);
+        setUploadedImage(data.uri);
+        return data;
+      }
+    };
+
     const getUploadImage = (): any => {
-      return uploadedImage;
+      return visibleImage;
     };
 
     const clearUploadImage = (): void => {
       setVisibleImage(undefined);
     };
 
+    const getCurrentAvatar = (): Source | any => {
+      if (visibleImage) {
+        return { uri: visibleImage };
+      }
+      if (image && !isEmpty(image)) {
+        return { uri: image };
+      }
+      return defaultAvatar;
+    };
+
     useImperativeHandle(ref, () => ({
       getUploadImage,
       clearUploadImage,
+      takePicture,
       openPicker,
     }));
 
@@ -94,36 +115,12 @@ const Avatar: React.FC<AvatarProps> = React.forwardRef(
       }
     }, [uploadedImage]);
 
-    const source =
-      typeof visibleImage == 'string' && isValidURI(visibleImage)
-        ? { uri: visibleImage }
-        : visibleImage;
-
-    const role = onPress || onUpload ? 'button' : 'image';
-    const baseAccessibilityId = accessibility || id || name || 'avatar';
-    const defaultLabel = name
-      ? `Avatar de ${name}`
-      : accessibilityLabel || 'Avatar';
-    const hint = onPress || onUpload ? 'Toque para interagir' : undefined;
-
-    const avatarAccessibilityProps = generateAccessibilityProps(
-      {
-        id,
-        accessibility: baseAccessibilityId,
-        accessibilityLabel: defaultLabel,
-        disabled: !onPress && !onUpload,
-      },
-      role,
-      defaultLabel,
-      hint,
-    );
-
-    const avatarTestID = generateTestID('avatar', baseAccessibilityId);
-
     return (
       <Wrapper
-        {...avatarAccessibilityProps}
-        testID={avatarTestID}
+        id={id || accessibility}
+        accessibility={accessibility}
+        accessibilityLabel={accessibilityLabel || accessibility}
+        testID={testID || id}
         size={size}
         onPress={onPress || (onUpload && openPicker)}
         disabled={!onPress && !onUpload}
@@ -131,25 +128,34 @@ const Avatar: React.FC<AvatarProps> = React.forwardRef(
         borderWidth={borderWidth}
         {...rest}
       >
-        <Image
-          testID="avatar-image"
-          displayPlaceholder={animatedLoading}
-          source={source}
-          resizeMode="cover"
-          style={{ width: '101%', height: '101%' }}
-        />
-
-        {!visibleImage && !!name && (
+        {displayCamera && !visibleImage ? (
+          <CameraView
+            ref={cameraRef}
+            size={size}
+            type={RNCamera.Constants.Type.front}
+            flashMode={RNCamera.Constants.FlashMode.auto}
+            androidCameraPermissionOptions={{
+              title: 'Câmera',
+              message: 'Precisamos da sua permissão para usar a câmera',
+              buttonPositive: 'Ok',
+              buttonNegative: 'Cancelar',
+            }}
+          />
+        ) : (
+          <Image
+            displayPlaceholder={animatedLoading}
+            source={getCurrentAvatar()}
+            resizeMode="cover"
+            style={{ width: '101%', height: '101%' }}
+          />
+        )}
+        {!visibleImage && !!name && !!displayCamera && (
           <UploadIconWrapper size={size}>
-            <UploadIcon
-              importantForAccessibility="no"
-              id="avatar-upload-icon"
-              name="camera"
-            />
+            <UploadIcon id="" accessibility="" />
           </UploadIconWrapper>
         )}
-        {!visibleImage && !!name && displayMonogram && (
-          <MonogramWrapper importantForAccessibility="no" size={size}>
+        {!visibleImage && !displayCamera && !!name && displayMonogram && (
+          <MonogramWrapper size={size}>
             <MonogramText size={size} style={monogramStyle}>
               {formatToMonogram(name)}
             </MonogramText>
