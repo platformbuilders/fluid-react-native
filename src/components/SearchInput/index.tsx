@@ -36,6 +36,7 @@ const SearchInput: React.FC<Props> = ({
   onBlur = () => null,
   onSubmit = () => null,
   onIconPress,
+  onRightIconPress,
   id,
   accessibility,
   iconColor,
@@ -89,7 +90,6 @@ const SearchInput: React.FC<Props> = ({
         large={false}
         id={id || accessibility}
         accessibility={accessibility}
-        testID={testID}
         autoFocus={autoFocus}
         autoCapitalize="none"
         autoCorrect={false}
@@ -118,6 +118,7 @@ const SearchInput: React.FC<Props> = ({
         iconSize={iconSize}
         inputPadding={inputPadding}
         rightIconName={rightIconName}
+        onRightIconPress={onRightIconPress}
         onSubmitEditing={onSubmit}
         {...rest}
       />

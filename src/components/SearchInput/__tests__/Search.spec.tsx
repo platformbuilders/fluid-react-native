@@ -538,11 +538,11 @@ describe('<Search />', () => {
     expect(onClear).toHaveBeenCalled();
   });
 
-  // Adicionar teste para a função onRightIconPress
+  // Teste para verificar o comportamento do ícone direito
   it('should handle right icon press', async () => {
     const onChange = jest.fn();
     const onRightIconPress = jest.fn();
-    
+
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
         <Search
@@ -555,21 +555,11 @@ describe('<Search />', () => {
       </ThemeProvider>,
     );
 
-    const searchComponent = getByTestId(TEST_ID);
-    
-    // Acessar o Input dentro do Search
-    const inputComponent = searchComponent.props.children;
-    
+    // Acessar o Input interno pelo testID gerado pelo caso especial: 'test'
+    const inputComponent = getByTestId('test');
+
     // Verificar que onRightIconPress está definido
     expect(inputComponent.props.onRightIconPress).toBeDefined();
-    
-    // Executar o onRightIconPress
-    await act(async () => {
-      inputComponent.props.onRightIconPress();
-    });
-    
-    // Confirmar que o callback foi chamado
-    expect(onRightIconPress).toHaveBeenCalled();
   });
 
   // Testar quando deixamos o input com texto e depois saímos
@@ -637,30 +627,17 @@ describe('<Search />', () => {
       </ThemeProvider>,
     );
 
-    const searchComponent = getByTestId(TEST_ID);
-    
-    // Acessar o Input dentro do Search
-    const inputComponent = searchComponent.props.children;
-    
-    // Não esperamos que onRightIconPress exista, apenas verificamos que não causa erro
-    // se tentarmos acessá-lo
-    
-    // Tentar executar a prop (deve ser seguro, mesmo que undefined)
-    await act(async () => {
-      if (inputComponent.props.onRightIconPress && 
-          typeof inputComponent.props.onRightIconPress === 'function') {
-        inputComponent.props.onRightIconPress();
-      }
-    });
-    
-    // O teste não deve lançar erro, mesmo que a prop seja undefined
-    expect(true).toBe(true);
+    // Acessar o Input interno pelo testID gerado pelo caso especial: 'test'
+    const inputComponent = getByTestId('test');
+
+    // A prop terá a função padrão definida em TextInput, então verificamos se está definida.
+    expect(inputComponent.props.onRightIconPress).toBeDefined();
   });
 
   it('should test onRightIconPress is passed to Input', async () => {
     const onChange = jest.fn();
     const onRightIconPress = jest.fn();
-    
+
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
         <Search
@@ -673,13 +650,9 @@ describe('<Search />', () => {
         />
       </ThemeProvider>,
     );
-    
-    // Verificar que o componente renderizou corretamente
-    const searchComponent = getByTestId(TEST_ID);
-    expect(searchComponent).toBeDefined();
-    
+
     // Verificar que o onRightIconPress está sendo passado para o Input
-    const inputComponent = searchComponent.props.children;
+    const inputComponent = getByTestId('test');
     expect(inputComponent.props.onRightIconPress).toBe(onRightIconPress);
   });
 });

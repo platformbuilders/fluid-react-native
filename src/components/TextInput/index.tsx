@@ -182,6 +182,7 @@ const TextInput: FC<TextInputType> = ({
       value,
       keyboardType,
       onChangeText,
+      onRightIconPress,
       allowFontScaling,
       isPlaceholder,
       status: inputStatus,
