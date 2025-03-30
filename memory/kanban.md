@@ -64,7 +64,7 @@ kanban-plugin: basic
   - TextInput
   - TimePicker
   - Typography
-- Switch
+- Toggle
 
 ## Próximos Passos
 - Implementar testes para componentes com baixa cobertura (se necessário após análise)
@@ -78,7 +78,7 @@ kanban-plugin: basic
 - Corrigir erros de lint nos arquivos de teste
 - Implementar testes para o ModalPicker
 - Adicionar documentação para o Button *(Já existe, mas pode precisar de revisão/atualização)*
-- Refatorar o componente Switch para maior testabilidade
+- Refatorar o componente Toggle para maior testabilidade
 - Revisar componente Tooltip para compatibilidade em iOS e Android
 - Implementar melhorias de acessibilidade nos componentes Button, Icon e TextInput
 - Adicionar documentação para o Toggle *(Já existe, mas pode precisar de revisão/atualização)*
