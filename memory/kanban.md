@@ -41,8 +41,7 @@ kanban-plugin: basic
 - Revisar e atualizar a documentação existente
 - Continuar monitorando a cobertura de testes e a qualidade do código.
 - **Gerar documentação Markdown (`docs/components`) para:**
-    - [ ] Link (Em progresso)
-    - [ ] Markdown
+    - [ ] Markdown (Em progresso)
     - [ ] PinInput
     - [ ] RadioButton
     - [ ] SearchInput
@@ -168,3 +167,4 @@ kanban-plugin: basic
 - **[Doc]** ✅ Criado arquivo Icon.md
 - **[Doc]** ✅ Criado arquivo LoadingIndicator.md
 - **[Doc]** ✅ Criado arquivo Image.md
+- **[Doc]** ✅ Criado arquivo Link.md
