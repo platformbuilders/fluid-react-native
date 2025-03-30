@@ -66,7 +66,7 @@ describe('<Badge />', () => {
       </ThemeProvider>,
     );
 
-    const component = getByTestId(TEST_ID);
+    const component = getByTestId(`badge_${TEST_ID}`);
 
     expect(component).not.toBe(null);
 
@@ -378,7 +378,7 @@ describe('<Badge />', () => {
       </ThemeProvider>,
     );
 
-    const component = getByTestId(TEST_ID);
+    const component = getByTestId(`badge_${TEST_ID}`);
     fireEvent.press(component);
 
     expect(onPressEvent).not.toHaveBeenCalled();
@@ -398,7 +398,7 @@ describe('<Badge />', () => {
       </ThemeProvider>,
     );
 
-    const component = getByTestId(TEST_ID);
+    const component = getByTestId(`badge_${TEST_ID}`);
     fireEvent.press(component);
 
     expect(onPressEvent).not.toHaveBeenCalled();
@@ -414,7 +414,7 @@ describe('<Badge />', () => {
       </ThemeProvider>,
     );
 
-    const component = getByTestId(customAccessibility);
+    const component = getByTestId(`badge_${customAccessibility}`);
     expect(component).toBeTruthy();
   });
 

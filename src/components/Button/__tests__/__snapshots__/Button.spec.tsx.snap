@@ -303,8 +303,7 @@ exports[`<Button /> should render button with both left and right icons 1`] = `
       }
     >
       <View
-        accessibilityLabel="Ícone arrow-left"
-        accessibilityRole="image"
+        accessibilityLabel="Arrow-left"
         accessibilityState={
           {
             "busy": undefined,
@@ -325,6 +324,7 @@ exports[`<Button /> should render button with both left and right icons 1`] = `
         accessible={true}
         collapsable={false}
         focusable={true}
+        importantForAccessibility="no"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -400,8 +400,7 @@ exports[`<Button /> should render button with both left and right icons 1`] = `
       }
     >
       <View
-        accessibilityLabel="Ícone arrow-right"
-        accessibilityRole="image"
+        accessibilityLabel="Arrow-right"
         accessibilityState={
           {
             "busy": undefined,
@@ -422,6 +421,7 @@ exports[`<Button /> should render button with both left and right icons 1`] = `
         accessible={true}
         collapsable={false}
         focusable={true}
+        importantForAccessibility="no"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -1220,8 +1220,7 @@ exports[`<Button /> should render button with left icon 1`] = `
       }
     >
       <View
-        accessibilityLabel="Ícone check"
-        accessibilityRole="image"
+        accessibilityLabel="Check"
         accessibilityState={
           {
             "busy": undefined,
@@ -1242,6 +1241,7 @@ exports[`<Button /> should render button with left icon 1`] = `
         accessible={true}
         collapsable={false}
         focusable={true}
+        importantForAccessibility="no"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -1400,8 +1400,7 @@ exports[`<Button /> should render button with left icon not touchable 1`] = `
       }
     >
       <View
-        accessibilityLabel="Ícone check"
-        accessibilityRole="image"
+        accessibilityLabel="Check"
         accessibilityState={
           {
             "busy": undefined,
@@ -1422,6 +1421,7 @@ exports[`<Button /> should render button with left icon not touchable 1`] = `
         accessible={true}
         collapsable={false}
         focusable={false}
+        importantForAccessibility="no"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -2040,8 +2040,7 @@ exports[`<Button /> should render button with right icon 1`] = `
       }
     >
       <View
-        accessibilityLabel="Ícone check"
-        accessibilityRole="image"
+        accessibilityLabel="Check"
         accessibilityState={
           {
             "busy": undefined,
@@ -2062,6 +2061,7 @@ exports[`<Button /> should render button with right icon 1`] = `
         accessible={true}
         collapsable={false}
         focusable={true}
+        importantForAccessibility="no"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -2220,8 +2220,7 @@ exports[`<Button /> should render button with right icon not touchable 1`] = `
       }
     >
       <View
-        accessibilityLabel="Ícone check"
-        accessibilityRole="image"
+        accessibilityLabel="Check"
         accessibilityState={
           {
             "busy": undefined,
@@ -2242,6 +2241,7 @@ exports[`<Button /> should render button with right icon not touchable 1`] = `
         accessible={true}
         collapsable={false}
         focusable={false}
+        importantForAccessibility="no"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}

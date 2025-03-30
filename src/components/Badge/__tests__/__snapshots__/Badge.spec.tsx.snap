@@ -2,10 +2,11 @@
 
 exports[`<Badge /> should render Badge 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityLabel="Badge"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -36,7 +37,7 @@ exports[`<Badge /> should render Badge 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="badge_testing"
 >
   <View
     buttonVariant="primary"
@@ -92,10 +93,11 @@ exports[`<Badge /> should render Badge 1`] = `
 
 exports[`<Badge /> should render Badge when rounded 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityLabel="Badge"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -126,7 +128,7 @@ exports[`<Badge /> should render Badge when rounded 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="badge_testing"
 >
   <View
     buttonVariant="primary"
@@ -183,10 +185,11 @@ exports[`<Badge /> should render Badge when rounded 1`] = `
 
 exports[`<Badge /> should render Badge with border 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityLabel="Badge"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -217,7 +220,7 @@ exports[`<Badge /> should render Badge with border 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="badge_testing"
 >
   <View
     buttonVariant="primary"
@@ -273,10 +276,11 @@ exports[`<Badge /> should render Badge with border 1`] = `
 
 exports[`<Badge /> should render Badge with both left and right icons 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityLabel="Badge"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -307,7 +311,7 @@ exports[`<Badge /> should render Badge with both left and right icons 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="badge_testing"
 >
   <View
     buttonVariant="primary"
@@ -365,6 +369,7 @@ exports[`<Badge /> should render Badge with both left and right icons 1`] = `
         accessible={true}
         collapsable={false}
         focusable={false}
+        importantForAccessibility="no"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -460,6 +465,7 @@ exports[`<Badge /> should render Badge with both left and right icons 1`] = `
         accessible={true}
         collapsable={false}
         focusable={false}
+        importantForAccessibility="no"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -507,10 +513,11 @@ exports[`<Badge /> should render Badge with both left and right icons 1`] = `
 
 exports[`<Badge /> should render Badge with children 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityLabel="Badge"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -541,7 +548,7 @@ exports[`<Badge /> should render Badge with children 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="badge_testing"
 >
   <View
     buttonVariant="primary"
@@ -615,10 +622,11 @@ exports[`<Badge /> should render Badge with children 1`] = `
 
 exports[`<Badge /> should render Badge with contrast 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityLabel="Badge"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -649,7 +657,7 @@ exports[`<Badge /> should render Badge with contrast 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="badge_testing"
 >
   <View
     buttonVariant="primary"
@@ -706,9 +714,10 @@ exports[`<Badge /> should render Badge with contrast 1`] = `
 exports[`<Badge /> should render Badge with custom accessibility label 1`] = `
 <View
   accessibilityLabel="testing"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -739,7 +748,7 @@ exports[`<Badge /> should render Badge with custom accessibility label 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="badge_testing"
 >
   <View
     buttonVariant="primary"
@@ -795,10 +804,11 @@ exports[`<Badge /> should render Badge with custom accessibility label 1`] = `
 
 exports[`<Badge /> should render Badge with custom icon style 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityLabel="Badge"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -829,7 +839,7 @@ exports[`<Badge /> should render Badge with custom icon style 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="badge_testing"
 >
   <View
     buttonVariant="primary"
@@ -888,6 +898,7 @@ exports[`<Badge /> should render Badge with custom icon style 1`] = `
         accessible={true}
         collapsable={false}
         focusable={false}
+        importantForAccessibility="no"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -958,10 +969,11 @@ exports[`<Badge /> should render Badge with custom icon style 1`] = `
 
 exports[`<Badge /> should render Badge with custom style 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityLabel="Badge"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -992,7 +1004,7 @@ exports[`<Badge /> should render Badge with custom style 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="badge_testing"
 >
   <View
     buttonVariant="primary"
@@ -1050,10 +1062,11 @@ exports[`<Badge /> should render Badge with custom style 1`] = `
 
 exports[`<Badge /> should render Badge with custom text style 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityLabel="Badge"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -1084,7 +1097,7 @@ exports[`<Badge /> should render Badge with custom text style 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="badge_testing"
 >
   <View
     buttonVariant="primary"
@@ -1142,10 +1155,11 @@ exports[`<Badge /> should render Badge with custom text style 1`] = `
 
 exports[`<Badge /> should render Badge with custom typography variant 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityLabel="Badge"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -1176,7 +1190,7 @@ exports[`<Badge /> should render Badge with custom typography variant 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="badge_testing"
 >
   <View
     buttonVariant="primary"
@@ -1232,10 +1246,11 @@ exports[`<Badge /> should render Badge with custom typography variant 1`] = `
 
 exports[`<Badge /> should render Badge with disabled 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityLabel="Badge"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": true,
       "expanded": undefined,
@@ -1266,7 +1281,7 @@ exports[`<Badge /> should render Badge with disabled 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="badge_testing"
 >
   <View
     buttonVariant="primary"
@@ -1322,10 +1337,11 @@ exports[`<Badge /> should render Badge with disabled 1`] = `
 
 exports[`<Badge /> should render Badge with emoji icon 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityLabel="Badge"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -1356,7 +1372,7 @@ exports[`<Badge /> should render Badge with emoji icon 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="badge_testing"
 >
   <View
     buttonVariant="primary"
@@ -1414,6 +1430,7 @@ exports[`<Badge /> should render Badge with emoji icon 1`] = `
         accessible={true}
         collapsable={false}
         focusable={false}
+        importantForAccessibility="no"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -1476,10 +1493,11 @@ exports[`<Badge /> should render Badge with emoji icon 1`] = `
 
 exports[`<Badge /> should render Badge with flat style 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityLabel="Badge"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -1510,7 +1528,7 @@ exports[`<Badge /> should render Badge with flat style 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="badge_testing"
 >
   <View
     buttonVariant="primary"
@@ -1566,10 +1584,11 @@ exports[`<Badge /> should render Badge with flat style 1`] = `
 
 exports[`<Badge /> should render Badge with left icon 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityLabel="Badge"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -1600,7 +1619,7 @@ exports[`<Badge /> should render Badge with left icon 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="badge_testing"
 >
   <View
     buttonVariant="primary"
@@ -1658,6 +1677,7 @@ exports[`<Badge /> should render Badge with left icon 1`] = `
         accessible={true}
         collapsable={false}
         focusable={false}
+        importantForAccessibility="no"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -1728,10 +1748,11 @@ exports[`<Badge /> should render Badge with left icon 1`] = `
 
 exports[`<Badge /> should render Badge with loading 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityLabel="Badge"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": true,
       "checked": undefined,
       "disabled": true,
       "expanded": undefined,
@@ -1762,7 +1783,7 @@ exports[`<Badge /> should render Badge with loading 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="badge_testing"
 >
   <View
     buttonVariant="primary"
@@ -1825,10 +1846,11 @@ exports[`<Badge /> should render Badge with loading 1`] = `
 
 exports[`<Badge /> should render Badge with right icon 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityLabel="Badge"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -1859,7 +1881,7 @@ exports[`<Badge /> should render Badge with right icon 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="badge_testing"
 >
   <View
     buttonVariant="primary"
@@ -1940,6 +1962,7 @@ exports[`<Badge /> should render Badge with right icon 1`] = `
         accessible={true}
         collapsable={false}
         focusable={false}
+        importantForAccessibility="no"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -1987,10 +2010,11 @@ exports[`<Badge /> should render Badge with right icon 1`] = `
 
 exports[`<Badge /> should render Badge with test id 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityLabel="Badge"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -2021,7 +2045,7 @@ exports[`<Badge /> should render Badge with test id 1`] = `
       "opacity": 1,
     }
   }
-  testID="test"
+  testID="badge_testing"
 >
   <View
     buttonVariant="primary"
@@ -2047,6 +2071,7 @@ exports[`<Badge /> should render Badge with test id 1`] = `
         {},
       ]
     }
+    testID="test"
   >
     <Text
       accessibilityLabel="undefined"
@@ -2077,10 +2102,11 @@ exports[`<Badge /> should render Badge with test id 1`] = `
 
 exports[`<Badge /> should render Badge with touchable icon 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityLabel="Badge"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -2111,7 +2137,7 @@ exports[`<Badge /> should render Badge with touchable icon 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="badge_testing"
 >
   <View
     buttonVariant="primary"
@@ -2169,6 +2195,7 @@ exports[`<Badge /> should render Badge with touchable icon 1`] = `
         accessible={true}
         collapsable={false}
         focusable={true}
+        importantForAccessibility="no"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -2239,10 +2266,11 @@ exports[`<Badge /> should render Badge with touchable icon 1`] = `
 
 exports[`<Badge /> should render Badge with variant 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityLabel="Badge"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": false,
       "expanded": undefined,
@@ -2273,7 +2301,7 @@ exports[`<Badge /> should render Badge with variant 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="badge_testing"
 >
   <View
     buttonVariant="secondary"
@@ -2329,10 +2357,11 @@ exports[`<Badge /> should render Badge with variant 1`] = `
 
 exports[`<Badge /> should render with disabled and flat simultaneously 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityLabel="Badge"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": false,
       "checked": undefined,
       "disabled": true,
       "expanded": undefined,
@@ -2363,7 +2392,7 @@ exports[`<Badge /> should render with disabled and flat simultaneously 1`] = `
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="badge_testing"
 >
   <View
     buttonVariant="primary"
@@ -2419,10 +2448,11 @@ exports[`<Badge /> should render with disabled and flat simultaneously 1`] = `
 
 exports[`<Badge /> should render with disabled and loading simultaneously 1`] = `
 <View
-  accessibilityLabel=""
+  accessibilityLabel="Badge"
+  accessibilityRole="text"
   accessibilityState={
     {
-      "busy": undefined,
+      "busy": true,
       "checked": undefined,
       "disabled": true,
       "expanded": undefined,
@@ -2453,7 +2483,7 @@ exports[`<Badge /> should render with disabled and loading simultaneously 1`] = 
       "opacity": 1,
     }
   }
-  testID="testing"
+  testID="badge_testing"
 >
   <View
     buttonVariant="primary"

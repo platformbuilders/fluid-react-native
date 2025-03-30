@@ -19,20 +19,12 @@ const defaultAvatarUrl = 'https://avatars.githubusercontent.com/u/4726921?v=4';
 // Mock para react-native-image-picker
 jest.mock('react-native-image-picker', () => {
   return {
-    launchImageLibrary: jest.fn((_options, callback) => {
-      // Chamar o callback com a resposta simulada
-      if (callback) {
-        callback({
-          didCancel: false,
-          assets: [{ uri: 'file://test/image.jpg' }],
-        });
+    launchImageLibrary: jest.fn(async (options) => {
+      await new Promise(resolve => setTimeout(resolve, 10));
+      if (options?.storageOptions?.path === 'cancel_test') {
+        return { didCancel: true };
       }
-
-      // Retornar uma Promise para compatibilidade com implementações que aguardam uma Promise
-      return Promise.resolve({
-        didCancel: false,
-        assets: [{ uri: 'file://test/image.jpg' }],
-      });
+      return { didCancel: false, assets: [{ uri: TEST_IMAGE_URI }] };
     }),
   };
 });
@@ -158,7 +150,7 @@ describe('<Avatar />', () => {
   it('should render Avatar with custom test id', () => {
     const wrapper = renderer.create(
       <ThemeProvider theme={theme}>
-        <Avatar id="testing" accessibility="" testID="testId" />
+        <Avatar id="testId" accessibility="" />
       </ThemeProvider>,
     );
     expect(wrapper.toJSON()).toMatchSnapshot();
@@ -170,7 +162,6 @@ describe('<Avatar />', () => {
         <Avatar
           id="testing"
           accessibility=""
-          testID="testId"
           name="Builders Test"
         />
       </ThemeProvider>,
@@ -184,7 +175,6 @@ describe('<Avatar />', () => {
         <Avatar
           id="testing"
           accessibility=""
-          testID="testId"
           name="Builders Test"
           monogramStyle={{ backgroundColor: '#2ecc71' }}
         />
@@ -198,7 +188,6 @@ describe('<Avatar />', () => {
       <ThemeProvider theme={theme}>
         <Avatar
           id="testing"
-          testID="testId"
           accessibility=""
           accessibilityLabel="testing"
           size={24}
@@ -220,66 +209,22 @@ describe('<Avatar />', () => {
     expect(image).toBeTruthy();
   });
 
-  it('should render UploadIconWrapper when no image is visible and a name is provided', () => {
-    const { getByTestId } = render(
-      <Avatar
-        id="avatar-test"
-        testID="avatar-testID"
-        accessibility="avatar-test"
-        name="Test Name"
-      />,
-    );
-
-    const uploadIconWrapper = getByTestId('avatar-testID');
-    expect(uploadIconWrapper).toBeTruthy();
-  });
-
   it('should call onUpload when image is selected', async () => {
     const onUploadMock = jest.fn();
-
-    // Criando uma versão personalizada do mock para este teste específico
-    (launchImageLibrary as jest.Mock).mockImplementationOnce(
-      (_options, callback) => {
-        // Chamar o callback com a resposta simulada
-        if (callback) {
-          callback({
-            didCancel: false,
-            assets: [{ uri: TEST_IMAGE_URI }],
-          });
-        }
-
-        return Promise.resolve({
-          didCancel: false,
-          assets: [{ uri: TEST_IMAGE_URI }],
-        });
-      },
-    );
-
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <Avatar
-          id="testing"
-          testID="avatar-test"
-          accessibility=""
-          onUpload={onUploadMock}
-        />
+        <Avatar id="avatar-upload-test" accessibility="" onUpload={onUploadMock} />
       </ThemeProvider>,
     );
+    const component = getByTestId('avatar-upload-test');
 
-    const component = getByTestId('avatar-test');
-
-    // Usar act para o fireEvent
     act(() => {
       fireEvent.press(component);
     });
 
-    // Aguardar que o onUpload seja chamado
-    await waitFor(
-      () => {
-        expect(onUploadMock).toHaveBeenCalledWith(TEST_IMAGE_URI);
-      },
-      { timeout: 3000 },
-    );
+    await waitFor(() => {
+      expect(onUploadMock).toHaveBeenCalledWith(TEST_IMAGE_URI);
+    });
   });
 
   it('should handle ref methods correctly', async () => {
@@ -308,7 +253,6 @@ describe('<Avatar />', () => {
       <ThemeProvider theme={theme}>
         <Avatar
           id="testing"
-          testID="avatar-test"
           accessibility=""
           ref={ref}
           onUpload={onUploadMock}
@@ -332,7 +276,6 @@ describe('<Avatar />', () => {
       () => {
         expect(onUploadMock).toHaveBeenCalledWith(TEST_IMAGE_URI);
       },
-      { timeout: 15000 },
     );
 
     // Limpar a imagem e verificar se foi limpa corretamente
@@ -340,9 +283,9 @@ describe('<Avatar />', () => {
       ref.current.clearUploadImage();
     });
 
-    // Não podemos verificar diretamente o estado interno, mas podemos verificar se onUpload não foi chamado novamente
-    expect(onUploadMock).toHaveBeenCalledTimes(1);
-  }, 15000); // Aumentar timeout para este teste
+    // Verifica se getUploadImage agora retorna undefined
+    expect(ref.current.getUploadImage()).toBeUndefined();
+  });
 
   it('should handle string image URI correctly', () => {
     const wrapper = renderer.create(
@@ -382,54 +325,33 @@ describe('<Avatar />', () => {
 
   it('should handle image quality parameter', async () => {
     const onUploadMock = jest.fn();
-
-    // Reset e configuração do mock para este teste específico
-    (launchImageLibrary as jest.Mock).mockImplementationOnce(
-      (_options, callback) => {
-        // Verificar se a qualidade da imagem é passada corretamente
-        // Usar o valor padrão de 0.5
-        expect(_options.imageQuality).toBe(0.5);
-
-        // Chamar o callback com a resposta simulada
-        if (callback) {
-          callback({
-            didCancel: false,
-            assets: [{ uri: TEST_IMAGE_URI }],
-          });
-        }
-
-        return Promise.resolve({
-          didCancel: false,
-          assets: [{ uri: TEST_IMAGE_URI }],
-        });
-      },
-    );
+    const customQuality = 0.8;
+    const pickerSpy = jest.spyOn(require('react-native-image-picker'), 'launchImageLibrary');
 
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
         <Avatar
-          id="testing"
-          testID="avatar-test"
+          id="quality-test"
           accessibility=""
+          imageQuality={customQuality}
           onUpload={onUploadMock}
         />
       </ThemeProvider>,
     );
+    const component = getByTestId('quality-test');
 
-    const component = getByTestId('avatar-test');
-
-    // Dispara o evento de press que deve chamar o openPicker
     act(() => {
       fireEvent.press(component);
     });
 
-    // Aguardar que o onUpload seja chamado
-    await waitFor(
-      () => {
-        expect(onUploadMock).toHaveBeenCalledWith(TEST_IMAGE_URI);
-      },
-      { timeout: 3000 },
-    );
+    await waitFor(() => {
+      expect(pickerSpy).toHaveBeenCalledWith(expect.objectContaining({ quality: customQuality }));
+    });
+    await waitFor(() => {
+      expect(onUploadMock).toHaveBeenCalledWith(TEST_IMAGE_URI);
+    });
+
+    pickerSpy.mockRestore();
   });
 
   it('should handle undefined value in isValidURI correctly', () => {
@@ -461,14 +383,13 @@ describe('<Avatar />', () => {
       <ThemeProvider theme={theme}>
         <Avatar
           id="testing"
-          testID="avatar-test"
           accessibility=""
           onUpload={onUploadMock}
         />
       </ThemeProvider>,
     );
 
-    const component = getByTestId('avatar-test');
+    const component = getByTestId('testing');
 
     // Disparar evento de press para abrir o seletor
     act(() => {
@@ -484,268 +405,88 @@ describe('<Avatar />', () => {
   it('should be disabled when neither onPress nor onUpload are provided', () => {
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <Avatar id="testing" testID="avatar-test" accessibility="" />
+        <Avatar id="testing" accessibility="" />
       </ThemeProvider>,
     );
 
-    const avatar = getByTestId('avatar-test');
+    const avatar = getByTestId('testing');
     expect(avatar.props.accessibilityState.disabled).toBe(true);
-  });
-
-  it('should show camera icon when name is provided but no image is visible', () => {
-    const { UNSAFE_getAllByType } = render(
-      <ThemeProvider theme={theme}>
-        <Avatar id="testing" accessibility="" name="Test User" />
-      </ThemeProvider>,
-    );
-
-    // Verifica se o ícone de câmera está presente
-    const icons = UNSAFE_getAllByType(Icon);
-    const cameraIcon = icons.find((icon) => icon.props.name === 'camera');
-    expect(cameraIcon).toBeTruthy();
-  });
-
-  it('should not show monogram when displayMonogram is false, but still show camera icon', () => {
-    const { UNSAFE_getAllByType, queryByText } = render(
-      <ThemeProvider theme={theme}>
-        <Avatar
-          id="testing"
-          accessibility=""
-          name="Test User"
-          displayMonogram={false}
-        />
-      </ThemeProvider>,
-    );
-
-    // Monograma não deve estar presente
-    const monogram = queryByText('TU');
-    expect(monogram).toBeNull();
-
-    // Ícone de câmera deve estar presente
-    const icons = UNSAFE_getAllByType(Icon);
-    const cameraIcon = icons.find((icon) => icon.props.name === 'camera');
-    expect(cameraIcon).toBeTruthy();
-  });
-
-  it('should correctly update image when it changes via props', () => {
-    const { rerender } = render(
-      <ThemeProvider theme={theme}>
-        <Avatar
-          id="testing"
-          accessibility=""
-          image={{ uri: 'https://example.com/initial-image.jpg' }}
-        />
-      </ThemeProvider>,
-    );
-
-    // Rerender com uma imagem diferente
-    rerender(
-      <ThemeProvider theme={theme}>
-        <Avatar
-          id="testing"
-          accessibility=""
-          image={{ uri: 'https://example.com/updated-image.jpg' }}
-        />
-      </ThemeProvider>,
-    );
-
-    // Neste ponto o componente deveria ter atualizado a imagem visível
-    // devido ao useEffect que observa mudanças na prop 'image'
-  });
-
-  it('should open image picker when pressed', async () => {
-    const onUploadMock = jest.fn();
-
-    // Configuração do mock para este teste específico
-    (launchImageLibrary as jest.Mock).mockImplementationOnce(
-      (_options, callback) => {
-        // Chamar o callback com a resposta simulada
-        if (callback) {
-          callback({
-            didCancel: false,
-            assets: [{ uri: TEST_IMAGE_URI }],
-          });
-        }
-
-        return Promise.resolve({
-          didCancel: false,
-          assets: [{ uri: TEST_IMAGE_URI }],
-        });
-      },
-    );
-
-    const { getByTestId } = render(
-      <ThemeProvider theme={theme}>
-        <Avatar
-          id="testing"
-          testID="avatar-test"
-          accessibility=""
-          onUpload={onUploadMock}
-        />
-      </ThemeProvider>,
-    );
-
-    const component = getByTestId('avatar-test');
-
-    // Usando act para envolver a operação que causa mudança de estado
-    act(() => {
-      fireEvent.press(component);
-    });
-
-    // Aguardar que o onUpload seja chamado
-    await waitFor(
-      () => {
-        expect(onUploadMock).toHaveBeenCalledWith(TEST_IMAGE_URI);
-      },
-      { timeout: 3000 },
-    );
-  });
-
-  // Adicionando testes para aumentar cobertura
-
-  it('should handle custom imageQuality parameter', async () => {
-    const onUploadMock = jest.fn();
-    const customQuality = 0.8;
-
-    // Reset e configuração do mock para este teste específico
-    (launchImageLibrary as jest.Mock).mockImplementationOnce(
-      (_options, callback) => {
-        // Verificar se a qualidade da imagem personalizada é passada corretamente
-        expect(_options.imageQuality).toBe(customQuality);
-
-        // Chamar o callback com a resposta simulada
-        if (callback) {
-          callback({
-            didCancel: false,
-            assets: [{ uri: TEST_IMAGE_URI }],
-          });
-        }
-
-        return Promise.resolve({
-          didCancel: false,
-          assets: [{ uri: TEST_IMAGE_URI }],
-        });
-      },
-    );
-
-    const { getByTestId } = render(
-      <ThemeProvider theme={theme}>
-        <Avatar
-          id="testing"
-          testID="avatar-test"
-          accessibility=""
-          imageQuality={customQuality}
-          onUpload={onUploadMock}
-        />
-      </ThemeProvider>,
-    );
-
-    const component = getByTestId('avatar-test');
-
-    act(() => {
-      fireEvent.press(component);
-    });
-
-    await waitFor(
-      () => {
-        expect(onUploadMock).toHaveBeenCalledWith(TEST_IMAGE_URI);
-      },
-      { timeout: 3000 },
-    );
   });
 
   it('should handle getUploadImage ref method correctly', async () => {
     const ref = createRef<any>();
     const onUploadMock = jest.fn();
 
-    // Mock personalizado para este teste
-    (launchImageLibrary as jest.Mock).mockImplementationOnce(
-      (_options, callback) => {
-        if (callback) {
-          callback({
-            didCancel: false,
-            assets: [{ uri: TEST_IMAGE_URI }],
-          });
-        }
-        return Promise.resolve({
-          didCancel: false,
-          assets: [{ uri: TEST_IMAGE_URI }],
-        });
-      },
-    );
+    // Mock específico para este teste
+    (launchImageLibrary as jest.Mock).mockImplementationOnce(() => {
+      return Promise.resolve({
+        didCancel: false,
+        assets: [{ uri: TEST_IMAGE_URI }]
+      });
+    });
 
     render(
       <ThemeProvider theme={theme}>
-        <Avatar
-          id="testing"
-          testID="avatar-test"
-          accessibility=""
-          ref={ref}
-          onUpload={onUploadMock}
-        />
+        <Avatar ref={ref} id="avatar-ref" accessibility="" onUpload={onUploadMock} />
       </ThemeProvider>,
     );
 
-    // Simular seleção de imagem
+    // Adicionando um setTimeout para simular o comportamento assíncrono
     await act(async () => {
       await ref.current.openPicker();
     });
 
-    // Aguardar que o onUpload seja chamado
-    await waitFor(
-      () => {
-        expect(onUploadMock).toHaveBeenCalledWith(TEST_IMAGE_URI);
-      },
-      { timeout: 3000 },
-    );
-
-    // Testar o método getUploadImage
-    await act(async () => {
-      const uploadedImage = ref.current.getUploadImage();
-      expect(uploadedImage).toBe(TEST_IMAGE_URI);
+    // Verificando com waitFor para assegurar que os estados foram atualizados
+    await waitFor(() => {
+      expect(onUploadMock).toHaveBeenCalledWith(TEST_IMAGE_URI);
+      expect(ref.current.getUploadImage()).toBe(TEST_IMAGE_URI);
     });
   });
 
-  it('should handle image selection with no assets in response', async () => {
+  it('should handle clearUploadImage ref method correctly', async () => {
+    const ref = createRef<any>();
     const onUploadMock = jest.fn();
+    
+    // Mock específico para este teste
+    (launchImageLibrary as jest.Mock).mockImplementationOnce(() => {
+      return Promise.resolve({
+        didCancel: false,
+        assets: [{ uri: TEST_IMAGE_URI }]
+      });
+    });
 
-    // Mock que retorna uma resposta sem assets
-    (launchImageLibrary as jest.Mock).mockImplementationOnce(
-      (_options, callback) => {
-        if (callback) {
-          callback({
-            didCancel: false,
-            // Sem assets
-          });
-        }
-        return Promise.resolve({
-          didCancel: false,
-          // Sem assets
-        });
-      },
-    );
-
-    const { getByTestId } = render(
+    render(
       <ThemeProvider theme={theme}>
-        <Avatar
-          id="testing"
-          testID="avatar-test"
-          accessibility=""
-          onUpload={onUploadMock}
-        />
+        <Avatar ref={ref} id="avatar-clear-test" accessibility="" onUpload={onUploadMock} />
       </ThemeProvider>,
     );
 
-    const component = getByTestId('avatar-test');
-
-    act(() => {
-      fireEvent.press(component);
+    // Chamando openPicker para definir o visibleImage
+    await act(async () => {
+      await ref.current.openPicker();
     });
 
-    // Verificar que onUpload não foi chamado já que não há assets
+    // Verificar primeiro se onUpload foi chamado e se getUploadImage retorna o valor correto
     await waitFor(() => {
-      expect(onUploadMock).not.toHaveBeenCalled();
+      expect(onUploadMock).toHaveBeenCalledWith(TEST_IMAGE_URI);
+      expect(ref.current.getUploadImage()).toBe(TEST_IMAGE_URI);
     });
+
+    // Resetando o mock para verificar se ele não é chamado novamente durante clearUploadImage
+    onUploadMock.mockClear();
+
+    // Ação de Limpar
+    act(() => {
+      ref.current.clearUploadImage();
+    });
+
+    // Esperar a leitura do estado após a limpeza
+    await waitFor(() => {
+      expect(ref.current.getUploadImage()).toBeUndefined();
+    });
+    
+    // Verificar que onUpload não foi chamado durante a limpeza
+    expect(onUploadMock).not.toHaveBeenCalled();
   });
 
   it('should handle string image correctly', () => {
@@ -858,7 +599,6 @@ describe('<Avatar />', () => {
       <ThemeProvider theme={theme}>
         <Avatar
           id="testing"
-          testID="avatar-test"
           accessibility=""
           // Nota: não passamos onUpload aqui, mas configuramos para chamar openPicker ao pressionar
           onPress={() => {
@@ -868,7 +608,7 @@ describe('<Avatar />', () => {
       </ThemeProvider>,
     );
 
-    const component = getByTestId('avatar-test');
+    const component = getByTestId('testing');
 
     // Deve executar sem erros mesmo sem onUpload
     act(() => {

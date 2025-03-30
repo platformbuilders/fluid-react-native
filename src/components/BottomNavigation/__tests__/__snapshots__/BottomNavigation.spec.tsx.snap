@@ -28,7 +28,9 @@ exports[`<BottomNavigation /> should render BottomNavigation component 1`] = `
   }
 >
   <View
-    accessibilityLabel="Ir para Home"
+    accessibilityHint="Ir para Home, item selecionado"
+    accessibilityLabel="Home"
+    accessibilityRole="button"
     accessibilityState={
       {
         "busy": undefined,
@@ -64,7 +66,7 @@ exports[`<BottomNavigation /> should render BottomNavigation component 1`] = `
         "width": 70,
       }
     }
-    testID="Home"
+    testID="bottom_nav_item_Home"
   >
     <View
       collapsable={false}
@@ -75,7 +77,7 @@ exports[`<BottomNavigation /> should render BottomNavigation component 1`] = `
       }
     >
       <View
-        accessibilityLabel="flag"
+        accessibilityLabel="Flag"
         accessibilityState={
           {
             "busy": undefined,
@@ -96,6 +98,7 @@ exports[`<BottomNavigation /> should render BottomNavigation component 1`] = `
         accessible={true}
         collapsable={false}
         focusable={false}
+        importantForAccessibility="no"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -140,6 +143,7 @@ exports[`<BottomNavigation /> should render BottomNavigation component 1`] = `
     <Text
       accessibilityLabel="Home"
       active={true}
+      importantForAccessibility="no"
       lineHeightVariant="min"
       style={
         [
@@ -193,7 +197,9 @@ exports[`<BottomNavigation /> should render BottomNavigation component with cust
   }
 >
   <View
-    accessibilityLabel="Ir para Home"
+    accessibilityHint="Ir para Home, item selecionado"
+    accessibilityLabel="Home"
+    accessibilityRole="button"
     accessibilityState={
       {
         "busy": undefined,
@@ -229,7 +235,7 @@ exports[`<BottomNavigation /> should render BottomNavigation component with cust
         "width": 70,
       }
     }
-    testID="Home"
+    testID="bottom_nav_item_Home"
   >
     <View
       collapsable={false}
@@ -240,7 +246,7 @@ exports[`<BottomNavigation /> should render BottomNavigation component with cust
       }
     >
       <View
-        accessibilityLabel="flag"
+        accessibilityLabel="Flag"
         accessibilityState={
           {
             "busy": undefined,
@@ -261,6 +267,7 @@ exports[`<BottomNavigation /> should render BottomNavigation component with cust
         accessible={true}
         collapsable={false}
         focusable={false}
+        importantForAccessibility="no"
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
@@ -306,6 +313,7 @@ exports[`<BottomNavigation /> should render BottomNavigation component with cust
       accessibilityLabel="Home"
       active={true}
       activeColor="#000000"
+      importantForAccessibility="no"
       lineHeightVariant="min"
       style={
         [
