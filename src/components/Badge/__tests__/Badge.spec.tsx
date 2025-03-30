@@ -458,4 +458,78 @@ describe('<Badge />', () => {
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
+
+  // Testes adicionais para aumentar a cobertura de branches
+  it('should generate correct accessibility hint when onPress is provided', () => {
+    // Verificar que o Badge recebe um accessibilityHint quando tem onPress
+    const onPressEvent = jest.fn();
+    
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Badge
+          id={TEST_ID}
+          accessibility={ACCESSIBILITY}
+          onPress={onPressEvent}
+        />
+      </ThemeProvider>,
+    );
+    
+    const component = getByTestId(`badge_${TEST_ID}`);
+    
+    // Verificar que accessibilityHint existe quando onPress é fornecido
+    expect(component.props.accessibilityHint).toBe('Toque para interagir');
+  });
+  
+  it('should not have accessibility hint when onPress is not provided', () => {
+    // Verificar que o Badge não recebe um accessibilityHint quando não tem onPress
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Badge
+          id={TEST_ID}
+          accessibility={ACCESSIBILITY}
+        />
+      </ThemeProvider>,
+    );
+    
+    const component = getByTestId(`badge_${TEST_ID}`);
+    
+    // Verificar que accessibilityHint não existe quando onPress não é fornecido
+    expect(component.props.accessibilityHint).toBeUndefined();
+  });
+  
+  it('should use string children as accessibilityLabel when no accessibilityLabel or accessibility is provided', () => {
+    const childrenText = 'Badge Label Text';
+    
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Badge accessibility="">
+          {childrenText}
+        </Badge>
+      </ThemeProvider>,
+    );
+    
+    // Verificar que o component foi renderizado com o testID correto
+    const component = getByTestId(`badge_${childrenText}`);
+    
+    // Verificar que o texto do children foi usado como accessibilityLabel
+    expect(component.props.accessibilityLabel).toBe(childrenText);
+  });
+  
+  it('should use "badge" as default baseAccessibilityId when no id, accessibility or string children is provided', () => {
+    // Neste caso, todos os possíveis valores de baseAccessibilityId estão ausentes
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Badge accessibility="">
+          <Typography>Complex Children</Typography>
+        </Badge>
+      </ThemeProvider>,
+    );
+    
+    // Deve usar 'badge' como fallback para o testID
+    const component = getByTestId('badge_badge');
+    expect(component).toBeTruthy();
+    
+    // E deve usar 'Badge' como fallback para accessibilityLabel
+    expect(component.props.accessibilityLabel).toBe('Badge');
+  });
 });
