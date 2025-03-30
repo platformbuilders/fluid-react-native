@@ -16,7 +16,6 @@ kanban-plugin: basic
 - Implementar testes de acessibilidade (a11y)
 - Criar site de documentação completo com Docusaurus
 - Implementar componente Toast
-- Implementar componente Modal
 - Implementar componente Calendar
 - Adicionar mais exemplos de uso no Storybook
 - Continuar melhorias na documentação
@@ -30,13 +29,13 @@ kanban-plugin: basic
 - Adicionar seção de exemplos completos para testes
 - Documentar regras atualizadas para testing
 - Revisão final dos padrões de estilo em systemPatterns.md
-- Modal
 - Select
 - Accordion
 - ActionButton
 - CheckBox
 
 ## Trabalho Atual
+- Modal
 - Corrigir os testes falhos do SearchInput relacionados ao acesso de props
 - Aumentar a cobertura de funções do componente Icon para pelo menos 90%
 - Melhorar a cobertura de branches do MaskedTextInput para pelo menos 85%
@@ -46,7 +45,6 @@ kanban-plugin: basic
 - Revisar e atualizar a documentação existente
 - Continuar monitorando a cobertura de testes e a qualidade do código.
 - **Gerar documentação Markdown (`docs/components`) para:**
-    - [ ] RadioButton (Em progresso)
     - [ ] SearchInput
     - [ ] Separator
     - [ ] TextInput (e subcomponentes)
@@ -54,9 +52,7 @@ kanban-plugin: basic
     - [ ] Typography
     - [ ] UploadPhoto
 - Gerar documentação Markdown (`docs/components`)
-  - Modal
   - MonogramText
-  - RadioButton
   - Select
   - SelectInput
   - Spacer
@@ -64,7 +60,6 @@ kanban-plugin: basic
   - TextInput
   - TimePicker
   - Typography
-- Toggle
 
 ## Próximos Passos
 - Implementar testes para componentes com baixa cobertura (se necessário após análise)
@@ -176,3 +171,11 @@ kanban-plugin: basic
 - **[Doc]** ✅ Criado arquivo Link.md
 - **[Doc]** ✅ Criado arquivo Markdown.md
 - **[Doc]** ✅ Criado arquivo PinInput.md
+- **[Doc]** ✅ Criado arquivo RadioButton.md
+- **[Doc]** ✅ Atualizado arquivo Toggle.md
+
+%% kanban:settings
+```
+{"kanban-plugin":"basic"}
+```
+%%
