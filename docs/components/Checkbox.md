@@ -1,0 +1,277 @@
+# Checkbox
+
+O componente Checkbox permite que o usuário selecione uma ou mais opções de um conjunto. É um controle de estado binário (ligado/desligado) que é usado em formulários ou para ativar e desativar funcionalidades.
+
+## Importação
+
+```jsx
+import { Checkbox } from '@platformbuilders/fluid-react-native';
+```
+
+## Uso Básico
+
+```jsx
+<Checkbox 
+  accessibility="termos-condicoes"
+  label="Aceito os termos e condições"
+  checked={false}
+  onPress={() => setChecked(!checked)}
+/>
+```
+
+## Variações
+
+### Estados
+
+```jsx
+// Desmarcado (padrão)
+<Checkbox 
+  accessibility="opcao1"
+  label="Opção 1" 
+  checked={false}
+/>
+
+// Marcado
+<Checkbox 
+  accessibility="opcao2"
+  label="Opção 2" 
+  checked={true}
+/>
+
+// Desabilitado
+<Checkbox 
+  accessibility="opcao3"
+  label="Opção 3" 
+  disabled={true}
+/>
+```
+
+### Com Mensagem de Erro
+
+```jsx
+<Checkbox 
+  accessibility="opcao-obrigatoria"
+  label="Esta opção é obrigatória" 
+  checked={false}
+  error="Este campo é obrigatório"
+/>
+```
+
+### Estilo Personalizado do Label
+
+```jsx
+<Checkbox 
+  accessibility="opcao-destaque"
+  label="Opção com Destaque" 
+  labelStyle={{ 
+    color: '#FF5722', 
+    fontWeight: 'bold' 
+  }}
+/>
+```
+
+## Uso em Formulários
+
+O Checkbox é comumente usado em formulários, especialmente com bibliotecas como Formik:
+
+```jsx
+import { Formik } from 'formik';
+import * as Yup from 'yup';
+import { View } from 'react-native';
+import { Checkbox, Button } from '@platformbuilders/fluid-react-native';
+
+const validationSchema = Yup.object().shape({
+  aceitaTermos: Yup.boolean().oneOf([true], 'Você deve aceitar os termos'),
+  receberEmails: Yup.boolean(),
+});
+
+const FormularioExample = () => (
+  <Formik
+    initialValues={{ aceitaTermos: false, receberEmails: false }}
+    validationSchema={validationSchema}
+    onSubmit={values => console.log(values)}
+  >
+    {({ values, errors, touched, handleChange, handleSubmit, setFieldValue }) => (
+      <View>
+        <Checkbox 
+          accessibility="aceita-termos"
+          label="Aceito os termos e condições" 
+          checked={values.aceitaTermos}
+          error={touched.aceitaTermos && errors.aceitaTermos}
+          onPress={() => setFieldValue('aceitaTermos', !values.aceitaTermos)}
+        />
+        
+        <Checkbox 
+          accessibility="receber-emails"
+          label="Desejo receber emails promocionais" 
+          checked={values.receberEmails}
+          onPress={() => setFieldValue('receberEmails', !values.receberEmails)}
+        />
+        
+        <Button onPress={handleSubmit}>
+          Enviar
+        </Button>
+      </View>
+    )}
+  </Formik>
+);
+```
+
+## Acessibilidade
+
+O componente Checkbox implementa as seguintes propriedades de acessibilidade:
+
+- `accessibilityLabel`: Descrição do checkbox para leitores de tela
+- `accessibilityRole`: Definido automaticamente como "checkbox"
+- `accessibilityState`: Informa estados "checked" e "disabled"
+- `accessibilityHint`: Informa que tocar no checkbox vai marcá-lo ou desmarcá-lo
+
+### Exemplo com Acessibilidade
+
+```jsx
+<Checkbox 
+  accessibility="notificacoes"
+  accessibilityLabel="Ativar notificações push"
+  label="Ativar notificações push" 
+  checked={notificationsEnabled}
+  onPress={() => toggleNotifications()}
+/>
+```
+
+### Boas Práticas de Acessibilidade
+
+1. **Labels descritivos**:
+   - Use textos claros e específicos
+   - Evite frases negativas que possam confundir (ex: "Não desabilitar notificações")
+   - Mantenha o texto curto, mas informativo
+
+2. **Agrupamento lógico**:
+   - Agrupe checkboxes relacionados visualmente e semanticamente
+   - Use cabeçalhos (Typography) para descrever grupos de checkboxes
+
+3. **Feedback tátil e visual claro**:
+   - Garanta que o estado marcado/desmarcado seja visualmente óbvio
+   - Mantenha uma área de toque adequada (pelo menos 44x44dp)
+
+## TestIDs
+
+O componente Checkbox segue um padrão consistente para geração de testIDs, facilitando a automação de testes:
+
+```
+checkbox_{id}
+```
+
+Onde:
+- Se `id` estiver definido, será usado `checkbox_{id}`
+- Se apenas `accessibility` estiver definido, será usado `checkbox_{accessibility}`
+- Se apenas `testID` estiver definido, será usado `checkbox_{testID}`
+- Como último recurso, será usado `checkbox_checkbox`
+
+## Props
+
+| Prop | Tipo | Padrão | Descrição |
+|------|------|--------|-----------|
+| `id` | string | - | ID do componente |
+| `testID` | string | - | ID para testes |
+| `accessibility` | string | - | ID para acessibilidade |
+| `accessibilityLabel` | string | "checkbox de [label]" | Descrição para leitores de tela |
+| `checked` | boolean | false | Se o checkbox está marcado |
+| `disabled` | boolean | false | Se o checkbox está desabilitado |
+| `label` | ReactElement \| string | '' | Texto ou componente a ser exibido ao lado do checkbox |
+| `error` | string | '' | Mensagem de erro a ser exibida |
+| `onPress` | () => void | () => {} | Função chamada quando o checkbox é pressionado |
+| `labelStyle` | StyleProp<TextStyle> | - | Estilo personalizado para o texto do label |
+| `checkBoxColor` | string \| number | - | Cor do checkbox (quando não marcado) |
+| `checkedCheckBoxColor` | string | - | Cor do checkbox quando marcado |
+| `uncheckedCheckBoxColor` | string | - | Cor do checkbox quando não marcado |
+
+## Exemplo Completo
+
+```jsx
+import React, { useState } from 'react';
+import { View, StyleSheet } from 'react-native';
+import { Checkbox, Typography } from '@platformbuilders/fluid-react-native';
+
+const PreferenciasScreen = () => {
+  const [preferencias, setPreferencias] = useState({
+    receberEmails: false,
+    receberNotificacoes: true,
+    modoNoturno: false,
+    usarBiometria: false,
+  });
+
+  const handleToggle = (chave) => {
+    setPreferencias({
+      ...preferencias,
+      [chave]: !preferencias[chave],
+    });
+  };
+
+  return (
+    <View style={styles.container}>
+      <Typography variant="h2" style={styles.titulo}>
+        Preferências do Usuário
+      </Typography>
+      
+      <View style={styles.secao}>
+        <Typography variant="subtitle" style={styles.subtitulo}>
+          Notificações
+        </Typography>
+        
+        <Checkbox 
+          accessibility="receber-emails"
+          label="Receber e-mails promocionais" 
+          checked={preferencias.receberEmails}
+          onPress={() => handleToggle('receberEmails')}
+        />
+        
+        <Checkbox 
+          accessibility="receber-notificacoes"
+          label="Receber notificações push" 
+          checked={preferencias.receberNotificacoes}
+          onPress={() => handleToggle('receberNotificacoes')}
+        />
+      </View>
+      
+      <View style={styles.secao}>
+        <Typography variant="subtitle" style={styles.subtitulo}>
+          Aparência e Segurança
+        </Typography>
+        
+        <Checkbox 
+          accessibility="modo-noturno"
+          label="Ativar modo noturno" 
+          checked={preferencias.modoNoturno}
+          onPress={() => handleToggle('modoNoturno')}
+        />
+        
+        <Checkbox 
+          accessibility="biometria"
+          label="Usar autenticação biométrica" 
+          checked={preferencias.usarBiometria}
+          onPress={() => handleToggle('usarBiometria')}
+          labelStyle={{ color: '#2196F3' }}
+        />
+      </View>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 16,
+    backgroundColor: '#FFFFFF',
+  },
+  titulo: {
+    marginBottom: 24,
+  },
+  secao: {
+    marginBottom: 24,
+  },
+  subtitulo: {
+    marginBottom: 12,
+  },
+});
+
+export default PreferenciasScreen; 
