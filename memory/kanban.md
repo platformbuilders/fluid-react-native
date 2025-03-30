@@ -25,6 +25,11 @@ kanban-plugin: basic
 - Melhorar documentação do Checkbox
 - Investigar a limitação do Jest em reportar cobertura para linhas com interações nativas (Avatar)
 - Atingir 92% de cobertura global de branches (atualmente ligeiramente abaixo devido aos 87.5% dos hooks).
+- Criar sistema de acompanhamento de cobertura de testes
+- Integrar erros do linter no documento de progresso
+- Adicionar seção de exemplos completos para testes
+- Documentar regras atualizadas para testing
+- Revisão final dos padrões de estilo em systemPatterns.md
 
 ## Trabalho Atual
 - Corrigir os testes falhos do SearchInput relacionados ao acesso de props
@@ -35,9 +40,31 @@ kanban-plugin: basic
 - Melhorar documentação da API para Storybook
 - Revisar e atualizar a documentação existente
 - Continuar monitorando a cobertura de testes e a qualidade do código.
+- **Gerar documentação Markdown (`docs/components`) para:**
+    - [ ] Image (Em progresso)
+    - [ ] Link
+    - [ ] Markdown
+    - [ ] PinInput
+    - [ ] RadioButton
+    - [ ] SearchInput
+    - [ ] Separator
+    - [ ] TextInput (e subcomponentes)
+    - [ ] Touchable
+    - [ ] Typography
+    - [ ] UploadPhoto
+- Gerar documentação Markdown (`docs/components`)
+  - Modal
+  - MonogramText
+  - RadioButton
+  - Select
+  - SelectInput
+  - Spacer
+  - TabNavigation
+  - TextInput
+  - TimePicker
+  - Typography
 
 ## Próximos Passos
-- **Gerar documentação** para os componentes da biblioteca (Storybook, Markdown)
 - Implementar testes para componentes com baixa cobertura (se necessário após análise)
 - Analisar componentes com menor cobertura de testes
 - Criar página de documentação no Storybook
@@ -48,10 +75,14 @@ kanban-plugin: basic
 - Configurar Firebase Hosting para Storybook
 - Corrigir erros de lint nos arquivos de teste
 - Implementar testes para o ModalPicker
-- Adicionar documentação para o Button
+- Adicionar documentação para o Button *(Já existe, mas pode precisar de revisão/atualização)*
 - Refatorar o componente Switch para maior testabilidade
 - Revisar componente Tooltip para compatibilidade em iOS e Android
 - Implementar melhorias de acessibilidade nos componentes Button, Icon e TextInput
+- Adicionar documentação para o Toggle *(Já existe, mas pode precisar de revisão/atualização)*
+- Adicionar documentação de testes para componentes complexos
+- Revisar e atualizar regras de acessibilidade no `.cursorrules`
+- Criar exemplos de testes para casos específicos
 
 ## Concluído
 - Configuração inicial do banco de memória para o projeto
@@ -91,7 +122,7 @@ kanban-plugin: basic
 - ✅ Configurar testes e cobertura
 - ✅ Resolver bugs de UI em componentes principais
 - ✅ Configurar estrutura inicial do projeto
-- ✅ Adicionar suporte ao tema 
+- ✅ Adicionar suporte ao tema
 - ✅ Investigar e corrigir ReferenceError causado pelo ambiente do Jest sendo encerrado
 - ✅ Corrigir timeouts nos testes ("Exceeded timeout of 10000 ms for a hook")
 - ✅ Migrar de react-native-testing-library para @testing-library/react-native
@@ -103,7 +134,7 @@ kanban-plugin: basic
 - Usar act() corretamente para lidar com atualizações de estado
 - Melhorar a cobertura do componente Typography para 100% em todos os critérios
 - Implementar teste específico para cobrir o branch condicional da renderização de AnimatedText
-- Verificar comportamento correto com valores null para variant 
+- Verificar comportamento correto com valores null para variant
 - ✅ Melhorar a cobertura de testes do Typography para atingir 100% em todos os critérios
 - ✅ Remover tipo de máscara "document" do MaskedTextInput
 - ✅ Melhorar a cobertura de testes do Avatar para atingir pelo menos 95% em branches e functions
@@ -117,11 +148,23 @@ kanban-plugin: basic
 - ✅ Melhorar a cobertura de testes do Image para atingir 100% em statements, functions, lines e 94% em branches
 - ✅ Refinar a tipagem do Typography para eliminar o uso de `any` e reduzir warnings de TypeScript
 - ✅ Melhorar a tipagem da propriedade `variant` do Typography para usar tipos específicos em vez de string
-- ✅ Configurar TypeScript e ESLint para ignorar corretamente arquivos de teste 
-- ✅ Analisar métricas atuais de cobertura de testes e identificar componentes que precisam de melhorias 
-- ✅ Corrigir expressões regex no arquivo de regras de acessibilidade 
+- ✅ Configurar TypeScript e ESLint para ignorar corretamente arquivos de teste
+- ✅ Analisar métricas atuais de cobertura de testes e identificar componentes que precisam de melhorias
+- ✅ Corrigir expressões regex no arquivo de regras de acessibilidade
 - ✅ Melhorar cobertura de testes do Avatar (thresholds personalizados atingidos)
 - ✅ Melhorar cobertura de testes do Badge (100% em todas as métricas)
 - ✅ Melhorar cobertura de testes do BottomNavigation (100% em todas as métricas)
 - ✅ Melhorar cobertura de testes do Icon (100% functions)
 - ✅ Melhorar cobertura de testes dos hooks utilitários (87.5% branches)
+- **[Doc]** Criado arquivo Button.md
+- **[Doc]** Criado arquivo Toggle.md
+- **[Doc]** ✅ Criado arquivo Avatar.md
+- **[Doc]** ✅ Criado arquivo Accordion.md
+- **[Doc]** ✅ Criado arquivo Badge.md
+- **[Doc]** ✅ Criado arquivo BottomNavigation.md
+- **[Doc]** ✅ Criado arquivo Checkbox.md
+- **[Doc]** ✅ Criado arquivo DatePicker.md
+- **[Doc]** ✅ Criado arquivo FormError.md
+- **[Doc]** ✅ Criado arquivo Header.md
+- **[Doc]** ✅ Criado arquivo Icon.md
+- **[Doc]** ✅ Criado arquivo LoadingIndicator.md
