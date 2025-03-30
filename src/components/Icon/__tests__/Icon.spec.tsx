@@ -656,4 +656,17 @@ describe('<Icon />', () => {
 
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
+
+  it('should execute default onPress without errors when no onPress prop is provided', () => {
+    const { getByTestId } = render(
+      <ThemeProvider theme={theme}>
+        <Icon id={TEST_ID} accessibility={ACCESSIBILITY} name="home" />
+      </ThemeProvider>
+    );
+
+    const component = getByTestId(TEST_ID);
+    
+    // Simular o clique e verificar se não lança erro
+    expect(() => fireEvent.press(component)).not.toThrow();
+  });
 });
