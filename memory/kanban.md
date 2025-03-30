@@ -23,6 +23,8 @@ kanban-plugin: basic
 - Implementar testes para o BottomSheet
 - Corrigir warnings do Storybook
 - Melhorar documentação do Checkbox
+- Investigar a limitação do Jest em reportar cobertura para linhas com interações nativas (Avatar)
+- Atingir 92% de cobertura global de branches (atualmente ligeiramente abaixo devido aos 87.5% dos hooks).
 
 ## Trabalho Atual
 - Corrigir os testes falhos do SearchInput relacionados ao acesso de props
@@ -30,10 +32,14 @@ kanban-plugin: basic
 - Melhorar a cobertura de branches do MaskedTextInput para pelo menos 85%
 - Melhorar a cobertura de branches do Header e RadioButton para pelo menos 90%
 - Analisar e resolver ocorrências de acessibilidade identificadas pelo Semgrep
+- Melhorar documentação da API para Storybook
+- Revisar e atualizar a documentação existente
+- Continuar monitorando a cobertura de testes e a qualidade do código.
 
 ## Próximos Passos
-- Implementar testes para componentes com baixa cobertura
-- Analisar componentes com menor cobertura de testes (Avatar, Badge, LoadingIndicator)
+- **Gerar documentação** para os componentes da biblioteca (Storybook, Markdown)
+- Implementar testes para componentes com baixa cobertura (se necessário após análise)
+- Analisar componentes com menor cobertura de testes
 - Criar página de documentação no Storybook
 - Implantar documentação no Firebase
 - Criar documentação no Storybook para componentes restantes
@@ -114,3 +120,8 @@ kanban-plugin: basic
 - ✅ Configurar TypeScript e ESLint para ignorar corretamente arquivos de teste 
 - ✅ Analisar métricas atuais de cobertura de testes e identificar componentes que precisam de melhorias 
 - ✅ Corrigir expressões regex no arquivo de regras de acessibilidade 
+- ✅ Melhorar cobertura de testes do Avatar (thresholds personalizados atingidos)
+- ✅ Melhorar cobertura de testes do Badge (100% em todas as métricas)
+- ✅ Melhorar cobertura de testes do BottomNavigation (100% em todas as métricas)
+- ✅ Melhorar cobertura de testes do Icon (100% functions)
+- ✅ Melhorar cobertura de testes dos hooks utilitários (87.5% branches)

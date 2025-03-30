@@ -249,7 +249,7 @@ describe('<Avatar />', () => {
     });
 
     await waitFor(() => {
-      expect(onUploadMock).toHaveBeenCalledWith(TEST_IMAGE_URI);
+        expect(onUploadMock).toHaveBeenCalledWith(TEST_IMAGE_URI);
     });
   });
 
@@ -374,7 +374,7 @@ describe('<Avatar />', () => {
       expect(pickerSpy).toHaveBeenCalledWith(expect.objectContaining({ quality: customQuality }));
     });
     await waitFor(() => {
-      expect(onUploadMock).toHaveBeenCalledWith(TEST_IMAGE_URI);
+        expect(onUploadMock).toHaveBeenCalledWith(TEST_IMAGE_URI);
     });
 
     pickerSpy.mockRestore();
@@ -640,7 +640,7 @@ describe('<Avatar />', () => {
     act(() => {
       fireEvent.press(component);
     });
-    
+
     // Verificar que o componente ainda existe após a operação
     expect(component).toBeTruthy();
   });
@@ -756,10 +756,10 @@ describe('<Avatar />', () => {
 
   it('should use accessibility for testID when id is not provided', () => {
     const accessibility = 'only-accessibility';
-    
+
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <Avatar 
+        <Avatar
           accessibility={accessibility}
         />
       </ThemeProvider>
@@ -850,7 +850,7 @@ describe('<Avatar />', () => {
     
     const { getByTestId } = render(
       <ThemeProvider theme={theme}>
-        <Avatar 
+        <Avatar
           id="press-priority"
           accessibility=""
           onPress={onPressMock}
@@ -993,9 +993,9 @@ describe('<Avatar />', () => {
     // Re-renderizar com image inválido (não-objeto)
     rerender(
       <ThemeProvider theme={theme}>
-        <Avatar 
+        <Avatar
           id="image-reset-test" 
-          accessibility="" 
+          accessibility=""
           image={1 as any} // Valor inválido
         />
       </ThemeProvider>
@@ -1061,7 +1061,7 @@ describe('<Avatar />', () => {
     const ref = React.createRef<AvatarHandle>();
     render(
       <ThemeProvider theme={theme}>
-        <Avatar 
+        <Avatar
           ref={ref}
           name="John Doe" 
           accessibility=""
@@ -1082,10 +1082,10 @@ describe('<Avatar />', () => {
   it('should expose correct methods via ref', () => {
     const ref = React.createRef<AvatarHandle>();
     render(
-      <Avatar
+        <Avatar
         ref={ref}
         name="John Doe"
-        accessibility=""
+          accessibility=""
       />
     );
     
@@ -1115,10 +1115,10 @@ describe('<Avatar />', () => {
         />
       </ThemeProvider>
     );
-    
+
     // Verificar que a imagem foi inicialmente renderizada
     expect(screen.getByTestId('effect-test')).toBeTruthy();
-    
+  
     // 2. Re-renderizar com array (deve resultar em undefined para visibleImage)
     rerender(
       <ThemeProvider theme={theme}>
@@ -1129,7 +1129,7 @@ describe('<Avatar />', () => {
         />
       </ThemeProvider>
     );
-    
+
     // 3. Re-renderizar com objeto sem propriedade uri
     rerender(
       <ThemeProvider theme={theme}>
@@ -1790,7 +1790,7 @@ describe('<Avatar />', () => {
       
       // Botões para alternar entre diferentes estados
       return (
-        <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
           <>
             <Pressable
               testID="set-visible-image"
@@ -1800,7 +1800,7 @@ describe('<Avatar />', () => {
               testID="clear-visible-image"
               onPress={() => setVisibleImage(undefined)}
             />
-            <Avatar
+        <Avatar
               id="visible-image-test"
               accessibility="Teste de visibleImage"
               name="Test User"
@@ -1845,8 +1845,8 @@ describe('<Avatar />', () => {
         width: 2000,
         height: 1500,
         exif: { orientation: 1 }
-      });
-    });
+  });
+});
     
     // Definir caminho feliz e casos de erro
     const testCases = [

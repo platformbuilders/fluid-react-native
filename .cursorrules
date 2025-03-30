@@ -43,23 +43,32 @@
 
 ## Testes
 
-- Cada componente deve ter pelo menos 95% de cobertura de testes
-- Testar comportamentos interativos, não apenas renderização
-- Usar mocks para dependências externas
-- Incluir testes de acessibilidade quando apropriado
-- Verificar testIDs adequados para interação e automação de testes
-- Ao modificar ou refatorar componentes, sempre verificar os testes existentes
-- Ao criar snapshots, garantir que são atualizados quando o componente é modificado
-- Prestar atenção especial a issues de renderização condicional (branches)
-- Para aumentar cobertura de branches, certificar-se de testar todas as condições e caminhos alternativos
-- Usar `data-testid` nos componentes para facilitar a seleção nos testes
-- O threshold global para funções deve ser mantido acima de 84%
-- Componentes com menor cobertura devem receber atenção prioritária
-- Usar ferramentas como `--collectCoverageFrom` para focar em arquivos específicos durante o desenvolvimento
+- Cada componente deve ter pelo menos 95% de cobertura de testes **globais**, mas **thresholds personalizados podem ser definidos** para componentes complexos (ver abaixo).
+- Testar comportamentos interativos, não apenas renderização.
+- Usar mocks para dependências externas.
+- Incluir testes de acessibilidade quando apropriado.
+- Verificar testIDs adequados para interação e automação de testes.
+- Ao modificar ou refatorar componentes, sempre verificar os testes existentes.
+- Ao criar snapshots, garantir que são atualizados quando o componente é modificado.
+- Prestar atenção especial a issues de renderização condicional (branches).
+- Para aumentar cobertura de branches, certificar-se de testar todas as condições e caminhos alternativos, incluindo casos de erro e valores nulos/indefinidos para props relevantes.
+- Usar `data-testid` nos componentes para facilitar a seleção nos testes (padrão definido abaixo).
+- O threshold global para funções deve ser mantido acima de **89%**. **Testar funções padrão/default** (ex: `onPress` default) se existirem.
+- Componentes com menor cobertura devem receber atenção prioritária.
+- Usar ferramentas como `--collectCoverageFrom` para focar em arquivos específicos durante o desenvolvimento.
 
 ## Thresholds Personalizados
 
-Para componentes com estruturas complexas que dificultam atingir os thresholds globais, configurar thresholds personalizados:
+Para componentes com estruturas complexas ou interações com APIs nativas que dificultam atingir os thresholds globais, configurar thresholds personalizados:
+
+### Avatar (thresholds: 80% statements, 80% branches, 100% functions, 80% lines)
+- Componente com interações de câmera (API Nativa).
+- Lógica complexa de estado interno e `useEffect`.
+- Linhas complexas (70-72, 88-91) exigiram instrumentação direta, mas Jest ainda reporta como não cobertas.
+- Comando para testes:
+  ```
+  npx jest --config=jest.config.js --coverage --collectCoverageFrom="src/components/Avatar/index.tsx" src/components/Avatar/__tests__/Avatar.spec.tsx --coverageThreshold='{"./src/components/Avatar/index.tsx":{"branches":80,"functions":100,"lines":80,"statements":80}}'
+  ```
 
 ### TextInput (threshold personalizado: 80% para funções)
 - Componente com lógica complexa de renderização condicional

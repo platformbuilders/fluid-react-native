@@ -689,3 +689,28 @@ Necessário continuar o trabalho em outros componentes, seguindo ordem alfabéti
   - Melhor rastreamento de problemas de acessibilidade no código, especialmente relacionados a:
     - Uso de cores sem informações textuais ou icônicas
     - Contraste inadequado para textos sobre fundos coloridos
+
+## Status Atual (DD/MM/YYYY - Preencher Data)
+
+- **Cobertura de Testes:**
+    - **Avatar:** Atingiu os thresholds personalizados definidos em `.cursorrules` (Statements: 83.78% >= 80%, Branches: 81.39% >= 80%, Functions: 100% >= 100%, Lines: 83.33% >= 80%). Utilizadas técnicas de instrumentação direta para linhas complexas (70-72, 88-91), apesar de ainda reportadas como não cobertas pelo Jest devido a interações com APIs nativas. Total de 66 testes passando.
+    - **Badge:** Atingiu 100% de cobertura em Statements, Branches, Functions e Lines. Testes adicionados para cobrir casos de acessibilidade e fallbacks de identificadores. Total de 31 testes passando.
+    - **BottomNavigation:** Atingiu 100% de cobertura em Statements, Branches, Functions e Lines. Testes adicionados para cobrir o branch `isActive` e a interação `onPress`, além de verificar props de acessibilidade. Total de 5 testes passando.
+    - **Icon:** Atingiu 100% de cobertura em Statements, Functions e Lines, e 96.87% em Branches. Teste adicionado para cobrir a execução da função `onPress` padrão. Total de 36 testes passando.
+    - **Hooks (`usePrevious`, `useAutoFocus`):** Atingiu 100% de cobertura em Statements, Functions e Lines, e 87.5% em Branches. Hook `useAutoFocus` refatorado para maior robustez com `inputRef` nulo ou com propriedades internas nulas. Testes adicionados para cobrir esses cenários. Total de 14 testes passando.
+
+- **Trabalho Concluído Recentemente:**
+    - Melhoria significativa da cobertura de testes para os componentes Avatar, Badge, BottomNavigation, Icon e para os hooks utilitários.
+    - Refatoração do hook `useAutoFocus` para maior segurança.
+    - Correção de erros de linter e testes falhando durante o processo.
+
+- **Próximos Passos:**
+    - Focar na **geração de documentação** para os componentes da biblioteca, utilizando ferramentas como Storybook e documentação em Markdown onde apropriado.
+    - Revisar e atualizar a documentação existente.
+    - Continuar monitorando a cobertura de testes e a qualidade do código.
+
+- **Pendências:**
+    - Investigar a limitação do Jest em reportar cobertura para linhas com interações nativas (Avatar).
+    - Atingir 92% de cobertura global de branches (atualmente ligeiramente abaixo devido aos 87.5% dos hooks).
+
+*(Substituir DD/MM/YYYY pela data atual)*

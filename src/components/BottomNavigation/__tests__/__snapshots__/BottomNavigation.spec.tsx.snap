@@ -169,6 +169,175 @@ exports[`<BottomNavigation /> should render BottomNavigation component 1`] = `
 </View>
 `;
 
+exports[`<BottomNavigation /> should render BottomNavigation component with an inactive route 1`] = `
+<View
+  bottomSpacing={20}
+  style={
+    [
+      {
+        "alignItems": "flex-start",
+        "backgroundColor": "#d1d1d1",
+        "elevation": 3,
+        "flexDirection": "row",
+        "justifyContent": "space-evenly",
+        "marginTop": "auto",
+        "paddingBottom": 20,
+        "paddingLeft": 8,
+        "paddingRight": 8,
+        "paddingTop": 8,
+        "shadowOffset": {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.2,
+        "shadowRadius": 3,
+        "width": "100%",
+      },
+    ]
+  }
+>
+  <View
+    accessibilityHint="Ir para Home"
+    accessibilityLabel="Home"
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "opacity": 1,
+        "width": 70,
+      }
+    }
+    testID="bottom_nav_item_Home"
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "opacity": 0.5,
+        }
+      }
+    >
+      <View
+        accessibilityLabel="Flag"
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": true,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        importantForAccessibility="no"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+        testID="IconHome"
+      >
+        <View>
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              [
+                {
+                  "color": "#444444",
+                  "fontSize": 30,
+                },
+                undefined,
+                {
+                  "fontFamily": "FontAwesome5Free-Regular",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {
+                  "fontWeight": "400",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+    <Text
+      accessibilityLabel="Home"
+      active={false}
+      importantForAccessibility="no"
+      lineHeightVariant="min"
+      style={
+        [
+          {
+            "color": "#444444",
+            "fontSize": 13,
+            "lineHeight": 15.6,
+          },
+          {
+            "color": "#444444",
+            "fontWeight": "bold",
+            "opacity": 0.5,
+            "textAlign": "center",
+            "textTransform": "uppercase",
+          },
+        ]
+      }
+      variant="xs"
+    >
+      Home
+    </Text>
+  </View>
+</View>
+`;
+
 exports[`<BottomNavigation /> should render BottomNavigation component with custom color 1`] = `
 <View
   bottomSpacing={20}
