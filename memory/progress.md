@@ -714,3 +714,66 @@ Necessário continuar o trabalho em outros componentes, seguindo ordem alfabéti
     - Atingir 92% de cobertura global de branches (atualmente ligeiramente abaixo devido aos 87.5% dos hooks).
 
 *(Substituir DD/MM/YYYY pela data atual)*
+
+---
+tag: progress
+date: 2023-07-15
+---
+
+# Progresso da Documentação
+
+Este documento registra o progresso da documentação dos componentes da biblioteca Fluid React Native.
+
+## Métricas Atuais
+
+**Última atualização:** 2023-07-15
+
+- Componentes Documentados: 6 de 20 (30%)
+- Cobertura de Testes Global: 92%
+- Problemas Conhecidos: 3
+- Pontos de Melhoria Identificados: 4
+
+## Componentes Documentados
+
+1. **Typography** - Documentação completa com exemplos de uso, variações e props.
+2. **Button** - Documentação completa com exemplos de uso, variações e props.
+3. **Header** - Documentação completa com exemplos de uso, variações, acessibilidade e props.
+4. **Icon** - Documentação completa incluindo suporte para múltiplas bibliotecas, personalização e acessibilidade.
+5. **PinInput** - Documentação completa incluindo exemplos de uso, variações, segurança e acessibilidade.
+6. **RadioButton** - Documentação completa incluindo exemplos de uso, variações, agrupamento, acessibilidade e testIDs.
+
+## Em Andamento
+
+- **Switch** - Em fase de documentação.
+
+## Próximos Componentes
+
+- Modal
+- Select
+- Accordion
+- ActionButton
+- CheckBox
+- (demais componentes)
+
+## Problemas Conhecidos
+
+1. Alguns exemplos de código podem precisar de ajustes para compatibilidade com a versão mais recente do React Native.
+2. A navegação entre os arquivos de documentação precisa ser melhorada.
+3. Dependências de componentes nem sempre estão claramente documentadas.
+
+## Pontos de Melhoria
+
+1. Adicionar mais exemplos práticos de uso em cenários reais.
+2. Melhorar a documentação sobre temas e personalização.
+3. Incluir diagrama de dependências entre componentes.
+4. Adicionar seção de perguntas frequentes para cada componente.
+
+## Notas de Progresso
+
+- (15/07/2023) Iniciado o projeto de documentação com setup inicial.
+- (15/07/2023) Completada a documentação do Typography.
+- (15/07/2023) Completada a documentação do Button.
+- (15/07/2023) Completada a documentação do Header.
+- (15/07/2023) Completada a documentação do Icon.
+- (15/07/2023) Completada a documentação do PinInput.
+- (15/07/2023) Completada a documentação do RadioButton, com ênfase em acessibilidade, TestIDs e grupos funcionais.
