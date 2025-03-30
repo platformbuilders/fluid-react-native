@@ -728,7 +728,7 @@ Este documento registra o progresso da documentação dos componentes da bibliot
 
 **Última atualização:** 2023-07-15
 
-- Componentes Documentados: 6 de 20 (30%)
+- Componentes Documentados: 7 de 20 (35%)
 - Cobertura de Testes Global: 92%
 - Problemas Conhecidos: 3
 - Pontos de Melhoria Identificados: 4
@@ -741,14 +741,14 @@ Este documento registra o progresso da documentação dos componentes da bibliot
 4. **Icon** - Documentação completa incluindo suporte para múltiplas bibliotecas, personalização e acessibilidade.
 5. **PinInput** - Documentação completa incluindo exemplos de uso, variações, segurança e acessibilidade.
 6. **RadioButton** - Documentação completa incluindo exemplos de uso, variações, agrupamento, acessibilidade e testIDs.
+7. **Toggle** - Documentação completa incluindo estados, cores personalizadas, acessibilidade e exemplos de uso prático.
 
 ## Em Andamento
 
-- **Toggle** - Em fase de documentação.
+- **Modal** - Em fase de documentação.
 
 ## Próximos Componentes
 
-- Modal
 - Select
 - Accordion
 - ActionButton
@@ -777,3 +777,4 @@ Este documento registra o progresso da documentação dos componentes da bibliot
 - (15/07/2023) Completada a documentação do Icon.
 - (15/07/2023) Completada a documentação do PinInput.
 - (15/07/2023) Completada a documentação do RadioButton, com ênfase em acessibilidade, TestIDs e grupos funcionais.
+- (15/07/2023) Atualizada e expandida a documentação do Toggle, com melhorias nos exemplos, manipulação de eventos e descrição de TestIDs.
