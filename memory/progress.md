@@ -744,7 +744,7 @@ Este documento registra o progresso da documentação dos componentes da bibliot
 
 ## Em Andamento
 
-- **Switch** - Em fase de documentação.
+- **Toggle** - Em fase de documentação.
 
 ## Próximos Componentes
 
