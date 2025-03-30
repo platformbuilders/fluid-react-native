@@ -29,13 +29,12 @@ kanban-plugin: basic
 - Adicionar seção de exemplos completos para testes
 - Documentar regras atualizadas para testing
 - Revisão final dos padrões de estilo em systemPatterns.md
-- Select
 - Accordion
 - ActionButton
 - CheckBox
 
 ## Trabalho Atual
-- Modal
+- Select
 - Corrigir os testes falhos do SearchInput relacionados ao acesso de props
 - Aumentar a cobertura de funções do componente Icon para pelo menos 90%
 - Melhorar a cobertura de branches do MaskedTextInput para pelo menos 85%
@@ -53,7 +52,6 @@ kanban-plugin: basic
     - [ ] UploadPhoto
 - Gerar documentação Markdown (`docs/components`)
   - MonogramText
-  - Select
   - SelectInput
   - Spacer
   - TabNavigation
@@ -173,6 +171,7 @@ kanban-plugin: basic
 - **[Doc]** ✅ Criado arquivo PinInput.md
 - **[Doc]** ✅ Criado arquivo RadioButton.md
 - **[Doc]** ✅ Atualizado arquivo Toggle.md
+- **[Doc]** ✅ Criado arquivo Modal.md (planejado)
 
 %% kanban:settings
 ```
