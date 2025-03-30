@@ -122,5 +122,46 @@ describe('Hooks utilitários', () => {
       const { result } = renderHook(() => useAutoFocus(true, undefined));
       expect(result.current).toBeUndefined();
     });
+
+    it('não deve causar erro se inputRef.current for null', () => {
+      const inputRef = { current: null };
+      renderHook(() => useAutoFocus(true, inputRef));
+      expect(InteractionManager.runAfterInteractions).not.toHaveBeenCalled();
+    });
+
+    it('não deve causar erro se inputRef.current._inputElement for null', () => {
+      const inputRef = { current: { _inputElement: null } };
+      renderHook(() => useAutoFocus(true, inputRef));
+      expect(InteractionManager.runAfterInteractions).not.toHaveBeenCalled();
+    });
+
+    it('não deve causar erro se inputRef.current._inputElement.current for null', () => {
+      const inputRef = { current: { _inputElement: { current: null } } };
+      renderHook(() => useAutoFocus(true, inputRef));
+      expect(InteractionManager.runAfterInteractions).not.toHaveBeenCalled();
+    });
+
+    it('não deve chamar runAfterInteractions quando autoFocus é false e inputRef é null', () => {
+      renderHook(() => useAutoFocus(false, null));
+      expect(InteractionManager.runAfterInteractions).not.toHaveBeenCalled();
+    });
+
+    it('não deve chamar runAfterInteractions quando autoFocus é false e inputRef.current é null', () => {
+      const inputRef = { current: null };
+      renderHook(() => useAutoFocus(false, inputRef));
+      expect(InteractionManager.runAfterInteractions).not.toHaveBeenCalled();
+    });
+
+    it('não deve chamar runAfterInteractions quando autoFocus é false e inputRef.current._inputElement é null', () => {
+      const inputRef = { current: { _inputElement: null } };
+      renderHook(() => useAutoFocus(false, inputRef));
+      expect(InteractionManager.runAfterInteractions).not.toHaveBeenCalled();
+    });
+
+    it('não deve chamar runAfterInteractions quando autoFocus é false e inputRef.current._inputElement.current é null', () => {
+      const inputRef = { current: { _inputElement: { current: null } } };
+      renderHook(() => useAutoFocus(false, inputRef));
+      expect(InteractionManager.runAfterInteractions).not.toHaveBeenCalled();
+    });
   });
 });

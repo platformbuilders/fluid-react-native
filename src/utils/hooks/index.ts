@@ -11,9 +11,14 @@ export const usePrevious = <T>(value: T): T | undefined => {
 
 export const useAutoFocus = (autoFocus = false, inputRef: any) => {
   React.useEffect(() => {
-    if (autoFocus && inputRef) {
+    if (autoFocus && 
+        inputRef && 
+        inputRef.current && 
+        inputRef.current._inputElement && 
+        inputRef.current._inputElement.current
+    ) {
       InteractionManager.runAfterInteractions(() => {
-        inputRef?.current?._inputElement.current?.focus();
+        inputRef.current._inputElement.current.focus?.();
       });
     }
   }, [autoFocus, inputRef]);
