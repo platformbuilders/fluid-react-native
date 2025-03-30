@@ -728,7 +728,7 @@ Este documento registra o progresso da documentação dos componentes da bibliot
 
 **Última atualização:** 2023-07-15
 
-- Componentes Documentados: 7 de 20 (35%)
+- Componentes Documentados: 8 de 20 (40%)
 - Cobertura de Testes Global: 92%
 - Problemas Conhecidos: 3
 - Pontos de Melhoria Identificados: 4
@@ -742,14 +742,14 @@ Este documento registra o progresso da documentação dos componentes da bibliot
 5. **PinInput** - Documentação completa incluindo exemplos de uso, variações, segurança e acessibilidade.
 6. **RadioButton** - Documentação completa incluindo exemplos de uso, variações, agrupamento, acessibilidade e testIDs.
 7. **Toggle** - Documentação completa incluindo estados, cores personalizadas, acessibilidade e exemplos de uso prático.
+8. **Modal** - Documentação criada para componente planejado, incluindo funcionalidades esperadas, variações, props e exemplos de uso.
 
 ## Em Andamento
 
-- **Modal** - Em fase de documentação.
+- **Select** - Em fase de documentação.
 
 ## Próximos Componentes
 
-- Select
 - Accordion
 - ActionButton
 - CheckBox
@@ -778,3 +778,4 @@ Este documento registra o progresso da documentação dos componentes da bibliot
 - (15/07/2023) Completada a documentação do PinInput.
 - (15/07/2023) Completada a documentação do RadioButton, com ênfase em acessibilidade, TestIDs e grupos funcionais.
 - (15/07/2023) Atualizada e expandida a documentação do Toggle, com melhorias nos exemplos, manipulação de eventos e descrição de TestIDs.
+- (15/07/2023) Criada documentação para o componente Modal (planejado), especificando funcionalidades futuras, estrutura esperada e exemplos de implementação.
