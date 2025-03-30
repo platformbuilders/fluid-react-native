@@ -30,6 +30,11 @@ kanban-plugin: basic
 - Adicionar seção de exemplos completos para testes
 - Documentar regras atualizadas para testing
 - Revisão final dos padrões de estilo em systemPatterns.md
+- Modal
+- Select
+- Accordion
+- ActionButton
+- CheckBox
 
 ## Trabalho Atual
 - Corrigir os testes falhos do SearchInput relacionados ao acesso de props
@@ -59,6 +64,7 @@ kanban-plugin: basic
   - TextInput
   - TimePicker
   - Typography
+- Switch
 
 ## Próximos Passos
 - Implementar testes para componentes com baixa cobertura (se necessário após análise)
@@ -79,6 +85,8 @@ kanban-plugin: basic
 - Adicionar documentação de testes para componentes complexos
 - Revisar e atualizar regras de acessibilidade no `.cursorrules`
 - Criar exemplos de testes para casos específicos
+- Refinar Documentação
+- Adicionar Exemplos Práticos
 
 ## Concluído
 - Configuração inicial do banco de memória para o projeto
