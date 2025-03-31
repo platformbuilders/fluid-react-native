@@ -41,6 +41,7 @@ const sidebars: SidebarsConfig = {
           label: 'Interação',
           items: [
             'components/button',
+            'components/touchable/index',
           ],
         },
         {
@@ -48,6 +49,7 @@ const sidebars: SidebarsConfig = {
           label: 'Layout',
           items: [
             'components/card',
+            'components/separator/index',
           ],
         },
         {
@@ -56,6 +58,15 @@ const sidebars: SidebarsConfig = {
           items: [
             'components/text-input',
             'components/checkbox',
+            'components/search-input/index',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Exibição',
+          items: [
+            'components/typography/index',
+            'components/upload-photo/index',
           ],
         },
       ],
