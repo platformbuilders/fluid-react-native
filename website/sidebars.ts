@@ -70,6 +70,7 @@ const sidebars: SidebarsConfig = {
           label: 'Formulários',
           items: [
             'components/text-input',
+            'components/password-input/password-input',
             'components/checkbox',
             'components/search-input/index',
             'components/date-picker/index',
