@@ -41,7 +41,6 @@ const sidebars: SidebarsConfig = {
           label: 'Interação',
           items: [
             'components/button',
-            'components/touchable/index',
             'components/badge/index',
             'components/link/link',
             'components/radio-button/radio-button',
@@ -53,7 +52,6 @@ const sidebars: SidebarsConfig = {
           label: 'Layout',
           items: [
             'components/accordion/index',
-            'components/card',
             'components/separator/index',
           ],
         },
@@ -87,7 +85,6 @@ const sidebars: SidebarsConfig = {
             'components/image/index',
             'components/typography/index',
             'components/upload-photo/index',
-            'components/markdown/markdown',
           ],
         },
         {
