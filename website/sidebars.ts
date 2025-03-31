@@ -42,6 +42,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'components/button',
             'components/touchable/index',
+            'components/badge/index',
           ],
         },
         {
@@ -55,11 +56,19 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'category',
+          label: 'Navegação',
+          items: [
+            'components/bottom-navigation/index',
+          ],
+        },
+        {
+          type: 'category',
           label: 'Formulários',
           items: [
             'components/text-input',
             'components/checkbox',
             'components/search-input/index',
+            'components/date-picker/index',
           ],
         },
         {
