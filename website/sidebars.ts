@@ -69,6 +69,7 @@ const sidebars: SidebarsConfig = {
             'components/checkbox',
             'components/search-input/index',
             'components/date-picker/index',
+            'components/form-error/index',
           ],
         },
         {
