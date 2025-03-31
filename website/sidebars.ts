@@ -48,6 +48,7 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'Layout',
           items: [
+            'components/accordion/index',
             'components/card',
             'components/separator/index',
           ],
@@ -65,6 +66,7 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'Exibição',
           items: [
+            'components/avatar/index',
             'components/typography/index',
             'components/upload-photo/index',
           ],
