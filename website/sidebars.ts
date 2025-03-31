@@ -78,9 +78,10 @@ const sidebars: SidebarsConfig = {
           label: 'Exibição',
           items: [
             'components/avatar/index',
+            'components/icon/index',
+            'components/image/index',
             'components/typography/index',
             'components/upload-photo/index',
-            'components/icon/index',
           ],
         },
       ],
