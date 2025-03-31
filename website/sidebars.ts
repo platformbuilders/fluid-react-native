@@ -83,6 +83,7 @@ const sidebars: SidebarsConfig = {
             'components/image/index',
             'components/typography/index',
             'components/upload-photo/index',
+            'components/markdown/markdown',
           ],
         },
         {
