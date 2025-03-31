@@ -45,6 +45,7 @@ const sidebars: SidebarsConfig = {
             'components/badge/index',
             'components/link/link',
             'components/radio-button/radio-button',
+            'components/toggle/toggle',
           ],
         },
         {
