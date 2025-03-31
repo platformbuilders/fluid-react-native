@@ -72,6 +72,7 @@ const sidebars: SidebarsConfig = {
             'components/search-input/index',
             'components/date-picker/index',
             'components/form-error/index',
+            'components/pin-input/pin-input',
           ],
         },
         {
