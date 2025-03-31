@@ -43,6 +43,7 @@ const sidebars: SidebarsConfig = {
             'components/button',
             'components/touchable/index',
             'components/badge/index',
+            'components/link/link',
           ],
         },
         {
