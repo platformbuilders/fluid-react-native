@@ -1,7 +1,5 @@
 import React, { Children, FC, ReactChild } from 'react';
-
 import { isIOS } from '@platformbuilders/helpers/native';
-
 import { HeaderTheme, IconFonts } from '../../enums';
 
 import {

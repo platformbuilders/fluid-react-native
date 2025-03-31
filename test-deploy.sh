@@ -14,16 +14,16 @@ echo "Pulando yarn install principal (apenas para teste)"
 yarn website:install
 
 echo ""
-echo "2. Construindo site Docusaurus..."
+echo "2. Construindo site rspress..."
 echo "-------------------------------"
 yarn website:build
 
 echo ""
 echo "3. Verificando artefatos gerados..."
 echo "--------------------------------"
-echo "Site Docusaurus:"
+echo "Site rspress:"
 if [ -d "website/build" ]; then
-  echo "✅ Build do Docusaurus gerado com sucesso em website/build"
+  echo "✅ Build do rspress gerado com sucesso em website/build"
   ls -la website/build | head -n 10
   echo "(mostrando apenas 10 primeiros arquivos)"
 else

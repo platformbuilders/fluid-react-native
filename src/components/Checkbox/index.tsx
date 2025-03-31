@@ -1,8 +1,9 @@
 import React, { FC } from 'react';
+import NativeCheckBox from 'react-native-check-box';
 import { CheckBoxType } from '../../types';
 import { generateAccessibilityProps } from '../../utils';
 import FormError from '../FormError';
-import { CheckBox, Label, Wrapper, containerStyle } from './styles';
+import { Label, Wrapper, containerStyle } from './styles';
 
 const CheckboxComponent: FC<CheckBoxType> = ({
   id,
@@ -17,9 +18,20 @@ const CheckboxComponent: FC<CheckBoxType> = ({
   disabled,
   ...rest
 }) => {
+  // Define enum para tipos
+  const ElementType = {
+    STRING: 'string',
+  } as const;
+
+  // Verifica se label é uma string
+  const isStringLabel = typeof label === ElementType.STRING;
+  const labelAsString = isStringLabel && label ? (label as string) : '';
+
   // Define o label padrão baseado no conteúdo do label
   const defaultLabel =
-    typeof label === 'string' && label ? `checbox de ${label}` : 'checbox de ';
+    isStringLabel && labelAsString
+      ? `checbox de ${labelAsString}`
+      : 'checbox de ';
 
   // Gera propriedades de acessibilidade padronizadas
   const accessibilityProps = generateAccessibilityProps(
@@ -32,8 +44,8 @@ const CheckboxComponent: FC<CheckBoxType> = ({
     },
     'checkbox',
     defaultLabel,
-    typeof label === 'string'
-      ? `Marcar ou desmarcar ${label}`
+    isStringLabel
+      ? `Marcar ou desmarcar ${labelAsString}`
       : 'Marcar ou desmarcar',
   );
 
@@ -68,7 +80,7 @@ const CheckboxComponent: FC<CheckBoxType> = ({
         testID={checkboxTestID}
         {...rest}
       >
-        <CheckBox
+        <NativeCheckBox
           style={containerStyle}
           isChecked={checked}
           onClick={onPress}

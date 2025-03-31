@@ -14,7 +14,7 @@ kanban-plugin: basic
 - Criar website com documentação completa
 - Melhorar documentação de API para componentes
 - Implementar testes de acessibilidade (a11y)
-- Criar site de documentação completo com Docusaurus
+- Criar site de documentação completo com rspress
 - Implementar componente Toast
 - Implementar componente Calendar
 - Adicionar mais exemplos de uso no Storybook
@@ -32,6 +32,13 @@ kanban-plugin: basic
 - Accordion
 - ActionButton
 - CheckBox
+- [ ] Integrar badge de cobertura dinâmico (Coveralls/Codecov) com CI/CD
+- [ ] Implementar versionamento na documentação rspress
+- [ ] Adicionar busca Algolia DocSearch ao site rspress
+- [ ] Criar playground interativo para componentes no site rspress
+- [ ] Suporte a PWA para documentação offline
+- [ ] Refatorar componentes com baixa coesão ou alta complexidade
+- [ ] Adicionar mais testes E2E com Detox/Maestro
 
 ## Trabalho Atual
 - Select
@@ -58,28 +65,24 @@ kanban-plugin: basic
   - TextInput
   - TimePicker
   - Typography
+- [ ] **Corrigir Warnings dos Testes:**
+  - [ ] PropTypes `PinInput` (`containerStyle`)
+  - [ ] `FormError` (boolean vs string)
+  - [ ] `Markdown` (input não string)
+  - [ ] PropTypes `Icon` (nomes inválidos)
+  - [ ] Warnings de estilo (`styled-components`)
+- [ ] Criar site de documentação completo com rspress
 
-## Próximos Passos
-- Implementar testes para componentes com baixa cobertura (se necessário após análise)
-- Analisar componentes com menor cobertura de testes
-- Criar página de documentação no Storybook
-- Implantar documentação no Firebase
-- Criar documentação no Storybook para componentes restantes
-- Migrar completamente para React 18
-- Resolver warnings relacionados ao React 18
-- Configurar Firebase Hosting para Storybook
-- Corrigir erros de lint nos arquivos de teste
-- Implementar testes para o ModalPicker
-- Adicionar documentação para o Button *(Já existe, mas pode precisar de revisão/atualização)*
-- Refatorar o componente Toggle para maior testabilidade
-- Revisar componente Tooltip para compatibilidade em iOS e Android
-- Implementar melhorias de acessibilidade nos componentes Button, Icon e TextInput
-- Adicionar documentação para o Toggle *(Já existe, mas pode precisar de revisão/atualização)*
-- Adicionar documentação de testes para componentes complexos
-- Revisar e atualizar regras de acessibilidade no `.cursorrules`
-- Criar exemplos de testes para casos específicos
-- Refinar Documentação
-- Adicionar Exemplos Práticos
+## Próximos Passos (Prioridade)
+- [ ] **Aumentar Cobertura Testes (Branches/Funções < 95%):**
+  - [ ] `Header`
+  - [ ] `Image`
+  - [ ] `RadioButton`
+  - [ ] `SearchInput`
+  - [ ] `utils/hooks`
+- [ ] Investigar e corrigir erro `ReferenceError` após testes (Accordion, TextInput)
+- [ ] Configurar Firebase Hosting com domínio `fluid.builders`
+- [ ] Revisar e atualizar `CONTRIBUTING.md`
 
 ## Concluído
 - Configuração inicial do banco de memória para o projeto
@@ -172,6 +175,17 @@ kanban-plugin: basic
 - **[Doc]** ✅ Criado arquivo RadioButton.md
 - **[Doc]** ✅ Atualizado arquivo Toggle.md
 - **[Doc]** ✅ Criado arquivo Modal.md (planejado)
+- [x] Configurar estrutura inicial do projeto
+- [x] Implementar componentes básicos (Button, Input, etc.)
+- [x] Configurar sistema de temas com styled-components
+- [x] Adicionar testes unitários iniciais
+- [x] Configurar ESLint e Prettier
+- [x] Configurar Storybook
+- [x] Configurar TypeScript
+- [x] Adicionar documentação inicial (README)
+- [x] Atualizar URL de deploy para `https://fluid.builders`
+- [x] Atualizar referências de Docusaurus para rspress nos scripts e CI
+- [x] Atualizar banco de memória (techContext, activeContext, kanban) com rspress
 
 %% kanban:settings
 ```

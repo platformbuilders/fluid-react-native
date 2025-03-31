@@ -13,7 +13,8 @@
 ### 2. Documentação e Implantação
 
 - **Implantação no Firebase Hosting**: ⏳ Aguardando configuração final para deploy contínuo.
-- **Documentação Docusaurus**: ⏳ Em progresso, criando site de documentação completo.
+- **Documentação rspress**: ⏳ Em progresso, criando site de documentação completo.
+- **Deploy**: ✅ Scripts e CI configurados para Firebase Hosting (`https://fluid.builders`).
 
 ## Melhorias Recentes
 
@@ -104,6 +105,9 @@
 5. Atualizar snapshots dos componentes modificados
 6. Resolver warnings pendentes relacionados ao PinInput e Icon
 7. Analisar e resolver as ocorrências de acessibilidade identificadas pelo Semgrep
+- **CI/CD**: Para build, testes e deploy automático
+- **rspress**: Para o site de documentação
+- **Firebase**: Para hospedagem
 
 ## Documentação
 

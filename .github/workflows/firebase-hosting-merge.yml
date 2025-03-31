@@ -22,7 +22,7 @@ jobs:
           yarn install --frozen-lockfile
           yarn website:install
 
-      - name: Build Documentation (Docusaurus)
+      - name: Build Documentation (rspress)
         run: |
           yarn website:build
 

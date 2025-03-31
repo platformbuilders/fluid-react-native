@@ -125,40 +125,25 @@ Bibliotecas que são recomendadas mas não obrigatórias:
 
 ## Documentação Técnica
 
-### Docusaurus para Documentação
+### rspress para Documentação
 
-A documentação do Fluid React Native está sendo implementada usando o Docusaurus 2, um gerador de sites estáticos moderno otimizado para documentação técnica.
+A documentação do Fluid React Native está sendo implementada usando o **rspress**, um gerador de sites estáticos moderno otimizado para documentação técnica, baseado em Rspack.
 
 #### Estrutura da Documentação
 
 ```
 website/
-├── blog/                # Posts do blog (futuro)
-├── docs/                # Arquivos de documentação em Markdown
-│   ├── intro.md         # Página de introdução
-│   ├── getting-started.md # Guia de primeiros passos
-│   ├── installation.md  # Guia de instalação
-│   ├── theming.md       # Personalização de temas
-│   ├── accessibility.md # Guia de acessibilidade
-│   ├── components/      # Documentação de componentes
-│   │   ├── button.md    # Documentação do Button
-│   │   ├── card.md      # Documentação do Card
-│   │   └── ...          # Outros componentes
-│   └── guides/          # Guias avançados
-│       └── best-practices.md # Melhores práticas
-├── src/
-│   ├── components/      # Componentes React personalizados
-│   ├── css/             # Estilos CSS
-│   │   └── custom.css   # CSS personalizado
-│   └── pages/           # Páginas personalizadas
-│       └── index.tsx    # Página inicial
-├── static/
-│   └── img/             # Imagens estáticas
-│       ├── logo.svg     # Logo do projeto
-│       └── ...          # Outras imagens
-├── docusaurus.config.js # Configuração do Docusaurus
-├── sidebars.js          # Configuração da barra lateral
-└── package.json         # Dependências e scripts
+├── doc_build/           # Build de produção (gerado)
+├── node_modules/        # Dependências
+├── public/              # Arquivos estáticos (ex: imagens)
+├── docs/                # Arquivos de documentação em Markdown/MDX
+│   ├── guide/
+│   │   └── getting-started.md
+│   └── api/
+│       └── index.md
+├── rspress.config.ts    # Configuração principal do rspress
+├── package.json         # Dependências e scripts
+└── tsconfig.json        # Configuração TypeScript
 ```
 
 #### Recursos Implementados
@@ -184,47 +169,40 @@ website/
    - Documentação de componentes com exemplos
    - Guias de melhores práticas
 
-#### Configuração do Docusaurus
+#### Configuração do rspress
 
-O arquivo `docusaurus.config.js` contém as configurações principais:
+O arquivo `rspress.config.ts` contém as configurações principais:
 
-```javascript
-module.exports = {
+```typescript
+import path from 'node:path';
+import { defineConfig } from 'rspress/config';
+
+export default defineConfig({
+  root: path.join(__dirname, 'docs'),
   title: 'Fluid React Native',
-  tagline: 'Biblioteca de componentes UI para React Native',
-  // URL do site
-  url: 'https://fluid-ds.web.app',
-  baseUrl: '/',
-  
-  // Configurações de temas, plugins e customizações
-  
-  // Links da navbar
-  navbar: {
-    title: 'Fluid React Native',
-    logo: {
-      alt: 'Fluid Logo',
-      src: 'img/logo.svg',
-    },
-    items: [
-      // Links de navegação
+  description: 'Biblioteca de componentes UI para React Native',
+  icon: '/rspress-icon.png',
+  logo: {
+    light: '/rspress-light-logo.png',
+    dark: '/rspress-dark-logo.png',
+  },
+  themeConfig: {
+    socialLinks: [
+      {
+        icon: 'github',
+        mode: 'link',
+        content:
+          'https://github.com/platformbuilders/fluid-react-native',
+      },
     ],
   },
-  
-  // Configuração das barras laterais
-  plugins: [
-    // Plugins adicionais
-  ],
-  
-  // Configuração de temas
-  themes: [
-    // Temas adicionais
-  ],
-};
+});
+
 ```
 
 ### Deploy e Hospedagem
 
-A documentação do Fluid React Native é hospedada no Firebase Hosting, utilizando uma configuração simplificada para deploy único do site Docusaurus.
+A documentação do Fluid React Native é hospedada no Firebase Hosting, utilizando uma configuração simplificada para deploy único do site rspress.
 
 #### Configuração do Firebase
 
@@ -283,14 +261,14 @@ A documentação do Fluid React Native é hospedada no Firebase Hosting, utiliza
    yarn install
    yarn website:install
    
-   echo "Construindo o site Docusaurus..."
+   echo "Construindo o site rspress..."
    yarn website:build
    
    echo "Fazendo deploy do site único..."
    firebase deploy --only hosting
    
    echo "Deploy concluído!"
-   echo "Site disponível em: https://fluid-ds.web.app"
+   echo "Site disponível em: https://fluid.builders"
    ```
 
 3. **test-deploy.sh**: Script para testar o processo de build sem deploy
@@ -310,14 +288,14 @@ A documentação do Fluid React Native é hospedada no Firebase Hosting, utiliza
    yarn website:install
    
    echo ""
-   echo "2. Construindo site Docusaurus..."
+   echo "2. Construindo site rspress..."
    yarn website:build
    
    echo ""
    echo "3. Verificando artefatos gerados..."
-   echo "Site Docusaurus:"
+   echo "Site rspress:"
    if [ -d "website/build" ]; then
-     echo "✅ Build do Docusaurus gerado com sucesso em website/build"
+     echo "✅ Build do rspress gerado com sucesso em website/build"
      ls -la website/build | head -n 10
      echo "(mostrando apenas 10 primeiros arquivos)"
    else
@@ -359,7 +337,7 @@ jobs:
           yarn install --frozen-lockfile
           yarn website:install
           
-      - name: Build Documentation (Docusaurus)
+      - name: Build Documentation (rspress)
         run: |
           yarn website:build
           
@@ -394,7 +372,7 @@ jobs:
 
 A documentação segue estas diretrizes técnicas:
 
-1. **Versionamento**: O Docusaurus permite versionar a documentação para diferentes versões da biblioteca (a ser implementado)
+1. **Versionamento**: rspress pode suportar versionamento (a verificar/implementar)
 
 2. **Markdown e MDX**: Toda a documentação é escrita em Markdown com suporte a componentes MDX para exemplos interativos
 

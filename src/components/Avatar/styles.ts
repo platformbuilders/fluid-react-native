@@ -39,6 +39,7 @@ type IconWrapperProps = {
 };
 
 export const UploadIconWrapper = styled.View<IconWrapperProps>`
+  importantforaccessibility: no;
   align-items: center;
   justify-content: center;
   width: ${(props: IconWrapperProps): number => props.size / 4}px;
@@ -62,6 +63,7 @@ export const CameraView = styled(RNCamera)<{ size: number }>`
 `;
 
 export const MonogramWrapper = styled.View<IconWrapperProps>`
+  importantforaccessibility: no;
   align-items: center;
   justify-content: center;
   width: ${(props: IconWrapperProps): number => props.size}px;

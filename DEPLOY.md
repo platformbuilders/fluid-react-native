@@ -3,7 +3,7 @@
 Este projeto está configurado para deploy em duas instâncias do Firebase Hosting:
 
 1. **docs** - Documentação técnica da API (RSPress)
-2. **website** - Site de documentação do usuário (Docusaurus)
+2. **website** - Site de documentação do usuário (rspress)
 
 ## Pré-requisitos
 
@@ -21,7 +21,7 @@ Para configurar os alvos do Firebase Hosting, execute o script de configuração
 
 **Importante:** Você precisa primeiro criar os dois sites no console do Firebase:
 - Um site principal com ID do projeto (para a documentação da API)
-- Um site secundário com ID do projeto + "-website" (para o site Docusaurus)
+- Um site secundário com ID do projeto + "-storybook" (para o Storybook)
 
 ## Deploy Manual
 
@@ -59,10 +59,13 @@ Os seguintes segredos devem estar configurados no repositório:
 - Build: `docs/rspress/dist/`
 - URL: `https://[PROJECT_ID].web.app`
 
-### Site Docusaurus
-- Código fonte: `website/`
-- Build: `website/build/`
-- URL: `https://[PROJECT_ID]-website.web.app`
+### Site rspress
+
+1.  **Diretório Fonte:** `website/`
+2.  **Comando Build:** `yarn website:build` (gera o conteúdo em `website/build`)
+3.  **Diretório Público (Firebase):** `website/build`
+4.  **Projeto Firebase:** `fluid-docs` (ID configurado)
+5.  **Target Firebase:** `fluid-docs` (Nome do target configurado)
 
 ## Solução de Problemas
 

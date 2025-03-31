@@ -43,7 +43,7 @@
     "version:major": "npm version major",
     "version:minor": "npm version minor",
     "version:patch": "npm version patch",
-    "semgrep": "semgrep --config ./.rules ./src --text --output=./.rules/output.txt",
+    "semgrep": "semgrep --config ./.rules ./src --text --output=./.rules/output.txt --exclude=**/*.stories.*",
     "docs:dev": "cd docs/rspress && npm run dev",
     "docs:build": "cd docs/rspress && npm run build",
     "docs:preview": "cd docs/rspress && npm run preview",

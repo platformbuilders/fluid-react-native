@@ -115,10 +115,11 @@ Esta lista de tarefas serve como um guia prático para implementação das melho
 
 ### Em Progresso
 
-| Tarefa                            | Descrição                                               | Status           | Responsável | Prazo   |
-| --------------------------------- | ------------------------------------------------------- | ---------------- | ----------- | ------- |
-| ⬜ Migração para Nova Arquitetura | Preparar componentes para React Native New Architecture | **EM PROGRESSO** | Time Fluid  | Q2 2025 |
-| ⬜ Site de Documentação           | Implementação de site Docusaurus para documentação      | **EM PROGRESSO** | Time Fluid  | Q1 2025 |
+| Tarefa                            | Descrição                                               | Status           | Responsável | Prazo Estimado |
+| --------------------------------- | ------------------------------------------------------- | ---------------- | ----------- | ------------- |
+| ⬜ Migração para Nova Arquitetura | Preparar componentes para React Native New Architecture | **EM PROGRESSO** | Time Fluid  | Q2 2025        |
+| ⬜ Site de Documentação           | Implementação de site rspress para documentação                 | **EM PROGRESSO** | Time Fluid  | Q1 2025        |
+| ⬜ Integração CI/CD            | Configuração de pipeline para build, teste e deploy automático  | **PLANEJADO**    | Time Fluid  | Q2 2025        |
 
 ### Próximos Passos
 

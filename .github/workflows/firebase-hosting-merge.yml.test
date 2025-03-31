@@ -22,9 +22,11 @@ jobs:
           yarn install --frozen-lockfile
           yarn website:install
 
-      - name: Build Documentation (Docusaurus)
+      - name: Build Documentation (rspress)
         run: |
           yarn website:build
+
+      # Comentar o deploy para teste
 
       - name: Simulate Deploy to Firebase
         run: |

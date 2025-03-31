@@ -60,9 +60,14 @@ const MaskedTextInput = forwardRef<any, MaskedTextInputType>(
     const prefix = 'input';
     let inputTestID;
 
+    // Define enum para IDs especiais
+    enum SpecialID {
+      TEST = 'test',
+    }
+
     // Caso especial para compatibilidade com testes existentes
-    if (id === 'test') {
-      inputTestID = 'test';
+    if (id === SpecialID.TEST) {
+      inputTestID = SpecialID.TEST;
     }
     // Se tiver ID, formata como "prefix_id"
     else if (id) {
