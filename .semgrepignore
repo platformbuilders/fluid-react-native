@@ -1,0 +1,14 @@
+# Ignore test directories
+**/__tests__/
+**/__mocks__/
+
+# Ignore test files by pattern
+**/*.test.[tj]sx?
+**/*.spec.[tj]sx?
+
+# Ignore setup files
+src/setupTests.js
+src/setupFile.js
+
+# Ignore Jest helper directory
+.jest/ 
