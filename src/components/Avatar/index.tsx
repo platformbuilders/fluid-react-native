@@ -1,6 +1,5 @@
 import React, { useEffect, useImperativeHandle, useRef, useState } from 'react';
 import { isEmpty } from 'lodash';
-import { RNCamera } from 'react-native-camera';
 import { Source } from 'react-native-fast-image';
 import {
   ImageLibraryOptions,
@@ -11,11 +10,8 @@ import { ImagePlaceholder as defaultAvatar } from '../../assets/images';
 import { AvatarProps as AvatarType } from '../../types';
 import Image from '../Image';
 import {
-  CameraView,
   MonogramText,
   MonogramWrapper,
-  UploadIcon,
-  UploadIconWrapper,
   Wrapper,
 } from './styles';
 
@@ -39,7 +35,6 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
       ...rest
     },
     ref,
-    // eslint-disable-next-line sonarjs/cognitive-complexity
   ) => {
     const [visibleImage, setVisibleImage] = useState<string | undefined>();
     const cameraRef = useRef<any>();
