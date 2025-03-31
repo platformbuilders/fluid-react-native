@@ -85,6 +85,13 @@ const sidebars: SidebarsConfig = {
             'components/upload-photo/index',
           ],
         },
+        {
+          type: 'category',
+          label: 'Feedback',
+          items: [
+            'components/loading-indicator/loading-indicator',
+          ],
+        },
       ],
     },
   ],
