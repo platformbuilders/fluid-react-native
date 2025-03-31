@@ -59,6 +59,7 @@ const sidebars: SidebarsConfig = {
           label: 'Navegação',
           items: [
             'components/bottom-navigation/index',
+            'components/header/index',
           ],
         },
         {
