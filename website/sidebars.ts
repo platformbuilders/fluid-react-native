@@ -80,6 +80,7 @@ const sidebars: SidebarsConfig = {
             'components/avatar/index',
             'components/typography/index',
             'components/upload-photo/index',
+            'components/icon/index',
           ],
         },
       ],
