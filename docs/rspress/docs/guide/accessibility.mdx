@@ -1,0 +1,127 @@
+# Acessibilidade
+
+A acessibilidade é uma parte fundamental do design do Fluid React Native. Nossa biblioteca foi desenvolvida com foco em tornar aplicações móveis acessíveis para todos os usuários, incluindo aqueles com deficiências visuais, auditivas, motoras ou cognitivas.
+
+## Princípios de Acessibilidade
+
+O Fluid React Native segue os seguintes princípios de acessibilidade:
+
+1. **Perceptível**: Os componentes são projetados para serem perceptíveis por todos os usuários, independentemente de suas habilidades.
+2. **Operável**: Os componentes podem ser operados por uma ampla gama de dispositivos de entrada.
+3. **Compreensível**: A interface é projetada para ser clara, consistente e previsível.
+4. **Robusto**: Os componentes funcionam com uma ampla variedade de tecnologias assistivas.
+
+## Recursos de Acessibilidade Implementados
+
+Todos os componentes do Fluid React Native implementam recursos de acessibilidade seguindo as melhores práticas para React Native, incluindo:
+
+### Propriedades Comuns de Acessibilidade
+
+| Propriedade | Descrição |
+|-------------|-----------|
+| `accessibility` | Identificador único para o componente (usado também para gerar testIDs) |
+| `accessibilityLabel` | Texto descritivo que será lido pelos leitores de tela |
+| `accessibilityHint` | Dica sobre o resultado da interação com o componente |
+| `accessibilityRole` | Papel do componente (ex: button, checkbox, header) |
+| `accessibilityState` | Estado atual do componente (ex: disabled, selected) |
+
+### TestIDs para Automação de Testes
+
+Nossos componentes seguem um padrão consistente para a geração de testIDs, facilitando a automação de testes. O padrão geral é:
+
+```
+componentType_identifier
+```
+
+Por exemplo:
+- `button_submit`
+- `textinput_email`
+- `checkbox_terms`
+
+## Boas Práticas por Tipo de Componente
+
+### Botões e Controles Interativos
+
+- Use verbos de ação claros em labels e descrições
+- Garanta área de toque mínima de 44x44dp
+- Sempre forneça feedback visual e tátil para interações
+- Evite depender apenas de cores para indicar estados
+
+```jsx
+<Button 
+  accessibility="salvar-perfil"
+  accessibilityLabel="Salvar alterações do perfil"
+  onPress={handleSave}
+>
+  Salvar
+</Button>
+```
+
+### Campos de Formulário
+
+- Associe labels claros com campos de entrada
+- Forneça mensagens de erro descritivas e acessíveis
+- Use instruções explícitas em vez de placeholder como única indicação
+
+```jsx
+<TextInput
+  id="email"
+  accessibility="campo-email"
+  label="E-mail"
+  placeholder="Digite seu e-mail"
+  error={errors.email}
+  accessibilityLabel="Campo de entrada para seu endereço de e-mail"
+/>
+```
+
+### Imagens e Mídia
+
+- Sempre forneça texto alternativo descritivo para imagens
+- Use rótulos claros para ícones e elementos gráficos
+- Garanta que informações não são transmitidas apenas por meio visual
+
+```jsx
+<Image
+  accessibility="logo-empresa"
+  accessibilityLabel="Logo da Empresa XYZ"
+  source={require('./assets/logo.png')}
+/>
+```
+
+## Testando Acessibilidade
+
+Recomendamos testar a acessibilidade de sua aplicação usando:
+
+1. **Leitores de tela nativos**:
+   - VoiceOver no iOS
+   - TalkBack no Android
+
+2. **Ferramentas de inspeção**:
+   - React Native Accessibility Inspector
+   - Accessibility Scanner (Android)
+   - Accessibility Inspector (iOS)
+
+3. **Testes automatizados**:
+   - Usando os TestIDs consistentes fornecidos pelos componentes
+   - Verificando atributos de acessibilidade em testes de integração
+
+## Checklist de Acessibilidade
+
+Use esta checklist ao implementar interfaces com Fluid React Native:
+
+- [ ] Todos os elementos interativos têm labels de acessibilidade descritivos
+- [ ] A hierarquia de navegação com leitor de tela é lógica
+- [ ] Componentes visuais têm contraste de cores adequado
+- [ ] Feedback é fornecido por múltiplos canais (visual, tátil)
+- [ ] Textos alternativos descrevem adequadamente imagens e ícones
+- [ ] Todos os estados de componentes são comunicados corretamente
+- [ ] Tamanhos de fonte são adequados e escaláveis
+- [ ] Áreas de toque são grandes o suficiente (mínimo 44x44dp)
+
+## Recursos Adicionais
+
+Para mais informações sobre acessibilidade em React Native:
+
+- [Documentação oficial de acessibilidade do React Native](https://reactnative.dev/docs/accessibility)
+- [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG21/)
+- [Testing for Accessibility in React Native](https://formidable.com/blog/2019/react-native-accessibility/) 

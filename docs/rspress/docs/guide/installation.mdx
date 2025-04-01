@@ -1,0 +1,68 @@
+# Instalação
+
+Para começar a usar o Fluid React Native em seu projeto, siga as instruções abaixo.
+
+## Pré-requisitos
+
+- Projeto React Native inicializado
+- Node.js (versão 18 ou superior)
+- Yarn ou npm
+
+## Instalação
+
+```bash
+# Usando npm
+npm install @platformbuilders/fluid-react-native
+
+# Usando yarn
+yarn add @platformbuilders/fluid-react-native
+```
+
+## Dependências
+
+O Fluid React Native requer as seguintes dependências:
+
+```bash
+# Usando yarn
+yarn add @platformbuilders/helpers@0.11.3 @platformbuilders/theme-toolkit@0.3.0 styled-components@5.3.11 formik@2.4.6 lodash@4.17.21 lottie-react-native@7.1.0 react-native-camera@4.2.1 react-native-fast-image@8.6.3 react-native-svg@15.8.0 react-native-vector-icons@10.2.0
+```
+
+## Configuração
+
+Após a instalação, você precisará configurar o tema do Fluid React Native. Recomendamos envolver sua aplicação com o `ThemeProvider` do styled-components:
+
+```jsx
+import React from 'react';
+import { ThemeProvider } from 'styled-components/native';
+import { defaultTheme } from '@platformbuilders/theme-toolkit';
+
+const App = () => {
+  return (
+    <ThemeProvider theme={defaultTheme}>
+      {/* Sua aplicação aqui */}
+    </ThemeProvider>
+  );
+};
+
+export default App;
+```
+
+## Uso básico
+
+Agora você pode importar e usar os componentes do Fluid React Native em sua aplicação:
+
+```jsx
+import React from 'react';
+import { Button, Typography } from '@platformbuilders/fluid-react-native';
+
+const MyComponent = () => {
+  return (
+    <>
+      <Typography>Olá, Fluid React Native!</Typography>
+      <Button title="Clique-me" onPress={() => console.log('Botão clicado')} />
+    </>
+  );
+};
+
+export default MyComponent;
+``` 

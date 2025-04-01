@@ -1,0 +1,119 @@
+# Image
+
+O componente `Image` fornece uma maneira consistente de exibir imagens em sua aplicação React Native, com suporte para fallbacks, placeholders e opções de configuração.
+
+## Importação
+
+```tsx
+import { Image } from '@platformbuilders/fluid-react-native';
+```
+
+## Exemplo Básico
+
+```tsx
+<Image
+  id="logo"
+  accessibility="logo-empresa"
+  source={{ uri: 'https://exemplo.com/logo.png' }}
+  width={200}
+  height={100}
+/>
+```
+
+## Exemplos
+
+### Com placeholder
+
+```tsx
+<Image
+  id="perfil"
+  accessibility="foto-perfil"
+  source={{ uri: 'https://exemplo.com/perfil.jpg' }}
+  placeholderSource={require('./assets/placeholder.png')}
+  width={150}
+  height={150}
+  resizeMode="cover"
+/>
+```
+
+### Com fallback
+
+```tsx
+<Image
+  id="avatar"
+  accessibility="avatar-usuario"
+  source={{ uri: 'https://exemplo.com/avatar.jpg' }}
+  fallbackSource={require('./assets/default-avatar.png')}
+  width={50}
+  height={50}
+  borderRadius={25}
+/>
+```
+
+### Com estilos personalizados
+
+```tsx
+<Image
+  id="banner"
+  accessibility="banner-promocional"
+  source={{ uri: 'https://exemplo.com/banner.jpg' }}
+  style={{
+    width: '100%',
+    height: 200,
+    borderRadius: 8,
+    marginVertical: 16
+  }}
+/>
+```
+
+## API
+
+### Props
+
+| Prop | Tipo | Padrão | Descrição |
+|------|------|--------|-----------|
+| `id` | `string` | - | ID do componente |
+| `accessibility` | `string` | - | ID para acessibilidade |
+| `source` | `ImageSourcePropType` | - | Fonte da imagem |
+| `fallbackSource` | `ImageSourcePropType` | - | Fonte alternativa caso a principal falhe |
+| `placeholderSource` | `ImageSourcePropType` | - | Fonte de placeholder enquanto carrega |
+| `width` | `number \| string` | - | Largura da imagem |
+| `height` | `number \| string` | - | Altura da imagem |
+| `resizeMode` | `'cover' \| 'contain' \| 'stretch' \| 'repeat' \| 'center'` | `'cover'` | Modo de redimensionamento |
+| `borderRadius` | `number` | `0` | Raio da borda |
+| `style` | `StyleProp<ImageStyle>` | - | Estilos customizados |
+| `containerStyle` | `StyleProp<ViewStyle>` | - | Estilos para o container |
+| `testID` | `string` | - | ID para testes |
+| `accessibilityLabel` | `string` | - | Rótulo de acessibilidade |
+| `onLoad` | `() => void` | - | Callback quando a imagem carrega |
+| `onError` | `() => void` | - | Callback quando ocorre erro |
+
+## Recursos Adicionais
+
+### FastImage
+
+Internamente, o componente utiliza `react-native-fast-image` para melhor desempenho e cache, além de suportar imagens remotas e locais.
+
+### Preload
+
+É possível fazer preload de imagens para melhorar a experiência do usuário em telas que carregam várias imagens:
+
+```tsx
+import { preloadImages } from '@platformbuilders/fluid-react-native';
+
+// Preloading múltiplas imagens
+preloadImages([
+  'https://exemplo.com/imagem1.jpg',
+  'https://exemplo.com/imagem2.jpg',
+  'https://exemplo.com/imagem3.jpg'
+]);
+```
+
+## Notas de uso
+
+- Sempre defina uma largura e altura explícitas para suas imagens
+- Utilize `resizeMode="cover"` para imagens de fundo ou banners
+- Utilize `resizeMode="contain"` para ícones e logos
+- Sempre forneça um fallback para imagens remotas que podem falhar
+- Defina `accessibilityLabel` descritivo para melhorar acessibilidade
+- Use `borderRadius` para criar imagens circulares (defina igual à metade da largura/altura) 

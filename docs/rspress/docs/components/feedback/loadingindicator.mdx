@@ -1,0 +1,124 @@
+# LoadingIndicator
+
+O componente `LoadingIndicator` exibe um indicador de carregamento animado para informar aos usuários que uma operação está em andamento.
+
+## Importação
+
+```tsx
+import { LoadingIndicator } from '@platformbuilders/fluid-react-native';
+```
+
+## Exemplo Básico
+
+```tsx
+<LoadingIndicator
+  id="carregando-dados"
+  accessibility="carregando-dados"
+/>
+```
+
+## Exemplos
+
+### Com tamanho personalizado
+
+```tsx
+<LoadingIndicator
+  id="carregando-grande"
+  accessibility="carregando-grande"
+  size="large"
+/>
+
+<LoadingIndicator
+  id="carregando-pequeno"
+  accessibility="carregando-pequeno"
+  size="small"
+/>
+
+<LoadingIndicator
+  id="carregando-customizado"
+  accessibility="carregando-customizado"
+  size={40}
+/>
+```
+
+### Com cor personalizada
+
+```tsx
+<LoadingIndicator
+  id="carregando-azul"
+  accessibility="carregando-azul"
+  color="#3366ff"
+/>
+
+<LoadingIndicator
+  id="carregando-tema"
+  accessibility="carregando-tema"
+  useTheme={true}
+/>
+```
+
+### Com texto
+
+```tsx
+<LoadingIndicator
+  id="carregando-com-texto"
+  accessibility="carregando-com-texto"
+  text="Carregando..."
+/>
+
+<LoadingIndicator
+  id="carregando-com-texto-customizado"
+  accessibility="carregando-com-texto-customizado"
+  text="Processando dados"
+  textVariant="lg"
+  textStyle={{ color: '#3366ff' }}
+/>
+```
+
+### Com animação de pulso
+
+```tsx
+<LoadingIndicator
+  id="carregando-pulso"
+  accessibility="carregando-pulso"
+  pulseAnimation={true}
+/>
+```
+
+## API
+
+### Props
+
+| Prop | Tipo | Padrão | Descrição |
+|------|------|--------|-----------|
+| `id` | `string` | - | ID do componente |
+| `accessibility` | `string` | - | ID para acessibilidade |
+| `accessibilityLabel` | `string` | `'Carregando'` | Rótulo de acessibilidade |
+| `testID` | `string` | - | ID para testes |
+| `size` | `'small' \| 'large' \| number` | `'small'` | Tamanho do indicador |
+| `color` | `string` | - | Cor do indicador |
+| `useTheme` | `boolean` | `true` | Se deve usar a cor do tema |
+| `text` | `string` | - | Texto a ser exibido abaixo do indicador |
+| `textVariant` | `TypographyVariant` | `'md'` | Variante do texto |
+| `textStyle` | `StyleProp<TextStyle>` | - | Estilo customizado para o texto |
+| `pulseAnimation` | `boolean` | `false` | Se deve adicionar animação de pulso |
+| `contrast` | `boolean` | `false` | Se deve usar cores de alto contraste |
+| `style` | `StyleProp<ViewStyle>` | - | Estilo customizado para o container |
+
+## Acessibilidade
+
+O componente `LoadingIndicator` foi projetado com acessibilidade em mente:
+
+- Define automaticamente `accessibilityRole="progressbar"` para indicar aos leitores de tela que se trata de um indicador de progresso
+- Define `accessibilityState={{ busy: true }}` para informar que o aplicativo está ocupado
+- Usa `accessibilityLiveRegion="polite"` para que os leitores de tela anunciem mudanças de estado
+- Permite customizar `accessibilityLabel` para fornecer um contexto mais específico sobre o que está carregando
+
+## Boas Práticas
+
+- Use o `LoadingIndicator` para operações que levam mais de 1 segundo
+- Forneça feedback significativo para o usuário através da prop `text`
+- Use tamanhos apropriados para o contexto: `small` para indicadores inline ou `large` para operações em tela cheia
+- Prefira cores que contrastem bem com o fundo para melhor visibilidade
+- Combine com feedback háptico para melhorar a experiência em dispositivos que suportam
+- Evite múltiplos indicadores de carregamento na mesma tela 

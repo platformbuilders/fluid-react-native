@@ -1,0 +1,21 @@
+{
+  "name": "fluid-react-native-docs",
+  "version": "1.0.0",
+  "description": "Documentação do Fluid React Native",
+  "scripts": {
+    "start": "rspress start",
+    "dev": "rspress start",
+    "build": "rspress build",
+    "preview": "rspress preview"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.19",
+    "@types/react": "17.0.50",
+    "typescript": "5.3.3",
+    "rspress": "0.1.1"
+  }
+}
