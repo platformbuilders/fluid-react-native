@@ -16,7 +16,7 @@ export type ButtonProps = PropsWithChildren<
     loading?: boolean;
     contrast?: boolean;
     flat?: boolean;
-    variant?: ButtonVariant | string;
+    variant?: ButtonVariant;
     colorVariant?: ButtonColorType;
     typographyVariant?: TypographyVariants;
     minWidth?: string | number;
