@@ -1,5 +1,0 @@
-# Ignores the whole storybook folder
-storybook
-dist
-node_modules
-*.d.ts

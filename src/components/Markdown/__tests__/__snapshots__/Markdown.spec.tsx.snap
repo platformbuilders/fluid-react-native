@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<Markdown /> should render Markdown 1`] = `
-<View
-  style={{}}
-/>
-`;
