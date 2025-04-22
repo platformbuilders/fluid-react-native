@@ -5,8 +5,9 @@ import {
   ButtonColorType,
   TypographyVariants,
 } from '@platformbuilders/theme-toolkit';
-import { ButtonVariant } from '../enums';
 import { TouchableType } from './TouchableType';
+
+export type ButtonVariantType = 'filled' | 'tint' | 'flat' | 'outline';
 
 export type ButtonProps = PropsWithChildren<
   {
@@ -16,7 +17,7 @@ export type ButtonProps = PropsWithChildren<
     loading?: boolean;
     contrast?: boolean;
     flat?: boolean;
-    variant?: ButtonVariant;
+    variant?: ButtonVariantType;
     colorVariant?: ButtonColorType;
     typographyVariant?: TypographyVariants;
     minWidth?: string | number;

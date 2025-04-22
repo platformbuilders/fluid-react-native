@@ -1,5 +1,6 @@
 import type { Meta } from '@storybook/react';
 import { VARIANT_SIZE } from '../../enums/size.enum';
+// import { ButtonVariant } from '../../enums';
 import Button from '.';
 
 const meta: Meta<typeof Button> = {
