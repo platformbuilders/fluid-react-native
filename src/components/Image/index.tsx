@@ -42,7 +42,7 @@ const Image: React.FC<ImageProps> = ({
   );
 
   return (
-    <Wrapper style={containerStyle} importantForAccessibility="no">
+    <Wrapper style={containerStyle}>
       {isLoading && displayPlaceholder && (
         <Placeholder Animation={animationStyling}>
           <PlaceholderMedia

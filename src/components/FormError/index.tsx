@@ -1,9 +1,5 @@
 import React, { FC, PropsWithChildren } from 'react';
 import { StyleProp, TextStyle } from 'react-native';
-import {
-  generateAccessibilityProps,
-  generateTestID,
-} from '../../utils/accessibility';
 import { ErrorText } from './styles';
 
 const warnBoolean = (): void =>
@@ -31,24 +27,6 @@ const FormError: FC<PropsWithChildren<Props>> = ({
   ...rest
 }) => {
   if (error && typeof error === 'boolean') warnBoolean();
-
-  const errorAccessibilityProps =
-    error && typeof error === 'string'
-      ? generateAccessibilityProps(
-          {
-            id: `error_${id}`,
-            accessibility: `Erro ${accessibility || error}`,
-          },
-          'text',
-          `Erro: ${error}`,
-        )
-      : {};
-
-  const errorTestID = generateTestID(
-    'error',
-    id || accessibility || 'form_error',
-  );
-
   return (
     <>
       {children}
@@ -56,8 +34,9 @@ const FormError: FC<PropsWithChildren<Props>> = ({
         <ErrorText
           centered={centered}
           large={large}
-          testID={errorTestID}
-          {...errorAccessibilityProps}
+          testID={`error_${id}`}
+          accessibility={`Erro ${accessibility || error}`}
+          accessibilityLabel={`Erro ${accessibility || error}`}
           {...rest}
         >
           {error}

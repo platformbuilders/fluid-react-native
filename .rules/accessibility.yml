@@ -1,0 +1,150 @@
+rules:
+  - id: ensure-accessibility-props
+    languages: [javascript, typescript]
+    message: 'Componentes interativos devem ter propriedades de acessibilidade adequadas. Use os utilitários generateAccessibilityProps().'
+    severity: WARNING
+    patterns:
+      - pattern-regex: "<(Button|Touchable|Toggle|Checkbox|RadioButton|TextInput)[^>]*(?!.*\\.\\.\\.[aA]ccessibilityProps|\\{\\.\\.\\.[aA]ccessibilityProps\\}).*>"
+    paths:
+      exclude:
+        - '*.json'
+        - '*.spec.*'
+        - '*.test.*'
+        - '*/styles.ts'
+    metadata:
+      description: 'Componentes interativos devem implementar as propriedades de acessibilidade adequadas usando os utilitários padronizados (generateAccessibilityProps). Isso garante consistência e conformidade com diretrizes de acessibilidade.'
+      tags: ['acessibilidade', 'componentes', 'interatividade']
+
+  - id: avoid-direct-accessibility-props
+    languages: [javascript, typescript]
+    message: 'Evite definir propriedades de acessibilidade diretamente nos componentes. Use os utilitários generateAccessibilityProps().'
+    severity: WARNING
+    patterns:
+      - pattern-regex: "(accessibilityLabel|accessibilityHint|accessibilityRole|accessibilityState)=\\{"
+    paths:
+      exclude:
+        - '*.json'
+        - '*.spec.*'
+        - '*.test.*'
+        - '*/utils/accessibility.ts'
+        - '*/styles.ts'
+    metadata:
+      description: 'Para garantir padronização nas propriedades de acessibilidade, utilize os utilitários em utils/accessibility.ts em vez de definir propriedades diretamente nos componentes.'
+      tags: ['acessibilidade', 'utilitários', 'padrões']
+
+  - id: ensure-minimum-touchable-area
+    languages: [javascript, typescript]
+    message: 'Componentes interativos devem ter área mínima de toque de 44x44dp. Use View com minWidth e minHeight ou hitSlop.'
+    severity: WARNING
+    patterns:
+      - pattern-either:
+          - pattern-regex: "hitSlop=\\{\\s*\\{\\s*top:\\s*([0-9]|1[0-9]|2[0-9]|3[0-9]|40|41|42|43)\\s*,"
+          - pattern-regex: "hitSlop=\\{\\s*\\{\\s*bottom:\\s*([0-9]|1[0-9]|2[0-9]|3[0-9]|40|41|42|43)\\s*,"
+          - pattern-regex: "hitSlop=\\{\\s*\\{\\s*left:\\s*([0-9]|1[0-9]|2[0-9]|3[0-9]|40|41|42|43)\\s*,"
+          - pattern-regex: "hitSlop=\\{\\s*\\{\\s*right:\\s*([0-9]|1[0-9]|2[0-9]|3[0-9]|40|41|42|43)\\s*,"
+    paths:
+      exclude:
+        - '*.json'
+        - '*.spec.*'
+        - '*.test.*'
+        - '*/styles.ts'
+    metadata:
+      description: 'Componentes interativos precisam ter uma área de toque mínima de 44x44dp para garantir usabilidade adequada em dispositivos touchscreen, especialmente para usuários com limitações motoras.'
+      tags: ['acessibilidade', 'área de toque', 'interatividade']
+
+  - id: ensure-importantForAccessibility
+    languages: [javascript, typescript]
+    message: 'Elementos decorativos ou duplicados para leitores de tela devem usar importantForAccessibility="no".'
+    severity: WARNING
+    patterns:
+      - pattern-regex: "<(Icon|Image)[^>]*(?!.*importantForAccessibility).*>"
+    paths:
+      exclude:
+        - '*.json'
+        - '*.spec.*'
+        - '*.test.*'
+    metadata:
+      description: 'Elementos como ícones e imagens decorativas devem usar importantForAccessibility="no" para evitar que leitores de tela os anunciem desnecessariamente.'
+      tags: ['acessibilidade', 'leitores de tela', 'ícones', 'imagens']
+
+  - id: ensure-accessibility-id
+    languages: [javascript, typescript]
+    message: 'Componentes interativos devem ter uma propriedade accessibility ou id definida para identificação única.'
+    severity: WARNING
+    patterns:
+      - pattern-regex: "<(Button|Touchable|Toggle|Checkbox|RadioButton|TextInput)[^>]*(?!.*(accessibility|id)=).*>"
+    paths:
+      exclude:
+        - '*.json'
+        - '*.spec.*'
+        - '*.test.*'
+        - '*/styles.ts'
+    metadata:
+      description: 'Componentes interativos devem ter identificadores únicos (accessibility ou id) para facilitar testes e garantir a navegação adequada por leitores de tela.'
+      tags: ['acessibilidade', 'identificadores', 'testes']
+
+  - id: avoid-exclusive-color-information
+    languages: [javascript, typescript]
+    message: 'Não transmita informações exclusivamente por cores. Inclua texto ou ícones para reforçar o significado.'
+    severity: WARNING
+    patterns:
+      - pattern-regex: "colorVariant=\\{([\"'])warning([\"'])\\}[^>]*(?!.*leftIconName|.*rightIconName).*>"
+    paths:
+      exclude:
+        - '*.json'
+        - '*.spec.*'
+        - '*.test.*'
+    metadata:
+      description: 'Informações importantes não devem ser transmitidas exclusivamente por cores, para garantir que sejam compreensíveis por usuários com daltonismo ou baixa visão.'
+      tags: ['acessibilidade', 'cores', 'daltonismo', 'visão']
+
+  - id: ensure-text-contrast
+    languages: [javascript, typescript]
+    message: 'Prefira usar a propriedade contrast=true quando texto for exibido sobre fundos escuros ou coloridos.'
+    severity: WARNING
+    patterns:
+      - pattern-regex: "(backgroundColor:\\s?(\\${getTheme\\('primary|secondary|tertiary|dark|black'\\)}))|(background-color:\\s?(\\${getTheme\\('primary|secondary|tertiary|dark|black'\\)}))"
+    paths:
+      exclude:
+        - '*.json'
+        - '*.spec.*'
+        - '*.test.*'
+    metadata:
+      description: 'Para garantir contraste adequado e legibilidade, utilize a propriedade contrast=true para textos exibidos sobre fundos escuros ou coloridos.'
+      tags: ['acessibilidade', 'contraste', 'legibilidade']
+
+  - id: ensure-tests-use-testid
+    languages: [javascript, typescript]
+    message: 'Testes devem localizar elementos usando testID em vez de text ou accessibilityLabel.'
+    severity: WARNING
+    patterns:
+      - pattern-either:
+          - pattern-regex: "getByText\\("
+          - pattern-regex: "findByText\\("
+          - pattern-regex: "queryByText\\("
+    paths:
+      include:
+        - '*.spec.*'
+        - '*.test.*'
+    exclude:
+      - '*/accessibility/*.spec.*'
+    metadata:
+      description: 'Para garantir a consistência e confiabilidade dos testes, utilize testID para selecionar elementos em vez de confiar em texto ou propriedades de acessibilidade que podem mudar.'
+      tags: ['testes', 'acessibilidade', 'testID']
+
+  - id: use-accessibility-utils
+    languages: [javascript, typescript]
+    message: 'Utilize os utilitários do pacote utils/accessibility.ts para implementar propriedades de acessibilidade.'
+    severity: WARNING
+    patterns:
+      - pattern-regex: "accessibility(?!Props)"
+    paths:
+      exclude:
+        - '*.json'
+        - '*.spec.*'
+        - '*.test.*'
+        - '*/utils/accessibility.ts'
+        - '*/types/*.ts'
+    metadata:
+      description: 'Padronize a implementação de acessibilidade utilizando os utilitários disponíveis no pacote utils/accessibility.ts, garantindo consistência em toda a aplicação.'
+      tags: ['acessibilidade', 'utilitários', 'padrões'] 

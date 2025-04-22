@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { ButtonVariant } from '../../enums';
 import { ButtonProps } from '../../types';
-import { generateAccessibilityProps } from '../../utils/accessibility';
+import { generateAccessibilityProps } from '../../utils';
 import { ButtonWrapper, Icon, Loading, TextButton, Touchable } from './styles';
 
 const Button: FC<ButtonProps> = ({

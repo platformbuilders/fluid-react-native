@@ -1,0 +1,37 @@
+name: Publicar no GitHub Package Registry
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Versão para publicar (ex: 1.0.0)'
+        required: true
+        default: ''
+
+jobs:
+  publish-gpr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@platformbuilders'
+      
+      - name: Instalar dependências
+        run: yarn install --frozen-lockfile
+      
+      - name: Compilar biblioteca
+        run: yarn build
+      
+      - name: Configurar versão
+        if: ${{ github.event.inputs.version != '' }}
+        run: npm version ${{ github.event.inputs.version }} --no-git-tag-version
+      
+      - name: Publicar no GitHub Package Registry
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }} 

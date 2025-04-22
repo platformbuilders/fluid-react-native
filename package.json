@@ -43,7 +43,7 @@
     "version:major": "npm version major",
     "version:minor": "npm version minor",
     "version:patch": "npm version patch",
-    "semgrep": "semgrep --config ./.rules ./src --text --output=./.rules/output.txt --exclude=**/*.stories.*",
+    "semgrep": "semgrep --config ./.rules ./src --text --output=./.rules/output.txt",
     "docs:dev": "cd docs/rspress && npm run dev",
     "docs:build": "cd docs/rspress && npm run build",
     "docs:preview": "cd docs/rspress && npm run preview",
@@ -52,7 +52,8 @@
     "website:build": "cd website && npm run build",
     "website:serve": "cd website && npm run serve",
     "website:install": "cd website && npm install",
-    "deploy": "yarn website:build && firebase deploy --only hosting"
+    "deploy": "yarn website:build && firebase deploy --only hosting",
+    "dev": "cd docs/rspress && npm run dev"
   },
   "lint-staged": {
     "*.{ts,tsx}": [

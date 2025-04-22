@@ -2,6 +2,10 @@
 #
 .DS_Store
 
+# IA
+memory/**
+
+
 # Xcode
 #
 build/
@@ -111,3 +115,9 @@ pubsub-debug.log
 
 # Lib only files
 yarn.lock
+
+# Docs
+public/**
+
+memory/
+public/

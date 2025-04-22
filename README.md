@@ -1,6 +1,7 @@
 # @platformbuilders/fluid-react-native
 
 [![Build Status][check-badge]][workflows]
+[![Coverage][coverage-badge]][codecov]
 [![npm][npm-badge]][npm]
 [![MIT][license-badge]][license]
 
@@ -10,6 +11,8 @@
 [license]: https://raw.githubusercontent.com/platformbuilders/fluid-react-native/master/LICENSE.md
 [workflows]: https://github.com/platformbuilders/fluid-react-native/actions
 [check-badge]: https://github.com/platformbuilders/fluid-react-native/workflows/check/badge.svg
+[coverage-badge]: https://codecov.io/gh/platformbuilders/fluid-react-native/branch/master/graph/badge.svg
+[codecov]: https://codecov.io/gh/platformbuilders/fluid-react-native
 
 # Fluid React Native
 
@@ -27,11 +30,8 @@
   <a href="https://www.npmjs.com/package/@platformbuilders/fluid-react-native">
     <img src="https://img.shields.io/npm/dm/@platformbuilders/fluid-react-native.svg" alt="npm downloads" />
   </a>
-  <a href="https://fluid.builders">
+  <a href="https://fluid-ds.web.app">
     <img src="https://img.shields.io/badge/docs-website-green" alt="documentation" />
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/coverage-96.5%25%20lines%20(goal%3A%2095%25)-brightgreen" alt="test coverage" />
   </a>
   <a href="https://github.com/platformbuilders/fluid-react-native/blob/main/LICENSE.md">
     <img src="https://img.shields.io/github/license/platformbuilders/fluid-react-native" alt="license" />
@@ -125,7 +125,7 @@ const App = () => (
 
 ## 📚 Documentação
 
-Visite nossa [documentação completa](https://fluid.builders) para:
+Visite nossa [documentação completa](https://fluid-ds.web.app) para:
 - Guias detalhados
 - Catálogo de componentes
 - Exemplos de código
@@ -165,7 +165,7 @@ Para fazer o deploy da documentação, siga estas etapas:
    ./test-deploy.sh
    ```
 
-A documentação estará disponível em [https://fluid.builders](https://fluid.builders).
+A documentação estará disponível em [https://fluid-ds.web.app](https://fluid-ds.web.app).
 
 ## 🧪 Desenvolvimento Local
 

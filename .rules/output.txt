@@ -1,0 +1,2304 @@
+                     
+                     
+┌───────────────────┐
+│ 411 Code Findings │
+└───────────────────┘
+                                                     
+  [36m[22m[24m  src/components/Accordion/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React, { useState } from 'react';
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+            8┆ import { generateAccessibilityProps, generateTestID }
+               from '../../utils/accessibility';                    
+            ⋮┆----------------------------------------
+           24┆ accessibility?: string;
+            ⋮┆----------------------------------------
+           25┆ accessibilityLabel?: string;
+            ⋮┆----------------------------------------
+           42┆ accessibility,
+            ⋮┆----------------------------------------
+           43┆ accessibilityLabel,
+            ⋮┆----------------------------------------
+           66┆ accessibility: baseAccessibilityId,
+            ⋮┆----------------------------------------
+           67┆ accessibilityLabel: section.title,
+   
+    ❯❱ [1mrules.ensure-importantForAccessibility[0m
+          Elementos decorativos ou duplicados para leitores de tela devem
+          usar importantForAccessibility="no".                           
+                                                                         
+           85┆ <Icon
+           86┆   importantForAccessibility="no"
+           87┆   name={getIconName(section)}
+           88┆   color={isActive ? activeIconColor :
+               inactiveIconColor}                   
+           89┆   id={iconUpName}
+           90┆ />
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+          111┆ const accordionTestID =                               
+               generateTestID('accordion_list', id || accessibility);
+                                                           
+  [36m[22m[24m  src/components/Avatar/Avatar.stories.tsx[0m
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           10┆ accessibility: 'Avatar',
+            ⋮┆----------------------------------------
+           11┆ accessibilityLabel: 'Avatar',
+                                                                  
+  [36m[22m[24m  src/components/Avatar/__tests__/Avatar.spec.tsx[0m
+    ❯❱ [1mrules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings 
+          diretamente torna o código menos escalável e mais suscetível a
+          erros.                                                        
+                                                                        
+          504┆ const cameraIcon = icons.find((icon) => icon.props.name
+               === 'camera');                                         
+   
+    ❯❱ [1mrules.ensure-tests-use-testid[0m
+          Testes devem localizar elementos usando testID em vez de text ou
+          accessibilityLabel.                                             
+                                                                          
+          521┆ const monogram = queryByText('TU');
+   
+    ❯❱ [1mrules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings 
+          diretamente torna o código menos escalável e mais suscetível a
+          erros.                                                        
+                                                                        
+          526┆ const cameraIcon = icons.find((icon) => icon.props.name
+               === 'camera');                                         
+                                                  
+  [36m[22m[24m  src/components/Avatar/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React, { useEffect, useImperativeHandle,
+               useState } from 'react';                       
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           16┆ import { generateAccessibilityProps, generateTestID }
+               from '../../utils/accessibility';                    
+            ⋮┆----------------------------------------
+           27┆ accessibility,
+            ⋮┆----------------------------------------
+           28┆ accessibilityLabel,
+   
+    ❯❱ [1mrules.ensure-importantForAccessibility[0m
+          Elementos decorativos ou duplicados para leitores de tela devem
+          usar importantForAccessibility="no".                           
+                                                                         
+           43┆ const [visibleImage, setVisibleImage] =
+               useState<ImageSource | undefined>();   
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+          100┆ const baseAccessibilityId = accessibility || id || name
+               || 'avatar';                                           
+            ⋮┆----------------------------------------
+          101┆ const defaultLabel = name ? `Avatar de ${name}` :
+               accessibilityLabel || 'Avatar';                  
+            ⋮┆----------------------------------------
+          107┆ accessibility: baseAccessibilityId,
+            ⋮┆----------------------------------------
+          108┆ accessibilityLabel: defaultLabel,
+   
+    ❯❱ [1mrules.ensure-importantForAccessibility[0m
+          Elementos decorativos ou duplicados para leitores de tela devem
+          usar importantForAccessibility="no".                           
+                                                                         
+          129┆ <Image
+          130┆   testID="avatar-image"
+          131┆   displayPlaceholder={animatedLoading}
+          132┆   source={source}
+          133┆   resizeMode="cover"
+          134┆   style={{ width: '101%', height: '101%' }}
+          135┆ />
+                                                  
+  [36m[22m[24m  src/components/Avatar/styles.ts[0m
+    ❯❱ [1mrules.ensure-importantForAccessibility[0m
+          Elementos decorativos ou duplicados para leitores de tela devem
+          usar importantForAccessibility="no".                           
+                                                                         
+           41┆ export const UploadIconWrapper =
+               styled.View<IconWrapperProps>`  
+            ⋮┆----------------------------------------
+           64┆ export const MonogramWrapper =
+               styled.View<IconWrapperProps>`
+                                                                
+  [36m[22m[24m  src/components/Badge/__tests__/Badge.spec.tsx[0m
+    ❯❱ [1mrules.ensure-tests-use-testid[0m
+          Testes devem localizar elementos usando testID em vez de text ou
+          accessibilityLabel.                                             
+                                                                          
+          431┆ expect(queryByText('Test Text')).toBeTruthy();
+                                                 
+  [36m[22m[24m  src/components/Badge/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React, { FC } from 'react';
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+            3┆ import { generateAccessibilityProps, generateTestID }
+               from '../../utils/accessibility';                    
+            ⋮┆----------------------------------------
+           17┆ accessibility,
+            ⋮┆----------------------------------------
+           18┆ accessibilityLabel,
+            ⋮┆----------------------------------------
+           37┆ const baseAccessibilityId = accessibility || id ||  
+               (typeof children === 'string' ? children : 'badge');
+   
+    ❯❱ [1mrules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings 
+          diretamente torna o código menos escalável e mais suscetível a
+          erros.                                                        
+                                                                        
+           37┆ const baseAccessibilityId = accessibility || id ||  
+               (typeof children === 'string' ? children : 'badge');
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           38┆ const defaultLabel = accessibilityLabel || (typeof
+               children === 'string' ? children : 'Badge');      
+   
+    ❯❱ [1mrules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings 
+          diretamente torna o código menos escalável e mais suscetível a
+          erros.                                                        
+                                                                        
+           38┆ const defaultLabel = accessibilityLabel || (typeof
+               children === 'string' ? children : 'Badge');      
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           44┆ accessibility: baseAccessibilityId,
+            ⋮┆----------------------------------------
+           45┆ accessibilityLabel: defaultLabel,
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           57┆ <Touchable
+           58┆   {...badgeAccessibilityProps}
+           59┆   testID={badgeTestID}
+           60┆   disabled={loading || disabled}
+           61┆   onPress={onPress}
+           62┆ >
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           57┆ <Touchable
+           58┆   {...badgeAccessibilityProps}
+           59┆   testID={badgeTestID}
+           60┆   disabled={loading || disabled}
+           61┆   onPress={onPress}
+           62┆ >
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           63┆ <ButtonWrapper
+           64┆   hasBorder={hasBorder}
+           65┆   buttonVariant={variant}
+           66┆   disabled={disabled}
+           67┆   flat={flat}
+           68┆   style={style}
+           69┆   {...rest}
+           70┆ >
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           63┆ <ButtonWrapper
+           64┆   hasBorder={hasBorder}
+           65┆   buttonVariant={variant}
+           66┆   disabled={disabled}
+           67┆   flat={flat}
+           68┆   style={style}
+           69┆   {...rest}
+           70┆ >
+   
+    ❯❱ [1mrules.ensure-importantForAccessibility[0m
+          Elementos decorativos ou duplicados para leitores de tela devem
+          usar importantForAccessibility="no".                           
+                                                                         
+           75┆ <Icon
+           76┆   importantForAccessibility="no"
+           77┆   name={leftIconName as string}
+           78┆   buttonVariant={variant}
+           79┆   style={iconStyle}
+           80┆   leftIcon
+           81┆   touchable={iconTouchable}
+           82┆   isEmoji={isEmoji}
+           83┆ />
+            ⋮┆----------------------------------------
+           95┆ <Icon
+           96┆   importantForAccessibility="no"
+           97┆   name={rightIconName as string}
+           98┆   buttonVariant={variant}
+           99┆   style={iconStyle}
+          100┆   rightIcon
+          101┆   touchable={iconTouchable}
+          102┆   isEmoji={isEmoji}
+          103┆ />
+                                                 
+  [36m[22m[24m  src/components/Badge/styles.ts[0m
+    ❯❱ [1mrules.ensure-importantForAccessibility[0m
+          Elementos decorativos ou duplicados para leitores de tela devem
+          usar importantForAccessibility="no".                           
+                                                                         
+          156┆ }))<IconProps>`
+                                                            
+  [36m[22m[24m  src/components/BottomNavigation/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React, { useCallback } from 'react';
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+            3┆ import { generateAccessibilityProps, generateTestID }
+               from '../../utils/accessibility';                    
+            ⋮┆----------------------------------------
+           34┆ accessibility: baseAccessibilityId,
+            ⋮┆----------------------------------------
+           35┆ accessibilityLabel: defaultLabel,
+                                                                  
+  [36m[22m[24m  src/components/Button/__tests__/Button.spec.tsx[0m
+    ❯❱ [1mrules.ensure-tests-use-testid[0m
+          Testes devem localizar elementos usando testID em vez de text ou
+          accessibilityLabel.                                             
+                                                                          
+          495┆ expect(getByText(buttonText)).toBeDefined();
+            ⋮┆----------------------------------------
+          512┆ expect(getByText(buttonText)).toBeDefined();
+                                                          
+  [36m[22m[24m  src/components/Button/index.stories.tsx[0m
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           31┆ accessibility: 'Button',
+            ⋮┆----------------------------------------
+           32┆ accessibilityLabel: 'Button',
+            ⋮┆----------------------------------------
+           77┆ accessibilityLabel: 'Botão com recursos completos de
+               acessibilidade',                                    
+            ⋮┆----------------------------------------
+           78┆ accessibilityHint: 'Ativa a funcionalidade principal',
+            ⋮┆----------------------------------------
+           88┆ - **accessibilityLabel**: Descrição que será lida por
+               leitores de tela                                     
+            ⋮┆----------------------------------------
+           89┆ - **accessibilityRole**: Define o papel como "button"
+               para leitores de tela                                
+            ⋮┆----------------------------------------
+           90┆ - **accessibilityState**: Informa estados como disabled
+               e busy (quando loading)                                
+            ⋮┆----------------------------------------
+           91┆ - **accessibilityHint**: Explica o que acontecerá ao
+               ativar o botão                                      
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           97┆ <Button
+           98┆   accessibilityLabel="Finalizar compra"
+           99┆   accessibilityHint="Conclui sua compra e vai para a
+               página de pagamento"                                
+          100┆   onPress={handleCheckout}
+          101┆ >
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           97┆ <Button
+           98┆   accessibilityLabel="Finalizar compra"
+           99┆   accessibilityHint="Conclui sua compra e vai para a
+               página de pagamento"                                
+          100┆   onPress={handleCheckout}
+          101┆ >
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           98┆ accessibilityLabel="Finalizar compra"
+            ⋮┆----------------------------------------
+           99┆ accessibilityHint="Conclui sua compra e vai para a
+               página de pagamento"                              
+            ⋮┆----------------------------------------
+          113┆ accessibilityLabel: 'Botão desabilitado até preencher o
+               formulário',                                           
+            ⋮┆----------------------------------------
+          129┆ accessibilityState: { busy: true },
+            ⋮┆----------------------------------------
+          130┆ accessibilityLabel: 'Botão em estado de carregamento',
+            ⋮┆----------------------------------------
+          135┆ accessibilityState={{ busy: true }}, o que ajuda
+               usuários com deficiência visual a               
+   
+    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
+          Evite definir propriedades de acessibilidade diretamente nos 
+          componentes. Use os utilitários generateAccessibilityProps().
+                                                                       
+          135┆ accessibilityState={{ busy: true }}, o que ajuda
+               usuários com deficiência visual a               
+                                                  
+  [36m[22m[24m  src/components/Button/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React, { FC } from 'react';
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+            7┆ const Button: FC<ButtonProps> = ({
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+            7┆ const Button: FC<ButtonProps> = ({
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           11┆ accessibility,
+            ⋮┆----------------------------------------
+           12┆ accessibilityLabel,
+            ⋮┆----------------------------------------
+           38┆ accessibility,
+            ⋮┆----------------------------------------
+           39┆ accessibilityLabel: accessibilityLabel || defaultLabel,
+            ⋮┆----------------------------------------
+           39┆ accessibilityLabel: accessibilityLabel || defaultLabel,
+            ⋮┆----------------------------------------
+           58┆ // Se não tiver ID mas tiver accessibility, formata
+               como "prefix_accessibility"                        
+            ⋮┆----------------------------------------
+           58┆ // Se não tiver ID mas tiver accessibility, formata
+               como "prefix_accessibility"                        
+            ⋮┆----------------------------------------
+           59┆ else if (accessibility) {
+            ⋮┆----------------------------------------
+           60┆ finalTestID = `${prefix}_${accessibility}`;
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           70┆ <Touchable
+           71┆   id={id || accessibility}
+           72┆   {...accessibilityProps}
+           73┆   testID={finalTestID}
+           74┆   disabled={loading || disabled}
+           75┆   onPress={onPress}
+           76┆   hitSlop={{ top: 10, bottom: 10, left: 10, right: 10
+               }}                                                   
+           77┆   rounded={rounded}
+           78┆ >
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           70┆ <Touchable
+           71┆   id={id || accessibility}
+           72┆   {...accessibilityProps}
+           73┆   testID={finalTestID}
+           74┆   disabled={loading || disabled}
+           75┆   onPress={onPress}
+           76┆   hitSlop={{ top: 10, bottom: 10, left: 10, right: 10
+               }}                                                   
+           77┆   rounded={rounded}
+           78┆ >
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           71┆ id={id || accessibility}
+   
+    ❯❱ [1mrules.ensure-minimum-touchable-area[0m
+          Componentes interativos devem ter área mínima de toque de
+          44x44dp. Use View com minWidth e minHeight ou hitSlop.   
+                                                                   
+           76┆ hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           79┆ <ButtonWrapper
+           80┆   hasBorder={variant === ButtonVariant.OUTLINE}
+           81┆   buttonVariant={variant}
+           82┆   colorVariant={colorVariant}
+           83┆   style={style}
+           84┆   disabled={disabled}
+           85┆   rounded={rounded}
+           86┆   minWidth={minWidth}
+           87┆   maxWidth={maxWidth}
+           88┆   flat={flat}
+             [hid 1 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           79┆ <ButtonWrapper
+           80┆   hasBorder={variant === ButtonVariant.OUTLINE}
+           81┆   buttonVariant={variant}
+           82┆   colorVariant={colorVariant}
+           83┆   style={style}
+           84┆   disabled={disabled}
+           85┆   rounded={rounded}
+           86┆   minWidth={minWidth}
+           87┆   maxWidth={maxWidth}
+           88┆   flat={flat}
+             [hid 1 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ [1mrules.ensure-importantForAccessibility[0m
+          Elementos decorativos ou duplicados para leitores de tela devem
+          usar importantForAccessibility="no".                           
+                                                                         
+           94┆ <Icon
+           95┆   importantForAccessibility="no"
+           96┆   name={leftIconName as string}
+           97┆   buttonVariant={variant}
+           98┆   colorVariant={colorVariant}
+           99┆   style={style}
+          100┆   touchable={leftIconTouchable}
+          101┆   leftIcon
+          102┆ />
+            ⋮┆----------------------------------------
+          115┆ <Icon
+          116┆   importantForAccessibility="no"
+          117┆   name={rightIconName as string}
+          118┆   colorVariant={colorVariant}
+          119┆   buttonVariant={variant}
+          120┆   style={style}
+          121┆   touchable={rightIconTouchable}
+          122┆   rightIcon
+          123┆ />
+                                                  
+  [36m[22m[24m  src/components/Button/styles.ts[0m
+    ❯❱ [1mrules.ensure-importantForAccessibility[0m
+          Elementos decorativos ou duplicados para leitores de tela devem
+          usar importantForAccessibility="no".                           
+                                                                         
+          206┆ }))<IconProps>`
+                                                                      
+  [36m[22m[24m  src/components/Checkbox/__tests__/CheckBox.spec.tsx[0m
+    ❯❱ [1mrules.ensure-tests-use-testid[0m
+          Testes devem localizar elementos usando testID em vez de text ou
+          accessibilityLabel.                                             
+                                                                          
+           38┆ const component = getByText(LABEL);
+                                                            
+  [36m[22m[24m  src/components/Checkbox/index.stories.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+            8┆ <Checkbox
+            9┆   {...args}
+           10┆   checked={checked}
+           11┆   onPress={() => setChecked(!checked)}
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+            8┆ <Checkbox
+            9┆   {...args}
+           10┆   checked={checked}
+           11┆   onPress={() => setChecked(!checked)}
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           23┆ accessibility: 'Caixa de seleção',
+                                                    
+  [36m[22m[24m  src/components/Checkbox/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React, { FC } from 'react';
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+            9┆ accessibility,
+            ⋮┆----------------------------------------
+           10┆ accessibilityLabel,
+   
+    ❯❱ [1mrules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings 
+          diretamente torna o código menos escalável e mais suscetível a
+          erros.                                                        
+                                                                        
+           22┆ typeof label === 'string' && label ? `checbox de
+               ${label}` : 'checbox de ';                      
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           28┆ accessibility,
+            ⋮┆----------------------------------------
+           29┆ accessibilityLabel: accessibilityLabel || defaultLabel,
+            ⋮┆----------------------------------------
+           29┆ accessibilityLabel: accessibilityLabel || defaultLabel,
+   
+    ❯❱ [1mrules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings 
+          diretamente torna o código menos escalável e mais suscetível a
+          erros.                                                        
+                                                                        
+           35┆ typeof label === 'string'
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           48┆ // Se não tiver ID mas tiver accessibility, formata
+               como "prefix_accessibility"                        
+            ⋮┆----------------------------------------
+           48┆ // Se não tiver ID mas tiver accessibility, formata
+               como "prefix_accessibility"                        
+            ⋮┆----------------------------------------
+           49┆ else if (accessibility) {
+            ⋮┆----------------------------------------
+           50┆ checkboxTestID = `${prefix}_${accessibility}`;
+            ⋮┆----------------------------------------
+           61┆ id={id || accessibility}
+            ⋮┆----------------------------------------
+           62┆ accessibility={accessibility}
+            ⋮┆----------------------------------------
+           62┆ accessibility={accessibility}
+            ⋮┆----------------------------------------
+           77┆ <Label style={labelStyle} accessibilityLabel="">
+                                                    
+  [36m[22m[24m  src/components/Checkbox/styles.ts[0m
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           24┆ }))<{ testID?: string; accessibilityLabel?: string
+               }>``;                                             
+                                                                          
+  [36m[22m[24m  src/components/DatePicker/__tests__/DatePicker.spec.tsx[0m
+    ❯❱ [1mrules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings 
+          diretamente torna o código menos escalável e mais suscetível a
+          erros.                                                        
+                                                                        
+            8┆ jest.mock('react-native-datepicker', () =>
+               'DatePicker');                            
+                                                      
+  [36m[22m[24m  src/components/DatePicker/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React, { FC, useCallback, useEffect, useState }
+               from 'react';                                         
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           21┆ accessibilityLabel?: string;
+            ⋮┆----------------------------------------
+           33┆ accessibility: string;
+            ⋮┆----------------------------------------
+           38┆ accessibility,
+            ⋮┆----------------------------------------
+          101┆ id={id || accessibility}
+            ⋮┆----------------------------------------
+          102┆ accessibility={accessibility}
+            ⋮┆----------------------------------------
+          102┆ accessibility={accessibility}
+            ⋮┆----------------------------------------
+          123┆ testID={testID || accessibility}
+                                                                        
+  [36m[22m[24m  src/components/FormError/__tests__/FormError.spec.tsx[0m
+    ❯❱ [1mrules.avoid-console-logs[0m
+          Parece que um console.log() ou similar foi esquecido. Remova
+          para evitar exposição de informações.                       
+                                                                      
+            9┆ // Espionar console.warn para testar warnBoolean
+            ⋮┆----------------------------------------
+           10┆ const originalWarn = console.warn;
+            ⋮┆----------------------------------------
+           12┆ console.warn = jest.fn();
+            ⋮┆----------------------------------------
+           16┆ console.warn = originalWarn;
+            ⋮┆----------------------------------------
+           92┆ // Verificar se console.warn foi chamado com a mensagem
+               correta                                                
+            ⋮┆----------------------------------------
+           93┆ expect(console.warn).toHaveBeenCalledWith(
+            ⋮┆----------------------------------------
+          111┆ // Verificar que console.warn não foi chamado
+            ⋮┆----------------------------------------
+          112┆ expect(console.warn).not.toHaveBeenCalled();
+            ⋮┆----------------------------------------
+          124┆ // Verificar que console.warn não foi chamado
+            ⋮┆----------------------------------------
+          125┆ expect(console.warn).not.toHaveBeenCalled();
+   
+    ❯❱ [1mrules.ensure-tests-use-testid[0m
+          Testes devem localizar elementos usando testID em vez de text ou
+          accessibilityLabel.                                             
+                                                                          
+          159┆ expect(getByText(errorText)).toBeTruthy();
+                                                             
+  [36m[22m[24m  src/components/FormError/index.stories.tsx[0m
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+            8┆ accessibility: 'Texto de erro',
+                                                     
+  [36m[22m[24m  src/components/FormError/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React, { FC, PropsWithChildren } from 'react';
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           16┆ accessibility?: string;
+            ⋮┆----------------------------------------
+           22┆ accessibility,
+            ⋮┆----------------------------------------
+           38┆ accessibility={`Erro ${accessibility || error}`}
+            ⋮┆----------------------------------------
+           38┆ accessibility={`Erro ${accessibility || error}`}
+            ⋮┆----------------------------------------
+           39┆ accessibilityLabel={`Erro ${accessibility || error}`}
+   
+    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
+          Evite definir propriedades de acessibilidade diretamente nos 
+          componentes. Use os utilitários generateAccessibilityProps().
+                                                                       
+           39┆ accessibilityLabel={`Erro ${accessibility || error}`}
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           39┆ accessibilityLabel={`Erro ${accessibility || error}`}
+                                                     
+  [36m[22m[24m  src/components/FormError/styles.ts[0m
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           13┆ accessibilityLabel: string;
+                                                          
+  [36m[22m[24m  src/components/Header/index.stories.tsx[0m
+    ❯❱ [1mrules.ensure-text-contrast-ratio[0m
+          Garanta o contraste adequado para texto usando a propriedade   
+          contrast=true para fundos escuros ou use cores com uma razão de
+          contraste de pelo menos 4.5:1.                                 
+                                                                         
+           10┆ children: <Text> Conteúdo </Text>,
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           26┆ accessibilityLeftIcon: 'Ícone de voltar',
+            ⋮┆----------------------------------------
+           37┆ accessibilityRightIcon: 'Ícone de avançar',
+                                                  
+  [36m[22m[24m  src/components/Header/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React, { Children, FC, ReactChild } from
+               'react';                                       
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           23┆ accessibilityLeftIcon?: string;
+            ⋮┆----------------------------------------
+           24┆ accessibilityRightIcon?: string;
+            ⋮┆----------------------------------------
+           49┆ accessibilityLeftIcon = '',
+            ⋮┆----------------------------------------
+           50┆ accessibilityRightIcon = '',
+            ⋮┆----------------------------------------
+           71┆ accessibility={accessibilityLeftIcon || leftIconName}
+            ⋮┆----------------------------------------
+           71┆ accessibility={accessibilityLeftIcon || leftIconName}
+            ⋮┆----------------------------------------
+           90┆ accessibility={accessibilityRightIcon || rightIconName}
+            ⋮┆----------------------------------------
+           90┆ accessibility={accessibilityRightIcon || rightIconName}
+                                                       
+  [36m[22m[24m  src/components/Icon/Icon.stories.tsx[0m
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           17┆ accessibility: 'Ícone',
+            ⋮┆----------------------------------------
+           18┆ accessibilityLabel: 'Ícone de voltar',
+                                                              
+  [36m[22m[24m  src/components/Icon/__tests__/Icon.spec.tsx[0m
+    ❯❱ [1mrules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings 
+          diretamente torna o código menos escalável e mais suscetível a
+          erros.                                                        
+                                                                        
+           14┆ IconProfile: () => 'IconProfile',
+            ⋮┆----------------------------------------
+           15┆ IconHome: () => 'IconHome',
+                                                
+  [36m[22m[24m  src/components/Icon/index.tsx[0m
+    ❯❱ [1mrules.ensure-importantForAccessibility[0m
+          Elementos decorativos ou duplicados para leitores de tela devem
+          usar importantForAccessibility="no".                           
+                                                                         
+           11┆ export const Icon: FC<IconType> = ({
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           13┆ accessibility,
+            ⋮┆----------------------------------------
+           14┆ accessibilityLabel,
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           49┆ <Touchable
+           50┆   id={id || accessibility}
+           51┆   accessibility={accessibility || iconName}
+           52┆   accessibilityLabel={accessibilityLabel ||
+               accessibility}                             
+           53┆   testID={testID || id || accessibility}
+           54┆   disabled={!touchable}
+           55┆   onPress={onPress}
+           56┆   {...rest}
+           57┆ >
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           49┆ <Touchable
+           50┆   id={id || accessibility}
+           51┆   accessibility={accessibility || iconName}
+           52┆   accessibilityLabel={accessibilityLabel ||
+               accessibility}                             
+           53┆   testID={testID || id || accessibility}
+           54┆   disabled={!touchable}
+           55┆   onPress={onPress}
+           56┆   {...rest}
+           57┆ >
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           50┆ id={id || accessibility}
+            ⋮┆----------------------------------------
+           51┆ accessibility={accessibility || iconName}
+            ⋮┆----------------------------------------
+           51┆ accessibility={accessibility || iconName}
+            ⋮┆----------------------------------------
+           52┆ accessibilityLabel={accessibilityLabel ||
+               accessibility}                           
+   
+    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
+          Evite definir propriedades de acessibilidade diretamente nos 
+          componentes. Use os utilitários generateAccessibilityProps().
+                                                                       
+           52┆ accessibilityLabel={accessibilityLabel ||
+               accessibility}                           
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           52┆ accessibilityLabel={accessibilityLabel ||
+               accessibility}                           
+            ⋮┆----------------------------------------
+           52┆ accessibilityLabel={accessibilityLabel ||
+               accessibility}                           
+            ⋮┆----------------------------------------
+           53┆ testID={testID || id || accessibility}
+   
+    ❯❱ [1mrules.ensure-importantForAccessibility[0m
+          Elementos decorativos ou duplicados para leitores de tela devem
+          usar importantForAccessibility="no".                           
+                                                                         
+           83┆ <IconComponent name={name} color={color} size={size} />
+                                                         
+  [36m[22m[24m  src/components/Image/index.stories.tsx[0m
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+            9┆ accessibility: 'Image',
+                                                 
+  [36m[22m[24m  src/components/Image/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React, { useContext, useState } from 'react';
+   
+    ❯❱ [1mrules.ensure-importantForAccessibility[0m
+          Elementos decorativos ou duplicados para leitores de tela devem
+          usar importantForAccessibility="no".                           
+                                                                         
+            9┆ const Image: React.FC<ImageProps> = ({
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           12┆ accessibility,
+            ⋮┆----------------------------------------
+           64┆ accessibilityLabel={accessibility}
+   
+    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
+          Evite definir propriedades de acessibilidade diretamente nos 
+          componentes. Use os utilitários generateAccessibilityProps().
+                                                                       
+           64┆ accessibilityLabel={accessibility}
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           64┆ accessibilityLabel={accessibility}
+            ⋮┆----------------------------------------
+           75┆ accessibilityLabel={accessibility}
+   
+    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
+          Evite definir propriedades de acessibilidade diretamente nos 
+          componentes. Use os utilitários generateAccessibilityProps().
+                                                                       
+           75┆ accessibilityLabel={accessibility}
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           75┆ accessibilityLabel={accessibility}
+                                                        
+  [36m[22m[24m  src/components/Link/index.stories.tsx[0m
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           14┆ accessibility: 'Link',
+            ⋮┆----------------------------------------
+           15┆ accessibilityLabel: 'Link',
+                                                
+  [36m[22m[24m  src/components/Link/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React, { FC, PropsWithChildren } from 'react';
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           17┆ accessibility,
+            ⋮┆----------------------------------------
+           18┆ accessibilityLabel,
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           24┆ <Touchable
+           25┆   id={id || accessibility}
+           26┆   onPress={onPress}
+           27┆   accessibility={accessibility}
+           28┆   accessibilityLabel={accessibilityLabel ||
+               accessibility}                             
+           29┆   testID={testID || id || accessibility}
+           30┆   {...rest}
+           31┆ >
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           24┆ <Touchable
+           25┆   id={id || accessibility}
+           26┆   onPress={onPress}
+           27┆   accessibility={accessibility}
+           28┆   accessibilityLabel={accessibilityLabel ||
+               accessibility}                             
+           29┆   testID={testID || id || accessibility}
+           30┆   {...rest}
+           31┆ >
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           25┆ id={id || accessibility}
+            ⋮┆----------------------------------------
+           27┆ accessibility={accessibility}
+            ⋮┆----------------------------------------
+           27┆ accessibility={accessibility}
+            ⋮┆----------------------------------------
+           28┆ accessibilityLabel={accessibilityLabel ||
+               accessibility}                           
+   
+    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
+          Evite definir propriedades de acessibilidade diretamente nos 
+          componentes. Use os utilitários generateAccessibilityProps().
+                                                                       
+           28┆ accessibilityLabel={accessibilityLabel ||
+               accessibility}                           
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           28┆ accessibilityLabel={accessibilityLabel ||
+               accessibility}                           
+            ⋮┆----------------------------------------
+           28┆ accessibilityLabel={accessibilityLabel ||
+               accessibility}                           
+            ⋮┆----------------------------------------
+           29┆ testID={testID || id || accessibility}
+            ⋮┆----------------------------------------
+           34┆ accessibilityLabel={`Texto ${accessibility}`}
+   
+    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
+          Evite definir propriedades de acessibilidade diretamente nos 
+          componentes. Use os utilitários generateAccessibilityProps().
+                                                                       
+           34┆ accessibilityLabel={`Texto ${accessibility}`}
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           34┆ accessibilityLabel={`Texto ${accessibility}`}
+            ⋮┆----------------------------------------
+           35┆ accessibility={`Texto ${accessibility}`}
+            ⋮┆----------------------------------------
+           35┆ accessibility={`Texto ${accessibility}`}
+                                                
+  [36m[22m[24m  src/components/Link/styles.ts[0m
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           10┆ accessibilityLabel: string;
+                                                                    
+  [36m[22m[24m  src/components/LoadingIndicator/index.stories.tsx[0m
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           12┆ accessibility: 'LoadingIndicator',
+                                                            
+  [36m[22m[24m  src/components/LoadingIndicator/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React, { FC } from 'react';
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+            9┆ accessibility,
+            ⋮┆----------------------------------------
+           13┆ testID={accessibility || 'loading'}
+            ⋮┆----------------------------------------
+           14┆ accessibilityLabel={accessibility || 'Aguarde'}
+   
+    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
+          Evite definir propriedades de acessibilidade diretamente nos 
+          componentes. Use os utilitários generateAccessibilityProps().
+                                                                       
+           14┆ accessibilityLabel={accessibility || 'Aguarde'}
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           14┆ accessibilityLabel={accessibility || 'Aguarde'}
+                                                           
+  [36m[22m[24m  src/components/LoadingIndicator/style.ts[0m
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           21┆ accessibilityLabel: string;
+                                                    
+  [36m[22m[24m  src/components/Markdown/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React, { PropsWithChildren } from 'react';
+                                                            
+  [36m[22m[24m  src/components/PinInput/index.stories.tsx[0m
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           18┆ accessibility: 'Digite seu pin',
+                                                    
+  [36m[22m[24m  src/components/PinInput/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React, { useContext, useState } from 'react';
+   
+    ❯❱ [1mrules.ensure-importantForAccessibility[0m
+          Elementos decorativos ou duplicados para leitores de tela devem
+          usar importantForAccessibility="no".                           
+                                                                         
+           70┆ <Icon
+           71┆   accessibility={`Exibir ou ocultar inputs -
+               ${iconString(                               
+           72┆     hidePassword,
+           73┆   )}`}
+           74┆   name={iconString(hidePassword)}
+           75┆   size={iconSize}
+           76┆   onPress={() => setHidePassword(!hidePassword)}
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           71┆ accessibility={`Exibir ou ocultar inputs -
+               ${iconString(                             
+            ⋮┆----------------------------------------
+           83┆ <CaptionText accessibility={caption}
+               centered={centered}>                
+                                                        
+  [36m[22m[24m  src/components/PinInput/lib/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React, { FC } from 'react';
+                                                                                    
+  [36m[22m[24m                                                                      
+  src/components/PinInput/lib/react-native-smooth-pincode-input/SmoothPinCodeInput.j
+  [0m                                                                               
+    ❯❱ [1mrules.no-class-in-components[0m
+          Evite usar classes em componentes. Use funções ou hooks.
+                                                                  
+           23┆ class SmoothPinCodeInput extends Component {
+   
+    ❯❱ [1mrules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings 
+          diretamente torna o código menos escalável e mais suscetível a
+          erros.                                                        
+                                                                        
+           71┆ if (event.nativeEvent.key === 'Backspace') {
+            ⋮┆----------------------------------------
+           80┆ if (typeof this.props.onFocus === 'function') {
+            ⋮┆----------------------------------------
+           86┆ if (typeof this.props.onBlur === 'function') {
+            ⋮┆----------------------------------------
+           91┆ if (typeof this.props.useIndexedAccessibilityLabel ===
+               'string')                                             
+            ⋮┆----------------------------------------
+           96┆ if (typeof this.props.useIndexedTestID === 'string')
+            ⋮┆----------------------------------------
+          158┆ const isPlaceholderText = typeof placeholder ===
+               'string';                                       
+            ⋮┆----------------------------------------
+          159┆ const isMaskText = typeof mask === 'string';
+            ⋮┆----------------------------------------
+          175┆ const isCellText = typeof cellText === 'string';
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+          200┆                                                        
+               accessibilityLabel={this.useIndexedAccessibilityLabel(i
+               dx)}                                                   
+   
+    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
+          Evite definir propriedades de acessibilidade diretamente nos 
+          componentes. Use os utilitários generateAccessibilityProps().
+                                                                       
+          200┆                                                        
+               accessibilityLabel={this.useIndexedAccessibilityLabel(i
+               dx)}                                                   
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+          216┆ <TextInput
+          217┆   disableFullscreenUI={disableFullscreenUI}
+          218┆   value={value}
+          219┆   ref={this.inputRef}
+          220┆   onChangeText={this._inputCode}
+          221┆   onKeyPress={this._keyPress}
+          222┆   onFocus={() => this._onFocused()}
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+          216┆ <TextInput
+          217┆   disableFullscreenUI={disableFullscreenUI}
+          218┆   value={value}
+          219┆   ref={this.inputRef}
+          220┆   onChangeText={this._inputCode}
+          221┆   onKeyPress={this._keyPress}
+          222┆   onFocus={() => this._onFocused()}
+                                                                                    
+  [36m[22m[24m                                                                      
+  src/components/PinInput/lib/react-native-smooth-pincode-input/index.d.ts[0m       
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           35┆ * This accessibilityLabel is declared on each cell
+               rendered of pin input,                            
+                                                    
+  [36m[22m[24m  src/components/PinInput/styles.ts[0m
+    ❯❱ [1mrules.ensure-importantForAccessibility[0m
+          Elementos decorativos ou duplicados para leitores de tela devem
+          usar importantForAccessibility="no".                           
+                                                                         
+           51┆ }))<IconProps>`
+                                                                            
+  [36m[22m[24m  src/components/RadioButton/__tests__/RadioButton.spec.tsx[0m
+    ❯❱ [1mrules.ensure-tests-use-testid[0m
+          Testes devem localizar elementos usando testID em vez de text ou
+          accessibilityLabel.                                             
+                                                                          
+          261┆ const label = getByText('Custom Label Style');
+                                                               
+  [36m[22m[24m  src/components/RadioButton/index.stories.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+            8┆ <RadioButton
+            9┆   {...args}
+           10┆   accessibility="Habilitar Recurso"
+           11┆   checked={value}
+           12┆   onPress={() => setValue(!value)}
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+            8┆ <RadioButton
+            9┆   {...args}
+           10┆   accessibility="Habilitar Recurso"
+           11┆   checked={value}
+           12┆   onPress={() => setValue(!value)}
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           10┆ accessibility="Habilitar Recurso"
+            ⋮┆----------------------------------------
+           21┆ accessibility: 'Habilitar Recurso',
+                                                       
+  [36m[22m[24m  src/components/RadioButton/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React from 'react';
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+            7┆ } from '../../utils/accessibility';
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           12┆ const RadioButton: React.FC<RadioButtonType> = ({
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           12┆ const RadioButton: React.FC<RadioButtonType> = ({
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           14┆ accessibility,
+            ⋮┆----------------------------------------
+           15┆ accessibilityLabel,
+            ⋮┆----------------------------------------
+           32┆ accessibility,
+            ⋮┆----------------------------------------
+           33┆ accessibilityLabel,
+            ⋮┆----------------------------------------
+           47┆ id || accessibility || testID || 'radio',
+            ⋮┆----------------------------------------
+           59┆ id={id || accessibility}
+   
+    ❯❱ [1mrules.ensure-minimum-touchable-area[0m
+          Componentes interativos devem ter área mínima de toque de
+          44x44dp. Use View com minWidth e minHeight ou hitSlop.   
+                                                                   
+           63┆ hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
+                                                                       
+  [36m[22m[24m  src/components/SearchInput/__tests__/Search.spec.tsx[0m
+    ❯❱ [1mrules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings 
+          diretamente torna o código menos escalável e mais suscetível a
+          erros.                                                        
+                                                                        
+          651┆ typeof inputComponent.props.onRightIconPress ===
+               'function') {                                   
+                                                       
+  [36m[22m[24m  src/components/SearchInput/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React, { useRef, useState } from 'react';
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+            3┆ import { generateTestID } from
+               '../../utils/accessibility';  
+            ⋮┆----------------------------------------
+           15┆ accessibility: string;
+            ⋮┆----------------------------------------
+           40┆ accessibility,
+            ⋮┆----------------------------------------
+           74┆ const testID = generateTestID('search', id ||
+               accessibility);                              
+            ⋮┆----------------------------------------
+           90┆ id={id || accessibility}
+            ⋮┆----------------------------------------
+           91┆ accessibility={accessibility}
+            ⋮┆----------------------------------------
+           91┆ accessibility={accessibility}
+                                                                        
+  [36m[22m[24m  src/components/Separator/__tests__/Separator.spec.tsx[0m
+    ❯❱ [1mrules.ensure-tests-use-testid[0m
+          Testes devem localizar elementos usando testID em vez de text ou
+          accessibilityLabel.                                             
+                                                                          
+           90┆ const textElement = getByText(testText);
+                                                                     
+  [36m[22m[24m  src/components/TextInput/MaskedTextInput/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React, { forwardRef, useEffect, useState } from
+               'react';                                              
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           26┆ accessibility,
+            ⋮┆----------------------------------------
+           27┆ accessibilityLabel,
+            ⋮┆----------------------------------------
+           50┆ accessibility,
+            ⋮┆----------------------------------------
+           51┆ accessibilityLabel,
+   
+    ❯❱ [1mrules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings 
+          diretamente torna o código menos escalável e mais suscetível a
+          erros.                                                        
+                                                                        
+           64┆ if (id === 'test') {
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           71┆ // Se não tiver ID mas tiver accessibility, formata
+               como "prefix_accessibility"                        
+            ⋮┆----------------------------------------
+           71┆ // Se não tiver ID mas tiver accessibility, formata
+               como "prefix_accessibility"                        
+            ⋮┆----------------------------------------
+           72┆ else if (accessibility) {
+            ⋮┆----------------------------------------
+           73┆ inputTestID = `${prefix}_${accessibility}`;
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+          159┆ <TextInput
+          160┆   {...rest}
+          161┆   ref={inputRef}
+          162┆   onChangeText={onChangeText}
+          163┆   value={value}
+          164┆   id={id || accessibility}
+          165┆   status={status}
+          166┆   {...accessibilityProps}
+          167┆   testID={inputTestID}
+          168┆   contrast={contrast}
+             [hid 6 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+          159┆ <TextInput
+          160┆   {...rest}
+          161┆   ref={inputRef}
+          162┆   onChangeText={onChangeText}
+          163┆   value={value}
+          164┆   id={id || accessibility}
+          165┆   status={status}
+          166┆   {...accessibilityProps}
+          167┆   testID={inputTestID}
+          168┆   contrast={contrast}
+             [hid 6 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+          164┆ id={id || accessibility}
+                                                                           
+  [36m[22m[24m  src/components/TextInput/PasswordInput/index.stories.tsx[0m
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           12┆ accessibility="Este componente PasswordInput"
+                                                                   
+  [36m[22m[24m  src/components/TextInput/PasswordInput/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React, { FC, useCallback, useState } from
+               'react';                                        
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+            6┆ const PasswordInput: FC<TextInputType> = (props) => {
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+            6┆ const PasswordInput: FC<TextInputType> = (props) => {
+   
+    ❯❱ [1mrules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings 
+          diretamente torna o código menos escalável e mais suscetível a
+          erros.                                                        
+                                                                        
+           21┆ props.id === 'testing_passwordInput' ?
+               'testing_passwordInput' : undefined;  
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           24┆ <TextInputFloating
+           25┆   secureTextEntry={hidePassword}
+           26┆   rightIconName={hidePassword ? 'eye' : 'eye-slash'}
+           27┆   iconTouchableEnabled
+           28┆   onPressIcon={onPressShowPassword}
+           29┆   onRightIconPress={onPressShowPassword}
+           30┆   iconHitSlop={hitSlop}
+           31┆   textContentType="password"
+           32┆   testID={testIDForTests}
+           33┆   {...props}
+             [hid 1 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           24┆ <TextInputFloating
+           25┆   secureTextEntry={hidePassword}
+           26┆   rightIconName={hidePassword ? 'eye' : 'eye-slash'}
+           27┆   iconTouchableEnabled
+           28┆   onPressIcon={onPressShowPassword}
+           29┆   onRightIconPress={onPressShowPassword}
+           30┆   iconHitSlop={hitSlop}
+           31┆   textContentType="password"
+           32┆   testID={testIDForTests}
+           33┆   {...props}
+             [hid 1 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           36┆ <TextInput
+           37┆   secureTextEntry={hidePassword}
+           38┆   rightIconName={hidePassword ? 'eye' : 'eye-slash'}
+           39┆   iconTouchableEnabled
+           40┆   onPressIcon={onPressShowPassword}
+           41┆   onRightIconPress={onPressShowPassword}
+           42┆   iconHitSlop={hitSlop}
+           43┆   textContentType="password"
+           44┆   testID={testIDForTests}
+           45┆   {...props}
+             [hid 1 additional lines, adjust with --max-lines-per-finding] 
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           36┆ <TextInput
+           37┆   secureTextEntry={hidePassword}
+           38┆   rightIconName={hidePassword ? 'eye' : 'eye-slash'}
+           39┆   iconTouchableEnabled
+           40┆   onPressIcon={onPressShowPassword}
+           41┆   onRightIconPress={onPressShowPassword}
+           42┆   iconHitSlop={hitSlop}
+           43┆   textContentType="password"
+           44┆   testID={testIDForTests}
+           45┆   {...props}
+             [hid 1 additional lines, adjust with --max-lines-per-finding] 
+                                                             
+  [36m[22m[24m  src/components/TextInput/index.stories.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           12┆ <TextInputFloating
+           13┆   {...args}
+           14┆   id="textInput"
+           15┆   accessibility="Este componente TextInputFloating"
+           16┆   style={spacing}
+           17┆ />
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           12┆ <TextInputFloating
+           13┆   {...args}
+           14┆   id="textInput"
+           15┆   accessibility="Este componente TextInputFloating"
+           16┆   style={spacing}
+           17┆ />
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           15┆ accessibility="Este componente TextInputFloating"
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           18┆ <TextInputFloating
+           19┆   {...args}
+           20┆   id="textInput"
+           21┆   accessibility="Este componente TextInputFloating"
+           22┆   style={spacing}
+           23┆ />
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           18┆ <TextInputFloating
+           19┆   {...args}
+           20┆   id="textInput"
+           21┆   accessibility="Este componente TextInputFloating"
+           22┆   style={spacing}
+           23┆ />
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           21┆ accessibility="Este componente TextInputFloating"
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           24┆ <TextInputFloating
+           25┆   {...args}
+           26┆   id="textInput"
+           27┆   accessibility="Este componente TextInputFloating"
+           28┆   style={spacing}
+           29┆   status="error"
+           30┆ />
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           24┆ <TextInputFloating
+           25┆   {...args}
+           26┆   id="textInput"
+           27┆   accessibility="Este componente TextInputFloating"
+           28┆   style={spacing}
+           29┆   status="error"
+           30┆ />
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           27┆ accessibility="Este componente TextInputFloating"
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           31┆ <TextInputFloating
+           32┆   {...args}
+           33┆   id="textInput"
+           34┆   accessibility="Este componente TextInputFloating"
+           35┆   style={spacing}
+           36┆   status="success"
+           37┆ />
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           31┆ <TextInputFloating
+           32┆   {...args}
+           33┆   id="textInput"
+           34┆   accessibility="Este componente TextInputFloating"
+           35┆   style={spacing}
+           36┆   status="success"
+           37┆ />
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           34┆ accessibility="Este componente TextInputFloating"
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           38┆ <TextInputFloating
+           39┆   {...args}
+           40┆   id="textInput"
+           41┆   accessibility="Este componente TextInputFloating"
+           42┆   style={spacing}
+           43┆   status="selected"
+           44┆ />
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           38┆ <TextInputFloating
+           39┆   {...args}
+           40┆   id="textInput"
+           41┆   accessibility="Este componente TextInputFloating"
+           42┆   style={spacing}
+           43┆   status="selected"
+           44┆ />
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           41┆ accessibility="Este componente TextInputFloating"
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           45┆ <TextInputFloating
+           46┆   {...args}
+           47┆   id="textInput"
+           48┆   accessibility="Este componente TextInputFloating"
+           49┆   style={spacing}
+           50┆   status="focus"
+           51┆ />
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           45┆ <TextInputFloating
+           46┆   {...args}
+           47┆   id="textInput"
+           48┆   accessibility="Este componente TextInputFloating"
+           49┆   style={spacing}
+           50┆   status="focus"
+           51┆ />
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           48┆ accessibility="Este componente TextInputFloating"
+            ⋮┆----------------------------------------
+           89┆ accessibilityLabel: 'Campo de entrada para email',
+            ⋮┆----------------------------------------
+           90┆ accessibilityHint: 'Digite seu endereço de email para
+               contato',                                            
+            ⋮┆----------------------------------------
+          100┆ - **accessibilityLabel**: Descrição clara do campo (não
+               apenas repetir o label)                                
+            ⋮┆----------------------------------------
+          101┆ - **accessibilityHint**: Instrução ou contexto
+               adicional para o usuário                      
+            ⋮┆----------------------------------------
+          102┆ - **accessibilityRole**: "text" para indicar que é um
+               campo de texto                                       
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+          109┆ <TextInput
+          110┆   label="Email"
+          111┆   error="Email inválido"
+          112┆   accessibilityLabel="Campo de email com erro"
+          113┆   accessibilityState={{ invalid: true }}
+          114┆ />
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+          109┆ <TextInput
+          110┆   label="Email"
+          111┆   error="Email inválido"
+          112┆   accessibilityLabel="Campo de email com erro"
+          113┆   accessibilityState={{ invalid: true }}
+          114┆ />
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+          112┆ accessibilityLabel="Campo de email com erro"
+            ⋮┆----------------------------------------
+          113┆ accessibilityState={{ invalid: true }}
+   
+    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
+          Evite definir propriedades de acessibilidade diretamente nos 
+          componentes. Use os utilitários generateAccessibilityProps().
+                                                                       
+          113┆ accessibilityState={{ invalid: true }}
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+          125┆ accessibilityLabel: 'Campo de senha com erro',
+            ⋮┆----------------------------------------
+          126┆ accessibilityHint: 'A senha deve ter no mínimo 8
+               caracteres',                                    
+            ⋮┆----------------------------------------
+          137┆ 3. Definir accessibilityState={{ invalid: true }}
+   
+    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
+          Evite definir propriedades de acessibilidade diretamente nos 
+          componentes. Use os utilitários generateAccessibilityProps().
+                                                                       
+          137┆ 3. Definir accessibilityState={{ invalid: true }}
+                                                     
+  [36m[22m[24m  src/components/TextInput/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React, { FC, useCallback, useEffect, useState }
+               from 'react';                                         
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+            6┆ import { generateTestID } from
+               '../../utils/accessibility';  
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           25┆ const TextInput: FC<TextInputType> = ({
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           25┆ const TextInput: FC<TextInputType> = ({
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           27┆ accessibility,
+            ⋮┆----------------------------------------
+           28┆ accessibilityLabel,
+            ⋮┆----------------------------------------
+          173┆ accessibility,
+            ⋮┆----------------------------------------
+          174┆ accessibilityLabel,
+            ⋮┆----------------------------------------
+          200┆ accessibilityLabel={
+   
+    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
+          Evite definir propriedades de acessibilidade diretamente nos 
+          componentes. Use os utilitários generateAccessibilityProps().
+                                                                       
+          200┆ accessibilityLabel={
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+          201┆ accessibilityLabel ||
+            ⋮┆----------------------------------------
+          203┆ accessibility ||
+            ⋮┆----------------------------------------
+          207┆ accessibilityRole="text"
+            ⋮┆----------------------------------------
+          208┆ accessibilityHint={
+   
+    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
+          Evite definir propriedades de acessibilidade diretamente nos 
+          componentes. Use os utilitários generateAccessibilityProps().
+                                                                       
+          208┆ accessibilityHint={
+   
+    ❯❱ [1mrules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings 
+          diretamente torna o código menos escalável e mais suscetível a
+          erros.                                                        
+                                                                        
+          210┆ ? typeof error === 'string'
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+          215┆ accessibilityState={{
+   
+    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
+          Evite definir propriedades de acessibilidade diretamente nos 
+          componentes. Use os utilitários generateAccessibilityProps().
+                                                                       
+          215┆ accessibilityState={{
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+          218┆ accessibilityLiveRegion="polite"
+            ⋮┆----------------------------------------
+          219┆ testID={generateTestID('input', id || accessibility ||
+               'input')}                                             
+   
+    ❯❱ [1mrules.ensure-importantForAccessibility[0m
+          Elementos decorativos ou duplicados para leitores de tela devem
+          usar importantForAccessibility="no".                           
+                                                                         
+          272┆ <Icon
+          273┆   name={leftIconName}
+          274┆   size={iconSize}
+          275┆   color={leftIconColor}
+          276┆   type={iconType}
+          277┆   iconSets={iconSets}
+          278┆   onPress={onPressIcon}
+          279┆   hitSlop={iconHitSlop}
+          280┆   testID={generateTestID('icon', leftIconName)}
+          281┆ />
+            ⋮┆----------------------------------------
+          296┆ <Icon
+          297┆   name={rightIconName}
+          298┆   size={iconSize}
+          299┆   color={iconColor}
+          300┆   type={iconType}
+          301┆   iconSets={iconSets}
+          302┆   onPress={onRightIconPress}
+          303┆   hitSlop={iconHitSlop}
+          304┆   testID={generateTestID('icon', rightIconName)}
+          305┆ />
+            ⋮┆----------------------------------------
+          318┆ <Icon
+          319┆   name={leftIconName}
+          320┆   size={iconSize}
+          321┆   color={leftIconColor}
+          322┆   type={iconType}
+          323┆   iconSets={iconSets}
+          324┆   onPress={onPressIcon}
+          325┆   hitSlop={iconHitSlop}
+          326┆   testID={generateTestID('icon', leftIconName)}
+          327┆ />
+            ⋮┆----------------------------------------
+          331┆ <Icon
+          332┆   name={rightIconName}
+          333┆   size={iconSize}
+          334┆   color={iconColor}
+          335┆   type={iconType}
+          336┆   iconSets={iconSets}
+          337┆   onPress={onRightIconPress}
+          338┆   hitSlop={iconHitSlop}
+          339┆   testID={generateTestID('icon', rightIconName)}
+          340┆ />
+                                                     
+  [36m[22m[24m  src/components/TextInput/styles.ts[0m
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+          221┆ accessibilityLabel: props.accessibilityLabel ||
+               props.accessibility,                           
+            ⋮┆----------------------------------------
+          221┆ accessibilityLabel: props.accessibilityLabel ||
+               props.accessibility,                           
+            ⋮┆----------------------------------------
+          221┆ accessibilityLabel: props.accessibilityLabel ||
+               props.accessibility,                           
+   
+    ❯❱ [1mrules.ensure-importantForAccessibility[0m
+          Elementos decorativos ou duplicados para leitores de tela devem
+          usar importantForAccessibility="no".                           
+                                                                         
+          264┆ }))<IconProps>``;
+                                                          
+  [36m[22m[24m  src/components/Toggle/index.stories.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           10┆ <Toggle {...args} value={value}
+               onValueChange={setValue} />    
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           10┆ <Toggle {...args} value={value}
+               onValueChange={setValue} />    
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           19┆ accessibility: 'Habilitar Recurso',
+            ⋮┆----------------------------------------
+           43┆ accessibility: 'Modo escuro',
+            ⋮┆----------------------------------------
+           44┆ accessibilityLabel: 'Botão para ativar o modo escuro',
+            ⋮┆----------------------------------------
+           45┆ accessibilityHint: 'Alterna o aplicativo entre o tema
+               claro e escuro',                                     
+            ⋮┆----------------------------------------
+           53┆ - **accessibilityLabel**: Descrição clara da função
+               (ex: "Modo escuro")                                
+            ⋮┆----------------------------------------
+           54┆ - **accessibilityRole**: "switch" para identificação
+               correta do elemento                                 
+            ⋮┆----------------------------------------
+           55┆ - **accessibilityState**: Contém { checked: boolean }
+               para indicar estado                                  
+            ⋮┆----------------------------------------
+           56┆ - **accessibilityHint**: Explica o resultado da
+               alteração                                      
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           61┆ <Toggle
+           62┆   value={darkMode}
+           63┆   accessibilityLabel="Modo escuro"
+           64┆   accessibilityHint="Alterna o aplicativo entre o tema
+               claro e escuro"                                       
+           65┆   onValueChange={toggleDarkMode}
+           66┆ />
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           61┆ <Toggle
+           62┆   value={darkMode}
+           63┆   accessibilityLabel="Modo escuro"
+           64┆   accessibilityHint="Alterna o aplicativo entre o tema
+               claro e escuro"                                       
+           65┆   onValueChange={toggleDarkMode}
+           66┆ />
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           63┆ accessibilityLabel="Modo escuro"
+            ⋮┆----------------------------------------
+           64┆ accessibilityHint="Alterna o aplicativo entre o tema
+               claro e escuro"                                     
+                                                  
+  [36m[22m[24m  src/components/Toggle/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React from 'react';
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+            7┆ accessibility?: string;
+            ⋮┆----------------------------------------
+            8┆ accessibilityLabel?: string;
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           23┆ const ToggleButton: React.FC<ToggleProps> = ({
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           23┆ const ToggleButton: React.FC<ToggleProps> = ({
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           30┆ accessibility,
+            ⋮┆----------------------------------------
+           31┆ accessibilityLabel,
+            ⋮┆----------------------------------------
+           42┆ accessibility,
+            ⋮┆----------------------------------------
+           43┆ accessibilityLabel: accessibilityLabel || defaultLabel,
+            ⋮┆----------------------------------------
+           43┆ accessibilityLabel: accessibilityLabel || defaultLabel,
+            ⋮┆----------------------------------------
+           62┆ // Se não tiver ID mas tiver accessibility, formata
+               como "prefix_accessibility"                        
+            ⋮┆----------------------------------------
+           62┆ // Se não tiver ID mas tiver accessibility, formata
+               como "prefix_accessibility"                        
+            ⋮┆----------------------------------------
+           63┆ else if (accessibility) {
+            ⋮┆----------------------------------------
+           64┆ finalTestID = `${prefix}_${accessibility}`;
+                                                     
+  [36m[22m[24m  src/components/Touchable/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React, { FC } from 'react';
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+            6┆ const CommonTouchable: FC<TouchableType> = ({
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+            6┆ const CommonTouchable: FC<TouchableType> = ({
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           10┆ accessibility,
+            ⋮┆----------------------------------------
+           11┆ accessibilityLabel,
+   
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           24┆ <TouchableOpacity
+           25┆   {...rest}
+           26┆   accessibilityLabel={accessibilityLabel ||
+               accessibility}                             
+           27┆   testID={testID || id || accessibility}
+           28┆   disabled={disabled}
+           29┆   onPress={onBasicPress}
+           30┆ />
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           24┆ <TouchableOpacity
+           25┆   {...rest}
+           26┆   accessibilityLabel={accessibilityLabel ||
+               accessibility}                             
+           27┆   testID={testID || id || accessibility}
+           28┆   disabled={disabled}
+           29┆   onPress={onBasicPress}
+           30┆ />
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           26┆ accessibilityLabel={accessibilityLabel ||
+               accessibility}                           
+   
+    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
+          Evite definir propriedades de acessibilidade diretamente nos 
+          componentes. Use os utilitários generateAccessibilityProps().
+                                                                       
+           26┆ accessibilityLabel={accessibilityLabel ||
+               accessibility}                           
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           26┆ accessibilityLabel={accessibilityLabel ||
+               accessibility}                           
+            ⋮┆----------------------------------------
+           26┆ accessibilityLabel={accessibilityLabel ||
+               accessibility}                           
+            ⋮┆----------------------------------------
+           27┆ testID={testID || id || accessibility}
+                                                                          
+  [36m[22m[24m  src/components/Typography/__tests__/Typography.spec.tsx[0m
+    ❯❱ [1mrules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings 
+          diretamente torna o código menos escalável e mais suscetível a
+          erros.                                                        
+                                                                        
+           69┆ if (context && context.displayName === 'ThemeContext')
+               {                                                     
+   
+    ❯❱ [1mrules.ensure-tests-use-testid[0m
+          Testes devem localizar elementos usando testID em vez de text ou
+          accessibilityLabel.                                             
+                                                                          
+          371┆ expect(getByText('Texto de teste')).toBeTruthy();
+                                                              
+  [36m[22m[24m  src/components/Typography/index.stories.tsx[0m
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           15┆ accessibility: 'Texto de exemplo',
+                                                      
+  [36m[22m[24m  src/components/Typography/index.tsx[0m
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           13┆ accessibility,
+            ⋮┆----------------------------------------
+           22┆ testID={id || accessibility || `${children}`}
+            ⋮┆----------------------------------------
+           23┆ accessibilityLabel={accessibility || `${children}`}
+   
+    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
+          Evite definir propriedades de acessibilidade diretamente nos 
+          componentes. Use os utilitários generateAccessibilityProps().
+                                                                       
+           23┆ accessibilityLabel={accessibility || `${children}`}
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           23┆ accessibilityLabel={accessibility || `${children}`}
+            ⋮┆----------------------------------------
+           35┆ testID={id || accessibility || `${children}`}
+            ⋮┆----------------------------------------
+           36┆ accessibilityLabel={accessibility || `${children}`}
+   
+    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
+          Evite definir propriedades de acessibilidade diretamente nos 
+          componentes. Use os utilitários generateAccessibilityProps().
+                                                                       
+           36┆ accessibilityLabel={accessibility || `${children}`}
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           36┆ accessibilityLabel={accessibility || `${children}`}
+                                                       
+  [36m[22m[24m  src/components/UploadPhoto/index.tsx[0m
+    ❯❱ [1mrules.ensure-accessibility-utils-import[0m
+          Componentes interativos devem importar e utilizar os utilitários
+          de acessibilidade.                                              
+                                                                          
+            1┆ import React, { useEffect, useImperativeHandle, useRef,
+               useState } from 'react';                               
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+           24┆ accessibility,
+            ⋮┆----------------------------------------
+           25┆ accessibilityLabel,
+            ⋮┆----------------------------------------
+          116┆ id={id || accessibility}
+            ⋮┆----------------------------------------
+          117┆ accessibility={accessibility}
+            ⋮┆----------------------------------------
+          117┆ accessibility={accessibility}
+            ⋮┆----------------------------------------
+          118┆ accessibilityLabel={accessibilityLabel ||
+               accessibility}                           
+   
+    ❯❱ [1mrules.avoid-direct-accessibility-props[0m
+          Evite definir propriedades de acessibilidade diretamente nos 
+          componentes. Use os utilitários generateAccessibilityProps().
+                                                                       
+          118┆ accessibilityLabel={accessibilityLabel ||
+               accessibility}                           
+   
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+          118┆ accessibilityLabel={accessibilityLabel ||
+               accessibility}                           
+            ⋮┆----------------------------------------
+          118┆ accessibilityLabel={accessibilityLabel ||
+               accessibility}                           
+            ⋮┆----------------------------------------
+          151┆ accessibility=""
+            ⋮┆----------------------------------------
+          159┆ accessibility="Remover imagem"
+            ⋮┆----------------------------------------
+          166┆ accessibility=""
+                                   
+  [36m[22m[24m  src/setupFile.js[0m
+    ❯❱ [1mrules.avoid-console-logs[0m
+          Parece que um console.log() ou similar foi esquecido. Remova
+          para evitar exposição de informações.                       
+                                                                      
+            7┆ const originalConsoleError = console.error;
+            ⋮┆----------------------------------------
+            8┆ console.error = function(message) {
+   
+    ❯❱ [1mrules.use-enum-instead-of-string-comparisons[0m
+          Use ENUM para comparações em vez de strings. Comparar strings 
+          diretamente torna o código menos escalável e mais suscetível a
+          erros.                                                        
+                                                                        
+            9┆ if (message && typeof message === 'string' &&
+                                             
+  [36m[22m[24m  src/types/TextInputType.ts[0m
+    ❯❱ [1mrules.ensure-accessibility-id[0m
+          Componentes interativos devem ter uma propriedade accessibility
+          ou id definida para identificação única.                       
+                                                                         
+           22┆ export type TextInputTypeRef = { _inputElement:
+               RefObject<TextInput> };                        
+   
+    ❯❱ [1mrules.ensure-accessibility-props[0m
+          Componentes interativos devem ter propriedades de acessibilidade
+          adequadas. Use os utilitários generateAccessibilityProps().     
+                                                                          
+           22┆ export type TextInputTypeRef = { _inputElement:
+               RefObject<TextInput> };                        
+                                                            
+  [36m[22m[24m  src/utils/__tests__/accessibility.spec.ts[0m
+    ❯❱ [1mrules.use-array-syntax-instead-of-array-generic[0m
+          Utilize '[]' em vez de 'Array<>' para definir tipos de arrays.
+                                                                        
+          178┆ const roles: Array<Parameters<typeof
+               generateAccessibilityProps>[1]> = [ 
+                                     
+  [36m[22m[24m  src/utils/index.ts[0m
+    ❯❱ [1mrules.use-accessibility-utils[0m
+          Utilize os utilitários do pacote utils/accessibility.ts para
+          implementar propriedades de acessibilidade.                 
+                                                                      
+            5┆ export * from './accessibility';

@@ -8,12 +8,12 @@ import {
 import { formatToMonogram } from '@platformbuilders/helpers';
 import { ImagePlaceholder as defaultAvatar } from '../../assets/images';
 import { AvatarProps as AvatarType } from '../../types';
-import {
-  generateAccessibilityProps,
-  generateTestID,
-} from '../../utils/accessibility';
 import Image from '../Image';
-import { MonogramText, MonogramWrapper, Wrapper } from './styles';
+import {
+  MonogramText,
+  MonogramWrapper,
+  Wrapper,
+} from './styles';
 
 const Avatar: React.FC<AvatarType> = React.forwardRef(
   (
@@ -48,7 +48,7 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
         const response = await launchImageLibrary(options);
         const didCancel = response?.didCancel;
         const uri = response?.assets?.[0]?.uri;
-
+        
         if (!didCancel && uri) {
           setVisibleImage(uri);
           if (onUpload) {
@@ -56,14 +56,15 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
           }
         }
       } catch (error) {
-        // Tratando erro silenciosamente
+        console.error("ImagePicker Error: ", error);
       }
     };
 
     const takePicture = async (): Promise<void> => {
       if (cameraRef.current) {
         const options = { quality: 0.5, base64: true };
-        return await cameraRef.current.takePictureAsync(options);
+        const data = await cameraRef.current.takePictureAsync(options);
+        return data;
       }
     };
 
@@ -93,56 +94,26 @@ const Avatar: React.FC<AvatarType> = React.forwardRef(
     }));
 
     useEffect(() => {
-      // Define tipos para verificação
-      const TypeCheck = {
-        OBJECT: 'object',
-      } as const;
-
       if (
         image &&
+        typeof image === 'object' &&
         !Array.isArray(image) &&
-        typeof image === TypeCheck.OBJECT &&
-        // Forçando tipo para evitar erro TS2322
-        'uri' in (image as object) &&
-        (image as { uri: string }).uri
+        'uri' in image &&
+        image.uri
       ) {
-        setVisibleImage((image as { uri: string }).uri);
+        setVisibleImage(image.uri);
       } else {
         setVisibleImage(undefined);
       }
     }, [image]);
 
-    const baseAccessibilityId = accessibility || id || 'avatar';
-    const defaultLabel = accessibilityLabel || accessibility;
-
-    // Função para lidar com o press
-    const handlePress = onPress || (onUpload ? () => openPicker() : undefined);
-
-    // Determinando o hint base no evento disponível
-    const pressHint = handlePress
-      ? 'Toque para interagir ou fazer upload'
-      : undefined;
-
-    const wrapperAccessibilityProps = generateAccessibilityProps(
-      {
-        id: id,
-        accessibility: baseAccessibilityId,
-        accessibilityLabel: defaultLabel,
-        disabled: !onPress && !onUpload,
-      },
-      'button',
-      defaultLabel,
-      pressHint,
-    );
-
-    const wrapperTestId = generateTestID('avatar', baseAccessibilityId);
-
     return (
       <Wrapper
-        {...wrapperAccessibilityProps}
-        testID={wrapperTestId}
+        id={id || accessibility}
+        accessibility={accessibility}
+        accessibilityLabel={accessibilityLabel || accessibility}
         size={size}
-        onPress={handlePress}
+        onPress={onPress || (onUpload && openPicker)}
         disabled={!onPress && !onUpload}
         showBorder={showBorder}
         borderWidth={borderWidth}

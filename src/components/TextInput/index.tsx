@@ -208,16 +208,9 @@ const TextInput: FC<TextInputType> = ({
         accessibilityRole="text"
         accessibilityHint={
           hasError
-            ? (() => {
-                // Define tipos para verificação
-                const TypeCheck = {
-                  STRING: 'string',
-                } as const;
-
-                return typeof error === TypeCheck.STRING
-                  ? (error as string)
-                  : 'Error';
-              })()
+            ? typeof error === 'string'
+              ? error
+              : 'Error'
             : placeholder || 'Enter text'
         }
         accessibilityState={{

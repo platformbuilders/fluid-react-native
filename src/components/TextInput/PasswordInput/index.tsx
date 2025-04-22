@@ -16,16 +16,9 @@ const PasswordInput: FC<TextInputType> = (props) => {
     setHidePassword(!hidePassword);
   }, [hidePassword]);
 
-  // Define enum para IDs especiais
-  enum SpecialID {
-    TESTING_PASSWORD_INPUT = 'testing_passwordInput',
-  }
-
   // Gerar testID especial para testes
   const testIDForTests =
-    props.id === SpecialID.TESTING_PASSWORD_INPUT
-      ? SpecialID.TESTING_PASSWORD_INPUT
-      : undefined;
+    props.id === 'testing_passwordInput' ? 'testing_passwordInput' : undefined;
 
   return props.isFloating ? (
     <TextInputFloating

@@ -36,23 +36,10 @@ const Badge: FC<BadgeProps> = ({
   ...rest
 }) => {
   const role = onPress ? 'button' : 'text';
-
-  // Define enum para tipos de elementos
-  const ElementType = {
-    STRING: 'string',
-    BADGE: 'badge',
-    BADGE_TITLE: 'Badge',
-  } as const;
-
-  const isStringChildren = typeof children === ElementType.STRING;
-  const childrenAsString = isStringChildren
-    ? (children as string)
-    : ElementType.BADGE;
-
-  const baseAccessibilityId = accessibility || id || childrenAsString;
+  const baseAccessibilityId =
+    accessibility || id || (typeof children === 'string' ? children : 'badge');
   const defaultLabel =
-    accessibilityLabel ||
-    (isStringChildren ? (children as string) : ElementType.BADGE_TITLE);
+    accessibilityLabel || (typeof children === 'string' ? children : 'Badge');
   const hint = onPress ? 'Toque para interagir' : undefined;
 
   const badgeAccessibilityProps = generateAccessibilityProps(
