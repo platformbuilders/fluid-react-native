@@ -29,14 +29,14 @@ build/
 .gradle
 local.properties
 *.iml
-/DevelopmentApp/android/app/.settings
-/DevelopmentApp/android/app/.project
-/DevelopmentApp/android/app/.classpath
-/DevelopmentApp/android/.settings
-/DevelopmentApp/android/.project
-/android/.settings
-/android/.project
-/android/.classpath
+android/app/.settings
+android/app/.project
+android/app/.classpath
+android/.settings
+android/.project
+android/.settings
+android/.project
+android/.classpath
 
 # node.js
 #
@@ -81,7 +81,7 @@ package-lock.json
 *.apk
 
 # CocoaPods
-DevelopmentApp/ios/Pods/
+ios/Pods/
 
 # IDE
 .vscode
