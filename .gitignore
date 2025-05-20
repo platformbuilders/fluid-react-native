@@ -24,19 +24,18 @@ DerivedData
 
 # Android/IntelliJ
 #
+vendor/
 build/
 .idea
 .gradle
 local.properties
 *.iml
-android/app/.settings
-android/app/.project
-android/app/.classpath
-android/.settings
-android/.project
-android/.settings
-android/.project
-android/.classpath
+*.hprof
+.cxx/
+*.keystore
+!debug.keystore
+!release.keystore
+.kotlin/
 
 # node.js
 #
@@ -81,7 +80,7 @@ package-lock.json
 *.apk
 
 # CocoaPods
-ios/Pods/
+**/Pods/
 
 # IDE
 .vscode
@@ -91,3 +90,11 @@ ios/Pods/
 
 # Codewall
 .codewall
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

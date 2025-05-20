@@ -1,23 +1,24 @@
 const path = require('path');
-const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
-const {generate} = require('@storybook/react-native/scripts/generate');
+const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config');
+const withStorybook = require('@storybook/react-native/metro/withStorybook');
+const defaultConfig = getDefaultConfig(__dirname);
 
 /**
  * Metro configuration
- * https://facebook.github.io/metro/docs/configuration
+ * https://reactnative.dev/docs/metro
  *
  * @type {import('metro-config').MetroConfig}
  */
-
-generate({
-  configPath: path.resolve(__dirname, './.storybook'),
-  useJs: true,
-});
-
-const config = {};
-
-const defaultConfig = getDefaultConfig(__dirname);
+const config = {
+  resetCache: true
+};
 
 defaultConfig.transformer.unstable_allowRequireContext = true;
 
-module.exports = mergeConfig(defaultConfig, config);
+const finalConfig = mergeConfig(defaultConfig, config);
+
+
+module.exports = withStorybook(finalConfig, {
+  enabled: true,
+  configPath: path.resolve(__dirname, './.storybook'),
+});
