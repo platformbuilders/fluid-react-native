@@ -1,1 +1,1 @@
-export default require('./.storybook').default;
+ export default require('./.storybook').default;
