@@ -23,16 +23,20 @@ const Button: FC<ButtonProps> = ({
   maxWidth,
   rightIconName,
   leftIconName,
+  haptic,
+  ...rest
 }) => {
   return (
     <Touchable
-      id={id || accessibility}
-      accessibility={accessibility}
-      accessibilityLabel={accessibilityLabel || accessibility}
-      testID={testID || id || accessibility}
-      disabled={loading || disabled}
+      disabled={disabled}
+      haptic={haptic}
+      id={id}
       onPress={onPress}
+      accessibility={accessibility}
+      accessibilityLabel={accessibilityLabel}
+      testID={testID}
       rounded={rounded}
+      {...(rest as any)}
     >
       <ButtonWrapper
         hasBorder={hasBorder}

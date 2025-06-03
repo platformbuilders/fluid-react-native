@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { head } from 'lodash';
 import { Text, TouchableOpacity, View } from 'react-native';
 import Accordion from 'react-native-collapsible/Accordion';
-import Markdown from 'react-native-markdown-display';
+import Markdown from '../Markdown';
 import { AccordionType } from '../../types';
 import If from '../If';
 import { Icon } from './styles';
@@ -49,7 +49,7 @@ const AccordionContainer: React.FC<Props> = ({
 
   type SectionType = {
     title: string;
-    content: string;
+    content: any;
   };
 
   const renderHeader = (section: SectionType) => {
@@ -72,10 +72,10 @@ const AccordionContainer: React.FC<Props> = ({
     return (
       <StyledContent>
         <If condition={isMarkdown}>
-          <Markdown>{section.content}</Markdown>
+          <Markdown>{section.content as any}</Markdown>
         </If>
         <If condition={!isMarkdown}>
-          <StyledBody>{section.content}</StyledBody>
+          <StyledBody>{section.content as any}</StyledBody>
         </If>
       </StyledContent>
     );
@@ -89,12 +89,12 @@ const AccordionContainer: React.FC<Props> = ({
 
   return (
     <Accordion
-      sections={data}
-      touchableComponent={TouchableOpacity}
-      activeSections={activeSections}
-      renderHeader={renderHeader}
-      renderContent={renderContent}
-      onChange={handleChange}
+      sections={data as any}
+      touchableComponent={TouchableOpacity as any}
+      activeSections={activeSections as any}
+      renderHeader={renderHeader as any}
+      renderContent={renderContent as any}
+      onChange={handleChange as any}
     />
   );
 };

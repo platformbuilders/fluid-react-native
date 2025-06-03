@@ -33,14 +33,14 @@ const FAB: FC<Props> = ({
   ...rest
 }) => (
   <Wrapper
-    id={id || accessibility}
+    id={id}
     accessibility={accessibility}
     onPress={onPress}
     size={size}
     color={color}
     relativePos={relativePos}
     hasShadow={hasShadow}
-    {...rest}
+    {...(rest as any)}
   >
     <Icon
       id={`icon_${id || accessibility}`}

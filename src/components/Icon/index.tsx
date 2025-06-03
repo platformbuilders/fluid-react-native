@@ -30,7 +30,7 @@ export const Icon: FC<IconType> = ({
   const iconName = name?.charAt(0).toUpperCase() + name?.slice(1);
   const Svg = iconSets
     ? iconSets[`Icon${iconName}`]
-    : SvgIcons[`Icon${iconName}`];
+    : (SvgIcons as any)[`Icon${iconName}`];
 
   const iconSet = {
     [IconFonts.FontAwesome]: FontAwesome5Icons,
@@ -46,13 +46,15 @@ export const Icon: FC<IconType> = ({
   return (
     <Animated.View style={style}>
       <Touchable
-        id={id || accessibility}
-        accessibility={accessibility || iconName}
-        accessibilityLabel={accessibilityLabel || accessibility}
-        testID={testID || id || accessibility}
+        hitSlop={rest.hitSlop}
         disabled={!touchable}
+        haptic={rest.haptic}
+        id={id}
+        accessibility={accessibility}
+        accessibilityLabel={accessibilityLabel}
+        testID={testID}
         onPress={onPress}
-        {...rest}
+        {...(rest as any)}
       >
         <View>
           {Svg ? (

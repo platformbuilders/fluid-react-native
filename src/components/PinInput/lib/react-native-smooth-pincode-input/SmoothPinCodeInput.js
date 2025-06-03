@@ -6,7 +6,6 @@ import {
   Text,
   TextInput,
   View,
-  ViewPropTypes,
 } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 const styles = StyleSheet.create({
@@ -287,14 +286,14 @@ SmoothPinCodeInput.propTypes = {
   password: PropTypes.bool,
   autoFocus: PropTypes.bool,
   restrictToNumbers: PropTypes.bool,
-  containerStyle: ViewPropTypes.style,
-  cellStyle: ViewPropTypes.style,
-  cellStyleFocused: ViewPropTypes.style,
-  cellStyleFilled: ViewPropTypes.style,
-  textStyle: Text.propTypes.style,
-  textStyleFocused: Text.propTypes.style,
-  animated: PropTypes.bool,
+  containerStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+  cellStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+  cellStyleFocused: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+  cellStyleFilled: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+  textStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+  textStyleFocused: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
   animationFocused: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  animated: PropTypes.bool,
   onFulfill: PropTypes.func,
   onChangeText: PropTypes.func,
   onBackspace: PropTypes.func,
@@ -304,7 +303,7 @@ SmoothPinCodeInput.propTypes = {
   onBlur: PropTypes.func,
   keyboardType: PropTypes.string,
   editable: PropTypes.bool,
-  inputProps: PropTypes.exact(TextInput.propTypes),
+  inputProps: PropTypes.object,
   useIndexedAccessibilityLabel: PropTypes.string,
   useIndexedTestID: PropTypes.string,
 };

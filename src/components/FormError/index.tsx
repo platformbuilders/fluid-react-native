@@ -8,11 +8,12 @@ const warnBoolean = (): void =>
   );
 
 type Props = {
-  centered?: boolean;
-  large?: boolean;
-  error?: string | string[] | boolean;
+  children?: React.ReactNode;
   id?: string;
   accessibility?: string;
+  error?: string | boolean;
+  centered?: boolean;
+  large?: boolean;
 };
 
 const FormError: FC<Props> = ({

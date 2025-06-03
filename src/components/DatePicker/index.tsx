@@ -61,8 +61,8 @@ const DatePickerInput: FC<Props> = ({
 
   const execAnimation = useCallback(() => {
     const animations = Object.keys(LABEL_UPPER_STYLE).map((animationProp) =>
-      Animated.timing(labelAnimatedStyle[animationProp], {
-        toValue: LABEL_UPPER_STYLE[animationProp],
+      Animated.timing((labelAnimatedStyle as any)[animationProp], {
+        toValue: (LABEL_UPPER_STYLE as any)[animationProp],
         duration: 200,
         useNativeDriver: false,
       }),
@@ -127,7 +127,7 @@ const DatePickerInput: FC<Props> = ({
         showIcon={false}
         dark={dark}
       />
-      <BottomLine dark={dark} />
+      <BottomLine {...({ dark } as any)} />
     </FormError>
   );
 };

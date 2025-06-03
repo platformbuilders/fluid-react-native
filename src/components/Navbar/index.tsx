@@ -27,6 +27,7 @@ const Navbar: React.FC<Props> = ({
           accessibility={`Ir para ${navField.label}`}
           onPress={navField.onPress}
           id={navField.routeName}
+          {...(navField as any)}
         >
           <NavIcon
             accessibility={navField.iconName}

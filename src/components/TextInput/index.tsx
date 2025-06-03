@@ -100,7 +100,7 @@ const TextInput: VFC<TextInputType> = ({
   const animateComponent = useCallback(
     (updatedLabelStyle: any): void => {
       const animations = Object.keys(updatedLabelStyle).map((animationProp) =>
-        Animated.timing(labelAnimatedStyle[animationProp], {
+        Animated.timing((labelAnimatedStyle as any)[animationProp], {
           toValue: updatedLabelStyle[animationProp],
           duration: 200,
           useNativeDriver: false,

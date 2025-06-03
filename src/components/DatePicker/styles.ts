@@ -62,7 +62,7 @@ export const DatePicker = styled(DefaultDatePicker)<DatePickerProps>`
 
 export const BottomLine = styled.View`
   height: ${StyleSheet.hairlineWidth}px;
-  background-color: ${inputMainColor};
+  background-color: ${(props: any) => inputMainColor(props)};
 `;
 
 const commonDatePickerStyles = {
@@ -73,7 +73,7 @@ const commonDatePickerStyles = {
     borderWidth: 0,
   },
   dateTouchBody: {
-    width: '100%',
+    width: 100,
   },
 };
 
@@ -88,25 +88,33 @@ export const DatePickerStyles: DatePickerCustomStylesProps = {
   dateText: {
     position: 'absolute',
     left: 0,
-    color: '#fff',
+    color: '#000',
     fontSize: LABEL_UPPER_STYLE.fontSize,
     fontWeight: '700',
   },
 };
 
 export const DatePickerStylesDark: DatePickerCustomStylesProps = {
-  ...commonDatePickerStyles,
   placeholderText: {
     position: 'absolute',
     left: 0,
     color: '#000',
-    fontSize: LABEL_LOWER_STYLE.fontSize,
+    fontSize: 18,
   },
   dateText: {
     position: 'absolute',
     left: 0,
     color: '#000',
-    fontSize: LABEL_UPPER_STYLE.fontSize,
+    fontSize: 18,
     fontWeight: '700',
+  },
+  disabled: {
+    backgroundColor: 'transparent',
+  },
+  dateInput: {
+    borderWidth: 0,
+  },
+  dateTouchBody: {
+    width: 100,
   },
 };

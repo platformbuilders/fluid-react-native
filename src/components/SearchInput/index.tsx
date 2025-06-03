@@ -87,7 +87,7 @@ const SearchInput: React.FC<Props> = ({
         autoCapitalize="none"
         autoCorrect={false}
         iconName={isFocused || !!searchText ? 'close' : 'magnify'}
-        autoCompleteType="off"
+        autoComplete="off"
         placeholder={isSearching ? '' : placeholder || 'Pesquise aqui'}
         onChangeText={(value: string): void => {
           setSearchText(value);

@@ -1,7 +1,6 @@
 import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
 
-import { ThemeProps } from '../../types';
 import { getShadow, getTheme, ifStyle } from '../../utils/helpers';
 import DefaultIcon from '../Icon';
 import Touchable from '../Touchable';
@@ -29,18 +28,14 @@ export const Wrapper = styled(Touchable)<WrapperProps>`
   ${({ hasShadow }: WrapperProps) => (hasShadow ? getShadow() : {})}
 `;
 
-interface IconProps {
-  iconColor?: string;
-  iconSize?: number;
-}
-
 export const Icon = styled(DefaultIcon).attrs(
-  (props: IconProps & ThemeProps) => ({
+  (props: any) => ({
     color: props.iconColor || brandContrast(props),
     touchable: false,
     size: props.iconSize ? moderateScale(props.iconSize) : moderateScale(24),
   }),
-)<IconProps>``;
+)<any>`
+`;
 
 export const Title = styled(Typography).attrs({
   variant: 'xs',

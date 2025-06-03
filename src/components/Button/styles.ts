@@ -147,16 +147,9 @@ export const Loading = styled(LoadingIndicator).attrs({
   width: 55px;
 `;
 
-type IconProps = {
-  rightIcon?: boolean;
-  leftIcon?: boolean;
-  buttonVariant: ButtonVariants;
-  style: any;
-} & ThemeProps;
-
-export const Icon = styled(DefaultIcon).attrs((props: IconProps) => ({
+export const Icon = styled(DefaultIcon).attrs((props: any) => ({
   color: getTextColor(props),
-}))<IconProps>`
+}))<any>`
   margin-right: ${isLeftIcon(smallSpacing, 0)}px;
   margin-left: ${isRightIcon(smallSpacing, 0)}px;
 `;

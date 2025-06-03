@@ -1,5 +1,4 @@
 import Animation from 'lottie-react-native';
-import { moderateScale } from 'react-native-size-matters';
 import styled from 'styled-components/native';
 import { AnimationObject, LoadingVariants, ThemeProps } from '../../types';
 import { getTheme } from '../../utils/helpers';
@@ -33,17 +32,20 @@ const loadingVariant = (
 };
 
 export const smallSize = {
-  width: moderateScale(60),
-  height: moderateScale(60),
+  width: 60,
+  height: 60,
 };
 
 export const largeSize = {
-  width: moderateScale(120),
-  height: moderateScale(120),
+  width: 120,
+  height: 120,
 };
 
-export const Indicator = styled(Animation).attrs((props: any) => ({
-  source: loadingVariant(props),
-  autoPlay: true,
-  loop: true,
-}))<IndicatorProps>``;
+export const Indicator = styled(Animation).attrs((props: any) => {
+  const source = loadingVariant(props);
+  return {
+    source: typeof source === 'number' ? String(source) : source,
+    autoPlay: true,
+    loop: true,
+  };
+})<any>``;

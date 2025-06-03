@@ -14,6 +14,8 @@ const CheckboxComponent: FC<CheckBoxType> = ({
   style,
   labelStyle,
   rightTextStyle,
+  checkBoxColor,
+  ...rest
 }) => (
   <FormError
     id={id || accessibility}
@@ -21,15 +23,17 @@ const CheckboxComponent: FC<CheckBoxType> = ({
     error={error}
   >
     <Wrapper style={style}>
-      <Label {...labelStyle}>{label}</Label>
+      <Label {...(labelStyle as any)}>{label}</Label>
       <CheckBox
         testID={`check_${id || accessibility}`}
         accessibilityLabel={`Check ${accessibility}`}
         style={containerStyle}
         isChecked={checked}
         onClick={onPress}
+        checkBoxColor={checkBoxColor}
+        {...(rest as any)}
       />
-      <Label {...rightTextStyle}>{labelBefore}</Label>
+      <Label {...(rightTextStyle as any)}>{labelBefore}</Label>
     </Wrapper>
   </FormError>
 );

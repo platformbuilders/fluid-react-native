@@ -8,7 +8,7 @@ type Props = {
 };
 
 const LabelDivider: React.FC<Props> = ({ text, marginTop, marginBottom }) => (
-  <OptionsWrapper marginTop={marginTop} marginBottom={marginBottom}>
+  <OptionsWrapper {...({ marginTop, marginBottom } as any)}>
     <Line />
     <DividerText>{text}</DividerText>
     <Line />

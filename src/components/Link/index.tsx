@@ -5,6 +5,7 @@ import Touchable from '../Touchable';
 import { Text } from './styles';
 
 interface Props extends TouchableType {
+  children?: React.ReactNode;
   variant?: TypographyVariants;
   style?: StyleProp<ViewStyle>;
 }
@@ -21,12 +22,14 @@ const Link: FC<Props> = ({
   ...rest
 }) => (
   <Touchable
-    id={id || accessibility}
+    disabled={rest.disabled}
+    haptic={rest.haptic}
+    id={id}
     onPress={onPress}
     accessibility={accessibility}
-    accessibilityLabel={accessibilityLabel || accessibility}
-    testID={testID || id || accessibility}
-    {...rest}
+    accessibilityLabel={accessibilityLabel}
+    testID={testID}
+    {...(rest as any)}
   >
     <Text
       testID={`text_${id}`}
@@ -34,6 +37,7 @@ const Link: FC<Props> = ({
       accessibility={`Texto ${accessibility}`}
       style={style}
       variant={variant}
+      {...(rest as any)}
     >
       {children}
     </Text>

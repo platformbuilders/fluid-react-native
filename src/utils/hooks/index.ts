@@ -16,7 +16,25 @@ export const useAutoFocus = (
   React.useEffect(() => {
     if (autoFocus && inputRef.current) {
       InteractionManager.runAfterInteractions(() => {
-        inputRef.current?.focus();
+        // Para TextInputMask
+        if (
+          typeof inputRef.current.getElement === 'function' &&
+          inputRef.current.getElement() &&
+          typeof inputRef.current.getElement().focus === 'function'
+        ) {
+          inputRef.current.getElement().focus();
+        }
+        // Fallback para _inputElement
+        else if (
+          inputRef.current._inputElement &&
+          typeof inputRef.current._inputElement.focus === 'function'
+        ) {
+          inputRef.current._inputElement.focus();
+        }
+        // Para TextInput nativo
+        else if (typeof inputRef.current.focus === 'function') {
+          inputRef.current.focus();
+        }
       });
     }
   }, [autoFocus, inputRef]);

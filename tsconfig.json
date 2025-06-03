@@ -4,7 +4,7 @@
     "target": "esnext",
     "module": "esnext",
     "lib": ["esnext"],
-    "types": ["react-native", "jest"],
+    "types": ["jest"],
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
@@ -21,7 +21,6 @@
     "strictPropertyInitialization": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
-    "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
@@ -33,20 +32,22 @@
       "./node_modules/@types",
       "styled-components.d.ts",
       "./src/types"
-    ],
+    ]
   },
   "compileOnSave": true,
   "include": [
     "images.d.ts",
     "src",
     "DevelopmentApp",
-    "index.js",
+    "index.js"
   ],
   "exclude": [
     "src/**/*.spec.{ts,tsx}",
     "DevelopmentApp/**/*.spec.{ts,tsx}",
+    "**/*.spec.tsx",
+    "**/*.spec.ts",
     "node_modules",
     "dist",
-    "documentation",
+    "documentation"
   ]
 }

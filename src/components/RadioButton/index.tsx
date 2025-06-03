@@ -11,6 +11,7 @@ type Props = {
   internalSize?: number;
   checked?: boolean;
   onPress?(): void;
+  rest?: any;
 };
 
 const RadioButton: React.FC<Props> = ({
@@ -22,6 +23,7 @@ const RadioButton: React.FC<Props> = ({
   internalSize = 10,
   checked = false,
   onPress = () => {},
+  rest,
 }) => (
   <Radio
     id={id || accessibility}
@@ -29,6 +31,7 @@ const RadioButton: React.FC<Props> = ({
     onPress={onPress}
     radioButtonColor={radioButtonColor}
     size={size}
+    {...(rest as any)}
   >
     <If condition={checked}>
       <CheckedRadio

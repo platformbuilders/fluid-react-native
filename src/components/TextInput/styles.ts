@@ -196,14 +196,14 @@ export const TextLabel = styled.Text<any>`
 
 export const Label = Animated.createAnimatedComponent(TextLabel);
 
-export const TextInput = styled.TextInput.attrs((props: TextInputType) => ({
+export const TextInput = styled.TextInput.attrs((props: any) => ({
   accessibilityLabel: props.accessibilityLabel || props.accessibility,
   testID: props.testID || props.id,
   textAlign: isCentered('center', 'left')(props),
   placeholderTextColor: props.placeholderTextColor
     ? props.placeholderTextColor
     : '#72727260',
-}))<TextInputType>`
+}))<any>`
   padding: 0;
   flex-grow: 1;
   border-width: 0;
@@ -232,9 +232,9 @@ const defaultIconColor = (props: IconProps) =>
 
 const erroredIconColor = (props: IconProps) => dangerMain(props);
 
-export const Icon = styled(DefaultIcon).attrs((props: IconProps) => ({
+export const Icon = styled(DefaultIcon).attrs((props: any) => ({
   color: showIconErrored(
     hasError(erroredIconColor(props), defaultIconColor(props))(props),
     defaultIconColor(props),
   )(props),
-}))<IconProps>``;
+}))<any>``;

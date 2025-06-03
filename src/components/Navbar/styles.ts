@@ -48,14 +48,13 @@ export const NavField = styled(Touchable)`
   align-items: center;
 `;
 
-export const NavIcon = styled(Icon).attrs((props: FieldsProps) => ({
+export const NavIcon = styled(Icon).attrs((props: any) => ({
   size: moderateScale(30),
-  color: isActive(
-    props?.activeColor || primaryMain(props),
-    textColor(props),
-  )(props),
+  color: String(props.active
+    ? primaryMain(props)
+    : textColor(props)),
   touchable: false,
-}))<FieldsProps>`
+}))<any>`
   opacity: ${isActive(opaqueOpacity, emptyOpacity)};
 `;
 

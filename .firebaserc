@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "Fluid": "fluid-ds"
+  },
+  "targets": {
+    "fluid-ds": {
+      "hosting": {
+        "fluid-ds": [
+          "fluid-ds"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

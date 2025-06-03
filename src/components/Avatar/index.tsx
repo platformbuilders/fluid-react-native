@@ -103,15 +103,19 @@ const Avatar: React.FC<Props> = React.forwardRef(
 
     return (
       <Wrapper
-        id={id || accessibility}
-        accessibility={accessibility}
-        accessibilityLabel={accessibilityLabel || accessibility}
-        testID={testID || id}
-        size={size}
-        onPress={onPress}
-        disabled={!onPress}
-        showBorder={showBorder}
-        {...rest}
+        {...(rest as any)}
+        {...({
+          borderWidth: rest.borderWidth,
+          borderColor: rest.borderColor,
+          id,
+          accessibility,
+          accessibilityLabel,
+          testID,
+          size,
+          onPress,
+          disabled: !onPress,
+          showBorder,
+        } as any)}
       >
         {displayCamera && !uploadedImage ? (
           <CameraView
@@ -128,14 +132,14 @@ const Avatar: React.FC<Props> = React.forwardRef(
           />
         ) : (
           <FastImage
-            source={getCurrentAvatar()}
-            resizeMode={FastImage.resizeMode.cover}
+            source={getCurrentAvatar() as any}
+            resizeMode={(FastImage as any).resizeMode.cover}
             style={{ width: '101%', height: '101%' }}
           />
         )}
         <If condition={!!displayCamera}>
           <UploadIconWrapper size={size}>
-            <UploadIcon id="" accessibility="" />
+            <UploadIcon name="camera" id="" accessibility="" />
           </UploadIconWrapper>
         </If>
       </Wrapper>

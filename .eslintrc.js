@@ -37,8 +37,12 @@ module.exports = {
     'e2e',
     '__mocks__',
     '__test__',
+    '__tests__',
     'coverage',
     '_templates',
+    '*.spec.tsx',
+    'src/**/*.spec.tsx',
+    'DevelopmentApp/**/*.spec.tsx',
   ],
   rules: {
     // @TODO: Remover essa regra assim que for feito o fix na lib do CheckBox

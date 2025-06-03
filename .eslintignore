@@ -3,3 +3,6 @@ storybook
 dist
 node_modules
 *.d.ts
+*.spec.tsx
+src/**/*.spec.tsx
+DevelopmentApp/**/*.spec.tsx

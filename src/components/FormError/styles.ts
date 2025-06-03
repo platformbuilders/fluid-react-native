@@ -7,16 +7,9 @@ const isLarge = ifStyle('large');
 const danger = getTheme('danger.main');
 const smallSpacing = getTheme('spacing.xs');
 
-type ErrorTextProps = {
-  centered: boolean;
-  large: boolean;
-  accessibilityLabel: string;
-  testID: string;
-};
-
-export const ErrorText = styled(Typography).attrs((props: ErrorTextProps) => ({
+export const ErrorText = styled(Typography).attrs((props: any) => ({
   variant: isLarge('sm', 'xs')(props),
-}))<ErrorTextProps>`
+}))<any>`
   color: ${danger};
   text-align: ${isCentered('center', 'left')};
   margin-top: ${isLarge(0, smallSpacing)}px;
