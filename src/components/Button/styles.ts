@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+
 import styled from 'styled-components/native';
 import {
   ButtonColorType,
@@ -100,45 +102,38 @@ type TextButtonProps = {
 const getTextColor = (props: TextButtonProps): string => {
   switch (props.colorVariant) {
     case 'primary':
-      return `${
-        props.buttonVariant === 'filled'
+      return `${props.buttonVariant === 'filled'
           ? brandPrimaryContrast(props)
           : brandPrimary(props)
-      }`;
+        }`;
     case 'secondary':
-      return `${
-        props.buttonVariant === 'filled'
+      return `${props.buttonVariant === 'filled'
           ? brandSecondaryContrast(props)
           : brandSecondary(props)
-      }`;
+        }`;
     case 'accent':
-      return `${
-        props.buttonVariant === 'filled'
+      return `${props.buttonVariant === 'filled'
           ? brandAccentContrast(props)
           : brandAccent(props)
-      }`;
+        }`;
     case 'danger':
-      return `${
-        props.buttonVariant === 'filled'
+      return `${props.buttonVariant === 'filled'
           ? dangerContrast(props)
           : dangerMain(props)
-      }`;
+        }`;
     case 'info':
-      return `${
-        props.buttonVariant === 'filled' ? infoContrast(props) : infoMain(props)
-      }`;
+      return `${props.buttonVariant === 'filled' ? infoContrast(props) : infoMain(props)
+        }`;
     case 'warning':
-      return `${
-        props.buttonVariant === 'filled'
+      return `${props.buttonVariant === 'filled'
           ? warningContrast(props)
           : warningMain(props)
-      }`;
+        }`;
     case 'success':
-      return `${
-        props.buttonVariant === 'filled'
+      return `${props.buttonVariant === 'filled'
           ? successContrast(props)
           : successMain(props)
-      }`;
+        }`;
     default:
       return `${brandPrimaryContrast(props)}`;
   }
@@ -148,7 +143,7 @@ type TouchableProps = {
   rounded: boolean;
 } & ThemeProps;
 
-export const Touchable = styled(TouchableComponent)<TouchableProps>`
+export const Touchable = styled(TouchableComponent) <TouchableProps>`
   border-radius: ${(props: TouchableProps): any =>
     props.rounded ? buttonSize / 2 : buttonRadius(props)}px;
 `;
@@ -172,7 +167,7 @@ export const ButtonWrapper = styled.View<ButtonWrapperProps>`
   opacity: ${isDisabled(0.3, 1)};
 `;
 
-export const TextButton = styled(TypographyComponent)<TextButtonProps>`
+export const TextButton = styled(TypographyComponent) <TextButtonProps>`
   letter-spacing: 0.4px;
   color: ${isFlat(getBackgroundColor, getTextColor)};
   font-weight: bold;
@@ -183,6 +178,7 @@ export const Loading = styled(LoadingIndicator).attrs({
 })`
   align-self: center;
   width: 55px;
+  height: 55px
 `;
 
 type IconProps = {
@@ -195,7 +191,7 @@ type IconProps = {
 
 export const Icon = styled(DefaultIcon).attrs((props: IconProps) => ({
   color: getTextColor(props),
-}))<IconProps>`
+})) <IconProps>`
   margin-right: ${isLeftIcon(smallSpacing, 0)}px;
   margin-left: ${isRightIcon(smallSpacing, 0)}px;
 `;
