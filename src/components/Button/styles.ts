@@ -183,6 +183,7 @@ export const Loading = styled(LoadingIndicator).attrs({
 })`
   align-self: center;
   width: 55px;
+  height: 55px;
 `;
 
 type IconProps = {
