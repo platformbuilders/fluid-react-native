@@ -70,7 +70,7 @@ jobs:
       # Gerar documentação
       - name: Gerar Documentação
         run: |
-          cd docs/website
+          cd docs/site
           yarn install --frozen-lockfile
           yarn build
 
